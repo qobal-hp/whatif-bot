@@ -1,0 +1,54 @@
+name: Make thumbnails
+
+on:
+  workflow_dispatch:
+    inputs:
+      spec:
+        description: Episode spec file
+        default: pipeline/ep01_full.json
+
+permissions:
+  contents: write
+
+jobs:
+  thumbnails:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: video/package-lock.json
+      - name: Generate background images
+        env:
+          FAL_KEY: ${{ secrets.FAL_KEY }}
+        run: |
+          pip install --quiet fal-client
+          python pipeline/make_thumbnails.py "${{ inputs.spec }}"
+      - name: Add the text
+        working-directory: video
+        run: |
+          npm ci --no-audit --no-fund
+          mkdir -p out/thumbs
+          for f in public/thumbs/*.json; do
+            id=$(basename "$f" .json)
+            npx remotion still src/index.ts Thumb "out/thumbs/$id.jpg" --props="$f" --jpeg-quality=92 --log=warn
+            cp "public/thumbs/$id.jpg" "out/thumbs/$id.background.jpg"
+          done
+          ls -la out/thumbs
+      - name: Publish to the thumb-output branch
+        run: |
+          cp -r video/out/thumbs /tmp/thumbs
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan thumb-output
+          git rm -rf --cached . > /dev/null
+          rm -rf thumbs && cp -r /tmp/thumbs thumbs
+          git add -f thumbs
+          git commit -q -m "Thumbnails from run ${{ github.run_number }}"
+          git push -f origin thumb-output

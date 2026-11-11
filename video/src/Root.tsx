@@ -1,6 +1,7 @@
 import React from 'react';
 import {Composition} from 'remotion';
 import {Episode} from './Episode';
+import {Thumb} from './Thumb';
 import type {EpisodeProps} from './types';
 
 const empty: EpisodeProps = {fps: 30, durationSec: 5, audio: '', scenes: [], words: []};
@@ -31,6 +32,15 @@ export const Root: React.FC = () => (
     durationInFrames={150}
     defaultProps={empty}
     calculateMetadata={meta}
+  />
+  <Composition
+    id="Thumb"
+    component={Thumb}
+    width={1280}
+    height={720}
+    fps={30}
+    durationInFrames={1}
+    defaultProps={{image: '', side: 'left' as const, lines: [], tag: ''}}
   />
   </>
 );

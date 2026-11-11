@@ -24,6 +24,57 @@
       "to": "s047"
     }
   ],
+  "thumbnail_style": "YouTube thumbnail background, hyper-detailed cinematic photorealism, extreme contrast, saturated colors, one huge clear subject readable at tiny size, dramatic rim lighting, 16:9, absolutely no text, no letters, no numbers, no watermark, no logos. ",
+  "thumbnails": [
+    {
+      "id": "thumb1",
+      "side": "left",
+      "lines": [
+        {
+          "text": "THE SUN",
+          "color": "#FFFFFF"
+        },
+        {
+          "text": "VANISHED",
+          "color": "#FFD400"
+        }
+      ],
+      "tag": "24 HOURS",
+      "image": "Planet Earth filling the right two-thirds of the frame, split down the middle: its left half lush, blue and sunlit, its right half frozen solid, white-blue ice with dark cracked oceans. Upper left: a pitch-black circular hole in space with a thin fading orange glowing ring around it where the Sun used to be. Deep black starry space, left third of the frame dark and empty."
+    },
+    {
+      "id": "thumb2",
+      "side": "right",
+      "lines": [
+        {
+          "text": "8 MINUTES",
+          "color": "#FFD400"
+        },
+        {
+          "text": "LEFT",
+          "color": "#FFFFFF"
+        }
+      ],
+      "tag": "THEN DARKNESS",
+      "image": "Low angle close-up of a terrified young woman on a sunny suburban street at noon, her face still lit warm and golden, mouth open, staring up and pointing at the sky on the left half of the frame. Behind her the bright blue daytime sky is being swallowed by a sharp advancing wall of pure black starry night, with an empty black disc where the Sun should be. Right third of the frame is dark sky, empty."
+    },
+    {
+      "id": "thumb3",
+      "side": "left",
+      "lines": [
+        {
+          "text": "NO SUN",
+          "color": "#FF3B30"
+        },
+        {
+          "text": "FOR 1 DAY",
+          "color": "#FFFFFF"
+        }
+      ],
+      "tag": "WHAT REALLY HAPPENS",
+      "image": "A dark Earth with glowing golden city lights on the right side of the frame, flying off in a straight line out of a shattered glowing orange orbit ring that snaps like a broken string behind it, sparks along the break. In the center of the broken ring a black empty void where the Sun was. Milky Way background, left third of the frame dark and empty."
+    }
+  ],
   "scenes": [
     {
       "id": "s001",
