@@ -11,13 +11,37 @@ HERE = Path(__file__).parent
 OUT = HERE / "output"
 TEXT = (HERE / "sample_text.txt").read_text(encoding="utf-8").strip()
 
-# ElevenLabs default (premade) voices suited to documentary narration.
-VOICES = {
-    "1_George": "JBFqnCBsd6RMkjVDRZzb",
-    "2_Brian": "nPczCjzI2devNBz1zQrb",
-    "3_Daniel": "onwK4e9ZLuTAKqWW03F9",
-    "4_Bill": "pqHfZKP75CVOlQylNhV4",
+# Voices to render this round: name prefix -> fallback voice_id.
+WANTED = {
+    "Alice": "Xb7hH8MSUJpSbSDYk3k2",
+    "Matilda": "XrExE9yKIg1WjnnlVkGX",
+    "Lily": "pFZP5JQG7iQjIQuC34CR",
 }
+
+
+def list_voices() -> list:
+    req = urllib.request.Request(
+        "https://api.elevenlabs.io/v1/voices", headers={"xi-api-key": API_KEY}
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            return json.load(resp).get("voices", [])
+    except urllib.error.HTTPError as err:
+        print(f"Could not list voices: HTTP {err.code} {err.read().decode(errors='replace')[:200]}")
+        return []
+
+
+def resolve_voices() -> dict:
+    available = list_voices()
+    for v in available:
+        print("VOICE", json.dumps({"name": v.get("name"), "labels": v.get("labels"), "description": v.get("description")}))
+    voices = {}
+    for i, (name, fallback) in enumerate(WANTED.items(), start=1):
+        match = next((v["voice_id"] for v in available if v.get("name", "").startswith(name)), fallback)
+        voices[f"{i}_{name}"] = match
+    return voices
+
+
 MODELS = ["eleven_v3", "eleven_multilingual_v2"]  # try v3 first, then fall back
 
 
@@ -36,7 +60,8 @@ def synth(voice_id: str, model_id: str) -> bytes:
 def main() -> int:
     OUT.mkdir(exist_ok=True)
     made = 0
-    for name, voice_id in VOICES.items():
+    voices = resolve_voices()
+    for name, voice_id in voices.items():
         for model_id in MODELS:
             try:
                 audio = synth(voice_id, model_id)
@@ -49,7 +74,7 @@ def main() -> int:
             print(f"OK {path.name} ({len(audio) // 1024} KB)")
             made += 1
             break
-    print(f"{made} of {len(VOICES)} voices rendered")
+    print(f"{made} of {len(voices)} voices rendered")
     return 0 if made else 1
 
 
