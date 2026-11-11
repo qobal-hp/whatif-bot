@@ -1,0 +1,41 @@
+name: Voice samples
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "voice_test/**"
+      - ".github/workflows/voice-samples.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Render voices
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+        run: python voice_test/make_samples.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: voice-samples
+          path: voice_test/output/
+          if-no-files-found: warn
+      - name: Publish samples to the voice-samples branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan voice-samples
+          git rm -rf --cached . > /dev/null
+          git add -f voice_test/output/*.mp3
+          git commit -m "Voice samples from run ${{ github.run_number }}"
+          git push -f origin voice-samples
