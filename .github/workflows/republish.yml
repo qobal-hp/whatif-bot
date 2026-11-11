@@ -1,0 +1,42 @@
+name: Republish sample
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: Run whose sample-video artifact should be published
+        required: true
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: sample-video
+          path: /tmp/artifact
+          run-id: ${{ inputs.run_id }}
+          github-token: ${{ github.token }}
+      - name: Compress and publish to the sample-output branch
+        run: |
+          find /tmp/artifact -type f | head -30
+          mkdir -p /tmp/result
+          src=$(find /tmp/artifact -name episode.mp4 | head -1)
+          ffmpeg -v error -y -i "$src" -c:v libx264 -preset medium -crf 21 -maxrate 10M -bufsize 20M -pix_fmt yuv420p -c:a aac -b:a 192k -movflags +faststart /tmp/result/episode.mp4
+          find /tmp/artifact -name props.json -exec cp {} /tmp/result/ \;
+          find /tmp/artifact -name '*.jpg' -exec cp {} /tmp/result/ \;
+          ls -la /tmp/result
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan sample-output
+          git rm -rf --cached . > /dev/null
+          rm -rf result && cp -r /tmp/result result
+          git add -f result
+          git commit -q -m "Sample video from run ${{ inputs.run_id }}"
+          git push -f origin sample-output
