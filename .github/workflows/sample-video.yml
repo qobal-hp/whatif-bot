@@ -49,6 +49,7 @@ jobs:
           if-no-files-found: warn
       - name: Publish result to the sample-output branch
         run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
           mkdir -p /tmp/result && cp video/public/props.json /tmp/result/
           ffmpeg -v error -y -i video/out/episode.mp4 -c:v libx264 -preset medium -crf 21 -maxrate 10M -bufsize 20M -pix_fmt yuv420p -c:a aac -b:a 192k -movflags +faststart /tmp/result/episode.mp4
           cp video/public/assets/*.jpg /tmp/result/

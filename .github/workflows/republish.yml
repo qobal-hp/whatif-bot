@@ -26,6 +26,7 @@ jobs:
       - name: Compress and publish to the sample-output branch
         run: |
           find /tmp/artifact -type f | head -30
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
           mkdir -p /tmp/result
           src=$(find /tmp/artifact -name episode.mp4 | head -1)
           ffmpeg -v error -y -i "$src" -c:v libx264 -preset medium -crf 21 -maxrate 10M -bufsize 20M -pix_fmt yuv420p -c:a aac -b:a 192k -movflags +faststart /tmp/result/episode.mp4
