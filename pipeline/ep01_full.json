@@ -1,0 +1,455 @@
+{
+ "title": "What If the Sun Disappeared for 24 Hours?",
+ "voice_id": "JBFqnCBsd6RMkjVDRZzb",
+ "voice_name": "George",
+ "resolution": "2K",
+ "style": "Cinematic photorealistic documentary still, wide 16:9 frame, dramatic natural lighting, rich contrast, fine detail, no text, no captions, no watermark, no logos. ",
+ "scenes": [
+  {
+   "id": "s001",
+   "text": "Right now, the Sun could already be gone. And you would have no way of knowing.",
+   "image": "A quiet American suburban street at midday in summer, green lawns, parked cars, tall trees, a brilliant sun high in a deep blue sky with soft lens flare, viewed from street level looking slightly upward.",
+   "motion": "Slow cinematic camera tilt upward from the street toward the bright sun, leaves moving gently in the breeze, subtle lens flare."
+  },
+  {
+   "id": "s002",
+   "text": "Not you. Not NASA. Not a single telescope on Earth.",
+   "image": "A row of enormous white radio telescope dishes in a desert plain, all pointed at a bright daytime sky, low angle, heat haze on the horizon."
+  },
+  {
+   "id": "s003",
+   "text": "Because the sunlight on your face right now left the Sun eight minutes and twenty seconds ago. It's old light. A recording.",
+   "image": "View from deep space: the blazing Sun on the far left, a thin stream of golden light stretching across black space toward a tiny blue Earth on the far right, vast emptiness between them."
+  },
+  {
+   "id": "s004",
+   "text": "So if the Sun vanished this very second, you'd get eight more minutes of a perfectly normal day.",
+   "image": "A busy small-town main street on a sunny afternoon, people walking with coffee, a cyclist passing, shop awnings, warm ordinary daylight."
+  },
+  {
+   "id": "s005",
+   "text": "People would keep mowing their lawns. Kids would keep playing outside. Under a star that no longer exists.",
+   "image": "A warm sunlit suburban backyard on a summer afternoon seen from a distance: a man pushing a lawn mower across the grass, long golden sunbeams through the trees, a bicycle lying on the lawn, peaceful and ordinary."
+  },
+  {
+   "id": "s006",
+   "text": "And then, in a single instant, the sky would switch off.",
+   "image": "The same American suburban street in total darkness in the middle of the day: pitch black sky filled with thousands of stars and the Milky Way arching overhead, houses as dark silhouettes, a few warm lit windows, no sun, no moon.",
+   "cut": "hard"
+  },
+  {
+   "id": "s007",
+   "text": "Today, we're taking the Sun away for exactly twenty-four hours. Then we're giving it back.",
+   "image": "The solar system seen from above in deep space with an empty black void at the center where the Sun should be, faint thin orbit lines, small dark planets barely visible against a dense field of stars.",
+   "motion": "Very slow camera push in toward the empty dark center, stars drifting slightly, the dark planets continuing to glide along their faint orbit lines."
+  },
+  {
+   "id": "s008",
+   "text": "And here's the strange part. The dark isn't what changes the world. The cold isn't either.",
+   "image": "A frost-covered city skyline at night under a sky full of stars, frozen fountain in the foreground, breath-like mist in the air, blue and silver tones."
+  },
+  {
+   "id": "s009",
+   "text": "The real change is something you would never feel. And it would still be with us a thousand years from now.",
+   "image": "Planet Earth alone in deep space, almost entirely dark, city lights faintly glowing on the night side, a thin faint glowing line showing its path curving away into the stars, lonely and vast."
+  },
+  {
+   "id": "s010",
+   "text": "One honest note before we start. Stars can't just vanish. Physics forbids it.",
+   "image": "Extreme close-up of the Sun's churning surface, towering solar flares and plasma loops, overwhelming scale and power."
+  },
+  {
+   "id": "s011",
+   "text": "But pretending is the best way to see what the Sun is quietly doing for you every second.",
+   "image": "Sunrise over a green valley with a river, light rays fanning across fields, a small farmhouse, birds in the air, everything alive and lit."
+  },
+  {
+   "id": "s012",
+   "text": "Minute zero. The Sun is gone. And nothing happens.",
+   "image": "View from space of the inner solar system with a black void where the Sun was, yet the Earth still fully sunlit on one side, eerie contradiction."
+  },
+  {
+   "id": "s013",
+   "text": "For eight minutes and twenty seconds, Earth is running on leftovers. Light that was already on its way.",
+   "image": "A beach on a bright sunny day with families under umbrellas and sparkling water, completely normal, nobody aware of anything."
+  },
+  {
+   "id": "s014",
+   "text": "But here's what almost nobody realizes. It's not just the light that's late. It's the gravity.",
+   "image": "Abstract visualization of spacetime as a glowing grid curved into a deep well around an empty point, Earth resting on the slope of the well."
+  },
+  {
+   "id": "s015",
+   "text": "Earth keeps curving around the empty spot where the Sun used to be. Orbiting nothing. Because the news that the Sun is gone hasn't arrived yet.",
+   "image": "Earth following a curved glowing orbit line around an empty black center in space, a ghostly faint outline where the Sun used to be."
+  },
+  {
+   "id": "s016",
+   "text": "And that's not a guess. In 2017, two dead stars collided a hundred and thirty million light-years away.",
+   "image": "Two small intensely bright blue-white neutron stars spiraling tightly around each other in deep space, about to collide, trails of glowing matter.",
+   "motion": "The two neutron stars spiral faster and merge in a blinding flash, with ripples expanding outward through space."
+  },
+  {
+   "id": "s017",
+   "text": "The crash sent out a ripple in gravity itself, and a flash of light. After a race that lasted a hundred and thirty million years, they reached Earth less than two seconds apart.",
+   "image": "Concentric ripples in spacetime and a narrow beam of gamma-ray light racing side by side across a field of galaxies toward a distant small blue Earth."
+  },
+  {
+   "id": "s018",
+   "text": "Gravity travels at the speed of light. Bad news included.",
+   "image": "A large L-shaped gravitational wave observatory seen from the air in flat scrubland, two long concrete arms stretching to the horizon at dusk."
+  },
+  {
+   "id": "s019",
+   "text": "Eight minutes, nineteen seconds. Eight minutes, twenty.",
+   "image": "Close-up of a wristwatch on a person's arm outdoors in bright sunlight, second hand about to reach the top, shallow depth of field."
+  },
+  {
+   "id": "s020",
+   "text": "Dark.",
+   "image": "Total blackness with only a dense field of stars, the faint dark silhouette of a rooftop and trees at the bottom edge.",
+   "cut": "hard"
+  },
+  {
+   "id": "s021",
+   "text": "No sunset. No fade. Noon becomes midnight faster than you can blink, across the entire daylight side of the planet at once.",
+   "image": "Planet Earth from space with no sunlit side at all, the whole globe dark, continents traced only by city lights."
+  },
+  {
+   "id": "s022",
+   "text": "A heartbeat later, the Moon goes out. It never made light of its own. It was only ever a mirror.",
+   "image": "The Moon in a starry sky reduced to a barely visible black disc blocking the stars behind it, no glow at all."
+  },
+  {
+   "id": "s023",
+   "text": "Then the planets start to disappear. One by one. Venus. Mars.",
+   "image": "A night sky above a dark mountain ridge where two bright planet points are fading to nothing among the stars."
+  },
+  {
+   "id": "s024",
+   "text": "Jupiter hangs on the longest. Its last reflected sunlight is still crossing the solar system, so it keeps glowing for more than an hour, like a light left on in an empty house.",
+   "image": "The planet Jupiter with its bands and Great Red Spot, dimly lit on one side and fading into shadow, alone in black space."
+  },
+  {
+   "id": "s025",
+   "text": "Then it's gone too.",
+   "image": "Empty black space with stars and only the faintest dark circular silhouette where Jupiter was."
+  },
+  {
+   "id": "s026",
+   "text": "What's left is the best night sky any human has ever seen. Every star. The Milky Way from edge to edge. At lunchtime.",
+   "image": "A city park at midday in complete darkness, office workers standing still on the lawn looking up at an astonishing Milky Way filling the whole sky, city buildings dark behind them."
+  },
+  {
+   "id": "s027",
+   "text": "And the animals react before we do. We know, because nature has already run a tiny version of this experiment.",
+   "image": "A total solar eclipse over an open prairie, black disc of the Moon with a glowing white corona, twilight colors along the horizon."
+  },
+  {
+   "id": "s028",
+   "text": "During the 2017 total eclipse over the United States, researchers watched the sky through a hundred and forty-three weather radar stations.",
+   "image": "A white weather radar dome on a steel tower in a field under a darkening eclipse sky, dramatic low angle."
+  },
+  {
+   "id": "s029",
+   "text": "As the shadow passed, the air emptied. Daytime animals dropped to the ground. The night shift never came out.",
+   "image": "A large flock of birds descending toward trees and fields under a dim eclipse twilight sky.",
+   "motion": "The flock of birds swirls downward and settles into the trees as the light dims further."
+  },
+  {
+   "id": "s030",
+   "text": "Another team put microphones in flower patches. The bees buzzed right up to the moment of totality. Then they stopped. Completely.",
+   "image": "Macro photograph of a honeybee sitting motionless on a purple flower in dim blue twilight, a small field microphone blurred in the background."
+  },
+  {
+   "id": "s031",
+   "text": "That was about two and a half minutes of darkness. This is twenty-four hours.",
+   "image": "A dark empty highway stretching to the horizon under a sky of stars, a single pair of car headlights far away."
+  },
+  {
+   "id": "s032",
+   "text": "Now the part that sounds like the end of the world.",
+   "image": "The dark Earth seen small from deep space, surrounded by overwhelming blackness and stars, ominous mood."
+  },
+  {
+   "id": "s033",
+   "text": "With no Sun to hold it, Earth stops orbiting. It does what a ball does when the string snaps. It goes straight.",
+   "image": "Diagram-like space view: a faint dotted circular orbit line, and the dark Earth leaving it along a bright straight line into the stars.",
+   "motion": "The dark Earth glides steadily along the straight line away from the curved orbit, stars sliding slowly past."
+  },
+  {
+   "id": "s034",
+   "text": "And it is not slow. Earth moves at about a hundred and seven thousand kilometers an hour. Sixty-seven thousand miles an hour. Thirty kilometers every single second.",
+   "image": "Earth rushing through space with stretched star streaks behind it conveying enormous speed, motion blur."
+  },
+  {
+   "id": "s035",
+   "text": "You're doing it right now.",
+   "image": "A person lying on a grassy hill at night looking up at the stars, seen from above, calm and small."
+  },
+  {
+   "id": "s036",
+   "text": "In twenty-four hours without the Sun, Earth travels two and a half million kilometers. In a straight line. Into the dark.",
+   "image": "A long straight glowing path receding into deep black space, the tiny dark Earth far along it."
+  },
+  {
+   "id": "s037",
+   "text": "The Moon comes with us. It was always ours, not the Sun's.",
+   "image": "The dark Earth and the dark Moon close together drifting through a field of stars, the Moon circling faithfully."
+  },
+  {
+   "id": "s038",
+   "text": "Two and a half million kilometers off the leash. So how far off course are we?",
+   "image": "Space view comparing a gently curved dotted orbit line and a straight solid line that run almost on top of each other, the tiny Earth where they barely separate."
+  },
+  {
+   "id": "s039",
+   "text": "About twenty-two thousand kilometers. Less than two Earths, side by side.",
+   "image": "Two identical planet Earths floating side by side in space touching edge to edge, showing a small gap of scale, clean and simple."
+  },
+  {
+   "id": "s040",
+   "text": "That's it. Because Earth's orbit is so enormous that in one day, it only bends by about one degree. For twenty-four hours, a straight line and the orbit are almost the same road.",
+   "image": "A vast gentle arc of glowing orbit line sweeping across the entire frame of space, with Earth a tiny dot on it, emphasizing immense scale."
+  },
+  {
+   "id": "s041",
+   "text": "Hold on to that number. It's going to matter when the Sun comes back.",
+   "image": "The dark Earth in the foreground with a faint warm glow just beginning far away in the black distance."
+  },
+  {
+   "id": "s042",
+   "text": "Hour one. And here's what every disaster movie gets wrong. You don't freeze. Not even close.",
+   "image": "A family in light jackets standing on their front porch at dark midday looking up at the stars, warm light from the open door behind them."
+  },
+  {
+   "id": "s043",
+   "text": "Think about it. You already lose the Sun every single evening. We call it night. And you survive it.",
+   "image": "A peaceful ordinary city at night seen from a hill, glittering lights, calm and familiar."
+  },
+  {
+   "id": "s044",
+   "text": "Earth is a giant battery of heat. The oceans store an enormous amount of warmth, and the air is a blanket wrapped around it.",
+   "image": "Cutaway illustration style view of Earth showing warm orange-glowing oceans and a thin luminous blue atmosphere layer wrapped around the planet in dark space."
+  },
+  {
+   "id": "s045",
+   "text": "A planetary scientist at Caltech, David Stevenson, worked out what happens if the Sun never comes back.",
+   "image": "A chalkboard covered in planetary physics equations and sketches of Earth in a quiet university office, desk lamp lit, no people."
+  },
+  {
+   "id": "s046",
+   "text": "Even then, it takes days, up to a week, for the surface to drop below freezing. A full year to reach a hundred below zero.",
+   "image": "An outdoor thermometer on a wooden post coated in thick frost at night, snow-covered field and stars behind it."
+  },
+  {
+   "id": "s047",
+   "text": "So in our twenty-four hours? The world gets one very long, very cold night.",
+   "image": "Frost forming on the window of a house, warm lamplight inside, dark starry sky outside."
+  },
+  {
+   "id": "s048",
+   "text": "Inland, far from the sea, the temperature slides the way it does in a desert after dark. And it keeps sliding, because no dawn comes to stop it.",
+   "image": "A wide desert landscape with sand dunes at night under the Milky Way, frost glittering on the sand, cold blue tones."
+  },
+  {
+   "id": "s049",
+   "text": "Near the coast, the ocean barely notices.",
+   "image": "Dark ocean waves rolling onto a beach at night, mist rising from the still-warm water, stars overhead."
+  },
+  {
+   "id": "s050",
+   "text": "We've even measured a taste of this. In Nebraska, during that 2017 eclipse, instruments recorded the air cooling by almost seven degrees Celsius. About twelve Fahrenheit. From one brief pass of the Moon's shadow.",
+   "image": "Scientific weather instruments on tripods in a Nebraska river valley meadow under the dim light of a total solar eclipse."
+  },
+  {
+   "id": "s051",
+   "text": "Every leaf on Earth stops making food at the same moment. But plants are built to wait out the dark. One day won't kill them.",
+   "image": "Close-up of green leaves in a forest at night, dew and faint starlight on them, healthy but still."
+  },
+  {
+   "id": "s052",
+   "text": "The real stress is us.",
+   "image": "A crowded dark city intersection at midday with every car headlight on and people gathered on sidewalks looking up."
+  },
+  {
+   "id": "s053",
+   "text": "Every solar panel on the planet reads zero. Every city on the daylight side needs its lights, all at once, in the middle of what should be the afternoon.",
+   "image": "A huge solar farm with endless rows of panels in complete darkness under the stars, a small control building with one lit window."
+  },
+  {
+   "id": "s054",
+   "text": "And yet, hour by hour, something strange happens. People adapt.",
+   "image": "Neighbors gathered around a fire pit in a suburban cul-de-sac in the dark, blankets and thermoses, relaxed faces lit by firelight."
+  },
+  {
+   "id": "s055",
+   "text": "The streetlights are on. The heat is running. And the sky is unbelievable.",
+   "image": "A lit residential street with glowing streetlights and above it an impossibly rich starry sky."
+  },
+  {
+   "id": "s056",
+   "text": "By hour twenty, people are standing outside in winter coats. Just looking up.",
+   "image": "A crowd in winter coats and hats standing in a snowy city square, all gazing upward at the Milky Way, breath visible."
+  },
+  {
+   "id": "s057",
+   "text": "Hour twenty-four.",
+   "image": "A clock tower in a dark frosty city square under the stars, the clock face softly lit."
+  },
+  {
+   "id": "s058",
+   "text": "The Sun is back. Exactly where it was. And once again, nothing happens.",
+   "image": "Deep space view: the Sun blazing again at the center of the solar system, but the tiny distant Earth still completely dark."
+  },
+  {
+   "id": "s059",
+   "text": "For eight minutes and twenty seconds, its light is still on the way. Earth is still flying straight through the dark, toward a sunrise it can't see yet.",
+   "image": "A sharp expanding front of golden light crossing black space, with the small dark Earth ahead of it not yet reached."
+  },
+  {
+   "id": "s060",
+   "text": "Then, light.",
+   "image": "The dark Earth in space at the instant a wall of sunlight reaches it, one edge of the planet igniting in brilliant light.",
+   "motion": "The wave of sunlight sweeps across the dark planet and half the globe bursts into full bright daylight.",
+   "cut": "hard"
+  },
+  {
+   "id": "s061",
+   "text": "Not a sunrise. A switch. Half the planet goes from midnight to full daylight in an instant.",
+   "image": "A snowy frosted suburban street suddenly in blazing full daylight with a hard bright sun overhead, people shielding their eyes, long sharp shadows."
+  },
+  {
+   "id": "s062",
+   "text": "The Moon snaps back on. More than an hour later, Jupiter rejoins the sky.",
+   "image": "A bright full Moon glowing again in a deep blue twilight sky above frosted rooftops, one bright planet nearby."
+  },
+  {
+   "id": "s063",
+   "text": "And gravity grabs us again. The string reattaches.",
+   "image": "Spacetime grid curved into a deep well around the bright Sun again, Earth caught on the slope and beginning to curve."
+  },
+  {
+   "id": "s064",
+   "text": "But remember those twenty-two thousand kilometers?",
+   "image": "The two Earths side by side again in space, same simple composition as before, now lit by sunlight."
+  },
+  {
+   "id": "s065",
+   "text": "We are not where we're supposed to be. We're a little farther out, heading in a slightly wrong direction.",
+   "image": "Space diagram view: the old dotted orbit line and the sunlit Earth sitting just outside it with a small arrow-like light trail pointing slightly outward."
+  },
+  {
+   "id": "s066",
+   "text": "So Earth can't slip back into its old orbit. It falls into a new one.",
+   "image": "The Sun at center with two orbit lines around it, an old faint dotted circle and a new bright slightly larger ellipse, Earth on the new one."
+  },
+  {
+   "id": "s067",
+   "text": "Run the numbers, and the new orbit is a touch larger. A larger orbit takes longer to go around.",
+   "image": "Top-down view of the Sun and Earth's new slightly wider orbit glowing in space, elegant and precise."
+  },
+  {
+   "id": "s068",
+   "text": "About four hours longer.",
+   "image": "An antique astronomical clock with sun and moon dials, intricate brass gears, dramatic side lighting."
+  },
+  {
+   "id": "s069",
+   "text": "The year is now four hours too long. Permanently.",
+   "image": "A wall calendar and an hourglass on a wooden desk in soft window light, symbolic still life."
+  },
+  {
+   "id": "s070",
+   "text": "That doesn't sound like much. But our calendar is tuned to the length of the year down to the minute. That is the entire reason leap years exist.",
+   "image": "An old illuminated astronomical manuscript page showing a calendar wheel with the seasons, on a scholar's desk with brass instruments."
+  },
+  {
+   "id": "s071",
+   "text": "Add four hours, and the calendar slides a full day out of step with the seasons about every six years.",
+   "image": "A single landscape split into four seasons side by side, spring blossom, summer green, autumn orange, winter snow, slightly misaligned panels."
+  },
+  {
+   "id": "s072",
+   "text": "So the leap-year rules get rewritten. Every calendar, every clock, every piece of software that counts days gets re-tuned to a planet with a new orbit.",
+   "image": "A dim server room with long rows of racks and blinking lights, a wall display of world clocks at the far end."
+  },
+  {
+   "id": "s073",
+   "text": "The shape of the orbit shifts a little too. Not enough to break the seasons. Life goes on.",
+   "image": "A green spring meadow with wildflowers and a farmhouse under a warm sun, life continuing peacefully."
+  },
+  {
+   "id": "s074",
+   "text": "Think about that. We deleted the Sun for an entire day. And the permanent scar is a calendar update.",
+   "image": "The same quiet American suburban street from the opening at midday, now with people standing outside looking gratefully up at the sunny sky."
+  },
+  {
+   "id": "s075",
+   "text": "We got lucky. Because we got it back.",
+   "image": "A golden sunset over the ocean with the sun's disc touching the horizon, warm and reassuring."
+  },
+  {
+   "id": "s076",
+   "text": "Now run it again. But this time, it never comes back.",
+   "image": "Planet Earth in space entirely dark again, colder and bluer than before, no light approaching."
+  },
+  {
+   "id": "s077",
+   "text": "Within a week, the surface falls below freezing, and the oceans begin to seal themselves under ice.",
+   "image": "A dark ocean under the stars with sheets of ice spreading across the surface from the shore, frozen waves.",
+   "motion": "Ice creeps outward across the dark water, the surface slowly freezing over under the stars."
+  },
+  {
+   "id": "s078",
+   "text": "One year in, it's a hundred below zero. Life on the surface is finished.",
+   "image": "A frozen dead city skyline buried in ice and snow under a black starry sky, no lights at all."
+  },
+  {
+   "id": "s079",
+   "text": "But not everything dies.",
+   "image": "A tiny warm point of light glowing deep beneath a vast dark sheet of ice, seen from below in black water."
+  },
+  {
+   "id": "s080",
+   "text": "Ice is an insulator. The sea freezes from the top down, and by Stevenson's estimate it takes around a thousand years for the deepest water to freeze.",
+   "image": "Cross-section view of a frozen ocean: a thick layer of pale ice on top, dark liquid water far below it, the sea floor at the bottom."
+  },
+  {
+   "id": "s081",
+   "text": "Far below the surface, microbes that never needed sunlight could keep going.",
+   "image": "Deep-sea hydrothermal vents on the ocean floor, black smokers glowing faintly orange, surrounded by pale mineral chimneys in dark water."
+  },
+  {
+   "id": "s082",
+   "text": "And so could a few of us. A small number of people, dug in miles underground, living off the heat of the planet itself.",
+   "image": "A warmly lit underground habitat carved in rock with hydroponic plant racks under grow lights and thick pipes carrying geothermal heat, a few distant figures."
+  },
+  {
+   "id": "s083",
+   "text": "A frozen world, drifting between the stars, with a few lights still on deep inside.",
+   "image": "A completely ice-covered white-blue Earth drifting alone through interstellar space, the Milky Way behind it.",
+   "motion": "The frozen planet drifts slowly across the star field, turning gently, cold and silent."
+  },
+  {
+   "id": "s084",
+   "text": "That is what's waiting at the other end of those eight minutes.",
+   "image": "The thin stream of golden sunlight crossing black space from the Sun toward the tiny blue Earth, same composition as the opening."
+  },
+  {
+   "id": "s085",
+   "text": "So the next time you step outside and feel the Sun on your face, remember. You're feeling the past. Eight minutes and twenty seconds old.",
+   "image": "A person standing in an open field with eyes closed and face turned up to warm sunlight, backlit, peaceful."
+  },
+  {
+   "id": "s086",
+   "text": "It was there then. Let's hope it's still there now.",
+   "image": "The bright Sun high in a clear blue sky seen through green tree branches, gentle lens flare."
+  },
+  {
+   "id": "s087",
+   "text": "Next time: what if the Earth stopped spinning, for just one second? It is so much worse than this.",
+   "image": "Planet Earth from space with dramatic streaks of clouds and oceans surging violently across its surface as if flung sideways, ominous."
+  }
+ ]
+}
