@@ -7,21 +7,24 @@
   "shorts": [
     {
       "id": "short1",
-      "title": "The Sun could already be gone",
+      "title": "The Sun just vanished.|You have 8 minutes.",
       "from": "s001",
-      "to": "s006"
+      "to": "s006",
+      "youtube_title": "The Sun Just Vanished. You Have 8 Minutes. #shorts"
     },
     {
       "id": "short2",
-      "title": "If the Sun vanished, Earth would fly straight",
+      "title": "Earth: 67,000 mph|and nothing holding it",
       "from": "s033",
-      "to": "s039"
+      "to": "s039",
+      "youtube_title": "Earth Is Moving 67,000 MPH. Then the Sun Lets Go. #shorts"
     },
     {
       "id": "short3",
-      "title": "No Sun for a day: would you freeze?",
+      "title": "24 hours with no Sun.|Movies got this wrong.",
       "from": "s042",
-      "to": "s047"
+      "to": "s047",
+      "youtube_title": "24 Hours With No Sun: Every Movie Got This Wrong #shorts"
     }
   ],
   "thumbnail_style": "YouTube thumbnail background, hyper-detailed cinematic photorealism, extreme contrast, saturated colors, one huge clear subject readable at tiny size, dramatic rim lighting, 16:9, absolutely no text, no letters, no numbers, no watermark, no logos. ",
@@ -75,6 +78,7 @@
       "image": "A dark Earth with glowing golden city lights on the right side of the frame, flying off in a straight line out of a shattered glowing orange orbit ring that snaps like a broken string behind it, sparks along the break. In the center of the broken ring a black empty void where the Sun was. Milky Way background, left third of the frame dark and empty."
     }
   ],
+  "thumbnail_choice": "thumb2",
   "scenes": [
     {
       "id": "s001",

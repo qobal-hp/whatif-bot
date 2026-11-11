@@ -30,26 +30,31 @@ export const Episode: React.FC<EpisodeProps> = ({audio, scenes, words, audioStar
         }}
       />
       {vertical && title ? (
-        <AbsoluteFill style={{alignItems: 'center', paddingTop: 230}}>
-          <div
-            style={{
-              fontFamily: 'Montserrat, Arial, sans-serif',
-              fontWeight: 800,
-              fontSize: 46,
-              lineHeight: 1.15,
-              letterSpacing: 1,
-              textTransform: 'uppercase',
-              textAlign: 'center',
-              color: '#111',
-              backgroundColor: '#FFD34D',
-              padding: '18px 30px',
-              borderRadius: 18,
-              maxWidth: 880,
-              boxShadow: '0 8px 30px rgba(0,0,0,0.6)',
-            }}
-          >
-            {title}
-          </div>
+        <AbsoluteFill style={{alignItems: 'center', paddingTop: 210}}>
+          {title.split('|').map((line, i) => (
+            <div
+              key={line}
+              style={{
+                fontFamily: 'Montserrat, Arial, sans-serif',
+                fontWeight: 800,
+                fontSize: 60,
+                lineHeight: 1.1,
+                letterSpacing: 0.5,
+                textTransform: 'uppercase',
+                textAlign: 'center',
+                color: i === 0 ? '#111' : '#FFFFFF',
+                backgroundColor: i === 0 ? '#FFD34D' : '#E0261B',
+                padding: '16px 28px',
+                borderRadius: 16,
+                maxWidth: 980,
+                marginTop: i === 0 ? 0 : -6,
+                transform: `rotate(${i === 0 ? -1.5 : 1}deg)`,
+                boxShadow: '0 8px 30px rgba(0,0,0,0.65)',
+              }}
+            >
+              {line}
+            </div>
+          ))}
         </AbsoluteFill>
       ) : null}
       <Captions words={words} vertical={vertical} />
