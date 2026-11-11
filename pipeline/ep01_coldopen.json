@@ -1,0 +1,46 @@
+{
+  "title": "What If the Sun Disappeared for 24 Hours? (cold open sample)",
+  "voice_id": "JBFqnCBsd6RMkjVDRZzb",
+  "voice_name": "George",
+  "style": "Cinematic photorealistic documentary still, wide 16:9 frame, dramatic natural lighting, rich contrast, fine detail, no text, no captions, no watermark, no logos. ",
+  "scenes": [
+    {
+      "id": "s1",
+      "text": "Right now, the Sun could already be gone. And you would have no way of knowing.",
+      "image": "A quiet American suburban street at midday in summer, green lawns, parked cars, tall trees, a brilliant sun high in a deep blue sky with soft lens flare, viewed from street level looking slightly upward.",
+      "motion": "Slow cinematic camera tilt upward from the street toward the bright sun, leaves moving gently in the breeze, subtle lens flare."
+    },
+    {
+      "id": "s2",
+      "text": "Not you. Not NASA. Not a single telescope on Earth.",
+      "image": "A row of enormous white radio telescope dishes in a desert plain, all pointed at a bright daytime sky, low angle, heat haze on the horizon."
+    },
+    {
+      "id": "s3",
+      "text": "Because the sunlight on your face right now left the Sun eight minutes and twenty seconds ago. It's old light. A recording.",
+      "image": "View from deep space: the blazing Sun on the far left, a thin stream of golden light stretching across black space toward a tiny blue Earth on the far right, vast emptiness between them."
+    },
+    {
+      "id": "s4",
+      "text": "So if the Sun vanished this very second, you'd get eight more minutes of a perfectly normal day. People would keep mowing their lawns. Kids would keep playing outside. Under a star that no longer exists.",
+      "image": "A warm sunlit suburban backyard on a summer afternoon seen from a distance: a man pushing a lawn mower across the grass, long golden sunbeams through the trees, a bicycle lying on the lawn, peaceful and ordinary."
+    },
+    {
+      "id": "s5",
+      "cut": "hard",
+      "text": "And then, in a single instant, the sky would switch off.",
+      "image": "The same American suburban street in total darkness in the middle of the day: pitch black sky filled with thousands of stars and the Milky Way arching overhead, houses as dark silhouettes, a few warm lit windows, no sun, no moon."
+    },
+    {
+      "id": "s6",
+      "text": "Today, we're taking the Sun away for exactly twenty-four hours. Then we're giving it back.",
+      "image": "The solar system seen from above in deep space with an empty black void at the center where the Sun should be, faint thin orbit lines, small dark planets barely visible against a dense field of stars.",
+      "motion": "Very slow camera push in toward the empty dark center, stars drifting slightly, the dark planets continuing to glide along their faint orbit lines."
+    },
+    {
+      "id": "s7",
+      "text": "And here's the strange part. The dark isn't what changes the world. The cold isn't either. The real change is something you would never feel. And it would still be with us a thousand years from now.",
+      "image": "Planet Earth alone in deep space, almost entirely dark, city lights faintly glowing on the night side, a thin faint glowing line showing its path curving away into the stars, lonely and vast."
+    }
+  ]
+}

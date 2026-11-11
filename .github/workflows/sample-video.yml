@@ -1,0 +1,61 @@
+name: Sample video
+
+on:
+  workflow_dispatch:
+    inputs:
+      spec:
+        description: Episode spec file
+        default: pipeline/ep01_coldopen.json
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: video/package-lock.json
+      - name: Generate narration, images and clips
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          FAL_KEY: ${{ secrets.FAL_KEY }}
+        run: |
+          pip install --quiet fal-client
+          python pipeline/generate_assets.py "${{ inputs.spec }}"
+      - name: Render video
+        working-directory: video
+        run: |
+          npm ci --no-audit --no-fund
+          npx remotion render src/index.ts Episode out/episode.mp4 --props=public/props.json --log=info \
+            || npx remotion render src/index.ts Episode out/episode.mp4 --props=public/props.json --log=info \
+                 --browser-executable="$(which google-chrome)"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: sample-video
+          path: |
+            video/out/episode.mp4
+            video/public/props.json
+            video/public/assets/
+          if-no-files-found: warn
+      - name: Publish result to the sample-output branch
+        run: |
+          mkdir -p /tmp/result && cp video/out/episode.mp4 video/public/props.json /tmp/result/
+          cp video/public/assets/*.jpg /tmp/result/
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan sample-output
+          git rm -rf --cached . > /dev/null
+          rm -rf result && cp -r /tmp/result result
+          git add -f result
+          git commit -q -m "Sample video from run ${{ github.run_number }}"
+          git push -f origin sample-output

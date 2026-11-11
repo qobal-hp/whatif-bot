@@ -1,2 +1,6 @@
 voice_test/output/
 __pycache__/
+node_modules/
+video/out/
+video/public/assets/
+video/public/props.json
