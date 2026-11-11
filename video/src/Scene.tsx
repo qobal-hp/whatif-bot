@@ -2,7 +2,7 @@ import React from 'react';
 import {AbsoluteFill, Img, OffthreadVideo, interpolate, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import type {SceneProps} from './types';
 
-type Props = {scene: SceneProps; index: number; fadeFrames: number; totalFrames: number};
+type Props = {scene: SceneProps; index: number; fadeFrames: number; totalFrames: number; vertical?: boolean};
 
 // Slow push/pull with a slight drift, alternating per scene so cuts never repeat the same move.
 const MOVES = [
@@ -12,7 +12,7 @@ const MOVES = [
   {from: 1.15, to: 1.04, x: -0.8, y: 0.6},
 ];
 
-export const Scene: React.FC<Props> = ({scene, index, fadeFrames, totalFrames}) => {
+export const Scene: React.FC<Props> = ({scene, index, fadeFrames, totalFrames, vertical}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const opacity =
@@ -34,6 +34,19 @@ export const Scene: React.FC<Props> = ({scene, index, fadeFrames, totalFrames}) 
   const move = MOVES[index % MOVES.length];
   const t = interpolate(frame, [0, totalFrames], [0, 1], {extrapolateRight: 'clamp'});
   const scale = move.from + (move.to - move.from) * t;
+  if (vertical) {
+    // A wide image in a tall frame: fill the height and drift sideways across it.
+    const fromX = index % 2 === 0 ? 38 : 62;
+    const pos = fromX + (100 - 2 * fromX) * t;
+    return (
+      <AbsoluteFill style={{opacity}}>
+        <Img
+          src={staticFile(scene.image)}
+          style={{...fill, objectPosition: `${pos}% 50%`, transform: `scale(${1 + 0.06 * t})`}}
+        />
+      </AbsoluteFill>
+    );
+  }
   return (
     <AbsoluteFill style={{opacity}}>
       <Img

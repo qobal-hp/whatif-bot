@@ -16,4 +16,6 @@ export type EpisodeProps = {
   audio: string;
   scenes: SceneProps[];
   words: WordProps[];
+  audioStart?: number;
+  title?: string;
 };

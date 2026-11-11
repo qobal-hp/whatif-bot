@@ -1,0 +1,62 @@
+name: Render shorts
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: Episode run whose generated assets are reused
+        required: true
+      spec:
+        description: Episode spec file
+        default: pipeline/ep01_full.json
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  shorts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: video/package-lock.json
+      - uses: actions/download-artifact@v4
+        with:
+          name: assets
+          path: video/public
+          run-id: ${{ inputs.run_id }}
+          github-token: ${{ github.token }}
+      - name: Render vertical shorts
+        working-directory: video
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+          python3 ../pipeline/make_shorts.py "../${{ inputs.spec }}" public/props.json public/shorts
+          npm ci --no-audit --no-fund
+          mkdir -p out/shorts
+          for f in public/shorts/*.json; do
+            id=$(basename "$f" .json)
+            npx remotion render src/index.ts Short "out/$id.raw.mp4" --props="$f" --log=warn --concurrency=100%
+            ffmpeg -v error -y -i "out/$id.raw.mp4" -c:v libx264 -preset medium -crf 20 -maxrate 8M -bufsize 16M \
+              -pix_fmt yuv420p -c:a aac -b:a 192k -movflags +faststart "out/shorts/$id.mp4"
+          done
+          ls -la out/shorts
+      - uses: actions/upload-artifact@v4
+        with:
+          name: shorts
+          path: video/out/shorts/
+      - name: Publish to the shorts-output branch
+        run: |
+          cp -r video/out/shorts /tmp/shorts
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan shorts-output
+          git rm -rf --cached . > /dev/null
+          rm -rf shorts && cp -r /tmp/shorts shorts
+          git add -f shorts
+          git commit -q -m "Shorts from run ${{ github.run_number }}"
+          git push -f origin shorts-output

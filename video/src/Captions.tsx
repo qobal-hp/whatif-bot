@@ -7,7 +7,7 @@ type Line = {words: WordProps[]; start: number; end: number};
 const MAX_WORDS = 5;
 const MAX_CHARS = 30;
 
-const buildLines = (words: WordProps[]): Line[] => {
+const buildLines = (words: WordProps[], maxWords: number, maxChars: number): Line[] => {
   const lines: Line[] = [];
   let current: WordProps[] = [];
   const flush = () => {
@@ -18,7 +18,7 @@ const buildLines = (words: WordProps[]): Line[] => {
   };
   for (const word of words) {
     const chars = current.reduce((n, w) => n + w.text.length + 1, 0) + word.text.length;
-    if (current.length >= MAX_WORDS || (current.length > 0 && chars > MAX_CHARS)) {
+    if (current.length >= maxWords || (current.length > 0 && chars > maxChars)) {
       flush();
     }
     current.push(word);
@@ -35,11 +35,14 @@ const buildLines = (words: WordProps[]): Line[] => {
   });
 };
 
-export const Captions: React.FC<{words: WordProps[]}> = ({words}) => {
+export const Captions: React.FC<{words: WordProps[]; vertical?: boolean}> = ({words, vertical}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const time = frame / fps;
-  const lines = useMemo(() => buildLines(words), [words]);
+  const lines = useMemo(
+    () => (vertical ? buildLines(words, 3, 18) : buildLines(words, MAX_WORDS, MAX_CHARS)),
+    [words, vertical],
+  );
   const line = lines.find((l) => time >= l.start - 0.05 && time < l.end);
   if (!line) {
     return null;
@@ -49,16 +52,16 @@ export const Captions: React.FC<{words: WordProps[]}> = ({words}) => {
     extrapolateRight: 'clamp',
   });
   return (
-    <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'center', paddingBottom: 96}}>
+    <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'center', paddingBottom: vertical ? 560 : 96}}>
       <div
         style={{
           fontFamily: 'Montserrat, Arial, sans-serif',
           fontWeight: 800,
-          fontSize: 66,
+          fontSize: vertical ? 84 : 66,
           lineHeight: 1.2,
           letterSpacing: 0.5,
           textAlign: 'center',
-          maxWidth: 1500,
+          maxWidth: vertical ? 960 : 1500,
           opacity: appear,
           transform: `translateY(${(1 - appear) * 14}px)`,
           textShadow: '0 4px 18px rgba(0,0,0,0.9), 0 0 4px rgba(0,0,0,0.9)',
