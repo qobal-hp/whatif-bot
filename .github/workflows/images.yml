@@ -1,0 +1,38 @@
+name: Make images
+
+on:
+  workflow_dispatch:
+    inputs:
+      list:
+        description: JSON list of images to generate
+        default: branding/logos.json
+
+permissions:
+  contents: write
+
+jobs:
+  images:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generate
+        env:
+          FAL_KEY: ${{ secrets.FAL_KEY }}
+        run: |
+          pip install --quiet fal-client
+          python pipeline/make_images.py "${{ inputs.list }}" /tmp/images
+          ls -la /tmp/images
+      - name: Publish to the image-output branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan image-output
+          git rm -rf --cached . > /dev/null
+          rm -rf images && cp -r /tmp/images images
+          git add -f images
+          git commit -q -m "Images from run ${{ github.run_number }}"
+          git push -f origin image-output

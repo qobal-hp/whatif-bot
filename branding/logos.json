@@ -1,0 +1,8 @@
+{
+  "style": "YouTube channel profile icon, square 1:1, designed to be readable at a tiny 48 pixel size, one single bold centered subject filling most of the frame, extremely simple composition, deep dark navy space background with a few faint stars, vivid saturated colors, strong glow, high contrast, crisp edges, no watermark, no border, no extra small details. ",
+  "images": [
+    {"id": "logo1", "prompt": "A huge thick glowing golden-yellow question mark in the center. The dot of the question mark is a small realistic planet Earth with glowing city lights. No text, no letters other than the question mark."},
+    {"id": "logo2", "prompt": "Bold heavy sans-serif italic text in two stacked lines filling the frame: top line 'WHAT' in pure white, bottom line 'IF?' in bright yellow, thick black outline. Behind the text, the curved glowing blue horizon of planet Earth at the bottom with a bright sunrise flare. Only the words 'WHAT IF?' and no other text."},
+    {"id": "logo3", "prompt": "Planet Earth seen from space, large and centered, half of it normal blue and half of it burning orange and cracked with glowing lava. A big bold glowing yellow question mark overlaid in the middle of the planet with a thick black outline. No text, no letters other than the question mark."}
+  ]
+}
