@@ -4,3 +4,4 @@ node_modules/
 video/out/
 video/public/assets/
 video/public/props.json
+karma/.tmp/
