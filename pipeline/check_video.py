@@ -1,15 +1,18 @@
 """Report where a video went and whether it can leave private (tries unlisted, then puts it back).
 
-usage: python pipeline/check_video.py <video id>
+usage: python pipeline/check_video.py [video id]
+Without a video id it only reports which channel the saved permission belongs to.
 """
 import sys
 
 from upload_youtube import service
 
 yt = service()
-vid = sys.argv[1]
+vid = sys.argv[1] if len(sys.argv) > 1 else ""
 ch = yt.channels().list(part="snippet", mine=True).execute()["items"]
 print("Token's channel(s):", [(c["id"], c["snippet"]["title"]) for c in ch])
+if not vid:
+    raise SystemExit(0)
 items = yt.videos().list(part="snippet,status", id=vid).execute()["items"]
 if not items:
     raise SystemExit("Video not found")

@@ -4,7 +4,8 @@ on:
   workflow_dispatch:
     inputs:
       video_id:
-        required: true
+        description: Leave empty to only show the connected channel
+        default: ""
 
 jobs:
   check:
