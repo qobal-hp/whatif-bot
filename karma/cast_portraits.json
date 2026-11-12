@@ -1,0 +1,12 @@
+{
+  "style": "Photorealistic still from a prestige American TV drama, shot on 35mm, shallow depth of field, soft cinematic key light, natural skin texture, head-and-shoulders portrait facing slightly off camera, neutral dark studio background, an entirely fictional person who resembles no real celebrity, no text, no watermark. ",
+  "images": [
+    {"id": "claire", "aspect": "3:4", "prompt": "Claire Bennett, a 29-year-old American woman, long dark-brown wavy hair worn down, hazel eyes, calm intelligent expression with the faintest knowing smile, ivory lace wedding gown with a high neckline, small gold earrings."},
+    {"id": "daniel", "aspect": "3:4", "prompt": "Daniel Whitmore, a 32-year-old American man, handsome, short dark hair neatly styled, clean-shaven, confident charming smile, black tuxedo with a white boutonniere."},
+    {"id": "vanessa", "aspect": "3:4", "prompt": "Vanessa Collins, a 29-year-old American woman, shoulder-length honey-blonde hair, blue eyes, sweet polite smile that does not reach her eyes, dusty-rose satin bridesmaid dress."},
+    {"id": "richard", "aspect": "3:4", "prompt": "Richard Whitmore, a 62-year-old American real estate magnate, thick silver hair swept back, cold pale eyes, stern arrogant expression, tailored navy suit with a burgundy tie."},
+    {"id": "evelyn", "aspect": "3:4", "prompt": "Evelyn Bennett, a 58-year-old American woman, elegant chin-length auburn hair with gray streaks, warm but steely expression, emerald green dress, pearl earrings."},
+    {"id": "marcus", "aspect": "3:4", "prompt": "Marcus Reed, a 55-year-old Black American attorney, close-cropped graying hair, thin wire-rimmed glasses, composed unreadable expression, charcoal three-piece suit."},
+    {"id": "harris", "aspect": "3:4", "prompt": "Detective Harris, a 45-year-old American police detective, short brown hair, tired steady eyes, tan trench coat over a white shirt and dark tie, a badge clipped to his belt just visible."}
+  ]
+}
