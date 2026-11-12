@@ -1,0 +1,25 @@
+{
+  "cast": {
+    "NARRATOR": "Brian",
+    "CLAIRE": "Sarah",
+    "DANIEL": "Will",
+    "VANESSA": "Laura",
+    "RICHARD": "Bill",
+    "MARCUS": "Eric",
+    "EVELYN": "Matilda",
+    "DETECTIVE": "Roger"
+  },
+  "alternates": {"NARRATOR": ["George"], "CLAIRE": ["Jessica"], "DANIEL": ["Liam"]},
+  "scene": [
+    ["NARRATOR", "Two hundred guests. Seventy-five thousand dollars in flowers, champagne, and crystal chandeliers. And one bride who had spent the last nineteen days planning the destruction of her own wedding."],
+    ["DANIEL", "Another surprise? Baby, you're making me look bad!"],
+    ["CLAIRE", "Oh, don't worry. You'll have everyone's attention in a minute."],
+    ["VANESSA", "That's fake! Claire, somebody is messing with you!"],
+    ["RICHARD", "Young lady, I strongly suggest you turn that projector off."],
+    ["CLAIRE", "Why? Is there something inaccurate?"],
+    ["MARCUS", "Mr. Whitmore. I recommend you release my client. Immediately."],
+    ["EVELYN", "Listen carefully. Do not confront him. Do not sign anything."],
+    ["DETECTIVE", "You're not under arrest at this moment, sir. But we have a court order for your records and your devices."],
+    ["CLAIRE", "You wanted a rich wife. Congratulations. You married one. For a few hours."]
+  ]
+}

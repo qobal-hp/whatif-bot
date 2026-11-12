@@ -1,0 +1,30 @@
+name: Karma cast audition
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  audition:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Render the cast
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+          python3 karma/cast_audition.py karma/cast_audition.json /tmp/cast
+      - name: Publish to the karma-cast branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan karma-cast
+          git rm -rf --cached . > /dev/null
+          rm -rf cast && cp -r /tmp/cast cast
+          git add -f cast
+          git commit -q -m "Cast audition from run ${{ github.run_number }}"
+          git push -f origin karma-cast
