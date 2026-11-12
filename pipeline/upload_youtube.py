@@ -1,0 +1,73 @@
+"""Upload an episode, its thumbnail and its shorts to YouTube.
+
+usage: python pipeline/upload_youtube.py <spec.json> <dir with episode.mp4, thumb.jpg, short*.mp4> <privacy>
+Needs YT_CLIENT_ID, YT_CLIENT_SECRET and YT_REFRESH_TOKEN in the environment.
+"""
+import json
+import os
+import sys
+from pathlib import Path
+
+from google.oauth2.credentials import Credentials
+from googleapiclient.discovery import build
+from googleapiclient.http import MediaFileUpload
+
+
+def service():
+    creds = Credentials(
+        token=None,
+        refresh_token=os.environ["YT_REFRESH_TOKEN"],
+        token_uri="https://oauth2.googleapis.com/token",
+        client_id=os.environ["YT_CLIENT_ID"],
+        client_secret=os.environ["YT_CLIENT_SECRET"],
+    )
+    return build("youtube", "v3", credentials=creds)
+
+
+def upload(yt, path, title, description, tags, privacy):
+    body = {
+        "snippet": {"title": title[:100], "description": description, "tags": tags, "categoryId": "28"},
+        "status": {
+            "privacyStatus": privacy,
+            "selfDeclaredMadeForKids": False,
+            "containsSyntheticMedia": True,
+        },
+    }
+    request = yt.videos().insert(
+        part="snippet,status",
+        body=body,
+        media_body=MediaFileUpload(str(path), chunksize=16 * 1024 * 1024, resumable=True),
+    )
+    response = None
+    while response is None:
+        _, response = request.next_chunk()
+    print(f"Uploaded {path.name}: https://youtu.be/{response['id']} ({privacy})")
+    return response["id"]
+
+
+def main():
+    spec = json.loads(Path(sys.argv[1]).read_text())
+    files = Path(sys.argv[2])
+    privacy = sys.argv[3]
+    meta = spec["youtube"]
+    yt = service()
+
+    episode = files / "episode.mp4"
+    if episode.exists():
+        video_id = upload(yt, episode, meta["title"], meta["description"], meta["tags"], privacy)
+        thumb = files / "thumb.jpg"
+        if thumb.exists():
+            try:
+                yt.thumbnails().set(videoId=video_id, media_body=MediaFileUpload(str(thumb))).execute()
+                print("Thumbnail set")
+            except Exception as err:  # the video is already up; a thumbnail can be added by hand
+                print(f"Thumbnail could not be set: {err}")
+
+    for short in spec.get("shorts", []):
+        path = files / f"{short['id']}.mp4"
+        if path.exists():
+            upload(yt, path, short["youtube_title"], meta["shorts_description"], meta["tags"], privacy)
+
+
+if __name__ == "__main__":
+    main()

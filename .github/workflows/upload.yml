@@ -1,0 +1,61 @@
+name: Upload to YouTube
+
+on:
+  workflow_dispatch:
+    inputs:
+      episode_run:
+        description: Run id of "Render episode" (leave empty to skip the long video)
+        default: ""
+      shorts_run:
+        description: Run id of "Render shorts" (leave empty to skip shorts)
+        default: ""
+      spec:
+        description: Episode spec file
+        default: pipeline/ep01_full.json
+      privacy:
+        description: private, unlisted or public
+        default: private
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/download-artifact@v4
+        if: inputs.episode_run != ''
+        with:
+          name: episode
+          path: /tmp/upload
+          run-id: ${{ inputs.episode_run }}
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        if: inputs.shorts_run != ''
+        with:
+          name: shorts
+          path: /tmp/upload
+          run-id: ${{ inputs.shorts_run }}
+          github-token: ${{ github.token }}
+      - name: Fetch the chosen thumbnail
+        run: |
+          mkdir -p /tmp/upload
+          choice=$(python3 -c "import json,sys; print(json.load(open(sys.argv[1])).get('thumbnail_choice',''))" "${{ inputs.spec }}")
+          if [ -n "$choice" ] && git fetch -q origin thumb-output; then
+            git show "FETCH_HEAD:thumbs/$choice.jpg" > /tmp/upload/thumb.jpg || rm -f /tmp/upload/thumb.jpg
+          fi
+          ls -la /tmp/upload
+      - name: Upload
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: |
+          pip install --quiet google-api-python-client google-auth
+          python pipeline/upload_youtube.py "${{ inputs.spec }}" /tmp/upload "${{ inputs.privacy }}"
