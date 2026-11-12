@@ -18,4 +18,5 @@ export type EpisodeProps = {
   words: WordProps[];
   audioStart?: number;
   title?: string;
+  music?: {src: string; start: number; end: number; volume: number}[];
 };

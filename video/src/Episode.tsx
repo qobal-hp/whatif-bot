@@ -1,5 +1,5 @@
 import React from 'react';
-import {AbsoluteFill, Audio, Sequence, staticFile, useVideoConfig} from 'remotion';
+import {AbsoluteFill, Audio, Sequence, interpolate, staticFile, useVideoConfig} from 'remotion';
 import '@fontsource/montserrat/800.css';
 import {Captions} from './Captions';
 import {Scene} from './Scene';
@@ -7,7 +7,7 @@ import type {EpisodeProps} from './types';
 
 const FADE_FRAMES = 14;
 
-export const Episode: React.FC<EpisodeProps> = ({audio, scenes, words, audioStart, title, durationSec}) => {
+export const Episode: React.FC<EpisodeProps> = ({audio, scenes, words, audioStart, title, durationSec, music}) => {
   const {fps, width, height} = useVideoConfig();
   const vertical = height > width;
   return (
@@ -58,6 +58,27 @@ export const Episode: React.FC<EpisodeProps> = ({audio, scenes, words, audioStar
         </AbsoluteFill>
       ) : null}
       <Captions words={words} vertical={vertical} />
+      {(music ?? []).map((cue, i) => {
+        // Each cue overlaps its neighbours by one second on both sides so the tracks crossfade.
+        const from = Math.max(0, Math.round((cue.start - 1) * fps));
+        const length = Math.max(1, Math.round((cue.end + 1) * fps) - from);
+        const fadeLen = Math.min(2 * fps, Math.floor(length / 2));
+        return (
+          <Sequence key={i} from={from} durationInFrames={length}>
+            <Audio
+              src={staticFile(cue.src)}
+              loop
+              volume={(f) =>
+                cue.volume *
+                interpolate(f, [0, fadeLen, length - fadeLen, length], [0, 1, 1, 0], {
+                  extrapolateLeft: 'clamp',
+                  extrapolateRight: 'clamp',
+                })
+              }
+            />
+          </Sequence>
+        );
+      })}
       {audio ? (
         <Audio
           src={staticFile(audio)}

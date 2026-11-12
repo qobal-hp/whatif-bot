@@ -24,6 +24,11 @@ def main():
             "audioStart": start,
             "title": short["title"],
             "scenes": [dict(s, start=s["start"] - start, end=s["end"] - start) for s in scenes],
+            "music": [
+                dict(m, start=max(m["start"], start) - start, end=min(m["end"], end) - start)
+                for m in props.get("music", [])
+                if m["end"] > start and m["start"] < end
+            ],
             "words": [
                 dict(w, start=w["start"] - start, end=w["end"] - start)
                 for w in props["words"]
