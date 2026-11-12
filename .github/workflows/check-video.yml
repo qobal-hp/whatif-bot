@@ -6,6 +6,9 @@ on:
       video_id:
         description: Leave empty to only show the connected channel
         default: ""
+      mode:
+        description: "read = only report; test = also try switching to unlisted and back"
+        default: read
 
 jobs:
   check:
@@ -22,4 +25,4 @@ jobs:
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
         run: |
           pip install --quiet google-api-python-client google-auth
-          cd pipeline && python check_video.py "${{ inputs.video_id }}"
+          cd pipeline && python check_video.py "${{ inputs.video_id }}" "${{ inputs.mode }}"

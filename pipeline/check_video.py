@@ -1,6 +1,7 @@
 """Report where a video went and whether it can leave private (tries unlisted, then puts it back).
 
-usage: python pipeline/check_video.py [video id]
+usage: python pipeline/check_video.py [video id] [read]
+With "read" it only reports and changes nothing.
 Without a video id it only reports which channel the saved permission belongs to.
 """
 import sys
@@ -19,6 +20,8 @@ if not items:
 v = items[0]
 print("Video channel:", v["snippet"]["channelTitle"], v["snippet"]["channelId"])
 print("Status:", v["status"])
+if len(sys.argv) > 2 and sys.argv[2] == "read":
+    raise SystemExit(0)
 try:
     body = {"id": vid, "status": {**v["status"], "privacyStatus": "unlisted"}}
     for k in ["uploadStatus", "failureReason", "rejectionReason", "publishAt"]:
