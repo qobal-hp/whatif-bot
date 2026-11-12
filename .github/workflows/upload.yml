@@ -18,6 +18,9 @@ on:
       only:
         description: Upload only these, comma separated (e.g. short1). Empty uploads everything.
         default: ""
+      schedule:
+        description: Publish times in UTC, e.g. short2=2026-11-13T17:00:00Z,short3=2026-11-14T17:00:00Z
+        default: ""
 
 permissions:
   contents: read
@@ -61,4 +64,4 @@ jobs:
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
         run: |
           pip install --quiet google-api-python-client google-auth
-          python pipeline/upload_youtube.py "${{ inputs.spec }}" /tmp/upload "${{ inputs.privacy }}" "${{ inputs.only }}"
+          python pipeline/upload_youtube.py "${{ inputs.spec }}" /tmp/upload "${{ inputs.privacy }}" "${{ inputs.only }}" "${{ inputs.schedule }}"
