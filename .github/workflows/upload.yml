@@ -15,6 +15,9 @@ on:
       privacy:
         description: private, unlisted or public
         default: private
+      only:
+        description: Upload only these, comma separated (e.g. short1). Empty uploads everything.
+        default: ""
 
 permissions:
   contents: read
@@ -58,4 +61,4 @@ jobs:
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
         run: |
           pip install --quiet google-api-python-client google-auth
-          python pipeline/upload_youtube.py "${{ inputs.spec }}" /tmp/upload "${{ inputs.privacy }}"
+          python pipeline/upload_youtube.py "${{ inputs.spec }}" /tmp/upload "${{ inputs.privacy }}" "${{ inputs.only }}"

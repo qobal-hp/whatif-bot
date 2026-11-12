@@ -1,6 +1,7 @@
 """Upload an episode, its thumbnail and its shorts to YouTube.
 
-usage: python pipeline/upload_youtube.py <spec.json> <dir with episode.mp4, thumb.jpg, short*.mp4> <privacy>
+usage: python pipeline/upload_youtube.py <spec.json> <dir with episode.mp4, thumb.jpg, short*.mp4> <privacy> [only]
+"only" is an optional comma-separated list of what to upload, e.g. "short1" or "episode,short1".
 Needs YT_CLIENT_ID, YT_CLIENT_SECRET and YT_REFRESH_TOKEN in the environment.
 """
 import json
@@ -49,11 +50,13 @@ def main():
     spec = json.loads(Path(sys.argv[1]).read_text())
     files = Path(sys.argv[2])
     privacy = sys.argv[3]
+    only = {o.strip() for o in sys.argv[4].split(",") if o.strip()} if len(sys.argv) > 4 else set()
+    wanted = lambda name: not only or name in only
     meta = spec["youtube"]
     yt = service()
 
     episode = files / "episode.mp4"
-    if episode.exists():
+    if episode.exists() and wanted("episode"):
         video_id = upload(yt, episode, meta["title"], meta["description"], meta["tags"], privacy)
         thumb = files / "thumb.jpg"
         if thumb.exists():
@@ -65,7 +68,7 @@ def main():
 
     for short in spec.get("shorts", []):
         path = files / f"{short['id']}.mp4"
-        if path.exists():
+        if path.exists() and wanted(short["id"]):
             upload(yt, path, short["youtube_title"], meta["shorts_description"], meta["tags"], privacy)
 
 
