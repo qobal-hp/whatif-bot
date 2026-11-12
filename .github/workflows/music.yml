@@ -1,0 +1,32 @@
+name: Make music
+
+on:
+  workflow_dispatch:
+    inputs:
+      list:
+        description: JSON list of tracks to generate
+        default: branding/music_samples.json
+
+permissions:
+  contents: write
+
+jobs:
+  music:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+        run: python3 pipeline/make_music.py "${{ inputs.list }}" /tmp/music
+      - name: Publish to the music-output branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan music-output
+          git rm -rf --cached . > /dev/null
+          rm -rf music && cp -r /tmp/music music
+          git add -f music
+          git commit -q -m "Music from run ${{ github.run_number }}"
+          git push -f origin music-output

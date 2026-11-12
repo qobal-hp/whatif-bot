@@ -1,0 +1,6 @@
+{
+  "tracks": [
+    {"id": "music_a_tension", "seconds": 30, "prompt": "Dark cinematic space documentary underscore. Slow evolving synth pads, deep sub bass drone, a soft ticking pulse that builds quiet tension, distant airy textures. Minimal, no melody that distracts, no drums, no vocals. Designed to sit quietly under a narrator's voice. 70 bpm, D minor."},
+    {"id": "music_b_wonder", "seconds": 30, "prompt": "Awe-filled ambient space documentary underscore. Warm slow strings and soft piano notes over a shimmering synth pad, sense of wonder and vastness, gentle and hopeful but mysterious. Minimal, no drums, no vocals. Designed to sit quietly under a narrator's voice. 60 bpm."}
+  ]
+}
