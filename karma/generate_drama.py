@@ -8,6 +8,7 @@ Writes video/public/assets/* and video/public/props.json for the Remotion "Episo
 import base64
 import hashlib
 import json
+import shutil
 import mimetypes
 import subprocess
 import sys
@@ -203,7 +204,7 @@ def picture(spec, scene, refs):
     who = scene.get("chars", [])
     place = spec.get("places", {}).get(scene.get("place", ""), "")
     prompt = spec["style"] + place + " " + " ".join(spec["looks"][c] + "." for c in who) + " " + scene["image"]
-    args = {"prompt": prompt, "aspect_ratio": "16:9", "resolution": spec.get("resolution", "2K"), "output_format": "jpeg"}
+    args = {"prompt": prompt, "aspect_ratio": spec.get("aspect", "16:9"), "resolution": spec.get("resolution", "2K"), "output_format": "jpeg"}
     model = TEXT_MODEL
     if who:
         model = EDIT_MODEL
@@ -277,6 +278,15 @@ def main():
     # while a voiced performance cannot be reused.
     todo = [s for s in spec["scenes"] if s["id"] in REDO or not (ASSETS / f"{s['id']}.jpg").exists()]
     needed = {c.split(":")[0] for s in todo for c in s.get("chars", [])}
+    for name in needed:
+        path = ROOT / spec["cast"][name]
+        if not path.exists() and spec.get("portraits", {}).get(name):
+            # A character without a portrait yet: draw one, and every scene uses it as the reference.
+            path.parent.mkdir(parents=True, exist_ok=True)
+            result = fal_client.subscribe(TEXT_MODEL, arguments={"prompt": spec["portraits"][name], "aspect_ratio": "3:4", "resolution": "1K", "output_format": "jpeg"})
+            download(result["images"][0]["url"], path)
+            shutil.copy(path, ASSETS / f"portrait_{name}.jpg")  # kept with the assets so it can be saved later
+            print(f"Portrait of {name} drawn")
     refs = {name: reference_url(ROOT / path) for name, path in spec["cast"].items() if name in needed}
     with ThreadPoolExecutor(6) as pool:
         list(pool.map(lambda s: picture(spec, s, refs), spec["scenes"]))
@@ -289,12 +299,21 @@ def main():
 
     scenes, overlays = [], []
     for scene, (start, end) in zip(spec["scenes"], times):
-        scenes.append({"id": scene["id"], "start": start, "end": end, "image": f"assets/{scene['id']}.jpg", "cut": bool(scene.get("cut"))})
+        scenes.append({"id": scene["id"], "start": start, "end": end, "image": f"assets/{scene['id']}.jpg", "cut": bool(scene.get("cut")), "tall": spec.get("aspect") == "9:16"})
         if scene.get("overlay"):
             overlays.append(dict(scene["overlay"], start=start + 0.6, end=end - 0.2))
+    tail = spec.get("tail", 0)
+    if tail:
+        # Hold the last picture (and any end card) for a moment after the last word.
+        total += tail
+        scenes[-1]["end"] = total
+        if overlays and spec["scenes"][-1].get("overlay"):
+            overlays[-1]["end"] = total
     spots, beds = sounds(spec, times, line_starts, total)
     print(f"Sounds: {len(spots)} effects, {len(beds)} room tones")
     props = {"fps": FPS, "durationSec": total, "audio": "assets/audio.mp3", "scenes": scenes, "words": words, "overlays": overlays, "sfx": spots, "ambience": beds}
+    if spec.get("title_band"):
+        props["title"] = spec["title_band"]
     (PUBLIC / "props.json").write_text(json.dumps(props))
     print(f"Wrote props: {len(scenes)} scenes, {len(overlays)} overlays")
 

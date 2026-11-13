@@ -1,0 +1,258 @@
+{
+ "title": "What If Humans Lived to 200? (Short)",
+ "title_band": "WHAT IF YOU LIVED|TO 200?",
+ "aspect": "9:16",
+ "resolution": "2K",
+ "tail": 3.0,
+ "voices": {
+  "NARRATOR": "George"
+ },
+ "cast": {
+  "maya": "shorts/cast/maya.jpg"
+ },
+ "portraits": {
+  "maya": "Photorealistic head-and-shoulders portrait of a woman about 40 years old, shoulder-length wavy dark-brown hair, hazel eyes, light olive skin, a small beauty mark on her left cheek, warm natural smile, plain soft grey background, soft window light, sharp focus, 85mm lens."
+ },
+ "looks": {
+  "maya": "Maya: shoulder-length wavy dark-brown hair, hazel eyes, light olive skin, a small beauty mark on her left cheek, same face as the reference portrait"
+ },
+ "style": "Cinematic photorealistic film still, vertical 9:16 composition with the subject centered, shallow depth of field, natural warm color grade, near-future setting, no text other than what is described. ",
+ "places": {},
+ "ambiences": {},
+ "ambience": [],
+ "music": [
+  [
+   "s01",
+   "wonder"
+  ],
+  [
+   "s12",
+   "tension"
+  ]
+ ],
+ "scenes": [
+  {
+   "id": "s01",
+   "chars": [
+    "maya"
+   ],
+   "image": "Extreme close-up of Maya at her 100th birthday party, she looks only about 40, glowing candlelight on her face, a cake with gold number candles 1-0-0 in the foreground, friends blurred behind.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[intrigued, leaning in] What if turning a hundred..."
+    ]
+   ],
+   "place": "",
+   "sfx": [
+    [
+     "Party poppers and a small crowd cheering at a birthday",
+     2.5,
+     0.35,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s02",
+   "chars": [
+    "maya"
+   ],
+   "image": "Maya laughing and blowing out the 1-0-0 candles, confetti in the air, warm party lights.",
+   "lines": [
+    [
+     "NARRATOR",
+     "meant you were only... halfway there?"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "s03",
+   "chars": [
+    "maya"
+   ],
+   "image": "Maya at about 25 years old in a graduation cap and gown, throwing her cap in the air on a sunny campus.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[upbeat] You'd finish school at twenty-five."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "s04",
+   "chars": [
+    "maya"
+   ],
+   "image": "Maya, now 80 but looking about 38, in a flight-school cockpit wearing a headset, starting a brand new career as a pilot, determined smile.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Switch careers at eighty."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "s05",
+   "chars": [
+    "maya"
+   ],
+   "image": "Maya, 120 but looking about 42, in an elegant wedding dress dancing with her new husband under string lights, joyful.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[warmly] Fall in love again... at one hundred and twenty."
+    ]
+   ],
+   "place": "",
+   "sfx": [
+    [
+     "Distant church wedding bells ringing",
+     2.5,
+     0.25,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s06",
+   "chars": [
+    "maya"
+   ],
+   "image": "Maya at a cluttered office desk late at night, a coworker hands her a cake labeled 'Happy 100 Years at the Company', she stares at it in disbelief.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[amused] But retire at sixty-five? Forget it."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "s07",
+   "chars": [
+    "maya"
+   ],
+   "image": "A packed futuristic subway car at rush hour, crowded with ageless-looking commuters in work clothes, Maya squeezed among them holding a coffee.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Try working for a hundred and thirty years."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "s08",
+   "chars": [],
+   "image": "A young couple in their late twenties standing on a sidewalk staring longingly at a charming suburban dream house with a 'NOT FOR SALE' sign in the yard.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[dryly] And that house you want?"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "s09",
+   "chars": [],
+   "image": "On the porch of the same charming house, a cheerful couple who look about 60 but are 170 years old, waving and holding iced tea.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Your great-grandparents still live in it."
+    ]
+   ],
+   "place": "",
+   "sfx": [
+    [
+     "A short burst of a small audience laughing",
+     1.5,
+     0.25,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s10",
+   "chars": [
+    "maya"
+   ],
+   "image": "A huge family dinner table in a warm dining room, five generations who all look between 5 and 60 years old, Maya at the head of the table, now looking about 60 with silver streaks in her hair.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[warm] Five generations... at one dinner table."
+    ]
+   ],
+   "place": "",
+   "sfx": [
+    [
+     "Clinking glasses and cheerful family chatter at a dinner table",
+     3.0,
+     0.25,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s11",
+   "chars": [
+    "maya"
+   ],
+   "image": "Maya, looking about 60 with silver streaks, wagging a finger at a sheepish 30-year-old man across the dinner table while everyone laughs.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[laughing] Your great-great-grandma... still telling you what to do."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "s12",
+   "chars": [
+    "maya"
+   ],
+   "image": "Maya, now 200 but looking about 65 with silver hair, alone by a dark window at night, city lights reflected, thoughtful and quiet.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[softer, thoughtful] So here's the real question."
+    ]
+   ],
+   "place": "",
+   "cut": true
+  },
+  {
+   "id": "s13",
+   "chars": [
+    "maya"
+   ],
+   "image": "Maya, silver-haired, sitting alone at a small kitchen table in a dim room in front of a cake with candles shaped 2-0-0, a single warm light, empty chairs around her.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[quiet, sincere] Would you actually *want* to live to two hundred?"
+    ]
+   ],
+   "place": "",
+   "overlay": {
+    "type": "text",
+    "text": "Blessing|or curse?"
+   },
+   "sfx": [
+    [
+     "A soft low cinematic drone swelling then fading",
+     4.0,
+     0.3,
+     "start"
+    ]
+   ]
+  }
+ ]
+}

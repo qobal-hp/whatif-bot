@@ -12,6 +12,12 @@ on:
       redo_images:
         description: Scene ids to regenerate anyway, comma separated
         default: ""
+      composition:
+        description: Episode (16:9) or Short (9:16)
+        default: Episode
+      output_branch:
+        description: Branch the result is pushed to
+        default: karma-output
       render_only:
         description: Only render the assets of assets_run again (no new voices, pictures or music)
         type: boolean
@@ -106,7 +112,7 @@ jobs:
           total=${{ needs.assets.outputs.frames }}; size=$(( (total + PARTS - 1) / PARTS ))
           a=$(( ${{ matrix.part }} * size )); b=$(( a + size - 1 )); [ $b -ge $total ] && b=$(( total - 1 ))
           mkdir -p out
-          npx remotion render src/index.ts Episode out/raw.mp4 --props=public/props.json --frames=$a-$b --muted --log=warn --concurrency=100%
+          npx remotion render src/index.ts ${{ inputs.composition }} out/raw.mp4 --props=public/props.json --frames=$a-$b --muted --log=warn --concurrency=100%
           ffmpeg -v error -y -i out/raw.mp4 -c:v libx264 -preset medium -crf 21 -maxrate 6M -bufsize 12M -pix_fmt yuv420p -an out/part${{ matrix.part }}.mp4
       - uses: actions/upload-artifact@v4
         with:
@@ -133,7 +139,7 @@ jobs:
         run: |
           npm ci --no-audit --no-fund
           mkdir -p out
-          npx remotion render src/index.ts Episode out/sound.wav --codec=wav --props=public/props.json --log=warn
+          npx remotion render src/index.ts ${{ inputs.composition }} out/sound.wav --codec=wav --props=public/props.json --log=warn
       - uses: actions/upload-artifact@v4
         with:
           name: sound
@@ -164,21 +170,22 @@ jobs:
           mkdir -p video/out
           for i in $(seq 0 $((PARTS - 1))); do echo "file '/tmp/parts/part$i.mp4'"; done > /tmp/parts/list.txt
           ffmpeg -v error -y -f concat -safe 0 -i /tmp/parts/list.txt -i /tmp/parts/sound.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -shortest -movflags +faststart video/out/episode.mp4
-          ffmpeg -v error -y -i video/out/episode.mp4 -vf scale=854:480 -c:v libx264 -preset veryfast -crf 27 -maxrate 900k -bufsize 1800k -c:a aac -b:a 128k -movflags +faststart video/out/preview.mp4
+          size=854:480; [ "${{ inputs.composition }}" = Short ] && size=480:854
+          ffmpeg -v error -y -i video/out/episode.mp4 -vf scale=$size -c:v libx264 -preset veryfast -crf 27 -maxrate 900k -bufsize 1800k -c:a aac -b:a 128k -movflags +faststart video/out/preview.mp4
           ls -la video/out
       - uses: actions/upload-artifact@v4
         with:
           name: episode
           path: video/out/episode.mp4
-      - name: Publish to the karma-output branch
+      - name: Publish to the output branch
         run: |
           mkdir -p /tmp/result && cp video/out/preview.mp4 video/public/props.json /tmp/result/
           size=$(stat -c %s video/out/episode.mp4); [ "$size" -lt 95000000 ] && cp video/out/episode.mp4 /tmp/result/
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout --orphan karma-output
+          git checkout --orphan "${{ inputs.output_branch }}"
           git rm -rf --cached . > /dev/null
           rm -rf result && cp -r /tmp/result result
           git add -f result
           git commit -q -m "Karma episode from run ${{ github.run_number }}"
-          git push -f origin karma-output
+          git push -f origin "${{ inputs.output_branch }}"

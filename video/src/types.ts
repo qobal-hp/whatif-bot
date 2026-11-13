@@ -6,12 +6,13 @@ export type SceneProps = {
   cut: 'fade' | 'hard';
   video?: string;
   videoSeconds?: number;
+  tall?: boolean;
 };
 
 export type WordProps = {text: string; start: number; end: number};
 
 export type OverlayProps = {
-  type: 'message' | 'transfer' | 'letter';
+  type: 'message' | 'transfer' | 'letter' | 'text';
   start: number;
   end: number;
   from?: string;

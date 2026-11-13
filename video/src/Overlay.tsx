@@ -54,6 +54,15 @@ const Letter: React.FC<{o: OverlayProps}> = ({o}) => (
   </div>
 );
 
+// A closing question in big type, for the end of a short.
+const Text: React.FC<{o: OverlayProps}> = ({o}) => (
+  <div style={{width: 940, textAlign: 'center', color: '#fff', fontSize: 104, fontWeight: 900, lineHeight: 1.1, textTransform: 'uppercase', textShadow: '0 8px 40px rgba(0,0,0,0.9)'}}>
+    {(o.text ?? '').split('|').map((line, i) => (
+      <div key={i} style={{color: i === 0 ? '#fff' : '#ffd400'}}>{line}</div>
+    ))}
+  </div>
+);
+
 export const Overlays: React.FC<{overlays: OverlayProps[]}> = ({overlays}) => {
   const {fps} = useVideoConfig();
   return (
@@ -63,7 +72,7 @@ export const Overlays: React.FC<{overlays: OverlayProps[]}> = ({overlays}) => {
         const length = Math.max(1, Math.round((o.end - o.start) * fps));
         return (
           <Sequence key={i} from={from} durationInFrames={length}>
-            <Card length={length} side={o.side}>{o.type === 'transfer' ? <Transfer o={o} /> : o.type === 'letter' ? <Letter o={o} /> : <Message o={o} />}</Card>
+            <Card length={length} side={o.side}>{o.type === 'transfer' ? <Transfer o={o} /> : o.type === 'letter' ? <Letter o={o} /> : o.type === 'text' ? <Text o={o} /> : <Message o={o} />}</Card>
           </Sequence>
         );
       })}

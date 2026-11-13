@@ -34,7 +34,7 @@ export const Scene: React.FC<Props> = ({scene, index, fadeFrames, totalFrames, v
   const move = MOVES[index % MOVES.length];
   const t = interpolate(frame, [0, totalFrames], [0, 1], {extrapolateRight: 'clamp'});
   const scale = move.from + (move.to - move.from) * t;
-  if (vertical) {
+  if (vertical && !scene.tall) {
     // A wide image in a tall frame: fill the height and drift sideways across it.
     const fromX = index % 2 === 0 ? 38 : 62;
     const pos = fromX + (100 - 2 * fromX) * t;
