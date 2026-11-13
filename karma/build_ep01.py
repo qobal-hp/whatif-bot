@@ -98,7 +98,7 @@ S("hall", ["daniel:home"], "Daniel stepping out of the bedroom doorway into the 
 S("elevator", ["claire:work"], "Claire slumped against the mirrored elevator wall, knees buckling, one hand over her mouth, suitcase beside her.",
   [f"{N}: Claire slipped outside. She made it to the elevator before her knees gave way."],
   sfx=[["Elevator doors sliding shut with a soft chime", 2.5, 0.4, "end"]])
-S("elevator", ["claire:work"], "Claire's reflection in the elevator mirror, tears on her face, her jaw setting with resolve.",
+S("elevator", ["claire:work"], "Close-up of Claire alone in the elevator, tears on her face, her jaw setting with resolve. Exactly one person in the frame, no mirror reflections, no second figure.",
   [f"{N}: She wanted to scream. She wanted to call Vanessa and demand an explanation. She wanted to cancel the wedding. But then she remembered something her grandfather used to say.",
    f"{N}: [slowly, gravely] \"When someone shows you they're a thief, don't tell them you know. Find out what they're stealing.\""])
 S("taxi", ["claire:work"], "Claire in the back seat, rain on the window, phone to her ear, city lights streaking past.",
@@ -255,7 +255,7 @@ S(B, ["claire", "evelyn"], "Claire raising a champagne flute, Evelyn stepping up
 
 # ---------------- EPILOGUE ----------------
 K = "brooklyn"
-S("city", [], "The Manhattan skyline on a bright clear morning, seen from across the river in Brooklyn.",
+S("city", [], "The Manhattan skyline on a bright clear morning, seen from across the river in Brooklyn. Empty waterfront, no people anywhere in the frame.",
   [f"{N}: Six months later, the Whitmore name no longer opened quite so many doors. The investigation into the forged documents was still going. Richard's company had lost its biggest partners. Daniel's marriage had been annulled. And Vanessa had moved away from Manhattan."], cut=True)
 S(K, ["claire:brooklyn"], "Claire standing in the middle of the bright loft space, looking around with quiet pride.",
   [f"{N}: Claire? Claire had never been better. She was standing inside a newly renovated building in Brooklyn. A building her grandfather had left her. The same building Richard Whitmore had tried to take fifteen years earlier. Now it was home to a foundation for women rebuilding their lives after financial abuse."])

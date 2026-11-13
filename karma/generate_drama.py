@@ -281,6 +281,8 @@ def main():
     with ThreadPoolExecutor(6) as pool:
         list(pool.map(lambda s: picture(spec, s, refs), spec["scenes"]))
     print("Images done")
+    if os.environ.get("IMAGES_ONLY"):
+        return
 
     words, times, total, line_starts = record(spec, tmp)
     print(f"Dialogue done: {total:.1f}s, {len(words)} words")
