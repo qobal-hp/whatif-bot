@@ -16,7 +16,7 @@ out = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-skip
                       "frame=pts_time", "-of", "csv=p=0", old], capture_output=True, text=True, check=True).stdout
 keys = sorted({round(float(t) * fps) for t in out.replace(",", " ").split() if t.strip()})
 total = int(subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-count_packets", "-show_entries",
-                            "stream=nb_read_packets", "-of", "csv=p=0", old], capture_output=True, text=True, check=True).stdout.strip())
+                            "stream=nb_read_packets", "-of", "csv=p=0", old], capture_output=True, text=True, check=True).stdout.strip().strip(","))
 
 spans = []
 for line in Path(ranges).read_text().split("\n"):
