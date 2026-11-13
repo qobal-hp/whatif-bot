@@ -1,0 +1,876 @@
+{
+ "title": "What If Humans Lived to 200 Years Old?",
+ "aspect": "16:9",
+ "resolution": "2K",
+ "tail": 2.0,
+ "voices": {
+  "NARRATOR": "George",
+  "MAYA": "Matilda"
+ },
+ "cast": {
+  "maya": "video/public/assets/portrait_maya.jpg"
+ },
+ "looks": {
+  "maya": "Maya: shoulder-length wavy dark-brown hair, hazel eyes, light olive skin, a small beauty mark on her left cheek, same face as the reference portrait"
+ },
+ "style": "Cinematic photorealistic film still, 16:9 widescreen, shallow depth of field, natural warm color grade, near-future setting, no text other than what is described. ",
+ "places": {},
+ "ambiences": {},
+ "ambience": [],
+ "music": [
+  [
+   "L001",
+   "tension"
+  ],
+  [
+   "L007",
+   "wonder"
+  ],
+  [
+   "L022",
+   "wonder"
+  ],
+  [
+   "L028",
+   "tension"
+  ],
+  [
+   "L035",
+   "wonder"
+  ],
+  [
+   "L041",
+   "tension"
+  ],
+  [
+   "L050",
+   "wonder"
+  ]
+ ],
+ "scenes": [
+  {
+   "id": "L001",
+   "chars": [
+    "maya"
+   ],
+   "image": "Maya, looking about 45, blowing out candles on a cake with gold number candles 1-6-0 at a lively family party, close-up, joyful.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[intrigued] This is Maya. Today is her one hundred and sixtieth birthday."
+    ]
+   ],
+   "place": "",
+   "sfx": [
+    [
+     "Party poppers and a family crowd cheering at a birthday",
+     2.5,
+     0.3,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "L002",
+   "chars": [
+    "maya"
+   ],
+   "image": "Close-up of Maya's face, looking about 45, laughing, laugh lines but no deep wrinkles, warm party lights.",
+   "lines": [
+    [
+     "NARRATOR",
+     "She looks forty-five. She runs three miles every morning. And she just signed up for medical school."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L003",
+   "chars": [
+    "maya"
+   ],
+   "image": "A college dorm move-in day, a smiling 18-year-old girl carrying boxes, Maya beside her carrying a lamp, both laughing.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Her great-great-great-granddaughter started college last week. They're in the same chemistry class."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L004",
+   "chars": [
+    "maya"
+   ],
+   "image": "Maya at a kitchen table at night looking at a retirement statement on a tablet, eyebrows raised in disbelief.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[dryly] Her retirement? Seventy years away."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L005",
+   "chars": [],
+   "image": "A dramatic wide shot of a futuristic city skyline at golden hour, flying drones and green towers, title-card mood.",
+   "lines": [
+    [
+     "NARRATOR",
+     "What if every human lived to two hundred? Not as frail old people. But aging so slowly that a hundred is just middle age."
+    ]
+   ],
+   "place": "",
+   "cut": true
+  },
+  {
+   "id": "L006",
+   "chars": [],
+   "image": "A fast montage-style composition: a wedding, a paycheck, a crowded city, a family dinner, arranged as four tiles.",
+   "lines": [
+    [
+     "NARRATOR",
+     "In the next ten minutes, we'll see what it does to your body, your money, your love life... and why the scariest part isn't what you think."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L007",
+   "chars": [],
+   "image": "A Greenland shark gliding through dark icy Arctic water, ghostly and ancient.",
+   "lines": [
+    [
+     "NARRATOR",
+     "First, is this even possible? Nature says... maybe. This is a Greenland shark. Scientists estimate some of them have lived for around four hundred years."
+    ]
+   ],
+   "place": "",
+   "cut": true
+  },
+  {
+   "id": "L008",
+   "chars": [],
+   "image": "A bowhead whale surfacing in Arctic sea ice under a pale sky.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Bowhead whales can pass two hundred. One was found with a harpoon tip in its blubber that was made in the eighteen hundreds."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L009",
+   "chars": [],
+   "image": "A laboratory with mice in clean cages and a scientist in a white coat looking at a vial.",
+   "lines": [
+    [
+     "NARRATOR",
+     "And in the lab, some drugs have already made mice live noticeably longer, even when they started late in life."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L010",
+   "chars": [],
+   "image": "An old black-and-white style portrait of an elegant elderly French woman with a gentle smile.",
+   "lines": [
+    [
+     "NARRATOR",
+     "The oldest human ever confirmed, Jeanne Calment, reached one hundred and twenty-two. So for us, two hundred would mean breaking the clock itself."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L011",
+   "chars": [],
+   "image": "A naked mole rat in a sandy underground tunnel, lit like a nature documentary.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Then there's this little guy. The naked mole rat. A rodent the size of a mouse... that can live more than thirty years. Ten times longer than a mouse should."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L012",
+   "chars": [],
+   "image": "A dramatic microscope view of a human cell with tiny glowing cracks and frayed DNA strands.",
+   "lines": [
+    [
+     "NARRATOR",
+     "So what is aging, really? Mostly, it's damage piling up. Broken DNA. Worn-out cells that refuse to die. Proteins that get stiff and sticky. Year after year, the repairs fall behind."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L013",
+   "chars": [],
+   "image": "A glowing scientific visualization of a human cell with a slowly turning clock inside it.",
+   "lines": [
+    [
+     "NARRATOR",
+     "So let's imagine it happens. A treatment slows aging down to half speed. Your body ages one year for every two you live."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L014",
+   "chars": [
+    "maya"
+   ],
+   "image": "Maya at about 20 at a university library, books everywhere, bright and curious.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Childhood stays the same. You still grow up by twenty. But after that... the clock slows."
+    ]
+   ],
+   "place": "",
+   "cut": true
+  },
+  {
+   "id": "L015",
+   "chars": [
+    "maya"
+   ],
+   "image": "Maya at 50 looking about 35, in a sleek office giving a confident presentation.",
+   "lines": [
+    [
+     "NARRATOR",
+     "At fifty, you look thirty-five. At a hundred, you look like today's fifty-year-olds."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L016",
+   "chars": [
+    "maya"
+   ],
+   "image": "Maya, looking about 40, in a chef's kitchen in a white chef's coat, plating food with intense focus.",
+   "lines": [
+    [
+     "MAYA",
+     "[laughing] I was an architect for forty years. Then a chef. Now I'm thinking about medicine."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L017",
+   "chars": [],
+   "image": "A busy career fair hall where people of visibly mixed apparent ages browse booths together.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Careers would change completely. Nobody stays in one job for a hundred and thirty years. You'd have three, four, maybe five careers."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L018",
+   "chars": [],
+   "image": "A university lecture hall where a student who looks 40 sits next to students who look 19, all taking notes.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Going back to school at ninety would be totally normal. Your classmates could be eighteen... or a hundred and eighteen."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L019",
+   "chars": [],
+   "image": "A quiet, half-empty hospital cardiology ward with bright windows and a nurse walking past empty beds.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Your health would change too. Cancer, heart disease, dementia... the big killers today are mostly diseases of aging. Slow the aging, and they get pushed back by decades."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L020",
+   "chars": [],
+   "image": "A professional football stadium at night, a veteran quarterback who looks 35 but has gray at the temples throwing a pass.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Sports would get strange. An athlete could stay at their peak for forty years. Imagine the same quarterback winning Super Bowls with three different generations of teammates."
+    ]
+   ],
+   "place": "",
+   "sfx": [
+    [
+     "A huge stadium crowd roaring",
+     2.5,
+     0.25,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "L021",
+   "chars": [],
+   "image": "A rider in full gear looking hesitantly at a motorcycle in a garage, then at a 'Life Expectancy 200' poster on the wall.",
+   "lines": [
+    [
+     "NARRATOR",
+     "And here's a twist. If old age stops killing you, accidents become the main danger. Would you still ride a motorcycle... if you had a hundred and fifty years left to lose?"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L022",
+   "chars": [
+    "maya"
+   ],
+   "image": "Maya, looking about 42, in an elegant wedding dress dancing with her new husband under string lights.",
+   "lines": [
+    [
+     "NARRATOR",
+     "And love? This is where it gets weird. 'Till death do us part'... could mean a hundred and seventy years."
+    ]
+   ],
+   "place": "",
+   "cut": true,
+   "sfx": [
+    [
+     "Distant church wedding bells ringing",
+     2.5,
+     0.25,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "L023",
+   "chars": [],
+   "image": "A sleek modern office with a lawyer handing a couple a contract labeled 'Marriage - 50 Year Term'.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Some people think marriage might start to look like a contract. Fifty years, with an option to renew."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L024",
+   "chars": [
+    "maya"
+   ],
+   "image": "Maya, looking about 42, on a first date at a cozy wine bar, smiling a little nervously.",
+   "lines": [
+    [
+     "MAYA",
+     "[amused] My first date in sixty years. I didn't know what an app was."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L025",
+   "chars": [
+    "maya"
+   ],
+   "image": "A huge Thanksgiving table in a warm dining room with seven generations who all look between 5 and 65, Maya at the head looking about 65 with silver streaks.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Now think about family. If everyone had kids around thirty, Maya at two hundred could share Thanksgiving with seven generations."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L026",
+   "chars": [
+    "maya"
+   ],
+   "image": "Maya, silver-streaked, wagging a finger at a sheepish 30-year-old man across the Thanksgiving table while everyone laughs.",
+   "lines": [
+    [
+     "MAYA",
+     "[teasing] You're a hundred and ten. Sit up straight."
+    ]
+   ],
+   "place": "",
+   "sfx": [
+    [
+     "Clinking glasses and cheerful family chatter at a dinner table",
+     3.0,
+     0.25,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "L027",
+   "chars": [],
+   "image": "A lawyer's office where a man who looks 60 and is 170 waits impatiently, checking his watch, with a will document on the desk.",
+   "lines": [
+    [
+     "NARRATOR",
+     "And inheritance? Your parents might live to two hundred. You could be a hundred and seventy before you inherit a thing."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L028",
+   "chars": [],
+   "image": "A retirement party banner reading 'HAPPY RETIREMENT' crossed out with red tape, office workers staring at it.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[serious] Now, the money. Today, full retirement age in the US is sixty-seven. In a two-hundred-year world, retiring at sixty-seven means a hundred and thirty years without a paycheck."
+    ]
+   ],
+   "place": "",
+   "cut": true
+  },
+  {
+   "id": "L029",
+   "chars": [],
+   "image": "A government building with a pension office, long lines of ageless-looking people out the door.",
+   "lines": [
+    [
+     "NARRATOR",
+     "No pension system on Earth could pay for that. So almost everyone would keep working... for a very, very long time."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L030",
+   "chars": [],
+   "image": "A golden glowing coin stack growing into a tower over a timeline from 1 to 150 years.",
+   "lines": [
+    [
+     "NARRATOR",
+     "But here's the upside. Time is the secret ingredient of compound interest. Ten thousand dollars growing at seven percent a year..."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L031",
+   "chars": [],
+   "image": "A shocked young man looking at a phone screen with a giant number, mouth open.",
+   "lines": [
+    [
+     "NARRATOR",
+     "After forty years, about a hundred and fifty thousand. After a hundred and fifty years? Over two hundred and fifty million dollars. Before inflation, of course."
+    ]
+   ],
+   "place": "",
+   "sfx": [
+    [
+     "A cash register ding",
+     1.0,
+     0.35,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "L032",
+   "chars": [],
+   "image": "A cozy family-owned bookshop with a sign 'Since 1990' and the same smiling owner behind the counter, looking about 60.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Patient people could become extremely rich. Families could hold wealth for centuries without ever passing it down."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L033",
+   "chars": [],
+   "image": "A young graduate in a cap and gown holding a diploma, looking at a giant scroll of bills unrolling at her feet.",
+   "lines": [
+    [
+     "NARRATOR",
+     "On the other hand... a thirty-year mortgage? A forty-year student loan? Those suddenly sound short. Banks might offer hundred-year loans."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L034",
+   "chars": [],
+   "image": "A smiling elderly-looking man who looks about 60 handing his 140th birthday cake slice to coworkers in a busy modern office.",
+   "lines": [
+    [
+     "NARRATOR",
+     "And your coworkers? The guy at the next desk might have a hundred years more experience than you. Good luck getting that promotion."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L035",
+   "chars": [],
+   "image": "A young couple in their late twenties on a sidewalk staring longingly at a charming suburban house with a 'NOT FOR SALE' sign.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[dryly] And that house you want? Your great-grandparents still live in it."
+    ]
+   ],
+   "place": "",
+   "cut": true,
+   "sfx": [
+    [
+     "A short burst of a small audience laughing",
+     1.5,
+     0.25,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "L036",
+   "chars": [],
+   "image": "On the porch of the same house, a cheerful couple who look about 60 but are 170, waving and holding iced tea.",
+   "lines": [
+    [
+     "NARRATOR",
+     "If people stopped dying young, homes would almost never come up for sale. Prices could go through the roof."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L037",
+   "chars": [],
+   "image": "An extremely crowded futuristic megacity street at rush hour, layered sky bridges, neon and greenery.",
+   "lines": [
+    [
+     "NARRATOR",
+     "And the population would keep growing for a long time. Unless... people had far fewer kids. Which is exactly what many experts think would happen."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L038",
+   "chars": [
+    "maya"
+   ],
+   "image": "A packed futuristic subway car at rush hour, ageless commuters in work clothes, Maya squeezed among them holding a coffee.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Fewer babies. Older cities. A world where kids are rare, and a playground is something you have to look for."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L039",
+   "chars": [],
+   "image": "Vast vertical farms with glowing LED racks of vegetables inside a skyscraper, workers in white suits.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Feeding everyone would get harder too. More people, living longer, all needing food, water, and energy. Vertical farms and lab-grown meat would stop being a novelty. They'd be survival."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L040",
+   "chars": [],
+   "image": "A lone small-town street with closed shops and a 'School Closed' sign, autumn leaves blowing.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Meanwhile, some small towns could empty out. Schools close because there aren't enough kids, while retirement homes fill up with people who look forty."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L041",
+   "chars": [],
+   "image": "The exterior of the US Supreme Court building on a grey day, dramatic low angle.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[ominous] Now here's something most people never think about. Power."
+    ]
+   ],
+   "place": "",
+   "cut": true
+  },
+  {
+   "id": "L042",
+   "chars": [],
+   "image": "Nine judges' empty high-backed chairs behind a long wooden bench in a grand courtroom.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Supreme Court justices serve for life. In a two-hundred-year world, one justice could sit on that bench for a hundred and fifty years."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L043",
+   "chars": [],
+   "image": "A boardroom where a powerful CEO who looks 60 sits at the head of a long table, a framed photo behind him dated 1985.",
+   "lines": [
+    [
+     "NARRATOR",
+     "The same billionaire running the same company for a century. The same politicians, the same ideas, never making room."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L044",
+   "chars": [],
+   "image": "A frustrated young employee looking up at a towering corporate ladder full of people who never move.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Some scientists joke that progress happens one funeral at a time. What happens when the funerals... stop?"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L045",
+   "chars": [],
+   "image": "A sleek luxury clinic lobby with marble floors and a price board showing an enormous number, a wealthy couple at reception.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[serious] And that raises the most uncomfortable question of all. Who gets the treatment first?"
+    ]
+   ],
+   "place": "",
+   "cut": true
+  },
+  {
+   "id": "L046",
+   "chars": [],
+   "image": "A long line of ordinary people in the rain outside a clinic gate, looking at a glowing luxury clinic across the street.",
+   "lines": [
+    [
+     "NARRATOR",
+     "New medicine usually starts out expensive. If only the rich could afford two hundred years, the gap between rich and poor wouldn't just be money anymore. It would be time."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L047",
+   "chars": [],
+   "image": "Two old friends at a caf\u00e9 table: one looks 45, the other looks genuinely elderly with deep wrinkles, holding hands across the table.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Imagine two friends, born the same year. One takes the treatment. One can't. At ninety, one of them looks forty-five... and the other is saying goodbye."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L048",
+   "chars": [],
+   "image": "A massive peaceful protest crowd in a city square holding blank glowing signs at dusk.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Countries would fight over it. People would protest for it. Some would refuse it, for religious or personal reasons. The world could split in two: the long-lived... and everyone else."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L049",
+   "chars": [
+    "maya"
+   ],
+   "image": "Maya, looking about 45, standing in a crowd at a polling station holding a ballot, thoughtful.",
+   "lines": [
+    [
+     "MAYA",
+     "[thoughtful] When I got it, it cost more than a house. Now it's cheaper than a phone. But those first fifty years... they were ugly."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L050",
+   "chars": [
+    "maya"
+   ],
+   "image": "Maya, looking about 60 with silver streaks, sitting by a window holding an old photo album, nostalgic.",
+   "lines": [
+    [
+     "NARRATOR",
+     "And then there's your mind. Your body might stay young. But would your memory keep up?"
+    ]
+   ],
+   "place": "",
+   "cut": true
+  },
+  {
+   "id": "L051",
+   "chars": [
+    "maya"
+   ],
+   "image": "Maya flipping through an old photo album showing a younger Maya with friends who look different, faded photos.",
+   "lines": [
+    [
+     "MAYA",
+     "[quietly] I've had friends I can't picture anymore. Whole decades that feel like someone else's life."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L052",
+   "chars": [
+    "maya"
+   ],
+   "image": "A golden retriever puppy curled up on Maya's lap in a sunlit living room, Maya gently smiling.",
+   "lines": [
+    [
+     "NARRATOR",
+     "And you'd still say goodbye to the things that don't live as long. Dogs. Cats. Some friends who chose not to take the treatment."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L053",
+   "chars": [
+    "maya"
+   ],
+   "image": "Maya on a couch surrounded by towers of books, vinyl records and a giant TV showing a streaming menu, looking slightly bored.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Then there's boredom. In two hundred years, you could read ten thousand books. Watch every great movie ever made. Visit every country... twice. And then what?"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L054",
+   "chars": [],
+   "image": "A wise-looking woman who looks 50 teaching a pottery class to young students in a sunlit studio.",
+   "lines": [
+    [
+     "NARRATOR",
+     "But maybe we'd also become wiser. Imagine learning from your mistakes for a hundred and fifty years. Imagine a teacher who has actually lived through two centuries of history."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L055",
+   "chars": [],
+   "image": "A split image: one side people celebrating in sunshine, the other side a lone person staring at the ocean at dusk.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Some people would love every minute. Others would find two hundred years... exhausting."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L056",
+   "chars": [
+    "maya"
+   ],
+   "image": "Maya, now 200 but looking about 65 with silver hair, alone by a dark window at night, city lights reflected.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[softer, thoughtful] Which brings us back to Maya."
+    ]
+   ],
+   "place": "",
+   "cut": true
+  },
+  {
+   "id": "L057",
+   "chars": [
+    "maya"
+   ],
+   "image": "Maya, silver-haired, at a small kitchen table in a dim room in front of a cake with candles shaped 2-0-0, empty chairs around her.",
+   "lines": [
+    [
+     "NARRATOR",
+     "It's her two hundredth birthday. Seven generations will come over tomorrow. But tonight, she's alone with a question."
+    ]
+   ],
+   "place": "",
+   "sfx": [
+    [
+     "A soft low cinematic drone swelling then fading",
+     4.0,
+     0.3,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "L058",
+   "chars": [
+    "maya"
+   ],
+   "image": "Close-up of Maya's face lit by candlelight, silver hair, a small sincere smile, eyes glistening.",
+   "lines": [
+    [
+     "MAYA",
+     "[sincere, gentle] If you could have another hundred years... what would you do with them?"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L059",
+   "chars": [
+    "maya"
+   ],
+   "image": "Maya blows out the 2-0-0 candles, smoke curling upward in the dark, hopeful mood.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[warm] Living to two hundred wouldn't just give us more time. It would change what time means. Would you take it? Blessing... or curse? Tell me in the comments. And subscribe, because next time, we're asking an even stranger question."
+    ]
+   ],
+   "place": "",
+   "sfx": [
+    [
+     "Gentle candle blow-out puff",
+     1.0,
+     0.35,
+     "start"
+    ]
+   ]
+  }
+ ]
+}
