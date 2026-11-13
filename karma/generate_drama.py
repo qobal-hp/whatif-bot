@@ -273,16 +273,17 @@ def main():
     tmp = ROOT / "karma" / ".tmp"
     tmp.mkdir(exist_ok=True)
 
-    # Dialogue first: if the voice service fails, nothing has been spent on images yet.
-    words, times, total, line_starts = record(spec, tmp)
-    print(f"Dialogue done: {total:.1f}s, {len(words)} words")
-
+    # Images first: they are kept and reused by a later run if anything after this fails,
+    # while a voiced performance cannot be reused.
     todo = [s for s in spec["scenes"] if s["id"] in REDO or not (ASSETS / f"{s['id']}.jpg").exists()]
     needed = {c.split(":")[0] for s in todo for c in s.get("chars", [])}
     refs = {name: reference_url(ROOT / path) for name, path in spec["cast"].items() if name in needed}
     with ThreadPoolExecutor(6) as pool:
         list(pool.map(lambda s: picture(spec, s, refs), spec["scenes"]))
     print("Images done")
+
+    words, times, total, line_starts = record(spec, tmp)
+    print(f"Dialogue done: {total:.1f}s, {len(words)} words")
 
     scenes, overlays = [], []
     for scene, (start, end) in zip(spec["scenes"], times):
