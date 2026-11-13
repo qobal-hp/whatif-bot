@@ -61,6 +61,7 @@
     ]
    ],
    "place": "",
+   "motion": "Maya leans in and blows out the candles, flames flicker out, family behind her claps and cheers, confetti falls, slow camera push-in.",
    "sfx": [
     [
      "Party poppers and a family crowd cheering at a birthday",
@@ -82,7 +83,8 @@
      "She looks forty-five. She runs three miles every morning. And she just signed up for medical school."
     ]
    ],
-   "place": ""
+   "place": "",
+   "motion": "Maya laughs warmly and tilts her head, party lights twinkle softly in the background, gentle handheld camera."
   },
   {
    "id": "L003",
@@ -96,7 +98,8 @@
      "Her great-great-great-granddaughter started college last week. They're in the same chemistry class."
     ]
    ],
-   "place": ""
+   "place": "",
+   "motion": "The two women walk forward carrying boxes and laugh at each other, students move in the background, tracking shot."
   },
   {
    "id": "L004",
@@ -123,6 +126,7 @@
     ]
    ],
    "place": "",
+   "motion": "Slow aerial drone flight toward the futuristic skyline at golden hour, flying drones glide between green towers.",
    "cut": true
   },
   {
@@ -148,6 +152,7 @@
     ]
    ],
    "place": "",
+   "motion": "The ancient shark glides slowly toward the camera through dark icy water, particles drift, its tail sways gently.",
    "cut": true
   },
   {
@@ -160,7 +165,8 @@
      "Bowhead whales can pass two hundred. One was found with a harpoon tip in its blubber that was made in the eighteen hundreds."
     ]
    ],
-   "place": ""
+   "place": "",
+   "motion": "The bowhead whale surfaces and exhales a tall spout of mist, sea ice bobs in the water, slow cinematic motion."
   },
   {
    "id": "L009",
@@ -312,6 +318,7 @@
     ]
    ],
    "place": "",
+   "motion": "The quarterback throws a long spiral pass, the crowd roars and stands up, camera follows the ball briefly.",
    "sfx": [
     [
      "A huge stadium crowd roaring",
@@ -863,6 +870,7 @@
     ]
    ],
    "place": "",
+   "motion": "Maya gently blows out the candles, thin smoke curls upward in the dark room, she smiles softly, slow push-in.",
    "sfx": [
     [
      "Gentle candle blow-out puff",
@@ -871,6 +879,59 @@
      "start"
     ]
    ]
+  }
+ ],
+ "thumbnail_style": "YouTube thumbnail background, hyper-detailed cinematic photorealism, extreme contrast, saturated colors, one huge clear subject readable at tiny size, dramatic rim lighting, 16:9, absolutely no text, no letters, no numbers, no watermark, no logos. ",
+ "thumbnails": [
+  {
+   "id": "thumb1",
+   "side": "left",
+   "ref": "video/public/assets/portrait_maya.jpg",
+   "lines": [
+    {
+     "text": "SHE'S 160",
+     "color": "#FFFFFF"
+    },
+    {
+     "text": "LOOKS 45",
+     "color": "#FFD400"
+    }
+   ],
+   "tag": "WHAT IF WE LIVED TO 200?",
+   "image": "The woman from the reference image, looking about 45, fills the right half of the frame in a tight close-up, eyes wide with a mischievous smile, holding up a birthday cake with blazing candles right next to her face, warm golden party light, dark blurred background on the left third."
+  },
+  {
+   "id": "thumb2",
+   "side": "right",
+   "ref": "video/public/assets/portrait_maya.jpg",
+   "lines": [
+    {
+     "text": "LIVE TO 200?",
+     "color": "#FFFFFF"
+    },
+    {
+     "text": "BLESSING OR CURSE",
+     "color": "#FFD400"
+    }
+   ],
+   "tag": "",
+   "image": "Split face composition on the left half of the frame: the left side of the woman's face from the reference image looks about 40 with dark wavy hair, the right side of the same face looks about 70 with silver hair, a sharp glowing line divides them, dramatic dark background, right half of the frame dark and empty."
+  },
+  {
+   "id": "thumb3",
+   "side": "left",
+   "lines": [
+    {
+     "text": "$10K",
+     "color": "#FFFFFF"
+    },
+    {
+     "text": "\u2192 $250M",
+     "color": "#FFD400"
+    }
+   ],
+   "tag": "IF YOU LIVED 200 YEARS",
+   "image": "A shocked young man on the right half of the frame, jaw dropped, eyes huge, holding a glowing smartphone, a towering pile of gold coins and cash erupting behind him, dramatic green and gold light, left third dark and empty."
   }
  ]
 }

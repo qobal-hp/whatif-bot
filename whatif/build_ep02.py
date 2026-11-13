@@ -28,25 +28,25 @@ def S(image, *lines, maya=True, **extra):
 
 # ---------- Cold open: show the payoff in the first seconds ----------
 S("Maya, looking about 45, blowing out candles on a cake with gold number candles 1-6-0 at a lively family party, close-up, joyful.",
-  "[intrigued] This is Maya. Today is her one hundred and sixtieth birthday.", music="tension",
+  "[intrigued] This is Maya. Today is her one hundred and sixtieth birthday.", motion="Maya leans in and blows out the candles, flames flicker out, family behind her claps and cheers, confetti falls, slow camera push-in.", music="tension",
   sfx=[["Party poppers and a family crowd cheering at a birthday", 2.5, 0.3, "start"]])
 S("Close-up of Maya's face, looking about 45, laughing, laugh lines but no deep wrinkles, warm party lights.",
-  "She looks forty-five. She runs three miles every morning. And she just signed up for medical school.")
+  "She looks forty-five. She runs three miles every morning. And she just signed up for medical school.", motion="Maya laughs warmly and tilts her head, party lights twinkle softly in the background, gentle handheld camera.")
 S("A college dorm move-in day, a smiling 18-year-old girl carrying boxes, Maya beside her carrying a lamp, both laughing.", 
-  "Her great-great-great-granddaughter started college last week. They're in the same chemistry class.")
+  "Her great-great-great-granddaughter started college last week. They're in the same chemistry class.", motion="The two women walk forward carrying boxes and laugh at each other, students move in the background, tracking shot.")
 S("Maya at a kitchen table at night looking at a retirement statement on a tablet, eyebrows raised in disbelief.",
   "[dryly] Her retirement? Seventy years away.")
 S("A dramatic wide shot of a futuristic city skyline at golden hour, flying drones and green towers, title-card mood.",
-  "What if every human lived to two hundred? Not as frail old people. But aging so slowly that a hundred is just middle age.", maya=False, cut=True)
+  "What if every human lived to two hundred? Not as frail old people. But aging so slowly that a hundred is just middle age.", motion="Slow aerial drone flight toward the futuristic skyline at golden hour, flying drones glide between green towers.", maya=False, cut=True)
 S("A fast montage-style composition: a wedding, a paycheck, a crowded city, a family dinner, arranged as four tiles.",
   "In the next ten minutes, we'll see what it does to your body, your money, your love life... and why the scariest part isn't what you think.", maya=False)
 
 # ---------- Part 1: could this even happen? ----------
 S("A Greenland shark gliding through dark icy Arctic water, ghostly and ancient.",
-  "First, is this even possible? Nature says... maybe. This is a Greenland shark. Scientists estimate some of them have lived for around four hundred years.", music="wonder",
+  "First, is this even possible? Nature says... maybe. This is a Greenland shark. Scientists estimate some of them have lived for around four hundred years.", motion="The ancient shark glides slowly toward the camera through dark icy water, particles drift, its tail sways gently.", music="wonder",
   maya=False, cut=True)
 S("A bowhead whale surfacing in Arctic sea ice under a pale sky.",
-  "Bowhead whales can pass two hundred. One was found with a harpoon tip in its blubber that was made in the eighteen hundreds.", maya=False)
+  "Bowhead whales can pass two hundred. One was found with a harpoon tip in its blubber that was made in the eighteen hundreds.", motion="The bowhead whale surfaces and exhales a tall spout of mist, sea ice bobs in the water, slow cinematic motion.", maya=False)
 S("A laboratory with mice in clean cages and a scientist in a white coat looking at a vial.",
   "And in the lab, some drugs have already made mice live noticeably longer, even when they started late in life.", maya=False)
 S("A vintage birthday cake with candles shaped 1-2-2 on a lace tablecloth in a sunlit old French apartment, no people, nostalgic film look.",
@@ -72,7 +72,7 @@ S("A university lecture hall where a student who looks 40 sits next to students 
 S("A quiet, half-empty hospital cardiology ward with bright windows and a nurse walking past empty beds.",
   "Your health would change too. Cancer, heart disease, dementia... the big killers today are mostly diseases of aging. Slow the aging, and they get pushed back by decades.", maya=False)
 S("A professional football stadium at night, a veteran quarterback who looks 35 but has gray at the temples throwing a pass.",
-  "Sports would get strange. An athlete could stay at their peak for forty years. Imagine the same quarterback winning Super Bowls with three different generations of teammates.", maya=False,
+  "Sports would get strange. An athlete could stay at their peak for forty years. Imagine the same quarterback winning Super Bowls with three different generations of teammates.", motion="The quarterback throws a long spiral pass, the crowd roars and stands up, camera follows the ball briefly.", maya=False,
   sfx=[["A huge stadium crowd roaring", 2.5, 0.25, "start"]])
 S("A rider in full gear looking hesitantly at a motorcycle in a garage, then at a 'Life Expectancy 200' poster on the wall.",
   "And here's a twist. If old age stops killing you, accidents become the main danger. Would you still ride a motorcycle... if you had a hundred and fifty years left to lose?", maya=False)
@@ -171,7 +171,7 @@ S("Maya, silver-haired, at a small kitchen table in a dim room in front of a cak
 S("Close-up of Maya's face lit by candlelight, silver hair, a small sincere smile, eyes glistening.",
   "MAYA: [sincere, gentle] If you could have another hundred years... what would you do with them?")
 S("Maya blows out the 2-0-0 candles, smoke curling upward in the dark, hopeful mood.",
-  "[warm] Living to two hundred wouldn't just give us more time. It would change what time means. Would you take it? Blessing... or curse? Tell me in the comments. And subscribe, because next time, we're asking an even stranger question.",
+  "[warm] Living to two hundred wouldn't just give us more time. It would change what time means. Would you take it? Blessing... or curse? Tell me in the comments. And subscribe, because next time, we're asking an even stranger question.", motion="Maya gently blows out the candles, thin smoke curls upward in the dark room, she smiles softly, slow push-in.",
   sfx=[["Gentle candle blow-out puff", 1.0, 0.35, "start"]])
 
 spec = {
@@ -186,6 +186,18 @@ spec = {
     "places": {}, "ambiences": {}, "ambience": [],
     "music": music,
     "scenes": scenes,
+    "thumbnail_style": "YouTube thumbnail background, hyper-detailed cinematic photorealism, extreme contrast, saturated colors, one huge clear subject readable at tiny size, dramatic rim lighting, 16:9, absolutely no text, no letters, no numbers, no watermark, no logos. ",
+    "thumbnails": [
+        {"id": "thumb1", "side": "left", "ref": "video/public/assets/portrait_maya.jpg",
+         "lines": [{"text": "SHE'S 160", "color": "#FFFFFF"}, {"text": "LOOKS 45", "color": "#FFD400"}], "tag": "WHAT IF WE LIVED TO 200?",
+         "image": "The woman from the reference image, looking about 45, fills the right half of the frame in a tight close-up, eyes wide with a mischievous smile, holding up a birthday cake with blazing candles right next to her face, warm golden party light, dark blurred background on the left third."},
+        {"id": "thumb2", "side": "right", "ref": "video/public/assets/portrait_maya.jpg",
+         "lines": [{"text": "LIVE TO 200?", "color": "#FFFFFF"}, {"text": "BLESSING OR CURSE", "color": "#FFD400"}], "tag": "",
+         "image": "Split face composition on the left half of the frame: the left side of the woman's face from the reference image looks about 40 with dark wavy hair, the right side of the same face looks about 70 with silver hair, a sharp glowing line divides them, dramatic dark background, right half of the frame dark and empty."},
+        {"id": "thumb3", "side": "left",
+         "lines": [{"text": "$10K", "color": "#FFFFFF"}, {"text": "\u2192 $250M", "color": "#FFD400"}], "tag": "IF YOU LIVED 200 YEARS",
+         "image": "A shocked young man on the right half of the frame, jaw dropped, eyes huge, holding a glowing smartphone, a towering pile of gold coins and cash erupting behind him, dramatic green and gold light, left third dark and empty."},
+    ],
 }
 ids = {s["id"] for s in scenes}
 assert all(cue in ids for cue, _ in spec["music"])

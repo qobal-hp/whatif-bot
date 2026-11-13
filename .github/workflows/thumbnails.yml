@@ -6,9 +6,13 @@ on:
       spec:
         description: Episode spec file
         default: pipeline/ep01_full.json
+      assets_run:
+        description: Run whose assets hold reference portraits (optional)
+        default: ""
 
 permissions:
   contents: write
+  actions: read
 
 jobs:
   thumbnails:
@@ -24,6 +28,13 @@ jobs:
           node-version: "22"
           cache: npm
           cache-dependency-path: video/package-lock.json
+      - uses: actions/download-artifact@v4
+        if: inputs.assets_run != ''
+        with:
+          name: assets
+          path: video/public
+          run-id: ${{ inputs.assets_run }}
+          github-token: ${{ github.token }}
       - name: Generate background images
         env:
           FAL_KEY: ${{ secrets.FAL_KEY }}

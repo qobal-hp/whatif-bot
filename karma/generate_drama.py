@@ -221,6 +221,47 @@ def picture(spec, scene, refs):
     raise SystemExit(f"Image {scene['id']} failed three times: {last}")
 
 
+VIDEO_MODEL = "fal-ai/kling-video/v3/standard/image-to-video"
+
+
+def clip(scene, seconds):
+    """Turn a scene's picture into a short moving clip; keeps the still if it fails."""
+    try:
+        result = fal_client.subscribe(VIDEO_MODEL, arguments={
+            "start_image_url": reference_url(ASSETS / f"{scene['id']}.jpg"),
+            "prompt": scene["motion"], "duration": str(seconds), "generate_audio": False})
+        download(result["video"]["url"], ASSETS / f"{scene['id']}.mp4")
+        return True
+    except Exception as err:
+        print(f"Clip {scene['id']} failed, keeping the still: {err}")
+        return False
+
+
+def clips(spec, lengths):
+    """Make clips for scenes that ask for motion; returns {scene id: clip seconds}."""
+    jobs = []
+    for s in spec["scenes"]:
+        if not s.get("motion") or s["id"] not in lengths:
+            continue
+        seconds = 10 if lengths[s["id"]] > 7 else 5
+        if (ASSETS / f"{s['id']}.mp4").exists() and s["id"] not in REDO:
+            jobs.append((s, seconds, True))
+        else:
+            jobs.append((s, seconds, None))
+    with ThreadPoolExecutor(4) as pool:
+        made = list(pool.map(lambda j: j[2] or clip(j[0], j[1]), jobs))
+    done = {s["id"]: seconds for (s, seconds, _), ok in zip(jobs, made) if ok}
+    print(f"Clips: {len(done)} of {len(jobs)}")
+    return done
+
+
+def attach_clips(props, done):
+    for scene in props["scenes"]:
+        if scene["id"] in done:
+            scene["video"] = f"assets/{scene['id']}.mp4"
+            scene["videoSeconds"] = done[scene["id"]]
+
+
 def sound(prompt, seconds):
     """Generate one sound effect; returns the asset path, or None if it could not be made."""
     name = "sfx_" + hashlib.md5(f"{prompt}|{seconds}".encode()).hexdigest()[:10] + ".mp3"
@@ -292,6 +333,13 @@ def main():
         list(pool.map(lambda s: picture(spec, s, refs), spec["scenes"]))
     print("Images done")
     if os.environ.get("IMAGES_ONLY"):
+        # A patch run: add any missing clips to the existing episode's props.
+        path = PUBLIC / "props.json"
+        if path.exists() and any(s.get("motion") for s in spec["scenes"]):
+            props = json.loads(path.read_text())
+            done = clips(spec, {s["id"]: s["end"] - s["start"] for s in props["scenes"]})
+            attach_clips(props, done)
+            path.write_text(json.dumps(props))
         return
 
     words, times, total, line_starts = record(spec, tmp)
@@ -309,6 +357,7 @@ def main():
         scenes[-1]["end"] = total
         if overlays and spec["scenes"][-1].get("overlay"):
             overlays[-1]["end"] = total
+    attach_clips({"scenes": scenes}, clips(spec, {s["id"]: s["end"] - s["start"] for s in scenes}))
     spots, beds = sounds(spec, times, line_starts, total)
     print(f"Sounds: {len(spots)} effects, {len(beds)} room tones")
     props = {"fps": FPS, "durationSec": total, "audio": "assets/audio.mp3", "scenes": scenes, "words": words, "overlays": overlays, "sfx": spots, "ambience": beds}
