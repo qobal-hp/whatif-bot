@@ -2,6 +2,10 @@ name: Karma cast audition
 
 on:
   workflow_dispatch:
+    inputs:
+      test:
+        description: cast = voice audition, dialogue = conversation test
+        default: cast
 
 permissions:
   contents: write
@@ -17,7 +21,7 @@ jobs:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
-          python3 karma/cast_audition.py karma/cast_audition.json /tmp/cast
+          if [ "${{ inputs.test }}" = dialogue ]; then python3 karma/dialogue_test.py /tmp/cast; else python3 karma/cast_audition.py karma/cast_audition.json /tmp/cast; fi
       - name: Publish to the karma-cast branch
         run: |
           git config user.name "github-actions[bot]"
