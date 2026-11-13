@@ -164,7 +164,7 @@ jobs:
           mkdir -p video/out
           for i in $(seq 0 $((PARTS - 1))); do echo "file '/tmp/parts/part$i.mp4'"; done > /tmp/parts/list.txt
           ffmpeg -v error -y -f concat -safe 0 -i /tmp/parts/list.txt -i /tmp/parts/sound.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -shortest -movflags +faststart video/out/episode.mp4
-          ffmpeg -v error -y -i video/out/episode.mp4 -vf scale=854:480 -c:v libx264 -crf 27 -maxrate 900k -bufsize 1800k -c:a aac -b:a 128k -movflags +faststart video/out/preview.mp4
+          ffmpeg -v error -y -i video/out/episode.mp4 -vf scale=854:480 -c:v libx264 -preset veryfast -crf 27 -maxrate 900k -bufsize 1800k -c:a aac -b:a 128k -movflags +faststart video/out/preview.mp4
           ls -la video/out
       - uses: actions/upload-artifact@v4
         with:
