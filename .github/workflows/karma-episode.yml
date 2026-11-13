@@ -168,8 +168,8 @@ jobs:
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
           mkdir -p video/out
-          # Shorts are played on phones next to loud videos, so they are brought up to -14 LUFS.
-          loud=""; [ "${{ inputs.composition }}" = Short ] && loud="-af loudnorm=I=-14:TP=-1.5:LRA=9 -ar 48000"
+          # Everything is brought up to YouTube's -14 LUFS so it isn't quieter than the videos around it.
+          loud="-af loudnorm=I=-14:TP=-1.5:LRA=11 -ar 48000"
           for i in $(seq 0 $((PARTS - 1))); do echo "file '/tmp/parts/part$i.mp4'"; done > /tmp/parts/list.txt
           ffmpeg -v error -y -f concat -safe 0 -i /tmp/parts/list.txt -i /tmp/parts/sound.wav -map 0:v -map 1:a -c:v copy $loud -c:a aac -b:a 192k -shortest -movflags +faststart video/out/episode.mp4
           size=854:480; [ "${{ inputs.composition }}" = Short ] && size=480:854

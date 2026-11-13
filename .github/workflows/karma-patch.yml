@@ -15,6 +15,9 @@ on:
       scenes:
         description: Scene ids to redraw, comma separated
         required: true
+      output_branch:
+        description: Branch the result is pushed to
+        default: karma-output
       new_images:
         description: Make new pictures for these scenes (no = re-render only)
         type: boolean
@@ -73,6 +76,8 @@ jobs:
           cat out/ranges.txt
           # Only the stretches between the nearest keyframes are redrawn; the rest is copied as is.
           python3 ../pipeline/splice.py /tmp/old/episode.mp4 public/props.json out/ranges.txt out ./render_clip.sh
+          # Bring the sound to YouTube's -14 LUFS while copying the picture untouched.
+          ffmpeg -v error -y -i out/episode.mp4 -c:v copy -af loudnorm=I=-14:TP=-1.5:LRA=11 -ar 48000 -c:a aac -b:a 192k -movflags +faststart out/loud.mp4 && mv out/loud.mp4 out/episode.mp4
           ffmpeg -v error -y -i out/episode.mp4 -vf scale=854:480 -c:v libx264 -preset veryfast -crf 27 -maxrate 900k -bufsize 1800k -c:a aac -b:a 128k -movflags +faststart out/preview.mp4
           ls -la out
       - uses: actions/upload-artifact@v4
@@ -85,9 +90,9 @@ jobs:
           size=$(stat -c %s video/out/episode.mp4); [ "$size" -lt 95000000 ] && cp video/out/episode.mp4 /tmp/result/
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout --orphan karma-output
+          git checkout --orphan "${{ inputs.output_branch }}"
           git rm -rf --cached . > /dev/null
           rm -rf result && cp -r /tmp/result result
           git add -f result
           git commit -q -m "Karma patch from run ${{ github.run_number }}"
-          git push -f origin karma-output
+          git push -f origin "${{ inputs.output_branch }}"

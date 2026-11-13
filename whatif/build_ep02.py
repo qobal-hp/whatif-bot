@@ -49,7 +49,7 @@ S("A bowhead whale surfacing in Arctic sea ice under a pale sky.",
   "Bowhead whales can pass two hundred. One was found with a harpoon tip in its blubber that was made in the eighteen hundreds.", maya=False)
 S("A laboratory with mice in clean cages and a scientist in a white coat looking at a vial.",
   "And in the lab, some drugs have already made mice live noticeably longer, even when they started late in life.", maya=False)
-S("An old black-and-white style portrait of an elegant elderly French woman with a gentle smile.",
+S("A vintage birthday cake with candles shaped 1-2-2 on a lace tablecloth in a sunlit old French apartment, no people, nostalgic film look.",
   "The oldest human ever confirmed, Jeanne Calment, reached one hundred and twenty-two. So for us, two hundred would mean breaking the clock itself.", maya=False)
 S("A naked mole rat in a sandy underground tunnel, lit like a nature documentary.",
   "Then there's this little guy. The naked mole rat. A rodent the size of a mouse... that can live more than thirty years. Ten times longer than a mouse should.", maya=False)
@@ -101,7 +101,7 @@ S("A government building with a pension office, long lines of ageless-looking pe
   "No pension system on Earth could pay for that. So almost everyone would keep working... for a very, very long time.", maya=False)
 S("A golden glowing coin stack growing into a tower over a timeline from 1 to 150 years.",
   "But here's the upside. Time is the secret ingredient of compound interest. Ten thousand dollars growing at seven percent a year...", maya=False)
-S("A shocked young man looking at a phone screen with a giant number, mouth open.",
+S("A shocked young man staring at his glowing phone, mouth open, the screen seen from behind so no numbers are visible.",
   "After forty years, about a hundred and fifty thousand. After a hundred and fifty years? Over two hundred and fifty million dollars. Before inflation, of course.", maya=False,
   sfx=[["A cash register ding", 1.0, 0.35, "end"]])
 S("A cozy family-owned bookshop with a sign 'Since 1990' and the same smiling owner behind the counter, looking about 60.",
