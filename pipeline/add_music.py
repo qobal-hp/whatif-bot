@@ -26,6 +26,7 @@ def main():
         }
         for i, (start, track) in enumerate(cues)
     ]
+    props["music"] += props.get("ambience", [])  # looping room tone uses the same player
     path.write_text(json.dumps(props))
     print(f"{len(props['music'])} music cues added")
 

@@ -48,6 +48,12 @@ const Transfer: React.FC<{o: OverlayProps}> = ({o}) => (
   </div>
 );
 
+const Letter: React.FC<{o: OverlayProps}> = ({o}) => (
+  <div style={{width: 1040, backgroundColor: '#f3ead7', borderRadius: 6, padding: '56px 64px', boxShadow: '0 30px 90px rgba(0,0,0,0.8)', color: '#2b2118', fontFamily: 'Georgia, serif', fontStyle: 'italic', fontSize: 52, lineHeight: 1.4}}>
+    {o.text}
+  </div>
+);
+
 export const Overlays: React.FC<{overlays: OverlayProps[]}> = ({overlays}) => {
   const {fps} = useVideoConfig();
   return (
@@ -57,7 +63,7 @@ export const Overlays: React.FC<{overlays: OverlayProps[]}> = ({overlays}) => {
         const length = Math.max(1, Math.round((o.end - o.start) * fps));
         return (
           <Sequence key={i} from={from} durationInFrames={length}>
-            <Card length={length} side={o.side}>{o.type === 'transfer' ? <Transfer o={o} /> : <Message o={o} />}</Card>
+            <Card length={length} side={o.side}>{o.type === 'transfer' ? <Transfer o={o} /> : o.type === 'letter' ? <Letter o={o} /> : <Message o={o} />}</Card>
           </Sequence>
         );
       })}

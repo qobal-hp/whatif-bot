@@ -11,7 +11,7 @@ export type SceneProps = {
 export type WordProps = {text: string; start: number; end: number};
 
 export type OverlayProps = {
-  type: 'message' | 'transfer';
+  type: 'message' | 'transfer' | 'letter';
   start: number;
   end: number;
   from?: string;
@@ -32,4 +32,6 @@ export type EpisodeProps = {
   title?: string;
   music?: {src: string; start: number; end: number; volume: number}[];
   overlays?: OverlayProps[];
+  sfx?: {src: string; start: number; volume: number}[];
+  ambience?: {src: string; start: number; end: number; volume: number}[];
 };

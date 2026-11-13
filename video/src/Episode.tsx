@@ -8,7 +8,7 @@ import type {EpisodeProps} from './types';
 
 const FADE_FRAMES = 14;
 
-export const Episode: React.FC<EpisodeProps> = ({audio, scenes, words, audioStart, title, durationSec, music, overlays}) => {
+export const Episode: React.FC<EpisodeProps> = ({audio, scenes, words, audioStart, title, durationSec, music, overlays, sfx}) => {
   const {fps, width, height} = useVideoConfig();
   const vertical = height > width;
   return (
@@ -81,6 +81,11 @@ export const Episode: React.FC<EpisodeProps> = ({audio, scenes, words, audioStar
           </Sequence>
         );
       })}
+      {(sfx ?? []).map((s, i) => (
+        <Sequence key={`sfx${i}`} from={Math.round(s.start * fps)}>
+          <Audio src={staticFile(s.src)} volume={s.volume} />
+        </Sequence>
+      ))}
       {audio ? (
         <Audio
           src={staticFile(audio)}

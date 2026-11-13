@@ -1,0 +1,2455 @@
+{
+  "title": "Karma Tales EP01 - The Wedding Trap",
+  "voices": {
+    "NARRATOR": "Brian",
+    "CLAIRE": "Sarah",
+    "DANIEL": "Will",
+    "VANESSA": "Laura",
+    "RICHARD": "Bill",
+    "MARCUS": "Eric",
+    "EVELYN": "Matilda",
+    "DETECTIVE": "Roger"
+  },
+  "cast": {
+    "claire": "karma/cast/claire.jpg",
+    "daniel": "karma/cast/daniel.jpg",
+    "vanessa": "karma/cast/vanessa.jpg",
+    "richard": "karma/cast/richard.jpg",
+    "evelyn": "karma/cast/evelyn.jpg",
+    "marcus": "karma/cast/marcus.jpg",
+    "harris": "karma/cast/harris.jpg"
+  },
+  "looks": {
+    "claire": "Claire (the woman from the reference photo with long dark-brown wavy hair, in a high-neck long-sleeved ivory lace wedding gown)",
+    "daniel": "Daniel (the man from the reference photo with short dark hair, in a black tuxedo with a white boutonniere)",
+    "vanessa": "Vanessa (the woman from the reference photo with honey-blonde hair, in a dusty-rose satin bridesmaid dress)",
+    "richard": "Richard (the silver-haired older man from the reference photo, in a navy suit with a burgundy tie)",
+    "claire:work": "Claire (the same person as the reference photo, same face and hair, but wearing a camel wool coat over a cream blouse instead of the wedding gown)",
+    "claire:home": "Claire (the same person as the reference photo, same face and hair, but wearing a gray cashmere sweater instead of the wedding gown)",
+    "claire:brooklyn": "Claire (the same person as the reference photo, same face and hair, but wearing a tailored white blazer and jeans instead of the wedding gown)",
+    "daniel:home": "Daniel (the same person as the reference photo, same face and hair, but wearing a white dress shirt with rolled sleeves instead of the tuxedo)",
+    "evelyn": "Evelyn (the woman from the reference photo with chin-length auburn hair, in an emerald green dress and pearl earrings)",
+    "evelyn:home": "Evelyn (the same person as the reference photo, same face and hair, but wearing a navy cardigan over a nightgown)",
+    "evelyn:office": "Evelyn (the same person as the reference photo, same face and hair, but wearing a tan trench coat)",
+    "evelyn:brooklyn": "Evelyn (the same person as the reference photo, same face and hair, but wearing a cream blazer)",
+    "marcus": "Marcus (the man from the reference photo with close-cropped graying hair and wire-rimmed glasses, in a charcoal three-piece suit)",
+    "harris": "Detective Harris (the man from the reference photo with short brown hair, in a tan trench coat over a shirt and dark tie)"
+  },
+  "style": "Photorealistic still from a prestige American TV drama, shot on 35mm, cinematic lighting, shallow depth of field, natural skin texture, wide 16:9 frame. Keep every person's face and hair exactly consistent with their reference photo. No text, no captions, no watermark. ",
+  "resolution": "2K",
+  "music": [
+    [
+      "s01",
+      "tension"
+    ],
+    [
+      "s36",
+      "wonder"
+    ],
+    [
+      "s46",
+      "tension"
+    ],
+    [
+      "s95",
+      "wonder"
+    ]
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "chars": [],
+      "image": "Sweeping wide shot of the whole ballroom from above the dance floor, two hundred elegantly dressed guests at round tables, champagne towers, a string quartet.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Two hundred guests. Seventy-five thousand dollars in flowers, champagne, and crystal chandeliers. And one bride who had spent the last nineteen days planning the destruction of her own wedding."
+        ]
+      ],
+      "place": "ballroom"
+    },
+    {
+      "id": "s02",
+      "chars": [
+        "claire"
+      ],
+      "image": "Claire standing alone at the center of the ballroom, composed and radiant, guests blurred around her.",
+      "lines": [
+        [
+          "NARRATOR",
+          "At the center of the ballroom stood Claire Bennett. Twenty-nine years old. Beautiful. Successful. And, according to everyone in the room, the luckiest woman alive."
+        ]
+      ],
+      "place": "ballroom"
+    },
+    {
+      "id": "s03",
+      "chars": [
+        "daniel"
+      ],
+      "image": "Daniel laughing with a group of guests, champagne flute in hand, effortlessly charming.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Her new husband, Daniel Whitmore, had everything a woman could supposedly want. Good looks. An expensive suit. A charming smile. And a family name that opened doors all across Manhattan."
+        ]
+      ],
+      "place": "ballroom"
+    },
+    {
+      "id": "s04",
+      "chars": [
+        "claire"
+      ],
+      "image": "Tight close-up of Claire's face, watching something off-frame with a calm, knowing half-smile, candlelight in her eyes.",
+      "lines": [
+        [
+          "NARRATOR",
+          "But Claire knew something the guests didn't. And in about ninety seconds, so would they."
+        ]
+      ],
+      "place": "ballroom"
+    },
+    {
+      "id": "s05",
+      "chars": [
+        "daniel",
+        "claire"
+      ],
+      "image": "Daniel standing at the head table speaking into a microphone and raising his glass, Claire seated beside him looking up at him.",
+      "lines": [
+        [
+          "DANIEL",
+          "[warm, charming, playing to the room] Ladies and gentlemen, can I just say how incredibly lucky I am? Claire, you are the best thing that ever happened to me."
+        ]
+      ],
+      "place": "ballroom"
+    },
+    {
+      "id": "s06",
+      "chars": [
+        "claire",
+        "daniel"
+      ],
+      "image": "Daniel kissing Claire on the forehead while she faces the camera with a flawless, practiced smile.",
+      "lines": [
+        [
+          "NARRATOR",
+          "The guests applauded. Daniel kissed Claire's forehead. She smiled. A perfect smile. The kind of smile that takes nineteen days to practice."
+        ]
+      ],
+      "place": "ballroom",
+      "sfx": [
+        [
+          "Polite applause from a large formal crowd",
+          4.0,
+          0.22,
+          "start"
+        ]
+      ]
+    },
+    {
+      "id": "s07",
+      "chars": [
+        "claire",
+        "daniel"
+      ],
+      "image": "Claire now standing and holding a slim black handheld wireless microphone, turning toward the guests, Daniel grinning beside her with his hands raised in mock surrender.",
+      "lines": [
+        [
+          "CLAIRE",
+          "[sweetly] Actually, sweetheart, I have a little surprise of my own."
+        ],
+        [
+          "DANIEL",
+          "[laughing] Another surprise? Baby, you're making me look bad!"
+        ],
+        [
+          "CLAIRE",
+          "[calm, with a hint of menace] Oh, don't worry. You'll have everyone's attention in a minute."
+        ]
+      ],
+      "place": "ballroom"
+    },
+    {
+      "id": "s08",
+      "chars": [
+        "vanessa"
+      ],
+      "image": "Vanessa seated at the head table holding a champagne flute, her smile fading into unease.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Daniel laughed. Across the table, Vanessa Collins, Claire's maid of honor, stopped smiling."
+        ],
+        [
+          "VANESSA",
+          "[uneasy] Claire? What kind of surprise?"
+        ]
+      ],
+      "place": "ballroom"
+    },
+    {
+      "id": "s09",
+      "chars": [
+        "claire",
+        "vanessa"
+      ],
+      "image": "Claire in the foreground glancing back over her shoulder at Vanessa, who sits stiffly behind her forcing a smile.",
+      "lines": [
+        [
+          "CLAIRE",
+          "[lightly] A slideshow. Our love story."
+        ],
+        [
+          "VANESSA",
+          "[forced, hesitant] Oh. That's... sweet."
+        ],
+        [
+          "CLAIRE",
+          "[pointed, quietly] I thought you'd appreciate it, Vanessa. After all, you've been there for every important moment."
+        ]
+      ],
+      "place": "ballroom"
+    },
+    {
+      "id": "s10",
+      "chars": [
+        "claire",
+        "daniel"
+      ],
+      "image": "The ballroom lights dimmed, a huge projector screen at the front showing a happy engagement photo of Claire and Daniel in Central Park, silhouettes of applauding guests in the foreground.",
+      "lines": [
+        [
+          "NARRATOR",
+          "The first photograph appeared. Claire and Daniel on their first date. Then their engagement in Central Park. Then their wedding ceremony, just two hours earlier. The guests applauded."
+        ]
+      ],
+      "place": "ballroom",
+      "sfx": [
+        [
+          "A single mechanical click of a slide projector remote",
+          1.0,
+          0.5,
+          "start"
+        ]
+      ]
+    },
+    {
+      "id": "s11",
+      "chars": [],
+      "cut": true,
+      "image": "The darkened ballroom seen from the back, the huge projector screen now completely black, rows of guests' heads silhouetted, a cold blue glow.",
+      "overlay": {
+        "type": "message",
+        "from": "Daniel",
+        "to": "Vanessa",
+        "text": "I can't wait until she's out of the picture."
+      },
+      "lines": [
+        [
+          "NARRATOR",
+          "And then, the screen went black. A text message appeared. \"I can't wait until she's out of the picture.\""
+        ]
+      ],
+      "place": "ballroom",
+      "sfx": [
+        [
+          "Deep cinematic boom impact with a low sub drop",
+          3.0,
+          0.45,
+          "start"
+        ]
+      ]
+    },
+    {
+      "id": "s12",
+      "chars": [
+        "daniel"
+      ],
+      "image": "Daniel frozen mid-sip with his champagne flute, eyes wide, face lit cold blue by the screen.",
+      "lines": [
+        [
+          "NARRATOR",
+          "The sender was Daniel. The recipient was Vanessa. Silence."
+        ]
+      ],
+      "place": "ballroom"
+    },
+    {
+      "id": "s13",
+      "chars": [],
+      "image": "Wedding guests at their tables gasping, hands over mouths, some raising phones, faces lit cold blue by the screen.",
+      "overlay": {
+        "type": "message",
+        "from": "Daniel",
+        "to": "Vanessa",
+        "text": "Just marry her. Once we get access to her trust fund, we're set."
+      },
+      "lines": [
+        [
+          "NARRATOR",
+          "Then another. \"Just marry her. Once we get access to her trust fund, we're set.\""
+        ]
+      ],
+      "place": "ballroom"
+    },
+    {
+      "id": "s14",
+      "chars": [
+        "vanessa"
+      ],
+      "image": "Vanessa on her feet at the head table, panicked, one hand out, a champagne flute shattering on the floor beside her.",
+      "lines": [
+        [
+          "VANESSA",
+          "[panicked] That's fake! Claire, somebody is messing with you!"
+        ]
+      ],
+      "place": "ballroom",
+      "sfx": [
+        [
+          "A champagne glass shattering on a marble floor",
+          2.0,
+          0.5,
+          "start"
+        ]
+      ]
+    },
+    {
+      "id": "s15",
+      "chars": [
+        "daniel",
+        "claire"
+      ],
+      "image": "Daniel furious, leaning toward Claire and pointing at the screen, Claire perfectly calm and unbothered, still holding the slim black handheld wireless microphone.",
+      "lines": [
+        [
+          "DANIEL",
+          "[low, furious] Claire. Turn that off. Right now."
+        ],
+        [
+          "CLAIRE",
+          "[calm, amused] Why? We're just getting to the good part."
+        ],
+        [
+          "DANIEL",
+          "[shouting] This is our WEDDING!"
+        ]
+      ],
+      "place": "ballroom"
+    },
+    {
+      "id": "s16",
+      "chars": [
+        "claire"
+      ],
+      "image": "Claire facing the crowd, speaking into the slim black handheld wireless microphone in her hand, poised like a keynote speaker, the glowing screen behind her. No microphone stand.",
+      "lines": [
+        [
+          "CLAIRE",
+          "[coldly, to the whole room] Exactly. And I wanted all two hundred of our closest friends to see what kind of man I married."
+        ]
+      ],
+      "place": "ballroom"
+    },
+    {
+      "id": "s17",
+      "chars": [
+        "daniel",
+        "claire"
+      ],
+      "image": "Daniel lunging across the head table for a small projector remote, Claire standing still and holding up her phone between two fingers.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Daniel lunged toward the projector remote. Claire didn't move."
+        ],
+        [
+          "CLAIRE",
+          "[quietly] Don't bother. I have backups."
+        ]
+      ],
+      "place": "ballroom"
+    },
+    {
+      "id": "s18",
+      "chars": [
+        "richard"
+      ],
+      "image": "Richard seated at the head table, stone-faced, fingers steepled, staring coldly.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Then she turned toward Daniel's father. Richard Whitmore. A powerful real estate investor with a reputation for making problems disappear."
+        ]
+      ],
+      "place": "ballroom"
+    },
+    {
+      "id": "s19",
+      "chars": [
+        "claire",
+        "richard"
+      ],
+      "image": "Claire aiming a slim presentation clicker at the screen while looking straight at Richard, who sits rigid in the foreground with his back half to camera.",
+      "lines": [
+        [
+          "CLAIRE",
+          "[cool, deliberate] And Richard? Before you defend your son... you might want to look at the next slide."
+        ]
+      ],
+      "place": "ballroom"
+    },
+    {
+      "id": "s20",
+      "chars": [
+        "richard"
+      ],
+      "cut": true,
+      "image": "Richard's face on the far right third of the frame draining of color, lit cold blue by the screen, jaw tight; the left two thirds of the frame is dark, empty, out-of-focus ballroom.",
+      "overlay": {
+        "type": "transfer",
+        "amount": "$500,000.00",
+        "from": "Richard Whitmore",
+        "to": "Bennett Legacy Management LLC",
+        "date": "3 days before the wedding",
+        "side": "left"
+      },
+      "lines": [
+        [
+          "NARRATOR",
+          "A bank transfer appeared. Five hundred thousand dollars. Sent three days before the wedding. And the sender wasn't Daniel. It was Richard Whitmore."
+        ]
+      ],
+      "place": "ballroom",
+      "sfx": [
+        [
+          "A single mechanical click of a slide projector remote",
+          1.0,
+          0.5,
+          "start"
+        ]
+      ]
+    },
+    {
+      "id": "s21",
+      "chars": [
+        "claire"
+      ],
+      "image": "Extreme close-up of Claire, a cold, satisfied smile, the screen's glow behind her.",
+      "lines": [
+        [
+          "CLAIRE",
+          "[softly, savoring it] Would you like to explain why your name is on this transfer?"
+        ]
+      ],
+      "place": "ballroom"
+    },
+    {
+      "id": "s22",
+      "place": "apt",
+      "chars": [],
+      "image": "Rain-streaked floor-to-ceiling windows of a dark, empty living room, city lights blurred beyond.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Nineteen days earlier, Claire came home from a business trip two days ahead of schedule. She was supposed to be in Boston until Friday. A canceled meeting had changed her plans. And that small change would save everything she had built."
+        ]
+      ],
+      "cut": true
+    },
+    {
+      "id": "s23",
+      "place": "hall",
+      "chars": [
+        "claire:work"
+      ],
+      "image": "Claire stepping in through the front door with a rolling suitcase and a paper takeout bag, coat damp, the apartment dim and quiet.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Claire let herself into the apartment carrying takeout from Daniel's favorite restaurant. She heard voices from the bedroom."
+        ]
+      ]
+    },
+    {
+      "id": "s24",
+      "place": "hall",
+      "chars": [
+        "claire:work"
+      ],
+      "image": "Claire frozen in the dim hallway, staring at a bedroom door left slightly ajar with warm light spilling out.",
+      "lines": [
+        [
+          "VANESSA",
+          "[low, intimate] She really doesn't suspect anything?"
+        ],
+        [
+          "DANIEL",
+          "[amused] Claire? Please. She thinks we're planning her birthday surprise."
+        ],
+        [
+          "VANESSA",
+          "And after the wedding?"
+        ],
+        [
+          "DANIEL",
+          "[matter-of-fact] We wait six months. Then I file for divorce."
+        ]
+      ]
+    },
+    {
+      "id": "s25",
+      "place": "hall",
+      "chars": [
+        "claire:work"
+      ],
+      "image": "Close-up of Claire's hand gripping a paper takeout bag so hard it crumples, knuckles white.",
+      "lines": [
+        [
+          "VANESSA",
+          "And the money?"
+        ],
+        [
+          "DANIEL",
+          "My father's handling that."
+        ],
+        [
+          "NARRATOR",
+          "Claire froze. The takeout bag slipped slightly in her hand."
+        ]
+      ]
+    },
+    {
+      "id": "s26",
+      "place": "hall",
+      "chars": [
+        "claire:work"
+      ],
+      "image": "Close-up of Claire's face in shadow, eyes glistening, a strip of warm light from the door across one cheek.",
+      "lines": [
+        [
+          "VANESSA",
+          "[pleading] You promised me we'd be together."
+        ],
+        [
+          "DANIEL",
+          "[soothing] We will. But first, we need the Bennett money."
+        ]
+      ]
+    },
+    {
+      "id": "s27",
+      "place": "memory",
+      "chars": [],
+      "image": "A framed black-and-white photograph of a dignified elderly man in a suit standing in front of a brick commercial building, resting on a bookshelf.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Claire's grandfather had left her a substantial inheritance. Not cash sitting in a checking account. A trust. Investments and commercial properties worth millions."
+        ]
+      ]
+    },
+    {
+      "id": "s28",
+      "place": "apt",
+      "chars": [
+        "daniel:home",
+        "claire:home"
+      ],
+      "image": "Daytime. Daniel on a sofa leaning over Claire's shoulder, pointing at a thick folder of legal documents on a coffee table, smiling reassuringly.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Daniel had spent two years convincing Claire that his love had nothing to do with her money. Now she understood why he kept asking about the trust documents. Why he wanted their finances combined. And why he had insisted that his father's attorney handle the paperwork."
+        ]
+      ]
+    },
+    {
+      "id": "s29",
+      "place": "hall",
+      "chars": [
+        "claire:work"
+      ],
+      "image": "Claire backing away down the hallway on tiptoe, holding her phone low with its screen glowing red.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Claire backed away. Her phone was already recording. But as she reached the front door..."
+        ]
+      ],
+      "sfx": [
+        [
+          "A wooden floorboard creaking once in a quiet house",
+          1.5,
+          0.5,
+          "end"
+        ]
+      ]
+    },
+    {
+      "id": "s30",
+      "place": "hall",
+      "chars": [
+        "daniel:home"
+      ],
+      "image": "Daniel stepping out of the bedroom doorway into the dim hallway, looking down the hall suspiciously, a phone lighting up in his hand.",
+      "lines": [
+        [
+          "DANIEL",
+          "[sharp] Did you hear something?"
+        ],
+        [
+          "NARRATOR",
+          "Claire held her breath. The bedroom door opened. Daniel stepped into the hallway. For one terrible second, she thought he had seen her. Then his phone rang."
+        ],
+        [
+          "DANIEL",
+          "[casual] Dad? Yeah. Everything's on schedule."
+        ]
+      ],
+      "sfx": [
+        [
+          "Slow footsteps on a hardwood floor approaching",
+          3.0,
+          0.4,
+          1
+        ],
+        [
+          "A smartphone ringing with a classic ringtone, two rings",
+          2.5,
+          0.4,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "s31",
+      "place": "elevator",
+      "chars": [
+        "claire:work"
+      ],
+      "image": "Claire slumped against the mirrored elevator wall, knees buckling, one hand over her mouth, suitcase beside her.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Claire slipped outside. She made it to the elevator before her knees gave way."
+        ]
+      ],
+      "sfx": [
+        [
+          "Elevator doors sliding shut with a soft chime",
+          2.5,
+          0.4,
+          "end"
+        ]
+      ]
+    },
+    {
+      "id": "s32",
+      "place": "elevator",
+      "chars": [
+        "claire:work"
+      ],
+      "image": "Claire's reflection in the elevator mirror, tears on her face, her jaw setting with resolve.",
+      "lines": [
+        [
+          "NARRATOR",
+          "She wanted to scream. She wanted to call Vanessa and demand an explanation. She wanted to cancel the wedding. But then she remembered something her grandfather used to say."
+        ],
+        [
+          "NARRATOR",
+          "[slowly, gravely] \"When someone shows you they're a thief, don't tell them you know. Find out what they're stealing.\""
+        ]
+      ]
+    },
+    {
+      "id": "s33",
+      "place": "taxi",
+      "chars": [
+        "claire:work"
+      ],
+      "image": "Claire in the back seat, rain on the window, phone to her ear, city lights streaking past.",
+      "lines": [
+        [
+          "NARRATOR",
+          "That night, Claire called the only person she trusted completely. Her mother."
+        ],
+        [
+          "EVELYN",
+          "[sleepy, worried] Sweetheart? It's almost midnight. What's wrong?"
+        ],
+        [
+          "CLAIRE",
+          "[voice breaking] Mom... Daniel's cheating on me. With Vanessa."
+        ]
+      ]
+    },
+    {
+      "id": "s34",
+      "place": "kitchen",
+      "chars": [
+        "evelyn:home"
+      ],
+      "image": "Evelyn standing in the kitchen with a phone pressed to her ear, one hand gripping the counter, shocked.",
+      "lines": [
+        [
+          "EVELYN",
+          "[gently] Oh, Claire. Come home. Right now."
+        ],
+        [
+          "CLAIRE",
+          "[steadier] There's more. They're after Grandpa's trust."
+        ],
+        [
+          "NARRATOR",
+          "A long silence followed. Then Evelyn's voice changed."
+        ]
+      ]
+    },
+    {
+      "id": "s35",
+      "place": "kitchen",
+      "chars": [
+        "evelyn:home"
+      ],
+      "image": "Close-up of Evelyn's face hardening with resolve, lit by a single lamp.",
+      "lines": [
+        [
+          "EVELYN",
+          "[firm, low] Listen carefully. Do not confront him. Do not sign anything. And tomorrow morning, we're calling Marcus Reed."
+        ],
+        [
+          "CLAIRE",
+          "Grandpa's attorney?"
+        ],
+        [
+          "EVELYN",
+          "[grim] Yes. Because fifteen years ago, your grandfather beat a man named Richard Whitmore in court. The night you brought Daniel home, he swore to me he barely spoke to his father. I wanted to believe him."
+        ]
+      ],
+      "sfx": [
+        [
+          "Low ominous cinematic sting, single dark orchestral hit fading out",
+          3.0,
+          0.4,
+          "end"
+        ]
+      ]
+    },
+    {
+      "id": "s36",
+      "place": "office",
+      "chars": [
+        "marcus",
+        "claire:work"
+      ],
+      "image": "Marcus seated behind the oak desk with his hands folded, Claire sitting across from him with her back straight.",
+      "lines": [
+        [
+          "NARRATOR",
+          "The next morning, Claire sat across from Marcus Reed. Her grandfather's longtime attorney. A man who rarely smiled. And never wasted words."
+        ]
+      ],
+      "cut": true
+    },
+    {
+      "id": "s37",
+      "place": "office",
+      "chars": [
+        "marcus"
+      ],
+      "image": "Marcus leaning forward slightly, studying someone across the desk over his wire-rimmed glasses.",
+      "lines": [
+        [
+          "MARCUS",
+          "Claire, before we begin, I need to ask you something. Has Daniel asked you to sign a marital property agreement?"
+        ],
+        [
+          "CLAIRE",
+          "Yes. He said it was just routine paperwork."
+        ],
+        [
+          "MARCUS",
+          "Have you signed it?"
+        ],
+        [
+          "CLAIRE",
+          "Not yet."
+        ]
+      ]
+    },
+    {
+      "id": "s38",
+      "place": "office",
+      "chars": [
+        "marcus"
+      ],
+      "image": "Marcus sliding a thick stapled contract across the desk, one finger pinning a page marked with a yellow tab.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Marcus exhaled."
+        ],
+        [
+          "MARCUS",
+          "[dry] Good. Because the agreement he sent you is not routine."
+        ],
+        [
+          "CLAIRE",
+          "What is it?"
+        ],
+        [
+          "MARCUS",
+          "Buried on page eleven is one clause. It hands day-to-day control of your grandfather's properties to a new management company."
+        ]
+      ],
+      "sfx": [
+        [
+          "A stack of paper sliding across a wooden desk",
+          1.5,
+          0.4,
+          "start"
+        ]
+      ]
+    },
+    {
+      "id": "s39",
+      "place": "office",
+      "chars": [
+        "claire:work"
+      ],
+      "image": "Close-up of Claire staring down at a contract on the desk, stunned.",
+      "lines": [
+        [
+          "CLAIRE",
+          "And who owns that company?"
+        ],
+        [
+          "MARCUS",
+          "[flat] Richard Whitmore."
+        ],
+        [
+          "NARRATOR",
+          "Claire stared at him."
+        ],
+        [
+          "CLAIRE",
+          "[slowly] So Daniel was supposed to marry me... and I'd sign away control of Grandpa's properties?"
+        ],
+        [
+          "MARCUS",
+          "That's what they're trying to arrange. But there's something else."
+        ]
+      ]
+    },
+    {
+      "id": "s40",
+      "place": "office",
+      "chars": [],
+      "image": "An open manila folder on the oak desk holding old photographs of a brick commercial building and yellowed court papers, out of focus.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Marcus opened a folder. Inside were photographs of a commercial building."
+        ],
+        [
+          "MARCUS",
+          "Fifteen years ago, Richard Whitmore tried to buy one of your grandfather's properties. Your grandfather refused. So Richard tried to force the sale with forged paperwork."
+        ]
+      ]
+    },
+    {
+      "id": "s41",
+      "place": "office",
+      "chars": [
+        "marcus",
+        "claire:work"
+      ],
+      "image": "Marcus and Claire facing each other across the desk, the open folder between them.",
+      "lines": [
+        [
+          "CLAIRE",
+          "What happened?"
+        ],
+        [
+          "MARCUS",
+          "Your grandfather took him to court. Richard lost. And according to your grandfather, he never forgave the humiliation."
+        ],
+        [
+          "CLAIRE",
+          "[disbelieving] You're saying this is revenge?"
+        ],
+        [
+          "MARCUS",
+          "I'm saying your marriage may have been a business strategy from the beginning."
+        ]
+      ]
+    },
+    {
+      "id": "s42",
+      "place": "office",
+      "chars": [
+        "claire:work"
+      ],
+      "image": "Extreme close-up of Claire's hand resting on the desk, a large diamond engagement ring catching the light.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Claire looked down at her engagement ring. The diamond sparkled beneath the office lights. For two years, she'd believed it represented love. Now it looked like a price tag."
+        ]
+      ]
+    },
+    {
+      "id": "s43",
+      "place": "office",
+      "chars": [
+        "claire:work",
+        "marcus"
+      ],
+      "image": "Claire looking up at Marcus, composed but pale.",
+      "lines": [
+        [
+          "CLAIRE",
+          "How much of my grandfather's estate are they targeting?"
+        ],
+        [
+          "MARCUS",
+          "Approximately eight million dollars in assets."
+        ],
+        [
+          "NARRATOR",
+          "Claire went completely still."
+        ],
+        [
+          "CLAIRE",
+          "[whispers] Eight million?"
+        ],
+        [
+          "MARCUS",
+          "Yes."
+        ],
+        [
+          "CLAIRE",
+          "And Vanessa?"
+        ],
+        [
+          "MARCUS",
+          "We don't know how deeply she's involved. Yet."
+        ]
+      ]
+    },
+    {
+      "id": "s44",
+      "place": "office",
+      "chars": [
+        "claire:work"
+      ],
+      "image": "Claire leaning back in the leather chair, eyes narrowing, a plan forming.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Claire leaned back. Then she asked the question that would change everything."
+        ],
+        [
+          "CLAIRE",
+          "[quiet, deliberate] What if I don't cancel the wedding?"
+        ],
+        [
+          "MARCUS",
+          "[warning] Claire..."
+        ],
+        [
+          "CLAIRE",
+          "What if I let them think their plan is working?"
+        ],
+        [
+          "MARCUS",
+          "That could be dangerous."
+        ],
+        [
+          "CLAIRE",
+          "[steely] Then we make sure they never get control of anything. And we find out exactly how far they're willing to go."
+        ]
+      ]
+    },
+    {
+      "id": "s45",
+      "place": "office",
+      "chars": [
+        "marcus"
+      ],
+      "image": "Marcus with the faintest trace of a smile, closing a folder on his desk.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Marcus studied her for several seconds."
+        ],
+        [
+          "MARCUS",
+          "[approving] Your grandfather would have liked that answer. But we do this legally. No hacking. No fake evidence. We protect your assets first."
+        ],
+        [
+          "CLAIRE",
+          "Agreed."
+        ],
+        [
+          "MARCUS",
+          "And Claire? If Richard Whitmore is involved, expect him to have a second plan."
+        ],
+        [
+          "NARRATOR",
+          "Marcus was right. And the second plan was far more dangerous than the first."
+        ]
+      ]
+    },
+    {
+      "id": "s46",
+      "place": "bedroom",
+      "chars": [
+        "claire:home"
+      ],
+      "image": "A phone lit up on a nightstand, Claire's hand reaching for it from the bed.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Eleven days before the wedding, Claire woke up to a voicemail. From Vanessa. Twenty-three seconds long. No hello. No goodbye. Just muffled voices, like a phone left unlocked inside a purse. A pocket dial. Or so Claire thought."
+        ]
+      ],
+      "cut": true,
+      "sfx": [
+        [
+          "A smartphone vibrating on a wooden nightstand, two buzzes",
+          2.0,
+          0.45,
+          "start"
+        ],
+        [
+          "A voicemail beep tone",
+          1.0,
+          0.4,
+          "end"
+        ]
+      ]
+    },
+    {
+      "id": "s47",
+      "place": "bedroom",
+      "chars": [
+        "claire:home"
+      ],
+      "image": "Claire sitting up in bed with a phone held to her ear, eyes widening.",
+      "lines": [
+        [
+          "RICHARD~phone",
+          "The five hundred thousand goes into the holding account before the ceremony."
+        ],
+        [
+          "DANIEL~phone",
+          "And if Claire refuses to sign?"
+        ],
+        [
+          "RICHARD~phone",
+          "Then we use the other documents."
+        ],
+        [
+          "VANESSA~phone",
+          "What other documents?"
+        ],
+        [
+          "RICHARD~phone",
+          "That's not your concern."
+        ]
+      ]
+    },
+    {
+      "id": "s48",
+      "place": "bedroom",
+      "chars": [
+        "claire:home"
+      ],
+      "image": "Claire on the edge of the bed staring at her phone, thumb over the screen, face set.",
+      "lines": [
+        [
+          "NARRATOR",
+          "The message ran on for a few seconds more. Claire played all of it three times. Then she forwarded it to Marcus. The next morning, Marcus called with disturbing news."
+        ]
+      ]
+    },
+    {
+      "id": "s49",
+      "place": "office",
+      "chars": [
+        "marcus"
+      ],
+      "image": "Marcus standing at his office window on the phone, a printed document in his other hand.",
+      "lines": [
+        [
+          "MARCUS",
+          "The Whitmores have created a company called Bennett Legacy Management."
+        ],
+        [
+          "CLAIRE",
+          "[sharp] Using my name?"
+        ],
+        [
+          "MARCUS",
+          "Yes. And a document has been submitted to a commercial lender. It appears to carry your signature."
+        ],
+        [
+          "CLAIRE",
+          "I never signed anything for that company."
+        ],
+        [
+          "MARCUS",
+          "I know."
+        ]
+      ]
+    },
+    {
+      "id": "s50",
+      "place": "apt",
+      "chars": [
+        "claire:home"
+      ],
+      "image": "Daytime. Claire pacing by the tall windows with her phone to her ear, tense.",
+      "lines": [
+        [
+          "CLAIRE",
+          "Are they trying to borrow money against my properties?"
+        ],
+        [
+          "MARCUS",
+          "That's what it looks like."
+        ],
+        [
+          "NARRATOR",
+          "The situation had changed. This was no longer just about a cheating fiancé. Someone had forged Claire's signature. And tried to use her inheritance as collateral."
+        ]
+      ]
+    },
+    {
+      "id": "s51",
+      "place": "office",
+      "chars": [],
+      "image": "Close-up of a fountain pen lying across the signature line of a loan document, the handwriting soft and out of focus.",
+      "lines": [
+        [
+          "CLAIRE",
+          "Can we stop it?"
+        ],
+        [
+          "MARCUS",
+          "We've notified the trustee and the lender. The transaction is on hold. Your assets are protected."
+        ],
+        [
+          "CLAIRE",
+          "Then why do you still sound worried?"
+        ],
+        [
+          "MARCUS",
+          "Because the lender's file contains something we didn't expect."
+        ],
+        [
+          "CLAIRE",
+          "What?"
+        ],
+        [
+          "MARCUS",
+          "A letter claiming that your mother approved the arrangement."
+        ]
+      ]
+    },
+    {
+      "id": "s52",
+      "place": "apt",
+      "chars": [
+        "claire:home"
+      ],
+      "image": "Daytime. Claire slowly lowering her phone, the color draining from her face.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Claire felt the blood drain from her face."
+        ],
+        [
+          "CLAIRE",
+          "[shaken] My mother would never..."
+        ],
+        [
+          "MARCUS",
+          "I know. That's why I want you both here tomorrow."
+        ]
+      ]
+    },
+    {
+      "id": "s53",
+      "place": "apt",
+      "chars": [
+        "claire:home"
+      ],
+      "image": "Evening. Claire alone on the sofa in the dim living room, holding a framed photograph and staring at it with doubt.",
+      "lines": [
+        [
+          "NARRATOR",
+          "For the first time, Claire wondered whether someone close to her had been helping the Whitmores. Someone beyond Daniel. Beyond Vanessa. Someone who knew her family. Her grandfather. And the trust."
+        ]
+      ]
+    },
+    {
+      "id": "s54",
+      "place": "office",
+      "chars": [
+        "evelyn:office",
+        "claire:work"
+      ],
+      "image": "Evelyn entering through the office door, Claire rising from a leather chair to face her, tense.",
+      "lines": [
+        [
+          "EVELYN",
+          "Claire?"
+        ],
+        [
+          "CLAIRE",
+          "[tight] Mom... did you sign a letter for Richard Whitmore?"
+        ]
+      ],
+      "sfx": [
+        [
+          "A heavy wooden office door opening",
+          1.5,
+          0.4,
+          "start"
+        ]
+      ]
+    },
+    {
+      "id": "s55",
+      "place": "office",
+      "chars": [
+        "evelyn:office"
+      ],
+      "image": "Evelyn holding a sheet of paper up close, reading glasses on, her expression hardening.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Evelyn looked at the document. Her face hardened."
+        ],
+        [
+          "EVELYN",
+          "[cold] No. That is not my signature. But I know whose hand it is."
+        ],
+        [
+          "CLAIRE",
+          "What?"
+        ],
+        [
+          "EVELYN",
+          "Look at the capital E. That little hook at the top. Fifteen years ago, someone signed your grandfather's name with that same hook. We proved it in court."
+        ]
+      ]
+    },
+    {
+      "id": "s56",
+      "place": "office",
+      "chars": [
+        "claire:work",
+        "evelyn:office"
+      ],
+      "image": "Claire and Evelyn side by side over a document on the desk, sharing a look of grim understanding.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Claire stared at her mother."
+        ],
+        [
+          "CLAIRE",
+          "[realizing] Richard's forger."
+        ],
+        [
+          "EVELYN",
+          "[satisfied] The very same. And this time... he's made the same mistake twice."
+        ]
+      ]
+    },
+    {
+      "id": "s57",
+      "place": "ballroom",
+      "chars": [
+        "claire"
+      ],
+      "image": "Claire standing in front of a giant glowing projector screen, facing two hundred hushed guests, immaculate and still.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Nineteen days after discovering the affair, Claire stood in front of two hundred guests. Her wedding dress was immaculate. Her makeup was perfect. And Richard Whitmore's name was glowing on a twelve-foot screen. Right beside a five-hundred-thousand-dollar transfer."
+        ]
+      ],
+      "cut": true
+    },
+    {
+      "id": "s58",
+      "place": "ballroom",
+      "chars": [
+        "richard"
+      ],
+      "image": "Richard rising slowly from his seat at the head table, one hand flat on the tablecloth, glaring.",
+      "lines": [
+        [
+          "RICHARD",
+          "[low, threatening] Young lady, I strongly suggest you turn that projector off."
+        ],
+        [
+          "CLAIRE",
+          "[innocent] Why? Is there something inaccurate?"
+        ],
+        [
+          "RICHARD",
+          "You have no idea what you're talking about."
+        ],
+        [
+          "CLAIRE",
+          "Then explain the money."
+        ]
+      ]
+    },
+    {
+      "id": "s59",
+      "place": "ballroom",
+      "chars": [
+        "richard",
+        "claire"
+      ],
+      "image": "Richard and Claire facing each other across the head table, guests frozen behind them.",
+      "lines": [
+        [
+          "RICHARD",
+          "[stiff] It was a legitimate business transaction."
+        ],
+        [
+          "CLAIRE",
+          "To Bennett Legacy Management?"
+        ],
+        [
+          "NARRATOR",
+          "Richard's expression changed. Just slightly. But Claire saw it."
+        ],
+        [
+          "RICHARD",
+          "That is confidential information."
+        ],
+        [
+          "CLAIRE",
+          "[lightly] Interesting. Because the company was created using my family name. And someone submitted a document with my forged signature."
+        ]
+      ]
+    },
+    {
+      "id": "s60",
+      "place": "ballroom",
+      "chars": [
+        "daniel",
+        "claire"
+      ],
+      "image": "Daniel stepping in front of Claire with his hands out, sweating, bow tie askew.",
+      "lines": [
+        [
+          "DANIEL",
+          "[desperate] Claire, stop! You're humiliating my family!"
+        ],
+        [
+          "CLAIRE",
+          "[icy] Daniel. You were planning to divorce me after six months. I think your family can survive six minutes of embarrassment."
+        ]
+      ],
+      "sfx": [
+        [
+          "A large formal crowd gasping in shock",
+          2.0,
+          0.4,
+          "end"
+        ]
+      ]
+    },
+    {
+      "id": "s61",
+      "place": "ballroom",
+      "chars": [
+        "vanessa",
+        "claire"
+      ],
+      "image": "Vanessa tearful, hands clasped, pleading; Claire regarding her without pity.",
+      "lines": [
+        [
+          "VANESSA",
+          "[crying] Claire, please! We made a mistake!"
+        ],
+        [
+          "CLAIRE",
+          "[quiet fury] A mistake? Vanessa, you slept with my fiancé. You helped him lie to me. And you discussed my inheritance like it was a lottery jackpot."
+        ],
+        [
+          "VANESSA",
+          "I never wanted any of this!"
+        ],
+        [
+          "CLAIRE",
+          "Then why did you ask Daniel how much he'd give you?"
+        ]
+      ]
+    },
+    {
+      "id": "s62",
+      "place": "ballroom",
+      "chars": [],
+      "image": "The darkened ballroom seen from the back, a giant projector screen glowing, guests' silhouettes turned toward it.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Another message appeared. \"I want my share before you leave her.\" Vanessa's face went pale."
+        ]
+      ],
+      "overlay": {
+        "type": "message",
+        "from": "Vanessa",
+        "to": "Daniel",
+        "text": "I want my share before you leave her."
+      },
+      "sfx": [
+        [
+          "A single mechanical click of a slide projector remote",
+          1.0,
+          0.5,
+          "start"
+        ]
+      ]
+    },
+    {
+      "id": "s63",
+      "place": "ballroom",
+      "chars": [
+        "daniel",
+        "vanessa"
+      ],
+      "image": "Daniel wheeling on Vanessa and pointing at her, furious; Vanessa recoiling.",
+      "lines": [
+        [
+          "DANIEL",
+          "[blurting, furious] You said you deleted that!"
+        ],
+        [
+          "NARRATOR",
+          "The words escaped before he could stop them. The entire room heard. Claire smiled."
+        ]
+      ]
+    },
+    {
+      "id": "s64",
+      "place": "ballroom",
+      "chars": [
+        "claire"
+      ],
+      "image": "Claire holding up a slim silver tablet in one hand with a faint smile.",
+      "lines": [
+        [
+          "CLAIRE",
+          "[amused] She did delete it, Daniel. You didn't. The tablet you gave me last Christmas is still signed in to your account. Every message you ever sent her landed in my kitchen drawer."
+        ]
+      ]
+    },
+    {
+      "id": "s65",
+      "place": "ballroom",
+      "chars": [
+        "daniel",
+        "claire"
+      ],
+      "image": "Daniel gripping Claire's forearm hard, his face twisted; Claire staring him down.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Daniel grabbed Claire's arm."
+        ],
+        [
+          "DANIEL",
+          "[snarling] Enough!"
+        ],
+        [
+          "CLAIRE",
+          "[low, dangerous] Take your hand off me."
+        ],
+        [
+          "NARRATOR",
+          "He didn't. Then a voice came from behind them."
+        ]
+      ]
+    },
+    {
+      "id": "s66",
+      "place": "ballroom",
+      "chars": [
+        "marcus"
+      ],
+      "image": "Marcus striding through the parted crowd, two large security guards in black suits behind him.",
+      "lines": [
+        [
+          "MARCUS",
+          "[calm, commanding] Mr. Whitmore. I recommend you release my client. Immediately."
+        ],
+        [
+          "NARRATOR",
+          "Marcus Reed stepped forward. Two security guards stood behind him. Daniel let go."
+        ]
+      ],
+      "sfx": [
+        [
+          "Firm dress-shoe footsteps crossing a marble floor",
+          3.0,
+          0.35,
+          "start"
+        ]
+      ]
+    },
+    {
+      "id": "s67",
+      "place": "ballroom",
+      "chars": [
+        "richard",
+        "marcus"
+      ],
+      "image": "Richard squaring up to Marcus with his chin raised; Marcus unreadable.",
+      "lines": [
+        [
+          "RICHARD",
+          "[contemptuous] Who the hell are you?"
+        ],
+        [
+          "MARCUS",
+          "Marcus Reed. Counsel for Claire Bennett and the Bennett family trust."
+        ],
+        [
+          "RICHARD",
+          "Then you should know better than to make accusations in public."
+        ],
+        [
+          "MARCUS",
+          "I do. Which is why the evidence was delivered to the authorities this morning."
+        ]
+      ]
+    },
+    {
+      "id": "s68",
+      "place": "ballroom",
+      "chars": [
+        "richard"
+      ],
+      "image": "Close-up of Richard, his practiced smile gone, jaw clenched.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Richard's smile vanished."
+        ],
+        [
+          "MARCUS",
+          "And the lender has confirmed that forged documents were used to apply for a loan."
+        ],
+        [
+          "RICHARD",
+          "[defiant] You can't prove I authorized anything."
+        ],
+        [
+          "MARCUS",
+          "Perhaps not from the documents alone."
+        ]
+      ]
+    },
+    {
+      "id": "s69",
+      "place": "ballroom",
+      "chars": [
+        "marcus",
+        "claire"
+      ],
+      "image": "Marcus nodding to Claire, who raises her phone toward the sound system.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Marcus turned toward the projector."
+        ],
+        [
+          "MARCUS",
+          "Claire? Play him the rest of the voicemail."
+        ]
+      ]
+    },
+    {
+      "id": "s70",
+      "place": "ballroom",
+      "chars": [],
+      "image": "Hundreds of guests in the dim ballroom listening in dead silence, faces lit by the screen, some covering their mouths.",
+      "lines": [
+        [
+          "RICHARD~phone",
+          "If Claire refuses to sign, we use the other documents."
+        ],
+        [
+          "DANIEL~phone",
+          "And if somebody checks the signature?"
+        ],
+        [
+          "RICHARD~phone",
+          "By then, the money will already be moving."
+        ]
+      ]
+    },
+    {
+      "id": "s71",
+      "place": "ballroom",
+      "chars": [
+        "daniel",
+        "richard"
+      ],
+      "image": "Daniel turning to his father, stricken, whispering; Richard staring straight ahead, cornered.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Nobody moved. Nobody spoke. Then Daniel whispered..."
+        ],
+        [
+          "DANIEL",
+          "[whispers] Dad... you said nobody would ever know."
+        ],
+        [
+          "NARRATOR",
+          "And just like that, Richard Whitmore lost control of the room."
+        ]
+      ]
+    },
+    {
+      "id": "s72",
+      "place": "ballroom",
+      "chars": [
+        "richard"
+      ],
+      "image": "Richard jabbing a finger toward the screen, red-faced, shouting.",
+      "lines": [
+        [
+          "RICHARD",
+          "[shouting] That recording is out of context!"
+        ],
+        [
+          "CLAIRE",
+          "[calm] Then you can explain the context to the investigators."
+        ]
+      ]
+    },
+    {
+      "id": "s73",
+      "place": "ballroom",
+      "chars": [
+        "richard",
+        "claire"
+      ],
+      "image": "Richard walking toward tall ballroom doors with his back to camera; Claire in the foreground, turning her head.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Richard turned toward the ballroom doors. But before he reached them, Claire spoke again."
+        ],
+        [
+          "CLAIRE",
+          "There's one more thing."
+        ],
+        [
+          "DANIEL",
+          "[exhausted] What now?"
+        ],
+        [
+          "CLAIRE",
+          "The part I still don't understand."
+        ]
+      ]
+    },
+    {
+      "id": "s74",
+      "place": "ballroom",
+      "chars": [
+        "claire",
+        "vanessa"
+      ],
+      "image": "Claire looking directly at Vanessa across the head table; Vanessa trembling.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Claire looked directly at Vanessa."
+        ],
+        [
+          "CLAIRE",
+          "[quietly] Why did you call me eleven days ago?"
+        ],
+        [
+          "VANESSA",
+          "[shaky] It was an accident. A pocket dial."
+        ],
+        [
+          "CLAIRE",
+          "Was it?"
+        ]
+      ]
+    },
+    {
+      "id": "s75",
+      "place": "ballroom",
+      "chars": [
+        "vanessa"
+      ],
+      "image": "Close-up of Vanessa, eyes filling with tears, mascara starting to run.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Vanessa's eyes filled with tears."
+        ],
+        [
+          "CLAIRE",
+          "You knew exactly when Richard would be discussing the payment. You knew my number. And you knew I'd listen to a voicemail from you."
+        ]
+      ]
+    },
+    {
+      "id": "s76",
+      "place": "ballroom",
+      "chars": [
+        "daniel",
+        "vanessa"
+      ],
+      "image": "Daniel staring at Vanessa in dawning horror; Vanessa unable to meet his eyes.",
+      "lines": [
+        [
+          "DANIEL",
+          "[stunned] Vanessa?"
+        ],
+        [
+          "VANESSA",
+          "[breaking] I didn't know how else to tell her."
+        ],
+        [
+          "NARRATOR",
+          "The room fell silent again."
+        ]
+      ]
+    },
+    {
+      "id": "s77",
+      "place": "ballroom",
+      "chars": [
+        "vanessa"
+      ],
+      "image": "Vanessa hugging her own arms, speaking through tears, the crowd blurred behind her.",
+      "lines": [
+        [
+          "VANESSA",
+          "[tearful] I thought Daniel loved me. I thought we'd be together after the divorce. But then I heard Richard talking about the documents. And the loans. And what would happen if Claire found out."
+        ],
+        [
+          "CLAIRE",
+          "What did he say?"
+        ],
+        [
+          "VANESSA",
+          "He said they'd make you look unstable. That they'd say you couldn't manage your own money."
+        ]
+      ]
+    },
+    {
+      "id": "s78",
+      "place": "ballroom",
+      "chars": [
+        "daniel",
+        "vanessa"
+      ],
+      "image": "Daniel shouting at Vanessa, who shouts back at him, both leaning in.",
+      "lines": [
+        [
+          "DANIEL",
+          "[shouting] Vanessa, shut up!"
+        ],
+        [
+          "VANESSA",
+          "[screaming back] No! You promised me everything! And then your father said I was disposable too!"
+        ]
+      ]
+    },
+    {
+      "id": "s79",
+      "place": "ballroom",
+      "chars": [
+        "vanessa",
+        "claire"
+      ],
+      "image": "Vanessa sobbing openly; Claire watching her, expression unreadable.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Vanessa was crying openly now."
+        ],
+        [
+          "VANESSA",
+          "[sobbing] I called Claire because I was scared. I wanted her to hear the truth. But I couldn't bring myself to say it."
+        ],
+        [
+          "CLAIRE",
+          "So you called me after midnight, when you knew my phone would be on silent. And you let it record."
+        ],
+        [
+          "VANESSA",
+          "[small] Yes."
+        ]
+      ]
+    },
+    {
+      "id": "s80",
+      "place": "ballroom",
+      "chars": [
+        "claire",
+        "vanessa"
+      ],
+      "image": "Claire stepping close to Vanessa, face to face, quiet and devastating.",
+      "lines": [
+        [
+          "NARRATOR",
+          "For a moment, Claire said nothing. Then she walked closer."
+        ],
+        [
+          "CLAIRE",
+          "[softly] You could've told me the truth nineteen days ago."
+        ],
+        [
+          "VANESSA",
+          "I know."
+        ],
+        [
+          "CLAIRE",
+          "You could've apologized."
+        ],
+        [
+          "VANESSA",
+          "[whispers] I know."
+        ]
+      ]
+    },
+    {
+      "id": "s81",
+      "place": "ballroom",
+      "chars": [
+        "claire"
+      ],
+      "image": "Close-up of Claire, eyes bright with held-back tears, perfectly composed.",
+      "lines": [
+        [
+          "CLAIRE",
+          "[controlled, hurt] Instead, you stood beside me at the altar. Held my flowers. Fixed my veil. And watched me marry a man you knew was trying to steal from me."
+        ],
+        [
+          "NARRATOR",
+          "Vanessa couldn't answer."
+        ],
+        [
+          "CLAIRE",
+          "You weren't protecting me. You were protecting yourself."
+        ]
+      ]
+    },
+    {
+      "id": "s82",
+      "place": "ballroom",
+      "chars": [
+        "vanessa",
+        "claire"
+      ],
+      "image": "Vanessa reaching a hand toward Claire, who does not move.",
+      "lines": [
+        [
+          "VANESSA",
+          "[pleading] Claire, please. We've been friends for fifteen years."
+        ],
+        [
+          "CLAIRE",
+          "[cold] No, Vanessa. We were friends for fourteen years and eleven months. The last nineteen days? I was just waiting to see whether you'd finally tell the truth."
+        ]
+      ]
+    },
+    {
+      "id": "s83",
+      "place": "ballroom",
+      "chars": [
+        "claire"
+      ],
+      "image": "Close-up of Claire's hands unclasping a delicate diamond bracelet and setting it on the white tablecloth.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Claire unclasped the diamond bracelet Vanessa had given her that morning. She set it on the table."
+        ],
+        [
+          "CLAIRE",
+          "You can have this back. And Daniel? You can have him too."
+        ]
+      ]
+    },
+    {
+      "id": "s84",
+      "place": "ballroom",
+      "chars": [
+        "daniel",
+        "claire"
+      ],
+      "image": "Daniel reaching for Claire with both hands, pleading, eyes wet; Claire turning away.",
+      "lines": [
+        [
+          "DANIEL",
+          "[begging] Claire, baby, please. I love you."
+        ],
+        [
+          "CLAIRE",
+          "[flat] No. You loved what you thought you could take from me. There's a difference."
+        ]
+      ]
+    },
+    {
+      "id": "s85",
+      "place": "ballroom",
+      "chars": [
+        "harris"
+      ],
+      "image": "Tall ballroom doors swinging open, Detective Harris walking in with two plainclothes investigators, guests turning to look.",
+      "lines": [
+        [
+          "NARRATOR",
+          "At that moment, two investigators entered the ballroom. Behind them stood Detective Harris."
+        ]
+      ],
+      "cut": true,
+      "sfx": [
+        [
+          "Heavy double doors swinging open in a large hall",
+          2.0,
+          0.45,
+          "start"
+        ]
+      ]
+    },
+    {
+      "id": "s86",
+      "place": "ballroom",
+      "chars": [
+        "harris",
+        "richard"
+      ],
+      "image": "Detective Harris facing Richard and holding up a folded document; Richard indignant.",
+      "lines": [
+        [
+          "DETECTIVE",
+          "Richard Whitmore?"
+        ],
+        [
+          "RICHARD",
+          "What is this?"
+        ],
+        [
+          "DETECTIVE",
+          "[even] We need to speak with you about suspected financial fraud and forged documents connected to Bennett Legacy Management."
+        ],
+        [
+          "RICHARD",
+          "[blustering] This is ridiculous!"
+        ],
+        [
+          "DETECTIVE",
+          "You're not under arrest at this moment, sir. But we have a court order for your records and your devices. And we expect your cooperation."
+        ]
+      ]
+    },
+    {
+      "id": "s87",
+      "place": "ballroom",
+      "chars": [
+        "richard",
+        "daniel"
+      ],
+      "image": "Richard gripping Daniel's shoulder and hissing an order; Daniel bewildered.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Richard turned to Daniel."
+        ],
+        [
+          "RICHARD",
+          "[hissing] Call our lawyer. Now."
+        ],
+        [
+          "DANIEL",
+          "[lost] Dad, what's happening?"
+        ],
+        [
+          "RICHARD",
+          "[snapping] Just do it!"
+        ]
+      ]
+    },
+    {
+      "id": "s88",
+      "place": "ballroom",
+      "chars": [
+        "daniel"
+      ],
+      "image": "Daniel staring down at a phone lighting up in his hand, face slack.",
+      "lines": [
+        [
+          "NARRATOR",
+          "But Daniel's phone was already ringing. His bank. Then his business partner. Then his father's attorney. Every call brought worse news. The lender had frozen the loan. The trust was untouched. And the Whitmore family business was now under investigation."
+        ]
+      ],
+      "sfx": [
+        [
+          "A smartphone vibrating insistently with an incoming call",
+          3.0,
+          0.35,
+          "start"
+        ]
+      ]
+    },
+    {
+      "id": "s89",
+      "place": "ballroom",
+      "chars": [
+        "richard",
+        "claire"
+      ],
+      "image": "Richard looking at Claire, defeated and hollow; Claire meeting his gaze calmly.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Richard looked at Claire. For the first time in his life, he had nothing clever to say."
+        ],
+        [
+          "RICHARD",
+          "[hoarse] You planned this."
+        ],
+        [
+          "CLAIRE",
+          "[even] I planned to protect what my grandfather built. You did the rest."
+        ]
+      ]
+    },
+    {
+      "id": "s90",
+      "place": "ballroom",
+      "chars": [
+        "daniel",
+        "claire"
+      ],
+      "image": "Daniel, pale and sweating, hands pressed together, begging Claire.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Daniel stepped toward her. His face was pale."
+        ],
+        [
+          "DANIEL",
+          "[pleading] Claire, please. We can fix this. We can get counseling. Start over. I'll do anything."
+        ],
+        [
+          "CLAIRE",
+          "Anything?"
+        ],
+        [
+          "DANIEL",
+          "Yes. Anything."
+        ],
+        [
+          "CLAIRE",
+          "[crisp] Then sign the annulment papers when Marcus sends them. And don't contact me again."
+        ]
+      ]
+    },
+    {
+      "id": "s91",
+      "place": "ballroom",
+      "chars": [
+        "claire",
+        "daniel"
+      ],
+      "image": "Claire tilting her head at Daniel with a small, merciless smile.",
+      "lines": [
+        [
+          "DANIEL",
+          "Claire..."
+        ],
+        [
+          "CLAIRE",
+          "[lightly] Oh, and Daniel? You kept asking whether I signed your father's agreement. Remember?"
+        ],
+        [
+          "DANIEL",
+          "[wary] Yes..."
+        ],
+        [
+          "CLAIRE",
+          "I didn't."
+        ],
+        [
+          "NARRATOR",
+          "Daniel stared at her."
+        ]
+      ]
+    },
+    {
+      "id": "s92",
+      "place": "ballroom",
+      "chars": [
+        "claire"
+      ],
+      "image": "Claire speaking calmly, investigators in trench coats visible out of focus behind her.",
+      "lines": [
+        [
+          "CLAIRE",
+          "[matter-of-fact] I told you it was signed and sitting with my attorney until after the honeymoon. It wasn't. It was sitting with the investigators. The trustee knew. And the lender was warned before a single dollar could move."
+        ],
+        [
+          "DANIEL",
+          "[hollow] So... you knew?"
+        ],
+        [
+          "CLAIRE",
+          "For nineteen days."
+        ],
+        [
+          "DANIEL",
+          "And you still married me?"
+        ]
+      ]
+    },
+    {
+      "id": "s93",
+      "place": "ballroom",
+      "chars": [
+        "claire",
+        "daniel"
+      ],
+      "image": "Claire looking down at Daniel, who has sunk onto a gold banquet chair.",
+      "lines": [
+        [
+          "CLAIRE",
+          "[quietly] I let you believe your plan was working. I wanted to see who else was involved. And I wanted you to hear the truth in front of everyone you lied to."
+        ]
+      ]
+    },
+    {
+      "id": "s94",
+      "place": "ballroom",
+      "chars": [
+        "daniel"
+      ],
+      "image": "Daniel slumped in a chair, a tipped champagne flute spilling across the white tablecloth beside him.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Daniel sank into a chair. His champagne glass tipped over. It spread across the white tablecloth, slowly. Like a secret nobody could hide anymore."
+        ],
+        [
+          "CLAIRE",
+          "[dry] You wanted a rich wife. Congratulations. You married one. For a few hours."
+        ]
+      ]
+    },
+    {
+      "id": "s95",
+      "place": "ballroom",
+      "chars": [
+        "claire"
+      ],
+      "image": "Claire turning to address the whole ballroom, arms slightly open, gracious as a host.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Then Claire turned to the guests."
+        ],
+        [
+          "CLAIRE",
+          "[warm, wry] I'm sorry this wasn't the celebration you expected. But the food is paid for. The band is paid for. And I refuse to waste a perfectly good cake on a perfectly terrible husband."
+        ]
+      ],
+      "sfx": [
+        [
+          "A few people in a crowd laughing nervously",
+          2.5,
+          0.3,
+          "end"
+        ]
+      ]
+    },
+    {
+      "id": "s96",
+      "place": "ballroom",
+      "chars": [
+        "claire",
+        "evelyn"
+      ],
+      "image": "Claire raising a champagne flute, Evelyn stepping up beside her with proud eyes, guests beginning to applaud.",
+      "lines": [
+        [
+          "CLAIRE",
+          "[bright] So please. Eat. Dance. And enjoy yourselves. Because tonight, we're celebrating something better than a wedding."
+        ],
+        [
+          "EVELYN",
+          "[fond] What's that, sweetheart?"
+        ],
+        [
+          "CLAIRE",
+          "[smiling] My freedom."
+        ]
+      ],
+      "sfx": [
+        [
+          "Warm applause and cheering building in a large ballroom",
+          5.0,
+          0.35,
+          "end"
+        ]
+      ]
+    },
+    {
+      "id": "s97",
+      "place": "city",
+      "chars": [],
+      "image": "The Manhattan skyline on a bright clear morning, seen from across the river in Brooklyn.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Six months later, the Whitmore name no longer opened quite so many doors. The investigation into the forged documents was still going. Richard's company had lost its biggest partners. Daniel's marriage had been annulled. And Vanessa had moved away from Manhattan."
+        ]
+      ],
+      "cut": true
+    },
+    {
+      "id": "s98",
+      "place": "brooklyn",
+      "chars": [
+        "claire:brooklyn"
+      ],
+      "image": "Claire standing in the middle of the bright loft space, looking around with quiet pride.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Claire? Claire had never been better. She was standing inside a newly renovated building in Brooklyn. A building her grandfather had left her. The same building Richard Whitmore had tried to take fifteen years earlier. Now it was home to a foundation for women rebuilding their lives after financial abuse."
+        ]
+      ]
+    },
+    {
+      "id": "s99",
+      "place": "brooklyn",
+      "chars": [
+        "claire:brooklyn",
+        "evelyn:brooklyn"
+      ],
+      "image": "Evelyn and Claire standing together by a tall window, laughing softly.",
+      "lines": [
+        [
+          "EVELYN",
+          "[warm] Your grandfather would be proud of you."
+        ],
+        [
+          "CLAIRE",
+          "I hope so."
+        ],
+        [
+          "EVELYN",
+          "You know what he always said?"
+        ],
+        [
+          "CLAIRE",
+          "[teasing] Never trust a man who talks more about your money than your dreams?"
+        ],
+        [
+          "EVELYN",
+          "[laughs] That too."
+        ]
+      ]
+    },
+    {
+      "id": "s100",
+      "place": "brooklyn",
+      "chars": [
+        "evelyn:brooklyn",
+        "claire:brooklyn"
+      ],
+      "image": "Evelyn holding out a yellowed envelope to Claire.",
+      "lines": [
+        [
+          "NARRATOR",
+          "They laughed. Then Evelyn handed Claire an old envelope."
+        ],
+        [
+          "EVELYN",
+          "[gently] I found this in his papers. He wrote it years ago. It's addressed to you."
+        ]
+      ]
+    },
+    {
+      "id": "s101",
+      "place": "brooklyn",
+      "chars": [
+        "claire:brooklyn"
+      ],
+      "image": "Claire unfolding a handwritten letter by the window, sunlight on the paper.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Claire opened the letter. Inside were just two sentences."
+        ],
+        [
+          "NARRATOR",
+          "[tender, slowly] \"My darling Claire, wealth isn't what people can take from you. It's knowing who you are when they try.\""
+        ]
+      ],
+      "overlay": {
+        "type": "letter",
+        "text": "My darling Claire, wealth isn't what people can take from you. It's knowing who you are when they try."
+      }
+    },
+    {
+      "id": "s102",
+      "place": "brooklyn",
+      "chars": [
+        "claire:brooklyn",
+        "evelyn:brooklyn"
+      ],
+      "image": "Claire holding the folded letter to her chest, crying and smiling at once, Evelyn's hand on her shoulder.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Claire folded the letter carefully. For the first time in months, she cried. Not because she'd lost a husband. Or a best friend. But because she finally understood what her grandfather had been trying to teach her."
+        ]
+      ]
+    },
+    {
+      "id": "s103",
+      "place": "ballroom",
+      "chars": [
+        "daniel",
+        "vanessa",
+        "richard"
+      ],
+      "image": "Wide shot of Daniel, Vanessa and Richard standing far apart in the emptying ballroom, each alone and ruined.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Daniel thought he was marrying eight million dollars. Vanessa thought she was stealing another woman's future. And Richard Whitmore thought he was finally getting his revenge. But all three forgot one very important thing."
+        ]
+      ]
+    },
+    {
+      "id": "s104",
+      "place": "ballroom",
+      "chars": [
+        "claire"
+      ],
+      "image": "Claire in her wedding gown looking straight into the camera with a slow, knowing smile, chandeliers glowing behind her.",
+      "lines": [
+        [
+          "NARRATOR",
+          "Never underestimate the woman who already knows your secrets. Especially when she's smiling."
+        ]
+      ]
+    },
+    {
+      "id": "s105",
+      "place": "brooklyn",
+      "chars": [
+        "claire:brooklyn"
+      ],
+      "image": "Claire walking out of the brick building into golden evening light, seen from behind, the city beyond.",
+      "lines": [
+        [
+          "NARRATOR",
+          "[slow, final] Because sometimes... the best revenge isn't destroying your enemies. It's letting them destroy themselves."
+        ],
+        [
+          "NARRATOR",
+          "This has been Karma Tales. Every betrayal has a price. And karma always collects."
+        ]
+      ]
+    }
+  ],
+  "places": {
+    "ballroom": "Setting: a lavish Manhattan hotel ballroom wedding reception at night with crystal chandeliers, white flowers and candlelight.",
+    "hall": "Setting: the dim hallway of an upscale Manhattan apartment on a rainy night.",
+    "apt": "Setting: the living room of an upscale Manhattan apartment with floor-to-ceiling windows.",
+    "elevator": "Setting: inside a mirrored apartment-building elevator at night.",
+    "taxi": "Setting: the back seat of a New York taxi on a rainy night.",
+    "kitchen": "Setting: a comfortable suburban kitchen at midnight, one lamp on.",
+    "office": "Setting: a wood-paneled Manhattan law office in morning light, bookshelves, an oak desk, leather chairs.",
+    "bedroom": "Setting: a quiet bedroom in gray dawn light.",
+    "city": "Setting: New York City.",
+    "brooklyn": "Setting: a bright, newly renovated brick loft-style commercial building in Brooklyn in daytime, tall windows, fresh wood floors.",
+    "memory": "Setting: a warm study with bookshelves."
+  },
+  "ambiences": {
+    "ballroom": [
+      "Soft murmur of a large elegant crowd in a hotel ballroom, occasional clink of glasses, no music",
+      0.07
+    ],
+    "hush": [
+      "Tense hushed crowd in a large ballroom, faint whispers and shifting chairs, no music",
+      0.06
+    ],
+    "rain": [
+      "Steady rain against apartment windows at night, quiet room",
+      0.1
+    ],
+    "office": [
+      "Quiet office room tone, faint air conditioning, distant muffled city traffic",
+      0.06
+    ]
+  },
+  "ambience": [
+    [
+      "s01",
+      "ballroom"
+    ],
+    [
+      "s11",
+      "hush"
+    ],
+    [
+      "s22",
+      "rain"
+    ],
+    [
+      "s33",
+      "none"
+    ],
+    [
+      "s36",
+      "office"
+    ],
+    [
+      "s46",
+      "none"
+    ],
+    [
+      "s54",
+      "office"
+    ],
+    [
+      "s57",
+      "hush"
+    ],
+    [
+      "s97",
+      "none"
+    ]
+  ]
+}
