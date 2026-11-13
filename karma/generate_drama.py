@@ -2,6 +2,7 @@
 that keep each character's face consistent by passing their reference portrait to the image model.
 
 usage: python karma/generate_drama.py karma/ep01_act1.json
+Scene images already in video/public/assets are reused; REDO_IMAGES=s07,s15 forces those to be remade.
 Writes video/public/assets/* and video/public/props.json for the Remotion "Episode" composition.
 """
 import base64
@@ -9,6 +10,7 @@ import json
 import mimetypes
 import subprocess
 import sys
+import urllib.error
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -17,14 +19,13 @@ import fal_client
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "pipeline"))
-from generate_assets import ASSETS, FPS, PUBLIC, download, media_seconds, narrate, words_from_alignment  # noqa: E402
+from generate_assets import ASSETS, FPS, PUBLIC, download, media_seconds  # noqa: E402
 
 import os  # noqa: E402
 
+REDO = {s.strip() for s in os.environ.get("REDO_IMAGES", "").split(",") if s.strip()}
 EDIT_MODEL = "fal-ai/nano-banana-2/edit"
 TEXT_MODEL = "fal-ai/nano-banana-2"
-LINE_GAP = 0.3  # pause after each line, seconds
-SCENE_GAP = 0.55  # pause after the last line of a scene
 
 
 def voice_ids(names):
@@ -39,44 +40,132 @@ def voice_ids(names):
     return ids
 
 
+DIALOGUE_MODELS = ["eleven_v4", "eleven_v3"]
+CHUNK_CHARS = 1500  # the conversation endpoint takes up to 2,000 characters a request
+CHUNK_GAP = 0.6  # silence between conversation chunks, seconds
+TARGET_DB = -21.0  # every line is brought to this average level so no voice is louder than another
+
+
+def converse(lines, ids):
+    """Voice a run of lines as one acted conversation. Returns (mp3 bytes, response, model)."""
+    last = None
+    for model in DIALOGUE_MODELS:
+        body = json.dumps({"inputs": [{"text": text, "voice_id": ids[role]} for role, text in lines], "model_id": model}).encode()
+        req = urllib.request.Request(
+            "https://api.elevenlabs.io/v1/text-to-dialogue/with-timestamps?output_format=mp3_44100_128",
+            data=body,
+            headers={"xi-api-key": os.environ["ELEVENLABS_API_KEY"], "Content-Type": "application/json"},
+        )
+        try:
+            data = json.load(urllib.request.urlopen(req, timeout=900))
+        except urllib.error.HTTPError as err:
+            last = f"{model}: HTTP {err.code} {err.read()[:300].decode(errors='replace')}"
+            print("Dialogue failed,", last)
+            continue
+        if data.get("voice_segments") and data.get("alignment"):
+            return base64.b64decode(data["audio_base64"]), data, model
+        last = f"{model}: response had no timings"
+    raise SystemExit(f"Dialogue failed: {last}")
+
+
+def spoken_words(alignment):
+    """Words with timings, leaving out acting directions written in [brackets]."""
+    words, current, depth = [], None, 0
+    for ch, start, end in zip(alignment["characters"], alignment["character_start_times_seconds"], alignment["character_end_times_seconds"]):
+        if ch == "[":
+            depth += 1
+        if depth or ch.isspace():
+            if current:
+                words.append(current)
+                current = None
+            if ch == "]":
+                depth = max(0, depth - 1)
+            continue
+        if current is None:
+            current = {"text": ch, "start": start, "end": end}
+        else:
+            current["text"] += ch
+            current["end"] = end
+    if current:
+        words.append(current)
+    return words
+
+
+def mean_db(path, start, end):
+    out = subprocess.run(
+        ["ffmpeg", "-nostdin", "-hide_banner", "-ss", str(start), "-to", str(end), "-i", str(path), "-af", "volumedetect", "-vn", "-f", "null", "-"],
+        capture_output=True, text=True,
+    ).stderr
+    found = [l for l in out.splitlines() if "mean_volume" in l]
+    return float(found[0].split("mean_volume:")[1].split("dB")[0]) if found else TARGET_DB
+
+
 def record(spec, tmp):
-    """Speak every line with its character's voice; return (words, scene times, total seconds)."""
+    """Voice the script as acted conversations; return (words, scene times, total seconds)."""
     ids = voice_ids(spec["voices"])
-    jobs = [(s["id"], i, role, text) for s in spec["scenes"] for i, (role, text) in enumerate(s["lines"])]
 
-    def one(job):
-        sid, i, role, text = job
-        audio, alignment, model = narrate(text, ids[role])
-        raw = tmp / f"{sid}_{i}.mp3"
-        raw.write_bytes(audio)
-        return job, raw, alignment, model
+    # Group whole scenes into chunks so each request is one continuous conversation.
+    chunks, current, size = [], [], 0
+    for scene in spec["scenes"]:
+        n = sum(len(t) for _, t in scene["lines"])
+        if current and size + n > CHUNK_CHARS:
+            chunks.append(current)
+            current, size = [], 0
+        current.append(scene)
+        size += n
+    chunks.append(current)
 
-    with ThreadPoolExecutor(4) as pool:
-        done = list(pool.map(one, jobs))
+    def one(chunk):
+        lines = [l for scene in chunk for l in scene["lines"]]
+        return converse(lines, ids)
+
+    with ThreadPoolExecutor(3) as pool:
+        results = list(pool.map(one, chunks))
 
     words, times, wavs, cursor = [], [], [], 0.0
-    for scene in spec["scenes"]:
-        start = cursor
-        mine = [d for d in done if d[0][0] == scene["id"]]
-        for n, (job, raw, alignment, model) in enumerate(mine):
-            gap = SCENE_GAP if n == len(mine) - 1 else LINE_GAP
-            wav = raw.with_suffix(".wav")
-            subprocess.run(
-                ["ffmpeg", "-v", "error", "-y", "-i", str(raw), "-af", f"apad=pad_dur={gap}", "-ar", "44100", "-ac", "1", str(wav)],
-                check=True,
-            )
-            for w in words_from_alignment(alignment):
-                words.append({"text": w["text"], "start": w["start"] + cursor, "end": w["end"] + cursor})
-            length = media_seconds(wav)
-            print(f"{scene['id']} {job[2]:9s} {length:5.1f}s {model}")
-            wavs.append(wav)
-            cursor += length
-        times.append((start, cursor))
+    for n, (chunk, (audio, data, model)) in enumerate(zip(chunks, results)):
+        raw = tmp / f"chunk{n}.mp3"
+        raw.write_bytes(audio)
+        segments = sorted(data["voice_segments"], key=lambda s: s["dialogue_input_index"])
+        lines = [(scene["id"], role) for scene in chunk for role, _ in scene["lines"]]
+
+        # Level every line to the same loudness.
+        gains = []
+        for seg in segments:
+            level = mean_db(raw, seg["start_time_seconds"], seg["end_time_seconds"])
+            gain = max(-8.0, min(8.0, TARGET_DB - level))
+            gains.append(f"volume=enable='between(t,{seg['start_time_seconds']:.3f},{seg['end_time_seconds']:.3f})':volume={gain:.1f}dB")
+            sid, role = lines[seg["dialogue_input_index"]]
+            print(f"{sid} {role:9s} {seg['end_time_seconds'] - seg['start_time_seconds']:5.1f}s level {level:6.1f} dB, gain {gain:+.1f} ({model})")
+        wav = tmp / f"chunk{n}.wav"
+        subprocess.run(
+            ["ffmpeg", "-nostdin", "-v", "error", "-y", "-i", str(raw), "-af", ",".join(gains) + f",apad=pad_dur={CHUNK_GAP}", "-ar", "44100", "-ac", "1", str(wav)],
+            check=True,
+        )
+        length = media_seconds(wav)
+
+        for w in spoken_words(data["alignment"]):
+            words.append({"text": w["text"], "start": w["start"] + cursor, "end": w["end"] + cursor})
+
+        # A scene starts halfway through the pause before its first line.
+        first, index = {}, 0
+        for scene in chunk:
+            first[scene["id"]] = index
+            index += len(scene["lines"])
+        starts = []
+        for scene in chunk:
+            i = first[scene["id"]]
+            starts.append(0.0 if i == 0 else (segments[i - 1]["end_time_seconds"] + segments[i]["start_time_seconds"]) / 2)
+        for k in range(len(chunk)):
+            end = starts[k + 1] if k + 1 < len(chunk) else length
+            times.append((starts[k] + cursor, end + cursor))
+        wavs.append(wav)
+        cursor += length
 
     listing = tmp / "list.txt"
     listing.write_text("".join(f"file '{w}'\n" for w in wavs))
     subprocess.run(
-        ["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(listing), "-b:a", "192k", str(ASSETS / "audio.mp3")],
+        ["ffmpeg", "-nostdin", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(listing), "-b:a", "192k", str(ASSETS / "audio.mp3")],
         check=True,
     )
     return words, times, cursor
@@ -93,6 +182,10 @@ def reference_url(path):
 
 
 def picture(spec, scene, refs):
+    target = ASSETS / f"{scene['id']}.jpg"
+    if target.exists() and scene["id"] not in REDO:
+        print(f"Image {scene['id']} reused")
+        return
     who = scene.get("chars", [])
     prompt = spec["style"] + " ".join(spec["looks"][c] + "." for c in who) + " " + scene["image"]
     args = {"prompt": prompt, "aspect_ratio": "16:9", "resolution": spec.get("resolution", "2K"), "output_format": "jpeg"}
@@ -122,7 +215,9 @@ def main():
     words, times, total = record(spec, tmp)
     print(f"Dialogue done: {total:.1f}s, {len(words)} words")
 
-    refs = {name: reference_url(ROOT / path) for name, path in spec["cast"].items()}
+    todo = [s for s in spec["scenes"] if s["id"] in REDO or not (ASSETS / f"{s['id']}.jpg").exists()]
+    needed = {c for s in todo for c in s.get("chars", [])}
+    refs = {name: reference_url(ROOT / path) for name, path in spec["cast"].items() if name in needed}
     with ThreadPoolExecutor(6) as pool:
         list(pool.map(lambda s: picture(spec, s, refs), spec["scenes"]))
     print("Images done")

@@ -4,13 +4,13 @@ import type {OverlayProps} from './types';
 
 const font = 'Montserrat, Arial, sans-serif';
 
-const Card: React.FC<{children: React.ReactNode; length: number}> = ({children, length}) => {
+const Card: React.FC<{children: React.ReactNode; length: number; side?: 'left' | 'right'}> = ({children, length, side}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const pop = spring({frame, fps, config: {damping: 16, stiffness: 140}});
   const out = interpolate(frame, [length - 10, length], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
   return (
-    <AbsoluteFill style={{backgroundColor: `rgba(0,0,0,${0.45 * out})`, justifyContent: 'center', alignItems: 'center', paddingBottom: 190}}>
+    <AbsoluteFill style={{backgroundColor: `rgba(0,0,0,${0.45 * out})`, justifyContent: 'center', alignItems: side === 'left' ? 'flex-start' : side === 'right' ? 'flex-end' : 'center', padding: '0 90px 190px'}}>
       <div style={{opacity: out, transform: `scale(${0.85 + 0.15 * pop})`, fontFamily: font}}>{children}</div>
     </AbsoluteFill>
   );
@@ -57,7 +57,7 @@ export const Overlays: React.FC<{overlays: OverlayProps[]}> = ({overlays}) => {
         const length = Math.max(1, Math.round((o.end - o.start) * fps));
         return (
           <Sequence key={i} from={from} durationInFrames={length}>
-            <Card length={length}>{o.type === 'transfer' ? <Transfer o={o} /> : <Message o={o} />}</Card>
+            <Card length={length} side={o.side}>{o.type === 'transfer' ? <Transfer o={o} /> : <Message o={o} />}</Card>
           </Sequence>
         );
       })}

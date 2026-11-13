@@ -19,6 +19,7 @@ export type OverlayProps = {
   text?: string;
   amount?: string;
   date?: string;
+  side?: 'left' | 'right';
 };
 
 export type EpisodeProps = {

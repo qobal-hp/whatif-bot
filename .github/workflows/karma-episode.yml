@@ -6,9 +6,16 @@ on:
       spec:
         description: Drama spec file
         default: karma/ep01_act1.json
+      assets_run:
+        description: Reuse scene images from this earlier run id
+        default: ""
+      redo_images:
+        description: Scene ids to regenerate anyway, comma separated
+        default: ""
 
 permissions:
   contents: write
+  actions: read
 
 jobs:
   render:
@@ -24,10 +31,19 @@ jobs:
           node-version: "22"
           cache: npm
           cache-dependency-path: video/package-lock.json
+      - name: Reuse images from an earlier run
+        if: inputs.assets_run != ''
+        uses: actions/download-artifact@v4
+        with:
+          name: assets
+          path: video/public
+          run-id: ${{ inputs.assets_run }}
+          github-token: ${{ github.token }}
       - name: Generate dialogue and scene images
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
           FAL_KEY: ${{ secrets.FAL_KEY }}
+          REDO_IMAGES: ${{ inputs.redo_images }}
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
           pip install --quiet fal-client
