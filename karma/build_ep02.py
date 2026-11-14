@@ -540,6 +540,14 @@ def main():
             "shorts_description": f"Full story on Karma Tales: {title}\n\n#shorts #karmatales #revengestory #inheritance",
         },
         "thumbnail_file": "karma/ep02_thumb.jpg",
+        "shorts": [
+            {"id": "short1", "title": "Her brothers got $12 million.|She got $1.", "from": "s09", "to": "s19",
+             "youtube_title": "Her Brothers Laughed When Dad Left Her $1. Then the Lawyer Kept Reading. #shorts"},
+            {"id": "short2", "title": "He turned on his own brother|in front of the board", "from": "s98", "to": "s105",
+             "youtube_title": "He Stole $800K From Their Dad's Company. His Brother Had the Emails. #shorts"},
+            {"id": "short3", "title": "\"Consider it my contribution|to your retirement.\"", "from": "s106", "to": "s113",
+             "youtube_title": "She Gave Her Greedy Brothers Her Entire Inheritance: $1 #shorts"},
+        ],
     }
     # Room tone per place, switched at the first scene of each new place.
     tone = {"office": "office", "home": "house", "hospital": "house", "thanksgiving": "house", "willow_out": "outdoors",
