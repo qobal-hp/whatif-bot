@@ -83,10 +83,11 @@ def main():
             name = role.split("_")[0].capitalize() + "ABCDEFGH"[n] + ("F" if role.endswith("_F") else "")
             voice_id = add(voice, name, have)
             if not voice_id:
-                continue
+                voice_id = voice["voice_id"]  # try the library voice directly, without adding it
             audio = speak(voice_id, cfg["lines"])
-            if audio:
-                (out / f"{role}_{name}.mp3").write_bytes(audio)
+            if not audio:
+                continue
+            (out / f"{role}_{name}.mp3").write_bytes(audio)
             entry = {"name": name, "voice_id": voice_id, "library_name": voice["name"],
                      "description": (voice.get("description") or "")[:200], "descriptive": voice.get("descriptive"),
                      "use_case": voice.get("use_case"), "used_1y": voice.get("usage_character_count_1y")}
