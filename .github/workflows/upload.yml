@@ -9,6 +9,11 @@ on:
       shorts_run:
         description: Run id of "Render shorts" (leave empty to skip shorts)
         default: ""
+      channel:
+        description: Which channel to upload to
+        type: choice
+        options: [whatif, karma]
+        default: whatif
       spec:
         description: Episode spec file
         default: pipeline/ep01_full.json
@@ -69,7 +74,8 @@ jobs:
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
-          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          YT_REFRESH_TOKEN: ${{ inputs.channel == 'karma' && secrets.YT_REFRESH_TOKEN_KARMA || secrets.YT_REFRESH_TOKEN }}
         run: |
+          if [ -z "$YT_REFRESH_TOKEN" ]; then echo "No upload token for channel ${{ inputs.channel }} (karma needs the secret YT_REFRESH_TOKEN_KARMA)"; exit 1; fi
           pip install --quiet google-api-python-client google-auth
           python pipeline/upload_youtube.py "${{ inputs.spec }}" /tmp/upload "${{ inputs.privacy }}" "${{ inputs.only }}" "${{ inputs.schedule }}"
