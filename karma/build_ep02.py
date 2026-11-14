@@ -83,7 +83,7 @@ sc("office", ["jason", "michael"], "Two brothers in suits laughing across a maho
 sc("office", ["whitaker"], "Close-up of an elderly lawyer's hand drawing a cream envelope sealed with red wax out of a leather briefcase.",
    [(N, "[quietly] But then he reached into his briefcase and pulled out a second envelope. And what happened next... took everything they thought they owned.")],
    sfx=[["Deep cinematic boom with distant thunder", 3.0, 0.4, "end"]], motion="the envelope slides slowly out of the briefcase, rain on the window behind")
-sc("office", [], "Exterior of an old brick Boston office building on a rainy Thursday afternoon, umbrellas on the sidewalk.",
+sc("", [], "Street-level exterior of an old red-brick Boston office building on a rainy Thursday afternoon, people with black umbrellas hurrying along the wet sidewalk, gray sky, seen from across the street.",
    [(N, "The reading of Robert Carter's will took place on a rainy Thursday afternoon in Boston.")], cut=True)
 sc("office", ["jason", "michael", "emily"], "Wide shot of three adult siblings seated around a long mahogany conference table, the two brothers close together, the sister alone at the far end.",
    [(N, "His three children sat around a polished mahogany table.")])
@@ -250,7 +250,7 @@ sc("willow_in", [], "A framed photograph of a smiling young mother on the wall o
    [(N, "On the wall hung a photograph of her mother, who died when Emily was twelve."),
     ("EMILY", "[emotional] Mom loved this house."),
     ("WHITAKER", "[gently] Your father knew that. He left you a note.")])
-sc("willow_in", [], "Close-up of a small folded note in shaky handwriting in Emily's hands.",
+sc("willow_in", [], "Close-up of a woman's hands holding a small folded cream note card, the handwriting on it soft and out of focus so no words can be read, warm window light.",
    [(N, "One line, in her father's handwriting."),
     ("ROBERT", "[tired, tender] \"Behind your mother's picture. Take it to Whitaker. And don't let your brothers tell you that you owe them anything.\"")],
    sfx=[["Low ominous musical drone swelling", 3.0, 0.3, "end"]])
@@ -457,7 +457,7 @@ sc("porch", ["emily:porch"], "Emily sitting on the porch steps with a cup of cof
    [(N, "[warm, unhurried] Six months later, Emily sat on the porch of the Willow Street house. The maple tree had turned bright red. The garden was blooming again.")],
    music="wonder", sfx=[["Birds singing on a quiet autumn morning", 4.0, 0.25, "start"]], cut=True,
    motion="red maple leaves drift slowly down in the morning light")
-sc("", [], "A 'SOLD' real estate sign on the lawn in front of a corporate office building, gray day.",
+sc("", [], "A shut-down corporate office lobby seen through a padlocked glass door, empty reception desk, dust sheets over the furniture, gray daylight. No signs, no lettering anywhere.",
    [(N, "Carter Development Group had been sold to pay its creditors. Jason's house, his boat, and the Miami condo went to the bank. He's awaiting trial on fraud charges.")])
 sc("", ["michael"], "Michael alone in a small bare one-bedroom apartment, sitting on a mattress, looking at his phone.",
    [(N, "Michael is cooperating with prosecutors. He lives in a one-bedroom apartment now. [pause] Neither has called to apologize. And Emily no longer waits for the phone to ring.")])
@@ -486,7 +486,7 @@ sc("porch", ["sarah", "emily:porch"], "Emily folding the letter, smiling through
    [(N, "Emily folded the letter. A tear rolled down her cheek. But this time, she was smiling."),
     ("SARAH", "[softly] You okay?"),
     ("EMILY", "[a small laugh through tears] Yeah. I think I finally am.")])
-sc("willow_out", [], "The blue-shuttered house and the red maple tree at golden hour, wide and peaceful.",
+sc("willow_out", [], "The blue-shuttered house and the red maple tree at golden hour, wide and peaceful, the porch and yard completely empty, no people anywhere in the frame.",
    [(N, "[reflective] Her brothers inherited a company worth millions on paper. Along with its debts, its lies, and every consequence of their own choices. Emily inherited a modest house. A second chance. [pause] And something her brothers never understood. Freedom.")])
 sc("willow_in", [], "A single one-dollar bill tucked into the corner of a framed photo of Emily and her father on a mantel, warm light.",
    [(N, "[slow, final] Sometimes karma doesn't arrive with a scream. Sometimes it arrives in a second envelope. And sometimes... the one who receives the least... walks away with the most."),
