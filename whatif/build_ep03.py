@@ -92,7 +92,7 @@ S("A tense TV news anchor at a desk in a studio, a screen behind her showing cro
   "ANCHOR: [tense, professional] We are asking everyone to stay calm. We do not know what these numbers are.")
 S("A New York taxi driver standing beside his yellow cab, staring at pedestrians with glowing numbers above their heads on a busy crosswalk.",
   "In New York, a taxi driver stepped out of his cab and stared at the sidewalk. A woman crossing the street had sixty-four years. The man beside her had three months.")
-S("A little boy holding his mother's hand at a crosswalk, a red countdown floating above his head, the mother noticing it with horror.",
+S("A little boy holding his mother's hand at a crosswalk, a soft red glow floating above his head with no readable digits, the mother noticing it with horror.",
   "And a little boy holding his mother's hand had thirty-seven seconds. His mother screamed and yanked him back onto the curb.")
 S("A delivery truck skidding past an empty crosswalk on a city street, motion blur, people jumping back on the sidewalk.",
   "Seconds later, a delivery truck skidded through the spot where they had been standing.",
@@ -112,9 +112,9 @@ S("A stock exchange trading floor in chaos, red screens everywhere, traders shou
   "By lunchtime, financial markets were in free fall. Airlines faced mass cancellations as passengers refused to fly. Hospitals filled with people demanding tests.", cut=True)
 S("An insurance office boardroom, executives staring at a screen of red numbers, tense.",
   "And insurance companies faced a question they were never built to answer. What happens when everyone believes they know when they'll die?")
-S("A young man in a suit walking out of a Chicago office tower with a box of his things, a glowing number above his head, determined.",
+S("A young man in a suit walking out of a Chicago office tower carrying a box of his things, a faint red glow above his head with no readable digits, determined.",
   "In Chicago, a thirty-year-old accountant saw four months above his head. He quit his job that afternoon.")
-S("A married couple in Los Angeles staring at each other in their kitchen, glowing numbers above both their heads, emotional.",
+S("A married couple in Los Angeles staring at each other in their kitchen, a soft blue glow above the man's head and a red glow above the woman's, no readable digits, emotional.",
   "In Los Angeles, a married couple looked at each other. He had forty-eight years. She had eleven days.")
 S("The same couple laughing on a sunny beach with their two kids, building a sandcastle, golden hour.",
   "They canceled every plan they had. They stopped answering emails. They took their kids to the beach, and for the first time in years, they spent an entire day together.")
@@ -229,7 +229,7 @@ S("Dr. Brooks alone in the lab at night writing on a glass board: a line pulled 
 S(f"The Carter living room at night, rain on the windows, Daniel feeding {LILY} a bottle on the couch.",
   "On the fifth night, Daniel was giving Lily her bottle when Emma walked in. She was pale.", chars=D, cut=True, music="tension",
   sfx=[["Steady rain against a window at night", 4.0, 0.25, "start"]])
-S("Emma standing in the dark living room doorway, a glowing red countdown floating above her head, scared.",
+S("Emma standing in the dark living room doorway, red light glowing above her head and on her face, no digits anywhere in the image, scared.",
   "EMMA: [unsteady] Daniel. Look at me.", "Her forty-two years were gone. In their place, a new number. Eleven minutes, forty-two seconds.",
   chars=E, overlay={"type": "countdown", "mode": "live", "start_value": 702, "span": 2})
 S("Daniel jumping up from the couch in horror, staring at Emma, the baby bottle slipping from his hand.",
@@ -273,7 +273,7 @@ S(f"Close-up of Daniel looking down at {LILY} in his arms, eyes wet, soft smile.
   "DANIEL: [quietly] I was supposed to go back to work that week. Eighty-hour weeks. I'd already missed half her first month. When I held her, I told her I wasn't going anywhere. And I meant it. I quit two days later.", chars=D)
 S("Thomas smiling softly at Daniel and the baby, warm window light on his face.",
   "THOMAS: [smiling softly] Then that was her turning point. Not something that happened to her. Something that happened for her. She's going to grow up with a father who stayed.", chars=T)
-S("Daniel on a backyard swing set holding the baby, a faint pale blue number above his head that he ignores, golden afternoon.",
+S("Daniel on a backyard swing holding the baby, a faint pale blue glow above his head with no readable digits that he ignores, golden afternoon.",
   "Above Daniel's head, his own number still read sixty-three years. It never changed. And after that day, he stopped looking up at it.", chars=D)
 S("A baby girl a few months old in the pink-and-blue striped hat laughing and reaching for her parents' hands on a blanket in the grass.",
   "Lily learned to smile. Then to laugh. Then to reach for her parents' hands.")
@@ -286,7 +286,7 @@ S("A businessman on a New York sidewalk at 8 a.m. staring up as his glowing numb
   cut=True, music="tension", sfx=[["Many ticking clocks all stopping at once, then silence", 3.0, 0.4, "start"]])
 S("A crowded Tokyo intersection where glowing digits dissolve into drifting particles above everyone's heads.",
   "Within seconds, every personal countdown on Earth was gone.")
-S("A giant red glowing countdown hologram filling the sky above a city skyline at dawn, crowds in the streets looking up in terror.",
+S("An enormous empty glowing red rectangular hologram frame filling the sky above a city skyline at dawn, no digits inside it, crowds in the streets looking up in terror.",
   "Then the sky changed. Above every city. Every ocean. Every mountain. One enormous number.", "Ten seconds.",
   overlay=dict(RED, span=7, color="#ff1e1e"),
   motion="Clouds churn around the enormous glowing red hologram in the sky as crowds below stop and stare upward, slow tilt up.")

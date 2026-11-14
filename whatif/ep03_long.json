@@ -348,7 +348,7 @@
   {
    "id": "L017",
    "chars": [],
-   "image": "A little boy holding his mother's hand at a crosswalk, a red countdown floating above his head, the mother noticing it with horror.",
+   "image": "A little boy holding his mother's hand at a crosswalk, a soft red glow floating above his head with no readable digits, the mother noticing it with horror.",
    "lines": [
     [
      "NARRATOR",
@@ -457,7 +457,7 @@
   {
    "id": "L025",
    "chars": [],
-   "image": "A young man in a suit walking out of a Chicago office tower with a box of his things, a glowing number above his head, determined.",
+   "image": "A young man in a suit walking out of a Chicago office tower carrying a box of his things, a faint red glow above his head with no readable digits, determined.",
    "lines": [
     [
      "NARRATOR",
@@ -469,7 +469,7 @@
   {
    "id": "L026",
    "chars": [],
-   "image": "A married couple in Los Angeles staring at each other in their kitchen, glowing numbers above both their heads, emotional.",
+   "image": "A married couple in Los Angeles staring at each other in their kitchen, a soft blue glow above the man's head and a red glow above the woman's, no readable digits, emotional.",
    "lines": [
     [
      "NARRATOR",
@@ -1164,7 +1164,7 @@
    "chars": [
     "emma"
    ],
-   "image": "Emma standing in the dark living room doorway, a glowing red countdown floating above her head, scared.",
+   "image": "Emma standing in the dark living room doorway, red light glowing above her head and on her face, no digits anywhere in the image, scared.",
    "lines": [
     [
      "EMMA",
@@ -1472,7 +1472,7 @@
    "chars": [
     "daniel"
    ],
-   "image": "Daniel on a backyard swing set holding the baby, a faint pale blue number above his head that he ignores, golden afternoon.",
+   "image": "Daniel on a backyard swing holding the baby, a faint pale blue glow above his head with no readable digits that he ignores, golden afternoon.",
    "lines": [
     [
      "NARRATOR",
@@ -1541,7 +1541,7 @@
   {
    "id": "L093",
    "chars": [],
-   "image": "A giant red glowing countdown hologram filling the sky above a city skyline at dawn, crowds in the streets looking up in terror.",
+   "image": "An enormous empty glowing red rectangular hologram frame filling the sky above a city skyline at dawn, no digits inside it, crowds in the streets looking up in terror.",
    "lines": [
     [
      "NARRATOR",
