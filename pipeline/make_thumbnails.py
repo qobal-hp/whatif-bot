@@ -22,10 +22,10 @@ def make(spec, thumb):
         try:
             args = {"prompt": spec["thumbnail_style"] + thumb["image"], "aspect_ratio": "16:9", "resolution": "2K", "output_format": "jpeg"}
             model = "fal-ai/nano-banana-2"
-            if thumb.get("ref"):
-                # Keep a recurring character's face: pass their portrait to the edit model.
-                ref = ROOT / thumb["ref"]
-                args["image_urls"] = ["data:image/jpeg;base64," + base64.b64encode(ref.read_bytes()).decode()]
+            refs = thumb.get("refs") or ([thumb["ref"]] if thumb.get("ref") else [])
+            if refs:
+                # Keep recurring characters' faces: pass their portraits to the edit model.
+                args["image_urls"] = ["data:image/jpeg;base64," + base64.b64encode((ROOT / r).read_bytes()).decode() for r in refs]
                 model = "fal-ai/nano-banana-2/edit"
             image = fal_client.subscribe(model, arguments=args)
             urllib.request.urlretrieve(image["images"][0]["url"], OUT / f"{thumb['id']}.jpg")

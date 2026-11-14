@@ -2492,5 +2492,73 @@
       "to": "s94",
       "youtube_title": "He Married Her for Her Money. She Was 19 Days Ahead of Him. #shorts"
     }
+  ],
+  "thumbnail_style": "YouTube thumbnail background, photorealistic still from a prestige American TV drama, shot on 35mm, dramatic cinematic lighting, high contrast, rich saturated color, faces large and readable at tiny size, every person's face exactly matching their reference photo, 16:9, absolutely no text, no letters, no numbers, no watermark, no logos. ",
+  "thumbnails": [
+    {
+      "id": "thumb1",
+      "side": "left",
+      "refs": [
+        "karma/cast/claire.jpg",
+        "karma/cast/daniel.jpg",
+        "karma/cast/vanessa.jpg"
+      ],
+      "lines": [
+        {
+          "text": "200 GUESTS",
+          "color": "#FFD400"
+        },
+        {
+          "text": "SAW IT ALL",
+          "color": "#FFFFFF"
+        }
+      ],
+      "tag": "AT HER OWN WEDDING",
+      "image": "Wedding ballroom at night with crystal chandeliers. On the right two thirds: the bride from the first reference photo in an ivory lace wedding gown, standing tall with a cold, satisfied half-smile, holding a small remote toward the camera. Behind her, the groom from the second reference photo in a black tuxedo and the bridesmaid from the third reference photo in a dusty-rose satin dress, both frozen in shock, mouths open, lit by the cold blue glow of a huge projector screen. Left third of the frame is dark, out-of-focus ballroom, empty."
+    },
+    {
+      "id": "thumb2",
+      "side": "right",
+      "refs": [
+        "karma/cast/claire.jpg",
+        "karma/cast/daniel.jpg",
+        "karma/cast/vanessa.jpg"
+      ],
+      "lines": [
+        {
+          "text": "SHE KNEW",
+          "color": "#FFFFFF"
+        },
+        {
+          "text": "ALL ALONG",
+          "color": "#FFD400"
+        }
+      ],
+      "tag": "19 DAYS OF REVENGE",
+      "image": "Extreme close-up on the left half of the frame: the bride from the first reference photo in an ivory lace wedding gown, one tear on her cheek but a knowing smirk, looking straight into the camera. Behind her shoulder, small and slightly out of focus, the groom from the second reference photo in a tuxedo secretly holding hands with the bridesmaid from the third reference photo in a dusty-rose dress. Warm golden candlelight, wedding reception. Right third of the frame is dark and empty."
+    },
+    {
+      "id": "thumb3",
+      "side": "left",
+      "refs": [
+        "karma/cast/claire.jpg",
+        "karma/cast/daniel.jpg"
+      ],
+      "lines": [
+        {
+          "text": "HE MARRIED",
+          "color": "#FFFFFF"
+        },
+        {
+          "text": "THE WRONG",
+          "color": "#FFFFFF"
+        },
+        {
+          "text": "WOMAN",
+          "color": "#FFD400"
+        }
+      ],
+      "image": "Wedding reception at night. On the right two thirds: the groom from the second reference photo in a black tuxedo slumped in a chair, pale and devastated, a champagne glass tipped over spilling across the white tablecloth. Standing above him, the bride from the first reference photo in an ivory lace wedding gown looks down at him with calm, icy contempt. Left third of the frame is dark, empty, out of focus."
+    }
   ]
 }
