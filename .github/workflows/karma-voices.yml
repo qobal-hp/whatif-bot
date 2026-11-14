@@ -1,0 +1,35 @@
+name: Karma voice casting
+
+on:
+  workflow_dispatch:
+    inputs:
+      spec:
+        description: Casting spec
+        default: karma/voice_casting.json
+
+permissions:
+  contents: write
+
+jobs:
+  cast:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Search the voice library and audition
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+        run: python karma/voice_casting.py "${{ inputs.spec }}" /tmp/voices
+      - name: Publish to the karma-voices-output branch
+        run: |
+          cp -r /tmp/voices voices
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan karma-voices-output
+          git rm -rf --cached . > /dev/null
+          git add -f voices
+          git commit -q -m "Voice casting from run ${{ github.run_number }}"
+          git push -f origin karma-voices-output

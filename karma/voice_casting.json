@@ -1,0 +1,23 @@
+{
+  "keep": 3,
+  "roles": {
+    "NARRATOR": {"gender": "male", "age": "middle_aged", "use_cases": ["narrative_story"], "search": "storyteller warm natural",
+                 "lines": ["[softly] Her brothers inherited twelve million dollars. She got one. [pause] One single dollar. And when the lawyer read the number out loud... her brothers laughed."]},
+    "NARRATOR_F": {"gender": "female", "age": "middle_aged", "use_cases": ["narrative_story"], "search": "storyteller warm natural",
+                 "lines": ["[softly] Her brothers inherited twelve million dollars. She got one. [pause] One single dollar. And when the lawyer read the number out loud... her brothers laughed."]},
+    "EMILY": {"gender": "female", "age": "young", "use_cases": ["conversational", "characters"], "search": "natural emotional",
+              "lines": ["[voice breaking] They made me feel guilty for buying Dad a better wheelchair.", "[calm, a small smile] Jason... that's the first offer you've made tonight that I actually like."]},
+    "JASON": {"gender": "male", "age": "middle_aged", "use_cases": ["conversational", "characters"], "search": "confident arrogant",
+              "lines": ["[smug] Don't take it personally, Emily. Dad knew who could actually run a business.", "[angry, through his teeth] Sign it over. Or we'll drag you through court until there's nothing left."]},
+    "MICHAEL": {"gender": "male", "age": "young", "use_cases": ["conversational", "characters"], "search": "casual sarcastic",
+                "lines": ["[laughs] Hey, Emily. Don't spend it all in one place.", "[panicked] I have the emails. I'm not going down for you."]},
+    "WHITAKER": {"gender": "male", "age": "old", "use_cases": ["conversational", "narrative_story"], "search": "calm older gentleman",
+                 "lines": ["[dry] The buildings are worth twelve, Mr. Carter. The company owes nine of it."]},
+    "ROBERT": {"gender": "male", "age": "old", "use_cases": ["conversational", "characters"], "search": "grandfather gentle raspy",
+               "lines": ["[tired, gentle] Emily... if you're hearing this, I'm gone. [sighs] And I owe you an apology."]},
+    "SARAH": {"gender": "female", "age": "young", "use_cases": ["conversational"], "search": "friendly casual",
+              "lines": ["[half teasing, half worried] When's the last time you slept more than four hours?"]},
+    "REYES": {"gender": "female", "age": "middle_aged", "use_cases": ["conversational"], "search": "professional confident",
+              "lines": ["[brisk] Then show me one contract. One invoice. One report they delivered."]}
+  }
+}
