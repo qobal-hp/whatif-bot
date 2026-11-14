@@ -329,12 +329,12 @@ LONG = {
 
 # =============================== SHORT 1 ===============================
 s1, m1, S = builder("a", 2)
-S(f"Vertical close-up of a terrified father holding {LILY}, a huge glowing red countdown hologram floating above the baby, dark hospital-like room with red light.",
+S(f"Vertical close-up of a terrified father holding {LILY}, an empty glowing red hologram frame floating above the baby with no digits, dark hospital-like room with red light.",
   "[intense] You wake up. And there's a number floating above your baby's head.", chars=D, music="tension",
   overlay=dict(RED, span=7, start_value=10))
 S(f"Close-up of {LILY} sleeping, red glow above her.", "Ten seconds.")
 S("Emma in a kitchen doorway at dawn, hand over mouth, red light on her face.", "EMMA: [whispering] Daniel... what is that?", chars=E)
-S("Daniel and Emma with pale blue numbers above their heads staring at each other.",
+S("Daniel and Emma staring at each other in a dim room, a soft pale blue glow above each of their heads, no readable digits.",
   "Above your head: sixty-three years. Above your wife's: forty-two. Above your three-week-old daughter... five seconds.", chars=D + E)
 S("Daniel clutching the baby, shouting toward Emma holding a phone.", "DANIEL: [panicked] Call somebody!", "Four.", "Three.", chars=D)
 S(f"Daniel pressing his forehead against {LILY}, eyes shut, tears.", "DANIEL: [breaking] Please. I'm right here. I'm not going anywhere.", chars=D)

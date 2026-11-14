@@ -84,7 +84,7 @@ const Countdown: React.FC<{o: OverlayProps}> = ({o}) => {
   const size = Math.round(Math.min(width, height * 1.6) * 0.085);
   const fadeIn = interpolate(frame, [0, 8], [0, 1], {extrapolateRight: 'clamp'});
   return (
-    <AbsoluteFill style={{alignItems: 'center', justifyContent: 'flex-start', paddingTop: height > width ? 380 : 70, opacity: fadeIn}}>
+    <AbsoluteFill style={{alignItems: 'center', justifyContent: 'flex-start', paddingTop: height > width ? 470 : 70, opacity: fadeIn}}>
       <div style={{fontFamily: '"Courier New", monospace', fontWeight: 800, fontSize: size, letterSpacing: size * 0.08, color: zero ? '#ffffff' : color, padding: `${size * 0.12}px ${size * 0.35}px`, border: `4px solid ${color}`, borderRadius: 18, backgroundColor: 'rgba(20,0,0,0.55)', textShadow: `0 0 ${18 * pulse}px ${color}, 0 0 ${42 * pulse}px ${color}`, boxShadow: `0 0 ${40 * pulse}px ${color}`}}>
         {text}
       </div>
