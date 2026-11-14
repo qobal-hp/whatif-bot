@@ -1,0 +1,193 @@
+{
+ "title": "Your Baby Has 10 Seconds Left",
+ "aspect": "9:16",
+ "resolution": "2K",
+ "tail": 2.5,
+ "voices": {
+  "NARRATOR": "George",
+  "DANIEL": "Will",
+  "EMMA": "Sarah",
+  "BROOKS": "Matilda",
+  "THOMAS": "Bill",
+  "MARCUS": "Eric",
+  "SARAH": "Laura",
+  "ASSISTANT": "Roger",
+  "DOCTOR": "Roger",
+  "ANCHOR": "Brian"
+ },
+ "cast": {
+  "daniel": "whatif/cast/daniel.jpg",
+  "thomas": "whatif/cast/thomas.jpg",
+  "emma": "video/public/assets/portrait_emma.jpg",
+  "brooks": "video/public/assets/portrait_brooks.jpg"
+ },
+ "portraits": {
+  "emma": "Photorealistic head-and-shoulders portrait of a woman about 30, shoulder-length auburn hair, green eyes, light freckles, grey knit cardigan, gentle tired expression, plain soft grey background, soft window light, 85mm lens.",
+  "brooks": "Photorealistic head-and-shoulders portrait of a woman in her mid-50s, short silver-blonde bob, thin reading glasses, white lab coat over a navy blouse, sharp intelligent eyes, plain soft grey background, soft light, 85mm lens."
+ },
+ "looks": {
+  "daniel": "Daniel: man about 30, messy dark-brown hair, stubble, brown eyes, navy hoodie, same face as his reference image",
+  "emma": "Emma: woman about 30, shoulder-length auburn hair, green eyes, light freckles, grey cardigan, same face as her reference image",
+  "brooks": "Dr. Evelyn Brooks: woman in her mid-50s, short silver-blonde bob, thin reading glasses, white lab coat, same face as her reference image",
+  "thomas": "Thomas Reed: man about 61, swept-back grey hair, neatly trimmed grey beard, dark wool coat and scarf, same face as his reference image"
+ },
+ "style": "Cinematic photorealistic film still, vertical 9:16 composition with the subject centered, shallow depth of field, moody cinematic sci-fi color grade with red accents, present day, no readable text or numbers unless described. ",
+ "places": {},
+ "ambiences": {},
+ "ambience": [],
+ "music": [
+  [
+   "a01",
+   "tension"
+  ]
+ ],
+ "scenes": [
+  {
+   "id": "a01",
+   "chars": [
+    "daniel"
+   ],
+   "image": "Vertical close-up of a terrified father holding a three-week-old newborn baby girl in a pink-and-blue striped knit hat and a striped hospital-style blanket, a huge glowing red countdown hologram floating above the baby, dark hospital-like room with red light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[intense] You wake up. And there's a number floating above your baby's head."
+    ]
+   ],
+   "place": "",
+   "overlay": {
+    "type": "countdown",
+    "mode": "spoken",
+    "span": 7,
+    "start_value": 10
+   }
+  },
+  {
+   "id": "a02",
+   "chars": [],
+   "image": "Close-up of a three-week-old newborn baby girl in a pink-and-blue striped knit hat and a striped hospital-style blanket sleeping, red glow above her.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Ten seconds."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "a03",
+   "chars": [
+    "emma"
+   ],
+   "image": "Emma in a kitchen doorway at dawn, hand over mouth, red light on her face.",
+   "lines": [
+    [
+     "EMMA",
+     "[whispering] Daniel... what is that?"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "a04",
+   "chars": [
+    "daniel",
+    "emma"
+   ],
+   "image": "Daniel and Emma with pale blue numbers above their heads staring at each other.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Above your head: sixty-three years. Above your wife's: forty-two. Above your three-week-old daughter... five seconds."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "a05",
+   "chars": [
+    "daniel"
+   ],
+   "image": "Daniel clutching the baby, shouting toward Emma holding a phone.",
+   "lines": [
+    [
+     "DANIEL",
+     "[panicked] Call somebody!"
+    ],
+    [
+     "NARRATOR",
+     "Four."
+    ],
+    [
+     "NARRATOR",
+     "Three."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "a06",
+   "chars": [
+    "daniel"
+   ],
+   "image": "Daniel pressing his forehead against a three-week-old newborn baby girl in a pink-and-blue striped knit hat and a striped hospital-style blanket, eyes shut, tears.",
+   "lines": [
+    [
+     "DANIEL",
+     "[breaking] Please. I'm right here. I'm not going anywhere."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "a07",
+   "chars": [],
+   "image": "Macro close-up of a three-week-old newborn baby girl in a pink-and-blue striped knit hat and a striped hospital-style blanket's face in red light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Two."
+    ],
+    [
+     "NARRATOR",
+     "One."
+    ],
+    [
+     "NARRATOR",
+     "Zero."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "a08",
+   "chars": [],
+   "image": "a three-week-old newborn baby girl in a pink-and-blue striped knit hat and a striped hospital-style blanket smiling up in warm light, red glow gone.",
+   "lines": [
+    [
+     "NARRATOR",
+     "She smiles. She's alive. And the number is gone."
+    ]
+   ],
+   "place": "",
+   "motion": "The newborn blinks and breaks into a tiny smile, warm light, slow push-in."
+  },
+  {
+   "id": "a09",
+   "chars": [],
+   "image": "A smartphone exploding with notifications on a dresser.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Then his phone explodes. Every human on Earth just woke up with a countdown. And it isn't counting what everyone thinks."
+    ]
+   ],
+   "place": "",
+   "overlay": {
+    "type": "text",
+    "text": "FULL STORY|ON THE CHANNEL"
+   }
+  }
+ ],
+ "title_band": "YOUR BABY HAS|10 SECONDS LEFT"
+}

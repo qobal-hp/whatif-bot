@@ -262,6 +262,31 @@ def attach_clips(props, done):
             scene["videoSeconds"] = done[scene["id"]]
 
 
+NUMBERS = {w: i for i, w in enumerate("zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty".split())}
+
+
+def countdown(o, index, times, words):
+    """A floating countdown over one or more scenes. In "spoken" mode it shows each number
+    the narrator says on its own ("Ten." "Nine.") or before "seconds"; in "live" mode it ticks
+    down once a second from start_value."""
+    start = times[index][0]
+    end = times[min(index + o.get("span", 1) - 1, len(times) - 1)][1]
+    out = dict(o, start=start, end=end)
+    if o.get("mode", "spoken") == "spoken":
+        inside = [w for w in words if start <= w["start"] < end]
+        ticks = []
+        for i, w in enumerate(inside):
+            word = w["text"].strip().lower().strip(".,!?\"'")
+            if word not in NUMBERS:
+                continue
+            alone = w["text"].strip().endswith(".") and (i == 0 or inside[i - 1]["text"].strip()[-1:] in ".!?")
+            before_seconds = i + 1 < len(inside) and inside[i + 1]["text"].lower().startswith("second")
+            if alone or before_seconds:
+                ticks.append([round(w["start"], 2), NUMBERS[word]])
+        out["ticks"] = ticks
+    return out
+
+
 def sound(prompt, seconds):
     """Generate one sound effect; returns the asset path, or None if it could not be made."""
     name = "sfx_" + hashlib.md5(f"{prompt}|{seconds}".encode()).hexdigest()[:10] + ".mp3"
@@ -349,8 +374,11 @@ def main():
     scenes, overlays = [], []
     for scene, (start, end) in zip(spec["scenes"], times):
         scenes.append({"id": scene["id"], "start": start, "end": end, "image": f"assets/{scene['id']}.jpg", "cut": bool(scene.get("cut")), "tall": spec.get("aspect") == "9:16"})
-        if scene.get("overlay"):
-            overlays.append(dict(scene["overlay"], start=start + 0.6, end=end - 0.2))
+        for o in ([scene["overlay"]] if isinstance(scene.get("overlay"), dict) else scene.get("overlay", [])):
+            if o.get("type") == "countdown":
+                overlays.append(countdown(o, len(scenes) - 1, times, words))
+            else:
+                overlays.append(dict(o, start=start + 0.6, end=end - 0.2))
     tail = spec.get("tail", 0)
     if tail:
         # Hold the last picture (and any end card) for a moment after the last word.

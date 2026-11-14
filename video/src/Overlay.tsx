@@ -63,6 +63,35 @@ const Text: React.FC<{o: OverlayProps}> = ({o}) => (
   </div>
 );
 
+const two = (n: number) => String(Math.max(0, Math.floor(n))).padStart(2, '0');
+
+// A glowing digital countdown floating at the top of the frame.
+const Countdown: React.FC<{o: OverlayProps}> = ({o}) => {
+  const frame = useCurrentFrame();
+  const {fps, width, height} = useVideoConfig();
+  const now = o.start + frame / fps;
+  let value = o.start_value ?? 0;
+  if (o.mode === 'live') {
+    value = Math.max(0, (o.start_value ?? 0) - frame / fps);
+  } else {
+    const past = (o.ticks ?? []).filter(([t]) => t <= now);
+    value = past.length ? past[past.length - 1][1] : (o.start_value ?? (o.ticks?.[0]?.[1] ?? 0));
+  }
+  const color = o.color ?? '#ff2a2a';
+  const zero = value <= 0;
+  const pulse = 0.75 + 0.25 * Math.sin((frame / fps) * Math.PI * 2);
+  const text = `${two(value / 3600)}:${two((value % 3600) / 60)}:${two(value % 60)}`;
+  const size = Math.round(Math.min(width, height * 1.6) * 0.085);
+  const fadeIn = interpolate(frame, [0, 8], [0, 1], {extrapolateRight: 'clamp'});
+  return (
+    <AbsoluteFill style={{alignItems: 'center', justifyContent: 'flex-start', paddingTop: height > width ? 380 : 70, opacity: fadeIn}}>
+      <div style={{fontFamily: '"Courier New", monospace', fontWeight: 800, fontSize: size, letterSpacing: size * 0.08, color: zero ? '#ffffff' : color, padding: `${size * 0.12}px ${size * 0.35}px`, border: `4px solid ${color}`, borderRadius: 18, backgroundColor: 'rgba(20,0,0,0.55)', textShadow: `0 0 ${18 * pulse}px ${color}, 0 0 ${42 * pulse}px ${color}`, boxShadow: `0 0 ${40 * pulse}px ${color}`}}>
+        {text}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
 export const Overlays: React.FC<{overlays: OverlayProps[]}> = ({overlays}) => {
   const {fps} = useVideoConfig();
   return (
@@ -72,7 +101,7 @@ export const Overlays: React.FC<{overlays: OverlayProps[]}> = ({overlays}) => {
         const length = Math.max(1, Math.round((o.end - o.start) * fps));
         return (
           <Sequence key={i} from={from} durationInFrames={length}>
-            <Card length={length} side={o.side}>{o.type === 'transfer' ? <Transfer o={o} /> : o.type === 'letter' ? <Letter o={o} /> : o.type === 'text' ? <Text o={o} /> : <Message o={o} />}</Card>
+            {o.type === 'countdown' ? <Countdown o={o} /> : <Card length={length} side={o.side}>{o.type === 'transfer' ? <Transfer o={o} /> : o.type === 'letter' ? <Letter o={o} /> : o.type === 'text' ? <Text o={o} /> : <Message o={o} />}</Card>}
           </Sequence>
         );
       })}

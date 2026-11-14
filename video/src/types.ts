@@ -12,7 +12,7 @@ export type SceneProps = {
 export type WordProps = {text: string; start: number; end: number};
 
 export type OverlayProps = {
-  type: 'message' | 'transfer' | 'letter' | 'text';
+  type: 'message' | 'transfer' | 'letter' | 'text' | 'countdown';
   start: number;
   end: number;
   from?: string;
@@ -21,6 +21,10 @@ export type OverlayProps = {
   amount?: string;
   date?: string;
   side?: 'left' | 'right';
+  mode?: 'spoken' | 'live';
+  ticks?: [number, number][];
+  start_value?: number;
+  color?: string;
 };
 
 export type EpisodeProps = {

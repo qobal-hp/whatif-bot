@@ -1,0 +1,154 @@
+{
+ "title": "The Only Man With No Countdown",
+ "aspect": "9:16",
+ "resolution": "2K",
+ "tail": 2.5,
+ "voices": {
+  "NARRATOR": "George",
+  "DANIEL": "Will",
+  "EMMA": "Sarah",
+  "BROOKS": "Matilda",
+  "THOMAS": "Bill",
+  "MARCUS": "Eric",
+  "SARAH": "Laura",
+  "ASSISTANT": "Roger",
+  "DOCTOR": "Roger",
+  "ANCHOR": "Brian"
+ },
+ "cast": {
+  "daniel": "whatif/cast/daniel.jpg",
+  "thomas": "whatif/cast/thomas.jpg",
+  "emma": "video/public/assets/portrait_emma.jpg",
+  "brooks": "video/public/assets/portrait_brooks.jpg"
+ },
+ "portraits": {
+  "emma": "Photorealistic head-and-shoulders portrait of a woman about 30, shoulder-length auburn hair, green eyes, light freckles, grey knit cardigan, gentle tired expression, plain soft grey background, soft window light, 85mm lens.",
+  "brooks": "Photorealistic head-and-shoulders portrait of a woman in her mid-50s, short silver-blonde bob, thin reading glasses, white lab coat over a navy blouse, sharp intelligent eyes, plain soft grey background, soft light, 85mm lens."
+ },
+ "looks": {
+  "daniel": "Daniel: man about 30, messy dark-brown hair, stubble, brown eyes, navy hoodie, same face as his reference image",
+  "emma": "Emma: woman about 30, shoulder-length auburn hair, green eyes, light freckles, grey cardigan, same face as her reference image",
+  "brooks": "Dr. Evelyn Brooks: woman in her mid-50s, short silver-blonde bob, thin reading glasses, white lab coat, same face as her reference image",
+  "thomas": "Thomas Reed: man about 61, swept-back grey hair, neatly trimmed grey beard, dark wool coat and scarf, same face as his reference image"
+ },
+ "style": "Cinematic photorealistic film still, vertical 9:16 composition with the subject centered, shallow depth of field, moody cinematic sci-fi color grade with red accents, present day, no readable text or numbers unless described. ",
+ "places": {},
+ "ambiences": {},
+ "ambience": [],
+ "music": [
+  [
+   "b01",
+   "tension"
+  ]
+ ],
+ "scenes": [
+  {
+   "id": "b01",
+   "chars": [
+    "thomas"
+   ],
+   "image": "Vertical shot of a grey-bearded older man in a dark coat standing in a rainy crowded city street at night, everyone around him has a glowing red countdown above their head, he has none, he looks up.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[mysterious] Every person on Earth woke up with a number above their head. Their countdown."
+    ]
+   ],
+   "place": "",
+   "motion": "The crowd moves around the still older man as he slowly lifts his gaze, rain falling through red glow."
+  },
+  {
+   "id": "b02",
+   "chars": [],
+   "image": "Grainy security camera footage of a crowded Washington D.C. train station, glowing numbers above everyone.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Three days later, this video went viral. A train station in Washington, D.C. Thousands of people. Thousands of numbers."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "b03",
+   "chars": [
+    "thomas"
+   ],
+   "image": "Security-camera view of the older man in a dark coat standing still in a moving crowd, no number above him.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Except one man."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "b04",
+   "chars": [
+    "thomas"
+   ],
+   "image": "Close-up of the older man looking straight into the security camera with a faint smile.",
+   "lines": [
+    [
+     "NARRATOR",
+     "No countdown. He stops. He turns to the camera. And he smiles."
+    ],
+    [
+     "THOMAS",
+     "[calm] You're all measuring the wrong thing."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "b05",
+   "chars": [],
+   "image": "A worn leather notebook on a metal table, its first page dated twenty years ago.",
+   "lines": [
+    [
+     "NARRATOR",
+     "His name is Thomas Reed. A math professor who vanished twenty years ago. And he has a notebook... dated twenty years before the numbers appeared."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "b06",
+   "chars": [
+    "brooks"
+   ],
+   "image": "Dr. Brooks across a metal table from the older man, stunned.",
+   "lines": [
+    [
+     "BROOKS",
+     "How did you know?"
+    ],
+    [
+     "THOMAS",
+     "[quietly] Because I've seen the numbers before."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "b07",
+   "chars": [
+    "thomas"
+   ],
+   "image": "Close-up of the older man's face under red light, no number above him, enigmatic.",
+   "lines": [
+    [
+     "NARRATOR",
+     "So why doesn't he have one?"
+    ]
+   ],
+   "place": "",
+   "overlay": {
+    "type": "text",
+    "text": "THE ANSWER IS IN|THE FULL EPISODE"
+   }
+  }
+ ],
+ "title_band": "THE ONLY MAN WITH|NO COUNTDOWN"
+}

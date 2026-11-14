@@ -1,26 +1,42 @@
-"""Build the specs for What If It Happens EP03: What If the World's Population Doubled Overnight?
+"""Build the specs for What If It Happens EP03: Everyone Got a Death Countdown. One Baby Reached Zero.
 
-Long form (L ids) and the short (s ids). Ethan, a Chicago delivery driver, carries the story;
-his portrait is drawn on the first run and reused by the second.
-Run: python whatif/build_ep03.py  ->  whatif/ep03_long.json, whatif/ep03_short.json
+Script: the reviewed version in the "What If EP03 — Death Countdown (수정본)" doc.
+Long form (L ids) + two Shorts (s ids). Daniel and Thomas use faces cropped from the chosen
+thumbnails (whatif/cast/), Emma and Dr. Brooks get portraits drawn on the first run.
+Run: python whatif/build_ep03.py -> whatif/ep03_long.json, ep03_short1.json, ep03_short2.json
 """
 import json
 from pathlib import Path
 
-E_ = "ethan"
-LOOKS = {E_: "Ethan: early 30s man, short dark-blond hair, light stubble, blue-grey eyes, a small scar through his left eyebrow, wearing a navy work jacket, same face as the reference portrait"}
-PORTRAIT = "Photorealistic head-and-shoulders portrait of a man in his early 30s, short dark-blond hair, light stubble, blue-grey eyes, a small scar through his left eyebrow, navy work jacket, friendly tired expression, plain soft grey background, soft window light, sharp focus, 85mm lens."
-CAST = {E_: "video/public/assets/portrait_ethan.jpg"}
-STYLE_TAIL = "shallow depth of field, natural cinematic color grade, present-day setting, no text other than what is described. "
+HERE = Path(__file__).parent
+CAST = {"daniel": "whatif/cast/daniel.jpg", "thomas": "whatif/cast/thomas.jpg",
+        "emma": "video/public/assets/portrait_emma.jpg", "brooks": "video/public/assets/portrait_brooks.jpg"}
+PORTRAITS = {
+    "emma": "Photorealistic head-and-shoulders portrait of a woman about 30, shoulder-length auburn hair, green eyes, light freckles, grey knit cardigan, gentle tired expression, plain soft grey background, soft window light, 85mm lens.",
+    "brooks": "Photorealistic head-and-shoulders portrait of a woman in her mid-50s, short silver-blonde bob, thin reading glasses, white lab coat over a navy blouse, sharp intelligent eyes, plain soft grey background, soft light, 85mm lens.",
+}
+LOOKS = {
+    "daniel": "Daniel: man about 30, messy dark-brown hair, stubble, brown eyes, navy hoodie, same face as his reference image",
+    "emma": "Emma: woman about 30, shoulder-length auburn hair, green eyes, light freckles, grey cardigan, same face as her reference image",
+    "brooks": "Dr. Evelyn Brooks: woman in her mid-50s, short silver-blonde bob, thin reading glasses, white lab coat, same face as her reference image",
+    "thomas": "Thomas Reed: man about 61, swept-back grey hair, neatly trimmed grey beard, dark wool coat and scarf, same face as his reference image",
+}
+LILY = "a three-week-old newborn baby girl in a pink-and-blue striped knit hat and a striped hospital-style blanket"
+VOICES = {"NARRATOR": "George", "DANIEL": "Will", "EMMA": "Sarah", "BROOKS": "Matilda", "THOMAS": "Bill",
+          "MARCUS": "Eric", "SARAH": "Laura", "ASSISTANT": "Roger", "DOCTOR": "Roger", "ANCHOR": "Brian"}
+STYLE_TAIL = "shallow depth of field, moody cinematic sci-fi color grade with red accents, present day, no readable text or numbers unless described. "
 
 
 def builder(prefix, width):
     scenes, music = [], []
 
-    def S(image, *lines, ethan=True, **extra):
-        parsed = [["ETHAN", l[7:]] if l.startswith("ETHAN: ") else ["NARRATOR", l] for l in lines]
+    def S(image, *lines, chars=(), **extra):
+        parsed = []
+        for line in lines:
+            role, sep, text = line.partition(": ")
+            parsed.append([role, text] if sep and role in VOICES else ["NARRATOR", line])
         track = extra.pop("music", None)
-        scene = {"id": f"{prefix}{len(scenes) + 1:0{width}d}", "chars": [E_] if ethan else [], "image": image, "lines": parsed, "place": ""}
+        scene = {"id": f"{prefix}{len(scenes) + 1:0{width}d}", "chars": list(chars), "image": image, "lines": parsed, "place": ""}
         scene.update(extra)
         scenes.append(scene)
         if track:
@@ -28,204 +44,332 @@ def builder(prefix, width):
     return scenes, music, S
 
 
-# ================= LONG FORM =================
+D, E, B, T = ["daniel"], ["emma"], ["brooks"], ["thomas"]
+RED = {"type": "countdown", "mode": "spoken"}
+
+# =============================== LONG FORM ===============================
 scenes, music, S = builder("L", 3)
 
-# Cold open
-S("Ethan in a small Chicago apartment at dawn, opening his front door in boxers and a T-shirt, the hallway outside packed shoulder to shoulder with confused strangers in pajamas.",
-  "[intrigued] Six a.m. Ethan opens his front door... and the hallway is full of people he has never seen in his life.", music="tension",
-  motion="Ethan slowly opens the door and freezes, the crowd of confused strangers in the hallway turns to look at him, handheld camera.")
-S("Wide shot of a Chicago street at sunrise jammed with thousands of bewildered people in pajamas and blankets, cars stuck, steam rising from vents.",
-  "Outside, it's the same. Every street. Every city. Every country.", ethan=False,
-  motion="Slow drone push over the crowded street, people mill around confused, steam drifts from street vents.")
-S("A giant digital world population counter on a dark screen glowing, numbers blurred and spinning, dramatic light.",
-  "Overnight, the world's population has doubled. From about eight billion people... to over sixteen billion.", ethan=False)
-S("A mixed crowd of new arrivals of every age — babies in arms, kids, grandparents — standing in a parking lot with nothing, no bags, looking around.",
-  "Every new person is real. Babies, kids, grandparents. But they arrived with nothing. No home. No job. No ID. Not even a bank account.", ethan=False)
-S("Ethan on his apartment balcony staring down at the packed street, holding a coffee cup, stunned.",
-  "ETHAN: [stunned, half-laughing] Okay... who are all these people?")
-S("A split composition: a calm clock reading 6:00 and a cracked clock reading 6:00 one year later, symbolic, dark background.",
-  "It took humanity forty-eight years to go from four billion people to eight billion. Today it happened in one night. In the next ten minutes, we'll follow the first hour, the first week, and the first year... and find out if we'd survive it.", ethan=False, cut=True)
-S("A world map glowing with population hotspots, India and China burning brightest, dark oceans, infographic style without text.",
-  "And they didn't appear randomly. Every place doubled. Tokyo, Lagos, Sao Paulo, Chicago. India and China each gained more than a billion people in a single night.", ethan=False)
+# ---- Chapter 1 — Ten Seconds
+S(f"Extreme close-up of {LILY} sleeping in a dim nursery at dawn, a glowing red holographic frame floating above her head, red light on her cheeks.",
+  "[slow, hushed] Ten.", "Nine.", "Eight.", music="tension",
+  overlay=dict(RED, span=8),
+  sfx=[["A single slow heartbeat, then a short digital beep", 3.0, 0.45, "start"]])
+S("Daniel in a small nursery at dawn, exhausted, rocking a newborn in his arms, baby bottles and diapers on a dresser, soft lamp light.",
+  "Daniel Carter had spent three weeks learning how to be a father. How to hold a newborn. How to survive on two hours of sleep. How to tell a hungry cry from a sleepy one.", chars=D)
+S(f"Daniel staring up in shock at a glowing red light floating above {LILY} in his arms, red light on his face.",
+  "Nothing could have prepared him for the morning a glowing red number appeared above his daughter's head.", "Seven.", chars=D)
+S("Emma frozen in a kitchen doorway at dawn in pajamas, hand over her mouth, red light spilling across her face.",
+  "EMMA: [frozen, whispering] Daniel... what is that?", chars=E)
+S("Daniel and Emma standing in the nursery, a pale blue glowing number floating above each of their heads, both staring at each other in disbelief.",
+  "He couldn't answer. Above his own head floated a pale blue number. Sixty-three years. Above Emma's: forty-two years. And above their three-week-old daughter, Lily... five seconds.", chars=D + E)
+S("Daniel clutching the newborn to his chest, shouting toward Emma who holds a phone with shaking hands.",
+  "DANIEL: [panicked] Emma, call somebody!", "EMMA: [shaking] Who? What do I even tell them?", "Four.", "Three.", chars=D + E)
+S(f"Daniel pressing his forehead gently against {LILY}, eyes shut, tears on his cheeks, red glow above them.",
+  "Daniel pressed his forehead against his daughter's.",
+  "DANIEL: [whispering, breaking] Please. Please don't. I'm right here. I'm not going anywhere.", chars=D)
+S(f"Macro close-up of {LILY}'s face bathed in red light, eyes open, looking up.",
+  "Two.", "One.", "Zero.", sfx=[["A heartbeat that stops, followed by silence", 2.5, 0.4, "start"]])
+S(f"{LILY} smiling a tiny perfect smile up at the camera in soft warm morning light, the red glow gone.",
+  "Lily stared up at him. Then she smiled. A tiny, perfect smile. She was alive. And the number above her head was gone.",
+  motion="The newborn blinks slowly and breaks into a tiny smile, warm light drifts across her face, slow push-in.")
+S("Daniel crying with relief while Emma wraps her arms around him and the baby, warm light.",
+  "Daniel started to cry. Emma wrapped her arms around them both.", chars=D + E)
+S("A smartphone on a nursery dresser lighting up with a flood of notifications, vibrating.",
+  "And then Daniel's phone began to vibrate. One notification. Then twenty. Then hundreds.",
+  sfx=[["A smartphone vibrating rapidly with many notification chimes", 3.0, 0.35, "start"]])
+S("Aerial view of a city street at sunrise full of people looking up at glowing red and blue numbers floating above everyone's heads.",
+  "Across the planet, billions of people had woken up with numbers above their heads. And some of those numbers were already reaching zero.",
+  motion="Slow drone glide over the crowd as people turn and point at the glowing numbers above each other's heads.")
+S("Daniel at the nursery window at sunrise holding the baby, looking out at the city, silhouette, thoughtful.",
+  "For the first time in history, everyone thought they knew exactly how much time they had left.", "They were wrong. And the truth would change everything.", chars=D)
 
-# Hour one
-S("A cell phone screen showing 'No Service' held by a worried woman in a crowd, many people holding up phones searching for signal.",
-  "[urgent] Hour one. Eight billion people reach for a phone at the same time... except half of them don't have one. And the half that do can't get a signal.", ethan=False, cut=True, music="tension")
-S("A busy 911 dispatch center with every operator on a call and every line blinking red.",
-  "Cell networks are built for a normal busy day. Not for double. Emergency lines overflow within minutes.", ethan=False)
-S("A packed subway platform in Chicago, people pressed against the train doors, nobody can get on.",
-  "Rush hour is impossible. Trains, buses, roads... everything was sized for half as many people.", ethan=False,
-  motion="The packed train doors try to close and bounce back open on bodies, crowd sways, handheld camera.")
-S("Ethan in his delivery van stuck in gridlock traffic, honking cars everywhere, pedestrians walking between the cars.",
-  "ETHAN: [frustrated] I deliver groceries for a living. Today I can't even get out of the parking lot.")
-S("A wall of frozen streaming screens and spinning loading icons in a dim living room, a family staring at them.",
-  "The internet crawls. Streaming freezes. Banking apps time out. The digital world was built for eight billion users, and sixteen billion just logged on.", ethan=False)
-S("A government office overwhelmed with endless lines of people holding paper forms, clerks buried under stacks of documents.",
-  "And then there's paperwork. Eight billion people with no birth certificate, no Social Security number, no address. Governments would face the biggest registration job in history, just to know who exists.", ethan=False)
+# ---- Chapter 2 — The Day the World Changed
+S("Montage composition of New York, Tokyo and London streets at morning, crowds with glowing numbers floating above every head.",
+  "At eight a.m. Eastern Time, the numbers appeared everywhere at once. Not on phones. Not on screens. Above people. Floating like impossible holograms. They moved when people moved. And no technology on Earth could explain them.",
+  cut=True)
+S("A tense TV news anchor at a desk in a studio, a screen behind her showing crowds with glowing numbers.",
+  "ANCHOR: [tense, professional] We are asking everyone to stay calm. We do not know what these numbers are.")
+S("A New York taxi driver standing beside his yellow cab, staring at pedestrians with glowing numbers above their heads on a busy crosswalk.",
+  "In New York, a taxi driver stepped out of his cab and stared at the sidewalk. A woman crossing the street had sixty-four years. The man beside her had three months.")
+S("A little boy holding his mother's hand at a crosswalk, a red countdown floating above his head, the mother noticing it with horror.",
+  "And a little boy holding his mother's hand had thirty-seven seconds. His mother screamed and yanked him back onto the curb.")
+S("A delivery truck skidding past an empty crosswalk on a city street, motion blur, people jumping back on the sidewalk.",
+  "Seconds later, a delivery truck skidded through the spot where they had been standing.",
+  sfx=[["Truck tires screeching on asphalt and a loud horn", 2.0, 0.4, "start"]])
+S("A mother on her knees on a sidewalk hugging her little son tightly, crowd around them, no number above him.",
+  "The boy was safe. His countdown vanished. His mother sank to her knees, sure she had just beaten death.")
+S("An empty café table by a window with a half-finished coffee and a chair pushed back, people gathered blurred in the background, somber.",
+  "Across town, a man sat at a café table as his number reached zero. A sudden heart attack. People rushed to help him, but he was gone.")
+S("Split composition: on the left the mother hugging her son, on the right the empty café chair, cold and warm light.",
+  "Two zeros. Two completely different endings. But the world only noticed one of them. People were dying when their numbers hit zero.")
+S("A wall of phone screens and social media feeds showing glowing red numbers and panicked crowds, dark room.",
+  "Within an hour, the internet had given it a name. The Death Clock. The name spread faster than any explanation. And fear spread faster still.",
+  overlay={"type": "text", "text": "THE|DEATH CLOCK"})
 
-# Day one to three: food
-S("A supermarket at 9 a.m. with nearly empty shelves and a crowd pushing carts, a few bags of rice left.",
-  "[serious] Day one. And the first real problem... is food. Most supermarkets only hold a few days of stock. With twice the shoppers, the shelves are empty by lunch.", ethan=False, cut=True)
-S("An enormous grain silo farm under a dramatic sky, harvest trucks lined up.",
-  "Here's the math. Right now, the world grows enough food to give every person roughly twenty-nine hundred calories a day. That's more than we need.", ethan=False)
-S("A dinner plate cut neatly in half with a knife, one half empty, dramatic overhead light.",
-  "Cut that in half... and everyone gets about fourteen hundred and fifty. Below what an adult body needs. For everyone. Everywhere.", ethan=False)
-S("Long lines of people at a food distribution point run by volunteers in a stadium parking lot.",
-  "Governments would open emergency reserves. But grain stockpiles are measured in months, not years. The clock starts ticking.", ethan=False)
+# ---- Chapter 3 — The Price of Knowing
+S("A stock exchange trading floor in chaos, red screens everywhere, traders shouting.",
+  "By lunchtime, financial markets were in free fall. Airlines faced mass cancellations as passengers refused to fly. Hospitals filled with people demanding tests.", cut=True)
+S("An insurance office boardroom, executives staring at a screen of red numbers, tense.",
+  "And insurance companies faced a question they were never built to answer. What happens when everyone believes they know when they'll die?")
+S("A young man in a suit walking out of a Chicago office tower with a box of his things, a glowing number above his head, determined.",
+  "In Chicago, a thirty-year-old accountant saw four months above his head. He quit his job that afternoon.")
+S("A married couple in Los Angeles staring at each other in their kitchen, glowing numbers above both their heads, emotional.",
+  "In Los Angeles, a married couple looked at each other. He had forty-eight years. She had eleven days.")
+S("The same couple laughing on a sunny beach with their two kids, building a sandcastle, golden hour.",
+  "They canceled every plan they had. They stopped answering emails. They took their kids to the beach, and for the first time in years, they spent an entire day together.")
+S("A bank loan officer sliding a rejected application back across a desk to a worried man with a short glowing number above his head.",
+  "But not everyone answered with love. Some banks began quietly reconsidering loans. Some employers changed who they hired. People with short numbers were treated as risks. People with long numbers were treated as assets.")
+S("A crowded city sidewalk where people glance suspiciously at each other's glowing numbers, cold blue light.",
+  "A person's worth was no longer measured only by money, looks, or achievements. Now it was measured by the number above their head.")
+S(f"Daniel sitting on the floor beside a crib at night watching {LILY} sleep, no number above her, lamp light.",
+  "Meanwhile, Daniel refused to leave the house. Lily slept in her crib. No number. No countdown. Just an ordinary baby. But every time he looked at her, he relived those ten seconds. People were dying. Other people were surviving. There had to be a reason.", chars=D)
 
-# Week one: water, power, hospitals
-S("A city water tower against a hazy sky, a gauge on a pipe showing pressure dropping into the red.",
-  "Week one. Water systems start to struggle. Pumps, pipes and treatment plants were designed for the population we had yesterday.", ethan=False, cut=True)
-S("A city skyline at night with entire neighborhoods going dark in rolling blackouts, only a few towers still lit.",
-  "Power grids keep only a small safety margin above normal demand. Double the people, double the phones, heaters and air conditioners... and the lights start going out.", ethan=False,
-  motion="Blocks of city lights switch off one after another across the skyline, slow camera drift.")
-S("A crowded hospital emergency room with patients on chairs and floors, exhausted nurses.",
-  "Hospitals? The US has fewer than three hospital beds for every thousand people. Overnight, that becomes about one and a half.", ethan=False)
-S("Ethan helping an elderly stranger sit down on the stairs of his building, handing her a bottle of water.",
-  "ETHAN: [softly] Her name's Rosa. She just... appeared in my building's stairwell. She's eighty. She has nowhere to go.")
-S("An overflowing elementary school classroom with sixty kids squeezed into desks meant for thirty, a frazzled teacher.",
-  "Schools reopen with twice the kids and the same number of teachers. Classes of sixty. Kids learning in hallways, gyms and cafeterias.", ethan=False)
-S("Farmland irrigation sprinklers spraying over dry fields under a hot sun, cracked earth at the edges.",
-  "And the real water problem isn't your faucet. About seventy percent of the fresh water humans use goes to farming. To grow twice the food, we'd need far more water than many rivers can give.", ethan=False)
+# ---- Chapter 4 — The Scientist
+S("Dr. Brooks walking through a high-tech research lab with monitors and volunteers in hospital chairs, focused.",
+  "Dr. Evelyn Brooks had spent twenty-five years studying human consciousness. She didn't believe in prophecy. She believed in evidence. And the evidence in front of her made no sense at all.", chars=B, cut=True)
+S("A row of twelve volunteers in a lab wired to heart and brain monitors, glowing numbers above their heads, clinical light.",
+  "Her team had gathered twelve volunteers whose numbers would reach zero within the hour. Heart rate, blood pressure, brain activity, oxygen. All monitored. And nothing suggested any of them was about to die.")
+S("Dr. Brooks sitting beside a nervous 52-year-old man with glasses and a cardigan in a lab chair, a red number above his head.",
+  "The first was a fifty-two-year-old schoolteacher named Marcus. Nineteen seconds.",
+  "BROOKS: [calm, clinical] Marcus, how do you feel?", "MARCUS: [shaky laugh] Terrified.",
+  "BROOKS: Any pain? Dizziness?", "MARCUS: No. Nothing.", chars=B, overlay=dict(RED, span=2))
+S("Close-up of the 52-year-old man with glasses squeezing his eyes shut in a lab chair, researchers watching tensely.",
+  "The lab went silent. Five. Three. One. Zero.", "Marcus closed his eyes. Then opened them.", "MARCUS: [whispering] Am I... dead?",
+  motion="The man slowly opens his eyes and exhales, the researchers behind him break into nervous smiles.")
+S("Researchers in a lab celebrating, one laughing in relief, monitors showing steady heartbeat lines.",
+  "A nervous laugh escaped one of the researchers. His heart was beating normally. He was alive. And his countdown was gone.")
+S("Close-up of a man's hands holding a phone showing a text conversation, Dr. Brooks noticing from beside him.",
+  "The team celebrated. Dr. Brooks didn't. Because she had noticed Marcus's phone, buzzing in his hand the whole time. A message from his daughter. Eleven years of silence. And just before zero, Marcus had finally typed three words back.",
+  overlay={"type": "message", "from": "Marcus", "to": "Rachel", "text": "I forgive you."})
+S("Dr. Brooks writing in a leather notebook at a lab desk late at night, thoughtful.",
+  "I forgive you. Dr. Brooks wrote those words in her notebook. She didn't know why. But they felt important.", chars=B)
 
-# Month one: housing
-S("A football stadium turned into a giant shelter, rows of cots across the field, Red Cross tents.",
-  "Month one. Every stadium, school gym and convention center becomes a shelter. And it's still not enough.", ethan=False, cut=True, music="wonder",
-  motion="Slow aerial pull-back over the stadium field filled with cots and people, volunteers walking between rows.")
-S("A sprawling tent city on the edge of a modern city, smoke from cooking fires, children playing between tents.",
-  "Tent cities spread around every major city on Earth. Eight billion people need a roof... and building that many homes would take decades.", ethan=False,
-  motion="Slow pan across the tent city as cooking smoke drifts and children run between tents, golden light.")
-S("Ethan's tiny apartment living room now crowded with a family of four strangers sleeping on the floor and the couch, Ethan stepping over them with a coffee.",
-  "ETHAN: [wry] My one-bedroom has six people in it now. We take turns with the shower. I'm not complaining. Okay... I'm complaining a little.")
-S("A real estate office window with rent prices in red skyrocketing, shocked passersby staring.",
-  "And if you rent? With twice the demand and the same number of homes, rents explode. A one-bedroom could cost what a house did last year.", ethan=False)
-S("A packed outdoor bar at night full of young people laughing and flirting, warm string lights.",
-  "[playful] Not everything is bad news, though. If you're single... your dating pool just doubled. Overnight.", ethan=False)
-S("A sold-out baseball stadium with fans packed into every seat and even standing in the aisles, sunny day.",
-  "Concerts, ballgames, theme parks? Twice the fans fighting for the same seats. Good luck getting tickets ever again.", ethan=False)
+# ---- Chapter 5 — The Impossible Pattern
+S("Dr. Brooks surrounded by screens of case files and video clips in a dark lab, exhausted, coffee cups everywhere.",
+  "Over the next forty-eight hours, Dr. Brooks studied thousands of recorded zeros. Some people died. Most did not.", chars=B, cut=True, music="wonder")
+S("A firefighter carrying a child out of a smoky building doorway, heroic silhouette, embers.",
+  "A firefighter hit zero seconds before pulling a child from a burning building.")
+S("A woman shaking hands with an interviewer in a glass office, a world map on the wall behind them.",
+  "A woman hit zero the moment she accepted a job on the other side of the world.")
+S("A young man in a car at night making a U-turn on an empty highway, headlights, rain.",
+  "A young man hit zero as he turned his car around and drove home.")
+S(f"Daniel holding {LILY}, their eyes locked, red glow fading, intimate close-up.",
+  "And a newborn baby hit zero while looking into her father's eyes.", chars=D)
+S("A glass wall covered in sticky notes and photos grouped into clusters, Dr. Brooks standing before it with a marker.",
+  "She began sorting them. Death. Survival. Decisions. Discoveries. Encounters. Every single one was a moment that permanently changed the direction of a life.", chars=B)
+S("Dr. Brooks turning toward a young male lab assistant at a computer, lab lights low, tense discovery moment.",
+  "BROOKS: [slowly] What if we're asking the wrong question?", "ASSISTANT: What do you mean?",
+  "BROOKS: What if the clock isn't measuring the end of a life?", "ASSISTANT: Then what is it measuring?",
+  "BROOKS: [quiet] The end of the life you were going to have.", chars=B)
+S("A dramatic visualization of a glowing path splitting into many branching futures in darkness.",
+  "The room went quiet. It was only a theory. But if it was true, the numbers weren't predicting death. They were marking the moments when a person's future changed forever. And that raised a far more disturbing question. If the numbers knew when your future would change... was the future already written?")
 
-# Jobs and economy
-S("A massive line of job seekers wrapped around a city block outside a warehouse with a 'Now Hiring' banner.",
-  "[thoughtful] Now, money. Billions of new people need work. In the short term, that's a disaster. Too many workers, too few jobs. Wages drop.", ethan=False, cut=True, music="tension")
-S("A busy construction site at sunrise with hundreds of workers framing new apartment buildings, cranes overhead.",
-  "But look closer. Everyone needs homes, food, clothes, power. That's the biggest wave of demand in history. Construction, farming and energy would boom.", ethan=False)
-S("A young woman in a makeshift classroom in a tent city teaching kids with a small whiteboard, focused.",
-  "And here's the part people forget. Twice as many people also means twice as many doctors, inventors and engineers. Twice the chance of the next Einstein.", ethan=False)
-S("A bustling market street in a city with new shops opening, busy shoppers, energetic mood.",
-  "Economists would argue about this for decades. In the long run, more people usually means a bigger economy. More workers, more customers, more ideas. The hard part is surviving the first few years.", ethan=False)
+# ---- Chapter 6 — The Man Without a Number
+S("Grainy black-and-white security camera footage of a crowded subway station, everyone with glowing numbers above their heads.",
+  "Three days later, a video began spreading online. A crowded train station in Washington, D.C. Every person in the frame had a number above their head.", cut=True, music="tension")
+S("Security-camera view of an older man in a dark coat standing still in a moving crowd, the only person without a glowing number, looking up at the camera.",
+  "Except one. An older man in a dark coat. Gray hair. A neatly trimmed beard. No countdown.", chars=T,
+  motion="The crowd streams past as the older man stops, turns his head toward the security camera and slowly smiles.")
+S("Close-up of Thomas looking directly into a security camera with a faint knowing smile, grainy footage look.",
+  "He stopped, turned toward the security camera, and smiled.", "THOMAS: [calm, almost amused] You're all measuring the wrong thing.", chars=T)
+S("A wall of news screens showing the station footage of Thomas, with view counters soaring.",
+  "The clip was viewed a hundred million times. Within hours, investigators had a name. Thomas Reed. Sixty-one. Former professor of mathematics. Out of public life for almost twenty years.")
+S("Thomas and Dr. Brooks sitting across a metal table in a quiet interview room, a worn leather notebook between them.",
+  "Dr. Brooks expected a fraud. Instead, Thomas laid a worn notebook on the table. The first page was dated twenty years ago. Across the top, three words. The Turning Point.", chars=T + B)
+S("Close-up of Dr. Brooks staring at Thomas across the table, stunned.",
+  "BROOKS: [stunned] How did you know?", "THOMAS: [quietly] Because I've seen the numbers before.", chars=B)
 
-# Food fix
-S("A huge dumpster behind a supermarket overflowing with perfectly good fruit, vegetables and bread.",
-  "[upbeat] So could we actually feed sixteen billion? Maybe. First, about a third of all the food we produce today is lost or wasted. Stop that... and the math changes fast.", ethan=False, cut=True, music="wonder")
-S("Vast green pastures with grazing cattle stretching to the horizon, golden hour.",
-  "Second, meat. Livestock uses most of the world's farmland, but provides less than a fifth of our calories. Grow food for people instead of for cows, and the same land feeds far more people.", ethan=False)
-S("A glowing indoor vertical farm with stacked racks of lettuce under pink LED lights, workers in white suits.",
-  "Add vertical farms, better crops, and more fishing... and sixteen billion becomes possible. Not easy. Not comfortable. But possible.", ethan=False)
-S("A scientist in a lab looking at a glowing hologram of Earth with numbers floating around it, thoughtful.",
-  "So how many people can Earth actually hold? Scientists have argued about this for a century. Their estimates range from under two billion... to well over a hundred billion. The answer depends almost entirely on how we live.", ethan=False)
-S("A family eating a simple plant-based meal at a small kitchen table, warm light.",
-  "Sixteen billion people living like the average American? Impossible. Sixteen billion people eating more plants, sharing more, wasting less? That's a different story.", ethan=False)
+# ---- Chapter 7 — Twenty Years Earlier
+S("Flashback: a younger Thomas in his early 40s with dark hair writing equations on a chalkboard in a university lab at night, warm sepia tones.",
+  "THOMAS: [reflective] Twenty years ago, I was building a mathematical model of human decisions. How tiny choices produce enormous changes. A missed train. A phone call. Choosing one street instead of another.", cut=True)
+S("A chalkboard covered in branching diagrams labeled with arrows, sepia flashback light.",
+  "They called it the Branching Future Model. Not a machine that could see the future. Just an attempt to describe how futures split apart.")
+S("Flashback: younger Thomas alone in the lab looking up in shock at a faint glowing number above his own head.",
+  "Then one night, working alone, Thomas looked up and saw a number above his own head. Three minutes.",
+  "THOMAS: I thought I was losing my mind. Then it hit zero... and my phone rang.")
+S("Flashback: a hospital corridor at night, younger Thomas running toward a door, blurred nurses.",
+  "His wife had been in a car accident. She survived. But she never walked again.")
+S("Thomas in the present sitting with Dr. Brooks, looking down at his hands, quiet grief.",
+  "THOMAS: [quiet] I left the university to take care of her. For twenty years, that was my whole life. She passed away last spring.",
+  "BROOKS: [gently] And you never told anyone?", "THOMAS: [a tired smile] I told everyone. Nobody believed me.", chars=T + B)
+S("Close-up of an open notebook with dense equations and one handwritten sentence underlined in red ink.",
+  "He opened the notebook. Page after page of equations. And one sentence, underlined in red.",
+  "The countdown does not predict the future. It marks the moment the future changes.",
+  overlay={"type": "letter", "text": "The countdown does not predict the future. It marks the moment the future changes."})
+S("Thomas looking out a rain-streaked window, reflection in the glass, no number above his head.",
+  "THOMAS: And when your future changes, the clock starts over. A zero isn't the end of the road. It's a fork in it.",
+  "BROOKS: Then why is there no number above you now?", "Thomas looked toward the window.",
+  "THOMAS: [softly] I've been asking myself that for three days.", chars=T)
 
-# Nature and climate
-S("A rainforest edge being cleared by bulldozers, smoke rising, a toucan watching from a branch.",
-  "[serious] But nature pays the bill. More farms means more forests cut down. More cities means less space for animals.", ethan=False, cut=True)
-S("Factory smokestacks and highways at dusk under an orange polluted sky.",
-  "And emissions? Twice the people driving, heating and cooking could push carbon emissions toward double. Climate goals would be thrown out the window.", ethan=False)
-S("An empty quiet beach at sunrise with a single set of footprints, peaceful.",
-  "Quiet places disappear. Empty beaches, open roads, a seat on the train. Those become luxuries.", ethan=False)
-S("A maternity ward nursery with rows of newborn babies in cribs, nurses walking between them.",
-  "And it doesn't stop. Twice as many people means roughly twice as many babies every year. Unless families choose to have fewer kids, the curve keeps climbing.", ethan=False)
-S("A busy international airport terminal with endless queues at passport control.",
-  "Borders, visas and citizenship would become the hottest debate on the planet. Every country would have to decide how to handle billions of people who, on paper, don't exist.", ethan=False)
-S("A calm graph-like landscape: a gentle hill of glowing light rising and flattening on the horizon at dawn, symbolic.",
-  "For comparison, in our real world, the United Nations expects the population to peak around ten billion later this century. Sixteen billion would blow far past anything we've ever planned for.", ethan=False)
+# ---- Chapter 8 — Can You Change Your Countdown?
+S("Dr. Brooks briefing a small group of volunteers in a lab conference room, a whiteboard behind her.",
+  "Dr. Brooks decided to test the theory. Volunteers with less than twenty-four hours. One simple instruction. Change your plans.", chars=B, cut=True)
+S("Three-panel composition: a man canceling a flight at an airport counter, a woman signing a new job contract, a man sitting alone in a locked apartment, glowing numbers above each.",
+  "A man canceled his flight. His number didn't move. A woman switched jobs. Nothing. Another man refused to leave his apartment at all. The numbers kept falling. If the future could change, why couldn't they change the clock?")
+S("A woman in her late 30s with a dark ponytail and a grey hoodie sitting alone in a lab waiting room staring at her hands, a red number above her head.",
+  "Then came Sarah Lane. A nurse who had walked away from her job a year ago, burned out and broken. Seventeen minutes left. She sat in the lab's waiting room, staring at her hands.")
+S("An elderly man in a waiting room stumbling and falling to the floor, people jumping up from their chairs in alarm.",
+  "Across the room, an elderly man stood up... and collapsed.", sfx=[["A chair scraping and a startled gasp from a small room", 1.5, 0.4, "start"]])
+S("The woman with the dark ponytail frozen in her chair, eyes wide, conflicted, people panicking in the background.",
+  "Everyone froze. Sarah didn't move.", "SARAH: [to herself, shaking] I'm not a nurse anymore. I'm not...")
+S("The woman with the dark ponytail kneeling beside the elderly man on the waiting room floor checking his breathing, focused and commanding.",
+  "Then she was on her knees beside him, checking his breathing, calling out orders like she had never left.",
+  "SARAH: [sharp, focused] Call 911. Somebody find me the defibrillator. Now!")
+S("Close-up of the red number above the kneeling woman's head racing down in a blur of digits.",
+  "Above her head, the number began to race. Seventeen minutes. Ten. Two. Ten seconds. Five. Three. One. Zero.")
+S("Paramedics rushing through a door as the elderly man sits up coughing, the woman with the dark ponytail sitting back on her heels in shock.",
+  "The man coughed. He was breathing. Paramedics burst through the door. And above Sarah's head, the number was gone.")
+S("Dr. Brooks crouching beside the woman with the dark ponytail in the waiting room, both breathless.",
+  "BROOKS: [breathless] Sarah... what did you do?", "SARAH: [stunned, quiet] I stopped running.", chars=B)
+S("Dr. Brooks alone in the lab at night writing on a glass board: a line pulled toward a glowing point, realization on her face.",
+  "And Dr. Brooks finally understood. The clock wasn't counting toward a fixed event. It was counting toward a turning point. And a single choice could pull that moment closer.", chars=B)
 
-# Year one
-S("A city one year later: rows of brand-new modular apartment blocks rising beside the old skyline, cranes everywhere.",
-  "[hopeful] Year one. And something surprising happens. Humans adapt. Factories run around the clock. New neighborhoods rise in months, not years.", ethan=False, cut=True, music="wonder")
-S("A long communal dinner in a converted warehouse, new arrivals and locals eating together, string lights.",
-  "Strangers become neighbors. Neighbors become friends. Cities get louder, more crowded, more alive.", ethan=False)
-S("Ethan driving his delivery van on a busy but moving street with Rosa riding in the passenger seat, both laughing.",
-  "ETHAN: [warm] Rosa helps me with deliveries now. She knows more about the city than I do. Turns out she ran a bakery for forty years.")
-S("A gleaming dense city ten years in the future with towering green residential towers, elevated trains and rooftop farms, bright morning.",
-  "Ten years later, the world looks different. Taller cities. Faster trains. Rooftop farms on every block. Some countries handle it brilliantly. Others are still struggling. And everyone remembers exactly where they were the morning the world doubled.", ethan=False,
-  motion="Slow cinematic drone glide between green residential towers as an elevated train passes, morning light.")
+# ---- Chapter 9 — The Second Number
+S(f"The Carter living room at night, rain on the windows, Daniel feeding {LILY} a bottle on the couch.",
+  "On the fifth night, Daniel was giving Lily her bottle when Emma walked in. She was pale.", chars=D, cut=True, music="tension",
+  sfx=[["Steady rain against a window at night", 4.0, 0.25, "start"]])
+S("Emma standing in the dark living room doorway, a glowing red countdown floating above her head, scared.",
+  "EMMA: [unsteady] Daniel. Look at me.", "Her forty-two years were gone. In their place, a new number. Eleven minutes, forty-two seconds.",
+  chars=E, overlay={"type": "countdown", "mode": "live", "start_value": 702, "span": 2})
+S("Daniel jumping up from the couch in horror, staring at Emma, the baby bottle slipping from his hand.",
+  "DANIEL: [horrified] No. No, no, no.", "EMMA: Daniel, don't panic.", "DANIEL: [frantic] Eleven minutes, Emma! We have to do something!", chars=D)
+S("Daniel frantically locking windows and unplugging appliances in a dark kitchen, rain outside.",
+  "He checked every window. Locked every door. Turned off the stove. Unplugged everything he could reach. Emma watched him tear through the house.", chars=D)
+S("Emma standing calmly in the kitchen, looking at Daniel with sudden clarity, red glow above her.",
+  "EMMA: [quiet, steady] Daniel. What if it isn't counting down to something that happens to me? What if it's counting down to something I do?", chars=E)
+S("Emma answering a ringing phone in the kitchen, her face falling, red glow above her.",
+  "Before he could answer, her phone rang. A hospital. Her younger sister, Jess, had been in an accident. She was awake, but she couldn't make an urgent medical decision. Emma was her emergency contact. The doctors needed her. Now.",
+  "Emma looked up. Eight minutes. She took the call.", chars=E,
+  sfx=[["A smartphone ringing in a quiet room", 2.0, 0.35, "start"]])
 
-# Ending
-S("A view from space of Earth at night, city lights twice as dense and bright as today, glowing.",
-  "[reflective] So would doubling humanity destroy us? Probably not. But it would test everything. Our food, our cities, our patience... and our kindness.", ethan=False, cut=True)
-S("Ethan on a rooftop at sunset looking over a dense glowing city, Rosa and the new family beside him, quiet.",
-  "ETHAN: [thoughtful] Sixteen billion people. Feels like the end of the world some days. Other days... it feels like the start of a new one.",
-  motion="Slow orbit around Ethan and his new neighbors on the rooftop as the city lights flicker on, warm sunset.")
-S("Close-up of a crowded city crosswalk from above, hundreds of people crossing in every direction, beautiful pattern.",
-  "Would you want to live in a world with twice as many people? Blessing... or nightmare? Tell me in the comments. And subscribe, because next time we're asking an even crazier question.", ethan=False)
+# ---- Chapter 10 — The Choice
+S("Emma at the kitchen table on a laptop video call with a doctor in scrubs, Daniel standing behind her, tense.",
+  "The doctor laid it out carefully. Two treatment options. Both had risks. Neither came with a guarantee.", chars=E + D, cut=True)
+S("Close-up of Emma listening intently, tears in her eyes, a faded childhood photo of two sisters on the table beside the laptop.",
+  "Emma asked questions. She listened. And she thought about Jess. The little sister she used to walk to school. The woman she had barely spoken to in three years.", chars=E)
+S("Daniel leaning over Emma's shoulder pleading, Emma looking back at him with firm resolve.",
+  "DANIEL: [pleading] Emma, please. What if this is the moment?", "EMMA: [firm, tears in her eyes] Then I need to make the right choice for her.",
+  "One minute.", chars=D + E, overlay={"type": "countdown", "mode": "spoken", "start_value": 60, "span": 3})
+S("A doctor in scrubs on a laptop screen asking a serious question, hospital background.",
+  "DOCTOR: Do you understand the risks?", "EMMA: [steady] Yes. Proceed.")
+S("Daniel gripping Emma's hand on the kitchen table, both staring upward at the red glow, frozen.",
+  "The number jumped. Ten seconds. Daniel grabbed her hand. Three. One. Zero.", chars=D + E)
+S("Emma and Daniel holding each other in the kitchen at dawn, the red glow gone, rain stopped, soft blue light.",
+  "Nothing happened. Emma was alive. The countdown vanished. And by morning, the doctors called back. The surgery had gone well. Jess was going to be okay.", chars=E + D)
+S("Emma crying with relief at the kitchen window at sunrise.",
+  "Emma cried. Not because she had escaped death. Because she finally understood. The numbers weren't telling people how much life they had left. They were telling them how long until life would never be the same again.", chars=E)
 
-long = {
-    "title": "What If the World's Population Doubled Overnight?",
-    "aspect": "16:9", "resolution": "2K", "tail": 2.0,
-    "voices": {"NARRATOR": "George", "ETHAN": "Will"},
-    "cast": CAST, "portraits": {E_: PORTRAIT}, "looks": LOOKS,
+# ---- Chapter 11 — The World After the Truth
+S("Dr. Brooks at a press conference podium facing a wall of cameras and microphones.",
+  "Within days, Dr. Brooks published her findings. She was careful. Nothing was proven. No one knew where the numbers came from, or who, or what, had made them. But the evidence pointed one way. Turning points. Some ended in tragedy. Many ended in courage.", chars=B, cut=True, music="wonder")
+S("A montage composition: a woman hugging her elderly father at a doorstep, a man walking out of an office smiling, people embracing in a park.",
+  "The world changed again. People called estranged parents. People quit jobs they hated. Others became obsessed with forcing their numbers to zero, and governments begged them to stop.")
+S("Thomas standing at the front door of a small suburban house on a sunny morning, Daniel opening the door holding the baby.",
+  "A few days later, Thomas Reed knocked on the Carters' door. He wanted to meet the baby from the very first zero.", chars=T + D)
+S(f"Thomas and Daniel sitting in a sunlit living room, Daniel holding {LILY}, Thomas leaning forward gently.",
+  "THOMAS: [gentle] Daniel, in those ten seconds, before Lily's clock hit zero... what did you decide?", "Daniel looked at his daughter for a long time.", chars=T + D)
+S(f"Close-up of Daniel looking down at {LILY} in his arms, eyes wet, soft smile.",
+  "DANIEL: [quietly] I was supposed to go back to work that week. Eighty-hour weeks. I'd already missed half her first month. When I held her, I told her I wasn't going anywhere. And I meant it. I quit two days later.", chars=D)
+S("Thomas smiling softly at Daniel and the baby, warm window light on his face.",
+  "THOMAS: [smiling softly] Then that was her turning point. Not something that happened to her. Something that happened for her. She's going to grow up with a father who stayed.", chars=T)
+S("Daniel on a backyard swing set holding the baby, a faint pale blue number above his head that he ignores, golden afternoon.",
+  "Above Daniel's head, his own number still read sixty-three years. It never changed. And after that day, he stopped looking up at it.", chars=D)
+S("A baby girl a few months old in the pink-and-blue striped hat laughing and reaching for her parents' hands on a blanket in the grass.",
+  "Lily learned to smile. Then to laugh. Then to reach for her parents' hands.")
+S("A quiet city street at dawn, a man looking up as the glowing number above his head freezes and flickers.",
+  "But on the seventh morning... every countdown on Earth stopped.")
+
+# ---- Chapter 12 — The Final Ten Seconds
+S("A businessman on a New York sidewalk at 8 a.m. staring up as his glowing number freezes.",
+  "Eight a.m. exactly. A businessman in New York watched his number freeze. A teacher in London saw hers dissolve. A student in Tokyo looked up as the glowing digits drifted away like dust.",
+  cut=True, music="tension", sfx=[["Many ticking clocks all stopping at once, then silence", 3.0, 0.4, "start"]])
+S("A crowded Tokyo intersection where glowing digits dissolve into drifting particles above everyone's heads.",
+  "Within seconds, every personal countdown on Earth was gone.")
+S("A giant red glowing countdown hologram filling the sky above a city skyline at dawn, crowds in the streets looking up in terror.",
+  "Then the sky changed. Above every city. Every ocean. Every mountain. One enormous number.", "Ten seconds.",
+  overlay=dict(RED, span=7, color="#ff1e1e"),
+  motion="Clouds churn around the enormous glowing red hologram in the sky as crowds below stop and stare upward, slow tilt up.")
+S("People screaming and cars stopped in the middle of a city street, everyone staring at the red sky.",
+  "People screamed. Cars stopped in the middle of the road. Dr. Brooks grabbed her phone.")
+S("Dr. Brooks on a rooftop under the red sky holding a phone to her ear, urgent.",
+  "BROOKS: [urgent] Thomas, what is happening?", "THOMAS: [afraid, for the first time] I hoped we'd have more time.", "Nine. Eight.", chars=B)
+S("Thomas standing alone on a balcony under the red sky, the only person in view without fear, looking up.",
+  "And suddenly she understood.", "BROOKS: [realizing] That's why you didn't have a number. Your turning point wasn't yours alone. It was this.",
+  "THOMAS: [quiet] It's everyone's now.", "Seven. Six. Five.", chars=T)
+S("Close-up of Dr. Brooks whispering into her phone, red light on her face, eyes wide.",
+  "BROOKS: [whispering] Then what does this one mean?", "THOMAS: That humanity is about to make a choice.", chars=B)
+S("A vast crowd in Times Square frozen, faces lit red, all looking up at the sky, holding their breath.",
+  "Four. Three. Two. One.")
+S("The sky over the city suddenly empty and grey, the red hologram gone, total stillness.",
+  "Zero.", sfx=[["A deep low boom fading into total silence", 3.0, 0.4, "start"]])
+S("Thousands of smartphones lighting up at once in a crowd's hands, all showing the same glowing white screen.",
+  "The number disappeared. For one long second, nothing happened. Then every phone on Earth lit up with the same message.",
+  motion="Phones light up one after another across the crowd, people lifting them in confusion, glow spreading.")
+S("Close-up of a smartphone screen glowing white with two large buttons, cinematic, dark background.",
+  "You have been given a choice. And beneath it, two buttons. Remember. Forget. No explanation. No instructions. Just two words.",
+  overlay={"type": "text", "text": "YOU HAVE BEEN GIVEN A CHOICE|REMEMBER  ·  FORGET"})
+S(f"Daniel in the kitchen holding his phone in one hand and {LILY} in the other, his thumb hovering over the screen, the baby's tiny fingers wrapping around his thumb.",
+  "In the Carters' kitchen, Daniel held his phone in one hand and his daughter in the other. His thumb hovered over the screen. And Lily reached up and wrapped her tiny fingers around it.", chars=D,
+  motion="The baby's tiny hand reaches up and wraps around Daniel's thumb above the glowing phone, slow push-in.")
+S("Thomas alone on the balcony looking at his glowing phone, a faint sad smile.",
+  "THOMAS: [softly] Now we find out what kind of species we really are.", chars=T, cut=True)
+S("Pure black frame with a faint glowing red outline of a countdown display in the center.",
+  "If you could see every turning point in your life coming... would you choose to remember? Or would you rather forget? Tell me what you'd press in the comments.",
+  overlay={"type": "text", "text": "REMEMBER|OR FORGET?"})
+
+LONG = {
+    "title": "What If Everyone Could See Their Death Countdown?",
+    "aspect": "16:9", "resolution": "2K", "tail": 3.0,
+    "voices": VOICES, "cast": CAST, "portraits": PORTRAITS, "looks": LOOKS,
     "style": "Cinematic photorealistic film still, 16:9 widescreen, " + STYLE_TAIL,
     "places": {}, "ambiences": {}, "ambience": [],
     "music": music, "scenes": scenes,
-    "youtube": {
-        "title": "What If the World's Population Doubled Overnight?",
-        "description": "",
-        "tags": ["what if", "population", "overpopulation", "16 billion", "world population", "hypothetical", "science", "future", "food", "what if it happens"],
-        "shorts_description": "",
-    },
-    "shorts": [{"id": "short1", "youtube_title": "You Wake Up and There Are 16 Billion People \U0001F633 #shorts"}],
-    "thumbnail_style": "YouTube thumbnail background, hyper-detailed cinematic photorealism, extreme contrast, saturated colors, one huge clear subject readable at tiny size, dramatic rim lighting, 16:9, absolutely no text, no letters, no numbers, no watermark, no logos. ",
-    "thumbnails": [
-        {"id": "thumb1", "side": "left", "ref": CAST[E_],
-         "lines": [{"text": "16 BILLION", "color": "#FFD400"}, {"text": "OVERNIGHT", "color": "#FFFFFF"}], "tag": "WHAT IF?",
-         "image": "The man from the reference image on the right half of the frame, in pajamas, standing in his open apartment doorway with a shocked face, the hallway behind him jammed with hundreds of strangers, dramatic light, left third dark and empty."},
-        {"id": "thumb2", "side": "right",
-         "lines": [{"text": "TWICE THE", "color": "#FFFFFF"}, {"text": "PEOPLE", "color": "#FFD400"}], "tag": "HALF THE FOOD",
-         "image": "An impossibly crowded city street seen from above on the left half of the frame, an ocean of people packed shoulder to shoulder between skyscrapers, one empty supermarket cart in the foreground, right half darker and empty."},
-        {"id": "thumb3", "side": "left",
-         "lines": [{"text": "EARTH", "color": "#FFFFFF"}, {"text": "x2", "color": "#FFD400"}], "tag": "COULD WE SURVIVE?",
-         "image": "Planet Earth at night on the right half of the frame with city lights blazing impossibly bright and dense, glowing like it is overloaded, a faint ghost duplicate of Earth behind it, black space on the left."},
-    ],
 }
 
-# ================= SHORT =================
-ss, smusic, S = builder("s", 2)
-S("Ethan opening his apartment door at dawn in a T-shirt, the hallway behind it packed with confused strangers in pajamas, vertical close-up.",
-  "[intrigued] You wake up... and there are sixteen billion people on Earth.", music="tension",
-  motion="Ethan opens the door and freezes as the crowd of strangers turns toward him, handheld.")
-S("A Chicago street at sunrise jammed with thousands of bewildered people, vertical aerial view.",
-  "The population doubled overnight.", ethan=False)
-S("A supermarket with completely empty shelves and a crowd pushing carts.",
-  "[urgent] By lunch, the supermarkets are empty.", ethan=False)
-S("A dinner plate cut neatly in half with a knife, one half empty, overhead light.",
-  "The world grows enough food for everyone... once. Split it in half, and nobody gets enough.", ethan=False)
-S("A city skyline at night with neighborhoods going dark in rolling blackouts.",
-  "Week one. The power grid can't keep up. Blackouts roll from city to city.", ethan=False)
-S("A football stadium turned into a giant shelter, rows of cots across the field.",
-  "Every stadium becomes a shelter. And it's still not enough.", ethan=False)
-S("Ethan's tiny apartment crowded with a family of strangers sleeping on the floor, Ethan stepping over them holding coffee.",
-  "ETHAN: [wry] My one-bedroom has six people in it now.")
-S("A massive line of job seekers wrapped around a city block.",
-  "[serious] Billions need jobs. Wages crash. Rents explode.", ethan=False)
-S("A young woman teaching kids on a whiteboard in a tent-city classroom.",
-  "[hopeful] But twice the people also means twice the doctors... twice the inventors... twice the chance of the next Einstein.", ethan=False)
-S("Earth at night from space with city lights twice as dense and bright.",
-  "[thoughtful] So... would we survive?", ethan=False, cut=True)
-S("An impossibly crowded crosswalk seen from above, hundreds crossing in every direction.",
-  "Would you want to live in a world with twice as many people?", ethan=False,
-  overlay={"type": "text", "text": "Blessing|or nightmare?"})
+# =============================== SHORT 1 ===============================
+s1, m1, S = builder("a", 2)
+S(f"Vertical close-up of a terrified father holding {LILY}, a huge glowing red countdown hologram floating above the baby, dark hospital-like room with red light.",
+  "[intense] You wake up. And there's a number floating above your baby's head.", chars=D, music="tension",
+  overlay=dict(RED, span=7, start_value=10))
+S(f"Close-up of {LILY} sleeping, red glow above her.", "Ten seconds.")
+S("Emma in a kitchen doorway at dawn, hand over mouth, red light on her face.", "EMMA: [whispering] Daniel... what is that?", chars=E)
+S("Daniel and Emma with pale blue numbers above their heads staring at each other.",
+  "Above your head: sixty-three years. Above your wife's: forty-two. Above your three-week-old daughter... five seconds.", chars=D + E)
+S("Daniel clutching the baby, shouting toward Emma holding a phone.", "DANIEL: [panicked] Call somebody!", "Four.", "Three.", chars=D)
+S(f"Daniel pressing his forehead against {LILY}, eyes shut, tears.", "DANIEL: [breaking] Please. I'm right here. I'm not going anywhere.", chars=D)
+S(f"Macro close-up of {LILY}'s face in red light.", "Two.", "One.", "Zero.")
+S(f"{LILY} smiling up in warm light, red glow gone.", "She smiles. She's alive. And the number is gone.",
+  motion="The newborn blinks and breaks into a tiny smile, warm light, slow push-in.")
+S("A smartphone exploding with notifications on a dresser.",
+  "Then his phone explodes. Every human on Earth just woke up with a countdown. And it isn't counting what everyone thinks.",
+  overlay={"type": "text", "text": "FULL STORY|ON THE CHANNEL"})
+SHORT1 = dict(LONG, title="Your Baby Has 10 Seconds Left", title_band="YOUR BABY HAS|10 SECONDS LEFT", aspect="9:16", tail=2.5,
+              scenes=s1, music=m1, style="Cinematic photorealistic film still, vertical 9:16 composition with the subject centered, " + STYLE_TAIL)
 
-short = dict(long, title="What If the Population Doubled? (Short)", title_band="WHAT IF THE WORLD|DOUBLED OVERNIGHT?",
-             aspect="9:16", tail=3.0, scenes=ss, music=smusic,
-             style="Cinematic photorealistic film still, vertical 9:16 composition with the subject centered, " + STYLE_TAIL)
-for k in ("youtube", "shorts", "thumbnails", "thumbnail_style"):
-    short.pop(k)
+# =============================== SHORT 2 ===============================
+s2, m2, S = builder("b", 2)
+S("Vertical shot of a grey-bearded older man in a dark coat standing in a rainy crowded city street at night, everyone around him has a glowing red countdown above their head, he has none, he looks up.",
+  "[mysterious] Every person on Earth woke up with a number above their head. Their countdown.", chars=T, music="tension",
+  motion="The crowd moves around the still older man as he slowly lifts his gaze, rain falling through red glow.")
+S("Grainy security camera footage of a crowded Washington D.C. train station, glowing numbers above everyone.",
+  "Three days later, this video went viral. A train station in Washington, D.C. Thousands of people. Thousands of numbers.")
+S("Security-camera view of the older man in a dark coat standing still in a moving crowd, no number above him.",
+  "Except one man.", chars=T)
+S("Close-up of the older man looking straight into the security camera with a faint smile.",
+  "No countdown. He stops. He turns to the camera. And he smiles.", "THOMAS: [calm] You're all measuring the wrong thing.", chars=T)
+S("A worn leather notebook on a metal table, its first page dated twenty years ago.",
+  "His name is Thomas Reed. A math professor who vanished twenty years ago. And he has a notebook... dated twenty years before the numbers appeared.")
+S("Dr. Brooks across a metal table from the older man, stunned.", "BROOKS: How did you know?", "THOMAS: [quietly] Because I've seen the numbers before.", chars=B)
+S("Close-up of the older man's face under red light, no number above him, enigmatic.",
+  "So why doesn't he have one?", chars=T, overlay={"type": "text", "text": "THE ANSWER IS IN|THE FULL EPISODE"})
+SHORT2 = dict(SHORT1, title="The Only Man With No Countdown", title_band="THE ONLY MAN WITH|NO COUNTDOWN", scenes=s2, music=m2)
 
-for name, spec in (("ep03_long.json", long), ("ep03_short.json", short)):
+for name, spec in (("ep03_long.json", LONG), ("ep03_short1.json", SHORT1), ("ep03_short2.json", SHORT2)):
     ids = {s["id"] for s in spec["scenes"]}
-    assert all(cue in ids for cue, _ in spec["music"])
-    Path(__file__).with_name(name).write_text(json.dumps(spec, indent=1))
+    assert all(cue in ids for cue, _ in spec["music"]), name
+    roles = {r for s in spec["scenes"] for r, _ in s["lines"]}
+    assert roles <= set(VOICES), roles - set(VOICES)
+    (HERE / name).write_text(json.dumps(spec, indent=1))
     words = sum(len(t.split()) for s in spec["scenes"] for _, t in s["lines"])
     print(f"{name}: {len(spec['scenes'])} scenes, {words} words, ~{words / 150:.1f} min, clips {sum(1 for s in spec['scenes'] if s.get('motion'))}")

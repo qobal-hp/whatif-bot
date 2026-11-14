@@ -1,22 +1,37 @@
 {
- "title": "What If the World's Population Doubled Overnight?",
+ "title": "What If Everyone Could See Their Death Countdown?",
  "aspect": "16:9",
  "resolution": "2K",
- "tail": 2.0,
+ "tail": 3.0,
  "voices": {
   "NARRATOR": "George",
-  "ETHAN": "Will"
+  "DANIEL": "Will",
+  "EMMA": "Sarah",
+  "BROOKS": "Matilda",
+  "THOMAS": "Bill",
+  "MARCUS": "Eric",
+  "SARAH": "Laura",
+  "ASSISTANT": "Roger",
+  "DOCTOR": "Roger",
+  "ANCHOR": "Brian"
  },
  "cast": {
-  "ethan": "video/public/assets/portrait_ethan.jpg"
+  "daniel": "whatif/cast/daniel.jpg",
+  "thomas": "whatif/cast/thomas.jpg",
+  "emma": "video/public/assets/portrait_emma.jpg",
+  "brooks": "video/public/assets/portrait_brooks.jpg"
  },
  "portraits": {
-  "ethan": "Photorealistic head-and-shoulders portrait of a man in his early 30s, short dark-blond hair, light stubble, blue-grey eyes, a small scar through his left eyebrow, navy work jacket, friendly tired expression, plain soft grey background, soft window light, sharp focus, 85mm lens."
+  "emma": "Photorealistic head-and-shoulders portrait of a woman about 30, shoulder-length auburn hair, green eyes, light freckles, grey knit cardigan, gentle tired expression, plain soft grey background, soft window light, 85mm lens.",
+  "brooks": "Photorealistic head-and-shoulders portrait of a woman in her mid-50s, short silver-blonde bob, thin reading glasses, white lab coat over a navy blouse, sharp intelligent eyes, plain soft grey background, soft light, 85mm lens."
  },
  "looks": {
-  "ethan": "Ethan: early 30s man, short dark-blond hair, light stubble, blue-grey eyes, a small scar through his left eyebrow, wearing a navy work jacket, same face as the reference portrait"
+  "daniel": "Daniel: man about 30, messy dark-brown hair, stubble, brown eyes, navy hoodie, same face as his reference image",
+  "emma": "Emma: woman about 30, shoulder-length auburn hair, green eyes, light freckles, grey cardigan, same face as her reference image",
+  "brooks": "Dr. Evelyn Brooks: woman in her mid-50s, short silver-blonde bob, thin reading glasses, white lab coat, same face as her reference image",
+  "thomas": "Thomas Reed: man about 61, swept-back grey hair, neatly trimmed grey beard, dark wool coat and scarf, same face as his reference image"
  },
- "style": "Cinematic photorealistic film still, 16:9 widescreen, shallow depth of field, natural cinematic color grade, present-day setting, no text other than what is described. ",
+ "style": "Cinematic photorealistic film still, 16:9 widescreen, shallow depth of field, moody cinematic sci-fi color grade with red accents, present day, no readable text or numbers unless described. ",
  "places": {},
  "ambiences": {},
  "ambience": [],
@@ -26,75 +41,102 @@
    "tension"
   ],
   [
-   "L008",
+   "L038",
+   "wonder"
+  ],
+  [
+   "L046",
    "tension"
   ],
   [
-   "L024",
-   "wonder"
-  ],
-  [
-   "L030",
+   "L069",
    "tension"
   ],
   [
-   "L034",
+   "L082",
    "wonder"
   ],
   [
-   "L045",
-   "wonder"
+   "L091",
+   "tension"
   ]
  ],
  "scenes": [
   {
    "id": "L001",
-   "chars": [
-    "ethan"
-   ],
-   "image": "Ethan in a small Chicago apartment at dawn, opening his front door in boxers and a T-shirt, the hallway outside packed shoulder to shoulder with confused strangers in pajamas.",
+   "chars": [],
+   "image": "Extreme close-up of a three-week-old newborn baby girl in a pink-and-blue striped knit hat and a striped hospital-style blanket sleeping in a dim nursery at dawn, a glowing red holographic frame floating above her head, red light on her cheeks.",
    "lines": [
     [
      "NARRATOR",
-     "[intrigued] Six a.m. Ethan opens his front door... and the hallway is full of people he has never seen in his life."
+     "[slow, hushed] Ten."
+    ],
+    [
+     "NARRATOR",
+     "Nine."
+    ],
+    [
+     "NARRATOR",
+     "Eight."
     ]
    ],
    "place": "",
-   "motion": "Ethan slowly opens the door and freezes, the crowd of confused strangers in the hallway turns to look at him, handheld camera."
+   "overlay": {
+    "type": "countdown",
+    "mode": "spoken",
+    "span": 8
+   },
+   "sfx": [
+    [
+     "A single slow heartbeat, then a short digital beep",
+     3.0,
+     0.45,
+     "start"
+    ]
+   ]
   },
   {
    "id": "L002",
-   "chars": [],
-   "image": "Wide shot of a Chicago street at sunrise jammed with thousands of bewildered people in pajamas and blankets, cars stuck, steam rising from vents.",
+   "chars": [
+    "daniel"
+   ],
+   "image": "Daniel in a small nursery at dawn, exhausted, rocking a newborn in his arms, baby bottles and diapers on a dresser, soft lamp light.",
    "lines": [
     [
      "NARRATOR",
-     "Outside, it's the same. Every street. Every city. Every country."
+     "Daniel Carter had spent three weeks learning how to be a father. How to hold a newborn. How to survive on two hours of sleep. How to tell a hungry cry from a sleepy one."
     ]
    ],
-   "place": "",
-   "motion": "Slow drone push over the crowded street, people mill around confused, steam drifts from street vents."
+   "place": ""
   },
   {
    "id": "L003",
-   "chars": [],
-   "image": "A giant digital world population counter on a dark screen glowing, numbers blurred and spinning, dramatic light.",
+   "chars": [
+    "daniel"
+   ],
+   "image": "Daniel staring up in shock at a glowing red light floating above a three-week-old newborn baby girl in a pink-and-blue striped knit hat and a striped hospital-style blanket in his arms, red light on his face.",
    "lines": [
     [
      "NARRATOR",
-     "Overnight, the world's population has doubled. From about eight billion people... to over sixteen billion."
+     "Nothing could have prepared him for the morning a glowing red number appeared above his daughter's head."
+    ],
+    [
+     "NARRATOR",
+     "Seven."
     ]
    ],
    "place": ""
   },
   {
    "id": "L004",
-   "chars": [],
-   "image": "A mixed crowd of new arrivals of every age \u2014 babies in arms, kids, grandparents \u2014 standing in a parking lot with nothing, no bags, looking around.",
+   "chars": [
+    "emma"
+   ],
+   "image": "Emma frozen in a kitchen doorway at dawn in pajamas, hand over her mouth, red light spilling across her face.",
    "lines": [
     [
-     "NARRATOR",
-     "Every new person is real. Babies, kids, grandparents. But they arrived with nothing. No home. No job. No ID. Not even a bank account."
+     "EMMA",
+     "[frozen, whispering] Daniel... what is that?"
     ]
    ],
    "place": ""
@@ -102,38 +144,59 @@
   {
    "id": "L005",
    "chars": [
-    "ethan"
+    "daniel",
+    "emma"
    ],
-   "image": "Ethan on his apartment balcony staring down at the packed street, holding a coffee cup, stunned.",
+   "image": "Daniel and Emma standing in the nursery, a pale blue glowing number floating above each of their heads, both staring at each other in disbelief.",
    "lines": [
     [
-     "ETHAN",
-     "[stunned, half-laughing] Okay... who are all these people?"
+     "NARRATOR",
+     "He couldn't answer. Above his own head floated a pale blue number. Sixty-three years. Above Emma's: forty-two years. And above their three-week-old daughter, Lily... five seconds."
     ]
    ],
    "place": ""
   },
   {
    "id": "L006",
-   "chars": [],
-   "image": "A split composition: a calm clock reading 6:00 and a cracked clock reading 6:00 one year later, symbolic, dark background.",
+   "chars": [
+    "daniel",
+    "emma"
+   ],
+   "image": "Daniel clutching the newborn to his chest, shouting toward Emma who holds a phone with shaking hands.",
    "lines": [
     [
+     "DANIEL",
+     "[panicked] Emma, call somebody!"
+    ],
+    [
+     "EMMA",
+     "[shaking] Who? What do I even tell them?"
+    ],
+    [
      "NARRATOR",
-     "It took humanity forty-eight years to go from four billion people to eight billion. Today it happened in one night. In the next ten minutes, we'll follow the first hour, the first week, and the first year... and find out if we'd survive it."
+     "Four."
+    ],
+    [
+     "NARRATOR",
+     "Three."
     ]
    ],
-   "place": "",
-   "cut": true
+   "place": ""
   },
   {
    "id": "L007",
-   "chars": [],
-   "image": "A world map glowing with population hotspots, India and China burning brightest, dark oceans, infographic style without text.",
+   "chars": [
+    "daniel"
+   ],
+   "image": "Daniel pressing his forehead gently against a three-week-old newborn baby girl in a pink-and-blue striped knit hat and a striped hospital-style blanket, eyes shut, tears on his cheeks, red glow above them.",
    "lines": [
     [
      "NARRATOR",
-     "And they didn't appear randomly. Every place doubled. Tokyo, Lagos, Sao Paulo, Chicago. India and China each gained more than a billion people in a single night."
+     "Daniel pressed his forehead against his daughter's."
+    ],
+    [
+     "DANIEL",
+     "[whispering, breaking] Please. Please don't. I'm right here. I'm not going anywhere."
     ]
    ],
    "place": ""
@@ -141,75 +204,106 @@
   {
    "id": "L008",
    "chars": [],
-   "image": "A cell phone screen showing 'No Service' held by a worried woman in a crowd, many people holding up phones searching for signal.",
+   "image": "Macro close-up of a three-week-old newborn baby girl in a pink-and-blue striped knit hat and a striped hospital-style blanket's face bathed in red light, eyes open, looking up.",
    "lines": [
     [
      "NARRATOR",
-     "[urgent] Hour one. Eight billion people reach for a phone at the same time... except half of them don't have one. And the half that do can't get a signal."
+     "Two."
+    ],
+    [
+     "NARRATOR",
+     "One."
+    ],
+    [
+     "NARRATOR",
+     "Zero."
     ]
    ],
    "place": "",
-   "cut": true
+   "sfx": [
+    [
+     "A heartbeat that stops, followed by silence",
+     2.5,
+     0.4,
+     "start"
+    ]
+   ]
   },
   {
    "id": "L009",
    "chars": [],
-   "image": "A busy 911 dispatch center with every operator on a call and every line blinking red.",
+   "image": "a three-week-old newborn baby girl in a pink-and-blue striped knit hat and a striped hospital-style blanket smiling a tiny perfect smile up at the camera in soft warm morning light, the red glow gone.",
    "lines": [
     [
      "NARRATOR",
-     "Cell networks are built for a normal busy day. Not for double. Emergency lines overflow within minutes."
-    ]
-   ],
-   "place": ""
-  },
-  {
-   "id": "L010",
-   "chars": [],
-   "image": "A packed subway platform in Chicago, people pressed against the train doors, nobody can get on.",
-   "lines": [
-    [
-     "NARRATOR",
-     "Rush hour is impossible. Trains, buses, roads... everything was sized for half as many people."
+     "Lily stared up at him. Then she smiled. A tiny, perfect smile. She was alive. And the number above her head was gone."
     ]
    ],
    "place": "",
-   "motion": "The packed train doors try to close and bounce back open on bodies, crowd sways, handheld camera."
+   "motion": "The newborn blinks slowly and breaks into a tiny smile, warm light drifts across her face, slow push-in."
   },
   {
-   "id": "L011",
+   "id": "L010",
    "chars": [
-    "ethan"
+    "daniel",
+    "emma"
    ],
-   "image": "Ethan in his delivery van stuck in gridlock traffic, honking cars everywhere, pedestrians walking between the cars.",
+   "image": "Daniel crying with relief while Emma wraps her arms around him and the baby, warm light.",
    "lines": [
     [
-     "ETHAN",
-     "[frustrated] I deliver groceries for a living. Today I can't even get out of the parking lot."
+     "NARRATOR",
+     "Daniel started to cry. Emma wrapped her arms around them both."
     ]
    ],
    "place": ""
+  },
+  {
+   "id": "L011",
+   "chars": [],
+   "image": "A smartphone on a nursery dresser lighting up with a flood of notifications, vibrating.",
+   "lines": [
+    [
+     "NARRATOR",
+     "And then Daniel's phone began to vibrate. One notification. Then twenty. Then hundreds."
+    ]
+   ],
+   "place": "",
+   "sfx": [
+    [
+     "A smartphone vibrating rapidly with many notification chimes",
+     3.0,
+     0.35,
+     "start"
+    ]
+   ]
   },
   {
    "id": "L012",
    "chars": [],
-   "image": "A wall of frozen streaming screens and spinning loading icons in a dim living room, a family staring at them.",
+   "image": "Aerial view of a city street at sunrise full of people looking up at glowing red and blue numbers floating above everyone's heads.",
    "lines": [
     [
      "NARRATOR",
-     "The internet crawls. Streaming freezes. Banking apps time out. The digital world was built for eight billion users, and sixteen billion just logged on."
+     "Across the planet, billions of people had woken up with numbers above their heads. And some of those numbers were already reaching zero."
     ]
    ],
-   "place": ""
+   "place": "",
+   "motion": "Slow drone glide over the crowd as people turn and point at the glowing numbers above each other's heads."
   },
   {
    "id": "L013",
-   "chars": [],
-   "image": "A government office overwhelmed with endless lines of people holding paper forms, clerks buried under stacks of documents.",
+   "chars": [
+    "daniel"
+   ],
+   "image": "Daniel at the nursery window at sunrise holding the baby, looking out at the city, silhouette, thoughtful.",
    "lines": [
     [
      "NARRATOR",
-     "And then there's paperwork. Eight billion people with no birth certificate, no Social Security number, no address. Governments would face the biggest registration job in history, just to know who exists."
+     "For the first time in history, everyone thought they knew exactly how much time they had left."
+    ],
+    [
+     "NARRATOR",
+     "They were wrong. And the truth would change everything."
     ]
    ],
    "place": ""
@@ -217,11 +311,11 @@
   {
    "id": "L014",
    "chars": [],
-   "image": "A supermarket at 9 a.m. with nearly empty shelves and a crowd pushing carts, a few bags of rice left.",
+   "image": "Montage composition of New York, Tokyo and London streets at morning, crowds with glowing numbers floating above every head.",
    "lines": [
     [
      "NARRATOR",
-     "[serious] Day one. And the first real problem... is food. Most supermarkets only hold a few days of stock. With twice the shoppers, the shelves are empty by lunch."
+     "At eight a.m. Eastern Time, the numbers appeared everywhere at once. Not on phones. Not on screens. Above people. Floating like impossible holograms. They moved when people moved. And no technology on Earth could explain them."
     ]
    ],
    "place": "",
@@ -230,11 +324,11 @@
   {
    "id": "L015",
    "chars": [],
-   "image": "An enormous grain silo farm under a dramatic sky, harvest trucks lined up.",
+   "image": "A tense TV news anchor at a desk in a studio, a screen behind her showing crowds with glowing numbers.",
    "lines": [
     [
-     "NARRATOR",
-     "Here's the math. Right now, the world grows enough food to give every person roughly twenty-nine hundred calories a day. That's more than we need."
+     "ANCHOR",
+     "[tense, professional] We are asking everyone to stay calm. We do not know what these numbers are."
     ]
    ],
    "place": ""
@@ -242,11 +336,11 @@
   {
    "id": "L016",
    "chars": [],
-   "image": "A dinner plate cut neatly in half with a knife, one half empty, dramatic overhead light.",
+   "image": "A New York taxi driver standing beside his yellow cab, staring at pedestrians with glowing numbers above their heads on a busy crosswalk.",
    "lines": [
     [
      "NARRATOR",
-     "Cut that in half... and everyone gets about fourteen hundred and fifty. Below what an adult body needs. For everyone. Everywhere."
+     "In New York, a taxi driver stepped out of his cab and stared at the sidewalk. A woman crossing the street had sixty-four years. The man beside her had three months."
     ]
    ],
    "place": ""
@@ -254,11 +348,11 @@
   {
    "id": "L017",
    "chars": [],
-   "image": "Long lines of people at a food distribution point run by volunteers in a stadium parking lot.",
+   "image": "A little boy holding his mother's hand at a crosswalk, a red countdown floating above his head, the mother noticing it with horror.",
    "lines": [
     [
      "NARRATOR",
-     "Governments would open emergency reserves. But grain stockpiles are measured in months, not years. The clock starts ticking."
+     "And a little boy holding his mother's hand had thirty-seven seconds. His mother screamed and yanked him back onto the curb."
     ]
    ],
    "place": ""
@@ -266,51 +360,55 @@
   {
    "id": "L018",
    "chars": [],
-   "image": "A city water tower against a hazy sky, a gauge on a pipe showing pressure dropping into the red.",
+   "image": "A delivery truck skidding past an empty crosswalk on a city street, motion blur, people jumping back on the sidewalk.",
    "lines": [
     [
      "NARRATOR",
-     "Week one. Water systems start to struggle. Pumps, pipes and treatment plants were designed for the population we had yesterday."
+     "Seconds later, a delivery truck skidded through the spot where they had been standing."
     ]
    ],
    "place": "",
-   "cut": true
+   "sfx": [
+    [
+     "Truck tires screeching on asphalt and a loud horn",
+     2.0,
+     0.4,
+     "start"
+    ]
+   ]
   },
   {
    "id": "L019",
    "chars": [],
-   "image": "A city skyline at night with entire neighborhoods going dark in rolling blackouts, only a few towers still lit.",
+   "image": "A mother on her knees on a sidewalk hugging her little son tightly, crowd around them, no number above him.",
    "lines": [
     [
      "NARRATOR",
-     "Power grids keep only a small safety margin above normal demand. Double the people, double the phones, heaters and air conditioners... and the lights start going out."
+     "The boy was safe. His countdown vanished. His mother sank to her knees, sure she had just beaten death."
     ]
    ],
-   "place": "",
-   "motion": "Blocks of city lights switch off one after another across the skyline, slow camera drift."
+   "place": ""
   },
   {
    "id": "L020",
    "chars": [],
-   "image": "A crowded hospital emergency room with patients on chairs and floors, exhausted nurses.",
+   "image": "An empty caf\u00e9 table by a window with a half-finished coffee and a chair pushed back, people gathered blurred in the background, somber.",
    "lines": [
     [
      "NARRATOR",
-     "Hospitals? The US has fewer than three hospital beds for every thousand people. Overnight, that becomes about one and a half."
+     "Across town, a man sat at a caf\u00e9 table as his number reached zero. A sudden heart attack. People rushed to help him, but he was gone."
     ]
    ],
    "place": ""
   },
   {
    "id": "L021",
-   "chars": [
-    "ethan"
-   ],
-   "image": "Ethan helping an elderly stranger sit down on the stairs of his building, handing her a bottle of water.",
+   "chars": [],
+   "image": "Split composition: on the left the mother hugging her son, on the right the empty caf\u00e9 chair, cold and warm light.",
    "lines": [
     [
-     "ETHAN",
-     "[softly] Her name's Rosa. She just... appeared in my building's stairwell. She's eighty. She has nowhere to go."
+     "NARRATOR",
+     "Two zeros. Two completely different endings. But the world only noticed one of them. People were dying when their numbers hit zero."
     ]
    ],
    "place": ""
@@ -318,64 +416,64 @@
   {
    "id": "L022",
    "chars": [],
-   "image": "An overflowing elementary school classroom with sixty kids squeezed into desks meant for thirty, a frazzled teacher.",
+   "image": "A wall of phone screens and social media feeds showing glowing red numbers and panicked crowds, dark room.",
    "lines": [
     [
      "NARRATOR",
-     "Schools reopen with twice the kids and the same number of teachers. Classes of sixty. Kids learning in hallways, gyms and cafeterias."
+     "Within an hour, the internet had given it a name. The Death Clock. The name spread faster than any explanation. And fear spread faster still."
     ]
    ],
-   "place": ""
+   "place": "",
+   "overlay": {
+    "type": "text",
+    "text": "THE|DEATH CLOCK"
+   }
   },
   {
    "id": "L023",
    "chars": [],
-   "image": "Farmland irrigation sprinklers spraying over dry fields under a hot sun, cracked earth at the edges.",
+   "image": "A stock exchange trading floor in chaos, red screens everywhere, traders shouting.",
    "lines": [
     [
      "NARRATOR",
-     "And the real water problem isn't your faucet. About seventy percent of the fresh water humans use goes to farming. To grow twice the food, we'd need far more water than many rivers can give."
+     "By lunchtime, financial markets were in free fall. Airlines faced mass cancellations as passengers refused to fly. Hospitals filled with people demanding tests."
+    ]
+   ],
+   "place": "",
+   "cut": true
+  },
+  {
+   "id": "L024",
+   "chars": [],
+   "image": "An insurance office boardroom, executives staring at a screen of red numbers, tense.",
+   "lines": [
+    [
+     "NARRATOR",
+     "And insurance companies faced a question they were never built to answer. What happens when everyone believes they know when they'll die?"
     ]
    ],
    "place": ""
   },
   {
-   "id": "L024",
-   "chars": [],
-   "image": "A football stadium turned into a giant shelter, rows of cots across the field, Red Cross tents.",
-   "lines": [
-    [
-     "NARRATOR",
-     "Month one. Every stadium, school gym and convention center becomes a shelter. And it's still not enough."
-    ]
-   ],
-   "place": "",
-   "cut": true,
-   "motion": "Slow aerial pull-back over the stadium field filled with cots and people, volunteers walking between rows."
-  },
-  {
    "id": "L025",
    "chars": [],
-   "image": "A sprawling tent city on the edge of a modern city, smoke from cooking fires, children playing between tents.",
+   "image": "A young man in a suit walking out of a Chicago office tower with a box of his things, a glowing number above his head, determined.",
    "lines": [
     [
      "NARRATOR",
-     "Tent cities spread around every major city on Earth. Eight billion people need a roof... and building that many homes would take decades."
+     "In Chicago, a thirty-year-old accountant saw four months above his head. He quit his job that afternoon."
     ]
    ],
-   "place": "",
-   "motion": "Slow pan across the tent city as cooking smoke drifts and children run between tents, golden light."
+   "place": ""
   },
   {
    "id": "L026",
-   "chars": [
-    "ethan"
-   ],
-   "image": "Ethan's tiny apartment living room now crowded with a family of four strangers sleeping on the floor and the couch, Ethan stepping over them with a coffee.",
+   "chars": [],
+   "image": "A married couple in Los Angeles staring at each other in their kitchen, glowing numbers above both their heads, emotional.",
    "lines": [
     [
-     "ETHAN",
-     "[wry] My one-bedroom has six people in it now. We take turns with the shower. I'm not complaining. Okay... I'm complaining a little."
+     "NARRATOR",
+     "In Los Angeles, a married couple looked at each other. He had forty-eight years. She had eleven days."
     ]
    ],
    "place": ""
@@ -383,11 +481,11 @@
   {
    "id": "L027",
    "chars": [],
-   "image": "A real estate office window with rent prices in red skyrocketing, shocked passersby staring.",
+   "image": "The same couple laughing on a sunny beach with their two kids, building a sandcastle, golden hour.",
    "lines": [
     [
      "NARRATOR",
-     "And if you rent? With twice the demand and the same number of homes, rents explode. A one-bedroom could cost what a house did last year."
+     "They canceled every plan they had. They stopped answering emails. They took their kids to the beach, and for the first time in years, they spent an entire day together."
     ]
    ],
    "place": ""
@@ -395,11 +493,11 @@
   {
    "id": "L028",
    "chars": [],
-   "image": "A packed outdoor bar at night full of young people laughing and flirting, warm string lights.",
+   "image": "A bank loan officer sliding a rejected application back across a desk to a worried man with a short glowing number above his head.",
    "lines": [
     [
      "NARRATOR",
-     "[playful] Not everything is bad news, though. If you're single... your dating pool just doubled. Overnight."
+     "But not everyone answered with love. Some banks began quietly reconsidering loans. Some employers changed who they hired. People with short numbers were treated as risks. People with long numbers were treated as assets."
     ]
    ],
    "place": ""
@@ -407,85 +505,120 @@
   {
    "id": "L029",
    "chars": [],
-   "image": "A sold-out baseball stadium with fans packed into every seat and even standing in the aisles, sunny day.",
+   "image": "A crowded city sidewalk where people glance suspiciously at each other's glowing numbers, cold blue light.",
    "lines": [
     [
      "NARRATOR",
-     "Concerts, ballgames, theme parks? Twice the fans fighting for the same seats. Good luck getting tickets ever again."
+     "A person's worth was no longer measured only by money, looks, or achievements. Now it was measured by the number above their head."
     ]
    ],
    "place": ""
   },
   {
    "id": "L030",
-   "chars": [],
-   "image": "A massive line of job seekers wrapped around a city block outside a warehouse with a 'Now Hiring' banner.",
+   "chars": [
+    "daniel"
+   ],
+   "image": "Daniel sitting on the floor beside a crib at night watching a three-week-old newborn baby girl in a pink-and-blue striped knit hat and a striped hospital-style blanket sleep, no number above her, lamp light.",
    "lines": [
     [
      "NARRATOR",
-     "[thoughtful] Now, money. Billions of new people need work. In the short term, that's a disaster. Too many workers, too few jobs. Wages drop."
+     "Meanwhile, Daniel refused to leave the house. Lily slept in her crib. No number. No countdown. Just an ordinary baby. But every time he looked at her, he relived those ten seconds. People were dying. Other people were surviving. There had to be a reason."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L031",
+   "chars": [
+    "brooks"
+   ],
+   "image": "Dr. Brooks walking through a high-tech research lab with monitors and volunteers in hospital chairs, focused.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Dr. Evelyn Brooks had spent twenty-five years studying human consciousness. She didn't believe in prophecy. She believed in evidence. And the evidence in front of her made no sense at all."
     ]
    ],
    "place": "",
    "cut": true
   },
   {
-   "id": "L031",
-   "chars": [],
-   "image": "A busy construction site at sunrise with hundreds of workers framing new apartment buildings, cranes overhead.",
-   "lines": [
-    [
-     "NARRATOR",
-     "But look closer. Everyone needs homes, food, clothes, power. That's the biggest wave of demand in history. Construction, farming and energy would boom."
-    ]
-   ],
-   "place": ""
-  },
-  {
    "id": "L032",
    "chars": [],
-   "image": "A young woman in a makeshift classroom in a tent city teaching kids with a small whiteboard, focused.",
+   "image": "A row of twelve volunteers in a lab wired to heart and brain monitors, glowing numbers above their heads, clinical light.",
    "lines": [
     [
      "NARRATOR",
-     "And here's the part people forget. Twice as many people also means twice as many doctors, inventors and engineers. Twice the chance of the next Einstein."
+     "Her team had gathered twelve volunteers whose numbers would reach zero within the hour. Heart rate, blood pressure, brain activity, oxygen. All monitored. And nothing suggested any of them was about to die."
     ]
    ],
    "place": ""
   },
   {
    "id": "L033",
-   "chars": [],
-   "image": "A bustling market street in a city with new shops opening, busy shoppers, energetic mood.",
+   "chars": [
+    "brooks"
+   ],
+   "image": "Dr. Brooks sitting beside a nervous 52-year-old man with glasses and a cardigan in a lab chair, a red number above his head.",
    "lines": [
     [
      "NARRATOR",
-     "Economists would argue about this for decades. In the long run, more people usually means a bigger economy. More workers, more customers, more ideas. The hard part is surviving the first few years."
+     "The first was a fifty-two-year-old schoolteacher named Marcus. Nineteen seconds."
+    ],
+    [
+     "BROOKS",
+     "[calm, clinical] Marcus, how do you feel?"
+    ],
+    [
+     "MARCUS",
+     "[shaky laugh] Terrified."
+    ],
+    [
+     "BROOKS",
+     "Any pain? Dizziness?"
+    ],
+    [
+     "MARCUS",
+     "No. Nothing."
     ]
    ],
-   "place": ""
+   "place": "",
+   "overlay": {
+    "type": "countdown",
+    "mode": "spoken",
+    "span": 2
+   }
   },
   {
    "id": "L034",
    "chars": [],
-   "image": "A huge dumpster behind a supermarket overflowing with perfectly good fruit, vegetables and bread.",
+   "image": "Close-up of the 52-year-old man with glasses squeezing his eyes shut in a lab chair, researchers watching tensely.",
    "lines": [
     [
      "NARRATOR",
-     "[upbeat] So could we actually feed sixteen billion? Maybe. First, about a third of all the food we produce today is lost or wasted. Stop that... and the math changes fast."
+     "The lab went silent. Five. Three. One. Zero."
+    ],
+    [
+     "NARRATOR",
+     "Marcus closed his eyes. Then opened them."
+    ],
+    [
+     "MARCUS",
+     "[whispering] Am I... dead?"
     ]
    ],
    "place": "",
-   "cut": true
+   "motion": "The man slowly opens his eyes and exhales, the researchers behind him break into nervous smiles."
   },
   {
    "id": "L035",
    "chars": [],
-   "image": "Vast green pastures with grazing cattle stretching to the horizon, golden hour.",
+   "image": "Researchers in a lab celebrating, one laughing in relief, monitors showing steady heartbeat lines.",
    "lines": [
     [
      "NARRATOR",
-     "Second, meat. Livestock uses most of the world's farmland, but provides less than a fifth of our calories. Grow food for people instead of for cows, and the same land feeds far more people."
+     "A nervous laugh escaped one of the researchers. His heart was beating normally. He was alive. And his countdown was gone."
     ]
    ],
    "place": ""
@@ -493,60 +626,70 @@
   {
    "id": "L036",
    "chars": [],
-   "image": "A glowing indoor vertical farm with stacked racks of lettuce under pink LED lights, workers in white suits.",
+   "image": "Close-up of a man's hands holding a phone showing a text conversation, Dr. Brooks noticing from beside him.",
    "lines": [
     [
      "NARRATOR",
-     "Add vertical farms, better crops, and more fishing... and sixteen billion becomes possible. Not easy. Not comfortable. But possible."
+     "The team celebrated. Dr. Brooks didn't. Because she had noticed Marcus's phone, buzzing in his hand the whole time. A message from his daughter. Eleven years of silence. And just before zero, Marcus had finally typed three words back."
     ]
    ],
-   "place": ""
+   "place": "",
+   "overlay": {
+    "type": "message",
+    "from": "Marcus",
+    "to": "Rachel",
+    "text": "I forgive you."
+   }
   },
   {
    "id": "L037",
-   "chars": [],
-   "image": "A scientist in a lab looking at a glowing hologram of Earth with numbers floating around it, thoughtful.",
+   "chars": [
+    "brooks"
+   ],
+   "image": "Dr. Brooks writing in a leather notebook at a lab desk late at night, thoughtful.",
    "lines": [
     [
      "NARRATOR",
-     "So how many people can Earth actually hold? Scientists have argued about this for a century. Their estimates range from under two billion... to well over a hundred billion. The answer depends almost entirely on how we live."
+     "I forgive you. Dr. Brooks wrote those words in her notebook. She didn't know why. But they felt important."
     ]
    ],
    "place": ""
   },
   {
    "id": "L038",
-   "chars": [],
-   "image": "A family eating a simple plant-based meal at a small kitchen table, warm light.",
-   "lines": [
-    [
-     "NARRATOR",
-     "Sixteen billion people living like the average American? Impossible. Sixteen billion people eating more plants, sharing more, wasting less? That's a different story."
-    ]
+   "chars": [
+    "brooks"
    ],
-   "place": ""
-  },
-  {
-   "id": "L039",
-   "chars": [],
-   "image": "A rainforest edge being cleared by bulldozers, smoke rising, a toucan watching from a branch.",
+   "image": "Dr. Brooks surrounded by screens of case files and video clips in a dark lab, exhausted, coffee cups everywhere.",
    "lines": [
     [
      "NARRATOR",
-     "[serious] But nature pays the bill. More farms means more forests cut down. More cities means less space for animals."
+     "Over the next forty-eight hours, Dr. Brooks studied thousands of recorded zeros. Some people died. Most did not."
     ]
    ],
    "place": "",
    "cut": true
   },
   {
-   "id": "L040",
+   "id": "L039",
    "chars": [],
-   "image": "Factory smokestacks and highways at dusk under an orange polluted sky.",
+   "image": "A firefighter carrying a child out of a smoky building doorway, heroic silhouette, embers.",
    "lines": [
     [
      "NARRATOR",
-     "And emissions? Twice the people driving, heating and cooking could push carbon emissions toward double. Climate goals would be thrown out the window."
+     "A firefighter hit zero seconds before pulling a child from a burning building."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L040",
+   "chars": [],
+   "image": "A woman shaking hands with an interviewer in a glass office, a world map on the wall behind them.",
+   "lines": [
+    [
+     "NARRATOR",
+     "A woman hit zero the moment she accepted a job on the other side of the world."
     ]
    ],
    "place": ""
@@ -554,47 +697,69 @@
   {
    "id": "L041",
    "chars": [],
-   "image": "An empty quiet beach at sunrise with a single set of footprints, peaceful.",
+   "image": "A young man in a car at night making a U-turn on an empty highway, headlights, rain.",
    "lines": [
     [
      "NARRATOR",
-     "Quiet places disappear. Empty beaches, open roads, a seat on the train. Those become luxuries."
+     "A young man hit zero as he turned his car around and drove home."
     ]
    ],
    "place": ""
   },
   {
    "id": "L042",
-   "chars": [],
-   "image": "A maternity ward nursery with rows of newborn babies in cribs, nurses walking between them.",
+   "chars": [
+    "daniel"
+   ],
+   "image": "Daniel holding a three-week-old newborn baby girl in a pink-and-blue striped knit hat and a striped hospital-style blanket, their eyes locked, red glow fading, intimate close-up.",
    "lines": [
     [
      "NARRATOR",
-     "And it doesn't stop. Twice as many people means roughly twice as many babies every year. Unless families choose to have fewer kids, the curve keeps climbing."
+     "And a newborn baby hit zero while looking into her father's eyes."
     ]
    ],
    "place": ""
   },
   {
    "id": "L043",
-   "chars": [],
-   "image": "A busy international airport terminal with endless queues at passport control.",
+   "chars": [
+    "brooks"
+   ],
+   "image": "A glass wall covered in sticky notes and photos grouped into clusters, Dr. Brooks standing before it with a marker.",
    "lines": [
     [
      "NARRATOR",
-     "Borders, visas and citizenship would become the hottest debate on the planet. Every country would have to decide how to handle billions of people who, on paper, don't exist."
+     "She began sorting them. Death. Survival. Decisions. Discoveries. Encounters. Every single one was a moment that permanently changed the direction of a life."
     ]
    ],
    "place": ""
   },
   {
    "id": "L044",
-   "chars": [],
-   "image": "A calm graph-like landscape: a gentle hill of glowing light rising and flattening on the horizon at dawn, symbolic.",
+   "chars": [
+    "brooks"
+   ],
+   "image": "Dr. Brooks turning toward a young male lab assistant at a computer, lab lights low, tense discovery moment.",
    "lines": [
     [
-     "NARRATOR",
-     "For comparison, in our real world, the United Nations expects the population to peak around ten billion later this century. Sixteen billion would blow far past anything we've ever planned for."
+     "BROOKS",
+     "[slowly] What if we're asking the wrong question?"
+    ],
+    [
+     "ASSISTANT",
+     "What do you mean?"
+    ],
+    [
+     "BROOKS",
+     "What if the clock isn't measuring the end of a life?"
+    ],
+    [
+     "ASSISTANT",
+     "Then what is it measuring?"
+    ],
+    [
+     "BROOKS",
+     "[quiet] The end of the life you were going to have."
     ]
    ],
    "place": ""
@@ -602,169 +767,984 @@
   {
    "id": "L045",
    "chars": [],
-   "image": "A city one year later: rows of brand-new modular apartment blocks rising beside the old skyline, cranes everywhere.",
+   "image": "A dramatic visualization of a glowing path splitting into many branching futures in darkness.",
    "lines": [
     [
      "NARRATOR",
-     "[hopeful] Year one. And something surprising happens. Humans adapt. Factories run around the clock. New neighborhoods rise in months, not years."
+     "The room went quiet. It was only a theory. But if it was true, the numbers weren't predicting death. They were marking the moments when a person's future changed forever. And that raised a far more disturbing question. If the numbers knew when your future would change... was the future already written?"
     ]
    ],
-   "place": "",
-   "cut": true
+   "place": ""
   },
   {
    "id": "L046",
    "chars": [],
-   "image": "A long communal dinner in a converted warehouse, new arrivals and locals eating together, string lights.",
+   "image": "Grainy black-and-white security camera footage of a crowded subway station, everyone with glowing numbers above their heads.",
    "lines": [
     [
      "NARRATOR",
-     "Strangers become neighbors. Neighbors become friends. Cities get louder, more crowded, more alive."
-    ]
-   ],
-   "place": ""
-  },
-  {
-   "id": "L047",
-   "chars": [
-    "ethan"
-   ],
-   "image": "Ethan driving his delivery van on a busy but moving street with Rosa riding in the passenger seat, both laughing.",
-   "lines": [
-    [
-     "ETHAN",
-     "[warm] Rosa helps me with deliveries now. She knows more about the city than I do. Turns out she ran a bakery for forty years."
-    ]
-   ],
-   "place": ""
-  },
-  {
-   "id": "L048",
-   "chars": [],
-   "image": "A gleaming dense city ten years in the future with towering green residential towers, elevated trains and rooftop farms, bright morning.",
-   "lines": [
-    [
-     "NARRATOR",
-     "Ten years later, the world looks different. Taller cities. Faster trains. Rooftop farms on every block. Some countries handle it brilliantly. Others are still struggling. And everyone remembers exactly where they were the morning the world doubled."
-    ]
-   ],
-   "place": "",
-   "motion": "Slow cinematic drone glide between green residential towers as an elevated train passes, morning light."
-  },
-  {
-   "id": "L049",
-   "chars": [],
-   "image": "A view from space of Earth at night, city lights twice as dense and bright as today, glowing.",
-   "lines": [
-    [
-     "NARRATOR",
-     "[reflective] So would doubling humanity destroy us? Probably not. But it would test everything. Our food, our cities, our patience... and our kindness."
+     "Three days later, a video began spreading online. A crowded train station in Washington, D.C. Every person in the frame had a number above their head."
     ]
    ],
    "place": "",
    "cut": true
   },
   {
-   "id": "L050",
+   "id": "L047",
    "chars": [
-    "ethan"
+    "thomas"
    ],
-   "image": "Ethan on a rooftop at sunset looking over a dense glowing city, Rosa and the new family beside him, quiet.",
-   "lines": [
-    [
-     "ETHAN",
-     "[thoughtful] Sixteen billion people. Feels like the end of the world some days. Other days... it feels like the start of a new one."
-    ]
-   ],
-   "place": "",
-   "motion": "Slow orbit around Ethan and his new neighbors on the rooftop as the city lights flicker on, warm sunset."
-  },
-  {
-   "id": "L051",
-   "chars": [],
-   "image": "Close-up of a crowded city crosswalk from above, hundreds of people crossing in every direction, beautiful pattern.",
+   "image": "Security-camera view of an older man in a dark coat standing still in a moving crowd, the only person without a glowing number, looking up at the camera.",
    "lines": [
     [
      "NARRATOR",
-     "Would you want to live in a world with twice as many people? Blessing... or nightmare? Tell me in the comments. And subscribe, because next time we're asking an even crazier question."
+     "Except one. An older man in a dark coat. Gray hair. A neatly trimmed beard. No countdown."
+    ]
+   ],
+   "place": "",
+   "motion": "The crowd streams past as the older man stops, turns his head toward the security camera and slowly smiles."
+  },
+  {
+   "id": "L048",
+   "chars": [
+    "thomas"
+   ],
+   "image": "Close-up of Thomas looking directly into a security camera with a faint knowing smile, grainy footage look.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He stopped, turned toward the security camera, and smiled."
+    ],
+    [
+     "THOMAS",
+     "[calm, almost amused] You're all measuring the wrong thing."
     ]
    ],
    "place": ""
-  }
- ],
- "youtube": {
-  "title": "What If the World's Population Doubled Overnight?",
-  "description": "",
-  "tags": [
-   "what if",
-   "population",
-   "overpopulation",
-   "16 billion",
-   "world population",
-   "hypothetical",
-   "science",
-   "future",
-   "food",
-   "what if it happens"
-  ],
-  "shorts_description": ""
- },
- "shorts": [
-  {
-   "id": "short1",
-   "youtube_title": "You Wake Up and There Are 16 Billion People \ud83d\ude33 #shorts"
-  }
- ],
- "thumbnail_style": "YouTube thumbnail background, hyper-detailed cinematic photorealism, extreme contrast, saturated colors, one huge clear subject readable at tiny size, dramatic rim lighting, 16:9, absolutely no text, no letters, no numbers, no watermark, no logos. ",
- "thumbnails": [
-  {
-   "id": "thumb1",
-   "side": "left",
-   "ref": "video/public/assets/portrait_ethan.jpg",
-   "lines": [
-    {
-     "text": "16 BILLION",
-     "color": "#FFD400"
-    },
-    {
-     "text": "OVERNIGHT",
-     "color": "#FFFFFF"
-    }
-   ],
-   "tag": "WHAT IF?",
-   "image": "The man from the reference image on the right half of the frame, in pajamas, standing in his open apartment doorway with a shocked face, the hallway behind him jammed with hundreds of strangers, dramatic light, left third dark and empty."
   },
   {
-   "id": "thumb2",
-   "side": "right",
+   "id": "L049",
+   "chars": [],
+   "image": "A wall of news screens showing the station footage of Thomas, with view counters soaring.",
    "lines": [
-    {
-     "text": "TWICE THE",
-     "color": "#FFFFFF"
-    },
-    {
-     "text": "PEOPLE",
-     "color": "#FFD400"
-    }
+    [
+     "NARRATOR",
+     "The clip was viewed a hundred million times. Within hours, investigators had a name. Thomas Reed. Sixty-one. Former professor of mathematics. Out of public life for almost twenty years."
+    ]
    ],
-   "tag": "HALF THE FOOD",
-   "image": "An impossibly crowded city street seen from above on the left half of the frame, an ocean of people packed shoulder to shoulder between skyscrapers, one empty supermarket cart in the foreground, right half darker and empty."
+   "place": ""
   },
   {
-   "id": "thumb3",
-   "side": "left",
-   "lines": [
-    {
-     "text": "EARTH",
-     "color": "#FFFFFF"
-    },
-    {
-     "text": "x2",
-     "color": "#FFD400"
-    }
+   "id": "L050",
+   "chars": [
+    "thomas",
+    "brooks"
    ],
-   "tag": "COULD WE SURVIVE?",
-   "image": "Planet Earth at night on the right half of the frame with city lights blazing impossibly bright and dense, glowing like it is overloaded, a faint ghost duplicate of Earth behind it, black space on the left."
+   "image": "Thomas and Dr. Brooks sitting across a metal table in a quiet interview room, a worn leather notebook between them.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Dr. Brooks expected a fraud. Instead, Thomas laid a worn notebook on the table. The first page was dated twenty years ago. Across the top, three words. The Turning Point."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L051",
+   "chars": [
+    "brooks"
+   ],
+   "image": "Close-up of Dr. Brooks staring at Thomas across the table, stunned.",
+   "lines": [
+    [
+     "BROOKS",
+     "[stunned] How did you know?"
+    ],
+    [
+     "THOMAS",
+     "[quietly] Because I've seen the numbers before."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L052",
+   "chars": [],
+   "image": "Flashback: a younger Thomas in his early 40s with dark hair writing equations on a chalkboard in a university lab at night, warm sepia tones.",
+   "lines": [
+    [
+     "THOMAS",
+     "[reflective] Twenty years ago, I was building a mathematical model of human decisions. How tiny choices produce enormous changes. A missed train. A phone call. Choosing one street instead of another."
+    ]
+   ],
+   "place": "",
+   "cut": true
+  },
+  {
+   "id": "L053",
+   "chars": [],
+   "image": "A chalkboard covered in branching diagrams labeled with arrows, sepia flashback light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "They called it the Branching Future Model. Not a machine that could see the future. Just an attempt to describe how futures split apart."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L054",
+   "chars": [],
+   "image": "Flashback: younger Thomas alone in the lab looking up in shock at a faint glowing number above his own head.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Then one night, working alone, Thomas looked up and saw a number above his own head. Three minutes."
+    ],
+    [
+     "THOMAS",
+     "I thought I was losing my mind. Then it hit zero... and my phone rang."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L055",
+   "chars": [],
+   "image": "Flashback: a hospital corridor at night, younger Thomas running toward a door, blurred nurses.",
+   "lines": [
+    [
+     "NARRATOR",
+     "His wife had been in a car accident. She survived. But she never walked again."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L056",
+   "chars": [
+    "thomas",
+    "brooks"
+   ],
+   "image": "Thomas in the present sitting with Dr. Brooks, looking down at his hands, quiet grief.",
+   "lines": [
+    [
+     "THOMAS",
+     "[quiet] I left the university to take care of her. For twenty years, that was my whole life. She passed away last spring."
+    ],
+    [
+     "BROOKS",
+     "[gently] And you never told anyone?"
+    ],
+    [
+     "THOMAS",
+     "[a tired smile] I told everyone. Nobody believed me."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L057",
+   "chars": [],
+   "image": "Close-up of an open notebook with dense equations and one handwritten sentence underlined in red ink.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He opened the notebook. Page after page of equations. And one sentence, underlined in red."
+    ],
+    [
+     "NARRATOR",
+     "The countdown does not predict the future. It marks the moment the future changes."
+    ]
+   ],
+   "place": "",
+   "overlay": {
+    "type": "letter",
+    "text": "The countdown does not predict the future. It marks the moment the future changes."
+   }
+  },
+  {
+   "id": "L058",
+   "chars": [
+    "thomas"
+   ],
+   "image": "Thomas looking out a rain-streaked window, reflection in the glass, no number above his head.",
+   "lines": [
+    [
+     "THOMAS",
+     "And when your future changes, the clock starts over. A zero isn't the end of the road. It's a fork in it."
+    ],
+    [
+     "BROOKS",
+     "Then why is there no number above you now?"
+    ],
+    [
+     "NARRATOR",
+     "Thomas looked toward the window."
+    ],
+    [
+     "THOMAS",
+     "[softly] I've been asking myself that for three days."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L059",
+   "chars": [
+    "brooks"
+   ],
+   "image": "Dr. Brooks briefing a small group of volunteers in a lab conference room, a whiteboard behind her.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Dr. Brooks decided to test the theory. Volunteers with less than twenty-four hours. One simple instruction. Change your plans."
+    ]
+   ],
+   "place": "",
+   "cut": true
+  },
+  {
+   "id": "L060",
+   "chars": [],
+   "image": "Three-panel composition: a man canceling a flight at an airport counter, a woman signing a new job contract, a man sitting alone in a locked apartment, glowing numbers above each.",
+   "lines": [
+    [
+     "NARRATOR",
+     "A man canceled his flight. His number didn't move. A woman switched jobs. Nothing. Another man refused to leave his apartment at all. The numbers kept falling. If the future could change, why couldn't they change the clock?"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L061",
+   "chars": [],
+   "image": "A woman in her late 30s with a dark ponytail and a grey hoodie sitting alone in a lab waiting room staring at her hands, a red number above her head.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Then came Sarah Lane. A nurse who had walked away from her job a year ago, burned out and broken. Seventeen minutes left. She sat in the lab's waiting room, staring at her hands."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L062",
+   "chars": [],
+   "image": "An elderly man in a waiting room stumbling and falling to the floor, people jumping up from their chairs in alarm.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Across the room, an elderly man stood up... and collapsed."
+    ]
+   ],
+   "place": "",
+   "sfx": [
+    [
+     "A chair scraping and a startled gasp from a small room",
+     1.5,
+     0.4,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "L063",
+   "chars": [],
+   "image": "The woman with the dark ponytail frozen in her chair, eyes wide, conflicted, people panicking in the background.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Everyone froze. Sarah didn't move."
+    ],
+    [
+     "SARAH",
+     "[to herself, shaking] I'm not a nurse anymore. I'm not..."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L064",
+   "chars": [],
+   "image": "The woman with the dark ponytail kneeling beside the elderly man on the waiting room floor checking his breathing, focused and commanding.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Then she was on her knees beside him, checking his breathing, calling out orders like she had never left."
+    ],
+    [
+     "SARAH",
+     "[sharp, focused] Call 911. Somebody find me the defibrillator. Now!"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L065",
+   "chars": [],
+   "image": "Close-up of the red number above the kneeling woman's head racing down in a blur of digits.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Above her head, the number began to race. Seventeen minutes. Ten. Two. Ten seconds. Five. Three. One. Zero."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L066",
+   "chars": [],
+   "image": "Paramedics rushing through a door as the elderly man sits up coughing, the woman with the dark ponytail sitting back on her heels in shock.",
+   "lines": [
+    [
+     "NARRATOR",
+     "The man coughed. He was breathing. Paramedics burst through the door. And above Sarah's head, the number was gone."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L067",
+   "chars": [
+    "brooks"
+   ],
+   "image": "Dr. Brooks crouching beside the woman with the dark ponytail in the waiting room, both breathless.",
+   "lines": [
+    [
+     "BROOKS",
+     "[breathless] Sarah... what did you do?"
+    ],
+    [
+     "SARAH",
+     "[stunned, quiet] I stopped running."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L068",
+   "chars": [
+    "brooks"
+   ],
+   "image": "Dr. Brooks alone in the lab at night writing on a glass board: a line pulled toward a glowing point, realization on her face.",
+   "lines": [
+    [
+     "NARRATOR",
+     "And Dr. Brooks finally understood. The clock wasn't counting toward a fixed event. It was counting toward a turning point. And a single choice could pull that moment closer."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L069",
+   "chars": [
+    "daniel"
+   ],
+   "image": "The Carter living room at night, rain on the windows, Daniel feeding a three-week-old newborn baby girl in a pink-and-blue striped knit hat and a striped hospital-style blanket a bottle on the couch.",
+   "lines": [
+    [
+     "NARRATOR",
+     "On the fifth night, Daniel was giving Lily her bottle when Emma walked in. She was pale."
+    ]
+   ],
+   "place": "",
+   "cut": true,
+   "sfx": [
+    [
+     "Steady rain against a window at night",
+     4.0,
+     0.25,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "L070",
+   "chars": [
+    "emma"
+   ],
+   "image": "Emma standing in the dark living room doorway, a glowing red countdown floating above her head, scared.",
+   "lines": [
+    [
+     "EMMA",
+     "[unsteady] Daniel. Look at me."
+    ],
+    [
+     "NARRATOR",
+     "Her forty-two years were gone. In their place, a new number. Eleven minutes, forty-two seconds."
+    ]
+   ],
+   "place": "",
+   "overlay": {
+    "type": "countdown",
+    "mode": "live",
+    "start_value": 702,
+    "span": 2
+   }
+  },
+  {
+   "id": "L071",
+   "chars": [
+    "daniel"
+   ],
+   "image": "Daniel jumping up from the couch in horror, staring at Emma, the baby bottle slipping from his hand.",
+   "lines": [
+    [
+     "DANIEL",
+     "[horrified] No. No, no, no."
+    ],
+    [
+     "EMMA",
+     "Daniel, don't panic."
+    ],
+    [
+     "DANIEL",
+     "[frantic] Eleven minutes, Emma! We have to do something!"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L072",
+   "chars": [
+    "daniel"
+   ],
+   "image": "Daniel frantically locking windows and unplugging appliances in a dark kitchen, rain outside.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He checked every window. Locked every door. Turned off the stove. Unplugged everything he could reach. Emma watched him tear through the house."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L073",
+   "chars": [
+    "emma"
+   ],
+   "image": "Emma standing calmly in the kitchen, looking at Daniel with sudden clarity, red glow above her.",
+   "lines": [
+    [
+     "EMMA",
+     "[quiet, steady] Daniel. What if it isn't counting down to something that happens to me? What if it's counting down to something I do?"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L074",
+   "chars": [
+    "emma"
+   ],
+   "image": "Emma answering a ringing phone in the kitchen, her face falling, red glow above her.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Before he could answer, her phone rang. A hospital. Her younger sister, Jess, had been in an accident. She was awake, but she couldn't make an urgent medical decision. Emma was her emergency contact. The doctors needed her. Now."
+    ],
+    [
+     "NARRATOR",
+     "Emma looked up. Eight minutes. She took the call."
+    ]
+   ],
+   "place": "",
+   "sfx": [
+    [
+     "A smartphone ringing in a quiet room",
+     2.0,
+     0.35,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "L075",
+   "chars": [
+    "emma",
+    "daniel"
+   ],
+   "image": "Emma at the kitchen table on a laptop video call with a doctor in scrubs, Daniel standing behind her, tense.",
+   "lines": [
+    [
+     "NARRATOR",
+     "The doctor laid it out carefully. Two treatment options. Both had risks. Neither came with a guarantee."
+    ]
+   ],
+   "place": "",
+   "cut": true
+  },
+  {
+   "id": "L076",
+   "chars": [
+    "emma"
+   ],
+   "image": "Close-up of Emma listening intently, tears in her eyes, a faded childhood photo of two sisters on the table beside the laptop.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Emma asked questions. She listened. And she thought about Jess. The little sister she used to walk to school. The woman she had barely spoken to in three years."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L077",
+   "chars": [
+    "daniel",
+    "emma"
+   ],
+   "image": "Daniel leaning over Emma's shoulder pleading, Emma looking back at him with firm resolve.",
+   "lines": [
+    [
+     "DANIEL",
+     "[pleading] Emma, please. What if this is the moment?"
+    ],
+    [
+     "EMMA",
+     "[firm, tears in her eyes] Then I need to make the right choice for her."
+    ],
+    [
+     "NARRATOR",
+     "One minute."
+    ]
+   ],
+   "place": "",
+   "overlay": {
+    "type": "countdown",
+    "mode": "spoken",
+    "start_value": 60,
+    "span": 3
+   }
+  },
+  {
+   "id": "L078",
+   "chars": [],
+   "image": "A doctor in scrubs on a laptop screen asking a serious question, hospital background.",
+   "lines": [
+    [
+     "DOCTOR",
+     "Do you understand the risks?"
+    ],
+    [
+     "EMMA",
+     "[steady] Yes. Proceed."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L079",
+   "chars": [
+    "daniel",
+    "emma"
+   ],
+   "image": "Daniel gripping Emma's hand on the kitchen table, both staring upward at the red glow, frozen.",
+   "lines": [
+    [
+     "NARRATOR",
+     "The number jumped. Ten seconds. Daniel grabbed her hand. Three. One. Zero."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L080",
+   "chars": [
+    "emma",
+    "daniel"
+   ],
+   "image": "Emma and Daniel holding each other in the kitchen at dawn, the red glow gone, rain stopped, soft blue light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Nothing happened. Emma was alive. The countdown vanished. And by morning, the doctors called back. The surgery had gone well. Jess was going to be okay."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L081",
+   "chars": [
+    "emma"
+   ],
+   "image": "Emma crying with relief at the kitchen window at sunrise.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Emma cried. Not because she had escaped death. Because she finally understood. The numbers weren't telling people how much life they had left. They were telling them how long until life would never be the same again."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L082",
+   "chars": [
+    "brooks"
+   ],
+   "image": "Dr. Brooks at a press conference podium facing a wall of cameras and microphones.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Within days, Dr. Brooks published her findings. She was careful. Nothing was proven. No one knew where the numbers came from, or who, or what, had made them. But the evidence pointed one way. Turning points. Some ended in tragedy. Many ended in courage."
+    ]
+   ],
+   "place": "",
+   "cut": true
+  },
+  {
+   "id": "L083",
+   "chars": [],
+   "image": "A montage composition: a woman hugging her elderly father at a doorstep, a man walking out of an office smiling, people embracing in a park.",
+   "lines": [
+    [
+     "NARRATOR",
+     "The world changed again. People called estranged parents. People quit jobs they hated. Others became obsessed with forcing their numbers to zero, and governments begged them to stop."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L084",
+   "chars": [
+    "thomas",
+    "daniel"
+   ],
+   "image": "Thomas standing at the front door of a small suburban house on a sunny morning, Daniel opening the door holding the baby.",
+   "lines": [
+    [
+     "NARRATOR",
+     "A few days later, Thomas Reed knocked on the Carters' door. He wanted to meet the baby from the very first zero."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L085",
+   "chars": [
+    "thomas",
+    "daniel"
+   ],
+   "image": "Thomas and Daniel sitting in a sunlit living room, Daniel holding a three-week-old newborn baby girl in a pink-and-blue striped knit hat and a striped hospital-style blanket, Thomas leaning forward gently.",
+   "lines": [
+    [
+     "THOMAS",
+     "[gentle] Daniel, in those ten seconds, before Lily's clock hit zero... what did you decide?"
+    ],
+    [
+     "NARRATOR",
+     "Daniel looked at his daughter for a long time."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L086",
+   "chars": [
+    "daniel"
+   ],
+   "image": "Close-up of Daniel looking down at a three-week-old newborn baby girl in a pink-and-blue striped knit hat and a striped hospital-style blanket in his arms, eyes wet, soft smile.",
+   "lines": [
+    [
+     "DANIEL",
+     "[quietly] I was supposed to go back to work that week. Eighty-hour weeks. I'd already missed half her first month. When I held her, I told her I wasn't going anywhere. And I meant it. I quit two days later."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L087",
+   "chars": [
+    "thomas"
+   ],
+   "image": "Thomas smiling softly at Daniel and the baby, warm window light on his face.",
+   "lines": [
+    [
+     "THOMAS",
+     "[smiling softly] Then that was her turning point. Not something that happened to her. Something that happened for her. She's going to grow up with a father who stayed."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L088",
+   "chars": [
+    "daniel"
+   ],
+   "image": "Daniel on a backyard swing set holding the baby, a faint pale blue number above his head that he ignores, golden afternoon.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Above Daniel's head, his own number still read sixty-three years. It never changed. And after that day, he stopped looking up at it."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L089",
+   "chars": [],
+   "image": "A baby girl a few months old in the pink-and-blue striped hat laughing and reaching for her parents' hands on a blanket in the grass.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Lily learned to smile. Then to laugh. Then to reach for her parents' hands."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L090",
+   "chars": [],
+   "image": "A quiet city street at dawn, a man looking up as the glowing number above his head freezes and flickers.",
+   "lines": [
+    [
+     "NARRATOR",
+     "But on the seventh morning... every countdown on Earth stopped."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L091",
+   "chars": [],
+   "image": "A businessman on a New York sidewalk at 8 a.m. staring up as his glowing number freezes.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Eight a.m. exactly. A businessman in New York watched his number freeze. A teacher in London saw hers dissolve. A student in Tokyo looked up as the glowing digits drifted away like dust."
+    ]
+   ],
+   "place": "",
+   "cut": true,
+   "sfx": [
+    [
+     "Many ticking clocks all stopping at once, then silence",
+     3.0,
+     0.4,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "L092",
+   "chars": [],
+   "image": "A crowded Tokyo intersection where glowing digits dissolve into drifting particles above everyone's heads.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Within seconds, every personal countdown on Earth was gone."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L093",
+   "chars": [],
+   "image": "A giant red glowing countdown hologram filling the sky above a city skyline at dawn, crowds in the streets looking up in terror.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Then the sky changed. Above every city. Every ocean. Every mountain. One enormous number."
+    ],
+    [
+     "NARRATOR",
+     "Ten seconds."
+    ]
+   ],
+   "place": "",
+   "overlay": {
+    "type": "countdown",
+    "mode": "spoken",
+    "span": 7,
+    "color": "#ff1e1e"
+   },
+   "motion": "Clouds churn around the enormous glowing red hologram in the sky as crowds below stop and stare upward, slow tilt up."
+  },
+  {
+   "id": "L094",
+   "chars": [],
+   "image": "People screaming and cars stopped in the middle of a city street, everyone staring at the red sky.",
+   "lines": [
+    [
+     "NARRATOR",
+     "People screamed. Cars stopped in the middle of the road. Dr. Brooks grabbed her phone."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L095",
+   "chars": [
+    "brooks"
+   ],
+   "image": "Dr. Brooks on a rooftop under the red sky holding a phone to her ear, urgent.",
+   "lines": [
+    [
+     "BROOKS",
+     "[urgent] Thomas, what is happening?"
+    ],
+    [
+     "THOMAS",
+     "[afraid, for the first time] I hoped we'd have more time."
+    ],
+    [
+     "NARRATOR",
+     "Nine. Eight."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L096",
+   "chars": [
+    "thomas"
+   ],
+   "image": "Thomas standing alone on a balcony under the red sky, the only person in view without fear, looking up.",
+   "lines": [
+    [
+     "NARRATOR",
+     "And suddenly she understood."
+    ],
+    [
+     "BROOKS",
+     "[realizing] That's why you didn't have a number. Your turning point wasn't yours alone. It was this."
+    ],
+    [
+     "THOMAS",
+     "[quiet] It's everyone's now."
+    ],
+    [
+     "NARRATOR",
+     "Seven. Six. Five."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L097",
+   "chars": [
+    "brooks"
+   ],
+   "image": "Close-up of Dr. Brooks whispering into her phone, red light on her face, eyes wide.",
+   "lines": [
+    [
+     "BROOKS",
+     "[whispering] Then what does this one mean?"
+    ],
+    [
+     "THOMAS",
+     "That humanity is about to make a choice."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L098",
+   "chars": [],
+   "image": "A vast crowd in Times Square frozen, faces lit red, all looking up at the sky, holding their breath.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Four. Three. Two. One."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "L099",
+   "chars": [],
+   "image": "The sky over the city suddenly empty and grey, the red hologram gone, total stillness.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Zero."
+    ]
+   ],
+   "place": "",
+   "sfx": [
+    [
+     "A deep low boom fading into total silence",
+     3.0,
+     0.4,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "L100",
+   "chars": [],
+   "image": "Thousands of smartphones lighting up at once in a crowd's hands, all showing the same glowing white screen.",
+   "lines": [
+    [
+     "NARRATOR",
+     "The number disappeared. For one long second, nothing happened. Then every phone on Earth lit up with the same message."
+    ]
+   ],
+   "place": "",
+   "motion": "Phones light up one after another across the crowd, people lifting them in confusion, glow spreading."
+  },
+  {
+   "id": "L101",
+   "chars": [],
+   "image": "Close-up of a smartphone screen glowing white with two large buttons, cinematic, dark background.",
+   "lines": [
+    [
+     "NARRATOR",
+     "You have been given a choice. And beneath it, two buttons. Remember. Forget. No explanation. No instructions. Just two words."
+    ]
+   ],
+   "place": "",
+   "overlay": {
+    "type": "text",
+    "text": "YOU HAVE BEEN GIVEN A CHOICE|REMEMBER  \u00b7  FORGET"
+   }
+  },
+  {
+   "id": "L102",
+   "chars": [
+    "daniel"
+   ],
+   "image": "Daniel in the kitchen holding his phone in one hand and a three-week-old newborn baby girl in a pink-and-blue striped knit hat and a striped hospital-style blanket in the other, his thumb hovering over the screen, the baby's tiny fingers wrapping around his thumb.",
+   "lines": [
+    [
+     "NARRATOR",
+     "In the Carters' kitchen, Daniel held his phone in one hand and his daughter in the other. His thumb hovered over the screen. And Lily reached up and wrapped her tiny fingers around it."
+    ]
+   ],
+   "place": "",
+   "motion": "The baby's tiny hand reaches up and wraps around Daniel's thumb above the glowing phone, slow push-in."
+  },
+  {
+   "id": "L103",
+   "chars": [
+    "thomas"
+   ],
+   "image": "Thomas alone on the balcony looking at his glowing phone, a faint sad smile.",
+   "lines": [
+    [
+     "THOMAS",
+     "[softly] Now we find out what kind of species we really are."
+    ]
+   ],
+   "place": "",
+   "cut": true
+  },
+  {
+   "id": "L104",
+   "chars": [],
+   "image": "Pure black frame with a faint glowing red outline of a countdown display in the center.",
+   "lines": [
+    [
+     "NARRATOR",
+     "If you could see every turning point in your life coming... would you choose to remember? Or would you rather forget? Tell me what you'd press in the comments."
+    ]
+   ],
+   "place": "",
+   "overlay": {
+    "type": "text",
+    "text": "REMEMBER|OR FORGET?"
+   }
   }
  ]
 }
