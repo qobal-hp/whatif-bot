@@ -327,6 +327,39 @@ LONG = {
     "music": music, "scenes": scenes,
 }
 
+CHAPTERS = """0:00 Ten Seconds
+1:34 The Day the World Changed
+2:56 The Price of Knowing
+4:25 The Scientist
+5:54 The Impossible Pattern
+7:09 The Man Without a Number
+8:06 Twenty Years Earlier
+9:32 Can You Change Your Countdown?
+11:05 The Second Number
+12:05 The Choice
+13:05 The World After the Truth
+14:42 The Final Ten Seconds"""
+TAGS = ["what if", "death countdown", "death clock", "sci-fi story", "mystery", "thriller", "turning point",
+        "what if it happens", "short film", "fate", "free will", "ai film"]
+LONG["thumbnail_file"] = "whatif/ep03_thumb.jpg"
+LONG["youtube"] = {
+    "title": "What If Everyone Could See Their Death Countdown?",
+    "category": "24",
+    "description": (
+        "One morning, every human wakes up with a mysterious countdown above their head. "
+        "But when a newborn baby's timer reaches zero, something impossible happens.\n\n" + CHAPTERS +
+        "\n\nWould you press REMEMBER or FORGET? Tell me in the comments.\n\n"
+        "A fictional sci-fi story. All characters and scenes are AI-generated.\n\n"
+        "#whatif #scifi #deathclock #mystery #story"),
+    "tags": TAGS,
+}
+LONG["shorts"] = [
+    {"id": "short1", "youtube_title": "Your Baby Has 10 Seconds Left \u23F3 #shorts",
+     "description": "Every human woke up with a countdown above their head. Hers said 10 seconds.\nFull story on the channel: What If Everyone Could See Their Death Countdown?\n\n#whatif #scifi #deathclock #shorts"},
+    {"id": "short2", "youtube_title": "The Only Man With No Countdown \U0001F440 #shorts",
+     "description": "Billions of people. Billions of countdowns. Except one man.\nThe answer is in the full episode on the channel.\n\n#whatif #scifi #mystery #shorts"},
+]
+
 # =============================== SHORT 1 ===============================
 s1, m1, S = builder("a", 2)
 S(f"Vertical close-up of a terrified father holding {LILY}, an empty glowing red hologram frame floating above the baby with no digits, dark hospital-like room with red light.",
@@ -344,7 +377,7 @@ S(f"{LILY} smiling up in warm light, red glow gone.", "She smiles. She's alive. 
 S("A smartphone exploding with notifications on a dresser.",
   "Then his phone explodes. Every human on Earth just woke up with a countdown. And it isn't counting what everyone thinks.",
   overlay={"type": "text", "text": "FULL STORY|ON THE CHANNEL"})
-SHORT1 = dict(LONG, title="Your Baby Has 10 Seconds Left", title_band="YOUR BABY HAS|10 SECONDS LEFT", aspect="9:16", tail=2.5,
+SHORT1 = dict({k: v for k, v in LONG.items() if k not in ("youtube", "shorts", "thumbnail_file")}, title="Your Baby Has 10 Seconds Left", title_band="YOUR BABY HAS|10 SECONDS LEFT", aspect="9:16", tail=2.5,
               scenes=s1, music=m1, style="Cinematic photorealistic film still, vertical 9:16 composition with the subject centered, " + STYLE_TAIL)
 
 # =============================== SHORT 2 ===============================
