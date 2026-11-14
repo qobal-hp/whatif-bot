@@ -1,0 +1,174 @@
+{
+ "title": "What If the Population Doubled? (Short)",
+ "aspect": "9:16",
+ "resolution": "2K",
+ "tail": 3.0,
+ "voices": {
+  "NARRATOR": "George",
+  "ETHAN": "Will"
+ },
+ "cast": {
+  "ethan": "video/public/assets/portrait_ethan.jpg"
+ },
+ "portraits": {
+  "ethan": "Photorealistic head-and-shoulders portrait of a man in his early 30s, short dark-blond hair, light stubble, blue-grey eyes, a small scar through his left eyebrow, navy work jacket, friendly tired expression, plain soft grey background, soft window light, sharp focus, 85mm lens."
+ },
+ "looks": {
+  "ethan": "Ethan: early 30s man, short dark-blond hair, light stubble, blue-grey eyes, a small scar through his left eyebrow, wearing a navy work jacket, same face as the reference portrait"
+ },
+ "style": "Cinematic photorealistic film still, vertical 9:16 composition with the subject centered, shallow depth of field, natural cinematic color grade, present-day setting, no text other than what is described. ",
+ "places": {},
+ "ambiences": {},
+ "ambience": [],
+ "music": [
+  [
+   "s01",
+   "tension"
+  ]
+ ],
+ "scenes": [
+  {
+   "id": "s01",
+   "chars": [
+    "ethan"
+   ],
+   "image": "Ethan opening his apartment door at dawn in a T-shirt, the hallway behind it packed with confused strangers in pajamas, vertical close-up.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[intrigued] You wake up... and there are sixteen billion people on Earth."
+    ]
+   ],
+   "place": "",
+   "motion": "Ethan opens the door and freezes as the crowd of strangers turns toward him, handheld."
+  },
+  {
+   "id": "s02",
+   "chars": [],
+   "image": "A Chicago street at sunrise jammed with thousands of bewildered people, vertical aerial view.",
+   "lines": [
+    [
+     "NARRATOR",
+     "The population doubled overnight."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "s03",
+   "chars": [],
+   "image": "A supermarket with completely empty shelves and a crowd pushing carts.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[urgent] By lunch, the supermarkets are empty."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "s04",
+   "chars": [],
+   "image": "A dinner plate cut neatly in half with a knife, one half empty, overhead light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "The world grows enough food for everyone... once. Split it in half, and nobody gets enough."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "s05",
+   "chars": [],
+   "image": "A city skyline at night with neighborhoods going dark in rolling blackouts.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Week one. The power grid can't keep up. Blackouts roll from city to city."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "s06",
+   "chars": [],
+   "image": "A football stadium turned into a giant shelter, rows of cots across the field.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Every stadium becomes a shelter. And it's still not enough."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "s07",
+   "chars": [
+    "ethan"
+   ],
+   "image": "Ethan's tiny apartment crowded with a family of strangers sleeping on the floor, Ethan stepping over them holding coffee.",
+   "lines": [
+    [
+     "ETHAN",
+     "[wry] My one-bedroom has six people in it now."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "s08",
+   "chars": [],
+   "image": "A massive line of job seekers wrapped around a city block.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[serious] Billions need jobs. Wages crash. Rents explode."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "s09",
+   "chars": [],
+   "image": "A young woman teaching kids on a whiteboard in a tent-city classroom.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[hopeful] But twice the people also means twice the doctors... twice the inventors... twice the chance of the next Einstein."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "s10",
+   "chars": [],
+   "image": "Earth at night from space with city lights twice as dense and bright.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[thoughtful] So... would we survive?"
+    ]
+   ],
+   "place": "",
+   "cut": true
+  },
+  {
+   "id": "s11",
+   "chars": [],
+   "image": "An impossibly crowded crosswalk seen from above, hundreds crossing in every direction.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Would you want to live in a world with twice as many people?"
+    ]
+   ],
+   "place": "",
+   "overlay": {
+    "type": "text",
+    "text": "Blessing|or nightmare?"
+   }
+  }
+ ],
+ "title_band": "WHAT IF THE WORLD|DOUBLED OVERNIGHT?"
+}
