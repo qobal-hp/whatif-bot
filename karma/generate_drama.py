@@ -36,6 +36,8 @@ def voice_ids(names):
     ids = {}
     for role, name in names.items():
         match = next((v["voice_id"] for v in available if v.get("name", "").split(" ")[0].lower() == name.lower()), None)
+        if not match and len(name) >= 20 and name.isalnum():
+            match = name  # a voice id, e.g. a voice-library voice used directly
         if not match:
             raise SystemExit(f"No voice named {name}")
         ids[role] = match
