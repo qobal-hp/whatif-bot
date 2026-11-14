@@ -27,9 +27,10 @@ def service():
     return build("youtube", "v3", credentials=creds)
 
 
-def upload(yt, path, title, description, tags, privacy, publish_at=None):
+def upload(yt, path, title, description, tags, privacy, publish_at=None, localizations=None, category="28"):
     body = {
-        "snippet": {"title": title[:100], "description": description, "tags": tags, "categoryId": "28"},
+        "snippet": {"title": title[:100], "description": description, "tags": tags, "categoryId": category,
+                    "defaultLanguage": "en", "defaultAudioLanguage": "en"},
         "status": {
             "privacyStatus": privacy,
             "selfDeclaredMadeForKids": False,
@@ -39,8 +40,11 @@ def upload(yt, path, title, description, tags, privacy, publish_at=None):
     if publish_at:
         body["status"]["privacyStatus"] = "private"
         body["status"]["publishAt"] = publish_at
+    if localizations:
+        # Titles and descriptions in other languages, shown to viewers whose YouTube is set to that language.
+        body["localizations"] = {lang: {"title": v["title"][:100], "description": v["description"]} for lang, v in localizations.items()}
     request = yt.videos().insert(
-        part="snippet,status",
+        part="snippet,status" + (",localizations" if localizations else ""),
         body=body,
         media_body=MediaFileUpload(str(path), chunksize=16 * 1024 * 1024, resumable=True),
     )
@@ -50,6 +54,21 @@ def upload(yt, path, title, description, tags, privacy, publish_at=None):
     when = f", goes public {publish_at}" if publish_at else ""
     print(f"Uploaded {path.name}: https://youtu.be/{response['id']} ({body['status']['privacyStatus']}{when})")
     return response["id"]
+
+
+def captions(yt, video_id, files, name):
+    """Upload subtitle files named <name>.<lang>.srt next to the video, if any."""
+    for srt in sorted(files.glob(f"{name}.*.srt")):
+        lang = srt.suffixes[-2].lstrip(".")
+        try:
+            yt.captions().insert(
+                part="snippet",
+                body={"snippet": {"videoId": video_id, "language": lang, "name": {"en": "English", "es": "Espa\u00f1ol"}.get(lang, lang), "isDraft": False}},
+                media_body=MediaFileUpload(str(srt), mimetype="application/octet-stream"),
+            ).execute()
+            print(f"Captions {lang} added to {video_id}")
+        except Exception as err:  # e.g. the token lacks the captions permission; the video is up regardless
+            print(f"Captions {lang} could not be added: {err}")
 
 
 def main():
@@ -64,7 +83,9 @@ def main():
 
     episode = files / "episode.mp4"
     if episode.exists() and wanted("episode"):
-        video_id = upload(yt, episode, meta["title"], meta["description"], meta["tags"], privacy, schedule.get("episode"))
+        video_id = upload(yt, episode, meta["title"], meta["description"], meta["tags"], privacy, schedule.get("episode"),
+                          meta.get("localizations"), meta.get("category", "28"))
+        captions(yt, video_id, files, "episode")
         thumb = files / "thumb.jpg"
         if thumb.exists():
             try:
@@ -76,7 +97,9 @@ def main():
     for short in spec.get("shorts", []):
         path = files / f"{short['id']}.mp4"
         if path.exists() and wanted(short["id"]):
-            upload(yt, path, short["youtube_title"], meta["shorts_description"], meta["tags"], privacy, schedule.get(short["id"]))
+            short_id = upload(yt, path, short["youtube_title"], short.get("description", meta.get("shorts_description", "")),
+                              meta["tags"], privacy, schedule.get(short["id"]), short.get("localizations"), meta.get("category", "28"))
+            captions(yt, short_id, files, short["id"])
 
 
 if __name__ == "__main__":
