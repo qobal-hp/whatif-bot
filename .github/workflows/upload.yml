@@ -18,6 +18,9 @@ on:
       only:
         description: Upload only these, comma separated (e.g. short1). Empty uploads everything.
         default: ""
+      files_branch:
+        description: Branch whose files (e.g. short1.mp4) are added to the upload (optional)
+        default: ""
       schedule:
         description: Publish times in UTC, e.g. short2=2026-11-13T17:00:00Z,short3=2026-11-14T17:00:00Z
         default: ""
@@ -53,7 +56,12 @@ jobs:
         run: |
           mkdir -p /tmp/upload
           choice=$(python3 -c "import json,sys; print(json.load(open(sys.argv[1])).get('thumbnail_choice',''))" "${{ inputs.spec }}")
-          if [ -n "$choice" ] && git fetch -q origin thumb-output; then
+          file=$(python3 -c "import json,sys; print(json.load(open(sys.argv[1])).get('thumbnail_file',''))" "${{ inputs.spec }}")
+          if [ -n "$file" ]; then cp "$file" /tmp/upload/thumb.jpg; fi
+          if [ -n "${{ inputs.files_branch }}" ]; then
+            git fetch -q origin "${{ inputs.files_branch }}" && git archive FETCH_HEAD | tar x -C /tmp/upload
+          fi
+          if [ -z "$file" ] && [ -n "$choice" ] && git fetch -q origin thumb-output; then
             git show "FETCH_HEAD:thumbs/$choice.jpg" > /tmp/upload/thumb.jpg || rm -f /tmp/upload/thumb.jpg
           fi
           ls -la /tmp/upload
