@@ -326,7 +326,8 @@ def main():
             path.parent.mkdir(parents=True, exist_ok=True)
             result = fal_client.subscribe(TEXT_MODEL, arguments={"prompt": spec["portraits"][name], "aspect_ratio": "3:4", "resolution": "1K", "output_format": "jpeg"})
             download(result["images"][0]["url"], path)
-            shutil.copy(path, ASSETS / f"portrait_{name}.jpg")  # kept with the assets so it can be saved later
+            if path.resolve() != (ASSETS / f"portrait_{name}.jpg").resolve():
+                shutil.copy(path, ASSETS / f"portrait_{name}.jpg")  # kept with the assets so it can be saved later
             print(f"Portrait of {name} drawn")
     refs = {name: reference_url(ROOT / path) for name, path in spec["cast"].items() if name in needed}
     with ThreadPoolExecutor(6) as pool:
