@@ -285,7 +285,7 @@ S("People in the seafloor town turning toward a rising roar and a dark line on t
 S("A colossal wall of blue water rising across the salt plains toward a tiny town.", "[urgent, hushed] The oceans come back. All at once.",
   motion="An enormous wall of water surges across the salt plain toward the tiny town, epic slow motion.")
 S("Mia alone on a high ridge above a flooded basin staring at the ocean for the first time.", "And for the first time... she hears it.", chars=M, sfx=[WAVES])
-S("Close-up of Mia with tears of wonder, ocean light on her face.", "MIA: [whispering] It really does sound like breathing.", chars=M,
+S("Mia seen from behind on a high grassy ridge, wind in her hair, looking out over an endless calm blue ocean at sunrise.", "MIA: [whispering] It really does sound like breathing.", chars=M,
   overlay={"type": "text", "text": "FULL STORY|ON THE CHANNEL"})
 SHORT2 = dict(SHORT1, title="The Day the Oceans Came Back", title_band="THE DAY THE OCEANS|CAME BACK", scenes=s2, music=m2)
 
