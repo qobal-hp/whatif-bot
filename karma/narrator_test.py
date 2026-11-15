@@ -13,9 +13,9 @@ from pathlib import Path
 
 API = "https://api.elevenlabs.io/v1"
 KEY = os.environ["ELEVENLABS_API_KEY"]
-NARRATORS = ["George", "Brian", "Bill"]
+NARRATORS = [n for n in os.environ.get("NARRATORS", "George,Brian,Bill").split(",") if n]
 LINES = [
-    "[warm, unhurried] Imagine waking up tomorrow. You make your coffee. You pull back the curtains. You look out toward the ocean...",
+    "[relaxed, conversational] Imagine waking up tomorrow. You make your coffee. You pull back the curtains. You look out toward the ocean...",
     "[a beat, quieter] And there's no ocean.",
     "No waves. No blue line on the horizon. Just a dark, endless emptiness, falling away farther than you can see.",
     "[slow, awed] Imagine standing at that edge. Looking down into the dark. Knowing that yesterday, all of that was water.",
@@ -26,7 +26,8 @@ LINES = [
 def voice_id(name):
     req = urllib.request.Request(f"{API}/voices", headers={"xi-api-key": KEY})
     found = json.load(urllib.request.urlopen(req, timeout=60)).get("voices", [])
-    return next(v["voice_id"] for v in found if v["name"].split(" ")[0] == name)
+    print("available:", ", ".join(sorted(v["name"].split(" ")[0] for v in found)))
+    return next((v["voice_id"] for v in found if v["name"].split(" ")[0] == name), None)
 
 
 def read(vid):
@@ -45,7 +46,11 @@ def main():
     out = Path(sys.argv[1])
     out.mkdir(parents=True, exist_ok=True)
     for i, name in enumerate(NARRATORS, 1):
-        raw, model = read(voice_id(name))
+        vid = voice_id(name)
+        if not vid:
+            print(f"{name}: not in this account, skipped")
+            continue
+        raw, model = read(vid)
         tmp = out / f"raw{i}.mp3"
         tmp.write_bytes(raw)
         final = out / f"narrator{i}_{name}.mp3"
