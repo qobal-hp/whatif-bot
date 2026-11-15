@@ -1,0 +1,17 @@
+{
+  "keep": 3,
+  "roles": {
+    "RACHEL": {"gender": "female", "age": "middle_aged", "use_cases": ["conversational", "characters"], "search": "natural emotional",
+               "lines": ["[whispering, shaken] Who is this?", "[steel, controlled] No, Adam. A mistake is forgetting an anniversary. You built two lives... and lied to everyone in both of them."]},
+    "ADAM": {"gender": "male", "age": "middle_aged", "use_cases": ["conversational", "characters"], "search": "charming warm",
+             "lines": ["[charming laugh] Honey, you're the numbers person. I'm the people person.", "[panicking] This is insane! Lauren, think about Ben and Maya!"]},
+    "LAUREN": {"gender": "female", "age": "middle_aged", "use_cases": ["conversational"], "search": "soft calm",
+               "lines": ["[quiet, steady] Hi, Adam. [pause] Should I tell her about your divorce... or should you?", "[gently] Would you have believed me?"]},
+    "DAVID": {"gender": "male", "age": "middle_aged", "use_cases": ["conversational"], "search": "calm professional",
+              "lines": ["[gently] Yes. [pause] But you did follow him. And now we get to choose how this ends."]},
+    "ORTIZ": {"gender": "male", "age": "middle_aged", "use_cases": ["conversational", "characters"], "search": "deep serious",
+              "lines": ["[flat, unhurried] Adam Morgan. Detective Ortiz, Chicago PD. You're under arrest for bank fraud and forgery."]},
+    "BEN": {"gender": "male", "age": "young", "use_cases": ["characters"], "search": "kid child boy",
+            "lines": ["[excited] Dad! Look! It's the one I wanted!"]}
+  }
+}
