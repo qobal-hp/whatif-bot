@@ -52,11 +52,11 @@ S("View through an open window at sunrise: where the ocean should be there is on
   motion="Sheer curtains drift in the breeze revealing the vast empty basin where the sea should be, slow push-in.")
 S("Wide aerial view of a coastline at dawn ending at a sheer drop into an endless dark empty basin, mist hanging in it.",
   "No waves. No blue line on the horizon. Just a dark, endless emptiness, falling away farther than you can see.")
-S("Neighbors in bathrobes standing in a seaside street staring toward the empty coast, one filming with a phone, one screaming.",
+S("Neighbors in bathrobes standing in a seaside street staring toward the empty coast, one filming with a phone, one screaming. The sea is completely gone: dry seabed, mud and rock where the water used to be, no water anywhere.",
   "[hushed] At first, you think you're still dreaming. You step outside. Your neighbors are standing in the street in their robes, staring at the coast. Someone is screaming. Someone else is filming.")
 S("Nora running down a Miami marina dock at sunrise toward empty slips, boats lying in mud far below.",
   "In Miami, Nora Reyes runs down to the marina where she's kept her tugboat for thirty years.", chars=N)
-S("Close-up of Nora at the end of the dock, hands on her head in disbelief, looking down.",
+S("Close-up of Nora at the end of the dock, hands on her head in disbelief, looking down. The sea is completely gone: dry seabed, mud and rock where the water used to be, no water anywhere.",
   "NORA: [breathless, disbelieving] No... no, no. Where is it? Where's the water?", chars=N)
 S("A red tugboat lying on its side in grey mud forty feet below a marina dock, mooring lines hanging down from the dock.",
   "Her boat is lying on its side in the mud, forty feet below the dock.")
@@ -82,23 +82,23 @@ S("A lone lighthouse standing on a cliff above the empty seabed at dusk, its bea
 S("A TV news studio with an emergency banner graphic glow, anchors looking stunned, wall screens showing dry seabeds.",
   "First, the rules. This is impossible. Every drop of seawater disappears, and nothing else changes. The rivers and lakes are still here. The air is still here. Gravity still works. Now... let's play it out.",
   cut=True, music="tension", sfx=[["Emergency broadcast alert tones", 2.5, 0.3, "start"]])
-S("A giant container ship settling onto the muddy seabed, tilting, containers sliding, dust and mud splashing.",
+S("A giant container ship settling onto the muddy seabed, tilting, containers sliding, dust and mud splashing. The sea is completely gone: dry seabed, mud and rock where the water used to be, no water anywhere.",
   "[urgent] Within minutes, the world is in a crisis like nothing in history. Every ship at sea has lost the water holding it up. Container ships, tankers, cruise liners, fishing boats. They all settle onto the seabed.",
   motion="The giant container ship slowly lists to one side as it settles into the mud, containers shifting, mud spraying.")
-S("A cruise ship broken in half on rocky seafloor, its decks exposed, a cracked hull.",
+S("A cruise ship broken in half on rocky seafloor, its decks exposed, a cracked hull. The sea is completely gone: dry seabed, mud and rock where the water used to be, no water anywhere.",
   "Some tip over. Some snap in half under stresses they were never built for.")
 S("An offshore oil platform standing on tall steel legs above dry seafloor, rigs and cranes silhouetted at dawn.",
   "Oil platforms stand on stilts over dry ground.")
 S("Close-up of soft sliding wet sediment and collapsing mud cliffs on the exposed seafloor, treacherous.",
   "And the seafloor isn't a neat, dry desert. It's wet sediment and sliding mud. Cliffs of soft rock. In a lot of places, just walking out there could kill you.")
-S("Astonished people on a coastal cliff shading their eyes, looking out at a glittering white expanse.",
+S("Astonished people on a coastal cliff shading their eyes, looking out at a glittering white expanse. The sea is completely gone: dry seabed, mud and rock where the water used to be, no water anywhere.",
   "[a beat] And then people notice something else. The seafloor is white.")
 S("Endless white salt plains glittering under the sun stretching to the horizon, a stranded fishing boat tiny in the distance.",
   "[awed] Seawater is about three and a half percent salt. The water vanished... the salt didn't. All across the old ocean floor, there are now vast plains of salt. In places, tens of meters thick.",
   motion="Low drone glide over endless glittering white salt plains toward a tiny stranded boat, heat shimmer.")
 S("Earth from space with oceans turned blinding white, continents dark between them.",
   "From space, the oceans didn't turn brown. They turned white.")
-S("A huge silent container port with idle cranes and stacked containers, ships lying in a dry harbor basin.",
+S("A huge silent container port with idle cranes and stacked containers, ships lying in a dry harbor basin. The sea is completely gone: dry seabed, mud and rock where the water used to be, no water anywhere.",
   "Meanwhile, the world's ports go silent. Los Angeles. Shanghai. Rotterdam. Singapore. About eighty percent of everything the world trades travels by sea.")
 S("A stranded cargo ship in mud with pallets of medicine boxes and grain sacks visible through broken containers.",
   "Medicine bound for California. Grain crossing the Atlantic. Fuel for half a continent. All of it, stranded in the mud.")
@@ -116,7 +116,7 @@ S("The same glowing current visualization fading out, leaving a dark empty globe
   "[quiet] And that battery is gone.")
 S("Split landscape: one side a scorching cracked desert city under a red sun, the other a frozen coastal town in a blizzard.",
   "You might think everywhere just gets hotter. It's stranger than that. Without ocean currents moving heat around, some places swing toward brutal heat, while others slide into deep cold.")
-S("A seaside town's promenade with people bundled in coats under a harsh grey sky, empty basin beyond the railings.",
+S("A seaside town's promenade with people bundled in coats under a harsh grey sky, empty basin beyond the railings. The sea is completely gone: dry seabed, mud and rock where the water used to be, no water anywhere.",
   "Coastal cities lose the gentle weather they always took for granted. And it wouldn't happen in an afternoon. It would creep in, season by season.")
 S("London's Tower Bridge under heavy snow and a grim grey sky, Thames frozen at the edges.",
   "Take Western Europe. London and Paris are mild partly because the Atlantic carries warmth north. Take that away, and their winters could look very different.")
