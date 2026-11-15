@@ -263,8 +263,8 @@ S("Vertical view through an open window at sunrise where the ocean should be: a 
   "[relaxed, conversational] You wake up. You pull back the curtains... and there's no ocean.", music="tension", sfx=[WAVES],
   motion="Curtains drift open revealing the vast empty basin, slow push-in.")
 S("A red tugboat lying on its side in mud far below a marina dock.", "Every ocean on Earth. Gone overnight.")
-S("Nora at the end of a dock staring down in disbelief, hands on her head.", "NORA: [breathless] Where is it? Where's the water?", chars=N)
-S("A giant container ship tilting as it settles into seabed mud.", "[urgent] Ships collapse onto the seabed. Ports go silent.")
+S("Nora at the end of a marina dock staring down in disbelief, hands on her head, below the dock only mud and stranded boats, the sea completely gone, no water anywhere.", "NORA: [breathless] Where is it? Where's the water?", chars=N)
+S("A giant container ship tilting as it settles onto a dry muddy seabed, the sea completely gone, no water anywhere.", "[urgent] Ships collapse onto the seabed. Ports go silent.")
 S("Endless glittering white salt plains to the horizon.", "[awed] And the seafloor? It's white. Salt, tens of meters thick.")
 S("Thin clouds vanishing over a dry basin.", "Then the rain starts to fade. Because most of it came from the ocean.")
 S("A long line of people with jugs at a water station in the heat.", "[serious] And soon, the most valuable thing on Earth... is a glass of water.")
@@ -278,9 +278,9 @@ SHORT1 = dict({k: v for k, v in LONG.items() if k != "thumbnail_file"}, title="Y
 s2, m2, S = builder("b", 2)
 S("Vertical shot of a small town built on white salt plains on the old seafloor, a giant old cliff behind.",
   "[relaxed, conversational] A hundred years after the oceans vanished, people live on the old seafloor.", music="tension")
-S("Mia holding an old photograph of a woman on a tugboat at sea.", "Mia is sixteen. She has never seen a wave.", chars=M)
+S("Mia in her small bedroom in a town on the dry old seafloor, holding an old photograph of a woman on a tugboat, white salt plains visible through the window, no sea.", "Mia is sixteen. She has never seen a wave.", chars=M)
 S("Close-up of Mia, wistful.", "MIA: [wistful] Great-grandma said the sea sounded like breathing.", chars=M)
-S("People in the seafloor town turning toward a rising roar and a dark line on the horizon.", "Then one morning...",
+S("Ordinary townspeople in simple clothes standing in a dusty street of a small town on dry white salt plains at dawn, turning toward a dark line on the horizon.", "Then one morning...",
   sfx=[["A deep rising roar of approaching water", 3.0, 0.4, "start"]])
 S("A colossal wall of blue water rising across the salt plains toward a tiny town.", "[urgent, hushed] The oceans come back. All at once.",
   motion="An enormous wall of water surges across the salt plain toward the tiny town, epic slow motion.")
