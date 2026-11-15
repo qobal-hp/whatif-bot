@@ -1,0 +1,149 @@
+{
+ "title": "The Day the Oceans Came Back",
+ "aspect": "9:16",
+ "resolution": "2K",
+ "tail": 2.5,
+ "voices": {
+  "NARRATOR": "Will",
+  "NORA": "Sarah",
+  "MIA": "Jessica"
+ },
+ "cast": {
+  "nora": "video/public/assets/portrait_nora.jpg",
+  "mia": "video/public/assets/portrait_mia.jpg"
+ },
+ "portraits": {
+  "nora": "Photorealistic head-and-shoulders portrait of a Latina woman about 58, sun-weathered skin, grey-streaked black hair in a thick braid, dark brown eyes, navy boat captain's jacket, strong kind face, plain soft grey background, soft window light, 85mm lens.",
+  "mia": "Photorealistic head-and-shoulders portrait of a 16-year-old girl, wavy dark-brown hair, light freckles, olive skin, hazel eyes, simple sand-colored linen shirt, curious expression, plain soft grey background, soft window light, 85mm lens."
+ },
+ "looks": {
+  "nora": "Nora: Latina woman about 58, sun-weathered skin, grey-streaked black braid, navy captain's jacket, same face as her reference image",
+  "mia": "Mia: 16-year-old girl, wavy dark-brown hair, light freckles, olive skin, sand-colored linen shirt, same face as her reference image"
+ },
+ "style": "Cinematic photorealistic film still, vertical 9:16 composition with the subject centered, natural documentary color grade, epic scale, present day unless described, no text, no letters, no numbers. ",
+ "places": {},
+ "ambiences": {},
+ "ambience": [],
+ "music": [
+  [
+   "b01",
+   "tension"
+  ]
+ ],
+ "scenes": [
+  {
+   "id": "b01",
+   "chars": [],
+   "image": "Vertical shot of a small town built on white salt plains on the old seafloor, a giant old cliff behind.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[relaxed, conversational] A hundred years after the oceans vanished, people live on the old seafloor."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "b02",
+   "chars": [
+    "mia"
+   ],
+   "image": "Mia holding an old photograph of a woman on a tugboat at sea.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Mia is sixteen. She has never seen a wave."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "b03",
+   "chars": [
+    "mia"
+   ],
+   "image": "Close-up of Mia, wistful.",
+   "lines": [
+    [
+     "MIA",
+     "[wistful] Great-grandma said the sea sounded like breathing."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "b04",
+   "chars": [],
+   "image": "People in the seafloor town turning toward a rising roar and a dark line on the horizon.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Then one morning..."
+    ]
+   ],
+   "place": "",
+   "sfx": [
+    [
+     "A deep rising roar of approaching water",
+     3.0,
+     0.4,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "b05",
+   "chars": [],
+   "image": "A colossal wall of blue water rising across the salt plains toward a tiny town.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[urgent, hushed] The oceans come back. All at once."
+    ]
+   ],
+   "place": "",
+   "motion": "An enormous wall of water surges across the salt plain toward the tiny town, epic slow motion."
+  },
+  {
+   "id": "b06",
+   "chars": [
+    "mia"
+   ],
+   "image": "Mia alone on a high ridge above a flooded basin staring at the ocean for the first time.",
+   "lines": [
+    [
+     "NARRATOR",
+     "And for the first time... she hears it."
+    ]
+   ],
+   "place": "",
+   "sfx": [
+    [
+     "Gentle ocean waves on a beach with distant seagulls",
+     6.0,
+     0.35,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "b07",
+   "chars": [
+    "mia"
+   ],
+   "image": "Close-up of Mia with tears of wonder, ocean light on her face.",
+   "lines": [
+    [
+     "MIA",
+     "[whispering] It really does sound like breathing."
+    ]
+   ],
+   "place": "",
+   "overlay": {
+    "type": "text",
+    "text": "FULL STORY|ON THE CHANNEL"
+   }
+  }
+ ],
+ "title_band": "THE DAY THE OCEANS|CAME BACK"
+}

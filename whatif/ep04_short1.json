@@ -1,0 +1,147 @@
+{
+ "title": "You Wake Up and the Ocean Is Gone",
+ "aspect": "9:16",
+ "resolution": "2K",
+ "tail": 2.5,
+ "voices": {
+  "NARRATOR": "Will",
+  "NORA": "Sarah",
+  "MIA": "Jessica"
+ },
+ "cast": {
+  "nora": "video/public/assets/portrait_nora.jpg",
+  "mia": "video/public/assets/portrait_mia.jpg"
+ },
+ "portraits": {
+  "nora": "Photorealistic head-and-shoulders portrait of a Latina woman about 58, sun-weathered skin, grey-streaked black hair in a thick braid, dark brown eyes, navy boat captain's jacket, strong kind face, plain soft grey background, soft window light, 85mm lens.",
+  "mia": "Photorealistic head-and-shoulders portrait of a 16-year-old girl, wavy dark-brown hair, light freckles, olive skin, hazel eyes, simple sand-colored linen shirt, curious expression, plain soft grey background, soft window light, 85mm lens."
+ },
+ "looks": {
+  "nora": "Nora: Latina woman about 58, sun-weathered skin, grey-streaked black braid, navy captain's jacket, same face as her reference image",
+  "mia": "Mia: 16-year-old girl, wavy dark-brown hair, light freckles, olive skin, sand-colored linen shirt, same face as her reference image"
+ },
+ "style": "Cinematic photorealistic film still, vertical 9:16 composition with the subject centered, natural documentary color grade, epic scale, present day unless described, no text, no letters, no numbers. ",
+ "places": {},
+ "ambiences": {},
+ "ambience": [],
+ "music": [
+  [
+   "a01",
+   "tension"
+  ]
+ ],
+ "scenes": [
+  {
+   "id": "a01",
+   "chars": [],
+   "image": "Vertical view through an open window at sunrise where the ocean should be: a vast dark empty basin to the horizon.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[relaxed, conversational] You wake up. You pull back the curtains... and there's no ocean."
+    ]
+   ],
+   "place": "",
+   "sfx": [
+    [
+     "Gentle ocean waves on a beach with distant seagulls",
+     6.0,
+     0.35,
+     "start"
+    ]
+   ],
+   "motion": "Curtains drift open revealing the vast empty basin, slow push-in."
+  },
+  {
+   "id": "a02",
+   "chars": [],
+   "image": "A red tugboat lying on its side in mud far below a marina dock.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Every ocean on Earth. Gone overnight."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "a03",
+   "chars": [
+    "nora"
+   ],
+   "image": "Nora at the end of a dock staring down in disbelief, hands on her head.",
+   "lines": [
+    [
+     "NORA",
+     "[breathless] Where is it? Where's the water?"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "a04",
+   "chars": [],
+   "image": "A giant container ship tilting as it settles into seabed mud.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[urgent] Ships collapse onto the seabed. Ports go silent."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "a05",
+   "chars": [],
+   "image": "Endless glittering white salt plains to the horizon.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[awed] And the seafloor? It's white. Salt, tens of meters thick."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "a06",
+   "chars": [],
+   "image": "Thin clouds vanishing over a dry basin.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Then the rain starts to fade. Because most of it came from the ocean."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "a07",
+   "chars": [],
+   "image": "A long line of people with jugs at a water station in the heat.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[serious] And soon, the most valuable thing on Earth... is a glass of water."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "a08",
+   "chars": [],
+   "image": "Earth from space with its oceans turned white.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[quiet] How long would we last?"
+    ]
+   ],
+   "place": "",
+   "overlay": {
+    "type": "text",
+    "text": "FULL EPISODE|ON THE CHANNEL"
+   }
+  }
+ ],
+ "title_band": "WHAT IF THE OCEANS|VANISHED OVERNIGHT?"
+}
