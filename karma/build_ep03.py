@@ -502,7 +502,7 @@ def main():
             music.append([sid, extra["music"]])
         scenes.append(scene)
     roles = {r.split("~")[0] for s in scenes for r, _ in s["lines"]}
-    title = "My Husband Had a Secret Family for 8 Years. His Other Wife Knew About Me."
+    title = "I Followed My Husband on Christmas Eve. I Wish I Hadn't."
     spec = {
         "title": "Karma Tales EP03 - The Other Wife Knew",
         "voices": {r: VOICES[r] for r in sorted(roles)},
