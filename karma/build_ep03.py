@@ -303,7 +303,7 @@ sc("car", ["rachel", "lauren"], "Rachel staring at the page, Lauren watching her
 sc("car", ["rachel"], "Close-up of Rachel lifting her eyes from the page, a cold, decided look.",
    [(N, "Rachel stared at the page for a long time. Then she said something Lauren didn't expect."),
     ("RACHEL", "[calm, decided] We're not going to warn him.")])
-sc("car", ["rachel", "lauren"], "Lauren turning to Rachel in surprise; Rachel with a faint, dangerous smile.",
+sc("car", ["rachel", "lauren"], "Inside the parked car: Lauren in the driver's seat turning to Rachel in surprise; Rachel in the passenger seat with a faint, dangerous smile. Through the windshield only a blurred rainy parking lot, no store signs, no logos, no lettering anywhere.",
    [("LAUREN", "What?"),
     ("RACHEL", "We're going to let him think he's winning.")],
    sfx=[["Rising tense musical swell", 3.0, 0.35, "end"]])
@@ -353,7 +353,7 @@ sc("kitchen", ["adam:home"], "Close-up of Adam's eyes calculating, then the char
    [(N, "For one second, Rachel saw the real Adam. Not the charming husband. Not the smiling man from the Christmas photos. A man doing math. [pause] Then the smile came back."),
     ("ADAM", "[smooth again] Fine. The bank said Wednesday at ten. Downtown."),
     ("RACHEL", "[sweet] Perfect.")])
-sc("kitchen", ["adam:home"], "Adam on the stairs with his phone to his ear, smirking, out of Rachel's sight.",
+sc("kitchen", ["adam:home"], "Adam alone on the staircase of the townhouse with his phone to his ear, smirking. No one else in the frame.",
    [(N, "Adam kissed her cheek and went upstairs to call his partner. [pause] He thought he'd just won. He had no idea who else would be in that room on Wednesday.")],
    sfx=[["Ominous low drone", 3.0, 0.3, "end"]])
 
@@ -425,7 +425,7 @@ sc("law_office", ["david"], "David reading from a file, relieved.",
     ("DAVID", "His partner is cooperating. Adam's lawyer is already talking about a plea.")])
 sc("law_office", ["rachel:work"], "Rachel leaning back in her chair, closing her eyes, finally breathing.",
    [(N, "Rachel leaned back. For the first time in weeks, she could breathe. [pause] Then Lauren reached into her bag.")])
-sc("law_office", ["lauren"], "Lauren hesitating, turning toward Rachel.",
+sc("law_office", ["lauren"], "Close-up of Lauren alone in her chair in the law office, hesitating, turning slightly to her side, snowy window behind her. No one else in the frame.",
    [("LAUREN", "[hesitant] Rachel... there's something I haven't told you."),
     ("RACHEL", "[tired] What now?"),
     ("LAUREN", "On Christmas Eve, I didn't just see your car on the camera. [pause] I knew you'd be there.")])
@@ -477,7 +477,7 @@ sc("cabin", ["rachel:cabin"], "Rachel's phone lighting up on the cabin table nex
    overlay={"type": "message", "from": "Lauren", "to": "Rachel", "text": "Merry Christmas. The kids are doing great. I hope you are too."})
 sc("cabin", ["rachel:cabin"], "Rachel smiling as she types a reply by the fire.",
    [("RACHEL", "[smiling as she types] \"Merry Christmas. I am.\"")])
-sc("cabin", [], "Snow falling softly over a dark frozen Lake Michigan seen through the cabin window, the warm reflection of the fire on the glass.",
+sc("cabin", [], "Snow falling softly over a dark frozen Lake Michigan seen through the cabin window, the warm reflection of the fire on the glass. No people anywhere in the frame.",
    [(N, "Rachel set the phone down. Outside, snow fell softly over the lake. A year ago, she stood in the cold, watching her husband open presents with another family. [pause] Tonight she was alone. And she had never felt less lonely.")],
    motion="snow falls gently over the dark lake beyond the window")
 sc("street", [], "The Naperville house from Act 1 now dark and empty with a For Sale sign in the snow, no lights, at night.",
