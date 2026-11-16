@@ -2694,5 +2694,28 @@
     "category": "24",
     "shorts_description": "Full story on Karma Tales: My Husband Had a Secret Family for 8 Years. His Other Wife Knew About Me.\n\n#shorts #karmatales #revengestory #secretfamily"
   },
-  "thumbnail_file": "karma/ep03_thumb.jpg"
+  "thumbnail_file": "karma/ep03_thumb.jpg",
+  "shorts": [
+    {
+      "id": "short1",
+      "title": "She caught her husband|with another family",
+      "from": "s01",
+      "to": "s15",
+      "youtube_title": "She Followed Her Husband on Christmas Eve. Then the Other Woman Texted Her. #shorts"
+    },
+    {
+      "id": "short2",
+      "title": "His two wives.|One room.",
+      "from": "s88",
+      "to": "s95",
+      "youtube_title": "He Brought His Wife to Sign the Loan. His Other Wife Walked In. #shorts"
+    },
+    {
+      "id": "short3",
+      "title": "\"A mistake is forgetting|an anniversary.\"",
+      "from": "s96",
+      "to": "s101",
+      "youtube_title": "He Said He Made Mistakes. She Had the Perfect Answer. #shorts"
+    }
+  ]
 }

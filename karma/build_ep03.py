@@ -533,6 +533,14 @@ def main():
             "shorts_description": f"Full story on Karma Tales: {title}\n\n#shorts #karmatales #revengestory #secretfamily",
         },
         "thumbnail_file": "karma/ep03_thumb.jpg",
+        "shorts": [
+            {"id": "short1", "title": "She caught her husband|with another family", "from": "s01", "to": "s15",
+             "youtube_title": "She Followed Her Husband on Christmas Eve. Then the Other Woman Texted Her. #shorts"},
+            {"id": "short2", "title": "His two wives.|One room.", "from": "s88", "to": "s95",
+             "youtube_title": "He Brought His Wife to Sign the Loan. His Other Wife Walked In. #shorts"},
+            {"id": "short3", "title": "\"A mistake is forgetting|an anniversary.\"", "from": "s96", "to": "s101",
+             "youtube_title": "He Said He Made Mistakes. She Had the Perfect Answer. #shorts"},
+        ],
     }
     tone = {"street": "snow_night", "lauren_house": "snow_night", "kitchen": "home", "fundraiser": "gala", "coffee": "coffee",
             "law_office": "office", "car": "car_rain", "bank": "bank", "cabin": "cabin"}
