@@ -1,0 +1,19 @@
+{
+  "keep": 3,
+  "roles": {
+    "THOMAS": {"gender": "male", "age": "old", "use_cases": ["conversational", "characters"], "search": "warm gravelly father",
+               "lines": ["[soft, a little hurt] Olivia... did I do something?", "[steady, quiet] Not until somebody tells me why my daughter thinks I'm dead."]},
+    "OLIVIA": {"gender": "female", "age": "young", "use_cases": ["conversational", "characters"], "search": "emotional natural",
+               "lines": ["[voice breaking] I thought I was protecting you.", "[firm, shaking] I can't marry you."]},
+    "ETHAN": {"gender": "male", "age": "young", "use_cases": ["conversational", "characters"], "search": "smooth confident",
+              "lines": ["[low, controlled] Then think carefully about what happens to his garage.", "[smiling, cold] It's advice."]},
+    "CATHERINE": {"gender": "female", "age": "middle_aged", "use_cases": ["characters", "conversational"], "search": "elegant posh",
+                  "lines": ["[sweetly, condescending] How... hardworking.", "[sharp whisper] Think about the scandal!"]},
+    "JAMES": {"gender": "male", "age": "old", "use_cases": ["conversational", "narrative_story"], "search": "authoritative deep",
+              "lines": ["[measured] Family history is important when two families come together.", "[cold, slow] Ethan. What is he talking about?"]},
+    "MIA": {"gender": "female", "age": "young", "use_cases": ["conversational", "characters"], "search": "bold sassy",
+            "lines": ["[flat] Actually, yes.", "[fierce] Did you seriously just threaten her father?"]},
+    "SARAH": {"gender": "female", "age": "middle_aged", "use_cases": ["conversational", "narrative_story"], "search": "professional confident",
+              "lines": ["[crisp] Sarah Mitchell. Mr. Reed's attorney.", "[calm] Then you should have no problem answering them through counsel."]}
+  }
+}
