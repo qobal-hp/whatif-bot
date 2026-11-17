@@ -668,6 +668,14 @@ def main():
             "shorts_description": f"Full story on Karma Tales: {title}\n\n#shorts #karmatales #revengestory #thanksgiving",
         },
         "thumbnail_file": "karma/ep04_thumb.jpg",
+        "shorts": [
+            {"id": "short1", "title": "She threw her out|on Thanksgiving", "from": "s41", "to": "s54",
+             "youtube_title": "She Threw Her Daughter-in-Law Out on Thanksgiving. Then She Asked One Question. #shorts"},
+            {"id": "short2", "title": "\"I didn't forge anything!\"", "from": "s105", "to": "s112",
+             "youtube_title": "He Swore He Didn't Forge Anything. Then the Lawyer Checked His Phone. #shorts"},
+            {"id": "short3", "title": "\"This time, I'm leaving|because I choose to.\"", "from": "s120", "to": "s127",
+             "youtube_title": "He Told Her to Leave on Thanksgiving. So She Did. #shorts"},
+        ],
     }
     tone = {"dining": "dinner", "mansion_kitchen": "house", "mansion_hall": "house", "mansion_study": "house", "living": "fire",
             "kitchen_home": "kitchen", "car": "rain_car", "office": "office", "coffee": "coffee", "grandma_house": "cozy"}
