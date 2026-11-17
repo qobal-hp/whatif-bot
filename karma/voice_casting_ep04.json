@@ -1,0 +1,17 @@
+{
+  "keep": 3,
+  "roles": {
+    "VICTORIA": {"gender": "female", "age": "old", "use_cases": ["characters", "conversational"], "search": "elegant cold sophisticated",
+                 "lines": ["[icy, smiling] Well, that's the problem with thinking, isn't it?", "[rising, furious] You heard me. Get out of my house."]},
+    "EMMA": {"gender": "female", "age": "young", "use_cases": ["conversational", "characters"], "search": "natural warm emotional",
+             "lines": ["[voice shaking] Ryan. Tell her.", "[calm, cold] Then I hope you have the paperwork."]},
+    "RYAN": {"gender": "male", "age": "middle_aged", "use_cases": ["conversational"], "search": "casual smooth",
+             "lines": ["[not meeting her eyes] Maybe you should go home for tonight.", "[desperate] I was going to pay it back!"]},
+    "GRACE": {"gender": "female", "age": "young", "use_cases": ["conversational", "characters"], "search": "sarcastic witty",
+              "lines": ["[dry] What's with the lawyer?", "[laughing] Nobody's yelling. That's a pretty good start."]},
+    "BROOKS": {"gender": "male", "age": "old", "use_cases": ["conversational", "narrative_story"], "search": "calm wise gentle",
+               "lines": ["[measured] The house Victoria lives in is owned by the Ashford Family Trust."]},
+    "MARGARET": {"gender": "female", "age": "old", "use_cases": ["characters", "narrative_story"], "search": "grandmother warm",
+                 "lines": ["[warm, teasing] What? I'm old. I'm allowed to tell the truth."]}
+  }
+}
