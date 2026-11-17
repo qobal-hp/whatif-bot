@@ -25,7 +25,7 @@ CASTING = ROOT / "karma" / "voices_ep05.json"
 if CASTING.exists():
     VOICES.update(json.loads(CASTING.read_text()))
 
-CAST = {c: f"karma/cast/ep05/{c}.jpg" for c in ["olivia", "thomas"]}
+CAST = {c: f"karma/cast/ep05/{c}.jpg" for c in ["olivia", "thomas", "ethan", "catherine", "james", "mia", "sarah", "officiant"]}
 
 PORTRAIT = ("Photorealistic still from a prestige American TV drama, shot on 35mm, shallow depth of field, soft cinematic key light, "
             "natural skin texture, head-and-shoulders portrait facing slightly off camera, neutral dark background, an entirely "
