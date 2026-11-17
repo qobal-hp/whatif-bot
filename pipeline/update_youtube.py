@@ -32,6 +32,10 @@ def thumbnail_file(where):
 def main():
     yt = service()
     for change in json.loads(sys.argv[1]):
+        if change.get("delete"):
+            yt.videos().delete(id=change["id"]).execute()
+            print(f"Deleted https://youtu.be/{change['id']}")
+            continue
         video = yt.videos().list(part="snippet,status", id=change["id"]).execute()["items"][0]
         snippet, status = video["snippet"], video["status"]
         parts = []

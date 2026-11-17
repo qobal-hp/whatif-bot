@@ -1,5 +1,5 @@
 import React from 'react';
-import {AbsoluteFill, Audio, Sequence, interpolate, staticFile, useVideoConfig} from 'remotion';
+import {AbsoluteFill, Audio, Sequence, interpolate, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import '@fontsource/montserrat/800.css';
 import {Overlays} from './Overlay';
 import {Captions} from './Captions';
@@ -8,7 +8,28 @@ import type {EpisodeProps} from './types';
 
 const FADE_FRAMES = 14;
 
-export const Episode: React.FC<EpisodeProps> = ({audio, scenes, words, audioStart, title, durationSec, music, overlays, sfx}) => {
+// Closing card on a short: points viewers to the full episode on the channel.
+const EndCard: React.FC<{text: string}> = ({text}) => {
+  const frame = useCurrentFrame();
+  const fade = interpolate(frame, [0, 10], [0, 1], {extrapolateRight: 'clamp'});
+  const bob = Math.sin(frame / 5) * 14;
+  const [top, ...rest] = text.split('|');
+  return (
+    <AbsoluteFill style={{backgroundColor: `rgba(0,0,0,${0.72 * fade})`, alignItems: 'center', justifyContent: 'center', opacity: fade}}>
+      <div style={{fontFamily: 'Montserrat, Arial, sans-serif', fontWeight: 800, fontSize: 84, color: '#FFD34D', textAlign: 'center', textTransform: 'uppercase', lineHeight: 1.05, maxWidth: 960, textShadow: '0 6px 30px rgba(0,0,0,0.8)'}}>
+        {top}
+      </div>
+      {rest.map((line) => (
+        <div key={line} style={{fontFamily: 'Montserrat, Arial, sans-serif', fontWeight: 800, fontSize: 64, color: '#FFFFFF', textAlign: 'center', textTransform: 'uppercase', marginTop: 24, padding: '14px 30px', backgroundColor: '#E0261B', borderRadius: 16, transform: 'rotate(-1.5deg)'}}>
+          {line}
+        </div>
+      ))}
+      <div style={{marginTop: 60, transform: `translateY(${bob}px)`, width: 0, height: 0, borderLeft: '70px solid transparent', borderRight: '70px solid transparent', borderTop: '90px solid #FFD34D'}} />
+    </AbsoluteFill>
+  );
+};
+
+export const Episode: React.FC<EpisodeProps> = ({audio, scenes, words, audioStart, title, durationSec, music, overlays, sfx, endCard, endCardSec}) => {
   const {fps, width, height} = useVideoConfig();
   const vertical = height > width;
   return (
@@ -59,6 +80,11 @@ export const Episode: React.FC<EpisodeProps> = ({audio, scenes, words, audioStar
         </AbsoluteFill>
       ) : null}
       <Overlays overlays={overlays ?? []} />
+      {endCard ? (
+        <Sequence from={Math.round((durationSec - (endCardSec ?? 3)) * fps)}>
+          <EndCard text={endCard} />
+        </Sequence>
+      ) : null}
       <Captions words={words} vertical={vertical} />
       {(music ?? []).map((cue, i) => {
         // Each cue overlaps its neighbours by one second on both sides so the tracks crossfade.
@@ -90,7 +116,7 @@ export const Episode: React.FC<EpisodeProps> = ({audio, scenes, words, audioStar
         <Audio
           src={staticFile(audio)}
           startFrom={Math.round((audioStart ?? 0) * fps)}
-          endAt={Math.round(((audioStart ?? 0) + durationSec) * fps)}
+          endAt={Math.round(((audioStart ?? 0) + durationSec - (endCard ? endCardSec ?? 3 : 0)) * fps)}
         />
       ) : null}
     </AbsoluteFill>

@@ -35,6 +35,8 @@ export type EpisodeProps = {
   words: WordProps[];
   audioStart?: number;
   title?: string;
+  endCard?: string;
+  endCardSec?: number;
   music?: {src: string; start: number; end: number; volume: number}[];
   overlays?: OverlayProps[];
   sfx?: {src: string; start: number; volume: number}[];

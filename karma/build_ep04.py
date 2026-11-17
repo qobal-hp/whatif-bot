@@ -665,9 +665,10 @@ def main():
             "description": "On Thanksgiving night, in front of fourteen guests, Victoria Parker told her daughter-in-law to get out of her house. Her husband just sat there.\n\nBefore she left, Emma asked one question: \"Are you absolutely certain this house belongs to you?\"\n\nKarma Tales: revenge and twist stories where the people who scheme always get what they deserve.\n\nThis story is fiction. Any resemblance to real people or events is coincidental. Narration and images are AI-generated.\n\n#karmatales #revengestory #motherinlaw #thanksgivingdrama",
             "tags": ["karma tales", "revenge story", "mother in law", "thanksgiving drama", "family betrayal", "hidden inheritance", "kicked out", "twist ending", "karma", "audio drama"],
             "category": "24",
-            "shorts_description": f"Full story on Karma Tales: {title}\n\n#shorts #karmatales #revengestory #thanksgiving",
+            "shorts_description": f"Watch the full story on Karma Tales: https://youtu.be/sgYbwxJiXpo\n{title}\n\n#shorts #karmatales #revengestory #thanksgiving",
         },
         "thumbnail_file": "karma/ep04_thumb.jpg",
+        "shorts_end_card": "Watch the full story|on our channel",
         "shorts": [
             {"id": "short1", "title": "She threw her out|on Thanksgiving", "from": "s41", "to": "s54",
              "youtube_title": "She Threw Her Daughter-in-Law Out on Thanksgiving. Then She Asked One Question. #shorts"},

@@ -35,6 +35,13 @@ def main():
                 if start - 0.01 <= w["start"] < end
             ],
         }
+        card = short.get("end_card", spec.get("shorts_end_card"))
+        if card:
+            # Hold the last picture and show the end card after the audio ends.
+            extra = 3.0
+            cut["endCard"], cut["endCardSec"] = card, extra
+            cut["durationSec"] = round(cut["durationSec"] + extra, 3)
+            cut["scenes"][-1]["end"] += extra
         (out / f"{short['id']}.json").write_text(json.dumps(cut))
         print(f"{short['id']}: {cut['durationSec']}s, {len(scenes)} scenes, {len(cut['words'])} words")
 
