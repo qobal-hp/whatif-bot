@@ -864,7 +864,7 @@ def main():
             "description": "Halfway through the ceremony, the chapel doors opened. The bride's father walked in. The man whose name was printed in her wedding program, under the words \"In loving memory.\"\n\nWhy did Olivia tell everyone her father was dead? And why did the groom's mother whisper, \"That's impossible\"?\n\nKarma Tales: revenge and twist stories where the people who scheme always get what they deserve.\n\nThis story is fiction. Any resemblance to real people or events is coincidental. Narration and images are AI-generated.\n\n#karmatales #revengestory #weddingdrama #fatheranddaughter",
             "tags": ["karma tales", "revenge story", "wedding drama", "father and daughter", "family betrayal", "wedding objection", "twist ending", "karma", "audio drama", "dead father"],
             "category": "24",
-            "shorts_description": "Watch the full story on Karma Tales: EPISODE_URL\n" + title + "\n\n#shorts #karmatales #revengestory #weddingdrama",
+            "shorts_description": "Watch the full story on Karma Tales: https://youtu.be/ON48F2uLrRA\n" + title + "\n\n#shorts #karmatales #revengestory #weddingdrama",
         },
         "thumbnail_file": "karma/ep05_thumb.jpg",
         "shorts_end_card": "Watch the full story|on our channel",
