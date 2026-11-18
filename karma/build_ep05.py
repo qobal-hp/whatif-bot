@@ -88,7 +88,7 @@ sc("chapel", [], "Wide shot down the aisle of a packed chapel, the bride and gro
    sfx=[["Gentle wedding string quartet in a stone chapel, guests whispering", 4.0, 0.25, "start"]], music="tension")
 sc("chapel", ["officiant"], "The minister at the altar, open book in his hands, looking out at the guests.",
    [("OFFICIANT", "[warm, ceremonial] If anyone here knows of a reason these two should not be joined in marriage... [pause] speak now.")])
-sc("chapel", [], "The heavy carved wooden chapel doors swinging open, daylight pouring in behind a lone figure.",
+sc("chapel", [], "The heavy carved wooden chapel doors swinging open, daylight pouring in behind the dark silhouette of a broad-shouldered older man in a jacket, seen from inside the chapel.",
    [(N, "[quiet] Then the chapel doors opened.")],
    sfx=[["Heavy old church doors creaking open, echo in a stone hall", 2.5, 0.5, "start"]], motion="the heavy doors swing open and light floods into the aisle")
 sc("chapel", ["thomas:wedding"], "Thomas standing alone at the back of the aisle in a worn jacket, light behind him, every guest turning.",
@@ -124,7 +124,7 @@ sc("garage", ["thomas"], "Six months earlier: Thomas leaning into the engine of 
 sc("garage", ["thomas"], "Thomas stepping back from the sedan as the engine catches, wiping his hands on a rag, grinning.",
    [("THOMAS", "[satisfied chuckle] There we go.")],
    sfx=[["An old car engine sputtering then starting and idling", 3.0, 0.45, "start"]], motion="he steps back from the running engine and wipes his hands on a rag")
-sc("garage", [], "A small crowded Philadelphia garage wall: faded photos of a little girl in a school play, a graduation cap, all pinned beside the tool pegboard.",
+sc("garage", [], "No people in the frame. A small crowded Philadelphia garage wall: faded photos of a little girl in a school play, a graduation cap, all pinned beside the tool pegboard.",
    [(N, "[warm] Thomas Reed had spent thirty-five years fixing cars in the same small Philadelphia garage. He wasn't wealthy. His work shirts always smelled like motor oil.")])
 sc("garage", [], "Close-up of an old faded photo of Thomas holding a little girl on his shoulders at a fair.",
    [(N, "But he had raised Olivia alone after her mother died. He worked weekends to pay her college tuition. He never missed a school play, a graduation, or a birthday. [pause] Then Olivia met Ethan Blackwood. [pause] And everything changed.")])
@@ -182,7 +182,7 @@ sc("restaurant", ["olivia:dinner"], "Olivia at the table, napkin twisted in her 
 sc("restaurant", ["catherine:home"], "Catherine tilting her head with practiced sympathy.",
    [("CATHERINE", "[practiced sympathy] How tragic. [pause] And your father?"),
     ("OLIVIA", "[hesitating] He...")])
-sc("restaurant", ["ethan:suit"], "Ethan smoothly cutting in, hand on Olivia's shoulder, smiling at his parents.",
+sc("restaurant", ["ethan:suit", "olivia:dinner"], "Ethan smoothly cutting in, hand on Olivia's shoulder, smiling at his parents.",
    [("ETHAN", "[smooth, cutting in] Olivia's father isn't in the picture."),
     ("CATHERINE", "[eyebrows rising] Oh?"),
     ("OLIVIA", "[startled] Ethan—")])
@@ -513,7 +513,7 @@ sc("garage_night", ["thomas:home"], "Thomas sitting under the work lamp, rubbing
     ("THOMAS", "[sharp] With what?"),
     ("MIA~phone", "[quiet] Your garage.")],
    sfx=[["Silence, a single dripping faucet", 2.0, 0.25, "end"]])
-sc("garage_night", [], "The old garage at night, the work lamp swaying slightly over the car on the lift.",
+sc("garage_night", [], "No people in the frame. The empty old garage at night, the work lamp swaying slightly over the car on the lift.",
    [("THOMAS", "[slowly, dangerously calm] He threatened my daughter... with my garage?"),
     ("MIA~phone", "Yes.")],
    motion="the hanging work lamp sways gently, shadows moving over the car")
@@ -551,7 +551,7 @@ sc("chapel", ["thomas:wedding"], "Thomas reaching the front of the aisle, lookin
 sc("chapel", ["olivia"], "Close-up of Olivia, mascara streaked, nodding.",
    [("OLIVIA", "[a broken whisper] Yes."),
     ("THOMAS", "[barely] Why?")])
-sc("chapel", ["ethan"], "Ethan stepping between Olivia and Thomas.",
+sc("chapel", ["ethan", "thomas:wedding"], "Ethan in his tuxedo stepping between the bride and Thomas, the two men glaring at each other.",
    [("ETHAN", "[sharp] That's enough."),
     ("THOMAS", "[without looking at him] I wasn't talking to you."),
     ("ETHAN", "[hissing] You're ruining our wedding.")])
@@ -622,7 +622,7 @@ sc("chapel", ["ethan", "olivia"], "Ethan grabbing Olivia's hand, smiling too wid
 sc("chapel", ["ethan"], "Ethan's smile collapsing into anger.",
    [("ETHAN", "[hissing] You're embarrassing yourself."),
     ("OLIVIA", "[steady] No. [pause] For the first time in months, I'm telling the truth.")])
-sc("chapel", ["ethan", "thomas:wedding"], "Ethan leaning toward Olivia; Thomas stepping between them.",
+sc("chapel", ["ethan", "thomas:wedding", "olivia"], "Ethan leaning toward Olivia; Thomas stepping between them.",
    [("ETHAN", "[low, venomous] You'll regret this."),
     ("THOMAS", "[iron] Don't threaten her again.")])
 sc("chapel", ["james", "thomas:wedding"], "James and Thomas facing each other across the altar steps, two old men measuring each other.",
@@ -755,11 +755,11 @@ sc("law_office", ["olivia:casual"], "Olivia looking at her father, eyes filling.
    [("OLIVIA", "[tearful] It's your whole life."),
     ("THOMAS", "[softly] No. [pause] You're my whole life.")],
    sfx=[["Quiet gentle piano", 4.0, 0.25, "start"]])
-sc("law_office", ["olivia:casual"], "Olivia crying quietly, reaching for her father's hand.",
+sc("law_office", ["olivia:casual", "thomas:home"], "Olivia crying quietly, reaching for the hand of her father Thomas in his flannel shirt.",
    [("OLIVIA", "[breaking] I'm so sorry I let him make me ashamed of you."),
     ("THOMAS", "[tender] I know."),
     ("OLIVIA", "[whisper] Can you forgive me?")])
-sc("law_office", ["thomas:home", "olivia:casual"], "Thomas squeezing Olivia's hand, smiling through tears.",
+sc("law_office", ["thomas:home", "olivia:casual"], "Thomas in his flannel shirt squeezing Olivia's hand across the desk, smiling through tears.",
    [("THOMAS", "[warm] I already have. [pause] But next time you're scared, come to me. [a teary chuckle] Don't bury me while I'm still alive."),
     ("OLIVIA", "[laughing through tears] Deal.")],
    sfx=[["Two people laughing softly through tears", 2.0, 0.3, "end"]])
@@ -808,7 +808,7 @@ sc("backyard", ["olivia:yard", "thomas:yard"], "Olivia leaning her head on her f
    [("OLIVIA", "[teasing, teary] Even when they tell everyone you're dead?"),
     ("THOMAS", "[laughing] Especially then.")],
    sfx=[["Father and daughter laughing, birds at sunset", 2.5, 0.3, "start"]], motion="she leans her head on his shoulder and they both laugh")
-sc("backyard", [], "The small backyard at dusk, string lights glowing, a half-eaten birthday cake on the table.",
+sc("backyard", [], "No people in the frame. The empty small backyard at dusk, string lights glowing, a half-eaten birthday cake on the table.",
    [(N, "[reflective] Ethan Blackwood thought he could erase a father from his daughter's life. He thought money could buy her silence. And he thought a wedding would make his lies permanent. [pause] But he forgot one thing. [pause] The man he tried to bury was still alive.")],
    motion="the string lights glow and sway gently in the evening breeze")
 sc("backyard", ["thomas:yard"], "Thomas at the picnic table at dusk, smiling, string lights behind him.",

@@ -352,7 +352,7 @@
     {
       "id": "s03",
       "chars": [],
-      "image": "The heavy carved wooden chapel doors swinging open, daylight pouring in behind a lone figure.",
+      "image": "The heavy carved wooden chapel doors swinging open, daylight pouring in behind the dark silhouette of a broad-shouldered older man in a jacket, seen from inside the chapel.",
       "lines": [
         [
           "NARRATOR",
@@ -576,7 +576,7 @@
     {
       "id": "s14",
       "chars": [],
-      "image": "A small crowded Philadelphia garage wall: faded photos of a little girl in a school play, a graduation cap, all pinned beside the tool pegboard.",
+      "image": "No people in the frame. A small crowded Philadelphia garage wall: faded photos of a little girl in a school play, a graduation cap, all pinned beside the tool pegboard.",
       "lines": [
         [
           "NARRATOR",
@@ -905,7 +905,8 @@
     {
       "id": "s29",
       "chars": [
-        "ethan:suit"
+        "ethan:suit",
+        "olivia:dinner"
       ],
       "image": "Ethan smoothly cutting in, hand on Olivia's shoulder, smiling at his parents.",
       "lines": [
@@ -2766,7 +2767,7 @@
     {
       "id": "s113",
       "chars": [],
-      "image": "The old garage at night, the work lamp swaying slightly over the car on the lift.",
+      "image": "No people in the frame. The empty old garage at night, the work lamp swaying slightly over the car on the lift.",
       "lines": [
         [
           "THOMAS",
@@ -2979,9 +2980,10 @@
     {
       "id": "s123",
       "chars": [
-        "ethan"
+        "ethan",
+        "thomas:wedding"
       ],
-      "image": "Ethan stepping between Olivia and Thomas.",
+      "image": "Ethan in his tuxedo stepping between the bride and Thomas, the two men glaring at each other.",
       "lines": [
         [
           "ETHAN",
@@ -3386,7 +3388,8 @@
       "id": "s143",
       "chars": [
         "ethan",
-        "thomas:wedding"
+        "thomas:wedding",
+        "olivia"
       ],
       "image": "Ethan leaning toward Olivia; Thomas stepping between them.",
       "lines": [
@@ -4142,9 +4145,10 @@
     {
       "id": "s178",
       "chars": [
-        "olivia:casual"
+        "olivia:casual",
+        "thomas:home"
       ],
-      "image": "Olivia crying quietly, reaching for her father's hand.",
+      "image": "Olivia crying quietly, reaching for the hand of her father Thomas in his flannel shirt.",
       "lines": [
         [
           "OLIVIA",
@@ -4167,7 +4171,7 @@
         "thomas:home",
         "olivia:casual"
       ],
-      "image": "Thomas squeezing Olivia's hand, smiling through tears.",
+      "image": "Thomas in his flannel shirt squeezing Olivia's hand across the desk, smiling through tears.",
       "lines": [
         [
           "THOMAS",
@@ -4461,7 +4465,7 @@
     {
       "id": "s193",
       "chars": [],
-      "image": "The small backyard at dusk, string lights glowing, a half-eaten birthday cake on the table.",
+      "image": "No people in the frame. The empty small backyard at dusk, string lights glowing, a half-eaten birthday cake on the table.",
       "lines": [
         [
           "NARRATOR",
