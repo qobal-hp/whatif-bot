@@ -868,7 +868,14 @@ def main():
         },
         "thumbnail_file": "karma/ep05_thumb.jpg",
         "shorts_end_card": "Watch the full story|on our channel",
-        "shorts": [],
+        "shorts": [
+            {"id": "short1", "title": "Her father was dead.|Then the doors opened.", "from": "s01", "to": "s11",
+             "youtube_title": "She Told Everyone Her Father Was Dead. Then He Walked Into Her Wedding. #shorts"},
+            {"id": "short2", "title": "\"You can't prove that.\"|\"Actually... I can.\"", "from": "s133", "to": "s140",
+             "youtube_title": "The Groom Said Nobody Could Prove It. The Maid of Honor Pressed Play. #shorts"},
+            {"id": "short3", "title": "\"I can't marry you.\"", "from": "s161", "to": "s171",
+             "youtube_title": "She Took Off the Ring at the Altar. Then She Asked Her Dad One Thing. #shorts"},
+        ],
     }
     tone = {"chapel": "chapel", "garage": "garage", "garage_night": "garage_night", "restaurant": "restaurant", "street": "street",
             "mansion": "house", "apartment": "apartment", "kitchen": "kitchen", "law_office": "office", "hotel": "hotel", "backyard": "yard"}
