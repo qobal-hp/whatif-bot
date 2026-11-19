@@ -35,6 +35,9 @@ def voice_ids(names):
     available = json.load(urllib.request.urlopen(req, timeout=60)).get("voices", [])
     ids = {}
     for role, name in names.items():
+        if name.startswith("id:"):  # a voice designed for this show, given by its id
+            ids[role] = name[3:]
+            continue
         match = next((v["voice_id"] for v in available if v.get("name", "").split(" ")[0].lower() == name.lower()), None)
         if not match:
             raise SystemExit(f"No voice named {name}")

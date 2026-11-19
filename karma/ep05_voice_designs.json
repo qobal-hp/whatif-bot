@@ -1,0 +1,56 @@
+{
+ "narrator": {
+  "description": "A warm, friendly American man in his forties narrating a classic animated family film. Cozy storybook tone, gentle humor, crisp and clear, slightly playful.",
+  "model": "eleven_ttv_v3",
+  "previews": [
+   "2rpzxhNBNuXVRJVjr5QH",
+   "GqL9S1OUuvaf5ewSwoVX",
+   "ewpTC6BEhxDdH2fYnm0j"
+  ]
+ },
+ "serpent": {
+  "description": "A cartoon snake villain who talks like a slick used-car salesman. Middle-aged American man, smooth and oily, sly and smug, very theatrical, with a subtle hiss stretching his S sounds.",
+  "model": "eleven_ttv_v3",
+  "previews": [
+   "bii88OaheA4bdDUwQuDd",
+   "4qIeDDBzvnIGC0jrs8LM",
+   "o2EPHeFyS6dgzjv39iQl"
+  ]
+ },
+ "eve": {
+  "description": "A sassy, quick-witted cartoon heroine. Young American woman, bright and expressive, constantly exasperated, sharp comedic timing like a sitcom lead.",
+  "model": "eleven_ttv_v3",
+  "previews": [
+   "P7jgmEXYk2gR2mB80OnS",
+   "jYxiYGss366ZCtuPD1Dg",
+   "NsfekaKKKKLNO6EtOmcu"
+  ]
+ },
+ "adam": {
+  "description": "A lovable, dim cartoon husband. Young American man, goofy, earnest and cheerful, a little dopey, very expressive like an animated sitcom dad.",
+  "model": "eleven_ttv_v3",
+  "previews": [
+   "6NqMyKytfzLZlSWffLI0",
+   "aA3nfqBNXRYWwlOVEE0w",
+   "0MuuBVgOINhLy9ZTpgbo"
+  ]
+ },
+ "god": {
+  "description": "A kind elderly grandfather in an animated film. Deep, soft and warm American voice, patient, gently amused and a little tired.",
+  "model": "eleven_ttv_v3",
+  "previews": [
+   "dFnyy1eeXimhOPPSguMn",
+   "8q5UrzQip2QWK9MVhCC5",
+   "kwS1iOmzH2nrkwfe2HHC"
+  ]
+ },
+ "noah": {
+  "description": "A grumpy old cartoon boat captain. Gravelly, gruff American man in his seventies, bossy and deadpan, sounds like he has explained this too many times.",
+  "model": "eleven_ttv_v3",
+  "previews": [
+   "5WiTd557XIKWEMi0mkNC",
+   "gETWu5iLaAUgXktlU5kP",
+   "J4t1q5rXth33zsd4F3wd"
+  ]
+ }
+}
