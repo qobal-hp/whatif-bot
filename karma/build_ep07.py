@@ -895,7 +895,14 @@ def main():
         },
         "thumbnail_file": "karma/ep07_thumb.jpg",
         "shorts_end_card": "Watch the full story|on our channel",
-        "shorts": [],
+        "shorts": [
+            {"id": "short1", "title": "\"Who is the extra chair for?\"|\"Your aunt.\"", "from": "s02", "to": "s16",
+             "youtube_title": "Grandma Set an Extra Plate at Thanksgiving. Then the Doorbell Rang. #shorts"},
+            {"id": "short2", "title": "40 years of letters.|Every one still sealed.", "from": "s133", "to": "s138",
+             "youtube_title": "She Wrote to Her Daughter Every Year. Her Husband Kept Every Letter. #shorts"},
+            {"id": "short3", "title": "\"Where should I sit?\"", "from": "s198", "to": "s205",
+             "youtube_title": "She Saved That Chair for 41 Years. Then Her Daughter Finally Sat in It. #shorts"},
+        ],
     }
     tone = {"dining": "dining", "foyer": "foyer", "study": "study", "coffee": "coffee", "anna_apt": "apt", "kitchen": "kitchen",
             "hallway": "hall", "office": "office", "porch": "rain", "hospital": "hospital", "diner": "diner",
