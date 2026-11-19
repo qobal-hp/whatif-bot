@@ -1,0 +1,19 @@
+{
+  "keep": 3,
+  "roles": {
+    "EVELYN": {"gender": "female", "age": "old", "use_cases": ["conversational", "characters", "narrative_story"], "search": "elderly elegant",
+               "lines": ["[quietly, firm] No, Diane. Everyone isn't.", "[voice breaking] I held you for three days."]},
+    "RICHARD": {"gender": "male", "age": "old", "use_cases": ["characters", "conversational"], "search": "stern older",
+                "lines": ["[cold, controlled] If you bring her into this house, you will regret it.", "[sharp] Nobody opens that door."]},
+    "MICHAEL": {"gender": "male", "age": "middle_aged", "use_cases": ["conversational", "characters"], "search": "confident lawyer",
+                "lines": ["[smooth, defensive] It was a hypothetical question.", "[exploding] You have no idea what this family has sacrificed!"]},
+    "DIANE": {"gender": "female", "age": "middle_aged", "use_cases": ["conversational", "characters"], "search": "sharp upper class",
+              "lines": ["[clipped] Mother, the caterers arrive at four.", "[stunned] Dad?"]},
+    "CLAIRE": {"gender": "female", "age": "young", "use_cases": ["conversational", "characters"], "search": "gentle warm",
+               "lines": ["[soft but steady] That's what everyone in this family says whenever they're hiding something.", "[urgent whisper] Grandma, Dad knew about Anna."]},
+    "ANNA": {"gender": "female", "age": "middle_aged", "use_cases": ["conversational", "characters"], "search": "emotional heartfelt",
+             "lines": ["[trembling] I've waited forty years to hear someone say that.", "[quiet, devastating] I was your family."]},
+    "PETER": {"gender": "male", "age": "old", "use_cases": ["conversational", "narrative_story"], "search": "gentle older gravelly",
+              "lines": ["[heavy, honest] Because I was young, ambitious, and more concerned with keeping a powerful client than doing the right thing."]}
+  }
+}
