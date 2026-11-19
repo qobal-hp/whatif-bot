@@ -157,7 +157,7 @@ sc("kitchen", ["evelyn:home"], "Evelyn wiping her eyes, glancing toward the kitc
    [("EVELYN", "[urgent, low] Anna, there's so much I need to tell you."),
     ("ANNA~phone", "[steadier] Then tell me why you gave me away."),
     ("EVELYN", "Not over the telephone.")])
-sc("kitchen", [], "The kitchen doorway, a man's shadow passing in the hall beyond.",
+sc("kitchen", [], "No people visible. An empty kitchen doorway from inside the quiet kitchen, only the long dark shadow of a man falling across the hallway floor beyond it.",
    [("ANNA~phone", "[confused] Why not?"),
     ("EVELYN", "[very quiet] Because the man who made me do it... is still living in my house.")],
    sfx=[["Footsteps passing in a hallway", 2.0, 0.35, "start"]])
@@ -196,10 +196,10 @@ sc("dining", ["richard:home"], "Richard holding the door open to the hall, jaw t
    [("RICHARD", "[quiet, controlled] We need to talk. [pause] Privately.")])
 
 # SCENE 04 - THE WARNING
-sc("study", ["richard:home"], "Richard shutting the heavy study door, turning on Evelyn under the green desk lamp.",
+sc("study", ["richard:home", "evelyn:home"], "Richard shutting the heavy study door, turning on his silver-haired wife Evelyn under the green desk lamp; nobody else in the room.",
    [("RICHARD", "[low, furious] Tell me you haven't contacted that woman.")],
    sfx=[["Heavy study door closing, rain on the window", 3.0, 0.4, "start"]], music="tension", cut=True)
-sc("study", ["evelyn:home"], "Evelyn standing by the rainy window, arms folded.",
+sc("study", ["evelyn:home"], "Evelyn alone by the rainy study window, arms folded, the green desk lamp beside her.",
    [("EVELYN", "[cool] Her name is Anna."),
     ("RICHARD", "[snapping] I know her name."),
     ("EVELYN", "[cutting] You haven't spoken it in forty years.")])
@@ -252,7 +252,7 @@ sc("coffee", [], "Close-up of a faded 1980s photograph on the table: a young dar
    [("EVELYN", "[a whisper] That's me."),
     ("ANNA", "You're holding a baby."),
     ("EVELYN", "[barely] You.")])
-sc("coffee", ["anna:day"], "Anna's composure cracking.",
+sc("coffee", ["anna:day"], "Anna alone in frame at the coffee shop table, her composure cracking, an empty chair behind her.",
    [("ANNA", "[voice catching] I thought you never wanted me."),
     ("EVELYN", "[urgent, tender] Anna, I held you for three days.")])
 sc("hospital", [], "Flashback, forty years ago: a young dark-haired mother in a hospital bed cradling a newborn, gray winter light, the door opening behind her.",
@@ -275,7 +275,7 @@ sc("coffee", ["anna:day"], "Anna's eyes hardening slightly, hurt.",
     ("EVELYN", "I tried."),
     ("ANNA", "When?"),
     ("EVELYN", "[simply] Every year.")])
-sc("coffee", ["anna:day"], "Close-up of Anna, tears spilling over.",
+sc("coffee", ["anna:day"], "Close-up of Anna alone in frame, tears spilling over, the rainy window behind her.",
    [("ANNA", "[breaking] Then why did nobody ever come?")],
    sfx=[["Rain on the window, silence", 2.5, 0.25, "start"]])
 sc("coffee", ["evelyn:day", "anna:day"], "Evelyn reaching across the table and taking Anna's hand.",
@@ -288,7 +288,7 @@ sc("anna_apt", ["evelyn:day", "anna:home"], "A week later in Anna's small apartm
     ("ANNA", "Copies of what?"),
     ("EVELYN", "[quiet] Letters I wrote to you.")],
    sfx=[["Small apartment, a box lid lifted, papers rustling", 3.0, 0.35, "start"]], music="wonder", cut=True)
-sc("anna_apt", [], "Close-up of a shoe box overflowing with handwritten letters, birthday cards, Christmas cards, all addressed to Anna.",
+sc("anna_apt", [], "No faces visible. Overhead close-up of a shoe box on a kitchen table overflowing with handwritten letters, birthday cards and Christmas cards, all addressed to Anna, two pairs of hands, one older, lifting them out.",
    [("ANNA", "[overwhelmed] There are so many."),
     ("EVELYN", "Forty birthdays. [pause] Forty Christmases.")],
    motion="hands slowly lift a stack of old letters out of the shoe box")
@@ -817,7 +817,7 @@ sc("cottage", ["evelyn:home"], "Evelyn pulling out the carved chair beside her o
     ("ANNA", "[surprised] At the head of the table?"),
     ("EVELYN", "[tender] Beside me.")],
    motion="she pulls out the old carved chair beside her own")
-sc("cottage", [], "Close-up of the ornate carved wooden chair from the estate, now at a small wooden table with mismatched chairs.",
+sc("cottage", [], "No people in the frame. Close-up of an empty ornate carved wooden chair from the estate standing at a small wooden table among mismatched chairs, candlelight on it.",
    [("ANNA", "[quiet] Is that... the chair?"),
     ("EVELYN", "[soft] The only thing I took from that house. [pause] I've been saving it for forty-one years.")])
 sc("cottage", ["anna:home", "evelyn:home"], "Anna sitting down in the carved chair beside Evelyn, both smiling with tears.",

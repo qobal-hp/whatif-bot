@@ -883,7 +883,7 @@
     {
       "id": "s26",
       "chars": [],
-      "image": "The kitchen doorway, a man's shadow passing in the hall beyond.",
+      "image": "No people visible. An empty kitchen doorway from inside the quiet kitchen, only the long dark shadow of a man falling across the hallway floor beyond it.",
       "lines": [
         [
           "ANNA~phone",
@@ -1090,9 +1090,10 @@
     {
       "id": "s35",
       "chars": [
-        "richard:home"
+        "richard:home",
+        "evelyn:home"
       ],
-      "image": "Richard shutting the heavy study door, turning on Evelyn under the green desk lamp.",
+      "image": "Richard shutting the heavy study door, turning on his silver-haired wife Evelyn under the green desk lamp; nobody else in the room.",
       "lines": [
         [
           "RICHARD",
@@ -1115,7 +1116,7 @@
       "chars": [
         "evelyn:home"
       ],
-      "image": "Evelyn standing by the rainy window, arms folded.",
+      "image": "Evelyn alone by the rainy study window, arms folded, the green desk lamp beside her.",
       "lines": [
         [
           "EVELYN",
@@ -1410,7 +1411,7 @@
       "chars": [
         "anna:day"
       ],
-      "image": "Anna's composure cracking.",
+      "image": "Anna alone in frame at the coffee shop table, her composure cracking, an empty chair behind her.",
       "lines": [
         [
           "ANNA",
@@ -1541,7 +1542,7 @@
       "chars": [
         "anna:day"
       ],
-      "image": "Close-up of Anna, tears spilling over.",
+      "image": "Close-up of Anna alone in frame, tears spilling over, the rainy window behind her.",
       "lines": [
         [
           "ANNA",
@@ -1612,7 +1613,7 @@
     {
       "id": "s58",
       "chars": [],
-      "image": "Close-up of a shoe box overflowing with handwritten letters, birthday cards, Christmas cards, all addressed to Anna.",
+      "image": "No faces visible. Overhead close-up of a shoe box on a kitchen table overflowing with handwritten letters, birthday cards and Christmas cards, all addressed to Anna, two pairs of hands, one older, lifting them out.",
       "lines": [
         [
           "ANNA",
@@ -4622,7 +4623,7 @@
     {
       "id": "s200",
       "chars": [],
-      "image": "Close-up of the ornate carved wooden chair from the estate, now at a small wooden table with mismatched chairs.",
+      "image": "No people in the frame. Close-up of an empty ornate carved wooden chair from the estate standing at a small wooden table among mismatched chairs, candlelight on it.",
       "lines": [
         [
           "ANNA",
