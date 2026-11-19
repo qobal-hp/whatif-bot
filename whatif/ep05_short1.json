@@ -1,0 +1,151 @@
+{
+ "title": "I Own the Building",
+ "aspect": "9:16",
+ "resolution": "2K",
+ "tail": 2.0,
+ "voices": {
+  "NARRATOR": "id:2rpzxhNBNuXVRJVjr5QH",
+  "SERPENT": "id:bii88OaheA4bdDUwQuDd",
+  "EVE": "id:P7jgmEXYk2gR2mB80OnS",
+  "ADAM": "id:6NqMyKytfzLZlSWffLI0",
+  "GOD": "id:dFnyy1eeXimhOPPSguMn",
+  "NOAH": "id:5WiTd557XIKWEMi0mkNC",
+  "NEIGHBOR": "Roger",
+  "WOMAN": "Laura",
+  "UPSTAIRS": "Jessica",
+  "TOPFLOOR": "Chris",
+  "MOSQUITO": "Matilda",
+  "TOOTHBRUSH": "Eric",
+  "DOWNSTAIRS": "Brian"
+ },
+ "cast": {
+  "eve": "whatif/cast/eve.jpg",
+  "serpent": "whatif/cast/serpent.jpg",
+  "adam": "video/public/assets/portrait_adam.jpg",
+  "god": "video/public/assets/portrait_god.jpg",
+  "noah": "video/public/assets/portrait_noah.jpg"
+ },
+ "portraits": {
+  "adam": "2D cartoon character portrait in a bold comic animation style, thick black outlines, flat vibrant warm colors, exaggerated friendly features, lush green garden background, a big friendly young man with a short dark curly beard and messy curly dark hair, simple brown tunic, goofy hopeful grin.",
+  "god": "2D cartoon character portrait in a bold comic animation style, thick black outlines, flat vibrant warm colors, exaggerated friendly features, lush green garden background, a kindly old man with a long flowing white beard and white hair, simple white robe, warm gentle smile, a soft golden glow around him.",
+  "noah": "2D cartoon character portrait in a bold comic animation style, thick black outlines, flat vibrant warm colors, exaggerated friendly features, lush green garden background, a short grumpy old man with a huge bushy grey beard, a sailor's captain hat, holding a clipboard, scowling."
+ },
+ "looks": {
+  "eve": "Eve: young woman with big curly brown hair with a leaf in it, green draped dress with a rope belt, same cartoon design as her reference",
+  "serpent": "the Serpent: green cartoon snake with a monocle, red waistcoat and red bow tie, same cartoon design as his reference",
+  "adam": "Adam: big friendly young man, short dark curly beard, brown tunic, same cartoon design as his reference",
+  "god": "God: kindly old man with a long white beard, white robe, sandals, soft golden glow, same cartoon design as his reference",
+  "noah": "Noah: short grumpy old man, huge grey beard, captain's hat, clipboard, same cartoon design as his reference"
+ },
+ "style": "2D cartoon illustration in the same art style as the reference images: thick black outlines, flat vibrant warm colors, sunny lush Garden of Eden, exaggerated comedic expressions, animated comedy film look, no speech bubbles, no captions. Vertical 9:16 composition. ",
+ "places": {},
+ "ambiences": {},
+ "ambience": [],
+ "music": [
+  [
+   "a01",
+   "wonder"
+  ]
+ ],
+ "scenes": [
+  {
+   "id": "a01",
+   "chars": [
+    "serpent"
+   ],
+   "image": "Vertical close-up of a shiny red fruit on a branch, the Serpent curled around it grinning slyly.",
+   "lines": [
+    [
+     "SERPENT",
+     "[smooth, oily] One bite... and you'll know everything."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "a02",
+   "chars": [
+    "eve"
+   ],
+   "image": "Eve on a crowded balcony, flat and unimpressed.",
+   "lines": [
+    [
+     "EVE",
+     "[flat] Do you know why my rent went up?"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "a03",
+   "chars": [
+    "serpent"
+   ],
+   "image": "The Serpent delighted, holding a checklist.",
+   "lines": [
+    [
+     "SERPENT",
+     "[delighted] Twelve percent! And your branch is due for inspection."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "a04",
+   "chars": [
+    "eve"
+   ],
+   "image": "Eve suspicious.",
+   "lines": [
+    [
+     "EVE",
+     "[suspicious] How do you know that?"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "a05",
+   "chars": [
+    "serpent"
+   ],
+   "image": "The Serpent unrolling an endless lease scroll down the tree.",
+   "lines": [
+    [
+     "SERPENT",
+     "[smug] I own the building."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "a06",
+   "chars": [],
+   "image": "Vertical view of the Tree of Knowledge rebuilt as a towering, wobbly treehouse apartment complex with dozens of crammed balconies, laundry lines and ladders, a neighbor shaking a rug onto another's breakfast below.",
+   "lines": [
+    [
+     "DOWNSTAIRS",
+     "[outraged] MY EGGS!"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "a07",
+   "chars": [],
+   "image": "A golden garden with a gold coin dropping out of a big letter O.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[storybook] In this Eden, nobody ever ate the fruit. And now... Eden is full."
+    ]
+   ],
+   "place": "",
+   "overlay": {
+    "type": "text",
+    "text": "FULL EPISODE|ON THE CHANNEL"
+   }
+  }
+ ],
+ "title_band": "WHAT IF EVE NEVER|ATE THE FRUIT?"
+}

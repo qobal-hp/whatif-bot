@@ -1,0 +1,151 @@
+{
+ "title": "The Goat Knew",
+ "aspect": "9:16",
+ "resolution": "2K",
+ "tail": 2.0,
+ "voices": {
+  "NARRATOR": "id:2rpzxhNBNuXVRJVjr5QH",
+  "SERPENT": "id:bii88OaheA4bdDUwQuDd",
+  "EVE": "id:P7jgmEXYk2gR2mB80OnS",
+  "ADAM": "id:6NqMyKytfzLZlSWffLI0",
+  "GOD": "id:dFnyy1eeXimhOPPSguMn",
+  "NOAH": "id:5WiTd557XIKWEMi0mkNC",
+  "NEIGHBOR": "Roger",
+  "WOMAN": "Laura",
+  "UPSTAIRS": "Jessica",
+  "TOPFLOOR": "Chris",
+  "MOSQUITO": "Matilda",
+  "TOOTHBRUSH": "Eric",
+  "DOWNSTAIRS": "Brian"
+ },
+ "cast": {
+  "eve": "whatif/cast/eve.jpg",
+  "serpent": "whatif/cast/serpent.jpg",
+  "adam": "video/public/assets/portrait_adam.jpg",
+  "god": "video/public/assets/portrait_god.jpg",
+  "noah": "video/public/assets/portrait_noah.jpg"
+ },
+ "portraits": {
+  "adam": "2D cartoon character portrait in a bold comic animation style, thick black outlines, flat vibrant warm colors, exaggerated friendly features, lush green garden background, a big friendly young man with a short dark curly beard and messy curly dark hair, simple brown tunic, goofy hopeful grin.",
+  "god": "2D cartoon character portrait in a bold comic animation style, thick black outlines, flat vibrant warm colors, exaggerated friendly features, lush green garden background, a kindly old man with a long flowing white beard and white hair, simple white robe, warm gentle smile, a soft golden glow around him.",
+  "noah": "2D cartoon character portrait in a bold comic animation style, thick black outlines, flat vibrant warm colors, exaggerated friendly features, lush green garden background, a short grumpy old man with a huge bushy grey beard, a sailor's captain hat, holding a clipboard, scowling."
+ },
+ "looks": {
+  "eve": "Eve: young woman with big curly brown hair with a leaf in it, green draped dress with a rope belt, same cartoon design as her reference",
+  "serpent": "the Serpent: green cartoon snake with a monocle, red waistcoat and red bow tie, same cartoon design as his reference",
+  "adam": "Adam: big friendly young man, short dark curly beard, brown tunic, same cartoon design as his reference",
+  "god": "God: kindly old man with a long white beard, white robe, sandals, soft golden glow, same cartoon design as his reference",
+  "noah": "Noah: short grumpy old man, huge grey beard, captain's hat, clipboard, same cartoon design as his reference"
+ },
+ "style": "2D cartoon illustration in the same art style as the reference images: thick black outlines, flat vibrant warm colors, sunny lush Garden of Eden, exaggerated comedic expressions, animated comedy film look, no speech bubbles, no captions. Vertical 9:16 composition. ",
+ "places": {},
+ "ambiences": {},
+ "ambience": [],
+ "music": [
+  [
+   "b01",
+   "tension"
+  ]
+ ],
+ "scenes": [
+  {
+   "id": "b01",
+   "chars": [
+    "adam"
+   ],
+   "image": "Vertical: the whole crowd of Eden waiting by a tiny creek next to a giant ark, Adam holding a huge stack of boat tickets.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[storybook] Everyone in Eden was waiting for the boat. The serpent said the creek was too dangerous."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "b02",
+   "chars": [
+    "noah"
+   ],
+   "image": "a small white cartoon goat with a brown patch over one eye trotting down the ark's ramp with the passenger list in its mouth, Noah chasing.",
+   "lines": [
+    [
+     "NOAH",
+     "[panicked] HEY! You're CHECKED IN!"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "b03",
+   "chars": [],
+   "image": "a small white cartoon goat with a brown patch over one eye stepping into the creek, everyone holding their breath.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[hushed] The water came up..."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "b04",
+   "chars": [],
+   "image": "a small white cartoon goat with a brown patch over one eye standing in water that barely reaches its knees, bored.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[deadpan] ...to its knees."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "b05",
+   "chars": [
+    "eve"
+   ],
+   "image": "Eve turning to Adam, very quiet and very dangerous.",
+   "lines": [
+    [
+     "EVE",
+     "[very quiet] Adam. Did you ever check how deep it was?"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "b06",
+   "chars": [
+    "adam"
+   ],
+   "image": "Adam shrinking.",
+   "lines": [
+    [
+     "ADAM",
+     "[tiny] I asked Noah."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "b07",
+   "chars": [
+    "eve"
+   ],
+   "image": "Eve exploding with steam out of her ears.",
+   "lines": [
+    [
+     "EVE",
+     "[exploding] You asked the guy SELLING THE BOAT TICKETS?!"
+    ]
+   ],
+   "place": "",
+   "overlay": {
+    "type": "text",
+    "text": "FULL EPISODE|ON THE CHANNEL"
+   }
+  }
+ ],
+ "title_band": "THE GOAT|KNEW"
+}
