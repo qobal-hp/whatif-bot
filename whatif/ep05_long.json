@@ -37,7 +37,7 @@
   "god": "God: kindly old man with a long white beard, white robe, sandals, soft golden glow, same cartoon design as his reference",
   "noah": "Noah: short grumpy old man, huge grey beard, captain's hat, clipboard, same cartoon design as his reference"
  },
- "style": "2D cartoon illustration in the same art style as the reference images: thick black outlines, flat vibrant warm colors, sunny lush Garden of Eden, exaggerated comedic expressions, animated comedy film look, no speech bubbles, no captions. ",
+ "style": "2D cartoon illustration in the same art style as the reference images: thick black outlines, flat vibrant warm colors, sunny lush Garden of Eden, exaggerated comedic expressions, animated comedy film look, no speech bubbles, no captions, one single image (never comic panels or split screens). Adam always wears his brown tunic; nobody is ever shirtless or dressed in leaves. ",
  "places": {},
  "ambiences": {},
  "ambience": [],
@@ -177,7 +177,7 @@
   {
    "id": "L007",
    "chars": [],
-   "image": "A bright cartoon title card over a golden garden, a gold coin dropping out of a big letter O.",
+   "image": "A sunny golden Garden of Eden with a single shiny gold coin falling through the air in the center, lots of empty sky at the top. No text, no letters, no signs anywhere.",
    "lines": [
     [
      "NARRATOR",
@@ -760,7 +760,7 @@
    "chars": [
     "eve"
    ],
-   "image": "Eve dangerously calm, one eye twitching.",
+   "image": "Eve alone, dangerously calm, one eye twitching, no other people.",
    "lines": [
     [
      "EVE",
@@ -983,9 +983,10 @@
   {
    "id": "L058",
    "chars": [
-    "noah"
+    "noah",
+    "adam"
    ],
-   "image": "Noah shrugging, pointing behind Adam.",
+   "image": "Noah shrugging and pointing past Adam, Adam in his brown tunic.",
    "lines": [
     [
      "NOAH",
@@ -1061,7 +1062,7 @@
    "chars": [
     "noah"
    ],
-   "image": "Noah puffing out his chest proudly.",
+   "image": "Noah alone on the ark ramp puffing out his chest proudly, no other people.",
    "lines": [
     [
      "NOAH",
@@ -1248,9 +1249,10 @@
   {
    "id": "L074",
    "chars": [
-    "eve"
+    "eve",
+    "adam"
    ],
-   "image": "Eve slowly turning her head toward Adam with an icy stare.",
+   "image": "Eve slowly turning her head toward Adam with an icy stare, Adam in his brown tunic sweating.",
    "lines": [
     [
      "EVE",
@@ -1530,7 +1532,7 @@
    "chars": [
     "serpent"
    ],
-   "image": "The Serpent not missing a beat, grinning.",
+   "image": "The Serpent alone in his little ticket booth at the garden gate, grinning, no other people.",
    "lines": [
     [
      "SERPENT",
@@ -1652,7 +1654,7 @@
    "chars": [
     "god"
    ],
-   "image": "God catching a falling wooden shutter with a little hanging sign.",
+   "image": "God alone catching a falling wooden shutter with a little hanging sign, no other people.",
    "lines": [
     [
      "GOD",
@@ -1754,7 +1756,7 @@
    "chars": [
     "noah"
    ],
-   "image": "Noah poking his head over the ark's rail, helpful.",
+   "image": "Noah alone poking his head over the ark's rail, helpful, no other people.",
    "lines": [
     [
      "NOAH",
@@ -1932,7 +1934,7 @@
   {
    "id": "L116",
    "chars": [],
-   "image": "The old neighbor dropping his cracked clay token into the creek, then fishing it back out.",
+   "image": "A single image of the tired old neighbor kneeling at the creek fishing his cracked clay token out of the water.",
    "lines": [
     [
      "NEIGHBOR",
@@ -2061,7 +2063,7 @@
    "chars": [
     "god"
    ],
-   "image": "God stern, arms crossed.",
+   "image": "God alone, stern, arms crossed, no other people.",
    "lines": [
     [
      "GOD",
@@ -2075,7 +2077,7 @@
    "chars": [
     "serpent"
    ],
-   "image": "The Serpent looking down at the plant, then up at God, brightening.",
+   "image": "A single image of the Serpent beside a potted plant, brightening with a big salesman grin.",
    "lines": [
     [
      "SERPENT",

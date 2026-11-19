@@ -30,7 +30,7 @@ VOICES = {"NARRATOR": "id:2rpzxhNBNuXVRJVjr5QH", "SERPENT": "id:bii88OaheA4bdDUw
           "TOOTHBRUSH": "Eric", "DOWNSTAIRS": "Brian"}
 GOAT = "a small white cartoon goat with a brown patch over one eye"
 TREE = "the Tree of Knowledge rebuilt as a towering, wobbly treehouse apartment complex with dozens of crammed balconies, laundry lines and ladders"
-STYLE_TAIL = "2D cartoon illustration in the same art style as the reference images: thick black outlines, flat vibrant warm colors, sunny lush Garden of Eden, exaggerated comedic expressions, animated comedy film look, no speech bubbles, no captions. "
+STYLE_TAIL = "2D cartoon illustration in the same art style as the reference images: thick black outlines, flat vibrant warm colors, sunny lush Garden of Eden, exaggerated comedic expressions, animated comedy film look, no speech bubbles, no captions, one single image (never comic panels or split screens). Adam always wears his brown tunic; nobody is ever shirtless or dressed in leaves. "
 E, S_, A, G, N = ["eve"], ["serpent"], ["adam"], ["god"], ["noah"]
 
 
@@ -72,7 +72,7 @@ S("The Serpent unrolling an enormously long lease scroll that tumbles down the t
   "SERPENT: [smug] I own the building.", chars=S_, sfx=fx("Long paper scroll unrolling with a comic whoosh", 2.0))
 S(f"Wide shot revealing {TREE}, a neighbor on an upper balcony shaking a dusty rug onto a man eating breakfast on the balcony below.",
   "DOWNSTAIRS: [outraged] MY EGGS!", sfx=fx("A rug being beaten and a frying pan clatter", 1.5))
-S("A bright cartoon title card over a golden garden, a gold coin dropping out of a big letter O.",
+S("A sunny golden Garden of Eden with a single shiny gold coin falling through the air in the center, lots of empty sky at the top. No text, no letters, no signs anywhere.",
   "NARRATOR: [storybook, warm] Nine hundred years earlier, the serpent made Eve the very same offer.",
   overlay={"type": "text", "text": "WHAT IF EVE NEVER ATE|THE FORBIDDEN FRUIT?"}, sfx=fx("Cash register cha-ching", 1.2), cut=True)
 S("The same branch with the red fruit in an empty, peaceful, untouched Garden of Eden, the Serpent leaning toward Eve.",
@@ -138,7 +138,7 @@ S("Adam earnestly explaining, hands raised.", "ADAM: [earnest] I asked the serpe
 S("Eve leaning in, slow and suspicious.", "EVE: [slow, suspicious] Did he say that before... or AFTER he started selling boat tickets?", chars=E)
 S("Adam looking down at an enormous teetering stack of boat tickets in his arms.",
   "ADAM: [small voice] ...There was a group rate.", chars=A)
-S("Eve dangerously calm, one eye twitching.", "EVE: [dangerously calm] How many did you buy?", chars=E)
+S("Eve alone, dangerously calm, one eye twitching, no other people.", "EVE: [dangerously calm] How many did you buy?", chars=E)
 S("Adam proudly holding up the ticket stack, then shrinking.", "ADAM: [proud, then shrinking] Enough to make it a very good deal.", chars=A)
 S("The bow of a huge wooden ark backing slowly into the garden past the trees, people jumping aside.",
   "NARRATOR: And then the ark backed into the garden.", sfx=fx("A huge ship horn then truck reversing beeps", 3.0))
@@ -160,14 +160,14 @@ S("Noah checking his clipboard.", "NOAH: Two. He bought standby.", chars=N)
 S("Adam confused, scratching his head.", "ADAM: [confused] I thought that meant we could stand!", chars=A)
 S("Noah pointing to a spot on the grass one step farther from the ramp.", "NOAH: [pointing] It means you can stand... right there.", chars=N + A)
 S("Adam indignant, pointing at the ark.", "ADAM: [indignant] Fine! What about the mosquitoes? Give me THEIR seats!", chars=A)
-S("Noah shrugging, pointing behind Adam.", "NOAH: You can ask. They're behind you.", chars=N)
+S("Noah shrugging and pointing past Adam, Adam in his brown tunic.", "NOAH: You can ask. They're behind you.", chars=N + A)
 S("Two snooty cartoon mosquitoes in tiny hats pulling a tiny suitcase past the line.",
   "MOSQUITO: [tiny, high-pitched, snooty] Excuse us. We checked in online.", sfx=fx("A buzzing mosquito flying past", 1.5))
 S("Adam outraged, pointing at the mosquitoes flying up the ramp.", "ADAM: [outraged] THEY CAN FLY!", chars=A)
 S("Noah completely deadpan.", "NOAH: [deadpan] The giraffes can walk. I'm trying to make this fair.", chars=N)
 S(f"{GOAT} on the ramp happily chewing the passenger list while Eve narrows her eyes at Noah.",
   "EVE: [narrowing her eyes] Noah. How deep is the creek today?", chars=E)
-S("Noah puffing out his chest proudly.", "NOAH: [proud] Deep enough to float my boat.", chars=N)
+S("Noah alone on the ark ramp puffing out his chest proudly, no other people.", "NOAH: [proud] Deep enough to float my boat.", chars=N)
 S("The huge ark grinding against a rock in a tiny shallow creek, everyone wincing.",
   "NARRATOR: [deadpan] The boat disagreed.", sfx=fx("A long slow wooden scraping groan", 2.5))
 
@@ -187,7 +187,7 @@ S("Eve staring at the notice, realizing, the opening scene's branch visible thro
   "NARRATOR: [wry] And that brings us back to where we started.", chars=E)
 S("Eve standing firm, arms crossed, facing the Serpent at the window.",
   "EVE: [firm] We're moving out.", "SERPENT: [sweet] I'll need Adam's permission. He signed for the whole tree.", chars=E + S_)
-S("Eve slowly turning her head toward Adam with an icy stare.", "EVE: [slowly turning] Adam. Why did you sign for the WHOLE TREE?", chars=E)
+S("Eve slowly turning her head toward Adam with an icy stare, Adam in his brown tunic sweating.", "EVE: [slowly turning] Adam. Why did you sign for the WHOLE TREE?", chars=E + A)
 S("Adam defensive, holding up his hands.", "ADAM: [defensive] It was just a shelf at the time!", chars=A)
 S("Eve leaning in.", "EVE: And the LIFETIME part?", chars=E)
 S("Adam brightly holding up a small plain wooden bowl like a trophy.", "ADAM: [brightening] We got a free bowl!", chars=A)
@@ -213,7 +213,7 @@ S("Light rain, every balcony of the tree draining onto the one below, a man on t
 S("The garden gate, the Serpent at a little booth with a cash box and his best smile, only a pair of glowing sandals visible stepping up.",
   "SERPENT: [salesman voice] Two figs to get in!", chars=S_, sfx=fx("A little gate bell jingle", 1.0))
 S("Close-up of the glowing sandals and the hem of a white robe at the gate.", "GOD: [calm, warm, slightly amused] I made this garden.")
-S("The Serpent not missing a beat, grinning.", "SERPENT: [without missing a beat] Then you remember when it was free!", chars=S_)
+S("The Serpent alone in his little ticket booth at the garden gate, grinning, no other people.", "SERPENT: [without missing a beat] Then you remember when it was free!", chars=S_)
 S("God stepping into frame softly glowing, kind and calm, while Adam slowly hides a wooden bowl behind his back.",
   "NARRATOR: [hushed] Adam hid the bowl.", chars=G + A, sfx=fx("A soft heavenly choir chord", 2.0))
 
@@ -226,7 +226,7 @@ S("God looking up patiently at the towering tree.", "GOD: [patient] Adam. How ma
 S("Adam thinking very hard, counting on his fingers.", "ADAM: [thinking hard] Counting the shelf?", chars=A)
 S("God leaning back, then stepping back, squinting up at a tree so tall it disappears into the clouds.",
   "GOD: [squinting] I can't see the shelf.", chars=G)
-S("God catching a falling wooden shutter with a little hanging sign.", "GOD: [reading slowly] Original... garden view.", chars=G, sfx=fx("A wooden shutter clattering", 1.0))
+S("God alone catching a falling wooden shutter with a little hanging sign, no other people.", "GOD: [reading slowly] Original... garden view.", chars=G, sfx=fx("A wooden shutter clattering", 1.0))
 S("The Serpent proudly presenting the shutter like a real estate agent.", "SERPENT: [proud] That's our premium unit.", chars=S_)
 S("God peeking through the shutter's opening, a man right on the other side brushing his teeth, foam everywhere.",
   "GOD: [politely] Hello.", "TOOTHBRUSH: [mouth full of foam, annoyed] Do you MIND?!", chars=G)
@@ -234,7 +234,7 @@ S("God handing the shutter to Adam, kind and tired.", "GOD: [kind, tired] Adam..
 S("Adam confident, pointing at the giant ark.", "ADAM: [confident] We're waiting for the boat.", "GOD: Why?", chars=A + G)
 S("Adam gesturing grandly at the enormous ark sitting in the tiny creek.",
   "ADAM: [as if it's obvious] Look at it! He built a boat THAT big. You don't build a boat that big for a little creek!", chars=A)
-S("Noah poking his head over the ark's rail, helpful.", "NOAH: [helpful] I built it on a hill. Adam paid extra to have it brought here.", chars=N)
+S("Noah alone poking his head over the ark's rail, helpful, no other people.", "NOAH: [helpful] I built it on a hill. Adam paid extra to have it brought here.", chars=N)
 S("Eve slowly turning to glare at Adam, who looks defensive.", "ADAM: [defensive] The delivery was free! We paid to turn it AROUND.", chars=E + A)
 
 # ---- 08 The Goat
@@ -252,7 +252,7 @@ S("God hitching up his robe and wading across the shallow creek, the pregnant wo
   "WOMAN: [hopeful] Can we just... live over here?", chars=G)
 S("God turning, smiling warmly.", "GOD: [warm] Yes.", chars=G)
 S("The pregnant woman suspicious.", "WOMAN: [suspicious] Do we need a number?", "GOD: [puzzled] For what?", chars=G)
-S("The old neighbor dropping his cracked clay token into the creek, then fishing it back out.",
+S("A single image of the tired old neighbor kneeling at the creek fishing his cracked clay token out of the water.",
   "NEIGHBOR: [deadpan] I waited a long time for that.", sfx=fx("A tiny plop", 0.8))
 S("The whole crowd stampeding across the shallow creek in a giant splash, carrying beds and chairs.",
   "NARRATOR: And then everybody ran.", sfx=fx("A huge crowd running and splashing through water", 2.5))
@@ -267,8 +267,8 @@ S("Adam setting the bathtub down beside Eve's chair with a thud, beaming.",
 S("The Serpent sliding in with a tiny potted cutting of the tree and a little sign that reads GARDEN VIEW 2 FIGS EXTRA.",
   "NARRATOR: [wry] Of course.", chars=S_)
 S("God walking up, frowning at the potted cutting.", "GOD: [frowning] Is that my tree?", "SERPENT: [innocent] It's a cutting.", chars=G + S_)
-S("God stern, arms crossed.", "GOD: [stern] Did you ask?", chars=G)
-S("The Serpent looking down at the plant, then up at God, brightening.", "SERPENT: [brightening] Would you like to invest?", chars=S_)
+S("God alone, stern, arms crossed, no other people.", "GOD: [stern] Did you ask?", chars=G)
+S("A single image of the Serpent beside a potted plant, brightening with a big salesman grin.", "SERPENT: [brightening] Would you like to invest?", chars=S_)
 S("The Serpent holding out a contract to God, Adam reaching for the pen, Eve with eyes still closed plucking the pen out of Adam's hand.",
   "NARRATOR: [amused] Eve never even opened her eyes.", chars=S_ + A + E)
 S("God sitting on the edge of Adam's bathtub in the meadow, watching the crowd and the impossibly tall tree across the creek, tired.",
