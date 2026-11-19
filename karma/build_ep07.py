@@ -891,7 +891,7 @@ def main():
             "description": "Every Thanksgiving, Evelyn Whitmore set the table for her family. This year, she set one extra place. When her son asked who it was for, she answered: \"Your aunt.\"\n\nBut the woman who rang the doorbell had been to this house once before. And the man who answered that day is still sitting at the head of the table.\n\nA Karma Tales Thanksgiving special: revenge and twist stories where the people who scheme always get what they deserve.\n\nThis story is fiction. Any resemblance to real people or events is coincidental. Narration and images are AI-generated.\n\n#karmatales #thanksgiving #familysecrets #revengestory",
             "tags": ["karma tales", "thanksgiving story", "family secrets", "revenge story", "adoption story", "mother and daughter", "family betrayal", "twist ending", "audio drama", "thanksgiving drama"],
             "category": "24",
-            "shorts_description": "Watch the full story on Karma Tales: EPISODE_URL\n" + title + "\n\n#shorts #karmatales #thanksgiving #familysecrets",
+            "shorts_description": "Watch the full story on Karma Tales: https://youtu.be/6RZcNECoGcc\n" + title + "\n\n#shorts #karmatales #thanksgiving #familysecrets",
         },
         "thumbnail_file": "karma/ep07_thumb.jpg",
         "shorts_end_card": "Watch the full story|on our channel",
