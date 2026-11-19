@@ -90,7 +90,7 @@ export const Episode: React.FC<EpisodeProps> = ({audio, scenes, words, audioStar
         // Each cue overlaps its neighbours by one second on both sides so the tracks crossfade.
         const from = Math.max(0, Math.round((cue.start - 1) * fps));
         const length = Math.max(1, Math.round((cue.end + 1) * fps) - from);
-        const fadeLen = Math.min(2 * fps, Math.floor(length / 2));
+        const fadeLen = Math.max(1, Math.min(2 * fps, Math.floor((length - 1) / 2)));
         return (
           <Sequence key={i} from={from} durationInFrames={length}>
             <Audio
