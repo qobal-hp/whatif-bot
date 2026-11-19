@@ -79,7 +79,7 @@
   {
    "id": "b03",
    "chars": [],
-   "image": "a small white cartoon goat with a brown patch over one eye stepping into the creek, everyone holding their breath.",
+   "image": "a small white cartoon goat with a brown patch over one eye stepping into the creek while a crowd of fully clothed people in simple tunics watches from the bank, holding their breath.",
    "lines": [
     [
      "NARRATOR",
@@ -103,9 +103,10 @@
   {
    "id": "b05",
    "chars": [
-    "eve"
+    "eve",
+    "adam"
    ],
-   "image": "Eve turning to Adam, very quiet and very dangerous.",
+   "image": "Eve turning to Adam, very quiet and very dangerous, Adam in his brown tunic sweating. No fruit anywhere.",
    "lines": [
     [
      "EVE",
