@@ -24,7 +24,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Fetch images and music
         run: |
-          git fetch -q origin image-output music-output
+          git fetch -q origin image-output:refs/remotes/origin/image-output music-output:refs/remotes/origin/music-output
           mkdir -p /tmp/assets
           git --work-tree=/tmp/assets checkout origin/image-output -- images
           git --work-tree=/tmp/assets checkout origin/music-output -- "${{ inputs.music }}"
