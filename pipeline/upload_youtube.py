@@ -81,11 +81,13 @@ def main():
     meta = spec["youtube"]
     yt = service()
 
+    long_url = meta.get("long_url", "")  # the long form's link, for shorts uploaded on their own
     episode = files / "episode.mp4"
     if episode.exists() and wanted("episode"):
         video_id = upload(yt, episode, meta["title"], meta["description"], meta["tags"], privacy, schedule.get("episode"),
                           meta.get("localizations"), meta.get("category", "28"))
         captions(yt, video_id, files, "episode")
+        long_url = f"https://youtu.be/{video_id}"
         thumb = files / "thumb.jpg"
         if thumb.exists():
             try:
@@ -97,7 +99,13 @@ def main():
     for short in spec.get("shorts", []):
         path = files / f"{short['id']}.mp4"
         if path.exists() and wanted(short["id"]):
-            short_id = upload(yt, path, short["youtube_title"], short.get("description", meta.get("shorts_description", "")),
+            # Every short carries a link to its long form in the description.
+            if not long_url:
+                sys.exit(f"No long-form link for {short['id']}: upload the episode with it, or set youtube.long_url in the spec")
+            description = short.get("description", meta.get("shorts_description", ""))
+            lines = [l for l in description.split("\n") if "full episode" not in l.lower()]
+            description = f"\U0001F3AC Full episode: {long_url}\n\n" + "\n".join(lines).strip()
+            short_id = upload(yt, path, short["youtube_title"], description,
                               meta["tags"], privacy, schedule.get(short["id"]), short.get("localizations"), meta.get("category", "28"))
             captions(yt, short_id, files, short["id"])
 
