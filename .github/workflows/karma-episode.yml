@@ -28,7 +28,7 @@ permissions:
   actions: read
 
 env:
-  PARTS: 6
+  PARTS: 12
 
 jobs:
   assets:
@@ -92,7 +92,7 @@ jobs:
     timeout-minutes: 120
     strategy:
       matrix:
-        part: [0, 1, 2, 3, 4, 5]
+        part: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -181,7 +181,9 @@ jobs:
           path: video/out/episode.mp4
       - name: Publish to the output branch
         run: |
-          mkdir -p /tmp/result && cp video/out/preview.mp4 video/public/props.json /tmp/result/
+          mkdir -p /tmp/result && cp video/public/props.json /tmp/result/
+          # Branch files must stay under GitHub's 100 MB limit; long episodes are fetched from the run's artifact instead.
+          [ $(stat -c %s video/out/preview.mp4) -lt 95000000 ] && cp video/out/preview.mp4 /tmp/result/
           size=$(stat -c %s video/out/episode.mp4); [ "$size" -lt 95000000 ] && cp video/out/episode.mp4 /tmp/result/
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

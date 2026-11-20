@@ -1,0 +1,1776 @@
+{
+ "t001": {
+  "chars": [
+   "maggie_old",
+   "charles_old"
+  ],
+  "image": "Medium two-shot in a dim 1996 sitting room, rain streaking the window. Maggie stands rigid over Charles, frail in his armchair by the window, lamplight low and amber, tense stillness."
+ },
+ "t002": {
+  "chars": [
+   "charles_old",
+   "maggie_old"
+  ],
+  "image": "Close-up on Charles's alarmed face in lamplight as Maggie, in soft focus foreground, holds a yellowed envelope with handwriting not legible. Rain on the window behind him.",
+  "motion": "Slow push in on Charles's alarmed face as rain streaks the window behind him, Maggie's hand holding the envelope trembles in the foreground"
+ },
+ "t003": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Insert close-up of Maggie's trembling hands gripping the yellowed envelope, handwritten address not legible, a slight tear at the flap, warm lamplight, shallow depth of field."
+ },
+ "t004": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Close-up of Maggie's face, eyes glistening, anger rising, lit by a single lamp; rain reflections slide across the dark window glass behind her.",
+  "motion": "Slow push in on Maggie's face as her eyes fill, rain streaking the window glass behind her, lamplight flickering"
+ },
+ "t005": {
+  "chars": [
+   "charles_old"
+  ],
+  "image": "Close-up of Charles's face, hollow and breaking, half in shadow beside the rain-streaked window, his thin hand trembling on the chair arm.",
+  "motion": "Slow push in on Charles's face as he breaks, his lips trembling, rain running down the dark window behind him"
+ },
+ "t006": {
+  "chars": [
+   "maggie_old",
+   "charles_old"
+  ],
+  "image": "Wide shot of the 1996 sitting room at night: Maggie standing coldly in the center, Charles small and ashamed in his chair, the wedding photograph face-up on the mantel behind."
+ },
+ "t007": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Medium shot of Maggie, shattered but upright, one hand pressed to her chest, the mantel and framed wedding photograph blurred behind her, rain tapping the window.",
+  "motion": "Slow pull back from Maggie's shattered face to reveal the wedding photograph on the mantel behind her, her hand rising to her chest"
+ },
+ "t008": {
+  "chars": [
+   "maggie_old",
+   "charles_old"
+  ],
+  "image": "Over-the-shoulder shot past Charles's frail shoulder toward Maggie, steady and wary, the envelope lowered in her hand, cold blue window light against warm lamp glow."
+ },
+ "t009": {
+  "chars": [
+   "charles_old"
+  ],
+  "image": "Close-up of Charles whispering, tear-stained, terrified, his face lit from the side; a nearly empty teacup on the side table and rain-streaked glass out of focus behind.",
+  "motion": "Slow push in on Charles as he whispers, his eyes shining with terror, a faint flicker of lamplight on his face"
+ },
+ "t010": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Slow close-up of Maggie's face going hollow, eyes wide, mouth slightly open, lamplight flickering, the sound of rain implied by droplets running down the dark window behind her.",
+  "motion": "Slow push in on Maggie's hollow face, her eyes widening, rain rippling down the window behind her, a single tear falling"
+ },
+ "t011": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Wide shot through a rain-streaked window into the lamplit room where Maggie stands alone holding the envelope, the night outside deep blue; a sense of memory about to open.",
+  "motion": "Slow pull back through the rain-streaked window as Maggie stands alone with the envelope, the lamplight dimming into a blue night glow"
+ },
+ "t012": {
+  "chars": [
+   "maggie_young"
+  ],
+  "image": "Medium shot of Maggie in 1952 reading at a sunlit library desk, dust motes in golden afternoon light, rows of shelves behind her, a quiet smile of contentment."
+ },
+ "t013": {
+  "chars": [
+   "maggie_young"
+  ],
+  "image": "Close-up insert of a worn library book open on a desk beside a pencil, a small pressed flower marking the page, warm summer window light, dreamy shallow focus."
+ },
+ "t014": {
+  "chars": [],
+  "image": "Wide establishing shot of a small 1952 Pennsylvania town in a green valley, a railway line curving through the hills, white church steeple, steam from a distant train, golden summer light."
+ },
+ "t015": {
+  "chars": [],
+  "image": "Exterior of a 1952 brick public library with tall windows, freight train passing behind it, bakery across the street with glowing windows at dawn, soft morning mist, no readable signs."
+ },
+ "t016": {
+  "chars": [
+   "maggie_young",
+   "eleanor"
+  ],
+  "image": "Medium two-shot in a 1952 parlor: Eleanor seated stiffly with sewing, Maggie standing by the door with a book against her chest, quiet disagreement, soft afternoon light."
+ },
+ "t017": {
+  "chars": [
+   "eleanor"
+  ],
+  "image": "Medium shot of Eleanor at a sewing machine in a modest 1950s kitchen, hands guiding cloth, a coin jar and ledger beside her, thin evening light through lace curtains."
+ },
+ "t018": {
+  "chars": [
+   "eleanor"
+  ],
+  "image": "Close-up of Eleanor's worn hands counting coins onto a wooden table beside a ledger, writing not legible, lamplight, quiet determination, shallow depth of field."
+ },
+ "t019": {
+  "chars": [
+   "charles_young"
+  ],
+  "image": "Medium shot of Charles in 1952, at a polished front door holding a bouquet of flowers, composed and charming, bright porch light, glancing to see who is watching."
+ },
+ "t020": {
+  "chars": [
+   "charles_young"
+  ],
+  "image": "Wide shot of Charles on a small-town 1952 street opening a car door with a flourish, neighbors observing from porches, sunny afternoon, polished and aware."
+ },
+ "t021": {
+  "chars": [
+   "maggie_young",
+   "daniel_young"
+  ],
+  "image": "Close-up of Daniel's hand pressing a polished brass screw into Maggie's open palm, warm late-afternoon light, a locomotive blurred in the background, tender and playful."
+ },
+ "t022": {
+  "chars": [
+   "maggie_young"
+  ],
+  "image": "Medium close-up of Maggie laughing, the brass screw held up between finger and thumb, library shelves softly blurred behind her, golden light, amused disbelief."
+ },
+ "t023": {
+  "chars": [
+   "daniel_young"
+  ],
+  "image": "Medium shot of Daniel in 1952 working on a locomotive wiring panel in a railway yard, sleeves rolled, steam and sunbeams around him, gentle focused expression."
+ },
+ "t024": {
+  "chars": [
+   "daniel_young"
+  ],
+  "image": "Quiet close-up of Daniel at a plain boardinghouse table writing a money order to his aunt, a single bare bulb overhead, modest room, dignified weariness."
+ },
+ "t025": {
+  "chars": [
+   "daniel_young",
+   "maggie_young"
+  ],
+  "image": "Medium shot at a library counter: Daniel returns a thick book, slightly sheepish, Maggie behind the desk suppressing a smile, creaking floorboards, afternoon sun through tall windows."
+ },
+ "t026": {
+  "chars": [
+   "maggie_young",
+   "daniel_young"
+  ],
+  "image": "Two-shot, Daniel leaning on the library counter, both smiling shyly at each other, the book between them, a freight train shaking the window light behind them."
+ },
+ "t027": {
+  "chars": [
+   "maggie_young",
+   "daniel_young"
+  ],
+  "image": "Wide shot of Maggie and Daniel on a peeling-paint pedestrian bridge over the railway tracks at sunset, the whole valley glowing gold below, a train approaching in the distance."
+ },
+ "t028": {
+  "chars": [
+   "daniel_young"
+  ],
+  "image": "Medium shot of Daniel on the bridge in setting sunlight, serious and hopeful, reaching into his coat pocket for a small blue box, rails gleaming below."
+ },
+ "t029": {
+  "chars": [
+   "maggie_young"
+  ],
+  "image": "Insert close-up of a small open blue box holding a narrow gold ring with a modest oval stone, glinting in sunset light, Maggie's fingers touching the edge."
+ },
+ "t030": {
+  "chars": [
+   "maggie_young",
+   "daniel_young"
+  ],
+  "image": "Medium shot of Maggie and Daniel laughing, Daniel catching the ring just above a gap in the bridge boards, sunset sky behind them, joyful clumsy moment."
+ },
+ "t031": {
+  "chars": [
+   "maggie_young",
+   "daniel_young"
+  ],
+  "image": "Two-shot sitting on the bridge edge at dusk, Daniel sketching in the air with his hand, Maggie leaning into his shoulder, string of lit windows in the valley below."
+ },
+ "t032": {
+  "chars": [
+   "maggie_young",
+   "daniel_young"
+  ],
+  "image": "Medium shot walking along a tree-lined street at dusk, Daniel holding a black umbrella on a clear evening, Maggie covering her smile, the Bennett house in the distance."
+ },
+ "t033": {
+  "chars": [
+   "eleanor",
+   "charles_young",
+   "maggie_young"
+  ],
+  "image": "Wide shot of a 1952 parlor: Eleanor, Charles by the sofa with a forced smile, Maggie showing her ring, Sunday light through lace curtains, roast chicken aroma implied, awkward tension."
+ },
+ "t034": {
+  "chars": [
+   "daniel_young",
+   "eleanor"
+  ],
+  "image": "Medium shot across a dining table with roast chicken, Daniel earnest and calm facing Eleanor's stern questioning, her pencil poised over a notepad with illegible writing, warm lamplight."
+ },
+ "t035": {
+  "chars": [
+   "maggie_young",
+   "eleanor"
+  ],
+  "image": "Medium two-shot in a small 1950s kitchen, Eleanor turned away at the sink, Maggie standing firm with arms folded, a single hanging bulb, steam rising from a kettle."
+ },
+ "t036": {
+  "chars": [
+   "eleanor"
+  ],
+  "image": "Close-up of Eleanor's hand striking a wooden kitchen table, a teacup rattling in its saucer, her stern face blurred beyond, low afternoon sunlight."
+ },
+ "t037": {
+  "chars": [
+   "eleanor",
+   "maggie_young"
+  ],
+  "image": "Quiet wide shot through a doorway: Eleanor alone at the kitchen table in half shadow, Maggie watching from the hall, the dim passage between them creating distance and unease."
+ },
+ "t038": {
+  "chars": [
+   "maggie_young",
+   "charles_young"
+  ],
+  "image": "Medium shot in the library: Charles offering a beautifully bound old book across the desk, Maggie politely refusing with a raised hand, tall windows, shafts of light and dust."
+ },
+ "t039": {
+  "chars": [
+   "charles_young"
+  ],
+  "image": "Close-up of Charles's pleasant expression turning cold for a moment, eyes flat, the library shelves out of focus behind him, hard side light."
+ },
+ "t040": {
+  "chars": [
+   "charles_young"
+  ],
+  "image": "Insert shot of a rare old novel left alone on the library desk, soft evening light fading across its cover, a quiet unsettling stillness, footsteps leaving in the background."
+ },
+ "t041": {
+  "chars": [
+   "maggie_young",
+   "charles_young"
+  ],
+  "image": "Wide exterior of a grand 1950s Whitaker house; Maggie descends the steps with a book while Charles watches from an upstairs window, curtain slightly parted, morning light."
+ },
+ "t042": {
+  "chars": [
+   "daniel_young"
+  ],
+  "image": "Medium shot in a railway office, Daniel facing a supervisor's desk, a paper with illegible writing pushed toward him, steam pipes and clock on wall, tense overhead lighting."
+ },
+ "t043": {
+  "chars": [
+   "daniel_young"
+  ],
+  "image": "Close-up of Daniel shaking his head, pen set down beside an unsigned form, jaw set with quiet principle, grey office light, a stack of stalled paperwork."
+ },
+ "t044": {
+  "chars": [
+   "daniel_young",
+   "maggie_young"
+  ],
+  "image": "Wide shot at night beneath a railway bridge, Daniel and Maggie in an urgent whispered talk, distant dance-hall lanterns glowing, shadows of iron girders overhead."
+ },
+ "t045": {
+  "chars": [
+   "maggie_young",
+   "daniel_young"
+  ],
+  "image": "Medium shot of Maggie searching Daniel's face with worry beneath the bridge, lantern light on her cheek, a train rumbling above, uncertainty and unspoken suspicion."
+ },
+ "t046": {
+  "chars": [
+   "daniel_young"
+  ],
+  "image": "Medium close-up of Daniel in profile looking toward the dark railway yard, tired and worried, a signal lamp glowing red in the distance behind him."
+ },
+ "t047": {
+  "chars": [
+   "daniel_young",
+   "maggie_young"
+  ],
+  "image": "Medium shot at a gate in the evening: Daniel gently holding Maggie's hands, a packed suitcase at his feet, last light on the hills, tender promise."
+ },
+ "t048": {
+  "chars": [
+   "maggie_young",
+   "daniel_young"
+  ],
+  "image": "Wide shot of a small 1952 railway platform, Maggie in a pale green dress holding a paper bag of sandwiches as Daniel boards a steam train, his hand pressed to the window."
+ },
+ "t049": {
+  "chars": [
+   "maggie_young"
+  ],
+  "image": "Medium shot of Maggie standing alone on the platform watching the last carriage curve away, steam drifting, her face calm and hopeful, golden late-summer light."
+ },
+ "t050": {
+  "chars": [
+   "maggie_young"
+  ],
+  "image": "Medium shot of Maggie waiting at her front gate looking down an empty street, a stray cat on the porch rail behind her, autumn light, anticipation fading to worry."
+ },
+ "t051": {
+  "chars": [],
+  "image": "Insert close-up of a returned envelope with a rubber stamp and illegible markings, lying on a porch mat beside fallen leaves, soft autumn light, no readable writing."
+ },
+ "t052": {
+  "chars": [
+   "charles_young",
+   "eleanor"
+  ],
+  "image": "Wide shot of a porch in 1952 autumn: Charles holding white roses with a tight smile, Eleanor in the doorway, a young woman's silhouette in the hall beyond."
+ },
+ "t053": {
+  "chars": [
+   "charles_young"
+  ],
+  "image": "Close-up of Charles stopping on the porch steps, looking back over his shoulder with a calm unsettling expression, white roses wilting in his hand, dusk."
+ },
+ "t054": {
+  "chars": [
+   "eleanor",
+   "maggie_young"
+  ],
+  "image": "Medium shot in a 1950s hallway: Eleanor, pale, takes a black rotary telephone receiver away from the table, glancing back at Maggie watching from the kitchen door."
+ },
+ "t055": {
+  "chars": [
+   "maggie_young"
+  ],
+  "image": "Insert close-up of a scrap of paper beside a black rotary telephone, a handwritten phone number and a few words, not legible, Maggie's fingers reaching toward the dial, dim lamp."
+ },
+ "t056": {
+  "chars": [
+   "maggie_young"
+  ],
+  "image": "Close-up of Maggie with a telephone receiver to her ear, eyes wide and listening, a dim hallway lamp casting a gold glow, shadow of the staircase behind her."
+ },
+ "t057": {
+  "chars": [
+   "maggie_young"
+  ],
+  "image": "Medium shot of Maggie gripping the phone in the dark hallway, stunned, a thin line of light from the kitchen door spilling across the floor, held breath."
+ },
+ "t058": {
+  "chars": [
+   "maggie_young"
+  ],
+  "image": "Close-up of Maggie's face lit by a single lamp, the receiver against her cheek, her eyes widening as the words land; her breath visible in the cold hallway."
+ },
+ "t059": {
+  "chars": [
+   "maggie_young"
+  ],
+  "image": "Interior of a 1952 intercity bus at dawn, Maggie by a rain-spotted window in a coat, countryside and mile markers passing, a damp wool-coated woman blurred beside her."
+ },
+ "t060": {
+  "chars": [
+   "joseph"
+  ],
+  "image": "Wide exterior of a large brick railway hospital in Pittsburgh in 1952, smoke-grey sky; Joseph, small and weary, waits near the steps in an overcoat, hands folded."
+ },
+ "t061": {
+  "chars": [],
+  "image": "Insert detail of a collapsed wooden maintenance platform in a railway shed seen at a distance, a lone dangling mechanism and a single missing pin, dusty shafts of light, eerie stillness."
+ },
+ "t062": {
+  "chars": [
+   "joseph"
+  ],
+  "image": "Medium shot of Joseph in a hospital corridor speaking gravely, his wire-rimmed spectacles catching light, a nurse blurred passing behind, institutional green walls, 1952."
+ },
+ "t063": {
+  "chars": [
+   "maggie_young"
+  ],
+  "image": "Wide shot of an empty hospital bed with rumpled sheets and a folded blanket, grey morning light through a tall window, Maggie standing in the doorway, her small shape dwarfed."
+ },
+ "t064": {
+  "chars": [
+   "maggie_young",
+   "joseph"
+  ],
+  "image": "Medium shot of Joseph handing Maggie a folded scrap of paper in a hospital hallway, her trembling fingers taking it, handwriting not legible, cold light from the windows."
+ },
+ "t065": {
+  "chars": [
+   "joseph"
+  ],
+  "image": "Insert close-up of an open hospital visitor book with ink entries, writing not legible, a finger resting on one line, warm desk lamp, wooden counter, 1952 details."
+ },
+ "t066": {
+  "chars": [
+   "maggie_young"
+  ],
+  "image": "Medium shot of Maggie at a hospital lobby pay phone, receiver against her ear, her face pinched with distress, tall windows and bustling blurred visitors behind."
+ },
+ "t067": {
+  "chars": [
+   "maggie_young"
+  ],
+  "image": "Close-up of Maggie lowering the phone receiver into its cradle, eyes hard with new understanding, hospital lobby light cold and bluish, a clock on the wall behind."
+ },
+ "t068": {
+  "chars": [
+   "charles_young",
+   "eleanor"
+  ],
+  "image": "Wide shot of a 1952 parlor: Eleanor pouring tea for Charles who sits calmly on the sofa, an untouched tea tray between them, fire crackling, a feeling of staged courtesy."
+ },
+ "t069": {
+  "chars": [
+   "maggie_young",
+   "charles_young"
+  ],
+  "image": "Medium shot across the tea table, Maggie leaning forward accusing, Charles composed, a teacup untouched between them, firelight and late afternoon window light."
+ },
+ "t070": {
+  "chars": [
+   "charles_young"
+  ],
+  "image": "Close-up of Charles speaking smoothly with a measured expression, firelight on his face, his eyes watching someone out of frame, a faint smile."
+ },
+ "t071": {
+  "chars": [
+   "maggie_young"
+  ],
+  "image": "Medium close-up of Maggie standing, her hand gripping her ring finger with the narrow gold ring, jaw tight, tall window light behind her, controlled anger."
+ },
+ "t072": {
+  "chars": [
+   "charles_young",
+   "maggie_young"
+  ],
+  "image": "Over-the-shoulder shot from behind Maggie to Charles, his voice hardening, the fireplace glow flickering on the wall, shadows lengthening in the parlor."
+ },
+ "t073": {
+  "chars": [
+   "eleanor"
+  ],
+  "image": "Close-up of Eleanor seated by the fireplace, hands folded in her lap, eyes lowered and avoiding the camera, flames reflecting in a brass fender, guilt visible."
+ },
+ "t074": {
+  "chars": [
+   "maggie_young",
+   "eleanor"
+  ],
+  "image": "Wide shot of the Bennett parlor: Maggie standing at the doorway facing Eleanor in her chair, a long distance of wooden floor between them, rain on the window."
+ },
+ "t075": {
+  "chars": [
+   "maggie_young",
+   "edith"
+  ],
+  "image": "Medium shot of Maggie and Edith at the back of a small bakery at dawn, flour on the table, Edith placing a cup of tea beside a suitcase, warm oven glow."
+ },
+ "t076": {
+  "chars": [
+   "maggie_young"
+  ],
+  "image": "Medium shot of Maggie facing a closed railway office door with frosted glass, a polite clerk's shadow behind it, grey corridor, her hand lifting to knock once more."
+ },
+ "t077": {
+  "chars": [
+   "maggie_young"
+  ],
+  "image": "Insert shot of a returned envelope on a narrow sofa beside a suitcase, markings not legible, Maggie's hand resting on it, thin morning light, small room at Edith's house."
+ },
+ "t078": {
+  "chars": [
+   "maggie_young"
+  ],
+  "image": "Quiet wide shot of Maggie alone in a long empty railway station hall at dusk, rows of closed ticket windows and unlit lamps, her small figure lost in the space."
+ },
+ "t079": {
+  "chars": [
+   "maggie_young"
+  ],
+  "image": "Medium shot of Maggie sitting on a bathroom floor in a small 1950s house holding a folded doctor's note, a pale window beside her, mixture of fear and quiet protectiveness."
+ },
+ "t080": {
+  "chars": [
+   "maggie_young"
+  ],
+  "image": "Insert close-up of two hands, one resting on a folded blanket over a flat stomach, a narrow gold ring on a finger, soft window light, tender stillness, no face."
+ },
+ "t081": {
+  "chars": [
+   "maggie_young"
+  ],
+  "image": "Close-up of Maggie writing a letter at a kitchen table by lamplight, a stack of envelopes beside her, pen mid-stroke, writing not legible, rain on the window."
+ },
+ "t082": {
+  "chars": [
+   "maggie_young"
+  ],
+  "image": "Wide shot of a 1952 small-town main street from Maggie's point of view, women whispering at a shop window, a figure in a coat walking alone with her head high, cold light."
+ },
+ "t083": {
+  "chars": [
+   "eleanor",
+   "maggie_young"
+  ],
+  "image": "Medium two-shot in a dim kitchen: Eleanor weeping with a handkerchief, Maggie staring at her in stunned disbelief as hope sours, lamplight and winter dusk at the window."
+ },
+ "t084": {
+  "chars": [
+   "charles_young"
+  ],
+  "image": "Medium shot of Charles at the Bennett front door in the evening, hat in his hand, earnest and composed, porch lamp glowing, snow starting to fall."
+ },
+ "t085": {
+  "chars": [
+   "charles_young",
+   "eleanor"
+  ],
+  "image": "Insert close-up of Charles placing an official-looking paper with illegible text on the kitchen table in front of Eleanor, her hands pressing a handkerchief, his hand firm and calm."
+ },
+ "t086": {
+  "chars": [
+   "maggie_young",
+   "charles_young"
+  ],
+  "image": "Close two-shot in profile, Maggie refusing eye contact, Charles patient with a tender smile, a half-empty cup of tea on the table, cold light."
+ },
+ "t087": {
+  "chars": [
+   "maggie_young",
+   "eleanor"
+  ],
+  "image": "Medium shot of Maggie in a plain dress by a snowy window, Eleanor in bed in the background, a cold winter morning, her face resigned and exhausted."
+ },
+ "t088": {
+  "chars": [
+   "maggie_young",
+   "charles_young"
+  ],
+  "image": "Insert shot of a black and white wedding photograph in a silver frame on a mantel, Charles smiling, Maggie gazing slightly past the camera; the figures small and soft focus."
+ },
+ "t089": {
+  "chars": [
+   "maggie_young",
+   "charles_young"
+  ],
+  "image": "Medium shot in a candlelit bedroom on a wedding night, Maggie in white sitting stiff on the edge of the bed, Charles standing apologetic, long shadows on the walls."
+ },
+ "t090": {
+  "chars": [
+   "maggie_young"
+  ],
+  "image": "Close-up of Maggie's face raw with fury and tears, lamp glow on her cheek, her hand clenching the bedspread, the shape of Charles blurred in the dark doorway."
+ },
+ "t091": {
+  "chars": [
+   "maggie_young"
+  ],
+  "image": "Medium shot of Maggie alone by a dark window, her hand pressed to her stomach, snow falling outside, her expression shifting from anger to astonished tenderness."
+ },
+ "t092": {
+  "chars": [
+   "maggie_young"
+  ],
+  "image": "Wide shot of Maggie at a kitchen door in early morning with a suitcase beside her, hand on the doorknob, undecided, thin light spilling across the floor."
+ },
+ "t093": {
+  "chars": [],
+  "image": "Insert close-up of the back of a framed wedding photograph on a mantel, a thin edge of yellowed envelope barely visible between the backing paper and frame, dim lamp light."
+ },
+ "t094": {
+  "chars": [
+   "maggie_young"
+  ],
+  "image": "Medium shot in a 1953 doctor's office: a doctor with a stethoscope bends beside an exam table, Maggie lying back with an amazed half-laugh, soft daylight through frosted glass."
+ },
+ "t095": {
+  "chars": [
+   "charles_young",
+   "maggie_young"
+  ],
+  "image": "Medium shot in a 1953 living room, Charles bent over a ledger with a worried frown, Maggie by the window with a hand on her rounded belly, spring light."
+ },
+ "t096": {
+  "chars": [
+   "charles_young"
+  ],
+  "image": "Medium shot of Charles at a desk, telephone in hand, calmly arranging things, a railway timetable and a map of counties with illegible markings, his gaze cool and in control."
+ },
+ "t097": {
+  "chars": [
+   "charles_young",
+   "maggie_young"
+  ],
+  "image": "Medium shot of Charles bringing a tray of soup to Maggie in bed, setting it carefully on her lap, genuine tenderness in the dim bedroom lamp light, a warm and ambiguous moment."
+ },
+ "t098": {
+  "chars": [
+   "charles_young"
+  ],
+  "image": "Close-up of Charles gently rubbing Maggie's swollen feet in lamplight, her feet only partially visible, his face kind and absorbed, a quiet domestic scene with an unsettling undertone."
+ },
+ "t099": {
+  "chars": [
+   "maggie_young"
+  ],
+  "image": "Subjective hospital shot: blurred bright ceiling lights, nurses in white caps leaning in, Maggie's strained face in soft focus, a sense of effort and dizziness, antiseptic cold light."
+ },
+ "t100": {
+  "chars": [
+   "maggie_young"
+  ],
+  "image": "Close-up of Maggie, drained, head heavy on a hospital pillow, her eyes struggling to focus on a blurred shape of a nurse, pale white room light, rising worry."
+ },
+ "t101": {
+  "chars": [
+   "charles_young",
+   "maggie_young"
+  ],
+  "image": "Medium shot beside a hospital bed: Charles seated and wiping his wet face, Maggie weakly looking at him, the swaddled bundle visible in a bassinet far in the background."
+ },
+ "t102": {
+  "chars": [
+   "maggie_young"
+  ],
+  "image": "Medium close-up of Maggie weeping, reaching one hand toward an empty space beside the hospital bed, a closed door at the end of the room, grey afternoon light."
+ },
+ "t103": {
+  "chars": [
+   "maggie_young"
+  ],
+  "image": "Insert shot of a hospital windowsill with a single rose in a glass of water, rain on the pane, light soft and grey, Maggie's reflection faintly visible."
+ },
+ "t104": {
+  "chars": [
+   "maggie_young"
+  ],
+  "image": "Medium shot of Maggie holding a small swaddled bundle against her chest, seen from a distance by a window, soft golden light, the baby's face hidden in the blanket."
+ },
+ "t105": {
+  "chars": [],
+  "image": "Insert shot of an empty hospital bassinet with a folded white blanket, a tiny knit cap beside it, soft shaft of light through a window, absence and quiet grief."
+ },
+ "t106": {
+  "chars": [
+   "charles_mid",
+   "laura_child"
+  ],
+  "image": "Wide shot in a sunlit 1960s backyard, Charles jogging beside a small bicycle with a child seen from behind, wobbling off ahead, joyful afternoon light."
+ },
+ "t107": {
+  "chars": [
+   "maggie_mid"
+  ],
+  "image": "Medium shot of Maggie in a large 1959 house with tall windows, a garden beyond, arranging books on a shelf, Eleanor's silhouette seated in the parlor out of focus."
+ },
+ "t108": {
+  "chars": [
+   "maggie_mid"
+  ],
+  "image": "Insert close-up of two flowers on a windowsill, one in a small vase, petals softly dropping, morning light, a hand withdrawing out of frame, quiet ritual."
+ },
+ "t109": {
+  "chars": [
+   "maggie_mid"
+  ],
+  "image": "Medium shot of Maggie asleep in a bed, restless, her hand clutching the sheet; faint blurred shapes and overlapping light suggest two distant baby cries, dim blue night light."
+ },
+ "t110": {
+  "chars": [
+   "maggie_mid"
+  ],
+  "image": "Insert close-up of a tiny hospital bracelet in a jewelry box, a date and number only, a child's small hand hovering above it, soft sunlit bedroom, 1965."
+ },
+ "t111": {
+  "chars": [
+   "laura_child"
+  ],
+  "image": "Medium shot from behind of a small child sitting on a bedroom floor in soft window light, holding something precious in cupped hands, a jewelry box beside her."
+ },
+ "t112": {
+  "chars": [
+   "laura_child",
+   "maggie_mid"
+  ],
+  "image": "Over-the-shoulder shot from behind Laura, a small child, looking up at Maggie seated on the bed with a gentle sad smile, soft afternoon light, quiet intimacy."
+ },
+ "t113": {
+  "chars": [
+   "maggie_mid"
+  ],
+  "image": "Close-up of Maggie, eyes glistening and a faint smile, looking toward the bedroom window with warm afternoon light, a faint memory of loss in her expression."
+ },
+ "t114": {
+  "chars": [],
+  "image": "Wide shot of a 1974 suburban front gate on a warm spring afternoon, a woman with short dark hair seen from far behind, standing still before the gate, a neighbor glancing from a distant yard."
+ },
+ "t115": {
+  "chars": [
+   "charles_mid"
+  ],
+  "image": "Medium shot of Charles in an evening living room lifting the framed wedding photograph from the mantel, wiping its glass with a cloth, his expression tight, lamplight low."
+ },
+ "t116": {
+  "chars": [
+   "charles_mid"
+  ],
+  "image": "Medium shot of Charles crouched at a fireplace feeding papers into small flames on a warm night, the room dim, a window open behind him, his face lit orange."
+ },
+ "t117": {
+  "chars": [
+   "maggie_mid"
+  ],
+  "image": "Medium shot of Maggie in the doorway looking at Charles's back by the fireplace and then turning away, choosing not to ask, a hallway lamp casting long shadows."
+ },
+ "t118": {
+  "chars": [
+   "maggie_mid"
+  ],
+  "image": "Insert shot of a bundle of returned envelopes tied with string among Eleanor's belongings in an open cardboard box, markings illegible, dusty light from an attic window, 1981."
+ },
+ "t119": {
+  "chars": [
+   "maggie_mid"
+  ],
+  "image": "Close-up of Maggie, now in mid-age, holding the bundle of unopened envelopes, a mix of ache and resignation, dim attic light on her face, dust motes drifting."
+ },
+ "t120": {
+  "chars": [
+   "maggie_mid"
+  ],
+  "image": "Insert close-up of a faded paper receipt in Maggie's fingers, numbers with a crossed-out line, illegible text, warm lamp on a wooden table, cardboard box beside it."
+ },
+ "t121": {
+  "chars": [
+   "maggie_mid",
+   "charles_mid"
+  ],
+  "image": "Two-shot in a 1981 kitchen: Maggie holding out the receipt, Charles taking it with smooth composure and a faint tightening around his eyes, morning light through the window."
+ },
+ "t122": {
+  "chars": [
+   "maggie_mid"
+  ],
+  "image": "Medium close-up of Maggie, quiet and doubtful, looking at the receipt on the kitchen table as steam rises from a teacup, her expression unconvinced but resigned."
+ },
+ "t123": {
+  "chars": [],
+  "image": "Insert close-up of the faded receipt on a wooden table with a thin line of candle flame reflected in its crossed-out numbers, shallow focus, the feeling of a buried clue."
+ },
+ "t124": {
+  "chars": [
+   "maggie_old",
+   "charles_old"
+  ],
+  "image": "Wide shot of an October 1996 sitting room, rain at the windows, Charles in his chair by the window with a blanket, Maggie arranging library books on a nearby table, autumn light."
+ },
+ "t125": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Medium shot of Maggie at a table with a wooden-framed wedding photograph, a small screwdriver and glue, rain on the window, a mug of tea cooling beside her."
+ },
+ "t126": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Insert close-up of a yellowed envelope sliding out from behind a wedding photograph onto a wooden table, handwritten name on the front not legible, the old brown paper edge catching lamp light."
+ },
+ "t127": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Close-up of Maggie's trembling fingers breaking the seal of the yellowed envelope, rain at the window blurred behind, the porch rail dripping, intense quiet."
+ },
+ "t128": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Medium close-up of Maggie reading a thin handwritten letter, writing not legible, her eyes moving along the lines, window light cold and grey on her face."
+ },
+ "t129": {
+  "chars": [],
+  "image": "Insert close-up of a pen resting on an old letter, a blank space on the page, illegible handwriting above, soft lamp light, the feel of an unanswered plea."
+ },
+ "t130": {
+  "chars": [],
+  "image": "Insert detail of a corner of a yellowed letter with an address written in faded blue ink, not legible, and a stamp postmark, held under a lamp, dust particles drifting."
+ },
+ "t131": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Extreme close-up of Maggie's eyes brimming with tears as she reads, the lamp reflected in them, rain streaks on the window glass behind her, a single tear escaping."
+ },
+ "t132": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Wide shot of Maggie sitting alone at the table with the letter and the dismantled wedding photograph, the frame back open, rain pouring outside, the room cold and still."
+ },
+ "t133": {
+  "chars": [
+   "maggie_old",
+   "charles_old"
+  ],
+  "image": "Medium shot, Maggie standing in the sitting room doorway holding the envelope, Charles in his chair looking at it, his face crumbling, grey light from the window."
+ },
+ "t134": {
+  "chars": [
+   "maggie_old",
+   "charles_old"
+  ],
+  "image": "Wide shot of the sitting room at night, Maggie and Charles facing each other across the room in a charged silence, the mantel clock and wedding photograph between them."
+ },
+ "t135": {
+  "chars": [
+   "charles_old"
+  ],
+  "image": "Close-up of Charles, frail and haggard, speaking with lowered eyes, his thin fingers gripping the arm of his chair, grey window light and lamp glow on his face."
+ },
+ "t136": {
+  "chars": [],
+  "image": "Insert close-up of a small folded note with a few handwritten lines, signature not legible, lying beside a school record card on a desk, warm lamplight, the feeling of forgery."
+ },
+ "t137": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Medium close-up of Maggie gripping the letter so tightly the paper creases, jaw tight, her wedding ring on her hand, window light cold on her face, anger held in check."
+ },
+ "t138": {
+  "chars": [
+   "charles_old"
+  ],
+  "image": "Close-up of Charles's face crumpling, a hand covering his mouth, rain streaking the window glass behind him, a single lamp flickering."
+ },
+ "t139": {
+  "chars": [
+   "maggie_old",
+   "charles_old"
+  ],
+  "image": "Two-shot, Charles looking down and whispering, Maggie leaning forward in the foreground with a frozen face; the mantel clock ticking in the background, hush in the room."
+ },
+ "t140": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Close-up of Maggie's stunned face as the words register, the lamp casting a soft glow, her lips parted, a faint tremor, the room quiet except for rain."
+ },
+ "t141": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Insert close-up of a pair of Maggie's hands holding a tiny hospital bracelet in her palm beside the yellowed envelope, lamplight, trembling disbelief, forty-three years collapsing into a moment."
+ },
+ "t142": {
+  "chars": [],
+  "image": "Medium shot from behind of a young woman in a navy 1950s dress standing alone in the doorway of an empty pastel nursery, an unused crib, soft melancholy light."
+ },
+ "t143": {
+  "chars": [],
+  "image": "Insert close-up of an old typed transfer form with illegible text in a manila folder, a hand with a rubber stamp hovering above it, harsh desk lamp, 1953 hospital office."
+ },
+ "t144": {
+  "chars": [
+   "maggie_old",
+   "charles_old"
+  ],
+  "image": "Medium shot of Maggie facing Charles, her hand open in a demanding gesture, Charles silent with his head bowed, the rain-streaked window between their silhouettes."
+ },
+ "t145": {
+  "chars": [
+   "charles_old"
+  ],
+  "image": "Close-up of Charles speaking in a halting whisper, lamplight on his thin face, eyes damp and unfocused, the mantel in the soft background."
+ },
+ "t146": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Medium close-up of Maggie, her expression tightening in understanding, a hand pressed to her mouth, the rain-spotted window behind her, grey evening light."
+ },
+ "t147": {
+  "chars": [
+   "charles_old"
+  ],
+  "image": "Close-up of Charles's face breaking, his voice cracking, his eyes on the floor, one tear on the cheek, lamplight casting deep shadows across the lines of his face."
+ },
+ "t148": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Medium shot of Maggie in her 1996 kitchen with the rotary telephone cord stretched, calm and resolved, rain on the window, an address book open on the counter, writing illegible."
+ },
+ "t149": {
+  "chars": [
+   "laura",
+   "maggie_old"
+  ],
+  "image": "Medium two-shot at a kitchen table: Laura, who has just arrived with a loaf of bread on the counter, sits across from Maggie who is explaining, rain-grey window light."
+ },
+ "t150": {
+  "chars": [
+   "laura"
+  ],
+  "image": "Close-up of Laura's face absorbing the news, brown eyes wide and steady, a hand over her mouth, soft kitchen light and rain streaks reflected in the window beside her."
+ },
+ "t151": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Medium shot of Maggie at the kitchen table with her hands folded around a mug, looking into the rain outside the window, remorse in her still expression, quiet afternoon."
+ },
+ "t152": {
+  "chars": [
+   "laura",
+   "maggie_old"
+  ],
+  "image": "Two-shot with Laura holding Maggie's hand across the kitchen table, both with glistening eyes, the loaf of bread untouched between them, soft rain light."
+ },
+ "t153": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Close-up of Maggie's face looking down, tired and honest, her lips pressed together, rain softly reflected on the kitchen window glass beside her."
+ },
+ "t154": {
+  "chars": [
+   "laura"
+  ],
+  "image": "Medium shot of Laura at the mantel turning the wedding photograph face down, her back partly toward us, resolute set to her shoulders, soft lamp glow on the wood."
+ },
+ "t155": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Wide shot of Maggie standing in the sitting room as a ray of afternoon sun breaks through the clouds and falls across the floor, rain ending outside, a sense of firm ground."
+ },
+ "t156": {
+  "chars": [
+   "rebecca",
+   "maggie_old"
+  ],
+  "image": "Medium shot in a law office in 1996: Rebecca behind a wooden desk with files, Maggie listening across from her, rain at the window, shelves of binders, measured seriousness."
+ },
+ "t157": {
+  "chars": [
+   "rebecca"
+  ],
+  "image": "Close-up of Rebecca, her eyes steady and compassionate as she explains, a legal pad with illegible notes in front of her, warm desk lamp, bookshelves blurred."
+ },
+ "t158": {
+  "chars": [],
+  "image": "Insert close-up of a desk with a hospital bracelet, a faded receipt, and a yellowed letter laid side by side next to a photocopier, handwriting not legible, soft office light."
+ },
+ "t159": {
+  "chars": [
+   "rebecca"
+  ],
+  "image": "Wide shot of a hospital records archive: banks of grey filing cabinets, a microfilm reader glowing, Rebecca bent over the viewer, dust in the light, 1996."
+ },
+ "t160": {
+  "chars": [],
+  "image": "Insert close-up of a microfilm reader screen showing a ledger-style page with two entries, text too small and blurred to read, an index finger tracing a line, cold glow on the glasses."
+ },
+ "t161": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Close-up of Maggie in Rebecca's office holding a photocopied page, tears rolling quietly down her cheeks, hands trembling, rain on the window, soft lamplight."
+ },
+ "t162": {
+  "chars": [
+   "rebecca",
+   "maggie_old"
+  ],
+  "image": "Medium shot of Rebecca resting a hand on the desk and speaking carefully to Maggie, who listens, determined, a single lamp, rainy window behind them."
+ },
+ "t163": {
+  "chars": [
+   "helen"
+  ],
+  "image": "Wide exterior of a small modest house outside the city in late autumn, bare maples, Helen opening the front door in a cardigan, thin sunlight, a porch swing at rest."
+ },
+ "t164": {
+  "chars": [
+   "helen"
+  ],
+  "image": "Medium shot of Helen at a kitchen table remembering, her eyes distant, a teapot and cups before her, soft daylight, hands folded tight as though gripping old memories."
+ },
+ "t165": {
+  "chars": [],
+  "image": "Insert shot of a vintage 1953 hospital transfer form with illegible typing and a crooked stamp pinned to a clipboard, harsh fluorescent light, a nurse's hand adjusting it."
+ },
+ "t166": {
+  "chars": [
+   "helen"
+  ],
+  "image": "Insert close-up of Helen's weathered hands opening an old spiral notebook on a kitchen table, ink pages with illegible handwriting, a thin ribbon of light across the paper."
+ },
+ "t167": {
+  "chars": [
+   "helen"
+  ],
+  "image": "Close-up of Helen's finger resting on a handwritten notebook entry, writing not legible, a pair of reading glasses beside it, warm kitchen light, grave stillness."
+ },
+ "t168": {
+  "chars": [],
+  "image": "Medium shot in a 1953 hospital corridor: a supervisor in a white uniform with a clipboard waving a young nurse away with a dismissive gesture, bright harsh light, polished floor."
+ },
+ "t169": {
+  "chars": [
+   "helen",
+   "maggie_old"
+  ],
+  "image": "Two-shot at the kitchen table: Helen's trembling hands in focus, Maggie reaching across to touch them gently, soft window light, teacups, a feeling of mutual grace."
+ },
+ "t170": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Close-up of Maggie smiling through tears, gratitude on her face, the soft light of Helen's kitchen on her cheek, a notebook blurred in the foreground."
+ },
+ "t171": {
+  "chars": [
+   "rebecca",
+   "laura",
+   "maggie_old"
+  ],
+  "image": "Medium wide shot in Rebecca's office: Rebecca, Laura, and Maggie leaning over a table of papers, a legal pad with illegible notes, afternoon light, shared focus and purpose."
+ },
+ "t172": {
+  "chars": [
+   "laura",
+   "maggie_old"
+  ],
+  "image": "Wide shot of a car on a quiet country road approaching a modest white house with blue shutters, bright November morning, bare trees, Laura driving with Maggie beside her."
+ },
+ "t173": {
+  "chars": [
+   "ruth_old",
+   "maggie_old"
+  ],
+  "image": "Medium shot in Ruth's sitting room: shelves of framed photographs of a dark-haired girl growing up, Ruth frightened in the doorway, Maggie standing near the photos, soft light."
+ },
+ "t174": {
+  "chars": [
+   "ruth_old"
+  ],
+  "image": "Close-up of Ruth, much older and frail, speaking with uncertain eyes and her hands twisting a handkerchief, a lamp glowing softly behind her."
+ },
+ "t175": {
+  "chars": [
+   "ruth_old"
+  ],
+  "image": "Medium shot of Ruth seated by a window looking at an old photograph in her lap, the November light thin and pale, regret quiet on her face."
+ },
+ "t176": {
+  "chars": [
+   "maggie_old",
+   "ruth_old"
+  ],
+  "image": "Two-shot across a small tea table: Maggie with a hand pressed to her chest, silent, Ruth's face tender and apologetic, the sitting room's photographs blurred behind them."
+ },
+ "t177": {
+  "chars": [
+   "maggie_old",
+   "ruth_old"
+  ],
+  "image": "Medium shot of Maggie and Ruth side by side on a floral sofa, both looking at a framed photograph of a young woman in a graduation gown, soft afternoon light."
+ },
+ "t178": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Close-up of Maggie with a quiet, steady expression, eyes moist, nodding slowly, soft window light on her face, a sense of empathy and restraint."
+ },
+ "t179": {
+  "chars": [
+   "ruth_old"
+  ],
+  "image": "Wide shot of a spring 1974 street: Ruth, with short dark hair, parking a car and getting out, looking toward a distant house, blossoming trees, soft light."
+ },
+ "t180": {
+  "chars": [
+   "ruth_mid"
+  ],
+  "image": "Medium shot of Ruth in 1974 standing still at a front gate, her hand on the latch, unable to open it, spring blossoms overhead, the house beyond out of focus."
+ },
+ "t181": {
+  "chars": [
+   "ruth_mid"
+  ],
+  "image": "Medium shot of Ruth at a bank counter handing a sealed envelope across to a man whose hands alone are visible, brass fittings, warm interior light, nervous urgency."
+ },
+ "t182": {
+  "chars": [
+   "ruth_old"
+  ],
+  "image": "Insert close-up of an older woman's hands holding a handwritten letter in an envelope, illegible handwriting, fingers trembling, soft daylight, 1996 sitting room."
+ },
+ "t183": {
+  "chars": [
+   "charles_mid"
+  ],
+  "image": "Medium shot of Charles in 1974 on a telephone in a study, his face controlled and fabricating, a desk lamp glowing, a bank ledger beside him, door closed."
+ },
+ "t184": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Wide shot of Maggie standing in Ruth's driveway looking back toward the white house, her shadow long on the gravel, November sun low, her face thoughtful and heavy."
+ },
+ "t185": {
+  "chars": [
+   "charles_mid"
+  ],
+  "image": "Insert shot of blackened paper curling in a fireplace, glowing red edges, a single unburned corner showing a hint of handwriting not legible, dark room around it."
+ },
+ "t186": {
+  "chars": [
+   "ruth_old"
+  ],
+  "image": "Insert close-up of an old black and white photograph of a young woman in a graduation cap, a handwritten note on the back with illegible handwriting, Ruth's hand holding it."
+ },
+ "t187": {
+  "chars": [
+   "maggie_old",
+   "ruth_old"
+  ],
+  "image": "Medium shot of Maggie staring at the photograph's back as Ruth watches beside her, the room still, a clock ticking, afternoon light draining toward dusk."
+ },
+ "t188": {
+  "chars": [],
+  "image": "Insert shot of two flowers on a windowsill in morning light, one in a vase and one faded, petals fallen on the sill, shallow focus, a silent anniversary ritual."
+ },
+ "t189": {
+  "chars": [
+   "ruth_old"
+  ],
+  "image": "Medium shot of Ruth at a small writing desk composing a letter, her face thoughtful, a lamp glowing, an envelope and stamp beside her, writing not legible."
+ },
+ "t190": {
+  "chars": [],
+  "image": "Insert close-up of a hand placing a letter in a mailbox slot, a gentle gesture, soft morning light, autumn leaves on the sidewalk, quiet hope."
+ },
+ "t191": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Medium shot of Maggie in her kitchen opening a letter from the mailbox, rain-dark window behind, a mug steaming, careful anticipation, handwriting on the page not legible."
+ },
+ "t192": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Close-up of Maggie reading, her lower lip trembling, light from the window catching a tear, a slanted handwritten page held in her fingers, not legible."
+ },
+ "t193": {
+  "chars": [],
+  "image": "Insert close-up of a handwritten sentence on lined paper at the bottom of a page, a final line with an ink smudge, not legible, a pen resting beside it, lamp light."
+ },
+ "t194": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Medium shot of Maggie at her table writing a long letter by lamplight at night, the small hospital bracelet resting on the table beside the paper, rain softly at the window."
+ },
+ "t195": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Close-up of Maggie's hand sealing an envelope, the other hand holding the small hospital bracelet, lamplight glowing on the paper, a quiet tenderness."
+ },
+ "t196": {
+  "chars": [],
+  "image": "Insert shot of an open front door with a lamp left on in the hallway beyond, evening light on a welcome mat, a sense of an open invitation, no people."
+ },
+ "t197": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Medium shot of Maggie on the sofa with a telephone to her ear, laughing softly through tears, the afternoon light warm, a cup of tea forgotten beside her."
+ },
+ "t198": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Close-up of Maggie lowering the telephone, tears and a relieved smile, hand over her heart, golden afternoon light through lace curtains, a framed photograph blurred behind her."
+ },
+ "t199": {
+  "chars": [
+   "rebecca",
+   "maggie_old"
+  ],
+  "image": "Medium shot of Rebecca sliding a folder of public records across her desk to Maggie, a rain-lit window behind them, a sheet with an address, illegible, held in Maggie's hand."
+ },
+ "t200": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Medium shot of Maggie at her desk writing a short letter, concentration and nerves, a lamp pooled on the paper, a pot of tea, writing not legible."
+ },
+ "t201": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Close-up of Maggie's face thoughtful and resolute while writing, the pen paused in the air, soft side light, rain outside the window, gentle courage."
+ },
+ "t202": {
+  "chars": [],
+  "image": "Insert close-up of an envelope in a mailbox with slow, slanted handwriting on the front, not legible, a red autumn leaf beside it on the porch boards, gentle light."
+ },
+ "t203": {
+  "chars": [
+   "daniel_old"
+  ],
+  "image": "Wide shot of a quiet lakeside house in autumn, Daniel standing on a wooden dock looking out over still water, mist rising, a framed photograph of a woman on a windowsill inside."
+ },
+ "t204": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Medium close-up of Maggie reading a letter at her kitchen table, her expression turning to concern, afternoon light on the page, hand tightening on the paper, writing illegible."
+ },
+ "t205": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Close-up of Maggie, her eyes fixed on a single line of the letter, dread tightening her face, lamp light, rain just beginning to fall against the window glass."
+ },
+ "t206": {
+  "chars": [
+   "daniel_old"
+  ],
+  "image": "Wide shot of a small railway museum interior, old locomotives and brass fittings, Daniel in a dark coat carrying a paper bag standing early near a bench, quiet daylight."
+ },
+ "t207": {
+  "chars": [
+   "daniel_old",
+   "maggie_old"
+  ],
+  "image": "Medium shot, Maggie entering the museum hall seeing Daniel across the space, both older, tall windows with dusty light, a slow moment of recognition."
+ },
+ "t208": {
+  "chars": [
+   "daniel_old",
+   "maggie_old"
+  ],
+  "image": "Wide two-shot, Maggie and Daniel standing a few feet apart in front of an old locomotive, softly smiling, the museum's grand windows casting long lines of light."
+ },
+ "t209": {
+  "chars": [
+   "maggie_old",
+   "daniel_old"
+  ],
+  "image": "Medium shot, Daniel offering a book from a paper bag, Maggie laughing and wiping tears from her eyes, the old locomotive blurred behind them."
+ },
+ "t210": {
+  "chars": [
+   "daniel_old",
+   "maggie_old"
+  ],
+  "image": "Two-shot on a bench beside an old locomotive, Daniel speaking quietly with his hands clasped, Maggie listening beside him, cold museum light on the brass and iron."
+ },
+ "t211": {
+  "chars": [
+   "daniel_young",
+   "charles_young"
+  ],
+  "image": "Medium shot of Daniel's memory: a hospital bed in 1952 with Charles's silhouette beside it and a folded note passing between hands, grey light, face of the visitor turned away."
+ },
+ "t212": {
+  "chars": [
+   "daniel_old"
+  ],
+  "image": "Close-up of Daniel looking at the old locomotive, shame and sorrow carved in his face, soft museum light, a faint reflection of brass in his eyes."
+ },
+ "t213": {
+  "chars": [],
+  "image": "Insert shot of a single letter lying unanswered on a bare boardinghouse table in 1953, a dark window beside it, evening light fading across the page, handwriting not legible."
+ },
+ "t214": {
+  "chars": [
+   "daniel_old"
+  ],
+  "image": "Insert close-up of Daniel's hands removing a folded, cloth-soft square of paper from behind an old railway pass in a worn leather wallet, museum light, careful and reverent."
+ },
+ "t215": {
+  "chars": [
+   "maggie_old",
+   "daniel_old"
+  ],
+  "image": "Insert close-up of Maggie's hands holding an unfolded, softened square of paper with four short lines, writing not legible, Daniel's hand beside hers, soft museum light."
+ },
+ "t216": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Close-up of Maggie reading the note, eyes narrowing with recognition and quiet anger, a faint shaking of the paper, soft museum light on her face."
+ },
+ "t217": {
+  "chars": [],
+  "image": "Insert close-up of a school record card with a youthful handwritten signature in blue ink, not legible, next to the folded note, the g letter unlooped, lamp light, sharp detail."
+ },
+ "t218": {
+  "chars": [],
+  "image": "Insert shot of an old school record folder open on a desk with a hand tracing a signature with a pencil, dusty archive light, cabinet shelves blurred, the sense of forgery."
+ },
+ "t219": {
+  "chars": [
+   "daniel_old",
+   "maggie_old"
+  ],
+  "image": "Two-shot as Daniel gently closes Maggie's hand around the note, a warm smile of understanding passing between them, soft museum light on the bench, gentle."
+ },
+ "t220": {
+  "chars": [
+   "daniel_old"
+  ],
+  "image": "Medium shot of Daniel opening an old letter at a table in a lakeside kitchen years earlier, afternoon sun, a retired man's hands unfolding thin paper, writing not legible."
+ },
+ "t221": {
+  "chars": [],
+  "image": "Insert close-up of a handwritten ledger page with entries and illegible numbers, a hand sliding folded cash under it on a wooden desk, a railway yard window behind, dim light."
+ },
+ "t222": {
+  "chars": [
+   "daniel_old"
+  ],
+  "image": "Medium shot of Daniel looking at a wall photograph of a railway maintenance platform, his face grave, museum light, an old rope and iron fittings in the foreground."
+ },
+ "t223": {
+  "chars": [
+   "daniel_old"
+  ],
+  "image": "Close-up of Daniel speaking quietly with downcast eyes, hands tightly knotted, soft museum light highlighting the white of his hair, the shame of an old decision."
+ },
+ "t224": {
+  "chars": [],
+  "image": "Insert shot of a legal settlement paper with a pen resting on the signature line, writing not legible, a railway company stamp, harsh office lamp, 1953."
+ },
+ "t225": {
+  "chars": [
+   "maggie_old",
+   "daniel_old"
+  ],
+  "image": "Medium two-shot on the museum bench, Maggie gently touching Daniel's arm, he nodding sadly, the old locomotive behind them in soft focus, quiet acceptance."
+ },
+ "t226": {
+  "chars": [
+   "maggie_old",
+   "daniel_old"
+  ],
+  "image": "Wide shot of Maggie and Daniel sitting side by side on the bench in a quiet museum hall, light from tall windows sloping across the floor, shared regret and honesty."
+ },
+ "t227": {
+  "chars": [
+   "daniel_old"
+  ],
+  "image": "Close-up of Daniel looking out toward the old locomotive, hands folded tightly, eyes wet, soft museum light, the emotion of learning about a daughter."
+ },
+ "t228": {
+  "chars": [
+   "maggie_old",
+   "daniel_old"
+  ],
+  "image": "Medium shot, Maggie speaking carefully to Daniel on the bench, her hands open, Daniel leaning forward, a train wheel in the foreground, diffuse light."
+ },
+ "t229": {
+  "chars": [
+   "daniel_old"
+  ],
+  "image": "Close-up of Daniel's face transforming, grief and disbelief mingling with fragile hope, his eyes shining, museum light soft on his weathered features."
+ },
+ "t230": {
+  "chars": [
+   "maggie_old",
+   "daniel_old"
+  ],
+  "image": "Medium shot of Maggie and Daniel on the bench, Daniel nodding right away and placing his hand over his heart in respect, Maggie's gentle gaze, warm side light."
+ },
+ "t231": {
+  "chars": [
+   "laura",
+   "daniel_old"
+  ],
+  "image": "Medium shot in a restaurant booth: Laura sits across from Daniel, who listens with respectful humility, cups of coffee between them, soft window light, rain outside."
+ },
+ "t232": {
+  "chars": [
+   "daniel_old"
+  ],
+  "image": "Close-up of Daniel writing a short note at a table, a pen pausing in the air, a cup of coffee, soft lakeside window light, humble hope."
+ },
+ "t233": {
+  "chars": [
+   "rose"
+  ],
+  "image": "Medium shot of Rose at a piano in a bright music classroom, children's drawings on the walls, her hands resting on the keys, looking thoughtfully out the window, soft daylight."
+ },
+ "t234": {
+  "chars": [
+   "rose"
+  ],
+  "image": "Medium close-up of Rose at a kitchen table writing a letter, thoughtful and measured, a cup of tea, a window with a garden beyond, soft morning light, writing not legible."
+ },
+ "t235": {
+  "chars": [
+   "laura",
+   "rose",
+   "maggie_old"
+  ],
+  "image": "Wide shot of Laura, Rose, and Maggie seen from behind walking together down a tree-lined street in late autumn, leaves swirling, golden light, a quiet closeness."
+ },
+ "t236": {
+  "chars": [
+   "rebecca"
+  ],
+  "image": "Medium shot of Rebecca at her desk surrounded by stacks of archival records and a microfilm printout, a green desk lamp glowing, a window dark with evening rain, determined concentration."
+ },
+ "t237": {
+  "chars": [
+   "rebecca",
+   "maggie_old"
+  ],
+  "image": "Medium shot in Rebecca's office: Rebecca sliding sealed envelopes into a filing box, Maggie watching, the label not legible, rain-lined window behind, thoughtful quiet."
+ },
+ "t238": {
+  "chars": [
+   "charles_old"
+  ],
+  "image": "Close-up of Charles's frail hand holding a pen over a signed statement, writing not legible, his sleeve cuff loose, thin lamp light, his shoulder trembling."
+ },
+ "t239": {
+  "chars": [
+   "rebecca",
+   "charles_old"
+  ],
+  "image": "Medium shot in Charles's sitting room: Rebecca standing, solemn, with a folder, Charles seated and bowed, his chair by the window, grey light, a clear and formal distance."
+ },
+ "t240": {
+  "chars": [
+   "charles_old"
+  ],
+  "image": "Medium shot of Charles in his chair by the window with a paper in his lap, looking into the rain, face stricken, his hand shaking as if swearing something, dim afternoon light."
+ },
+ "t241": {
+  "chars": [
+   "rebecca"
+  ],
+  "image": "Insert close-up of Rebecca's hands placing a small folded note beside a signed statement and sliding both into a large envelope, formal desk lamp, the atmosphere of legal finality."
+ },
+ "t242": {
+  "chars": [
+   "charles_old"
+  ],
+  "image": "Wide shot of a small-town main street in winter seen from Charles's window, passers-by glancing toward his house, the chair empty in the foreground, the town quietly watching."
+ },
+ "t243": {
+  "chars": [],
+  "image": "Insert shot of a small newspaper column on a kitchen table, text blurred and not legible, a coffee cup ring, morning light, a hand folding the paper away."
+ },
+ "t244": {
+  "chars": [],
+  "image": "Wide interior shot of a bank lobby with a rectangular pale mark on the wall where a portrait once hung, a man on a ladder carrying a framed portrait away, marble floor, cold light."
+ },
+ "t245": {
+  "chars": [
+   "charles_old"
+  ],
+  "image": "Medium shot of Charles alone at a dining table with a silent telephone, an empty chair opposite, a Thursday-lunch calendar on the wall with illegible writing, the gloom of afternoon."
+ },
+ "t246": {
+  "chars": [
+   "charles_old"
+  ],
+  "image": "Close-up of Charles at the window watching a quiet street in winter light, the silent glass reflecting his tired face, a stillness heavy with isolation."
+ },
+ "t247": {
+  "chars": [
+   "laura",
+   "charles_old"
+  ],
+  "image": "Medium shot in Charles's sitting room: Laura seated near his chair, speaking quietly, Charles looking at her with grief, soft winter window light, the mantel clock behind them."
+ },
+ "t248": {
+  "chars": [
+   "laura"
+  ],
+  "image": "Close-up of Laura's face, steady and sorrowful, asking a hard question, eyes bright with held tears, winter window light on her cheek."
+ },
+ "t249": {
+  "chars": [
+   "laura",
+   "charles_old"
+  ],
+  "image": "Medium shot of Laura bending to kiss Charles's cheek as he sits in his chair by the window, her face turned away from the camera, winter light across them both, a gentle farewell."
+ },
+ "t250": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Wide shot of a small rented cottage on a quiet street near the library, bare trees, a light on in the window, Maggie carrying a box up the path with a key in her hand."
+ },
+ "t251": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Insert close-up of a ring of keys in Maggie's hand against a cottage front door, morning light, the brass catching a gleam, a sense of ownership and calm."
+ },
+ "t252": {
+  "chars": [
+   "maggie_old",
+   "charles_old"
+  ],
+  "image": "Wide shot of Charles's sitting room in winter: Charles small in his chair by the window, Maggie standing in the doorway with her coat on, pale snow light."
+ },
+ "t253": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Close-up of Maggie, calm and composed, answering with steady eyes, her face lit by cold window light, a faint sadness behind her composure."
+ },
+ "t254": {
+  "chars": [
+   "charles_old"
+  ],
+  "image": "Close-up of Charles weeping softly, a trembling hand over his eyes, a worn blanket across his knees, pale winter light on the windowsill beside him."
+ },
+ "t255": {
+  "chars": [
+   "maggie_old",
+   "charles_old"
+  ],
+  "image": "Medium two-shot, Maggie standing with arms folded gently, honest and unyielding, Charles looking up at her from his chair, the window light between them, hushed."
+ },
+ "t256": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Medium shot of Maggie with a sad smile, looking at the winter window light, her hand resting on the chair back, aging faces of two old lives implied by the empty chair."
+ },
+ "t257": {
+  "chars": [
+   "charles_old"
+  ],
+  "image": "Insert close-up of Charles's thin hand holding out a small wooden box, the lid open to reveal a polished brass screw on faded velvet, window light glinting on it."
+ },
+ "t258": {
+  "chars": [],
+  "image": "Insert close-up of a sewing drawer with spools of thread and a small empty indentation in the fabric lining, a man's hand closing the drawer, soft old light, 1950s."
+ },
+ "t259": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Close-up of the brass screw resting in Maggie's open palm, her fingers curling around it, soft winter light, the lines of her hand and her narrow ring in focus."
+ },
+ "t260": {
+  "chars": [
+   "rebecca",
+   "maggie_old"
+  ],
+  "image": "Medium shot in Rebecca's office: Rebecca holding out a sealed old envelope with illegible handwriting, Maggie reaching for it, grey light through the window, a cardboard box of papers beside them."
+ },
+ "t261": {
+  "chars": [],
+  "image": "Close-up of an elderly woman's wrinkled hands writing a letter with a fountain pen by lamplight in 1981, writing not legible, a cold cup of tea beside it."
+ },
+ "t262": {
+  "chars": [],
+  "image": "Medium shot from behind of an elderly woman in a burgundy coat sitting in a parked 1960s car across from a school, watching a dark-haired teenage girl walk away in the distance."
+ },
+ "t263": {
+  "chars": [],
+  "image": "Insert close-up of the final lines of a handwritten letter on yellowed paper, ink slightly faded, writing not legible, a worn pen on the desk, lamplight."
+ },
+ "t264": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Medium shot of Maggie at her cottage table with the unmailed letter in her hands, a cold cup of tea, the window dark with early evening, a long, still silence."
+ },
+ "t265": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Close-up of Maggie lifting her gaze from the letter, eyes shining, a faint understanding easing her face, soft lamplight, window light turning to dusk behind her."
+ },
+ "t266": {
+  "chars": [
+   "laura",
+   "rose",
+   "daniel_old"
+  ],
+  "image": "Wide shot of a crowded Thanksgiving table at Laura's house, laden with dishes and flowers, children's blurred figures laughing, warm golden light, a lively and noisy family scene."
+ },
+ "t267": {
+  "chars": [],
+  "image": "Wide shot of an empty armchair by a rain-dark window in a quiet room, a folded blanket on its seat, winter February light, stillness and absence."
+ },
+ "t268": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Medium shot of Maggie seated at the back of a small church, alone by the aisle, the front pews blurred in the distance, soft light through plain windows, calm and free."
+ },
+ "t269": {
+  "chars": [
+   "rose",
+   "maggie_old"
+  ],
+  "image": "Medium shot at Laura's front door in November: Rose stepping in nervously with a coat on her arm, Maggie greeting her, warm hallway light, a mix of nerves and welcome."
+ },
+ "t270": {
+  "chars": [
+   "rose",
+   "laura"
+  ],
+  "image": "Wide shot of Laura's living room with a long table in the next room, Rose and Laura hanging coats, smiling nervously, the glow of a holiday home, children moving in the background."
+ },
+ "t271": {
+  "chars": [
+   "daniel_old"
+  ],
+  "image": "Medium shot in a warm kitchen: Daniel proudly carrying a lopsided pie, Laura's youngest son, a small boy, looking at it skeptically, Daniel laughing with tears on his cheeks."
+ },
+ "t272": {
+  "chars": [
+   "maggie_old",
+   "rose",
+   "laura"
+  ],
+  "image": "Medium shot at the table after dinner: Rose raising a camera and asking, Laura and Maggie turning toward her, warm light, the conversation easing, a held breath."
+ },
+ "t273": {
+  "chars": [
+   "rose",
+   "laura",
+   "maggie_old"
+  ],
+  "image": "Wide shot of Laura, Maggie, Rose and Daniel arranging themselves in front of a window, Rose gently taking Daniel's hand, afternoon light spilling, a family forming awkwardly and tenderly."
+ },
+ "t274": {
+  "chars": [],
+  "image": "Insert shot of a camera flash caught in a window pane, a burst of white light over a crowd of blurred figures, overexposed glow, a held, fragile moment."
+ },
+ "t275": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Medium shot of Maggie placing a plain wooden-framed family photograph on a cottage mantel, soft lamp light, her smile quiet and satisfied, the mantel otherwise bare."
+ },
+ "t276": {
+  "chars": [],
+  "image": "Insert close-up of the back of a plain wooden frame on a mantel with nothing behind it, a flat clean backing, Maggie's hand gently tapping it, soft lamp light."
+ },
+ "t277": {
+  "chars": [
+   "maggie_old",
+   "daniel_old"
+  ],
+  "image": "Wide shot of Maggie and Daniel on the repainted pedestrian bridge in spring, green hills and blossoms below, a freight train passing beneath, their silhouettes in soft light."
+ },
+ "t278": {
+  "chars": [
+   "daniel_old",
+   "maggie_old"
+  ],
+  "image": "Medium two-shot leaning on the bridge rail, Daniel asking quietly, Maggie looking toward the valley with a thoughtful smile, spring light, a distant train."
+ },
+ "t279": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Close-up of Maggie speaking, wind in her white hair, spring leaves out of focus behind her, her face serene and thoughtful, light of the valley below."
+ },
+ "t280": {
+  "chars": [
+   "laura",
+   "rose"
+  ],
+  "image": "Medium wide shot of Laura and Rose seen from behind laughing in a sunlit garden, a child running past, flowering shrubs, warm afternoon, the vibrancy of lives lived."
+ },
+ "t281": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Insert close-up of Maggie's hand holding a small framed photograph of her family, spring light on the glass, her thumb tracing the edge, gentle gratitude."
+ },
+ "t282": {
+  "chars": [
+   "daniel_old",
+   "maggie_old"
+  ],
+  "image": "Insert close-up of Daniel's hand taking the brass screw from Maggie's palm, both older hands touching, spring light, the bridge rail blurred behind them."
+ },
+ "t283": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Medium shot of a small cottage kitchen table set for supper for two, a pot of soup and a pair of bowls, Maggie smiling to herself in the glow of a Tuesday evening lamp."
+ },
+ "t284": {
+  "chars": [
+   "maggie_old",
+   "daniel_old"
+  ],
+  "image": "Wide shot of Maggie and Daniel walking slowly off the bridge together in gentle spring light, seen from behind, the railway tracks gleaming below, unhurried and companionable."
+ },
+ "t285": {
+  "chars": [],
+  "image": "Insert shot of two coffee cups on a small cafe table in sunlight, a pair of hands in the corner of frame about to meet, light morning mood, a gentle new beginning."
+ },
+ "t286": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Medium shot of Maggie at her cottage window with a book in her hand, late afternoon sun, an open page, her face reflective and calm, soft dust motes."
+ },
+ "t287": {
+  "chars": [],
+  "image": "Insert close-up of an old book with pages being turned by an aged hand, the edge of a torn page visible, golden light, the ink on the paper blurred and not legible."
+ },
+ "t288": {
+  "chars": [],
+  "image": "Insert close-up of an empty wooden mantel with a faint pale rectangle where a photograph used to stand, dust motes in a shaft of light, the quiet of recovered time."
+ },
+ "t289": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Quiet wide shot of Maggie in a garden bench at dusk with her hands folded, looking at the horizon, a gentle breeze moving the trees, the air soft and bittersweet."
+ },
+ "t290": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Wide shot of Maggie, small and upright, walking across the old pedestrian bridge at golden hour, the valley and railway spread below, a freight train in the distance."
+ },
+ "t291": {
+  "chars": [],
+  "image": "Insert close-up of a yellowed envelope resting on a wooden table in a shaft of sunlight, dust motes, handwritten name faintly visible but not legible, the quiet of a long-awaited arrival."
+ },
+ "t292": {
+  "chars": [
+   "maggie_old"
+  ],
+  "image": "Close-up of Maggie's hand writing a reply at her cottage table, a fresh sheet of paper and pen mid-stroke, warm morning sun through the window, a calm and decisive tone."
+ }
+}

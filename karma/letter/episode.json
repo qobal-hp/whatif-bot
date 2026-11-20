@@ -1,0 +1,4510 @@
+{
+ "title": "Karma Tales - The Letter That Never Came",
+ "voices": {
+  "NARRATOR": "id:XHyGEEXDSpWQ3Yc8VlsJ",
+  "MAGGIE": "id:XHyGEEXDSpWQ3Yc8VlsJ",
+  "CHARLES": "id:a8cgM0zKDg7aTA2vJNFj"
+ },
+ "cast": {
+  "maggie_young": "karma/cast/letter/maggie_young.jpg",
+  "maggie_old": "karma/cast/letter/maggie_old.jpg",
+  "daniel_young": "karma/cast/letter/daniel_young.jpg",
+  "maggie_mid": "karma/cast/letter/maggie_mid.jpg",
+  "daniel_old": "karma/cast/letter/daniel_old.jpg",
+  "charles_young": "karma/cast/letter/charles_young.jpg",
+  "charles_mid": "karma/cast/letter/charles_mid.jpg",
+  "charles_old": "karma/cast/letter/charles_old.jpg",
+  "eleanor": "karma/cast/letter/eleanor.jpg",
+  "laura_child": "karma/cast/letter/laura_child.jpg",
+  "laura": "karma/cast/letter/laura.jpg",
+  "rose": "karma/cast/letter/rose.jpg",
+  "ruth_mid": "karma/cast/letter/ruth_mid.jpg",
+  "ruth_old": "karma/cast/letter/ruth_old.jpg",
+  "helen": "karma/cast/letter/helen.jpg",
+  "rebecca": "karma/cast/letter/rebecca.jpg",
+  "joseph": "karma/cast/letter/joseph.jpg",
+  "edith": "karma/cast/letter/edith.jpg"
+ },
+ "portraits": {
+  "maggie_mid": "Photorealistic 35mm film portrait, head and shoulders, soft natural window light, plain muted background, looking slightly off camera, period-accurate, a 45-year-old American woman in 1970, auburn wavy shoulder-length hair with a few grey strands, freckles, warm hazel eyes, small pearl earrings, modest cardigan, a librarian.",
+  "daniel_old": "Photorealistic 35mm film portrait, head and shoulders, soft natural window light, plain muted background, looking slightly off camera, period-accurate, a 71-year-old American man in 1996, tall and lean, thick white curly hair, deep brown eyes, weathered kind face, dark wool coat, retired railway engineer.",
+  "charles_young": "Photorealistic 35mm film portrait, head and shoulders, soft natural window light, plain muted background, looking slightly off camera, period-accurate, a 31-year-old American man in 1952, broad jaw, neatly combed sandy blond hair, pale grey eyes, tailored charcoal three-piece suit, polished banker's son, faint confident smile.",
+  "charles_mid": "Photorealistic 35mm film portrait, head and shoulders, soft natural window light, plain muted background, looking slightly off camera, period-accurate, a 55-year-old American man in 1975, broad jaw, sandy hair turning silver and neatly combed, pale grey eyes, tailored navy suit, successful small-town banker.",
+  "charles_old": "Photorealistic 35mm film portrait, head and shoulders, soft natural window light, plain muted background, looking slightly off camera, period-accurate, a 75-year-old American man in 1996, broad jaw now gaunt, thin silver hair, pale grey eyes, frail and ill, beige cardigan over a collared shirt.",
+  "eleanor": "Photorealistic 35mm film portrait, head and shoulders, soft natural window light, plain muted background, looking slightly off camera, period-accurate, a 53-year-old American woman in 1952, narrow stern face, severe silver hair in a tight bun, burgundy high-collared dress, thin lips, anxious eyes.",
+  "laura_child": "Photorealistic 35mm film portrait, head and shoulders, soft natural window light, plain muted background, looking slightly off camera, period-accurate, a 12-year-old American girl in 1965, chestnut hair in a ponytail, brown eyes, plaid school dress.",
+  "laura": "Photorealistic 35mm film portrait, head and shoulders, soft natural window light, plain muted background, looking slightly off camera, period-accurate, a 43-year-old American woman in 1996, chestnut shoulder-length hair, brown eyes, determined chin, practical oatmeal cardigan, school counselor.",
+  "rose": "Photorealistic 35mm film portrait, head and shoulders, soft natural window light, plain muted background, looking slightly off camera, period-accurate, a 43-year-old American woman in 1997, dark wavy hair, brown eyes, determined chin, soft green sweater, music teacher.",
+  "ruth_mid": "Photorealistic 35mm film portrait, head and shoulders, soft natural window light, plain muted background, looking slightly off camera, period-accurate, a 49-year-old American woman in 1974, short dark hair, fine delicate features, conservative navy dress, worried eyes.",
+  "ruth_old": "Photorealistic 35mm film portrait, head and shoulders, soft natural window light, plain muted background, looking slightly off camera, period-accurate, a 71-year-old American woman in 1996, short dark hair gone mostly grey, fine features, navy cardigan, frightened gentle eyes.",
+  "helen": "Photorealistic 35mm film portrait, head and shoulders, soft natural window light, plain muted background, looking slightly off camera, period-accurate, a 68-year-old Black American woman in 1996, tightly curled silver hair, precise composed manner, reading glasses on a chain, lavender blouse, retired nurse.",
+  "rebecca": "Photorealistic 35mm film portrait, head and shoulders, soft natural window light, plain muted background, looking slightly off camera, period-accurate, a 49-year-old American woman attorney in 1996, dark cropped hair, understated charcoal suit, calm compassionate eyes.",
+  "joseph": "Photorealistic 35mm film portrait, head and shoulders, soft natural window light, plain muted background, looking slightly off camera, period-accurate, a small weary American man of 50 in 1952, wire-framed spectacles, thinning hair, white hospital clerk's coat.",
+  "edith": "Photorealistic 35mm film portrait, head and shoulders, soft natural window light, plain muted background, looking slightly off camera, period-accurate, a 25-year-old American woman in 1952, cheerful round face, brown hair in a scarf, flour-dusted apron, baker."
+ },
+ "looks": {
+  "maggie_young": "Maggie (the young woman from her reference photo: auburn wavy curls, freckles, red lipstick, 1950s cotton dress)",
+  "maggie_mid": "Maggie (the middle-aged woman from her reference photo)",
+  "maggie_old": "Maggie (the elderly woman from her reference photo: grey curly hair, pearl earrings, brown knit cardigan)",
+  "daniel_young": "Daniel (the young man from his reference photo: dark curly hair, work shirt with suspenders)",
+  "daniel_old": "Daniel (the elderly man from his reference photo: white curly hair, dark coat)",
+  "charles_young": "Charles (the man from his reference photo, in a tailored suit)",
+  "charles_mid": "Charles (the man from his reference photo, in a tailored suit)",
+  "charles_old": "Charles (the frail old man from his reference photo, in a cardigan)",
+  "eleanor": "Eleanor (the stern woman from her reference photo, burgundy dress, silver bun)",
+  "laura_child": "young Laura (the girl from her reference photo)",
+  "laura": "Laura (the woman from her reference photo, cardigan)",
+  "rose": "Rose (the woman from her reference photo)",
+  "ruth_mid": "Ruth (the woman from her reference photo, navy dress)",
+  "ruth_old": "Ruth (the elderly woman from her reference photo, navy cardigan)",
+  "helen": "Helen (the woman from her reference photo)",
+  "rebecca": "Rebecca (the attorney from her reference photo, charcoal suit)",
+  "joseph": "Joseph (the man from his reference photo, wire spectacles)",
+  "edith": "Edith (the young woman from her reference photo, apron)"
+ },
+ "style": "Photorealistic still from a prestige American period drama film, shot on 35mm, warm cinematic lighting, shallow depth of field, natural skin texture, wide 16:9 frame. Keep every person's face and hair exactly consistent with their reference photo. No text, no captions, no readable writing, no watermark. ",
+ "resolution": "2K",
+ "music": [
+  [
+   "t001",
+   "tension"
+  ],
+  [
+   "t012",
+   "wonder"
+  ],
+  [
+   "t050",
+   "tension"
+  ],
+  [
+   "t094",
+   "wonder"
+  ],
+  [
+   "t124",
+   "tension"
+  ],
+  [
+   "t156",
+   "wonder"
+  ],
+  [
+   "t179",
+   "tension"
+  ],
+  [
+   "t199",
+   "wonder"
+  ],
+  [
+   "t236",
+   "tension"
+  ],
+  [
+   "t266",
+   "wonder"
+  ]
+ ],
+ "places": {},
+ "ambiences": {
+  "rain": [
+   "Steady rain against old house windows at night, quiet room, faint clock ticking",
+   0.08
+  ],
+  "library": [
+   "Quiet old library room tone, creaking floorboards, a distant freight train passing",
+   0.06
+  ],
+  "house": [
+   "Quiet 1950s house interior room tone, a clock ticking softly",
+   0.05
+  ],
+  "hospital": [
+   "Quiet hospital corridor room tone, distant footsteps and murmurs",
+   0.05
+  ],
+  "office": [
+   "Quiet office room tone, faint radiator hum",
+   0.05
+  ],
+  "outdoors": [
+   "Gentle outdoor breeze, distant birds, faraway train",
+   0.06
+  ]
+ },
+ "ambience": [
+  [
+   "t001",
+   "rain"
+  ],
+  [
+   "t012",
+   "library"
+  ],
+  [
+   "t024",
+   "house"
+  ],
+  [
+   "t059",
+   "hospital"
+  ],
+  [
+   "t068",
+   "house"
+  ],
+  [
+   "t124",
+   "rain"
+  ],
+  [
+   "t156",
+   "office"
+  ],
+  [
+   "t170",
+   "house"
+  ],
+  [
+   "t199",
+   "outdoors"
+  ],
+  [
+   "t236",
+   "office"
+  ],
+  [
+   "t266",
+   "house"
+  ]
+ ],
+ "tail": 3.0,
+ "scenes": [
+  {
+   "id": "t001",
+   "chars": [
+    "maggie_old",
+    "charles_old"
+   ],
+   "image": "Medium two-shot in a dim 1996 sitting room, rain streaking the window. Maggie stands rigid over Charles, frail in his armchair by the window, lamplight low and amber, tense stillness.",
+   "lines": [
+    [
+     "MAGGIE",
+     "[quietly] I need you to tell me the truth."
+    ],
+    [
+     "CHARLES",
+     "[weakly] Maggie. Not tonight."
+    ],
+    [
+     "MAGGIE",
+     "[controlled] Forty-four years, Charles. You can give me five minutes."
+    ]
+   ],
+   "place": "",
+   "sfx": [
+    [
+     "Steady rain on old windows and a slow grandfather clock ticking in a quiet room",
+     4.0,
+     0.3,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "t002",
+   "chars": [
+    "charles_old",
+    "maggie_old"
+   ],
+   "image": "Close-up on Charles's alarmed face in lamplight as Maggie, in soft focus foreground, holds a yellowed envelope with handwriting not legible. Rain on the window behind him.",
+   "lines": [
+    [
+     "CHARLES",
+     "[alarmed] Where did you find that?"
+    ],
+    [
+     "MAGGIE",
+     "[shaking] Behind our wedding photograph. An envelope addressed to me. In Daniel's handwriting."
+    ]
+   ],
+   "place": "",
+   "motion": "Slow push in on Charles's alarmed face as rain streaks the window behind him, Maggie's hand holding the envelope trembles in the foreground"
+  },
+  {
+   "id": "t003",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Insert close-up of Maggie's trembling hands gripping the yellowed envelope, handwritten address not legible, a slight tear at the flap, warm lamplight, shallow depth of field.",
+   "lines": [
+    [
+     "CHARLES",
+     "[urgent] Put it away."
+    ],
+    [
+     "MAGGIE",
+     "[disbelieving] He wrote to me. You said he never did."
+    ],
+    [
+     "CHARLES",
+     "[strained] You don't understand."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t004",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Close-up of Maggie's face, eyes glistening, anger rising, lit by a single lamp; rain reflections slide across the dark window glass behind her.",
+   "lines": [
+    [
+     "MAGGIE",
+     "[rising anger] Then explain it. Did Daniel stop loving me?"
+    ],
+    [
+     "CHARLES",
+     "[barely audible] No."
+    ],
+    [
+     "MAGGIE",
+     "[stunned] Say that again."
+    ]
+   ],
+   "place": "",
+   "motion": "Slow push in on Maggie's face as her eyes fill, rain streaking the window glass behind her, lamplight flickering"
+  },
+  {
+   "id": "t005",
+   "chars": [
+    "charles_old"
+   ],
+   "image": "Close-up of Charles's face, hollow and breaking, half in shadow beside the rain-streaked window, his thin hand trembling on the chair arm.",
+   "lines": [
+    [
+     "CHARLES",
+     "[breaking] He never stopped."
+    ],
+    [
+     "MAGGIE",
+     "[whispering] Then why didn't he come back?"
+    ],
+    [
+     "CHARLES",
+     "[long pause] I went to see him. In Pittsburgh. At the hospital."
+    ]
+   ],
+   "place": "",
+   "motion": "Slow push in on Charles's face as he breaks, his lips trembling, rain running down the dark window behind him"
+  },
+  {
+   "id": "t006",
+   "chars": [
+    "maggie_old",
+    "charles_old"
+   ],
+   "image": "Wide shot of the 1996 sitting room at night: Maggie standing coldly in the center, Charles small and ashamed in his chair, the wedding photograph face-up on the mantel behind.",
+   "lines": [
+    [
+     "MAGGIE",
+     "[furious] You told me you'd never seen him."
+    ],
+    [
+     "CHARLES",
+     "[ashamed] I told him you'd chosen me."
+    ],
+    [
+     "MAGGIE",
+     "[coldly] What else did you tell him?"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t007",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Medium shot of Maggie, shattered but upright, one hand pressed to her chest, the mantel and framed wedding photograph blurred behind her, rain tapping the window.",
+   "lines": [
+    [
+     "CHARLES",
+     "[desperate] I told him you wanted him to leave you alone."
+    ],
+    [
+     "MAGGIE",
+     "[shattered] And you let me spend my life believing he abandoned me."
+    ],
+    [
+     "CHARLES",
+     "[tearful] I thought I could make you happy."
+    ]
+   ],
+   "place": "",
+   "motion": "Slow pull back from Maggie's shattered face to reveal the wedding photograph on the mantel behind her, her hand rising to her chest"
+  },
+  {
+   "id": "t008",
+   "chars": [
+    "maggie_old",
+    "charles_old"
+   ],
+   "image": "Over-the-shoulder shot past Charles's frail shoulder toward Maggie, steady and wary, the envelope lowered in her hand, cold blue window light against warm lamp glow.",
+   "lines": [
+    [
+     "MAGGIE",
+     "[steady] You made decisions that belonged to me."
+    ],
+    [
+     "CHARLES",
+     "[whispering] There's something else."
+    ],
+    [
+     "MAGGIE",
+     "[wary] What?"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t009",
+   "chars": [
+    "charles_old"
+   ],
+   "image": "Close-up of Charles whispering, tear-stained, terrified, his face lit from the side; a nearly empty teacup on the side table and rain-streaked glass out of focus behind.",
+   "lines": [
+    [
+     "CHARLES",
+     "[terrified] The little girl."
+    ],
+    [
+     "MAGGIE",
+     "[confused] What little girl?"
+    ],
+    [
+     "CHARLES",
+     "[almost inaudible] The one Daniel never knew about."
+    ],
+    [
+     "MAGGIE",
+     "[alarmed] Charles, Laura is forty-three. She isn't a little girl."
+    ]
+   ],
+   "place": "",
+   "motion": "Slow push in on Charles as he whispers, his eyes shining with terror, a faint flicker of lamplight on his face"
+  },
+  {
+   "id": "t010",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Slow close-up of Maggie's face going hollow, eyes wide, mouth slightly open, lamplight flickering, the sound of rain implied by droplets running down the dark window behind her.",
+   "lines": [
+    [
+     "CHARLES",
+     "[sobbing] I'm not talking about Laura."
+    ],
+    [
+     "MAGGIE",
+     "[hollow] Then who?"
+    ],
+    [
+     "CHARLES",
+     "[whispering] Her sister."
+    ]
+   ],
+   "place": "",
+   "motion": "Slow push in on Maggie's hollow face, her eyes widening, rain rippling down the window behind her, a single tear falling",
+   "sfx": [
+    [
+     "A grandfather clock's ticking suddenly stops, then silence",
+     2.0,
+     0.4,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "t011",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Wide shot through a rain-streaked window into the lamplit room where Maggie stands alone holding the envelope, the night outside deep blue; a sense of memory about to open.",
+   "lines": [
+    [
+     "NARRATOR",
+     "But to understand how we got here, I have to go back..."
+    ]
+   ],
+   "place": "",
+   "motion": "Slow pull back through the rain-streaked window as Maggie stands alone with the envelope, the lamplight dimming into a blue night glow",
+   "cut": true
+  },
+  {
+   "id": "t012",
+   "chars": [
+    "maggie_young"
+   ],
+   "image": "Medium shot of Maggie in 1952 reading at a sunlit library desk, dust motes in golden afternoon light, rows of shelves behind her, a quiet smile of contentment.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I was twenty-four in the summer of 1952, and I believed three things with absolute certainty. A good book could rescue almost any bad afternoon."
+    ]
+   ],
+   "place": "",
+   "overlay": {
+    "type": "text",
+    "text": "PART ONE|THE SUMMER BEFORE EVERYTHING CHANGED"
+   },
+   "cut": true
+  },
+  {
+   "id": "t013",
+   "chars": [
+    "maggie_young"
+   ],
+   "image": "Close-up insert of a worn library book open on a desk beside a pencil, a small pressed flower marking the page, warm summer window light, dreamy shallow focus.",
+   "lines": [
+    [
+     "NARRATOR",
+     "My mother would never approve of the man I loved. And Daniel Mercer would marry me before the first snow."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t014",
+   "chars": [],
+   "image": "Wide establishing shot of a small 1952 Pennsylvania town in a green valley, a railway line curving through the hills, white church steeple, steam from a distant train, golden summer light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Our Pennsylvania town sat between green hills and a railway line that seemed to run forever."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t015",
+   "chars": [],
+   "image": "Exterior of a 1952 brick public library with tall windows, freight train passing behind it, bakery across the street with glowing windows at dawn, soft morning mist, no readable signs.",
+   "lines": [
+    [
+     "NARRATOR",
+     "We had two churches, a bakery that smelled of cinnamon before dawn, and a public library where I worked among creaking floors and windows that trembled when the freight trains passed."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t016",
+   "chars": [
+    "maggie_young",
+    "eleanor"
+   ],
+   "image": "Medium two-shot in a 1952 parlor: Eleanor seated stiffly with sewing, Maggie standing by the door with a book against her chest, quiet disagreement, soft afternoon light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "My mother, Eleanor Bennett, considered the library a respectable place to wait for a husband. I considered it a place where a woman could discover how large the world was. Neither of us ever managed to convince the other."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t017",
+   "chars": [
+    "eleanor"
+   ],
+   "image": "Medium shot of Eleanor at a sewing machine in a modest 1950s kitchen, hands guiding cloth, a coin jar and ledger beside her, thin evening light through lace curtains.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Mother had raised me alone since my father died when I was thirteen. She took in sewing and counted every dollar twice."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t018",
+   "chars": [
+    "eleanor"
+   ],
+   "image": "Close-up of Eleanor's worn hands counting coins onto a wooden table beside a ledger, writing not legible, lamplight, quiet determination, shallow depth of field.",
+   "lines": [
+    [
+     "NARRATOR",
+     "She was brave in ways I didn't understand until I was much older, but she had mistaken financial security for the only kind of safety that mattered."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t019",
+   "chars": [
+    "charles_young"
+   ],
+   "image": "Medium shot of Charles in 1952, at a polished front door holding a bouquet of flowers, composed and charming, bright porch light, glancing to see who is watching.",
+   "lines": [
+    [
+     "NARRATOR",
+     "She wanted me to marry Charles Whitaker, the banker's son. Charles was thirty-one, with pale eyes, perfectly combed sandy hair, and a way of remembering every detail about people that made them feel important."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t020",
+   "chars": [
+    "charles_young"
+   ],
+   "image": "Wide shot of Charles on a small-town 1952 street opening a car door with a flourish, neighbors observing from porches, sunny afternoon, polished and aware.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He brought flowers, opened doors, and always knew who was watching."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t021",
+   "chars": [
+    "maggie_young",
+    "daniel_young"
+   ],
+   "image": "Close-up of Daniel's hand pressing a polished brass screw into Maggie's open palm, warm late-afternoon light, a locomotive blurred in the background, tender and playful.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Daniel brought me a brass screw from the first locomotive he'd repaired without supervision. He polished it until it shone, placed it in my palm, and said, \u201cKeep this until I can afford something better.\u201d"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t022",
+   "chars": [
+    "maggie_young"
+   ],
+   "image": "Medium close-up of Maggie laughing, the brass screw held up between finger and thumb, library shelves softly blurred behind her, golden light, amused disbelief.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I laughed and asked what a woman was supposed to do with a screw. He said, \u201cBuild a future, perhaps.\u201d"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t023",
+   "chars": [
+    "daniel_young"
+   ],
+   "image": "Medium shot of Daniel in 1952 working on a locomotive wiring panel in a railway yard, sleeves rolled, steam and sunbeams around him, gentle focused expression.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Daniel was tall and lean, with dark curls that never stayed combed and eyes that grew gentler when he listened. He worked as a railway electrician and sent money to the aunt who'd raised him."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t024",
+   "chars": [
+    "daniel_young"
+   ],
+   "image": "Quiet close-up of Daniel at a plain boardinghouse table writing a money order to his aunt, a single bare bulb overhead, modest room, dignified weariness.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He had very little money and a great deal of dignity."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t025",
+   "chars": [
+    "daniel_young",
+    "maggie_young"
+   ],
+   "image": "Medium shot at a library counter: Daniel returns a thick book, slightly sheepish, Maggie behind the desk suppressing a smile, creaking floorboards, afternoon sun through tall windows.",
+   "lines": [
+    [
+     "NARRATOR",
+     "We met when he came to the library for a book about electrical circuits. He returned it three days early and admitted he hadn't read it."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t026",
+   "chars": [
+    "maggie_young",
+    "daniel_young"
+   ],
+   "image": "Two-shot, Daniel leaning on the library counter, both smiling shyly at each other, the book between them, a freight train shaking the window light behind them.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He'd only wanted an excuse to see me again. It was a ridiculous confession, and I loved him for it."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t027",
+   "chars": [
+    "maggie_young",
+    "daniel_young"
+   ],
+   "image": "Wide shot of Maggie and Daniel on a peeling-paint pedestrian bridge over the railway tracks at sunset, the whole valley glowing gold below, a train approaching in the distance.",
+   "lines": [
+    [
+     "NARRATOR",
+     "On a June evening, Daniel took me to the pedestrian bridge over the railway tracks. The paint was peeling and the boards shook when a train passed, but from the middle you could see the whole valley lit by the setting sun."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t028",
+   "chars": [
+    "daniel_young"
+   ],
+   "image": "Medium shot of Daniel on the bridge in setting sunlight, serious and hopeful, reaching into his coat pocket for a small blue box, rails gleaming below.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He told me he'd been offered a better job in Pittsburgh. He'd leave in September, earn enough for an apartment, and send for me as soon as he could. Then he took a little blue box from his coat pocket."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t029",
+   "chars": [
+    "maggie_young"
+   ],
+   "image": "Insert close-up of a small open blue box holding a narrow gold ring with a modest oval stone, glinting in sunset light, Maggie's fingers touching the edge.",
+   "lines": [
+    [
+     "NARRATOR",
+     "The ring was narrow gold with a modest oval stone. He apologized that it wasn't grander. I told him it was the most beautiful thing I'd ever seen, because it came with a question I had been hoping he'd ask."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t030",
+   "chars": [
+    "maggie_young",
+    "daniel_young"
+   ],
+   "image": "Medium shot of Maggie and Daniel laughing, Daniel catching the ring just above a gap in the bridge boards, sunset sky behind them, joyful clumsy moment.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I said yes before he finished. We laughed so hard he almost dropped the ring through a gap in the bridge."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t031",
+   "chars": [
+    "maggie_young",
+    "daniel_young"
+   ],
+   "image": "Two-shot sitting on the bridge edge at dusk, Daniel sketching in the air with his hand, Maggie leaning into his shoulder, string of lit windows in the valley below.",
+   "lines": [
+    [
+     "NARRATOR",
+     "We spent the evening planning a kitchen with a sunny window, bookshelves he'd build himself, and children who would be free to become whoever they wished."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t032",
+   "chars": [
+    "maggie_young",
+    "daniel_young"
+   ],
+   "image": "Medium shot walking along a tree-lined street at dusk, Daniel holding a black umbrella on a clear evening, Maggie covering her smile, the Bennett house in the distance.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Daniel wanted to tell Mother in person. I warned him it would be like asking a thunderstorm for permission to have a picnic. He said he'd bring an umbrella."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t033",
+   "chars": [
+    "eleanor",
+    "charles_young",
+    "maggie_young"
+   ],
+   "image": "Wide shot of a 1952 parlor: Eleanor, Charles by the sofa with a forced smile, Maggie showing her ring, Sunday light through lace curtains, roast chicken aroma implied, awkward tension.",
+   "lines": [
+    [
+     "NARRATOR",
+     "At Sunday dinner, Mother served roast chicken and questions. Charles, whom she claimed had stopped by unexpectedly, was already in the parlor. He congratulated us when he saw the ring, but his smile reached neither of his eyes."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t034",
+   "chars": [
+    "daniel_young",
+    "eleanor"
+   ],
+   "image": "Medium shot across a dining table with roast chicken, Daniel earnest and calm facing Eleanor's stern questioning, her pencil poised over a notepad with illegible writing, warm lamplight.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Mother asked Daniel about wages, rent, children, and the price of groceries. He answered without losing his temper. He couldn't promise a mansion, he told her, but he could promise me a home where I would be respected."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t035",
+   "chars": [
+    "maggie_young",
+    "eleanor"
+   ],
+   "image": "Medium two-shot in a small 1950s kitchen, Eleanor turned away at the sink, Maggie standing firm with arms folded, a single hanging bulb, steam rising from a kettle.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Afterward, she took me into the kitchen and told me love didn't pay bills. I said I would rather be poor with Daniel than comfortable with a man I didn't love."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t036",
+   "chars": [
+    "eleanor"
+   ],
+   "image": "Close-up of Eleanor's hand striking a wooden kitchen table, a teacup rattling in its saucer, her stern face blurred beyond, low afternoon sunlight.",
+   "lines": [
+    [
+     "NARRATOR",
+     "She struck the table with her palm and said, \u201cOne day you'll understand that the person who saves your life isn't always the one who makes your heart beat faster.\u201d"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t037",
+   "chars": [
+    "eleanor",
+    "maggie_young"
+   ],
+   "image": "Quiet wide shot through a doorway: Eleanor alone at the kitchen table in half shadow, Maggie watching from the hall, the dim passage between them creating distance and unease.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I thought she meant Charles. I didn't yet know what she was willing to do to prove it."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t038",
+   "chars": [
+    "maggie_young",
+    "charles_young"
+   ],
+   "image": "Medium shot in the library: Charles offering a beautifully bound old book across the desk, Maggie politely refusing with a raised hand, tall windows, shafts of light and dust.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Two weeks later Charles came to the library carrying a rare edition of a novel I'd mentioned. I refused it. He said remarkable women deserved choices, then offered to help Daniel find a position closer to home through his father's business connections."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t039",
+   "chars": [
+    "charles_young"
+   ],
+   "image": "Close-up of Charles's pleasant expression turning cold for a moment, eyes flat, the library shelves out of focus behind him, hard side light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I told him Daniel had already chosen Pittsburgh. For a moment, Charles's pleasant expression vanished. He asked whether I was certain I knew everything about the man I intended to marry."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t040",
+   "chars": [
+    "charles_young"
+   ],
+   "image": "Insert shot of a rare old novel left alone on the library desk, soft evening light fading across its cover, a quiet unsettling stillness, footsteps leaving in the background.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Then he smiled again, wished me a good evening, and left the book behind."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t041",
+   "chars": [
+    "maggie_young",
+    "charles_young"
+   ],
+   "image": "Wide exterior of a grand 1950s Whitaker house; Maggie descends the steps with a book while Charles watches from an upstairs window, curtain slightly parted, morning light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I returned it the next morning. As I walked down the steps of the Whitaker house, I saw Charles watching from an upstairs window. He didn't wave."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t042",
+   "chars": [
+    "daniel_young"
+   ],
+   "image": "Medium shot in a railway office, Daniel facing a supervisor's desk, a paper with illegible writing pushed toward him, steam pipes and clock on wall, tense overhead lighting.",
+   "lines": [
+    [
+     "NARRATOR",
+     "By July Daniel was working longer shifts. Equipment had gone missing at the railway yard, maintenance records were being questioned, and his supervisor had asked him to sign a statement about work he hadn't performed."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t043",
+   "chars": [
+    "daniel_young"
+   ],
+   "image": "Close-up of Daniel shaking his head, pen set down beside an unsigned form, jaw set with quiet principle, grey office light, a stack of stalled paperwork.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Daniel refused. His transfer paperwork began to stall."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t044",
+   "chars": [
+    "daniel_young",
+    "maggie_young"
+   ],
+   "image": "Wide shot at night beneath a railway bridge, Daniel and Maggie in an urgent whispered talk, distant dance-hall lanterns glowing, shadows of iron girders overhead.",
+   "lines": [
+    [
+     "NARRATOR",
+     "At the August dance Charles told me he'd heard rumors about Daniel's reliability. Daniel saw us talking, took my hand, and led me outside. Beneath the railway bridge he explained the missing equipment and the pressure to sign false records."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t045",
+   "chars": [
+    "maggie_young",
+    "daniel_young"
+   ],
+   "image": "Medium shot of Maggie searching Daniel's face with worry beneath the bridge, lantern light on her cheek, a train rumbling above, uncertainty and unspoken suspicion.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I asked whether Charles was involved. Daniel said he couldn't prove it, but he'd seen Charles visiting the railway office twice."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t046",
+   "chars": [
+    "daniel_young"
+   ],
+   "image": "Medium close-up of Daniel in profile looking toward the dark railway yard, tired and worried, a signal lamp glowing red in the distance behind him.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He didn't want to accuse an innocent man, yet he feared someone was trying to drive him out of town without me."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t047",
+   "chars": [
+    "daniel_young",
+    "maggie_young"
+   ],
+   "image": "Medium shot at a gate in the evening: Daniel gently holding Maggie's hands, a packed suitcase at his feet, last light on the hills, tender promise.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He decided to go to Pittsburgh early and clear up his employment papers in person. He asked me to wait three weeks. Then he'd return, marry me, and take me away. I promised nothing would change my mind."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t048",
+   "chars": [
+    "maggie_young",
+    "daniel_young"
+   ],
+   "image": "Wide shot of a small 1952 railway platform, Maggie in a pale green dress holding a paper bag of sandwiches as Daniel boards a steam train, his hand pressed to the window.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Daniel left on August seventeenth, 1952. I wore a pale green dress and packed too many sandwiches for his journey. At the station he kissed me, climbed aboard, and pressed his hand against the window as the train pulled away."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t049",
+   "chars": [
+    "maggie_young"
+   ],
+   "image": "Medium shot of Maggie standing alone on the platform watching the last carriage curve away, steam drifting, her face calm and hopeful, golden late-summer light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I watched until the last carriage vanished beyond the bend. I wasn't crying. I believed I'd see him again before the leaves changed color."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t050",
+   "chars": [
+    "maggie_young"
+   ],
+   "image": "Medium shot of Maggie waiting at her front gate looking down an empty street, a stray cat on the porch rail behind her, autumn light, anticipation fading to worry.",
+   "lines": [
+    [
+     "NARRATOR",
+     "The first week passed without a letter. Then the second. By the third I was waiting at the gate for the postman. I wrote to the address Daniel had given me, describing the library and a stray cat on our porch."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t051",
+   "chars": [],
+   "image": "Insert close-up of a returned envelope with a rubber stamp and illegible markings, lying on a porch mat beside fallen leaves, soft autumn light, no readable writing.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Ten days later the envelope came back marked undeliverable."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t052",
+   "chars": [
+    "charles_young",
+    "eleanor"
+   ],
+   "image": "Wide shot of a porch in 1952 autumn: Charles holding white roses with a tight smile, Eleanor in the doorway, a young woman's silhouette in the hall beyond.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Mother suggested Daniel had changed his mind. Charles arrived with white roses and said a business acquaintance had seen Daniel with another woman. When I demanded a name, he called me ungrateful and left."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t053",
+   "chars": [
+    "charles_young"
+   ],
+   "image": "Close-up of Charles stopping on the porch steps, looking back over his shoulder with a calm unsettling expression, white roses wilting in his hand, dusk.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Before he stepped off the porch he said, \u201cSometimes the people we trust most are the ones who leave us waiting.\u201d"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t054",
+   "chars": [
+    "eleanor",
+    "maggie_young"
+   ],
+   "image": "Medium shot in a 1950s hallway: Eleanor, pale, takes a black rotary telephone receiver away from the table, glancing back at Maggie watching from the kitchen door.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Four days later our telephone rang after supper. Mother answered, glanced at me, and carried the receiver into the hall. She returned pale and called it a wrong number."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t055",
+   "chars": [
+    "maggie_young"
+   ],
+   "image": "Insert close-up of a scrap of paper beside a black rotary telephone, a handwritten phone number and a few words, not legible, Maggie's fingers reaching toward the dial, dim lamp.",
+   "lines": [
+    [
+     "NARRATOR",
+     "That night I found a scrap beside the telephone with a Pittsburgh number and three words in her handwriting: DO NOT CALL. I dialed before I could lose my nerve."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t056",
+   "chars": [
+    "maggie_young"
+   ],
+   "image": "Close-up of Maggie with a telephone receiver to her ear, eyes wide and listening, a dim hallway lamp casting a gold glow, shadow of the staircase behind her.",
+   "lines": [
+    [
+     "NARRATOR",
+     "A stranger answered. When I asked for Daniel Mercer, he said, \u201cMiss Bennett, I've been trying to reach you for days.\u201d"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t057",
+   "chars": [
+    "maggie_young"
+   ],
+   "image": "Medium shot of Maggie gripping the phone in the dark hallway, stunned, a thin line of light from the kitchen door spilling across the floor, held breath.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I asked who he was. He said his name was Joseph Kline, that he worked at a railway hospital, and that Daniel had been injured. Then he added something I would never forget."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t058",
+   "chars": [
+    "maggie_young"
+   ],
+   "image": "Close-up of Maggie's face lit by a single lamp, the receiver against her cheek, her eyes widening as the words land; her breath visible in the cold hallway.",
+   "lines": [
+    [
+     "NARRATOR",
+     "\u201cThere's been an accident,\u201d he said. \u201cBut I don't think it was an accident at all.\u201d"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t059",
+   "chars": [
+    "maggie_young"
+   ],
+   "image": "Interior of a 1952 intercity bus at dawn, Maggie by a rain-spotted window in a coat, countryside and mile markers passing, a damp wool-coated woman blurred beside her.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I took the earliest bus to Pittsburgh. I remember the stiff seat, the damp wool coat of the woman beside me, and how I counted every mile marker because I was afraid that if I stopped counting I would imagine Daniel dead."
+    ]
+   ],
+   "place": "",
+   "overlay": {
+    "type": "text",
+    "text": "PART TWO|THE PRICE OF SILENCE"
+   },
+   "cut": true
+  },
+  {
+   "id": "t060",
+   "chars": [
+    "joseph"
+   ],
+   "image": "Wide exterior of a large brick railway hospital in Pittsburgh in 1952, smoke-grey sky; Joseph, small and weary, waits near the steps in an overcoat, hands folded.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Joseph Kline met me outside the hospital. He was a small, weary man with wire-framed spectacles. He told me Daniel had suffered a head injury and a broken leg after a maintenance platform collapsed beneath him."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t061",
+   "chars": [],
+   "image": "Insert detail of a collapsed wooden maintenance platform in a railway shed seen at a distance, a lone dangling mechanism and a single missing pin, dusty shafts of light, eerie stillness.",
+   "lines": [
+    [
+     "NARRATOR",
+     "A safety pin had been removed from the mechanism. Nobody could say when or by whom."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t062",
+   "chars": [
+    "joseph"
+   ],
+   "image": "Medium shot of Joseph in a hospital corridor speaking gravely, his wire-rimmed spectacles catching light, a nurse blurred passing behind, institutional green walls, 1952.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Daniel had regained consciousness two days earlier. Joseph said he'd asked for me repeatedly. Then a visitor from our hometown had come, and afterward Daniel had stopped asking."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t063",
+   "chars": [
+    "maggie_young"
+   ],
+   "image": "Wide shot of an empty hospital bed with rumpled sheets and a folded blanket, grey morning light through a tall window, Maggie standing in the doorway, her small shape dwarfed.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I hurried to his room, only to find the bed empty. A nurse told me he'd been discharged that morning, against advice, and had left no forwarding address."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t064",
+   "chars": [
+    "maggie_young",
+    "joseph"
+   ],
+   "image": "Medium shot of Joseph handing Maggie a folded scrap of paper in a hospital hallway, her trembling fingers taking it, handwriting not legible, cold light from the windows.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Joseph showed me a note Daniel had left for him. It said, \u201cShe made her choice. Please don't trouble her.\u201d The handwriting was Daniel's. The conclusion was not."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t065",
+   "chars": [
+    "joseph"
+   ],
+   "image": "Insert close-up of an open hospital visitor book with ink entries, writing not legible, a finger resting on one line, warm desk lamp, wooden counter, 1952 details.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I asked what visitor had come. Joseph checked the visitor book. The signature was difficult to read, but the initials were unmistakable: C. W."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t066",
+   "chars": [
+    "maggie_young"
+   ],
+   "image": "Medium shot of Maggie at a hospital lobby pay phone, receiver against her ear, her face pinched with distress, tall windows and bustling blurred visitors behind.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I called home from the hospital lobby. Mother answered. When I told her where I was, she didn't ask about Daniel's injuries. She said, \u201cMargaret, come home before you make this worse.\u201d"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t067",
+   "chars": [
+    "maggie_young"
+   ],
+   "image": "Close-up of Maggie lowering the phone receiver into its cradle, eyes hard with new understanding, hospital lobby light cold and bluish, a clock on the wall behind.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I realized then that she had known about the accident. I asked how long. She said we'd talk when I returned. I hung up before she could tell me what to do."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t068",
+   "chars": [
+    "charles_young",
+    "eleanor"
+   ],
+   "image": "Wide shot of a 1952 parlor: Eleanor pouring tea for Charles who sits calmly on the sofa, an untouched tea tray between them, fire crackling, a feeling of staged courtesy.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Charles was waiting at our house when I got back. Mother had made tea, as though we were receiving guests rather than discussing a man who'd nearly died."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t069",
+   "chars": [
+    "maggie_young",
+    "charles_young"
+   ],
+   "image": "Medium shot across the tea table, Maggie leaning forward accusing, Charles composed, a teacup untouched between them, firelight and late afternoon window light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I told Charles I'd seen his initials in the hospital visitor book. He didn't deny going. He said Daniel had been distressed and that he had simply explained the situation honestly."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t070",
+   "chars": [
+    "charles_young"
+   ],
+   "image": "Close-up of Charles speaking smoothly with a measured expression, firelight on his face, his eyes watching someone out of frame, a faint smile.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I asked what situation. Charles said he'd told Daniel that Mother and I had discussed my future and that I intended to remain in town."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t071",
+   "chars": [
+    "maggie_young"
+   ],
+   "image": "Medium close-up of Maggie standing, her hand gripping her ring finger with the narrow gold ring, jaw tight, tall window light behind her, controlled anger.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He said Daniel had understood. I reminded him that I was engaged to Daniel, not Charles, and had never authorized anyone to speak for me."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t072",
+   "chars": [
+    "charles_young",
+    "maggie_young"
+   ],
+   "image": "Over-the-shoulder shot from behind Maggie to Charles, his voice hardening, the fireplace glow flickering on the wall, shadows lengthening in the parlor.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Charles's voice hardened. He said Daniel was unstable, his career ruined, and that I deserved better than a life spent waiting for a man who couldn't provide for me."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t073",
+   "chars": [
+    "eleanor"
+   ],
+   "image": "Close-up of Eleanor seated by the fireplace, hands folded in her lap, eyes lowered and avoiding the camera, flames reflecting in a brass fender, guilt visible.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Mother sat beside the fireplace with her hands folded, refusing to meet my eyes."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t074",
+   "chars": [
+    "maggie_young",
+    "eleanor"
+   ],
+   "image": "Wide shot of the Bennett parlor: Maggie standing at the doorway facing Eleanor in her chair, a long distance of wooden floor between them, rain on the window.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I asked her why she'd hidden the Pittsburgh telephone number. She said she'd been afraid I'd rush into danger. I told her I had already rushed into danger\u2014only it had been waiting in our own parlor."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t075",
+   "chars": [
+    "maggie_young",
+    "edith"
+   ],
+   "image": "Medium shot of Maggie and Edith at the back of a small bakery at dawn, flour on the table, Edith placing a cup of tea beside a suitcase, warm oven glow.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I packed a suitcase and went to stay with my friend Edith, who worked at the bakery. For three nights I slept on her narrow sofa and tried to find Daniel through the railway offices."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t076",
+   "chars": [
+    "maggie_young"
+   ],
+   "image": "Medium shot of Maggie facing a closed railway office door with frosted glass, a polite clerk's shadow behind it, grey corridor, her hand lifting to knock once more.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Every inquiry ended in a polite refusal or another address that led nowhere."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t077",
+   "chars": [
+    "maggie_young"
+   ],
+   "image": "Insert shot of a returned envelope on a narrow sofa beside a suitcase, markings not legible, Maggie's hand resting on it, thin morning light, small room at Edith's house.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I wrote to his aunt. Weeks later the letter came back. She had moved after a stroke, and nobody at the boardinghouse knew where she'd gone."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t078",
+   "chars": [
+    "maggie_young"
+   ],
+   "image": "Quiet wide shot of Maggie alone in a long empty railway station hall at dusk, rows of closed ticket windows and unlit lamps, her small figure lost in the space.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I began to understand how a person could disappear without vanishing at all: all it took was a few closed doors, a handful of lies, and no money to keep knocking."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t079",
+   "chars": [
+    "maggie_young"
+   ],
+   "image": "Medium shot of Maggie sitting on a bathroom floor in a small 1950s house holding a folded doctor's note, a pale window beside her, mixture of fear and quiet protectiveness.",
+   "lines": [
+    [
+     "NARRATOR",
+     "In September I discovered I was pregnant. I sat on the bathroom floor at Edith's house holding the doctor's note and feeling both terrified and fiercely protective."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t080",
+   "chars": [
+    "maggie_young"
+   ],
+   "image": "Insert close-up of two hands, one resting on a folded blanket over a flat stomach, a narrow gold ring on a finger, soft window light, tender stillness, no face.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Daniel and I had shared a night together before he left, certain we would soon be married. The child was his."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t081",
+   "chars": [
+    "maggie_young"
+   ],
+   "image": "Close-up of Maggie writing a letter at a kitchen table by lamplight, a stack of envelopes beside her, pen mid-stroke, writing not legible, rain on the window.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I tried again to locate him. I wrote to the hospital, to the railway, and to the last address I had for his aunt. I received no reply that led me to him."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t082",
+   "chars": [
+    "maggie_young"
+   ],
+   "image": "Wide shot of a 1952 small-town main street from Maggie's point of view, women whispering at a shop window, a figure in a coat walking alone with her head high, cold light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I was twenty-four, unmarried, and living in a town where people could turn a woman's life into a cautionary tale before she'd finished breakfast."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t083",
+   "chars": [
+    "eleanor",
+    "maggie_young"
+   ],
+   "image": "Medium two-shot in a dim kitchen: Eleanor weeping with a handkerchief, Maggie staring at her in stunned disbelief as hope sours, lamplight and winter dusk at the window.",
+   "lines": [
+    [
+     "NARRATOR",
+     "When Mother learned about the baby, she cried. For one moment I thought she'd finally understood what her interference had cost. Then she said Charles was willing to marry me."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t084",
+   "chars": [
+    "charles_young"
+   ],
+   "image": "Medium shot of Charles at the Bennett front door in the evening, hat in his hand, earnest and composed, porch lamp glowing, snow starting to fall.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I stared at her. She had told Charles before she had even told me. Charles appeared that evening and said he knew the baby wasn't his, but he would raise the child as his own and never speak of the past."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t085",
+   "chars": [
+    "charles_young",
+    "eleanor"
+   ],
+   "image": "Insert close-up of Charles placing an official-looking paper with illegible text on the kitchen table in front of Eleanor, her hands pressing a handkerchief, his hand firm and calm.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I said no. He didn't argue. Instead he arranged for the overdue mortgage payment on Mother's house to be covered, and he made sure I knew he had done it."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t086",
+   "chars": [
+    "maggie_young",
+    "charles_young"
+   ],
+   "image": "Close two-shot in profile, Maggie refusing eye contact, Charles patient with a tender smile, a half-empty cup of tea on the table, cold light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I asked whether kindness always arrived with a bill attached. He answered that love sometimes required practical decisions."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t087",
+   "chars": [
+    "maggie_young",
+    "eleanor"
+   ],
+   "image": "Medium shot of Maggie in a plain dress by a snowy window, Eleanor in bed in the background, a cold winter morning, her face resigned and exhausted.",
+   "lines": [
+    [
+     "NARRATOR",
+     "By November, with winter coming and Mother unwell, I agreed to marry him. I didn't love him. I was exhausted, afraid, and ashamed that I couldn't find a way to protect my baby without surrendering the future I'd wanted."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t088",
+   "chars": [
+    "maggie_young",
+    "charles_young"
+   ],
+   "image": "Insert shot of a black and white wedding photograph in a silver frame on a mantel, Charles smiling, Maggie gazing slightly past the camera; the figures small and soft focus.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Our wedding was small. In the photograph, Charles is smiling and I am looking slightly past the camera. For forty-four years that photograph sat on our mantelpiece. I never guessed what he would one day hide behind it."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t089",
+   "chars": [
+    "maggie_young",
+    "charles_young"
+   ],
+   "image": "Medium shot in a candlelit bedroom on a wedding night, Maggie in white sitting stiff on the edge of the bed, Charles standing apologetic, long shadows on the walls.",
+   "lines": [
+    [
+     "NARRATOR",
+     "On our wedding night Charles confessed that he'd intercepted one letter Daniel had sent to Mother's house in September. He said he'd destroyed it because it would only prolong my suffering."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t090",
+   "chars": [
+    "maggie_young"
+   ],
+   "image": "Close-up of Maggie's face raw with fury and tears, lamp glow on her cheek, her hand clenching the bedspread, the shape of Charles blurred in the dark doorway.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I screamed at him until my voice gave out. He promised there would be no more secrets."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t091",
+   "chars": [
+    "maggie_young"
+   ],
+   "image": "Medium shot of Maggie alone by a dark window, her hand pressed to her stomach, snow falling outside, her expression shifting from anger to astonished tenderness.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I nearly left. Then I felt the baby move for the first time, a tiny flutter that seemed to ask me what sort of world I intended to bring her into."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t092",
+   "chars": [
+    "maggie_young"
+   ],
+   "image": "Wide shot of Maggie at a kitchen door in early morning with a suitcase beside her, hand on the doorknob, undecided, thin light spilling across the floor.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I stayed, not because I forgave him, but because I couldn't yet imagine how to leave."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t093",
+   "chars": [],
+   "image": "Insert close-up of the back of a framed wedding photograph on a mantel, a thin edge of yellowed envelope barely visible between the backing paper and frame, dim lamp light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I did not know that the letter he admitted destroying was not the only letter. Nor did I know that the greatest lie was still waiting to be told."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t094",
+   "chars": [
+    "maggie_young"
+   ],
+   "image": "Medium shot in a 1953 doctor's office: a doctor with a stethoscope bends beside an exam table, Maggie lying back with an amazed half-laugh, soft daylight through frosted glass.",
+   "lines": [
+    [
+     "NARRATOR",
+     "In February 1953, the doctor listened to my abdomen for a long time. He asked whether twins ran in my family. I laughed because I thought he was joking. Then he let me hear two distinct heartbeats."
+    ]
+   ],
+   "place": "",
+   "overlay": {
+    "type": "text",
+    "text": "PART THREE|THE CHILDREN OF MAY"
+   },
+   "cut": true
+  },
+  {
+   "id": "t095",
+   "chars": [
+    "charles_young",
+    "maggie_young"
+   ],
+   "image": "Medium shot in a 1953 living room, Charles bent over a ledger with a worried frown, Maggie by the window with a hand on her rounded belly, spring light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I left the office feeling as though the world had quietly doubled. Charles was delighted in public. At home, he asked anxious questions about expenses and how difficult the birth might be."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t096",
+   "chars": [
+    "charles_young"
+   ],
+   "image": "Medium shot of Charles at a desk, telephone in hand, calmly arranging things, a railway timetable and a map of counties with illegible markings, his gaze cool and in control.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He told me the hospital in the next county was better equipped, and he arranged everything without asking whether I wanted to go there."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t097",
+   "chars": [
+    "charles_young",
+    "maggie_young"
+   ],
+   "image": "Medium shot of Charles bringing a tray of soup to Maggie in bed, setting it carefully on her lap, genuine tenderness in the dim bedroom lamp light, a warm and ambiguous moment.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I thought his fussing was the clumsy affection of a man trying to make a marriage work. In those months he brought me soup when I was sick, rubbed my swollen feet, and read aloud when I couldn't sleep."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t098",
+   "chars": [
+    "charles_young"
+   ],
+   "image": "Close-up of Charles gently rubbing Maggie's swollen feet in lamplight, her feet only partially visible, his face kind and absorbed, a quiet domestic scene with an unsettling undertone.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Those memories are real. That is one of the hardest things about what happened: a person can be gentle in one moment and monstrous in another."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t099",
+   "chars": [
+    "maggie_young"
+   ],
+   "image": "Subjective hospital shot: blurred bright ceiling lights, nurses in white caps leaning in, Maggie's strained face in soft focus, a sense of effort and dizziness, antiseptic cold light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "On May twenty-third, I went into labor before dawn. The delivery was long and frightening. I remember bright lights, the smell of antiseptic, a nurse telling me to breathe, and then a thin, wonderful cry."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t100",
+   "chars": [
+    "maggie_young"
+   ],
+   "image": "Close-up of Maggie, drained, head heavy on a hospital pillow, her eyes struggling to focus on a blurred shape of a nurse, pale white room light, rising worry.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Someone said, \u201cA girl.\u201d A little later I heard another cry. I tried to lift my head, but the room swam. I asked whether both babies were all right. A voice told me to rest."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t101",
+   "chars": [
+    "charles_young",
+    "maggie_young"
+   ],
+   "image": "Medium shot beside a hospital bed: Charles seated and wiping his wet face, Maggie weakly looking at him, the swaddled bundle visible in a bassinet far in the background.",
+   "lines": [
+    [
+     "NARRATOR",
+     "When I woke, Charles sat beside the bed. His face was wet. He said one of the girls had not survived. The other was healthy and would be brought to me soon."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t102",
+   "chars": [
+    "maggie_young"
+   ],
+   "image": "Medium close-up of Maggie weeping, reaching one hand toward an empty space beside the hospital bed, a closed door at the end of the room, grey afternoon light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I asked to see the baby who had died. He said the hospital had already taken care of the arrangements. I begged him to tell me her name."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t103",
+   "chars": [
+    "maggie_young"
+   ],
+   "image": "Insert shot of a hospital windowsill with a single rose in a glass of water, rain on the pane, light soft and grey, Maggie's reflection faintly visible.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He said we hadn't chosen one yet. I named her Rose because Daniel once said roses looked strongest after rain."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t104",
+   "chars": [
+    "maggie_young"
+   ],
+   "image": "Medium shot of Maggie holding a small swaddled bundle against her chest, seen from a distance by a window, soft golden light, the baby's face hidden in the blanket.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Our surviving daughter was Laura. She had Daniel's brown eyes and a determined little chin. I held her against my chest and loved her with a force that frightened me."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t105",
+   "chars": [],
+   "image": "Insert shot of an empty hospital bassinet with a folded white blanket, a tiny knit cap beside it, soft shaft of light through a window, absence and quiet grief.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I also grieved a child whose face I had never been allowed to see."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t106",
+   "chars": [
+    "charles_mid",
+    "laura_child"
+   ],
+   "image": "Wide shot in a sunlit 1960s backyard, Charles jogging beside a small bicycle with a child seen from behind, wobbling off ahead, joyful afternoon light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Charles became a devoted father to Laura. He taught her to ride a bicycle, sat through school plays, and kept every crooked drawing she made. She called him Daddy without hesitation. I never corrected her."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t107",
+   "chars": [
+    "maggie_mid"
+   ],
+   "image": "Medium shot of Maggie in a large 1959 house with tall windows, a garden beyond, arranging books on a shelf, Eleanor's silhouette seated in the parlor out of focus.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I returned to library work when Laura was six. Charles had moved us into a larger house with tall windows and a garden. Mother visited every Sunday and spoke often of how fortunate I'd been to marry a generous man."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t108",
+   "chars": [
+    "maggie_mid"
+   ],
+   "image": "Insert close-up of two flowers on a windowsill, one in a small vase, petals softly dropping, morning light, a hand withdrawing out of frame, quiet ritual.",
+   "lines": [
+    [
+     "NARRATOR",
+     "We never discussed Daniel. We never discussed the letter. We spoke of Rose only on the anniversary of her birth, when I placed two flowers on the windowsill and left one there until its petals fell."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t109",
+   "chars": [
+    "maggie_mid"
+   ],
+   "image": "Medium shot of Maggie asleep in a bed, restless, her hand clutching the sheet; faint blurred shapes and overlapping light suggest two distant baby cries, dim blue night light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Sometimes I dreamed of the delivery room. I would hear two babies crying, then wake to the sound of only one. Charles told me grief could make memory unreliable. I believed him because the alternative was too frightening to consider."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t110",
+   "chars": [
+    "maggie_mid"
+   ],
+   "image": "Insert close-up of a tiny hospital bracelet in a jewelry box, a date and number only, a child's small hand hovering above it, soft sunlit bedroom, 1965.",
+   "lines": [
+    [
+     "NARRATOR",
+     "When Laura was twelve, she found a small hospital bracelet in my jewelry box. It had no name, only a date and a number. I told her it belonged to her sister."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t111",
+   "chars": [
+    "laura_child"
+   ],
+   "image": "Medium shot from behind of a small child sitting on a bedroom floor in soft window light, holding something precious in cupped hands, a jewelry box beside her.",
+   "lines": [
+    [
+     "NARRATOR",
+     "She held it with the solemn care children reserve for things they know adults cannot bear to explain."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t112",
+   "chars": [
+    "laura_child",
+    "maggie_mid"
+   ],
+   "image": "Over-the-shoulder shot from behind Laura, a small child, looking up at Maggie seated on the bed with a gentle sad smile, soft afternoon light, quiet intimacy.",
+   "lines": [
+    [
+     "NARRATOR",
+     "She asked whether Rose would have looked like her. I said I thought so. Laura placed the bracelet back in its box and said, \u201cThen I wish I could have known her.\u201d"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t113",
+   "chars": [
+    "maggie_mid"
+   ],
+   "image": "Close-up of Maggie, eyes glistening and a faint smile, looking toward the bedroom window with warm afternoon light, a faint memory of loss in her expression.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I did too. More than she could imagine."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t114",
+   "chars": [],
+   "image": "Wide shot of a 1974 suburban front gate on a warm spring afternoon, a woman with short dark hair seen from far behind, standing still before the gate, a neighbor glancing from a distant yard.",
+   "lines": [
+    [
+     "NARRATOR",
+     "In 1974 a woman came to our front gate while I was at work. Our neighbor later mentioned a visitor with short dark hair who had stood there for a long time before leaving. Charles said it was a saleswoman."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t115",
+   "chars": [
+    "charles_mid"
+   ],
+   "image": "Medium shot of Charles in an evening living room lifting the framed wedding photograph from the mantel, wiping its glass with a cloth, his expression tight, lamplight low.",
+   "lines": [
+    [
+     "NARRATOR",
+     "That evening he was unusually quiet. He took our wedding photograph from the mantel, wiped the glass, and set it back. I remember teasing him that he'd finally noticed the dust. He didn't laugh."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t116",
+   "chars": [
+    "charles_mid"
+   ],
+   "image": "Medium shot of Charles crouched at a fireplace feeding papers into small flames on a warm night, the room dim, a window open behind him, his face lit orange.",
+   "lines": [
+    [
+     "NARRATOR",
+     "A week later I found him burning papers in the fireplace though the weather was warm. He said they were old bank records."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t117",
+   "chars": [
+    "maggie_mid"
+   ],
+   "image": "Medium shot of Maggie in the doorway looking at Charles's back by the fireplace and then turning away, choosing not to ask, a hallway lamp casting long shadows.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I didn't look closely. By then I had learned to protect the fragile peace of our house by not asking certain questions."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t118",
+   "chars": [
+    "maggie_mid"
+   ],
+   "image": "Insert shot of a bundle of returned envelopes tied with string among Eleanor's belongings in an open cardboard box, markings illegible, dusty light from an attic window, 1981.",
+   "lines": [
+    [
+     "NARRATOR",
+     "In 1981 Mother died. Among her belongings I found a bundle of returned envelopes addressed to Daniel's old railway lodging. None had been opened."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t119",
+   "chars": [
+    "maggie_mid"
+   ],
+   "image": "Close-up of Maggie, now in mid-age, holding the bundle of unopened envelopes, a mix of ache and resignation, dim attic light on her face, dust motes drifting.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I felt a familiar ache and told myself she'd kept them because she had been too ashamed to throw them away."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t120",
+   "chars": [
+    "maggie_mid"
+   ],
+   "image": "Insert close-up of a faded paper receipt in Maggie's fingers, numbers with a crossed-out line, illegible text, warm lamp on a wooden table, cardboard box beside it.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I also found a receipt for a payment made to a private maternity clinic in May 1953. The amount was large, and the account number had been crossed out."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t121",
+   "chars": [
+    "maggie_mid",
+    "charles_mid"
+   ],
+   "image": "Two-shot in a 1981 kitchen: Maggie holding out the receipt, Charles taking it with smooth composure and a faint tightening around his eyes, morning light through the window.",
+   "lines": [
+    [
+     "NARRATOR",
+     "When I showed it to Charles, he said it must have been for my hospital expenses."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t122",
+   "chars": [
+    "maggie_mid"
+   ],
+   "image": "Medium close-up of Maggie, quiet and doubtful, looking at the receipt on the kitchen table as steam rises from a teacup, her expression unconvinced but resigned.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I accepted that answer, though I had given birth in a county hospital, not a private clinic."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t123",
+   "chars": [],
+   "image": "Insert close-up of the faded receipt on a wooden table with a thin line of candle flame reflected in its crossed-out numbers, shallow focus, the feeling of a buried clue.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Years later I would remember that receipt as clearly as if it had been written in fire."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t124",
+   "chars": [
+    "maggie_old",
+    "charles_old"
+   ],
+   "image": "Wide shot of an October 1996 sitting room, rain at the windows, Charles in his chair by the window with a blanket, Maggie arranging library books on a nearby table, autumn light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "By October 1996 Laura was forty-three, married, and raising two children of her own. Charles had retired from the bank. I had retired from the library, though I still volunteered twice a week because I couldn't bear to stay away from books."
+    ]
+   ],
+   "place": "",
+   "overlay": {
+    "type": "text",
+    "text": "PART FOUR|THE PHOTOGRAPH"
+   },
+   "cut": true
+  },
+  {
+   "id": "t125",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Medium shot of Maggie at a table with a wooden-framed wedding photograph, a small screwdriver and glue, rain on the window, a mug of tea cooling beside her.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Charles had been ill that autumn. He tired easily and spent afternoons in his chair by the window. One rainy Thursday I decided to repair the backing on our wedding photograph. The paper had begun to peel away from the frame."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t126",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Insert close-up of a yellowed envelope sliding out from behind a wedding photograph onto a wooden table, handwritten name on the front not legible, the old brown paper edge catching lamp light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "When I lifted the photograph, an envelope slid onto the table. It was yellowed and thin, with my maiden name written across the front in Daniel's unmistakable hand. The postmark was September 1952."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t127",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Close-up of Maggie's trembling fingers breaking the seal of the yellowed envelope, rain at the window blurred behind, the porch rail dripping, intense quiet.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I stood so still I could hear the rain striking the porch rail. Then I opened it."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t128",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Medium close-up of Maggie reading a thin handwritten letter, writing not legible, her eyes moving along the lines, window light cold and grey on her face.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Daniel wrote that he had been injured, that he had come to believe I wanted him gone, and that he would honor my wishes if they were truly mine."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t129",
+   "chars": [],
+   "image": "Insert close-up of a pen resting on an old letter, a blank space on the page, illegible handwriting above, soft lamp light, the feel of an unanswered plea.",
+   "lines": [
+    [
+     "NARRATOR",
+     "But he begged me to write one sentence in my own hand so he could know it was my choice."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t130",
+   "chars": [],
+   "image": "Insert detail of a corner of a yellowed letter with an address written in faded blue ink, not legible, and a stamp postmark, held under a lamp, dust particles drifting.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He included a forwarding address in another city and promised to wait there until the end of October."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t131",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Extreme close-up of Maggie's eyes brimming with tears as she reads, the lamp reflected in them, rain streaks on the window glass behind her, a single tear escaping.",
+   "lines": [
+    [
+     "NARRATOR",
+     "At the bottom he wrote, \u201cIf you still want the life we planned, I will come home tomorrow.\u201d"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t132",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Wide shot of Maggie sitting alone at the table with the letter and the dismantled wedding photograph, the frame back open, rain pouring outside, the room cold and still.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I read the line again and again. All those years I'd believed he had simply disappeared. He had offered me one last chance, and Charles had buried it beneath a photograph of our wedding."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t133",
+   "chars": [
+    "maggie_old",
+    "charles_old"
+   ],
+   "image": "Medium shot, Maggie standing in the sitting room doorway holding the envelope, Charles in his chair looking at it, his face crumbling, grey light from the window.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I took the envelope into the sitting room. Charles looked at it, and his face seemed to age ten years in a second."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t134",
+   "chars": [
+    "maggie_old",
+    "charles_old"
+   ],
+   "image": "Wide shot of the sitting room at night, Maggie and Charles facing each other across the room in a charged silence, the mantel clock and wedding photograph between them.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Our argument was the one you heard at the beginning of this story. I asked whether Daniel had stopped loving me. Charles said no. I asked whether he'd spoken to him at the station. Charles said yes."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t135",
+   "chars": [
+    "charles_old"
+   ],
+   "image": "Close-up of Charles, frail and haggard, speaking with lowered eyes, his thin fingers gripping the arm of his chair, grey window light and lamp glow on his face.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Then he told me he'd gone to Pittsburgh after the accident and claimed I was going to marry him. Daniel had refused to believe it until Charles showed him a note that appeared to be from me."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t136",
+   "chars": [],
+   "image": "Insert close-up of a small folded note with a few handwritten lines, signature not legible, lying beside a school record card on a desk, warm lamplight, the feeling of forgery.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Charles said Mother had written the words and he had copied my signature."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t137",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Medium close-up of Maggie gripping the letter so tightly the paper creases, jaw tight, her wedding ring on her hand, window light cold on her face, anger held in check.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I wanted to throw the letter at him. Instead I held it so tightly the paper creased. Charles said he had loved me for years and feared that Daniel would take me away."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t138",
+   "chars": [
+    "charles_old"
+   ],
+   "image": "Close-up of Charles's face crumpling, a hand covering his mouth, rain streaking the window glass behind him, a single lamp flickering.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He called it desperation, as though desperation were an excuse rather than an explanation."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t139",
+   "chars": [
+    "maggie_old",
+    "charles_old"
+   ],
+   "image": "Two-shot, Charles looking down and whispering, Maggie leaning forward in the foreground with a frozen face; the mantel clock ticking in the background, hush in the room.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Then he said there was something else. The little girl. Not Laura, he told me, but her sister."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t140",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Close-up of Maggie's stunned face as the words register, the lamp casting a soft glow, her lips parted, a faint tremor, the room quiet except for rain.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I asked whether he was speaking about Rose. He nodded. I said Rose had died. He said she hadn't."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t141",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Insert close-up of a pair of Maggie's hands holding a tiny hospital bracelet in her palm beside the yellowed envelope, lamplight, trembling disbelief, forty-three years collapsing into a moment.",
+   "lines": [
+    [
+     "NARRATOR",
+     "For a moment I could not understand the words. They were ordinary words, arranged in an impossible order. Rose had lived. My daughter had lived, and Charles had allowed me to mourn her for forty-three years."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t142",
+   "chars": [],
+   "image": "Medium shot from behind of a young woman in a navy 1950s dress standing alone in the doorway of an empty pastel nursery, an unused crib, soft melancholy light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He told me his younger sister Ruth had been unable to have children. She and her husband had desperately wanted a baby."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t143",
+   "chars": [],
+   "image": "Insert close-up of an old typed transfer form with illegible text in a manila folder, a hand with a rubber stamp hovering above it, harsh desk lamp, 1953 hospital office.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Charles claimed the hospital had arranged for the second infant to be transferred to Ruth's care, and that papers had later been completed through an attorney."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t144",
+   "chars": [
+    "maggie_old",
+    "charles_old"
+   ],
+   "image": "Medium shot of Maggie facing Charles, her hand open in a demanding gesture, Charles silent with his head bowed, the rain-streaked window between their silhouettes.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I asked how a mother could give up a child without knowing. He had no answer that made sense."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t145",
+   "chars": [
+    "charles_old"
+   ],
+   "image": "Close-up of Charles speaking in a halting whisper, lamplight on his thin face, eyes damp and unfocused, the mantel in the soft background.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He said I had been sedated and weak, that Mother had agreed, that everyone believed two babies would ruin my chances of a stable marriage."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t146",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Medium close-up of Maggie, her expression tightening in understanding, a hand pressed to her mouth, the rain-spotted window behind her, grey evening light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I asked whether Ruth knew I hadn't consented. Charles said she had been told I had chosen adoption and wished to remain anonymous."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t147",
+   "chars": [
+    "charles_old"
+   ],
+   "image": "Close-up of Charles's face breaking, his voice cracking, his eyes on the floor, one tear on the cheek, lamplight casting deep shadows across the lines of his face.",
+   "lines": [
+    [
+     "NARRATOR",
+     "His voice broke when he said it. I knew then that his lies had trapped more people than just me."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t148",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Medium shot of Maggie in her 1996 kitchen with the rotary telephone cord stretched, calm and resolved, rain on the window, an address book open on the counter, writing illegible.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I did not hit him. I did not scream. I walked into the kitchen, telephoned Laura, and asked her to come over. Then I called an attorney whose name I'd kept in my address book for years."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t149",
+   "chars": [
+    "laura",
+    "maggie_old"
+   ],
+   "image": "Medium two-shot at a kitchen table: Laura, who has just arrived with a loaf of bread on the counter, sits across from Maggie who is explaining, rain-grey window light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Laura arrived with a loaf of bread she'd baked and a worried expression. I told her to sit down. I explained the letter first, then the truth about her birth father, then what Charles had said about Rose."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t150",
+   "chars": [
+    "laura"
+   ],
+   "image": "Close-up of Laura's face absorbing the news, brown eyes wide and steady, a hand over her mouth, soft kitchen light and rain streaks reflected in the window beside her.",
+   "lines": [
+    [
+     "NARRATOR",
+     "She stared at me for a long time. I thought she might accuse me of lying. Instead she asked whether I had known all along that Daniel was her biological father. I told her yes, and that Charles had known too."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t151",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Medium shot of Maggie at the kitchen table with her hands folded around a mug, looking into the rain outside the window, remorse in her still expression, quiet afternoon.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I said I'd planned to tell her when she was older, then kept postponing it until the truth felt too large to carry into an ordinary afternoon."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t152",
+   "chars": [
+    "laura",
+    "maggie_old"
+   ],
+   "image": "Two-shot with Laura holding Maggie's hand across the kitchen table, both with glistening eyes, the loaf of bread untouched between them, soft rain light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Laura said she needed time. She had loved Charles as her father all her life. I told her that love wasn't a mistake, even if the circumstances surrounding it were. Then she asked whether Rose was alive now."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t153",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Close-up of Maggie's face looking down, tired and honest, her lips pressed together, rain softly reflected on the kitchen window glass beside her.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I said I didn't know. It was the most painful answer I'd given in forty-three years."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t154",
+   "chars": [
+    "laura"
+   ],
+   "image": "Medium shot of Laura at the mantel turning the wedding photograph face down, her back partly toward us, resolute set to her shoulders, soft lamp glow on the wood.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Laura stood and walked to the mantel. She took down the wedding photograph, looked at the smiling man beside me, and turned the frame face down. She said, \u201cWe find her first. We decide what to do about him afterward.\u201d"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t155",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Wide shot of Maggie standing in the sitting room as a ray of afternoon sun breaks through the clouds and falls across the floor, rain ending outside, a sense of firm ground.",
+   "lines": [
+    [
+     "NARRATOR",
+     "For the first time that day, I felt the ground beneath my feet."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t156",
+   "chars": [
+    "rebecca",
+    "maggie_old"
+   ],
+   "image": "Medium shot in a law office in 1996: Rebecca behind a wooden desk with files, Maggie listening across from her, rain at the window, shelves of binders, measured seriousness.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Rebecca Lane, the attorney, did not promise a miracle. She said the records were old, the laws had changed, and some documents might have been lost."
+    ]
+   ],
+   "place": "",
+   "overlay": {
+    "type": "text",
+    "text": "PART FIVE|THE WOMAN CALLED ROSE"
+   },
+   "cut": true
+  },
+  {
+   "id": "t157",
+   "chars": [
+    "rebecca"
+   ],
+   "image": "Close-up of Rebecca, her eyes steady and compassionate as she explains, a legal pad with illegible notes in front of her, warm desk lamp, bookshelves blurred.",
+   "lines": [
+    [
+     "NARRATOR",
+     "She also said a mother's account of a child being taken without consent was too serious to dismiss."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t158",
+   "chars": [],
+   "image": "Insert close-up of a desk with a hospital bracelet, a faded receipt, and a yellowed letter laid side by side next to a photocopier, handwriting not legible, soft office light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "She asked for the hospital bracelet, Mother's clinic receipt, the wedding letter, and every document Charles would provide. She told me not to confront Ruth until we knew what Ruth had been told. We made copies and stored the originals safely."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t159",
+   "chars": [
+    "rebecca"
+   ],
+   "image": "Wide shot of a hospital records archive: banks of grey filing cabinets, a microfilm reader glowing, Rebecca bent over the viewer, dust in the light, 1996.",
+   "lines": [
+    [
+     "NARRATOR",
+     "The hospital had changed names twice. Its old records were partly on microfilm and partly in storage. Rebecca requested the birth records through the proper channels and helped me prepare a sworn statement about the delivery and what I'd been told afterward."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t160",
+   "chars": [],
+   "image": "Insert close-up of a microfilm reader screen showing a ledger-style page with two entries, text too small and blurred to read, an index finger tracing a line, cold glow on the glasses.",
+   "lines": [
+    [
+     "NARRATOR",
+     "The first result was small but unmistakable. The delivery log recorded two live births, both female. Neither entry recorded a death at delivery. One child was listed as transferred for observation to a separate nursery."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t161",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Close-up of Maggie in Rebecca's office holding a photocopied page, tears rolling quietly down her cheeks, hands trembling, rain on the window, soft lamplight.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I sat in Rebecca's office with that page before me. For forty-three years I had pictured a little grave. Now I had a hospital entry telling me that my baby had been breathing when she left the delivery room."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t162",
+   "chars": [
+    "rebecca",
+    "maggie_old"
+   ],
+   "image": "Medium shot of Rebecca resting a hand on the desk and speaking carefully to Maggie, who listens, determined, a single lamp, rainy window behind them.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Rebecca warned that the entry did not by itself establish what happened next. But it gave us a path to follow."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t163",
+   "chars": [
+    "helen"
+   ],
+   "image": "Wide exterior of a small modest house outside the city in late autumn, bare maples, Helen opening the front door in a cardigan, thin sunlight, a porch swing at rest.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Helen Price had been twenty-five when she worked in the maternity ward. By 1996 she was retired and living in a small house outside the city. She agreed to speak with us after Rebecca explained why we were calling."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t164",
+   "chars": [
+    "helen"
+   ],
+   "image": "Medium shot of Helen at a kitchen table remembering, her eyes distant, a teapot and cups before her, soft daylight, hands folded tight as though gripping old memories.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Helen remembered the twins. She remembered a young mother who asked repeatedly to see both babies and a husband who spoke to the staff as though he owned the building."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t165",
+   "chars": [],
+   "image": "Insert shot of a vintage 1953 hospital transfer form with illegible typing and a crooked stamp pinned to a clipboard, harsh fluorescent light, a nurse's hand adjusting it.",
+   "lines": [
+    [
+     "NARRATOR",
+     "She remembered a transfer order that didn't seem to match the usual medical process."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t166",
+   "chars": [
+    "helen"
+   ],
+   "image": "Insert close-up of Helen's weathered hands opening an old spiral notebook on a kitchen table, ink pages with illegible handwriting, a thin ribbon of light across the paper.",
+   "lines": [
+    [
+     "NARRATOR",
+     "She had written about the incident in a private notebook because it troubled her. She brought the notebook to the table, opened it carefully, and showed us an entry dated May twenty-fourth, 1953."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t167",
+   "chars": [
+    "helen"
+   ],
+   "image": "Close-up of Helen's finger resting on a handwritten notebook entry, writing not legible, a pair of reading glasses beside it, warm kitchen light, grave stillness.",
+   "lines": [
+    [
+     "NARRATOR",
+     "The note recorded that the second infant had been alive, that a man claiming to act for the family had requested a private transfer, and that Helen had asked for the mother's written consent."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t168",
+   "chars": [],
+   "image": "Medium shot in a 1953 hospital corridor: a supervisor in a white uniform with a clipboard waving a young nurse away with a dismissive gesture, bright harsh light, polished floor.",
+   "lines": [
+    [
+     "NARRATOR",
+     "The supervisor had told her the matter was being handled elsewhere."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t169",
+   "chars": [
+    "helen",
+    "maggie_old"
+   ],
+   "image": "Two-shot at the kitchen table: Helen's trembling hands in focus, Maggie reaching across to touch them gently, soft window light, teacups, a feeling of mutual grace.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Helen's hands shook as she spoke. She said she'd carried the memory for years and wished she'd challenged the order more forcefully. I told her she was not the person who had lied to me about my daughter."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t170",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Close-up of Maggie smiling through tears, gratitude on her face, the soft light of Helen's kitchen on her cheek, a notebook blurred in the foreground.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Still, I was grateful she'd written down what she'd seen."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t171",
+   "chars": [
+    "rebecca",
+    "laura",
+    "maggie_old"
+   ],
+   "image": "Medium wide shot in Rebecca's office: Rebecca, Laura, and Maggie leaning over a table of papers, a legal pad with illegible notes, afternoon light, shared focus and purpose.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Rebecca made clear that the notebook was evidence to be evaluated, not a final verdict. But it corroborated what Charles had confessed. For the first time, the impossible began to take shape as something we could investigate."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t172",
+   "chars": [
+    "laura",
+    "maggie_old"
+   ],
+   "image": "Wide shot of a car on a quiet country road approaching a modest white house with blue shutters, bright November morning, bare trees, Laura driving with Maggie beside her.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Ruth Whitaker Bell lived three hours away in a modest white house with blue shutters. Laura drove me there on a bright November morning. We didn't arrive unannounced. Rebecca had contacted Ruth's attorney, and Ruth had agreed to meet."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t173",
+   "chars": [
+    "ruth_old",
+    "maggie_old"
+   ],
+   "image": "Medium shot in Ruth's sitting room: shelves of framed photographs of a dark-haired girl growing up, Ruth frightened in the doorway, Maggie standing near the photos, soft light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Ruth opened the door looking frightened and much older than I remembered. She invited us into a sitting room full of photographs. In nearly every one was a dark-haired girl who grew into a woman with a familiar, determined chin."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t174",
+   "chars": [
+    "ruth_old"
+   ],
+   "image": "Close-up of Ruth, much older and frail, speaking with uncertain eyes and her hands twisting a handkerchief, a lamp glowing softly behind her.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Ruth said she'd been told I was too ill to raise twins and had chosen a confidential adoption. She said Charles had handled the arrangements and insisted she never contact me because it would cause me pain."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t175",
+   "chars": [
+    "ruth_old"
+   ],
+   "image": "Medium shot of Ruth seated by a window looking at an old photograph in her lap, the November light thin and pale, regret quiet on her face.",
+   "lines": [
+    [
+     "NARRATOR",
+     "She had believed him, or at least had wanted to believe him."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t176",
+   "chars": [
+    "maggie_old",
+    "ruth_old"
+   ],
+   "image": "Two-shot across a small tea table: Maggie with a hand pressed to her chest, silent, Ruth's face tender and apologetic, the sitting room's photographs blurred behind them.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I asked what she'd named the child. Ruth said, \u201cRose.\u201d She had kept the name because Charles told her it was the one I had chosen. I couldn't speak for several moments."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t177",
+   "chars": [
+    "maggie_old",
+    "ruth_old"
+   ],
+   "image": "Medium shot of Maggie and Ruth side by side on a floral sofa, both looking at a framed photograph of a young woman in a graduation gown, soft afternoon light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Ruth told us Rose was now forty-three, married, and working as a music teacher. She lived in another state and had no idea about the circumstances of her birth. Ruth asked us not to arrive at her doorstep without warning."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t178",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Close-up of Maggie with a quiet, steady expression, eyes moist, nodding slowly, soft window light on her face, a sense of empathy and restraint.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I agreed. I knew what it was to have the truth of your own life taken away from you."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t179",
+   "chars": [
+    "ruth_old"
+   ],
+   "image": "Wide shot of a spring 1974 street: Ruth, with short dark hair, parking a car and getting out, looking toward a distant house, blossoming trees, soft light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Then Ruth looked down at her hands and said there was something she had never told anyone. In the spring of 1974, the year Rose turned twenty-one, she had driven to our town."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t180",
+   "chars": [
+    "ruth_mid"
+   ],
+   "image": "Medium shot of Ruth in 1974 standing still at a front gate, her hand on the latch, unable to open it, spring blossoms overhead, the house beyond out of focus.",
+   "lines": [
+    [
+     "NARRATOR",
+     "She had stood at our front gate for nearly an hour, trying to find the courage to knock."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t181",
+   "chars": [
+    "ruth_mid"
+   ],
+   "image": "Medium shot of Ruth at a bank counter handing a sealed envelope across to a man whose hands alone are visible, brass fittings, warm interior light, nervous urgency.",
+   "lines": [
+    [
+     "NARRATOR",
+     "She lost her nerve. The next morning she went to the bank instead and gave Charles a letter for me."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t182",
+   "chars": [
+    "ruth_old"
+   ],
+   "image": "Insert close-up of an older woman's hands holding a handwritten letter in an envelope, illegible handwriting, fingers trembling, soft daylight, 1996 sitting room.",
+   "lines": [
+    [
+     "NARRATOR",
+     "In it she said Rose was grown, healthy, and asking questions, and that if I ever wished to know her, Ruth would help."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t183",
+   "chars": [
+    "charles_mid"
+   ],
+   "image": "Medium shot of Charles in 1974 on a telephone in a study, his face controlled and fabricating, a desk lamp glowing, a bank ledger beside him, door closed.",
+   "lines": [
+    [
+     "NARRATOR",
+     "A week later Charles telephoned his sister. He told her I had read the letter, wept, and asked never to be contacted again."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t184",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Wide shot of Maggie standing in Ruth's driveway looking back toward the white house, her shadow long on the gravel, November sun low, her face thoughtful and heavy.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I thought of the woman with short dark hair our neighbor had described. I thought of Charles wiping the glass of our wedding photograph that evening, and the papers he had burned in the fireplace on a warm night."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t185",
+   "chars": [
+    "charles_mid"
+   ],
+   "image": "Insert shot of blackened paper curling in a fireplace, glowing red edges, a single unburned corner showing a hint of handwriting not legible, dark room around it.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He had not been burning bank records. He had been burning my daughter."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t186",
+   "chars": [
+    "ruth_old"
+   ],
+   "image": "Insert close-up of an old black and white photograph of a young woman in a graduation cap, a handwritten note on the back with illegible handwriting, Ruth's hand holding it.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Then Ruth opened a drawer and brought out a photograph taken at Rose's high school graduation. On the back was a date, a place, and a note in Ruth's handwriting: \u201cCopy for Eleanor B., as promised. She asks after you every year.\u201d"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t187",
+   "chars": [
+    "maggie_old",
+    "ruth_old"
+   ],
+   "image": "Medium shot of Maggie staring at the photograph's back as Ruth watches beside her, the room still, a clock ticking, afternoon light draining toward dusk.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I stared at the inscription. My mother had known Rose was alive. She had not merely approved the arrangement in 1953; she had remained in contact with Ruth afterward."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t188",
+   "chars": [],
+   "image": "Insert shot of two flowers on a windowsill in morning light, one in a vase and one faded, petals fallen on the sill, shallow focus, a silent anniversary ritual.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I had spent years believing Mother was frightened into silence. Now I understood that she had chosen silence again and again, every birthday, every Christmas, every time she watched me put two flowers on the windowsill."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t189",
+   "chars": [
+    "ruth_old"
+   ],
+   "image": "Medium shot of Ruth at a small writing desk composing a letter, her face thoughtful, a lamp glowing, an envelope and stamp beside her, writing not legible.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Rebecca advised us to let Rose decide whether she wanted contact. Ruth wrote to her first, telling her that new information had emerged about the adoption and that her birth mother was seeking answers."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t190",
+   "chars": [],
+   "image": "Insert close-up of a hand placing a letter in a mailbox slot, a gentle gesture, soft morning light, autumn leaves on the sidewalk, quiet hope.",
+   "lines": [
+    [
+     "NARRATOR",
+     "She didn't force a conclusion or demand a reunion."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t191",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Medium shot of Maggie in her kitchen opening a letter from the mailbox, rain-dark window behind, a mug steaming, careful anticipation, handwriting on the page not legible.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Two weeks passed. Then a letter came addressed to me. The handwriting was careful and slightly slanted. Rose said she'd always known she was adopted but had been told her birth mother had made a loving, difficult choice."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t192",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Close-up of Maggie reading, her lower lip trembling, light from the window catching a tear, a slanted handwritten page held in her fingers, not legible.",
+   "lines": [
+    [
+     "NARRATOR",
+     "She was frightened that everything she knew might be wrong."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t193",
+   "chars": [],
+   "image": "Insert close-up of a handwritten sentence on lined paper at the bottom of a page, a final line with an ink smudge, not legible, a pen resting beside it, lamp light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "She asked one question: \u201cIf you didn't want to give me away, why didn't you come looking?\u201d"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t194",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Medium shot of Maggie at her table writing a long letter by lamplight at night, the small hospital bracelet resting on the table beside the paper, rain softly at the window.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I wrote back the same evening. I told her about the delivery, the two cries, the death I had been told to mourn, and the small hospital bracelet I'd kept all my life."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t195",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Close-up of Maggie's hand sealing an envelope, the other hand holding the small hospital bracelet, lamplight glowing on the paper, a quiet tenderness.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I told her I would understand if she wanted no part of me. But I wanted her to know that I had loved her before I knew her face."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t196",
+   "chars": [],
+   "image": "Insert shot of an open front door with a lamp left on in the hallway beyond, evening light on a welcome mat, a sense of an open invitation, no people.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I did not ask her to call me Mother. I did not ask her to forgive me for a decision I hadn't made. I simply offered the truth and left the door open."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t197",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Medium shot of Maggie on the sofa with a telephone to her ear, laughing softly through tears, the afternoon light warm, a cup of tea forgotten beside her.",
+   "lines": [
+    [
+     "NARRATOR",
+     "A week later she telephoned. Her voice was deeper than Laura's, but she laughed the same way. We spoke for an hour about ordinary things: her students, her garden, the way she hated winter mornings."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t198",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Close-up of Maggie lowering the telephone, tears and a relieved smile, hand over her heart, golden afternoon light through lace curtains, a framed photograph blurred behind her.",
+   "lines": [
+    [
+     "NARRATOR",
+     "When we hung up, I cried with relief because she was no longer only a photograph."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t199",
+   "chars": [
+    "rebecca",
+    "maggie_old"
+   ],
+   "image": "Medium shot of Rebecca sliding a folder of public records across her desk to Maggie, a rain-lit window behind them, a sheet with an address, illegible, held in Maggie's hand.",
+   "lines": [
+    [
+     "NARRATOR",
+     "There was still Daniel. I had spent so much energy finding Rose that I'd almost forgotten the address at the bottom of his letter. Rebecca helped me locate public records and a recent address for a Daniel Mercer of the right age."
+    ]
+   ],
+   "place": "",
+   "overlay": {
+    "type": "text",
+    "text": "PART SIX|THE MAN WHO WAITED"
+   },
+   "cut": true
+  },
+  {
+   "id": "t200",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Medium shot of Maggie at her desk writing a short letter, concentration and nerves, a lamp pooled on the paper, a pot of tea, writing not legible.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I wrote a short letter. I said who I was, that I had found his letter from 1952, and that I now knew someone had prevented us from speaking honestly."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t201",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Close-up of Maggie's face thoughtful and resolute while writing, the pen paused in the air, soft side light, rain outside the window, gentle courage.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I told him I wasn't asking him to undo the past. I only wanted him to know I had never chosen to abandon him."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t202",
+   "chars": [],
+   "image": "Insert close-up of an envelope in a mailbox with slow, slanted handwriting on the front, not legible, a red autumn leaf beside it on the porch boards, gentle light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Three weeks later he answered. His handwriting was slower but unmistakable. He said he'd read my letter five times before he could believe it. He had spent years wondering whether the woman he loved had truly wanted him gone."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t203",
+   "chars": [
+    "daniel_old"
+   ],
+   "image": "Wide shot of a quiet lakeside house in autumn, Daniel standing on a wooden dock looking out over still water, mist rising, a framed photograph of a woman on a windowsill inside.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He told me he had married eventually, to a kind woman named Alice, and that she'd died four years earlier. They had no children together. He had retired from railway engineering and lived near a lake."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t204",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Medium close-up of Maggie reading a letter at her kitchen table, her expression turning to concern, afternoon light on the page, hand tightening on the paper, writing illegible.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He said he'd be willing to meet, if I wished. He also wrote, \u201cThere is something I should have told you in 1952. I was ashamed, and I let that shame keep me silent.\u201d"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t205",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Close-up of Maggie, her eyes fixed on a single line of the letter, dread tightening her face, lamp light, rain just beginning to fall against the window glass.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I read that sentence with a dread I hadn't expected. After all the lies I'd uncovered, I wasn't sure I could bear one more truth."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t206",
+   "chars": [
+    "daniel_old"
+   ],
+   "image": "Wide shot of a small railway museum interior, old locomotives and brass fittings, Daniel in a dark coat carrying a paper bag standing early near a bench, quiet daylight.",
+   "lines": [
+    [
+     "NARRATOR",
+     "We met at a small railway museum because neither of us could bear to return to the station where we'd parted. Daniel arrived early, wearing a dark coat and carrying a paper bag."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t207",
+   "chars": [
+    "daniel_old",
+    "maggie_old"
+   ],
+   "image": "Medium shot, Maggie entering the museum hall seeing Daniel across the space, both older, tall windows with dusty light, a slow moment of recognition.",
+   "lines": [
+    [
+     "NARRATOR",
+     "His hair was white, his shoulders narrower, but his eyes were the same."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t208",
+   "chars": [
+    "daniel_old",
+    "maggie_old"
+   ],
+   "image": "Wide two-shot, Maggie and Daniel standing a few feet apart in front of an old locomotive, softly smiling, the museum's grand windows casting long lines of light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "For a moment we stood looking at each other like two people who had stepped out of different centuries. Then he smiled, and I recognized the young man who'd once brought me a brass screw."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t209",
+   "chars": [
+    "maggie_old",
+    "daniel_old"
+   ],
+   "image": "Medium shot, Daniel offering a book from a paper bag, Maggie laughing and wiping tears from her eyes, the old locomotive blurred behind them.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Inside the paper bag was a book about electrical circuits. He said he'd finally read it. I laughed so hard I began to cry."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t210",
+   "chars": [
+    "daniel_old",
+    "maggie_old"
+   ],
+   "image": "Two-shot on a bench beside an old locomotive, Daniel speaking quietly with his hands clasped, Maggie listening beside him, cold museum light on the brass and iron.",
+   "lines": [
+    [
+     "NARRATOR",
+     "We sat on a bench beside an old locomotive. Daniel told me what happened after the accident. His supervisor had blamed him for the equipment failure, and the company had suspended him pending an inquiry."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t211",
+   "chars": [
+    "daniel_young",
+    "charles_young"
+   ],
+   "image": "Medium shot of Daniel's memory: a hospital bed in 1952 with Charles's silhouette beside it and a folded note passing between hands, grey light, face of the visitor turned away.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Charles arrived with a note apparently signed by me, saying I was marrying someone else and wanted no further contact."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t212",
+   "chars": [
+    "daniel_old"
+   ],
+   "image": "Close-up of Daniel looking at the old locomotive, shame and sorrow carved in his face, soft museum light, a faint reflection of brass in his eyes.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Daniel had been injured, frightened, and ashamed. He believed I might have grown tired of waiting. Instead of returning to confront me, he left the region and tried to begin again."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t213",
+   "chars": [],
+   "image": "Insert shot of a single letter lying unanswered on a bare boardinghouse table in 1953, a dark window beside it, evening light fading across the page, handwriting not legible.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Months later he wrote the letter Charles had hidden, but when no reply came he assumed silence was my answer."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t214",
+   "chars": [
+    "daniel_old"
+   ],
+   "image": "Insert close-up of Daniel's hands removing a folded, cloth-soft square of paper from behind an old railway pass in a worn leather wallet, museum light, careful and reverent.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Then he reached into his coat and took out his wallet. Behind an old railway pass was a square of paper, folded so many times it had gone soft as cloth. He had carried it for forty-four years."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t215",
+   "chars": [
+    "maggie_old",
+    "daniel_old"
+   ],
+   "image": "Insert close-up of Maggie's hands holding an unfolded, softened square of paper with four short lines, writing not legible, Daniel's hand beside hers, soft museum light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "It was the note Charles had brought to his hospital bed. Four lines, saying I was marrying someone else and wanted no further contact. Signed \"Margaret.\""
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t216",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Close-up of Maggie reading the note, eyes narrowing with recognition and quiet anger, a faint shaking of the paper, soft museum light on her face.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I knew the words at once. They were my mother's words, her phrases, her way of putting a period where a softer woman would put a comma. And the signature was almost mine."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t217",
+   "chars": [],
+   "image": "Insert close-up of a school record card with a youthful handwritten signature in blue ink, not legible, next to the folded note, the g letter unlooped, lamp light, sharp detail.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Almost. Charles had never known that I stopped looping the g in Margaret when I was sixteen, because a teacher told me it looked childish."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t218",
+   "chars": [],
+   "image": "Insert shot of an old school record folder open on a desk with a hand tracing a signature with a pencil, dusty archive light, cabinet shelves blurred, the sense of forgery.",
+   "lines": [
+    [
+     "NARRATOR",
+     "The man who had stolen my name had copied it from an old school record."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t219",
+   "chars": [
+    "daniel_old",
+    "maggie_old"
+   ],
+   "image": "Two-shot as Daniel gently closes Maggie's hand around the note, a warm smile of understanding passing between them, soft museum light on the bench, gentle.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Daniel watched me read it. He said, \"I used to take it out when I missed you. To remind myself you didn't want me.\" I told him it was the only lie in his wallet. He let me keep it."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t220",
+   "chars": [
+    "daniel_old"
+   ],
+   "image": "Medium shot of Daniel opening an old letter at a table in a lakeside kitchen years earlier, afternoon sun, a retired man's hands unfolding thin paper, writing not legible.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He told me one more thing. Years later, a retired foreman from the railway yard had written to him."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t221",
+   "chars": [],
+   "image": "Insert close-up of a handwritten ledger page with entries and illegible numbers, a hand sliding folded cash under it on a wooden desk, a railway yard window behind, dim light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "The foreman said a banker's son from our town had paid the yard supervisor to slow Daniel's transfer and to lean on him about the records."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t222",
+   "chars": [
+    "daniel_old"
+   ],
+   "image": "Medium shot of Daniel looking at a wall photograph of a railway maintenance platform, his face grave, museum light, an old rope and iron fittings in the foreground.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Nobody ever proved who pulled the safety pin from that platform. But Daniel had never again believed it fell by accident."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t223",
+   "chars": [
+    "daniel_old"
+   ],
+   "image": "Close-up of Daniel speaking quietly with downcast eyes, hands tightly knotted, soft museum light highlighting the white of his hair, the shame of an old decision.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I asked what he had been ashamed to tell me. He said he had accepted a settlement from the railway that required him to withdraw his allegations about the altered records."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t224",
+   "chars": [],
+   "image": "Insert shot of a legal settlement paper with a pen resting on the signature line, writing not legible, a railway company stamp, harsh office lamp, 1953.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He'd wanted to protect his new job and recover from his injury. He knew the settlement left the truth unresolved."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t225",
+   "chars": [
+    "maggie_old",
+    "daniel_old"
+   ],
+   "image": "Medium two-shot on the museum bench, Maggie gently touching Daniel's arm, he nodding sadly, the old locomotive behind them in soft focus, quiet acceptance.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I told him I wished he'd come home and asked me directly. He nodded. He said, \u201cI wish I had too.\u201d"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t226",
+   "chars": [
+    "maggie_old",
+    "daniel_old"
+   ],
+   "image": "Wide shot of Maggie and Daniel sitting side by side on the bench in a quiet museum hall, light from tall windows sloping across the floor, shared regret and honesty.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Neither of us pretended that Charles had stolen every choice. Charles had lied, but Daniel and I had also allowed fear and pride to do some of the damage. That acknowledgment hurt, yet it made the truth feel real."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t227",
+   "chars": [
+    "daniel_old"
+   ],
+   "image": "Close-up of Daniel looking out toward the old locomotive, hands folded tightly, eyes wet, soft museum light, the emotion of learning about a daughter.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I told Daniel about Laura. He listened without interrupting, his hands folded tightly together. When I said she was his biological daughter, he looked out at the locomotive for a long time and asked whether she was happy."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t228",
+   "chars": [
+    "maggie_old",
+    "daniel_old"
+   ],
+   "image": "Medium shot, Maggie speaking carefully to Daniel on the bench, her hands open, Daniel leaning forward, a train wheel in the foreground, diffuse light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I said she was a good woman with two children and a life she'd built through hard work. Then I told him about Rose."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t229",
+   "chars": [
+    "daniel_old"
+   ],
+   "image": "Close-up of Daniel's face transforming, grief and disbelief mingling with fragile hope, his eyes shining, museum light soft on his weathered features.",
+   "lines": [
+    [
+     "NARRATOR",
+     "His face changed in a way I will never forget: grief, disbelief, and a fragile hope that seemed almost painful."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t230",
+   "chars": [
+    "maggie_old",
+    "daniel_old"
+   ],
+   "image": "Medium shot of Maggie and Daniel on the bench, Daniel nodding right away and placing his hand over his heart in respect, Maggie's gentle gaze, warm side light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He asked whether he could meet them. I said that decision belonged to Laura and Rose, not to me. He nodded immediately. That small act of respect meant more to me than any grand declaration could have."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t231",
+   "chars": [
+    "laura",
+    "daniel_old"
+   ],
+   "image": "Medium shot in a restaurant booth: Laura sits across from Daniel, who listens with respectful humility, cups of coffee between them, soft window light, rain outside.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Laura agreed to meet him first. She asked difficult questions and received imperfect answers. Daniel didn't try to replace Charles or claim a role he hadn't earned."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t232",
+   "chars": [
+    "daniel_old"
+   ],
+   "image": "Close-up of Daniel writing a short note at a table, a pen pausing in the air, a cup of coffee, soft lakeside window light, humble hope.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He told her he would be grateful for whatever relationship she wanted, even if it was only an occasional letter."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t233",
+   "chars": [
+    "rose"
+   ],
+   "image": "Medium shot of Rose at a piano in a bright music classroom, children's drawings on the walls, her hands resting on the keys, looking thoughtfully out the window, soft daylight.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Rose needed more time. She had a family who had loved and raised her, and the discovery of another family was not a simple happy ending."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t234",
+   "chars": [
+    "rose"
+   ],
+   "image": "Medium close-up of Rose at a kitchen table writing a letter, thoughtful and measured, a cup of tea, a window with a garden beyond, soft morning light, writing not legible.",
+   "lines": [
+    [
+     "NARRATOR",
+     "She wrote that she wanted to meet Daniel eventually but first needed to understand the story she had been told all her life."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t235",
+   "chars": [
+    "laura",
+    "rose",
+    "maggie_old"
+   ],
+   "image": "Wide shot of Laura, Rose, and Maggie seen from behind walking together down a tree-lined street in late autumn, leaves swirling, golden light, a quiet closeness.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I was proud of both daughters. Their caution was not rejection. It was the dignity of people deciding for themselves what the truth would mean."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t236",
+   "chars": [
+    "rebecca"
+   ],
+   "image": "Medium shot of Rebecca at her desk surrounded by stacks of archival records and a microfilm printout, a green desk lamp glowing, a window dark with evening rain, determined concentration.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Rebecca's investigation continued. The surviving records suggested that Charles and others had arranged Rose's transfer without valid maternal consent. Because the events were decades old, there were legal uncertainties, missing records, and questions about what remedies remained available."
+    ]
+   ],
+   "place": "",
+   "overlay": {
+    "type": "text",
+    "text": "PART SEVEN|THE COST OF THE LIE"
+   },
+   "cut": true
+  },
+  {
+   "id": "t237",
+   "chars": [
+    "rebecca",
+    "maggie_old"
+   ],
+   "image": "Medium shot in Rebecca's office: Rebecca sliding sealed envelopes into a filing box, Maggie watching, the label not legible, rain-lined window behind, thoughtful quiet.",
+   "lines": [
+    [
+     "NARRATOR",
+     "We did not pretend a courtroom could restore forty-three years. Rebecca preserved the evidence, contacted the appropriate authorities, and advised each daughter to obtain independent legal advice about her records and rights."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t238",
+   "chars": [
+    "charles_old"
+   ],
+   "image": "Close-up of Charles's frail hand holding a pen over a signed statement, writing not legible, his sleeve cuff loose, thin lamp light, his shoulder trembling.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Charles admitted in a signed statement that he'd concealed Daniel's letters and misrepresented my wishes to him. He also acknowledged that he'd participated in arranging Rose's placement and that he'd never obtained my informed consent."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t239",
+   "chars": [
+    "rebecca",
+    "charles_old"
+   ],
+   "image": "Medium shot in Charles's sitting room: Rebecca standing, solemn, with a folder, Charles seated and bowed, his chair by the window, grey light, a clear and formal distance.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Rebecca made sure he understood that a confession was not a bargain for forgiveness."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t240",
+   "chars": [
+    "charles_old"
+   ],
+   "image": "Medium shot of Charles in his chair by the window with a paper in his lap, looking into the rain, face stricken, his hand shaking as if swearing something, dim afternoon light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He admitted one more thing, in writing: that in 1952 he had paid the railway supervisor to delay Daniel's transfer and to cast doubt on his work. He swore he had never touched the platform."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t241",
+   "chars": [
+    "rebecca"
+   ],
+   "image": "Insert close-up of Rebecca's hands placing a small folded note beside a signed statement and sliding both into a large envelope, formal desk lamp, the atmosphere of legal finality.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I found I could not believe him, and I could not prove otherwise. Rebecca placed the forged note beside his statement, and she placed both in the hands of the authorities."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t242",
+   "chars": [
+    "charles_old"
+   ],
+   "image": "Wide shot of a small-town main street in winter seen from Charles's window, passers-by glancing toward his house, the chair empty in the foreground, the town quietly watching.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Charles had spent his whole life arranging what other people saw. He remembered every name, sent every card, and always knew who was watching. Now the whole town was watching."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t243",
+   "chars": [],
+   "image": "Insert shot of a small newspaper column on a kitchen table, text blurred and not legible, a coffee cup ring, morning light, a hand folding the paper away.",
+   "lines": [
+    [
+     "NARRATOR",
+     "The county paper ran a small item about a decades-old adoption under investigation. It did not need to print his name. Everyone knew."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t244",
+   "chars": [],
+   "image": "Wide interior shot of a bank lobby with a rectangular pale mark on the wall where a portrait once hung, a man on a ladder carrying a framed portrait away, marble floor, cold light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "The bank quietly took his portrait down from the lobby, where it had hung beside his father's for thirty years."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t245",
+   "chars": [
+    "charles_old"
+   ],
+   "image": "Medium shot of Charles alone at a dining table with a silent telephone, an empty chair opposite, a Thursday-lunch calendar on the wall with illegible writing, the gloom of afternoon.",
+   "lines": [
+    [
+     "NARRATOR",
+     "The men from his Thursday lunch stopped calling. The church found someone else to read at the Christmas service."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t246",
+   "chars": [
+    "charles_old"
+   ],
+   "image": "Close-up of Charles at the window watching a quiet street in winter light, the silent glass reflecting his tired face, a stillness heavy with isolation.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Nobody shouted at him in the street. Nobody had to. For a man who had built his life on being admired, the silence was the sentence."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t247",
+   "chars": [
+    "laura",
+    "charles_old"
+   ],
+   "image": "Medium shot in Charles's sitting room: Laura seated near his chair, speaking quietly, Charles looking at her with grief, soft winter window light, the mantel clock behind them.",
+   "lines": [
+    [
+     "NARRATOR",
+     "When Laura learned what he'd signed, she went to see him. She later told me she'd asked whether he had ever loved her as his daughter. Charles said yes, and she believed him."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t248",
+   "chars": [
+    "laura"
+   ],
+   "image": "Close-up of Laura's face, steady and sorrowful, asking a hard question, eyes bright with held tears, winter window light on her cheek.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Then she asked how he could love one daughter while allowing the other to grow up believing her mother had surrendered her."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t249",
+   "chars": [
+    "laura",
+    "charles_old"
+   ],
+   "image": "Medium shot of Laura bending to kiss Charles's cheek as he sits in his chair by the window, her face turned away from the camera, winter light across them both, a gentle farewell.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He couldn't answer. Laura said she would need distance. She kissed his cheek before she left, not because everything was forgiven, but because love and anger can exist in the same room."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t250",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Wide shot of a small rented cottage on a quiet street near the library, bare trees, a light on in the window, Maggie carrying a box up the path with a key in her hand.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I moved into a small rented cottage near the library. For the first time in my adult life, I chose where I would live without asking Charles or Mother."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t251",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Insert close-up of a ring of keys in Maggie's hand against a cottage front door, morning light, the brass catching a gleam, a sense of ownership and calm.",
+   "lines": [
+    [
+     "NARRATOR",
+     "The rooms were modest, and the heating rattled, but every key on the ring belonged to me."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t252",
+   "chars": [
+    "maggie_old",
+    "charles_old"
+   ],
+   "image": "Wide shot of Charles's sitting room in winter: Charles small in his chair by the window, Maggie standing in the doorway with her coat on, pale snow light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Charles's health declined that winter. I visited once, after Rebecca had advised me that there was no legal reason I couldn't. He sat in the same chair by the window, smaller than I remembered."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t253",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Close-up of Maggie, calm and composed, answering with steady eyes, her face lit by cold window light, a faint sadness behind her composure.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He asked whether I hated him. I told him hatred would require giving him more of my remaining life than I was willing to spare."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t254",
+   "chars": [
+    "charles_old"
+   ],
+   "image": "Close-up of Charles weeping softly, a trembling hand over his eyes, a worn blanket across his knees, pale winter light on the windowsill beside him.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He wept, and for a moment I saw the man who'd held Laura when she was sick and stayed awake through my fevers."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t255",
+   "chars": [
+    "maggie_old",
+    "charles_old"
+   ],
+   "image": "Medium two-shot, Maggie standing with arms folded gently, honest and unyielding, Charles looking up at her from his chair, the window light between them, hushed.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I told him those kindnesses had been real. So had the harm. One did not cancel the other. He asked whether I could forgive him. I said I didn't know, and I would not promise what I couldn't honestly give."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t256",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Medium shot of Maggie with a sad smile, looking at the winter window light, her hand resting on the chair back, aging faces of two old lives implied by the empty chair.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He asked whether I was going to marry Daniel. I smiled sadly. We were sixty-eight and seventy-one, I told him. We were still trying to learn who we'd become. It was not a question with a quick answer."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t257",
+   "chars": [
+    "charles_old"
+   ],
+   "image": "Insert close-up of Charles's thin hand holding out a small wooden box, the lid open to reveal a polished brass screw on faded velvet, window light glinting on it.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Before I left, Charles handed me a small box. Inside was the brass screw Daniel had given me in the summer of 1952. I had believed it lost for decades."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t258",
+   "chars": [],
+   "image": "Insert close-up of a sewing drawer with spools of thread and a small empty indentation in the fabric lining, a man's hand closing the drawer, soft old light, 1950s.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Charles said he'd found it in my sewing drawer shortly after our wedding and hidden it because he couldn't bear the reminder."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t259",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Close-up of the brass screw resting in Maggie's open palm, her fingers curling around it, soft winter light, the lines of her hand and her narrow ring in focus.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I held it in my palm, felt the familiar weight, and understood that the smallest stolen thing could carry a lifetime. I took it home. I did not thank him for returning what had always been mine."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t260",
+   "chars": [
+    "rebecca",
+    "maggie_old"
+   ],
+   "image": "Medium shot in Rebecca's office: Rebecca holding out a sealed old envelope with illegible handwriting, Maggie reaching for it, grey light through the window, a cardboard box of papers beside them.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Two days later, Rebecca called. Among Charles's papers was another letter, written by my mother shortly before she died. It was addressed to me but never mailed. Charles had kept it with the old maternity records."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t261",
+   "chars": [],
+   "image": "Close-up of an elderly woman's wrinkled hands writing a letter with a fountain pen by lamplight in 1981, writing not legible, a cold cup of tea beside it.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Mother admitted she had helped conceal Daniel's calls and had supported Rose's placement because she believed poverty and scandal would destroy my future. She wrote that she'd told herself the arrangement was temporary, then became too afraid to admit what had been done."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t262",
+   "chars": [],
+   "image": "Medium shot from behind of an elderly woman in a burgundy coat sitting in a parked 1960s car across from a school, watching a dark-haired teenage girl walk away in the distance.",
+   "lines": [
+    [
+     "NARRATOR",
+     "She had visited Ruth and seen Rose grow, always promising herself she'd tell me the following year."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t263",
+   "chars": [],
+   "image": "Insert close-up of the final lines of a handwritten letter on yellowed paper, ink slightly faded, writing not legible, a worn pen on the desk, lamplight.",
+   "lines": [
+    [
+     "NARRATOR",
+     "At the end she wrote, \u201cI spent my life calling fear by the name of love. I hope you learn the difference before it is too late.\u201d"
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t264",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Medium shot of Maggie at her cottage table with the unmailed letter in her hands, a cold cup of tea, the window dark with early evening, a long, still silence.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I sat with that letter for a long time. I could not forgive the years she'd taken."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t265",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Close-up of Maggie lifting her gaze from the letter, eyes shining, a faint understanding easing her face, soft lamplight, window light turning to dusk behind her.",
+   "lines": [
+    [
+     "NARRATOR",
+     "But I could finally understand that her greatest failing had been not a lack of love, but a love so frightened that it tried to control everything it touched."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t266",
+   "chars": [
+    "laura",
+    "rose",
+    "daniel_old"
+   ],
+   "image": "Wide shot of a crowded Thanksgiving table at Laura's house, laden with dishes and flowers, children's blurred figures laughing, warm golden light, a lively and noisy family scene.",
+   "lines": [
+    [
+     "NARRATOR",
+     "In November 1997, we gathered for Thanksgiving at Laura's house. The table was crowded with dishes, children, flowers, and the ordinary noise of a family that had never been particularly quiet."
+    ]
+   ],
+   "place": "",
+   "overlay": {
+    "type": "text",
+    "text": "PART EIGHT|THE LIFE THAT REMAINED"
+   },
+   "cut": true
+  },
+  {
+   "id": "t267",
+   "chars": [],
+   "image": "Wide shot of an empty armchair by a rain-dark window in a quiet room, a folded blanket on its seat, winter February light, stillness and absence.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Charles had died in February, alone in his chair by the window. Laura went to the funeral. I did not sit in the front row."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t268",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Medium shot of Maggie seated at the back of a small church, alone by the aisle, the front pews blurred in the distance, soft light through plain windows, calm and free.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I sat near the back, where I could leave when I was ready, and for the first time I understood that leaving could be a choice instead of a defeat."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t269",
+   "chars": [
+    "rose",
+    "maggie_old"
+   ],
+   "image": "Medium shot at Laura's front door in November: Rose stepping in nervously with a coat on her arm, Maggie greeting her, warm hallway light, a mix of nerves and welcome.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Rose came with her husband. She was nervous when she stepped inside, and I was nervous too. We'd met twice before, in small, careful visits that had ended with promises to try again."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t270",
+   "chars": [
+    "rose",
+    "laura"
+   ],
+   "image": "Wide shot of Laura's living room with a long table in the next room, Rose and Laura hanging coats, smiling nervously, the glow of a holiday home, children moving in the background.",
+   "lines": [
+    [
+     "NARRATOR",
+     "This was the first time she had agreed to spend a holiday with us."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t271",
+   "chars": [
+    "daniel_old"
+   ],
+   "image": "Medium shot in a warm kitchen: Daniel proudly carrying a lopsided pie, Laura's youngest son, a small boy, looking at it skeptically, Daniel laughing with tears on his cheeks.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Daniel arrived carrying a pie he'd made badly and insisted was edible. Laura's youngest son took one look at it and asked whether it had survived a train wreck. Daniel laughed until tears ran down his face."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t272",
+   "chars": [
+    "maggie_old",
+    "rose",
+    "laura"
+   ],
+   "image": "Medium shot at the table after dinner: Rose raising a camera and asking, Laura and Maggie turning toward her, warm light, the conversation easing, a held breath.",
+   "lines": [
+    [
+     "NARRATOR",
+     "For a while nobody mentioned the past. We talked about weather, music, school, and a broken kitchen faucet. Then Rose asked whether we could take a family photograph."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t273",
+   "chars": [
+    "rose",
+    "laura",
+    "maggie_old"
+   ],
+   "image": "Wide shot of Laura, Maggie, Rose and Daniel arranging themselves in front of a window, Rose gently taking Daniel's hand, afternoon light spilling, a family forming awkwardly and tenderly.",
+   "lines": [
+    [
+     "NARRATOR",
+     "We arranged ourselves in front of the window. Laura stood beside me. Rose stood on my other side. Daniel hovered at the edge until Rose gently took his hand and drew him closer. He looked surprised, then grateful."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t274",
+   "chars": [],
+   "image": "Insert shot of a camera flash caught in a window pane, a burst of white light over a crowd of blurred figures, overexposed glow, a held, fragile moment.",
+   "lines": [
+    [
+     "NARRATOR",
+     "The camera flashed. Nobody knew whether we would ever feel like an ordinary family. But for one second, we were all there, choosing to stand together."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t275",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Medium shot of Maggie placing a plain wooden-framed family photograph on a cottage mantel, soft lamp light, her smile quiet and satisfied, the mantel otherwise bare.",
+   "lines": [
+    [
+     "NARRATOR",
+     "When the print came back, I bought a plain wooden frame and set it on the mantel of my little cottage, in the place where a wedding photograph had stood for forty-four years."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t276",
+   "chars": [],
+   "image": "Insert close-up of the back of a plain wooden frame on a mantel with nothing behind it, a flat clean backing, Maggie's hand gently tapping it, soft lamp light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "There is nothing hidden behind it. I checked."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t277",
+   "chars": [
+    "maggie_old",
+    "daniel_old"
+   ],
+   "image": "Wide shot of Maggie and Daniel on the repainted pedestrian bridge in spring, green hills and blossoms below, a freight train passing beneath, their silhouettes in soft light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "The following spring, Daniel and I returned to the pedestrian bridge in our hometown. It had been repaired and repainted, though the boards still trembled when a freight train passed."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t278",
+   "chars": [
+    "daniel_old",
+    "maggie_old"
+   ],
+   "image": "Medium two-shot leaning on the bridge rail, Daniel asking quietly, Maggie looking toward the valley with a thoughtful smile, spring light, a distant train.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He asked whether I ever wondered what our lives might have been if he'd come back in 1952. I said I wondered all the time."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t279",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Close-up of Maggie speaking, wind in her white hair, spring leaves out of focus behind her, her face serene and thoughtful, light of the valley below.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Then I told him something I'd only recently begun to understand: imagining the life we'd lost must not make us blind to the lives that had actually been lived."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t280",
+   "chars": [
+    "laura",
+    "rose"
+   ],
+   "image": "Medium wide shot of Laura and Rose seen from behind laughing in a sunlit garden, a child running past, flowering shrubs, warm afternoon, the vibrancy of lives lived.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Laura and Rose were not mistakes made by history. They were women with families, work, laughter, and choices of their own."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t281",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Insert close-up of Maggie's hand holding a small framed photograph of her family, spring light on the glass, her thumb tracing the edge, gentle gratitude.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I would not trade their existence for an easier version of my story, even if I could have erased every sorrow that led us there."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t282",
+   "chars": [
+    "daniel_old",
+    "maggie_old"
+   ],
+   "image": "Insert close-up of Daniel's hand taking the brass screw from Maggie's palm, both older hands touching, spring light, the bridge rail blurred behind them.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Daniel took the little brass screw from my hand and smiled. He said he still owed me something better. I told him he didn't."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t283",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Medium shot of a small cottage kitchen table set for supper for two, a pot of soup and a pair of bowls, Maggie smiling to herself in the glow of a Tuesday evening lamp.",
+   "lines": [
+    [
+     "NARRATOR",
+     "What I wanted now was not a promise about forever, but the chance to spend an ordinary Tuesday with someone who told me the truth."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t284",
+   "chars": [
+    "maggie_old",
+    "daniel_old"
+   ],
+   "image": "Wide shot of Maggie and Daniel walking slowly off the bridge together in gentle spring light, seen from behind, the railway tracks gleaming below, unhurried and companionable.",
+   "lines": [
+    [
+     "NARRATOR",
+     "We walked slowly off the bridge together. We did not announce an engagement. We did not pretend to be twenty-four and twenty-seven again. We agreed to have supper the following week, and then another after that, if we still wanted to."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t285",
+   "chars": [],
+   "image": "Insert shot of two coffee cups on a small cafe table in sunlight, a pair of hands in the corner of frame about to meet, light morning mood, a gentle new beginning.",
+   "lines": [
+    [
+     "NARRATOR",
+     "It was the simplest promise either of us had ever made. And perhaps the bravest."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t286",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Medium shot of Maggie at her cottage window with a book in her hand, late afternoon sun, an open page, her face reflective and calm, soft dust motes.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I used to believe a life was one story, written straight through from beginning to end. I know better now."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t287",
+   "chars": [],
+   "image": "Insert close-up of an old book with pages being turned by an aged hand, the edge of a torn page visible, golden light, the ink on the paper blurred and not legible.",
+   "lines": [
+    [
+     "NARRATOR",
+     "A life is made of chapters we choose, chapters other people try to write for us, and chapters we must sometimes tear open after the ink has dried."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t288",
+   "chars": [],
+   "image": "Insert close-up of an empty wooden mantel with a faint pale rectangle where a photograph used to stand, dust motes in a shaft of light, the quiet of recovered time.",
+   "lines": [
+    [
+     "NARRATOR",
+     "I cannot recover the forty-four years I spent waiting for a letter that was already in my house. I cannot give Rose back her childhood or Daniel back the years he spent believing I had turned away."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t289",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Quiet wide shot of Maggie in a garden bench at dusk with her hands folded, looking at the horizon, a gentle breeze moving the trees, the air soft and bittersweet.",
+   "lines": [
+    [
+     "NARRATOR",
+     "And I cannot make the people who hurt us into people who never did."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t290",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Wide shot of Maggie, small and upright, walking across the old pedestrian bridge at golden hour, the valley and railway spread below, a freight train in the distance.",
+   "lines": [
+    [
+     "NARRATOR",
+     "But I can tell the truth. I can sit beside my daughters at a crowded table. I can open a door without asking permission. I can walk across an old railway bridge and choose what comes next."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t291",
+   "chars": [],
+   "image": "Insert close-up of a yellowed envelope resting on a wooden table in a shaft of sunlight, dust motes, handwritten name faintly visible but not legible, the quiet of a long-awaited arrival.",
+   "lines": [
+    [
+     "NARRATOR",
+     "The letter never came to me when it should have. In the end, though, the truth did."
+    ]
+   ],
+   "place": ""
+  },
+  {
+   "id": "t292",
+   "chars": [
+    "maggie_old"
+   ],
+   "image": "Close-up of Maggie's hand writing a reply at her cottage table, a fresh sheet of paper and pen mid-stroke, warm morning sun through the window, a calm and decisive tone.",
+   "lines": [
+    [
+     "NARRATOR",
+     "And this time, I answered."
+    ]
+   ],
+   "place": ""
+  }
+ ],
+ "thumbnail_file": "karma/letter_thumb.jpg",
+ "youtube": {
+  "title": "Her Husband Hid His Letter for 44 Years. Then She Found It.",
+  "category": "24",
+  "description": "In 1952, Maggie Bennett waited for a letter from the man she loved. It never came.\n\nForty-four years later, while repairing the frame of her own wedding photograph, an envelope slid onto the table. It was addressed to her, in Daniel's handwriting. And it was only the first secret her husband had kept.\n\nKarma Tales: stories where the truth always finds its way home.\n\nThis story is fiction. Any resemblance to real people or events is coincidental. Narration and images are AI-generated.\n\n#karmatales #familysecrets #dramastory #lovestory",
+  "tags": [
+   "karma tales",
+   "family secrets",
+   "drama story",
+   "hidden letter",
+   "lost love",
+   "betrayal story",
+   "twin sisters",
+   "audio drama",
+   "story for adults",
+   "1950s love story",
+   "revenge story"
+  ],
+  "shorts_description": "Full story on Karma Tales: Her Husband Hid His Letter for 44 Years. Then She Found It.\n\n#shorts #karmatales #familysecrets"
+ },
+ "shorts": [
+  {
+   "id": "short1",
+   "from": "t001",
+   "to": "t010",
+   "title": "SHE FOUND HIS LETTER|44 YEARS LATE",
+   "youtube_title": "Her Husband Hid His Letter for 44 Years \ud83d\udc8c #shorts"
+  },
+  {
+   "id": "short2",
+   "from": "t050",
+   "to": "t058",
+   "title": "SHE WAITED FOR|HIS LETTER",
+   "youtube_title": "She Waited for His Letter. Then a Stranger Called. #shorts"
+  },
+  {
+   "id": "short3",
+   "from": "t059",
+   "to": "t065",
+   "title": "TWO INITIALS IN|A VISITOR BOOK",
+   "youtube_title": "She Found Her Husband's Initials in the Hospital Visitor Book #shorts"
+  },
+  {
+   "id": "short4",
+   "from": "t099",
+   "to": "t103",
+   "title": "SHE HEARD|TWO BABIES CRY",
+   "youtube_title": "She Heard Two Babies Cry. They Gave Her Only One. #shorts"
+  },
+  {
+   "id": "short5",
+   "from": "t125",
+   "to": "t127",
+   "title": "BEHIND THEIR|WEDDING PHOTO",
+   "youtube_title": "Her Wedding Photo Hid His Letter for 44 Years #shorts"
+  },
+  {
+   "id": "short6",
+   "from": "t179",
+   "to": "t185",
+   "title": "THE WOMAN|AT THE GATE",
+   "youtube_title": "A Stranger Stood at Her Gate in 1974. 22 Years Later She Learned Why. #shorts"
+  },
+  {
+   "id": "short7",
+   "from": "t157",
+   "to": "t161",
+   "title": "ONE LINE IN|A 1953 HOSPITAL LOG",
+   "youtube_title": "She Mourned Her Baby for 43 Years. Then She Read the Hospital Log. #shorts"
+  },
+  {
+   "id": "short8",
+   "from": "t214",
+   "to": "t218",
+   "title": "THE NOTE HE KEPT|FOR 44 YEARS",
+   "youtube_title": "He Carried Her Goodbye Note for 44 Years. She Never Wrote It. #shorts"
+  }
+ ]
+}
