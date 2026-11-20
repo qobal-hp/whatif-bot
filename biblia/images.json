@@ -3,7 +3,7 @@
  "images": [
   {
    "id": "cap01",
-   "prompt": "the first moment of creation: a vast dark ocean under a stormy sky as a great shaft of golden light breaks through the clouds onto the waters",
+   "prompt": "the first moment of creation, no people at all: a vast dark primordial ocean under swirling storm clouds as a great shaft of golden light breaks through onto the waters, empty and majestic",
    "aspect": "16:9",
    "resolution": "2K"
   },
@@ -21,7 +21,7 @@
   },
   {
    "id": "cap04",
-   "prompt": "two brothers in ancient robes presenting offerings on two stone altars in an open field, smoke from one rising straight to the sky, sheep and harvest sheaves",
+   "prompt": "two brothers in ancient robes presenting offerings on two stone altars in an open field, smoke from one rising straight to the sky, sheep and harvest sheaves, full-bleed painting edge to edge with no border",
    "aspect": "16:9",
    "resolution": "2K"
   },

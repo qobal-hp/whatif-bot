@@ -1,0 +1,17 @@
+{
+ "style": "Classical oil painting in the style of the Old Masters (Rembrandt, Gustave Doré colored illustrations), warm golden light, rich deep colors, soft painterly brushwork, reverent and peaceful mood, cinematic wide composition, no text, no letters, no captions, no frames, figures fully clothed in ancient Near Eastern robes. Scene: ",
+ "images": [
+  {
+   "id": "cap01",
+   "prompt": "the first moment of creation, no people at all: a vast dark primordial ocean under swirling storm clouds as a great shaft of golden light breaks through onto the waters, empty and majestic",
+   "aspect": "16:9",
+   "resolution": "2K"
+  },
+  {
+   "id": "cap04",
+   "prompt": "two brothers in ancient robes presenting offerings on two stone altars in an open field, smoke from one rising straight to the sky, sheep and harvest sheaves, full-bleed painting edge to edge with no border",
+   "aspect": "16:9",
+   "resolution": "2K"
+  }
+ ]
+}
