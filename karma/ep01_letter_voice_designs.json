@@ -1,0 +1,20 @@
+{
+ "narrator": {
+  "description": "A warm, gentle American woman in her late sixties telling the true story of her own life, like a beloved audiobook narrator. Soft Pennsylvania accent, calm and intimate, a little husky with age, quietly emotional, never theatrical. Sounds like a grandmother talking to a friend late at night.",
+  "model": "eleven_ttv_v3",
+  "previews": [
+   "XHyGEEXDSpWQ3Yc8VlsJ",
+   "NTkj4vqx1TYH7XRKqCtA",
+   "5UY7qlEoyq62J5d9WLnG"
+  ]
+ },
+ "charles": {
+  "description": "A frail, wealthy American man in his mid seventies, a retired small-town banker. Refined, once commanding voice now weak, breathy and trembling with guilt and fear. Old-fashioned East Coast polish.",
+  "model": "eleven_ttv_v3",
+  "previews": [
+   "wRKJIJioQZDG1CeFY5EC",
+   "74EJrUHyq1Tx4RekYWJS",
+   "a8cgM0zKDg7aTA2vJNFj"
+  ]
+ }
+}
