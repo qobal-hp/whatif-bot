@@ -1,0 +1,6 @@
+{"style": "Photorealistic, serene, reverent, warm golden morning light, soft film grain, absolutely no text, no letters, no logos, no people's faces. ",
+ "images": [
+  {"id": "biblia_banner", "aspect": "16:9", "resolution": "2K", "prompt": "Wide cinematic banner background: an old open leather Bible resting on a rustic wooden table on the far left, soft golden sunrise rays streaming through a window, a small olive branch and a lit candle on the far right, gentle dust motes in the light. The CENTER of the frame is calm, soft, warm and uncluttered (blurred golden bokeh) so a title can be placed there."},
+  {"id": "biblia_logo_a", "aspect": "1:1", "resolution": "2K", "prompt": "Minimal elegant channel logo icon: a simple open book seen from the front with soft golden light rising from its pages like a sunrise, centered, on a deep navy blue background, clean flat premium style, high contrast, readable at tiny sizes, generous empty margin around the symbol for circular cropping."},
+  {"id": "biblia_logo_b", "aspect": "1:1", "resolution": "2K", "prompt": "Minimal elegant channel logo icon: a golden open book with a small white dove flying up from its pages and a soft halo of light, centered, on a deep navy blue background, clean flat premium emblem style, high contrast, readable at tiny sizes, generous empty margin for circular cropping."}
+ ]}
