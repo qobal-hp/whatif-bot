@@ -90,7 +90,8 @@ jobs:
           path: video/out/episode.mp4
       - name: Publish to the karma-output branch
         run: |
-          mkdir -p /tmp/result && cp video/out/preview.mp4 video/public/props.json /tmp/result/
+          mkdir -p /tmp/result && cp video/public/props.json /tmp/result/
+          [ $(stat -c %s video/out/preview.mp4) -lt 95000000 ] && cp video/out/preview.mp4 /tmp/result/
           size=$(stat -c %s video/out/episode.mp4); [ "$size" -lt 95000000 ] && cp video/out/episode.mp4 /tmp/result/
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
