@@ -1181,8 +1181,10 @@
   "image": "Close-up of Maggie reading, her lower lip trembling, light from the window catching a tear, a slanted handwritten page held in her fingers, not legible."
  },
  "t193": {
-  "chars": [],
-  "image": "Insert close-up of a handwritten sentence on lined paper at the bottom of a page, a final line with an ink smudge, not legible, a pen resting beside it, lamp light."
+  "chars": [
+   "rose"
+  ],
+  "image": "Medium close-up of Rose alone at her kitchen table at night, holding a pen above a blank sheet of paper, hesitant and frightened, lamp light, no visible writing."
  },
  "t194": {
   "chars": [
@@ -1642,7 +1644,7 @@
    "rose",
    "laura"
   ],
-  "image": "Wide shot of Laura's living room with a long table in the next room, Rose and Laura hanging coats, smiling nervously, the glow of a holiday home, children moving in the background."
+  "image": "Wide shot of Laura's living room on Thanksgiving Day, autumn decorations, pumpkins and fall leaves, Rose and Laura hanging coats, smiling nervously, children in the background. No Christmas tree."
  },
  "t271": {
   "chars": [
