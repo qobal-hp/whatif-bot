@@ -1,0 +1,26 @@
+name: Link shorts to their long form
+on:
+  workflow_dispatch:
+    inputs:
+      channel:
+        type: choice
+        options: [whatif, karma]
+        default: whatif
+      pairs:
+        description: SHORT_ID=LONG_ID pairs, comma separated
+        required: true
+jobs:
+  relink:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ inputs.channel == 'karma' && secrets.YT_REFRESH_TOKEN_KARMA || secrets.YT_REFRESH_TOKEN }}
+        run: |
+          pip install --quiet google-api-python-client google-auth
+          cd pipeline && python relink_shorts.py "${{ inputs.pairs }}"
