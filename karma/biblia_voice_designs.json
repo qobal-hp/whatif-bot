@@ -1,0 +1,20 @@
+{
+ "mujer": {
+  "description": "A warm, calm, gentle middle-aged Latin American woman reading the Bible aloud in neutral Latin American Spanish. Soft, soothing, unhurried and reverent, like a loving mother reading scripture at bedtime. Clear diction, natural pauses, never dramatic.",
+  "model": "eleven_ttv_v3",
+  "previews": [
+   "oHLrfDAzeJjGjMGkVUqo",
+   "keBoNFxkGtsW2ezG8Aqn",
+   "a10lG6ZAaZ4q4JXKSojX"
+  ]
+ },
+ "hombre": {
+  "description": "A warm, calm, deep middle-aged Latin American man reading the Bible aloud in neutral Latin American Spanish. Gentle, reassuring and reverent, slow and steady, like a kind pastor reading scripture to his congregation at night. Clear diction, natural pauses, never theatrical.",
+  "model": "eleven_ttv_v3",
+  "previews": [
+   "8lBwdQdIp1SlaFQCo7xK",
+   "rSepwBt0wnlr2maNH6Wf",
+   "nsM71a7H6yB47fxZPaJv"
+  ]
+ }
+}
