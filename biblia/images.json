@@ -1,0 +1,191 @@
+{
+ "style": "Classical oil painting in the style of the Old Masters (Rembrandt, Gustave Doré colored illustrations), warm golden light, rich deep colors, soft painterly brushwork, reverent and peaceful mood, cinematic wide composition, no text, no letters, no captions, no frames, figures fully clothed in ancient Near Eastern robes. Scene: ",
+ "images": [
+  {
+   "id": "cap01",
+   "prompt": "the first moment of creation: a vast dark ocean under a stormy sky as a great shaft of golden light breaks through the clouds onto the waters",
+   "aspect": "16:9",
+   "resolution": "2K"
+  },
+  {
+   "id": "cap02",
+   "prompt": "the Garden of Eden at dawn, a lush paradise of fruit trees, flowers and a calm river dividing into streams, deer and birds, soft mist",
+   "aspect": "16:9",
+   "resolution": "2K"
+  },
+  {
+   "id": "cap03",
+   "prompt": "Adam and Eve, modestly clothed in simple animal-skin garments, walking sorrowfully out of a radiant garden toward a barren land, seen from behind, an angel with a flaming sword far behind them at the gate",
+   "aspect": "16:9",
+   "resolution": "2K"
+  },
+  {
+   "id": "cap04",
+   "prompt": "two brothers in ancient robes presenting offerings on two stone altars in an open field, smoke from one rising straight to the sky, sheep and harvest sheaves",
+   "aspect": "16:9",
+   "resolution": "2K"
+  },
+  {
+   "id": "cap05",
+   "prompt": "an elderly patriarch with a long white beard walking alone on a quiet hilltop path at sunset, wrapped in robes, peaceful heavenly light ahead of him",
+   "aspect": "16:9",
+   "resolution": "2K"
+  },
+  {
+   "id": "cap06",
+   "prompt": "Noah, an old bearded man, and his sons building an enormous wooden ark on dry land, timber scaffolding, workers, stormy clouds gathering in the distance",
+   "aspect": "16:9",
+   "resolution": "2K"
+  },
+  {
+   "id": "cap07",
+   "prompt": "the great wooden ark floating alone on endless stormy flood waters under heavy rain and dark clouds, distant lightning",
+   "aspect": "16:9",
+   "resolution": "2K"
+  },
+  {
+   "id": "cap08",
+   "prompt": "the wooden ark resting on a mountaintop as the waters recede, a white dove flying back carrying an olive branch, soft morning light",
+   "aspect": "16:9",
+   "resolution": "2K"
+  },
+  {
+   "id": "cap09",
+   "prompt": "a brilliant rainbow arching across the sky over green hills after the flood, Noah and his family kneeling beside a stone altar with smoke rising",
+   "aspect": "16:9",
+   "resolution": "2K"
+  },
+  {
+   "id": "cap10",
+   "prompt": "ancient caravans of families with camels, donkeys and tents spreading across wide valleys toward distant early cities on the horizon, golden afternoon",
+   "aspect": "16:9",
+   "resolution": "2K"
+  },
+  {
+   "id": "cap11",
+   "prompt": "the Tower of Babel, a colossal unfinished spiral brick tower reaching into the clouds, crowds of tiny workers and scaffolding, dramatic sky",
+   "aspect": "16:9",
+   "resolution": "2K"
+  },
+  {
+   "id": "cap12",
+   "prompt": "Abram, an old man with a staff, leading his household, flocks of sheep, camels and tents across a vast desert toward the promised land at sunrise",
+   "aspect": "16:9",
+   "resolution": "2K"
+  },
+  {
+   "id": "cap13",
+   "prompt": "two men in ancient robes on a hilltop parting ways, one pointing toward a green well-watered river plain, herds of cattle and sheep on both sides",
+   "aspect": "16:9",
+   "resolution": "2K"
+  },
+  {
+   "id": "cap14",
+   "prompt": "a priest-king in white robes offering bread and a cup of wine to the bearded patriarch Abram, a crowd of weary men and a desert city behind them",
+   "aspect": "16:9",
+   "resolution": "2K"
+  },
+  {
+   "id": "cap15",
+   "prompt": "an old man in robes standing outside his tent at night, gazing up at an immense sky filled with countless stars and the Milky Way",
+   "aspect": "16:9",
+   "resolution": "2K"
+  },
+  {
+   "id": "cap16",
+   "prompt": "a young servant woman resting alone beside a spring of water in the wilderness, a gentle glowing angel appearing to her, palm trees",
+   "aspect": "16:9",
+   "resolution": "2K"
+  },
+  {
+   "id": "cap17",
+   "prompt": "an old patriarch bowing low with his face to the ground on a desert hill under a radiant golden sky, a sense of a solemn covenant",
+   "aspect": "16:9",
+   "resolution": "2K"
+  },
+  {
+   "id": "cap18",
+   "prompt": "an old man welcoming three mysterious travelers in white robes under great oak trees beside his tent, a table of bread and food, warm afternoon light",
+   "aspect": "16:9",
+   "resolution": "2K"
+  },
+  {
+   "id": "cap19",
+   "prompt": "the burning cities of Sodom in the distance with fire falling from a red sky, a small family fleeing across the hills at dawn, never showing gore",
+   "aspect": "16:9",
+   "resolution": "2K"
+  },
+  {
+   "id": "cap20",
+   "prompt": "a Philistine king on a throne in an ancient palace returning a beautiful older woman to her husband, gifts of sheep and silver, royal court",
+   "aspect": "16:9",
+   "resolution": "2K"
+  },
+  {
+   "id": "cap21",
+   "prompt": "a mother and her young son resting beside a newly found well of water in the desert wilderness of Beersheba, an angel's light from above",
+   "aspect": "16:9",
+   "resolution": "2K"
+  },
+  {
+   "id": "cap22",
+   "prompt": "an old father and his young son on a mountaintop beside a stone altar with firewood, a ram caught by its horns in a thicket nearby, golden light from heaven",
+   "aspect": "16:9",
+   "resolution": "2K"
+  },
+  {
+   "id": "cap23",
+   "prompt": "an old man mourning at the entrance of a rock-cut cave tomb among olive trees, people in ancient robes, quiet evening",
+   "aspect": "16:9",
+   "resolution": "2K"
+  },
+  {
+   "id": "cap24",
+   "prompt": "a young woman with a water jar at a stone well giving water to a line of camels, a traveling servant watching, evening sun",
+   "aspect": "16:9",
+   "resolution": "2K"
+  },
+  {
+   "id": "cap25",
+   "prompt": "twin brothers in a rustic tent, a rugged hairy hunter with a bow eagerly taking a bowl of red lentil stew from his quiet brother",
+   "aspect": "16:9",
+   "resolution": "2K"
+  },
+  {
+   "id": "cap26",
+   "prompt": "herdsmen digging and drawing water from new wells in a dry valley, flocks of sheep drinking, tents of a large household",
+   "aspect": "16:9",
+   "resolution": "2K"
+  },
+  {
+   "id": "cap27",
+   "prompt": "an old blind father in a tent laying his hands to bless a kneeling young man whose arms are covered with goatskins, an anxious mother watching from the doorway",
+   "aspect": "16:9",
+   "resolution": "2K"
+  },
+  {
+   "id": "cap28",
+   "prompt": "a young traveler asleep on the ground with a stone for a pillow, dreaming of a glowing stairway reaching to heaven with angels ascending and descending",
+   "aspect": "16:9",
+   "resolution": "2K"
+  },
+  {
+   "id": "cap29",
+   "prompt": "a young man meeting a beautiful shepherdess at a stone well, rolling the stone away, flocks of sheep around them, a pastoral valley",
+   "aspect": "16:9",
+   "resolution": "2K"
+  },
+  {
+   "id": "cap30",
+   "prompt": "a shepherd tending large flocks of speckled and spotted goats and sheep beside wooden watering troughs with peeled striped branches, green hills of Haran",
+   "aspect": "16:9",
+   "resolution": "2K"
+  },
+  {
+   "id": "thumb_base",
+   "prompt": "a peaceful starry night over a calm sea and quiet hills, a single warm beam of heavenly light descending from the clouds onto the water, an open ancient Bible on a stone in the foreground with a candle glowing, lots of dark empty space on the left side",
+   "aspect": "16:9",
+   "resolution": "2K"
+  }
+ ]
+}
