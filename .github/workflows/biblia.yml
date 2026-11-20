@@ -1,0 +1,58 @@
+name: Biblia reading video
+
+on:
+  workflow_dispatch:
+    inputs:
+      script:
+        description: Reading script
+        default: biblia/genesis_01_30.txt
+      max_chapters:
+        description: Render only the first N chapters (empty = all)
+        default: ""
+      music:
+        description: Music file on the music-output branch
+        default: music/guitarra.mp3
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch images and music
+        run: |
+          git fetch -q origin image-output music-output
+          mkdir -p /tmp/assets
+          git --work-tree=/tmp/assets checkout origin/image-output -- images
+          git --work-tree=/tmp/assets checkout origin/music-output -- "${{ inputs.music }}"
+          git reset -q
+          ls /tmp/assets/images | head -40
+      - name: Render
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+        run: |
+          sudo apt-get -qq update && sudo apt-get -qq install -y ffmpeg > /dev/null
+          python3 biblia/render.py "${{ inputs.script }}" /tmp/assets/images "/tmp/assets/${{ inputs.music }}" /tmp/out "${{ inputs.max_chapters }}"
+          ls -la /tmp/out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: episode
+          path: |
+            /tmp/out/episode.mp4
+            /tmp/out/chapters.txt
+          retention-days: 7
+      - name: Publish a preview copy when small enough
+        run: |
+          size=$(stat -c %s /tmp/out/episode.mp4)
+          if [ "$size" -gt 95000000 ]; then echo "Preview too large ($size bytes); use the artifact"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan biblia-output
+          git rm -rf --cached . > /dev/null
+          mkdir -p out && cp /tmp/out/episode.mp4 /tmp/out/chapters.txt out/
+          git add -f out
+          git commit -q -m "Biblia preview from run ${{ github.run_number }}"
+          git push -f origin biblia-output
