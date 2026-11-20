@@ -23,4 +23,4 @@ jobs:
           YT_REFRESH_TOKEN: ${{ inputs.channel == 'karma' && secrets.YT_REFRESH_TOKEN_KARMA || secrets.YT_REFRESH_TOKEN }}
         run: |
           pip install --quiet google-api-python-client google-auth
-          cd pipeline && python relink_shorts.py "${{ inputs.pairs }}"
+          cd pipeline && case "${{ inputs.pairs }}" in stats:*) python video_stats.py "$(echo "${{ inputs.pairs }}" | cut -d: -f2)";; *) python relink_shorts.py "${{ inputs.pairs }}";; esac
