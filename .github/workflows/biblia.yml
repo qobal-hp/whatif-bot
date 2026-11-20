@@ -10,7 +10,7 @@ on:
         description: Render only the first N chapters (empty = all)
         default: ""
       music:
-        description: Music file on the music-output branch
+        description: Music file on the biblia-assets branch
         default: music/guitarra.mp3
 
 permissions:
@@ -24,10 +24,10 @@ jobs:
       - uses: actions/checkout@v4
       - name: Fetch images and music
         run: |
-          git fetch -q origin image-output:refs/remotes/origin/image-output music-output:refs/remotes/origin/music-output
+          git fetch -q origin biblia-assets:refs/remotes/origin/biblia-assets
           mkdir -p /tmp/assets
-          git --work-tree=/tmp/assets checkout origin/image-output -- images
-          git --work-tree=/tmp/assets checkout origin/music-output -- "${{ inputs.music }}"
+          git --work-tree=/tmp/assets checkout origin/biblia-assets -- images
+          git --work-tree=/tmp/assets checkout origin/biblia-assets -- "${{ inputs.music }}"
           git reset -q
           ls /tmp/assets/images | head -40
       - name: Render
