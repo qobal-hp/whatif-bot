@@ -1,0 +1,32 @@
+name: Contact sheets
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: Run whose assets artifact is shown
+        required: true
+permissions:
+  contents: write
+  actions: read
+jobs:
+  sheets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: assets
+          path: /tmp/assets
+          run-id: ${{ inputs.run_id }}
+          github-token: ${{ github.token }}
+      - run: |
+          pip install --quiet pillow
+          python3 pipeline/contact_sheets.py /tmp/assets/assets /tmp/sheets 2>/dev/null || python3 pipeline/contact_sheets.py /tmp/assets /tmp/sheets
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan sheets
+          git rm -rf --cached . > /dev/null
+          rm -rf sheets && cp -r /tmp/sheets sheets
+          git add -f sheets
+          git commit -q -m "Contact sheets for run ${{ inputs.run_id }}"
+          git push -f origin sheets
