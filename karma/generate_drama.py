@@ -395,7 +395,8 @@ def main():
     props = {"fps": FPS, "durationSec": total, "audio": "assets/audio.mp3", "scenes": scenes, "words": words, "overlays": overlays, "sfx": spots, "ambience": beds}
     if spec.get("title_band"):
         props["title"] = spec["title_band"]
-    if spec.get("captions") is False:
+    # Long forms carry no burned-in captions (they would clash with YouTube's own subtitles); Shorts keep theirs.
+    if spec.get("captions", spec.get("aspect") == "9:16") is False:
         props["captions"] = False
     (PUBLIC / "props.json").write_text(json.dumps(props))
     print(f"Wrote props: {len(scenes)} scenes, {len(overlays)} overlays")
