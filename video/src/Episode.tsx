@@ -8,7 +8,7 @@ import type {EpisodeProps} from './types';
 
 const FADE_FRAMES = 14;
 
-export const Episode: React.FC<EpisodeProps> = ({audio, scenes, words, audioStart, title, durationSec, music, overlays, sfx}) => {
+export const Episode: React.FC<EpisodeProps> = ({audio, scenes, words, audioStart, title, durationSec, music, overlays, sfx, captions}) => {
   const {fps, width, height} = useVideoConfig();
   const vertical = height > width;
   return (
@@ -59,7 +59,7 @@ export const Episode: React.FC<EpisodeProps> = ({audio, scenes, words, audioStar
         </AbsoluteFill>
       ) : null}
       <Overlays overlays={overlays ?? []} />
-      <Captions words={words} vertical={vertical} />
+      {captions !== false && <Captions words={words} vertical={vertical} />}
       {(music ?? []).map((cue, i) => {
         // Each cue overlaps its neighbours by one second on both sides so the tracks crossfade.
         const from = Math.max(0, Math.round((cue.start - 1) * fps));

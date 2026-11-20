@@ -28,6 +28,7 @@ export type OverlayProps = {
 };
 
 export type EpisodeProps = {
+  captions?: boolean; // false: no burned-in captions (viewers can use YouTube's own)
   fps: number;
   durationSec: number;
   audio: string;

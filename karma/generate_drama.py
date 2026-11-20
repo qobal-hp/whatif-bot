@@ -395,6 +395,8 @@ def main():
     props = {"fps": FPS, "durationSec": total, "audio": "assets/audio.mp3", "scenes": scenes, "words": words, "overlays": overlays, "sfx": spots, "ambience": beds}
     if spec.get("title_band"):
         props["title"] = spec["title_band"]
+    if spec.get("captions") is False:
+        props["captions"] = False
     (PUBLIC / "props.json").write_text(json.dumps(props))
     print(f"Wrote props: {len(scenes)} scenes, {len(overlays)} overlays")
 
