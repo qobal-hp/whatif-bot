@@ -1,6 +1,6 @@
 """Design new cartoon voices with ElevenLabs Voice Design and save previews to listen to.
 
-usage: python karma/voice_design_test.py <out dir>
+usage: [ROLES_FILE=roles.json] python karma/voice_design_test.py <out dir>
 Writes <role>_<n>.mp3 for each preview and designs.json with the generated ids, so the
 chosen preview can be turned into a permanent voice later.
 """
@@ -43,7 +43,10 @@ def design(description, text):
 
 
 def main():
+    global ROLES
     out = Path(sys.argv[1])
+    if os.environ.get("ROLES_FILE"):  # roles for another show: {"role": [description, sample text]}
+        ROLES = json.loads(Path(os.environ["ROLES_FILE"]).read_text())
     out.mkdir(parents=True, exist_ok=True)
     saved = {}
     for role, (description, text) in ROLES.items():
