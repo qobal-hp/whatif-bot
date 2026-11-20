@@ -29,7 +29,7 @@ jobs:
           ROLES_FILE: ${{ inputs.roles_file }}
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
-          if [ "${{ inputs.test }}" = create ]; then python3 karma/create_voices.py karma/ep05_voice_designs.json "${{ inputs.narrators }}" EP05; elif [ "${{ inputs.test }}" = design ]; then python3 karma/voice_design_test.py /tmp/cast; elif [ "${{ inputs.test }}" = narrator ]; then python3 karma/narrator_test.py /tmp/cast; elif [ "${{ inputs.test }}" = dialogue ]; then python3 karma/dialogue_test.py /tmp/cast; elif [ "${{ inputs.test }}" = sfx ]; then python3 karma/sfx_test.py /tmp/cast; else python3 karma/cast_audition.py karma/cast_audition.json /tmp/cast; fi
+          if [ "${{ inputs.test }}" = create ]; then if [ -n "${{ inputs.roles_file }}" ]; then python3 karma/create_voices.py "${{ inputs.roles_file }}" "${{ inputs.narrators }}" KT; else python3 karma/create_voices.py karma/ep05_voice_designs.json "${{ inputs.narrators }}" EP05; fi; elif [ "${{ inputs.test }}" = design ]; then python3 karma/voice_design_test.py /tmp/cast; elif [ "${{ inputs.test }}" = narrator ]; then python3 karma/narrator_test.py /tmp/cast; elif [ "${{ inputs.test }}" = dialogue ]; then python3 karma/dialogue_test.py /tmp/cast; elif [ "${{ inputs.test }}" = sfx ]; then python3 karma/sfx_test.py /tmp/cast; else python3 karma/cast_audition.py karma/cast_audition.json /tmp/cast; fi
       - name: Publish to the karma-cast branch
         run: |
           git config user.name "github-actions[bot]"
