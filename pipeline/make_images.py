@@ -20,7 +20,7 @@ def make(style, item, out):
                 arguments={
                     "prompt": style + item["prompt"],
                     "aspect_ratio": item.get("aspect", "1:1"),
-                    "resolution": "1K",
+                    "resolution": item.get("resolution", "1K"),
                     "output_format": "png",
                 },
             )
