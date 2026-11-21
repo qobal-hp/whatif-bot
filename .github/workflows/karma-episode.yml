@@ -28,6 +28,9 @@ on:
       dub_cache_run:
         description: Reuse the Spanish lines already voiced in this earlier run id
         default: ""
+      dub_redo:
+        description: Scene ids whose Spanish lines are voiced again, comma separated
+        default: ""
 
 permissions:
   contents: write
@@ -75,6 +78,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           GOOGLE_TTS_SA_JSON: ${{ secrets.GOOGLE_TTS_SA_JSON }}
+          DUB_REDO: ${{ inputs.dub_redo }}
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
           pip install --quiet google-auth requests

@@ -124,6 +124,9 @@ def main():
     mod = importlib.util.module_from_spec(spec_mod); spec_mod.loader.exec_module(mod)
     LINES, OVERLAYS, VOICES = mod.LINES, getattr(mod, "OVERLAYS", {}), mod.VOICES
     props = json.loads((PUBLIC / "props.json").read_text())
+    for sid in filter(None, os.environ.get("DUB_REDO", "").split(",")):
+        for f in TMP.glob(f"{sid.strip()}_*"):
+            f.unlink()
 
     jobs = [(sid, i, role, text) for s in props["scenes"] for sid in [s["id"]] for i, (role, text) in enumerate(LINES[sid])]
     print(f"{len(jobs)} lines to voice")
