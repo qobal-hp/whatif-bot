@@ -1,0 +1,4517 @@
+{
+ "title": "Karma Tales EP05 - The Father They Buried",
+ "voices": {
+  "CATHERINE": "g6xIsTj2HwM6VR4iXFCw",
+  "ETHAN": "9q9deeS9jAvkExj8rb2Q",
+  "JAMES": "ppLqTilh7rH7fbUVlXsf",
+  "MIA": "uYXf8XasLslADfZ2MB4u",
+  "NARRATOR": "FmtiHEcHpocK7YiZwa46",
+  "OFFICIANT": "wAGzRVkxKEs8La0lmdrE",
+  "OLIVIA": "052jzHJceQiZr7ltnY0C",
+  "SARAH": "8tsLeAV5vPVuzCCvqbbU",
+  "THOMAS": "TTyZrDYo6LQowrH8mixJ"
+ },
+ "cast": {
+  "olivia": "karma/cast/ep05/olivia.jpg",
+  "thomas": "karma/cast/ep05/thomas.jpg",
+  "ethan": "karma/cast/ep05/ethan.jpg",
+  "catherine": "karma/cast/ep05/catherine.jpg",
+  "james": "karma/cast/ep05/james.jpg",
+  "mia": "karma/cast/ep05/mia.jpg",
+  "sarah": "karma/cast/ep05/sarah.jpg",
+  "officiant": "karma/cast/ep05/officiant.jpg"
+ },
+ "portraits": {
+  "ethan": "Photorealistic still from a prestige American TV drama, shot on 35mm, shallow depth of field, soft cinematic key light, natural skin texture, head-and-shoulders portrait facing slightly off camera, neutral dark background, an entirely fictional person who resembles no real celebrity, no text, no watermark. Ethan Blackwood, a 34-year-old American man, handsome, dark brown hair neatly swept back, clean-shaven strong jaw, cool gray eyes, a polished confident half-smile, navy suit with a white shirt.",
+  "catherine": "Photorealistic still from a prestige American TV drama, shot on 35mm, shallow depth of field, soft cinematic key light, natural skin texture, head-and-shoulders portrait facing slightly off camera, neutral dark background, an entirely fictional person who resembles no real celebrity, no text, no watermark. Catherine Blackwood, a 59-year-old American woman, sleek ash-blonde bob, high cheekbones, cool blue eyes, a thin polite smile, pearl earrings, ivory silk blouse.",
+  "james": "Photorealistic still from a prestige American TV drama, shot on 35mm, shallow depth of field, soft cinematic key light, natural skin texture, head-and-shoulders portrait facing slightly off camera, neutral dark background, an entirely fictional person who resembles no real celebrity, no text, no watermark. James Blackwood, a 65-year-old American businessman, thick swept-back white hair, clean-shaven, heavy brows, stern dark eyes, charcoal suit with a burgundy tie.",
+  "mia": "Photorealistic still from a prestige American TV drama, shot on 35mm, shallow depth of field, soft cinematic key light, natural skin texture, head-and-shoulders portrait facing slightly off camera, neutral dark background, an entirely fictional person who resembles no real celebrity, no text, no watermark. Mia Torres, a 30-year-old American woman, dark curly shoulder-length hair, warm brown skin, expressive dark eyes, a bold direct look, small gold hoop earrings, olive green jacket.",
+  "sarah": "Photorealistic still from a prestige American TV drama, shot on 35mm, shallow depth of field, soft cinematic key light, natural skin texture, head-and-shoulders portrait facing slightly off camera, neutral dark background, an entirely fictional person who resembles no real celebrity, no text, no watermark. Sarah Mitchell, a 48-year-old American attorney, auburn hair in a low neat bun, sharp green eyes, light freckles, tortoiseshell glasses, tailored navy blazer.",
+  "officiant": "Photorealistic still from a prestige American TV drama, shot on 35mm, shallow depth of field, soft cinematic key light, natural skin texture, head-and-shoulders portrait facing slightly off camera, neutral dark background, an entirely fictional person who resembles no real celebrity, no text, no watermark. Reverend Hale, a 70-year-old American minister, thinning white hair, kind tired eyes, wire-rimmed glasses, white clerical robe with a gold stole."
+ },
+ "looks": {
+  "olivia": "Olivia (the woman from the reference photo, same face, chestnut-brown hair in a soft updo with loose strands, in a lace wedding dress and long veil, calm expression unless the scene says otherwise)",
+  "olivia:casual": "Olivia (the same woman as the reference photo, same face, chestnut-brown hair loose, in a camel coat over a cream sweater)",
+  "olivia:dinner": "Olivia (the same woman as the reference photo, same face, chestnut-brown hair down, in a simple black cocktail dress)",
+  "olivia:night": "Olivia (the same woman as the reference photo, same face, chestnut-brown hair loose, in a gray hoodie, eyes tired)",
+  "olivia:yard": "Olivia (the same woman as the reference photo, same face, chestnut-brown hair in a ponytail, relaxed and smiling, in a denim shirt)",
+  "thomas": "Thomas (the older man from the reference photo, same face, gray hair and gray beard, in a dark gray mechanic's work shirt with grease stains)",
+  "thomas:wedding": "Thomas (the older man from the reference photo, same face, gray hair and gray beard, in a worn dark brown jacket over a gray button-up shirt, no tie)",
+  "thomas:home": "Thomas (the same older man as the reference photo, same face, in a plain flannel shirt)",
+  "thomas:yard": "Thomas (the same older man as the reference photo, same face, smiling, in an old faded blue shirt)",
+  "ethan": "Ethan (the dark-haired man from the reference photo, same face, in a black tuxedo with a white boutonniere)",
+  "ethan:suit": "Ethan (the dark-haired man from the reference photo, same face, in a navy suit, no tie)",
+  "catherine": "Catherine (the ash-blonde woman from the reference photo, same face, in a pale blue silk mother-of-the-groom dress and pearls)",
+  "catherine:home": "Catherine (the ash-blonde woman from the reference photo, same face, in an ivory silk blouse and pearls)",
+  "james": "James (the white-haired man from the reference photo, same face, in a charcoal suit)",
+  "mia": "Mia (the curly-haired woman from the reference photo, same face, in a sage-green bridesmaid dress)",
+  "mia:casual": "Mia (the curly-haired woman from the reference photo, same face, in an olive green jacket)",
+  "sarah": "Sarah (the auburn-haired woman with glasses from the reference photo, same face, in a tailored navy suit)",
+  "officiant": "the minister (the white-haired man in glasses from the reference photo, in a white clerical robe)"
+ },
+ "style": "Photorealistic still from a prestige American TV drama, shot on 35mm, cinematic lighting, shallow depth of field, natural skin texture, muted warm color palette, wide 16:9 frame. Keep every person's face and hair exactly consistent with their reference photo. No text, no captions, no watermark. ",
+ "resolution": "2K",
+ "music": [
+  [
+   "s01",
+   "tension"
+  ],
+  [
+   "s12",
+   "wonder"
+  ],
+  [
+   "s26",
+   "tension"
+  ],
+  [
+   "s39",
+   "tension"
+  ],
+  [
+   "s48",
+   "tension"
+  ],
+  [
+   "s57",
+   "tension"
+  ],
+  [
+   "s70",
+   "wonder"
+  ],
+  [
+   "s80",
+   "tension"
+  ],
+  [
+   "s90",
+   "tension"
+  ],
+  [
+   "s98",
+   "tension"
+  ],
+  [
+   "s109",
+   "tension"
+  ],
+  [
+   "s117",
+   "tension"
+  ],
+  [
+   "s136",
+   "tension"
+  ],
+  [
+   "s146",
+   "tension"
+  ],
+  [
+   "s161",
+   "wonder"
+  ],
+  [
+   "s172",
+   "wonder"
+  ],
+  [
+   "s180",
+   "wonder"
+  ]
+ ],
+ "places": {
+  "chapel": "Setting: a historic stone chapel in Philadelphia on a bright fall morning, stained glass, white flowers on every pew, about two hundred well-dressed wedding guests, a long aisle to the altar.",
+  "garage": "Setting: a small old auto repair garage in a working-class Philadelphia neighborhood, an open bay door, an old sedan on a lift, tools on pegboard, a radio on a shelf, afternoon light.",
+  "garage_night": "Setting: the same small auto repair garage at night, bay door closed, one hanging work lamp, a desk with an old phone and a coffee mug.",
+  "restaurant": "Setting: an elegant upscale restaurant in Philadelphia's Rittenhouse Square at night, white tablecloths, candles, crystal glasses, dark wood.",
+  "street": "Setting: a Philadelphia city sidewalk at night outside an upscale restaurant, wet pavement, streetlights, a black luxury car at the curb.",
+  "mansion": "Setting: the bright formal music room of a Main Line Philadelphia mansion, a grand piano, tall windows, fresh flowers, a table covered in wedding programs and seating charts.",
+  "apartment": "Setting: a sleek modern high-rise apartment in Center City Philadelphia at night, floor-to-ceiling windows with city lights, gray minimalist furniture.",
+  "kitchen": "Setting: a small modest row-house kitchen in Philadelphia in the evening, an old table for two, a small birthday cake with candles, a wall calendar.",
+  "law_office": "Setting: a downtown Philadelphia law office, tall windows over the city, bookshelves of legal binders, a large wooden desk with files.",
+  "hotel": "Setting: an upscale hotel suite in Philadelphia the night before a wedding, a wedding dress hanging on a closet door, an open suitcase on the bed, soft lamps.",
+  "backyard": "Setting: a small Philadelphia row-house backyard on a sunny late-summer afternoon, a charcoal grill, string lights, a picnic table with a checkered cloth."
+ },
+ "ambiences": {
+  "chapel": [
+   "Large stone chapel full of people, soft rustling and murmurs, faint echo",
+   0.06
+  ],
+  "garage": [
+   "Small auto repair garage, distant street traffic, an old radio very faint",
+   0.06
+  ],
+  "garage_night": [
+   "Empty garage at night, buzzing work lamp, crickets outside",
+   0.06
+  ],
+  "restaurant": [
+   "Upscale restaurant, quiet conversations, soft piano far away",
+   0.06
+  ],
+  "street": [
+   "City street at night, light rain, distant traffic",
+   0.07
+  ],
+  "house": [
+   "Large quiet mansion room tone, faint clock",
+   0.05
+  ],
+  "apartment": [
+   "High-rise apartment at night, quiet city hum far below",
+   0.05
+  ],
+  "kitchen": [
+   "Small quiet kitchen, refrigerator hum, wall clock ticking",
+   0.05
+  ],
+  "office": [
+   "Quiet downtown office, muffled city traffic",
+   0.05
+  ],
+  "hotel": [
+   "Quiet hotel room, air conditioning hum",
+   0.05
+  ],
+  "yard": [
+   "Backyard summer afternoon, birds, distant neighborhood kids",
+   0.07
+  ]
+ },
+ "ambience": [
+  [
+   "s01",
+   "chapel"
+  ],
+  [
+   "s12",
+   "garage"
+  ],
+  [
+   "s17",
+   "apartment"
+  ],
+  [
+   "s18",
+   "garage"
+  ],
+  [
+   "s19",
+   "apartment"
+  ],
+  [
+   "s20",
+   "garage"
+  ],
+  [
+   "s21",
+   "apartment"
+  ],
+  [
+   "s22",
+   "garage"
+  ],
+  [
+   "s26",
+   "restaurant"
+  ],
+  [
+   "s35",
+   "street"
+  ],
+  [
+   "s39",
+   "garage"
+  ],
+  [
+   "s48",
+   "house"
+  ],
+  [
+   "s57",
+   "apartment"
+  ],
+  [
+   "s70",
+   "kitchen"
+  ],
+  [
+   "s72",
+   "apartment"
+  ],
+  [
+   "s73",
+   "kitchen"
+  ],
+  [
+   "s74",
+   "apartment"
+  ],
+  [
+   "s75",
+   "kitchen"
+  ],
+  [
+   "s76",
+   "apartment"
+  ],
+  [
+   "s78",
+   "kitchen"
+  ],
+  [
+   "s80",
+   "garage"
+  ],
+  [
+   "s90",
+   "office"
+  ],
+  [
+   "s98",
+   "hotel"
+  ],
+  [
+   "s109",
+   "garage_night"
+  ],
+  [
+   "s110",
+   "hotel"
+  ],
+  [
+   "s112",
+   "garage_night"
+  ],
+  [
+   "s115",
+   "hotel"
+  ],
+  [
+   "s116",
+   "garage_night"
+  ],
+  [
+   "s117",
+   "chapel"
+  ],
+  [
+   "s172",
+   "office"
+  ],
+  [
+   "s180",
+   "yard"
+  ],
+  [
+   "s188",
+   "garage"
+  ],
+  [
+   "s189",
+   "yard"
+  ]
+ ],
+ "scenes": [
+  {
+   "id": "s01",
+   "chars": [],
+   "image": "Wide shot down the aisle of a packed chapel, the bride and groom at the altar in soft morning light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[low, deliberate] The bride had told everyone her father was dead."
+    ]
+   ],
+   "place": "chapel",
+   "sfx": [
+    [
+     "Gentle wedding string quartet in a stone chapel, guests whispering",
+     4.0,
+     0.25,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s02",
+   "chars": [
+    "officiant"
+   ],
+   "image": "The minister at the altar, open book in his hands, looking out at the guests.",
+   "lines": [
+    [
+     "OFFICIANT",
+     "[warm, ceremonial] If anyone here knows of a reason these two should not be joined in marriage... [pause] speak now."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s03",
+   "chars": [],
+   "image": "The heavy carved wooden chapel doors swinging open, daylight pouring in behind the dark silhouette of a broad-shouldered older man in a jacket, seen from inside the chapel.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[quiet] Then the chapel doors opened."
+    ]
+   ],
+   "place": "chapel",
+   "sfx": [
+    [
+     "Heavy old church doors creaking open, echo in a stone hall",
+     2.5,
+     0.5,
+     "start"
+    ]
+   ],
+   "motion": "the heavy doors swing open and light floods into the aisle"
+  },
+  {
+   "id": "s04",
+   "chars": [
+    "thomas:wedding"
+   ],
+   "image": "Thomas standing alone at the back of the aisle in a worn jacket, light behind him, every guest turning.",
+   "lines": [
+    [
+     "THOMAS",
+     "[clear, steady, carrying across the chapel] I do."
+    ]
+   ],
+   "place": "chapel",
+   "sfx": [
+    [
+     "String music stopping abruptly, a crowd gasping",
+     2.0,
+     0.45,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s05",
+   "chars": [
+    "olivia"
+   ],
+   "image": "Olivia at the altar in her wedding dress, turning, her bouquet slipping in her hands, face drained of color.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[breath catching, a whisper] ...Dad?"
+    ]
+   ],
+   "place": "chapel",
+   "motion": "she turns slowly toward the doors, her bouquet trembling"
+  },
+  {
+   "id": "s06",
+   "chars": [
+    "ethan"
+   ],
+   "image": "Ethan at the altar in a tuxedo, jaw tight, eyes narrowing at the back of the chapel.",
+   "lines": [
+    [
+     "ETHAN",
+     "[low, through his teeth] Who the hell is that?"
+    ],
+    [
+     "THOMAS",
+     "[walking slowly down the aisle] My name is Thomas Reed. [pause] I'm the bride's father."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s07",
+   "chars": [
+    "catherine",
+    "james"
+   ],
+   "image": "Front pew: Catherine gripping James's arm, staring at the aisle as if she has seen a ghost.",
+   "lines": [
+    [
+     "CATHERINE",
+     "[horrified whisper] That's impossible."
+    ],
+    [
+     "JAMES",
+     "[low] Catherine?"
+    ],
+    [
+     "CATHERINE",
+     "[barely audible] Ethan told me he was dead. [pause] I printed his name in the program."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s08",
+   "chars": [],
+   "image": "Close-up of a wedding program on a pew, the words 'In Loving Memory' printed above a name.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[slow] Two hundred guests were holding a wedding program with his name in it. [pause] Under the words: In loving memory."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s09",
+   "chars": [
+    "olivia",
+    "ethan"
+   ],
+   "image": "Olivia stepping toward the aisle; Ethan catching her wrist hard.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[shaking, pleading] Dad, please. You have to leave. [pause] Because if you stay..."
+    ],
+    [
+     "ETHAN",
+     "[quiet, cold, gripping her wrist] Olivia. Don't say another word."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s10",
+   "chars": [
+    "thomas:wedding"
+   ],
+   "image": "Thomas halfway down the aisle, stopping, eyes locked on Ethan's hand around Olivia's wrist.",
+   "lines": [
+    [
+     "THOMAS",
+     "[very quiet, dangerous] Take your hand off my daughter."
+    ]
+   ],
+   "place": "chapel",
+   "sfx": [
+    [
+     "Deep cinematic boom",
+     2.0,
+     0.4,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s11",
+   "chars": [
+    "thomas:wedding"
+   ],
+   "image": "Close-up of Thomas's weathered face, eyes wet but steady.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[low] To understand how a living man ended up in his own memorial... we have to go back six months. [pause] To a phone call in a garage."
+    ]
+   ],
+   "place": "chapel",
+   "sfx": [
+    [
+     "Low sustained chord fading out",
+     3.0,
+     0.3,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s12",
+   "chars": [
+    "thomas"
+   ],
+   "image": "Six months earlier: Thomas leaning into the engine of an old sedan, wrench in hand, sleeves rolled up.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Six months earlier."
+    ],
+    [
+     "THOMAS",
+     "[straining, muttering to the car] Come on, old girl. One more turn."
+    ]
+   ],
+   "place": "garage",
+   "cut": true,
+   "sfx": [
+    [
+     "Garage ambience, a wrench clinking, old radio playing soft rock",
+     4.0,
+     0.3,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s13",
+   "chars": [
+    "thomas"
+   ],
+   "image": "Thomas stepping back from the sedan as the engine catches, wiping his hands on a rag, grinning.",
+   "lines": [
+    [
+     "THOMAS",
+     "[satisfied chuckle] There we go."
+    ]
+   ],
+   "place": "garage",
+   "sfx": [
+    [
+     "An old car engine sputtering then starting and idling",
+     3.0,
+     0.45,
+     "start"
+    ]
+   ],
+   "motion": "he steps back from the running engine and wipes his hands on a rag"
+  },
+  {
+   "id": "s14",
+   "chars": [],
+   "image": "No people in the frame. A small crowded Philadelphia garage wall: faded photos of a little girl in a school play, a graduation cap, all pinned beside the tool pegboard.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[warm] Thomas Reed had spent thirty-five years fixing cars in the same small Philadelphia garage. He wasn't wealthy. His work shirts always smelled like motor oil."
+    ]
+   ],
+   "place": "garage"
+  },
+  {
+   "id": "s15",
+   "chars": [],
+   "image": "Close-up of an old faded photo of Thomas holding a little girl on his shoulders at a fair.",
+   "lines": [
+    [
+     "NARRATOR",
+     "But he had raised Olivia alone after her mother died. He worked weekends to pay her college tuition. He never missed a school play, a graduation, or a birthday. [pause] Then Olivia met Ethan Blackwood. [pause] And everything changed."
+    ]
+   ],
+   "place": "garage"
+  },
+  {
+   "id": "s16",
+   "chars": [
+    "thomas"
+   ],
+   "image": "Thomas answering an old phone with a greasy hand, face lighting up.",
+   "lines": [
+    [
+     "THOMAS",
+     "[bright, warm] Hey, pumpkin!"
+    ],
+    [
+     "OLIVIA~phone",
+     "[a tired sigh] Dad, don't call me that."
+    ],
+    [
+     "THOMAS",
+     "[sheepish laugh] Sorry. Old habit. [pause] How's my favorite daughter?"
+    ]
+   ],
+   "place": "garage",
+   "sfx": [
+    [
+     "Old phone ringing in a garage",
+     2.0,
+     0.4,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s17",
+   "chars": [
+    "olivia:casual"
+   ],
+   "image": "Olivia on a phone call by a tall window in a sleek apartment, smiling faintly despite herself.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[small smile in her voice] I'm your only daughter."
+    ],
+    [
+     "THOMAS~phone",
+     "[proud] Exactly. Undefeated champion."
+    ],
+    [
+     "OLIVIA",
+     "[hesitant] Dad... I need to tell you something."
+    ]
+   ],
+   "place": "apartment"
+  },
+  {
+   "id": "s18",
+   "chars": [
+    "thomas"
+   ],
+   "image": "Thomas turning down the radio, suddenly worried.",
+   "lines": [
+    [
+     "THOMAS",
+     "[concerned] What's wrong?"
+    ],
+    [
+     "OLIVIA~phone",
+     "[quiet] Ethan proposed."
+    ],
+    [
+     "THOMAS",
+     "[stunned, then overjoyed] He did? [laughs] Olivia, that's wonderful!"
+    ]
+   ],
+   "place": "garage",
+   "sfx": [
+    [
+     "Radio clicked off",
+     0.8,
+     0.35,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s19",
+   "chars": [
+    "olivia:casual"
+   ],
+   "image": "Olivia looking down at a large diamond ring on her hand, not smiling.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[flat] Thanks."
+    ],
+    [
+     "THOMAS~phone",
+     "[excited] When's the wedding?"
+    ],
+    [
+     "OLIVIA",
+     "[too quickly] We haven't decided."
+    ]
+   ],
+   "place": "apartment"
+  },
+  {
+   "id": "s20",
+   "chars": [
+    "thomas"
+   ],
+   "image": "Thomas sitting down on an overturned bucket, grinning, phone at his ear.",
+   "lines": [
+    [
+     "THOMAS",
+     "[warm, certain] Well, whenever it is, I'll be there."
+    ],
+    [
+     "OLIVIA~phone",
+     "[hesitating] Dad..."
+    ],
+    [
+     "THOMAS",
+     "What?"
+    ]
+   ],
+   "place": "garage"
+  },
+  {
+   "id": "s21",
+   "chars": [
+    "olivia:casual"
+   ],
+   "image": "Olivia pressing her forehead against the cold window glass.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[carefully] Ethan's family is very... traditional."
+    ],
+    [
+     "THOMAS~phone",
+     "[chuckling] So am I. I still use a paper calendar."
+    ],
+    [
+     "OLIVIA",
+     "[pained] I'm serious."
+    ]
+   ],
+   "place": "apartment"
+  },
+  {
+   "id": "s22",
+   "chars": [
+    "thomas"
+   ],
+   "image": "Thomas's smile fading as he listens.",
+   "lines": [
+    [
+     "THOMAS",
+     "[gently] So am I."
+    ],
+    [
+     "OLIVIA~phone",
+     "[strained] They have expectations."
+    ],
+    [
+     "THOMAS",
+     "[slowly] About what?"
+    ],
+    [
+     "OLIVIA~phone",
+     "[almost a whisper] Everything."
+    ]
+   ],
+   "place": "garage"
+  },
+  {
+   "id": "s23",
+   "chars": [
+    "thomas"
+   ],
+   "image": "Thomas looking down at his grease-stained hands.",
+   "lines": [
+    [
+     "THOMAS",
+     "[trying to lighten it] Well... I can rent a tuxedo."
+    ],
+    [
+     "OLIVIA~phone",
+     "[quiet] It's not about the tuxedo."
+    ]
+   ],
+   "place": "garage",
+   "sfx": [
+    [
+     "Silence, only an idling engine in the background",
+     2.0,
+     0.2,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s24",
+   "chars": [
+    "thomas"
+   ],
+   "image": "Close-up of Thomas, phone at his ear, waiting.",
+   "lines": [
+    [
+     "THOMAS",
+     "[softly] Then what is it about?"
+    ],
+    [
+     "OLIVIA~phone",
+     "[rushed] I have to go. I'll call you later."
+    ]
+   ],
+   "place": "garage",
+   "sfx": [
+    [
+     "Call disconnect tone",
+     1.0,
+     0.4,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s25",
+   "chars": [
+    "thomas"
+   ],
+   "image": "Thomas alone in the garage, slowly lowering the phone, the radio silent.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[slow] She didn't call later. Not that night. Not the next. [pause] And for the first time in twenty-nine years, Thomas wondered whether his daughter was ashamed of him."
+    ]
+   ],
+   "place": "garage",
+   "motion": "he slowly lowers the phone and stares at the floor"
+  },
+  {
+   "id": "s26",
+   "chars": [
+    "catherine:home",
+    "james"
+   ],
+   "image": "Catherine and James Blackwood at a candlelit table, Catherine smiling over her wine glass.",
+   "lines": [
+    [
+     "CATHERINE",
+     "[sweet, probing] Olivia, darling. Tell us about your family."
+    ]
+   ],
+   "place": "restaurant",
+   "cut": true,
+   "sfx": [
+    [
+     "Upscale restaurant, glasses clinking, soft piano",
+     4.0,
+     0.3,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s27",
+   "chars": [
+    "olivia:dinner"
+   ],
+   "image": "Olivia at the table, napkin twisted in her lap, forcing a polite smile.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[polite, careful] There's not much to tell."
+    ],
+    [
+     "JAMES",
+     "[businesslike] Your mother?"
+    ],
+    [
+     "OLIVIA",
+     "[quietly] She passed away when I was young."
+    ]
+   ],
+   "place": "restaurant"
+  },
+  {
+   "id": "s28",
+   "chars": [
+    "catherine:home"
+   ],
+   "image": "Catherine tilting her head with practiced sympathy.",
+   "lines": [
+    [
+     "CATHERINE",
+     "[practiced sympathy] How tragic. [pause] And your father?"
+    ],
+    [
+     "OLIVIA",
+     "[hesitating] He..."
+    ]
+   ],
+   "place": "restaurant"
+  },
+  {
+   "id": "s29",
+   "chars": [
+    "ethan:suit",
+    "olivia:dinner"
+   ],
+   "image": "Ethan smoothly cutting in, hand on Olivia's shoulder, smiling at his parents.",
+   "lines": [
+    [
+     "ETHAN",
+     "[smooth, cutting in] Olivia's father isn't in the picture."
+    ],
+    [
+     "CATHERINE",
+     "[eyebrows rising] Oh?"
+    ],
+    [
+     "OLIVIA",
+     "[startled] Ethan—"
+    ]
+   ],
+   "place": "restaurant"
+  },
+  {
+   "id": "s30",
+   "chars": [
+    "ethan:suit",
+    "olivia:dinner"
+   ],
+   "image": "Ethan squeezing Olivia's hand on the table a little too tightly.",
+   "lines": [
+    [
+     "ETHAN",
+     "[gently, firmly] It's a difficult subject, Mom."
+    ],
+    [
+     "CATHERINE",
+     "[cool] I see."
+    ]
+   ],
+   "place": "restaurant"
+  },
+  {
+   "id": "s31",
+   "chars": [
+    "james"
+   ],
+   "image": "James setting down his fork, looking at Olivia over his glasses.",
+   "lines": [
+    [
+     "JAMES",
+     "[measured] Well. Family history is important when two families come together."
+    ],
+    [
+     "ETHAN",
+     "[tight] Dad, please."
+    ],
+    [
+     "CATHERINE",
+     "[pleasant, persistent] No, James has a point. [pause] Olivia, was your father a businessman?"
+    ]
+   ],
+   "place": "restaurant"
+  },
+  {
+   "id": "s32",
+   "chars": [
+    "olivia:dinner"
+   ],
+   "image": "Olivia lifting her chin.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[quiet pride] He was a mechanic."
+    ],
+    [
+     "CATHERINE",
+     "[a beat too long] A mechanic?"
+    ],
+    [
+     "ETHAN",
+     "[quickly] He owned a small repair shop."
+    ]
+   ],
+   "place": "restaurant"
+  },
+  {
+   "id": "s33",
+   "chars": [
+    "catherine:home"
+   ],
+   "image": "Catherine's thin polite smile, eyes cold.",
+   "lines": [
+    [
+     "CATHERINE",
+     "[sweetly, condescending] How... [pause] hardworking."
+    ],
+    [
+     "OLIVIA",
+     "[firm] He worked very hard."
+    ],
+    [
+     "CATHERINE",
+     "[dismissive] Of course, dear."
+    ]
+   ],
+   "place": "restaurant"
+  },
+  {
+   "id": "s34",
+   "chars": [
+    "catherine:home",
+    "james"
+   ],
+   "image": "Catherine and James exchanging a silent knowing look across the table.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[low] Olivia noticed the look Catherine gave James. [pause] And Ethan noticed Olivia noticing."
+    ]
+   ],
+   "place": "restaurant"
+  },
+  {
+   "id": "s35",
+   "chars": [
+    "olivia:dinner",
+    "ethan:suit"
+   ],
+   "image": "Outside the restaurant at night, Olivia stopping on the wet sidewalk, turning on Ethan.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[hurt, keeping her voice down] Why did you tell them my dad wasn't in the picture?"
+    ],
+    [
+     "ETHAN",
+     "[calm] Because you were uncomfortable."
+    ],
+    [
+     "OLIVIA",
+     "I was about to answer."
+    ]
+   ],
+   "place": "street",
+   "cut": true,
+   "sfx": [
+    [
+     "City street at night, distant traffic, light rain",
+     3.0,
+     0.3,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s36",
+   "chars": [
+    "ethan:suit"
+   ],
+   "image": "Ethan stepping close, cupping her face, voice soft.",
+   "lines": [
+    [
+     "ETHAN",
+     "[soft, reasonable] Olivia, my mother is difficult. I'm trying to make things easier for you."
+    ],
+    [
+     "OLIVIA",
+     "[sharp] By lying?"
+    ],
+    [
+     "ETHAN",
+     "[evenly] By protecting our future."
+    ]
+   ],
+   "place": "street"
+  },
+  {
+   "id": "s37",
+   "chars": [
+    "olivia:dinner"
+   ],
+   "image": "Olivia pulling back from his hands, eyes wet.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[quiet, firm] My father raised me."
+    ],
+    [
+     "ETHAN",
+     "[smiling] And I'm sure he's a wonderful man. [pause] But do you really want my parents judging you before they even know you?"
+    ]
+   ],
+   "place": "street"
+  },
+  {
+   "id": "s38",
+   "chars": [
+    "ethan:suit",
+    "olivia:dinner"
+   ],
+   "image": "Ethan opening the door of a black car for her.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[small] I don't want to hide him."
+    ],
+    [
+     "ETHAN",
+     "[gently] Then don't. [pause] Just let me handle my family."
+    ]
+   ],
+   "place": "street",
+   "sfx": [
+    [
+     "Heavy car door closing",
+     1.0,
+     0.45,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s39",
+   "chars": [
+    "thomas"
+   ],
+   "image": "Thomas under a car on a creeper, only his boots visible, a pair of polished heels stepping into the garage.",
+   "lines": [
+    [
+     "THOMAS",
+     "[from under the car] We're closed!"
+    ],
+    [
+     "SARAH",
+     "[amused] Even for an old friend?"
+    ]
+   ],
+   "place": "garage",
+   "cut": true,
+   "sfx": [
+    [
+     "Garage door rattling, footsteps in heels on concrete",
+     3.0,
+     0.35,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s40",
+   "chars": [
+    "sarah"
+   ],
+   "image": "Sarah Mitchell standing in the garage bay in a sharp navy suit, briefcase in hand, smiling.",
+   "lines": [
+    [
+     "THOMAS",
+     "[rolling out, squinting] Sarah Mitchell? [laughs] Well, I'll be damned."
+    ],
+    [
+     "SARAH",
+     "[warm] Good to see you, Thomas."
+    ]
+   ],
+   "place": "garage"
+  },
+  {
+   "id": "s41",
+   "chars": [
+    "thomas"
+   ],
+   "image": "Thomas getting up, wiping his hands, curious.",
+   "lines": [
+    [
+     "THOMAS",
+     "[teasing] What brings a fancy lawyer to my garage?"
+    ],
+    [
+     "SARAH",
+     "[serious now] The Blackwoods."
+    ]
+   ],
+   "place": "garage",
+   "sfx": [
+    [
+     "A wrench set down on a metal tray, then silence",
+     1.5,
+     0.4,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s42",
+   "chars": [
+    "sarah",
+    "thomas"
+   ],
+   "image": "Sarah and Thomas facing each other beside a workbench.",
+   "lines": [
+    [
+     "THOMAS",
+     "[guarded] What about them?"
+    ],
+    [
+     "SARAH",
+     "Your daughter's engaged to Ethan Blackwood."
+    ],
+    [
+     "THOMAS",
+     "You know him?"
+    ],
+    [
+     "SARAH",
+     "[carefully] I know his father."
+    ]
+   ],
+   "place": "garage"
+  },
+  {
+   "id": "s43",
+   "chars": [],
+   "image": "Close-up of an old yellowed court file in Sarah's hands labeled with a fifteen-year-old date.",
+   "lines": [
+    [
+     "SARAH",
+     "[measured] Do you remember the commercial property dispute fifteen years ago?"
+    ],
+    [
+     "THOMAS",
+     "[bitter] The one that nearly cost me my garage?"
+    ],
+    [
+     "SARAH",
+     "Yes."
+    ]
+   ],
+   "place": "garage"
+  },
+  {
+   "id": "s44",
+   "chars": [
+    "thomas"
+   ],
+   "image": "Thomas closing his eyes, shaking his head slowly.",
+   "lines": [
+    [
+     "THOMAS",
+     "[groaning] Don't tell me."
+    ],
+    [
+     "SARAH",
+     "[quiet] James Blackwood's investment company was behind it."
+    ],
+    [
+     "THOMAS",
+     "[shrugging it off] That was a long time ago."
+    ]
+   ],
+   "place": "garage"
+  },
+  {
+   "id": "s45",
+   "chars": [
+    "sarah"
+   ],
+   "image": "Sarah holding up her phone showing an engagement announcement.",
+   "lines": [
+    [
+     "SARAH",
+     "[gently] I know. But I saw your daughter's engagement announcement. And I thought you should know."
+    ]
+   ],
+   "place": "garage"
+  },
+  {
+   "id": "s46",
+   "chars": [
+    "thomas"
+   ],
+   "image": "Thomas looking at the photo of Olivia pinned on the wall.",
+   "lines": [
+    [
+     "THOMAS",
+     "[firm, protective] Olivia has nothing to do with that old fight."
+    ],
+    [
+     "SARAH",
+     "[soft] I hope you're right."
+    ],
+    [
+     "THOMAS",
+     "[sighs] Sarah, I appreciate the warning. But my daughter loves this man. I'm not going to ruin that over something that happened fifteen years ago."
+    ]
+   ],
+   "place": "garage"
+  },
+  {
+   "id": "s47",
+   "chars": [
+    "sarah"
+   ],
+   "image": "Sarah handing Thomas a business card at the garage door.",
+   "lines": [
+    [
+     "SARAH",
+     "[serious] Then promise me one thing."
+    ],
+    [
+     "THOMAS",
+     "What?"
+    ],
+    [
+     "SARAH",
+     "[holding his gaze] If anything feels wrong... call me."
+    ]
+   ],
+   "place": "garage",
+   "motion": "she presses a business card into his hand and walks out into the daylight"
+  },
+  {
+   "id": "s48",
+   "chars": [
+    "catherine:home",
+    "olivia:casual"
+   ],
+   "image": "Catherine at a table covered with wedding programs and seating charts, Olivia beside her, a grand piano behind.",
+   "lines": [
+    [
+     "CATHERINE",
+     "[brisk, cheerful] Olivia, we need to finalize the wedding program."
+    ],
+    [
+     "OLIVIA",
+     "[polite] Of course."
+    ]
+   ],
+   "place": "mansion",
+   "cut": true,
+   "sfx": [
+    [
+     "Large quiet mansion room, someone playing soft piano in the next room",
+     4.0,
+     0.25,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s49",
+   "chars": [
+    "catherine:home"
+   ],
+   "image": "Catherine running a manicured finger down a printed schedule.",
+   "lines": [
+    [
+     "CATHERINE",
+     "[light] And the father-daughter dance?"
+    ],
+    [
+     "OLIVIA",
+     "[hesitant] I haven't decided."
+    ],
+    [
+     "CATHERINE",
+     "[casually] Ethan mentioned your father wasn't around."
+    ]
+   ],
+   "place": "mansion"
+  },
+  {
+   "id": "s50",
+   "chars": [
+    "olivia:casual"
+   ],
+   "image": "Olivia setting down a seating chart, uneasy.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[uneasy] That's... complicated."
+    ],
+    [
+     "CATHERINE",
+     "[patting her hand] Darling, you don't need to explain. Some people have unfortunate family circumstances."
+    ]
+   ],
+   "place": "mansion"
+  },
+  {
+   "id": "s51",
+   "chars": [
+    "olivia:casual",
+    "catherine:home"
+   ],
+   "image": "Olivia pulling her hand away; Catherine smiling serenely.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[firm] My father is a good man."
+    ],
+    [
+     "CATHERINE",
+     "[gently] I'm sure he was."
+    ]
+   ],
+   "place": "mansion",
+   "sfx": [
+    [
+     "Piano stops mid-phrase, silence",
+     2.0,
+     0.3,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s52",
+   "chars": [
+    "olivia:casual"
+   ],
+   "image": "Close-up of Olivia freezing, staring at Catherine.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[slowly] ...Was?"
+    ],
+    [
+     "CATHERINE",
+     "[surprised] Ethan told me he passed away."
+    ]
+   ],
+   "place": "mansion"
+  },
+  {
+   "id": "s53",
+   "chars": [
+    "olivia:casual"
+   ],
+   "image": "Olivia going pale, gripping the edge of the table.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[stunned] He told you what?"
+    ],
+    [
+     "CATHERINE",
+     "[soothing] Oh, dear. I hope I haven't upset you."
+    ],
+    [
+     "OLIVIA",
+     "[faint] No. I just..."
+    ]
+   ],
+   "place": "mansion"
+  },
+  {
+   "id": "s54",
+   "chars": [
+    "catherine:home"
+   ],
+   "image": "Catherine holding up a cream-colored wedding program proudly.",
+   "lines": [
+    [
+     "CATHERINE",
+     "[delighted] We'll include a small tribute in the program. [reading softly] In loving memory of Thomas Reed. [pause] Wouldn't that be beautiful?"
+    ]
+   ],
+   "place": "mansion"
+  },
+  {
+   "id": "s55",
+   "chars": [],
+   "image": "Close-up of an elegant printed wedding program page: 'In Loving Memory of Thomas Reed, Beloved Father of the Bride'.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[low] Olivia stared at the page. Her father's name. And beneath it: Beloved father of the bride. Forever in our hearts."
+    ]
+   ],
+   "place": "mansion"
+  },
+  {
+   "id": "s56",
+   "chars": [
+    "olivia:casual"
+   ],
+   "image": "Olivia standing up abruptly, the program crumpling in her fist.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[barely controlled] I need to speak with Ethan."
+    ]
+   ],
+   "place": "mansion",
+   "sfx": [
+    [
+     "Chair scraping back on hardwood",
+     1.0,
+     0.4,
+     "start"
+    ]
+   ],
+   "motion": "she stands abruptly, the program crumpling in her hand"
+  },
+  {
+   "id": "s57",
+   "chars": [
+    "olivia:casual"
+   ],
+   "image": "Olivia storming into the dark apartment, slamming the crumpled program on the kitchen island.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[furious, shaking] You told your mother my father was dead?"
+    ]
+   ],
+   "place": "apartment",
+   "cut": true,
+   "sfx": [
+    [
+     "Apartment door slamming, keys thrown on a counter",
+     2.0,
+     0.45,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s58",
+   "chars": [
+    "ethan:suit"
+   ],
+   "image": "Ethan by the window loosening his tie, not even turning around.",
+   "lines": [
+    [
+     "ETHAN",
+     "[calm, cold] Lower your voice."
+    ],
+    [
+     "OLIVIA",
+     "[shouting] Answer me!"
+    ],
+    [
+     "ETHAN",
+     "[evenly] I told her you lost your father."
+    ]
+   ],
+   "place": "apartment"
+  },
+  {
+   "id": "s59",
+   "chars": [
+    "olivia:casual"
+   ],
+   "image": "Olivia in the middle of the room, tears of anger in her eyes.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[incredulous] He's alive!"
+    ],
+    [
+     "ETHAN",
+     "[flat] I know that."
+    ],
+    [
+     "OLIVIA",
+     "[breaking] Then why?"
+    ]
+   ],
+   "place": "apartment"
+  },
+  {
+   "id": "s60",
+   "chars": [
+    "ethan:suit"
+   ],
+   "image": "Ethan turning from the window, his face expressionless, city lights behind him.",
+   "lines": [
+    [
+     "ETHAN",
+     "[quiet, matter-of-fact] Because your father is a problem."
+    ]
+   ],
+   "place": "apartment",
+   "sfx": [
+    [
+     "Low tense musical sting",
+     2.0,
+     0.35,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s61",
+   "chars": [
+    "olivia:casual",
+    "ethan:suit"
+   ],
+   "image": "Olivia stepping back as if struck; Ethan pouring himself a drink.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[stunned] What did you just say?"
+    ],
+    [
+     "ETHAN",
+     "[pouring a drink] My father knows who Thomas Reed is. There was a legal dispute years ago."
+    ],
+    [
+     "OLIVIA",
+     "That had nothing to do with me."
+    ]
+   ],
+   "place": "apartment"
+  },
+  {
+   "id": "s62",
+   "chars": [
+    "ethan:suit"
+   ],
+   "image": "Ethan swirling his glass, eyes hard.",
+   "lines": [
+    [
+     "ETHAN",
+     "[sharp] It has everything to do with us."
+    ],
+    [
+     "OLIVIA",
+     "[pleading] Then tell your parents the truth."
+    ],
+    [
+     "ETHAN",
+     "[scoffs] And destroy the wedding?"
+    ]
+   ],
+   "place": "apartment"
+  },
+  {
+   "id": "s63",
+   "chars": [
+    "olivia:casual"
+   ],
+   "image": "Olivia pulling the engagement ring halfway off her finger.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[shaking, determined] I'd rather cancel it than pretend my dad is dead."
+    ],
+    [
+     "ETHAN",
+     "[very quiet] Be careful."
+    ]
+   ],
+   "place": "apartment"
+  },
+  {
+   "id": "s64",
+   "chars": [
+    "ethan:suit"
+   ],
+   "image": "Ethan setting down his glass, calm and menacing.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[disbelieving] Is that a threat?"
+    ],
+    [
+     "ETHAN",
+     "[smiling, cold] It's advice."
+    ]
+   ],
+   "place": "apartment",
+   "sfx": [
+    [
+     "A phone set down hard on a glass table",
+     1.0,
+     0.45,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s65",
+   "chars": [],
+   "image": "Close-up of Ethan's phone on the glass table showing a loan document with signatures.",
+   "lines": [
+    [
+     "ETHAN",
+     "[casually] Remember the loan you co-signed for our new business?"
+    ],
+    [
+     "OLIVIA",
+     "[wary] What about it?"
+    ],
+    [
+     "ETHAN",
+     "Your father guaranteed part of it."
+    ]
+   ],
+   "place": "apartment"
+  },
+  {
+   "id": "s66",
+   "chars": [
+    "olivia:casual"
+   ],
+   "image": "Olivia staring at the phone, confused.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[confused] He guaranteed the equipment lease."
+    ],
+    [
+     "ETHAN",
+     "[patiently, like explaining to a child] And if the business defaults... the lender goes after the guarantor."
+    ]
+   ],
+   "place": "apartment"
+  },
+  {
+   "id": "s67",
+   "chars": [
+    "olivia:casual"
+   ],
+   "image": "Close-up of Olivia's face as the realization sinks in.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[faltering] You said the company was doing well."
+    ],
+    [
+     "ETHAN",
+     "[lightly] It is. [pause] As long as nobody creates problems."
+    ]
+   ],
+   "place": "apartment"
+  },
+  {
+   "id": "s68",
+   "chars": [
+    "ethan:suit",
+    "olivia:casual"
+   ],
+   "image": "Ethan walking past Olivia, pausing beside her ear.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[whisper] You wouldn't deliberately let him lose his garage."
+    ],
+    [
+     "ETHAN",
+     "[softly, at her ear] Then let's not find out."
+    ]
+   ],
+   "place": "apartment",
+   "sfx": [
+    [
+     "Silence, a distant siren far below",
+     2.0,
+     0.25,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s69",
+   "chars": [
+    "olivia:casual"
+   ],
+   "image": "Olivia alone by the window, the ring back on her finger, city lights reflected in tears.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[slow] Olivia had just learned the real price of her wedding. [pause] Her father's livelihood."
+    ]
+   ],
+   "place": "apartment",
+   "motion": "she slowly pushes the ring back onto her finger, tears reflecting the city lights"
+  },
+  {
+   "id": "s70",
+   "chars": [
+    "thomas:home"
+   ],
+   "image": "Thomas at a small kitchen table with a small birthday cake, two plates set out, answering the phone hopefully.",
+   "lines": [
+    [
+     "THOMAS",
+     "[hopeful] Hello?"
+    ],
+    [
+     "OLIVIA~phone",
+     "[soft] Happy birthday, Dad."
+    ]
+   ],
+   "place": "kitchen",
+   "cut": true,
+   "sfx": [
+    [
+     "Phone ringing in a quiet kitchen, a clock ticking",
+     2.5,
+     0.35,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s71",
+   "chars": [
+    "thomas:home"
+   ],
+   "image": "Thomas beaming, leaning back in his chair.",
+   "lines": [
+    [
+     "THOMAS",
+     "[delighted] There she is! [laughs] I was beginning to think you forgot."
+    ],
+    [
+     "OLIVIA~phone",
+     "[warm, sad] Never."
+    ],
+    [
+     "THOMAS",
+     "[playful] Sixty-two years old. Still handsome. [chuckles] Still can't figure out the TV remote."
+    ]
+   ],
+   "place": "kitchen"
+  },
+  {
+   "id": "s72",
+   "chars": [
+    "olivia:night"
+   ],
+   "image": "Olivia sitting on a sofa in the dark, phone at her ear, holding back tears.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[voice catching] Dad..."
+    ],
+    [
+     "THOMAS~phone",
+     "[instantly worried] What's wrong?"
+    ],
+    [
+     "OLIVIA",
+     "[too fast] Nothing."
+    ]
+   ],
+   "place": "apartment"
+  },
+  {
+   "id": "s73",
+   "chars": [
+    "thomas:home"
+   ],
+   "image": "Thomas's smile fading, gently knowing.",
+   "lines": [
+    [
+     "THOMAS",
+     "[gently] You never were a good liar."
+    ],
+    [
+     "OLIVIA~phone",
+     "[sighs] I'm just tired."
+    ],
+    [
+     "THOMAS",
+     "[coaxing] Come by this weekend. I'll make pancakes."
+    ]
+   ],
+   "place": "kitchen"
+  },
+  {
+   "id": "s74",
+   "chars": [
+    "olivia:night"
+   ],
+   "image": "Olivia pressing a hand over her mouth to keep from crying out loud.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[tight] I can't."
+    ],
+    [
+     "THOMAS~phone",
+     "[hopeful] Next weekend?"
+    ],
+    [
+     "OLIVIA",
+     "[barely] I don't know."
+    ]
+   ],
+   "place": "apartment"
+  },
+  {
+   "id": "s75",
+   "chars": [
+    "thomas:home"
+   ],
+   "image": "Close-up of Thomas staring at the second empty plate.",
+   "lines": [
+    [
+     "THOMAS",
+     "[quiet, hurt] Olivia... [pause] did I do something?"
+    ]
+   ],
+   "place": "kitchen",
+   "sfx": [
+    [
+     "Silence, just a clock ticking",
+     2.0,
+     0.25,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s76",
+   "chars": [
+    "olivia:night"
+   ],
+   "image": "Olivia crying silently, shaking her head.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[whispering, tearful] No, Dad."
+    ],
+    [
+     "THOMAS~phone",
+     "[softly] Then why does it feel like I'm losing you?"
+    ]
+   ],
+   "place": "apartment"
+  },
+  {
+   "id": "s77",
+   "chars": [
+    "olivia:night"
+   ],
+   "image": "Olivia curled on a gray sofa, phone pressed to her cheek.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[breaking] I love you."
+    ],
+    [
+     "THOMAS~phone",
+     "[tender] I love you too, pumpkin."
+    ],
+    [
+     "OLIVIA",
+     "[a broken whisper] Please don't call me that."
+    ]
+   ],
+   "place": "apartment"
+  },
+  {
+   "id": "s78",
+   "chars": [
+    "thomas:home"
+   ],
+   "image": "Thomas nodding to himself, swallowing.",
+   "lines": [
+    [
+     "THOMAS",
+     "[quietly] Right. [pause] Sorry."
+    ]
+   ],
+   "place": "kitchen",
+   "sfx": [
+    [
+     "Call ending tone",
+     1.0,
+     0.4,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s79",
+   "chars": [
+    "thomas:home"
+   ],
+   "image": "Thomas alone at the table, one candle burning on a small cake, the second plate untouched.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[slow, heavy] Thomas sat alone beside a birthday cake he'd bought for two. He waited another hour. [pause] Then he put the second plate away."
+    ]
+   ],
+   "place": "kitchen",
+   "motion": "the single candle flickers as he slowly picks up the second plate"
+  },
+  {
+   "id": "s80",
+   "chars": [
+    "mia:casual"
+   ],
+   "image": "Mia standing hesitantly at the open garage door, holding a folded piece of paper.",
+   "lines": [
+    [
+     "MIA",
+     "[uncertain] Mr. Reed?"
+    ]
+   ],
+   "place": "garage",
+   "cut": true,
+   "sfx": [
+    [
+     "Garage, old radio playing quietly",
+     3.0,
+     0.25,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s81",
+   "chars": [
+    "thomas"
+   ],
+   "image": "Thomas looking up from a workbench, breaking into a big smile.",
+   "lines": [
+    [
+     "THOMAS",
+     "[warm surprise] Mia? Well, look at you! [laughs] How's my daughter's favorite troublemaker?"
+    ],
+    [
+     "MIA",
+     "[forced smile] I'm okay."
+    ],
+    [
+     "THOMAS",
+     "[squinting] You don't look okay."
+    ]
+   ],
+   "place": "garage"
+  },
+  {
+   "id": "s82",
+   "chars": [
+    "mia:casual"
+   ],
+   "image": "Mia twisting the folded paper in her hands.",
+   "lines": [
+    [
+     "MIA",
+     "[careful] Have you talked to Olivia?"
+    ],
+    [
+     "THOMAS",
+     "Not much lately."
+    ],
+    [
+     "MIA",
+     "Did she tell you about the wedding?"
+    ],
+    [
+     "THOMAS",
+     "[shrugs] They're still planning it."
+    ]
+   ],
+   "place": "garage"
+  },
+  {
+   "id": "s83",
+   "chars": [
+    "mia:casual"
+   ],
+   "image": "Close-up of Mia, eyes full of pity.",
+   "lines": [
+    [
+     "MIA",
+     "[gently] Mr. Reed... [pause] it's Saturday."
+    ],
+    [
+     "THOMAS",
+     "[confused] What?"
+    ],
+    [
+     "MIA",
+     "[quiet] The wedding is this Saturday."
+    ]
+   ],
+   "place": "garage",
+   "sfx": [
+    [
+     "Radio clicked off, silence",
+     1.5,
+     0.3,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s84",
+   "chars": [
+    "thomas"
+   ],
+   "image": "Thomas setting his wrench down very slowly.",
+   "lines": [
+    [
+     "THOMAS",
+     "[hollow] This Saturday?"
+    ],
+    [
+     "MIA",
+     "[apologetic] I thought you knew."
+    ],
+    [
+     "THOMAS",
+     "[barely] No."
+    ]
+   ],
+   "place": "garage"
+  },
+  {
+   "id": "s85",
+   "chars": [
+    "mia:casual",
+    "thomas"
+   ],
+   "image": "Mia unfolding the paper and holding it out to Thomas.",
+   "lines": [
+    [
+     "MIA",
+     "[reluctant] There's something else. [pause] The wedding website... says you passed away."
+    ],
+    [
+     "THOMAS",
+     "[disbelief] What did you say?"
+    ],
+    [
+     "MIA",
+     "I brought a printout."
+    ]
+   ],
+   "place": "garage",
+   "sfx": [
+    [
+     "Paper unfolding",
+     1.0,
+     0.45,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s86",
+   "chars": [],
+   "image": "Close-up of a printed wedding website page held in a grease-stained hand: 'In Loving Memory of Thomas Reed'.",
+   "lines": [
+    [
+     "THOMAS",
+     "[reading, barely a whisper] In loving memory... of Thomas Reed."
+    ]
+   ],
+   "place": "garage"
+  },
+  {
+   "id": "s87",
+   "chars": [
+    "thomas"
+   ],
+   "image": "Thomas staring at the page, his hand trembling.",
+   "lines": [
+    [
+     "MIA",
+     "[softly] I'm sorry."
+    ],
+    [
+     "THOMAS",
+     "[cracking] My daughter told people I was dead?"
+    ],
+    [
+     "MIA",
+     "[urgent] I don't think it's that simple."
+    ]
+   ],
+   "place": "garage"
+  },
+  {
+   "id": "s88",
+   "chars": [
+    "mia:casual"
+   ],
+   "image": "Mia stepping closer, lowering her voice.",
+   "lines": [
+    [
+     "THOMAS",
+     "[raw] Then explain it to me."
+    ],
+    [
+     "MIA",
+     "[frustrated] I can't. [pause] But I think Ethan is hiding something."
+    ],
+    [
+     "THOMAS",
+     "How do you know?"
+    ]
+   ],
+   "place": "garage"
+  },
+  {
+   "id": "s89",
+   "chars": [
+    "mia:casual"
+   ],
+   "image": "Close-up of Mia, serious and scared.",
+   "lines": [
+    [
+     "MIA",
+     "[low] Because Olivia called me crying last night. [pause] And when I asked what was wrong... Ethan took her phone."
+    ]
+   ],
+   "place": "garage",
+   "sfx": [
+    [
+     "Low ominous tone",
+     2.0,
+     0.35,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s90",
+   "chars": [
+    "sarah"
+   ],
+   "image": "Sarah behind her desk in a downtown law office, files spread out, gesturing for Thomas to sit.",
+   "lines": [
+    [
+     "SARAH",
+     "[relieved] Thomas. I'm glad you called."
+    ],
+    [
+     "THOMAS",
+     "[grim] I need to know what happened fifteen years ago. [pause] All of it."
+    ]
+   ],
+   "place": "law_office",
+   "cut": true,
+   "sfx": [
+    [
+     "Quiet office, city traffic far below, papers shuffling",
+     3.0,
+     0.3,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s91",
+   "chars": [],
+   "image": "Close-up of an old site plan map of a city block with a small lot circled in red.",
+   "lines": [
+    [
+     "SARAH",
+     "[laying out a map] Your garage sat on land Blackwood Development wanted for a commercial project."
+    ],
+    [
+     "THOMAS",
+     "I remember."
+    ],
+    [
+     "SARAH",
+     "They tried to terminate your lease early. We fought it."
+    ]
+   ],
+   "place": "law_office"
+  },
+  {
+   "id": "s92",
+   "chars": [
+    "thomas:home"
+   ],
+   "image": "Thomas sitting across the desk in a flannel shirt, arms crossed.",
+   "lines": [
+    [
+     "THOMAS",
+     "[dry] And won."
+    ],
+    [
+     "SARAH",
+     "We settled. Your lease was protected, with renewal rights."
+    ],
+    [
+     "THOMAS",
+     "[frowning] Then why would they care about me now?"
+    ]
+   ],
+   "place": "law_office"
+  },
+  {
+   "id": "s93",
+   "chars": [
+    "sarah"
+   ],
+   "image": "Sarah sliding a new stack of filings across the desk.",
+   "lines": [
+    [
+     "SARAH",
+     "[carefully] Because the Blackwoods are buying up the neighboring lots again."
+    ],
+    [
+     "THOMAS",
+     "[slowly] They still want my garage?"
+    ],
+    [
+     "SARAH",
+     "[nodding] Possibly. [pause] And there's something else."
+    ]
+   ],
+   "place": "law_office"
+  },
+  {
+   "id": "s94",
+   "chars": [],
+   "image": "Close-up of a public business filing with the name 'Ethan Blackwood' listed as managing member.",
+   "lines": [
+    [
+     "SARAH",
+     "[pointing] The newest development company on that block? It belongs to Ethan."
+    ],
+    [
+     "THOMAS",
+     "[stunned] His son?"
+    ],
+    [
+     "SARAH",
+     "Yes."
+    ]
+   ],
+   "place": "law_office"
+  },
+  {
+   "id": "s95",
+   "chars": [
+    "thomas:home"
+   ],
+   "image": "Close-up of Thomas, the pieces falling into place.",
+   "lines": [
+    [
+     "THOMAS",
+     "[slowly, horrified] So he knew who I was... before he ever met Olivia?"
+    ],
+    [
+     "SARAH",
+     "[cautious] We can't prove that yet."
+    ],
+    [
+     "THOMAS",
+     "[quiet] But it's possible."
+    ],
+    [
+     "SARAH",
+     "Yes."
+    ]
+   ],
+   "place": "law_office"
+  },
+  {
+   "id": "s96",
+   "chars": [
+    "thomas:home"
+   ],
+   "image": "Thomas standing up, pulling on his jacket.",
+   "lines": [
+    [
+     "THOMAS",
+     "[resolved] Then I need to talk to my daughter."
+    ],
+    [
+     "SARAH",
+     "[warning] Thomas, don't confront them alone."
+    ],
+    [
+     "THOMAS",
+     "I'm not going there to fight."
+    ]
+   ],
+   "place": "law_office"
+  },
+  {
+   "id": "s97",
+   "chars": [
+    "thomas:home"
+   ],
+   "image": "Thomas at the office door, looking back at Sarah, eyes wet.",
+   "lines": [
+    [
+     "SARAH",
+     "[softly] Then why are you going?"
+    ],
+    [
+     "THOMAS",
+     "[voice thick] Because my little girl is getting married. [pause] And somebody convinced her that her father had to be dead for that to happen."
+    ]
+   ],
+   "place": "law_office",
+   "sfx": [
+    [
+     "Door closing softly",
+     1.0,
+     0.35,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s98",
+   "chars": [
+    "olivia:night"
+   ],
+   "image": "The night before the wedding: Olivia throwing clothes into an open suitcase, the wedding dress hanging behind her.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[frantic whisper] Mia, I can't do this."
+    ]
+   ],
+   "place": "hotel",
+   "cut": true,
+   "sfx": [
+    [
+     "Hotel room, suitcase zipper, hangers rattling",
+     3.0,
+     0.35,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s99",
+   "chars": [
+    "mia:casual"
+   ],
+   "image": "Mia sitting on the edge of the bed , arms crossed.",
+   "lines": [
+    [
+     "MIA",
+     "[instantly] Then don't."
+    ],
+    [
+     "OLIVIA",
+     "[exhausted] It's not that easy."
+    ],
+    [
+     "MIA",
+     "[incredulous] Olivia, your wedding program says your living father is dead. Nothing about this is normal."
+    ]
+   ],
+   "place": "hotel"
+  },
+  {
+   "id": "s100",
+   "chars": [
+    "olivia:night"
+   ],
+   "image": "Olivia sinking onto the bed beside the suitcase.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[desperate] Ethan says if I leave, he'll let the business fail."
+    ],
+    [
+     "MIA",
+     "Then call a lawyer."
+    ],
+    [
+     "OLIVIA",
+     "[shaking her head] Dad guaranteed the equipment lease."
+    ]
+   ],
+   "place": "hotel"
+  },
+  {
+   "id": "s101",
+   "chars": [
+    "mia:casual"
+   ],
+   "image": "Mia leaning in, grabbing Olivia's hands.",
+   "lines": [
+    [
+     "MIA",
+     "[firm] A guarantee doesn't mean Ethan gets to control your life."
+    ],
+    [
+     "OLIVIA",
+     "[tearful] What if Dad loses everything?"
+    ],
+    [
+     "MIA",
+     "[quiet, fierce] What if you marry a man who's already threatening your family?"
+    ]
+   ],
+   "place": "hotel"
+  },
+  {
+   "id": "s102",
+   "chars": [],
+   "image": "A hotel door opening; Ethan standing in the doorway in a dark suit.",
+   "lines": [
+    [
+     "ETHAN",
+     "[smooth] Am I interrupting?"
+    ],
+    [
+     "MIA",
+     "[flat] Actually, yes."
+    ]
+   ],
+   "place": "hotel",
+   "sfx": [
+    [
+     "Hotel key card beep, door opening",
+     1.5,
+     0.45,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s103",
+   "chars": [
+    "ethan:suit"
+   ],
+   "image": "Ethan stepping into the suite, looking at the half-packed suitcase.",
+   "lines": [
+    [
+     "ETHAN",
+     "[polite, cold] Mia, could you give us a minute?"
+    ],
+    [
+     "MIA",
+     "No."
+    ],
+    [
+     "ETHAN",
+     "[warning] Olivia?"
+    ],
+    [
+     "OLIVIA",
+     "[quiet but firm] Mia stays."
+    ]
+   ],
+   "place": "hotel"
+  },
+  {
+   "id": "s104",
+   "chars": [],
+   "image": "Close-up of Mia's hand resting on her phone on the dresser; her thumb taps the screen, a small red dot glowing.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[low, almost a whisper] Mia's phone was lying face-up on the dresser. [pause] Nobody noticed her thumb touch the screen."
+    ]
+   ],
+   "place": "hotel",
+   "motion": "her thumb lightly taps the phone screen and a small red dot begins to glow"
+  },
+  {
+   "id": "s105",
+   "chars": [
+    "ethan:suit"
+   ],
+   "image": "Ethan shrugging, standing over the suitcase.",
+   "lines": [
+    [
+     "ETHAN",
+     "[sighs] Fine. [pause] I just came to remind you that tomorrow is the most important day of our lives."
+    ],
+    [
+     "OLIVIA",
+     "[quiet, bitter] Then why does it feel like a funeral?"
+    ]
+   ],
+   "place": "hotel",
+   "sfx": [
+    [
+     "Silence",
+     1.5,
+     0.2,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s106",
+   "chars": [
+    "ethan:suit"
+   ],
+   "image": "Ethan's face hardening.",
+   "lines": [
+    [
+     "ETHAN",
+     "[sharp] Don't start this again."
+    ],
+    [
+     "OLIVIA",
+     "[steady] I want my father there."
+    ],
+    [
+     "ETHAN",
+     "[through his teeth] We've discussed this."
+    ]
+   ],
+   "place": "hotel"
+  },
+  {
+   "id": "s107",
+   "chars": [
+    "olivia:night"
+   ],
+   "image": "Olivia standing up to face him, trembling.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[shaking but firm] I'm done discussing it."
+    ],
+    [
+     "ETHAN",
+     "[low, slow, every word deliberate] Then think carefully about what happens to his garage."
+    ]
+   ],
+   "place": "hotel",
+   "sfx": [
+    [
+     "Low tense musical sting",
+     2.0,
+     0.35,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s108",
+   "chars": [
+    "mia:casual",
+    "ethan:suit"
+   ],
+   "image": "Mia shooting up from the bed, pointing at Ethan.",
+   "lines": [
+    [
+     "MIA",
+     "[furious] Did you seriously just threaten her father?"
+    ],
+    [
+     "ETHAN",
+     "[icy] This is a private matter."
+    ],
+    [
+     "MIA",
+     "[cold] Not anymore."
+    ]
+   ],
+   "place": "hotel"
+  },
+  {
+   "id": "s109",
+   "chars": [
+    "thomas:home"
+   ],
+   "image": "Thomas alone in the garage at night under a single work lamp, a phone buzzing on the desk.",
+   "lines": [
+    [
+     "THOMAS",
+     "[tired] Hello?"
+    ],
+    [
+     "MIA~phone",
+     "[hushed, urgent] Mr. Reed? It's Mia."
+    ]
+   ],
+   "place": "garage_night",
+   "cut": true,
+   "sfx": [
+    [
+     "Phone vibrating on a wooden desk, quiet garage at night",
+     2.5,
+     0.4,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s110",
+   "chars": [
+    "mia:casual"
+   ],
+   "image": "Mia in a dark hotel hallway, whispering into her phone, glancing at a closed door.",
+   "lines": [
+    [
+     "MIA",
+     "[low, fast] I need you to listen carefully. Olivia's wedding is tomorrow at eleven. St. Andrew's Chapel."
+    ],
+    [
+     "THOMAS~phone",
+     "[heavy] I know."
+    ]
+   ],
+   "place": "hotel"
+  },
+  {
+   "id": "s111",
+   "chars": [
+    "mia:casual"
+   ],
+   "image": "Close-up of Mia, determined.",
+   "lines": [
+    [
+     "MIA",
+     "[firm] You need to come."
+    ],
+    [
+     "THOMAS~phone",
+     "[hurt] She doesn't want me there."
+    ],
+    [
+     "MIA",
+     "[insistent] That's not true."
+    ]
+   ],
+   "place": "hotel"
+  },
+  {
+   "id": "s112",
+   "chars": [
+    "thomas:home"
+   ],
+   "image": "Thomas sitting under the work lamp, rubbing his eyes.",
+   "lines": [
+    [
+     "THOMAS",
+     "[bitter, quiet] Then why did she tell everyone I was dead?"
+    ],
+    [
+     "MIA~phone",
+     "[low] Because Ethan threatened her."
+    ],
+    [
+     "THOMAS",
+     "[sharp] With what?"
+    ],
+    [
+     "MIA~phone",
+     "[quiet] Your garage."
+    ]
+   ],
+   "place": "garage_night",
+   "sfx": [
+    [
+     "Silence, a single dripping faucet",
+     2.0,
+     0.25,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s113",
+   "chars": [],
+   "image": "No people in the frame. The empty old garage at night, the work lamp swaying slightly over the car on the lift.",
+   "lines": [
+    [
+     "THOMAS",
+     "[slowly, dangerously calm] He threatened my daughter... with my garage?"
+    ],
+    [
+     "MIA~phone",
+     "Yes."
+    ]
+   ],
+   "place": "garage_night",
+   "motion": "the hanging work lamp sways gently, shadows moving over the car"
+  },
+  {
+   "id": "s114",
+   "chars": [
+    "thomas:home"
+   ],
+   "image": "Close-up of Thomas, jaw clenched, eyes wet.",
+   "lines": [
+    [
+     "THOMAS",
+     "[softly] Mia... does she know you're calling?"
+    ],
+    [
+     "MIA~phone",
+     "No."
+    ],
+    [
+     "THOMAS",
+     "[barely] Then tell me one thing. [pause] Is she safe?"
+    ]
+   ],
+   "place": "garage_night"
+  },
+  {
+   "id": "s115",
+   "chars": [
+    "mia:casual"
+   ],
+   "image": "Mia leaning against the hallway wall, closing her eyes.",
+   "lines": [
+    [
+     "MIA",
+     "[quiet] She's with me. [pause] But I don't think she'll be safe if she marries him."
+    ],
+    [
+     "THOMAS~phone",
+     "[steady] I'll be there."
+    ]
+   ],
+   "place": "hotel"
+  },
+  {
+   "id": "s116",
+   "chars": [
+    "thomas:home"
+   ],
+   "image": "Thomas picking up Sarah's old business card from the desk and dialing.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[low] When the call ended, Thomas didn't go to bed. He pulled an old business card from the corner of his desk."
+    ],
+    [
+     "THOMAS",
+     "[quiet, resolved] Sarah. You said if anything felt wrong, call you. [pause] Can you be at St. Andrew's Chapel tomorrow at eleven?"
+    ]
+   ],
+   "place": "garage_night",
+   "sfx": [
+    [
+     "Phone dial tones",
+     1.5,
+     0.35,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s117",
+   "chars": [
+    "thomas:wedding",
+    "ethan"
+   ],
+   "image": "Back in the chapel: Thomas stopped in the aisle; Ethan still gripping Olivia's wrist at the altar.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[low] Which brings us back to the chapel."
+    ],
+    [
+     "THOMAS",
+     "[very quiet] I said, take your hand off my daughter."
+    ],
+    [
+     "ETHAN",
+     "[shouting toward the back] Security!"
+    ]
+   ],
+   "place": "chapel",
+   "cut": true,
+   "sfx": [
+    [
+     "Large crowd murmuring nervously in a stone chapel",
+     4.0,
+     0.35,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s118",
+   "chars": [
+    "thomas:wedding"
+   ],
+   "image": "Thomas raising his empty hands, calm, guests whispering around him.",
+   "lines": [
+    [
+     "THOMAS",
+     "[calm, loud enough for everyone] I'm not here to hurt anyone."
+    ],
+    [
+     "CATHERINE",
+     "[shrill] This is outrageous!"
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s119",
+   "chars": [
+    "james"
+   ],
+   "image": "James standing up in the front pew, staring hard at Thomas.",
+   "lines": [
+    [
+     "JAMES",
+     "[cold, low] You're supposed to be dead."
+    ],
+    [
+     "THOMAS",
+     "[evenly] Why? [pause] Because your family told everyone I was?"
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s120",
+   "chars": [
+    "olivia"
+   ],
+   "image": "Olivia at the altar, tears running, unable to look at her father.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[crying] Dad, please..."
+    ],
+    [
+     "THOMAS",
+     "[gently] Sweetheart, look at me."
+    ],
+    [
+     "OLIVIA",
+     "[shaking her head] I can't."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s121",
+   "chars": [
+    "thomas:wedding"
+   ],
+   "image": "Thomas reaching the front of the aisle, looking up at Olivia, voice soft.",
+   "lines": [
+    [
+     "THOMAS",
+     "[softly] Did you tell them I died?"
+    ]
+   ],
+   "place": "chapel",
+   "sfx": [
+    [
+     "Total silence in a large stone chapel",
+     2.5,
+     0.2,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s122",
+   "chars": [
+    "olivia"
+   ],
+   "image": "Close-up of Olivia, mascara streaked, nodding.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[a broken whisper] Yes."
+    ],
+    [
+     "THOMAS",
+     "[barely] Why?"
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s123",
+   "chars": [
+    "ethan",
+    "thomas:wedding"
+   ],
+   "image": "Ethan in his tuxedo stepping between the bride and Thomas, the two men glaring at each other.",
+   "lines": [
+    [
+     "ETHAN",
+     "[sharp] That's enough."
+    ],
+    [
+     "THOMAS",
+     "[without looking at him] I wasn't talking to you."
+    ],
+    [
+     "ETHAN",
+     "[hissing] You're ruining our wedding."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s124",
+   "chars": [
+    "thomas:wedding",
+    "ethan"
+   ],
+   "image": "Thomas and Ethan face to face at the altar steps.",
+   "lines": [
+    [
+     "THOMAS",
+     "[low, steady] Then tell everyone why you threatened my daughter."
+    ],
+    [
+     "ETHAN",
+     "[smiling for the crowd] I have no idea what you're talking about."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s125",
+   "chars": [
+    "mia"
+   ],
+   "image": "Mia in her bridesmaid dress stepping out of the line of bridesmaids, holding her phone.",
+   "lines": [
+    [
+     "MIA",
+     "[loud, clear] I do."
+    ]
+   ],
+   "place": "chapel",
+   "sfx": [
+    [
+     "Guests whispering, gasps",
+     2.0,
+     0.35,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s126",
+   "chars": [
+    "ethan"
+   ],
+   "image": "Ethan glaring at Mia, pointing at her.",
+   "lines": [
+    [
+     "ETHAN",
+     "[warning] Mia. Sit down."
+    ],
+    [
+     "MIA",
+     "No."
+    ],
+    [
+     "OLIVIA",
+     "[pleading] Mia..."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s127",
+   "chars": [
+    "mia"
+   ],
+   "image": "Mia looking at Olivia, eyes kind but unyielding.",
+   "lines": [
+    [
+     "MIA",
+     "[gentle, firm] Tell them, Olivia."
+    ],
+    [
+     "ETHAN",
+     "[low] Don't."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s128",
+   "chars": [
+    "thomas:wedding",
+    "olivia"
+   ],
+   "image": "Thomas taking Olivia's trembling hand at the altar steps.",
+   "lines": [
+    [
+     "THOMAS",
+     "[tender] Honey, whatever it is, you can tell me."
+    ],
+    [
+     "OLIVIA",
+     "[sobbing] Dad, I'm so sorry."
+    ],
+    [
+     "THOMAS",
+     "For what?"
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s129",
+   "chars": [
+    "olivia"
+   ],
+   "image": "Olivia turning to face the guests, veil trembling.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[shaky, then stronger] I told them you were dead because Ethan said his family would never accept me."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s130",
+   "chars": [
+    "catherine"
+   ],
+   "image": "Catherine in the front pew, rising halfway, staring at her son.",
+   "lines": [
+    [
+     "CATHERINE",
+     "[stunned] Ethan... what is she saying?"
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s131",
+   "chars": [
+    "olivia"
+   ],
+   "image": "Olivia looking straight at Ethan now, tears falling.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[gaining strength] And when I wanted to tell the truth, he said he'd let the business default."
+    ],
+    [
+     "ETHAN",
+     "[sharp] Olivia!"
+    ],
+    [
+     "OLIVIA",
+     "[to Thomas, breaking] He said the lender would come after your garage."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s132",
+   "chars": [
+    "thomas:wedding"
+   ],
+   "image": "Close-up of Thomas, absorbing it.",
+   "lines": [
+    [
+     "THOMAS",
+     "[quiet] My garage?"
+    ],
+    [
+     "OLIVIA",
+     "[crying] I thought I was protecting you."
+    ],
+    [
+     "THOMAS",
+     "[heartbroken] Oh, sweetheart."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s133",
+   "chars": [
+    "thomas:wedding",
+    "olivia"
+   ],
+   "image": "Thomas cupping Olivia's face in his rough hands.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[whisper] I know it was wrong."
+    ],
+    [
+     "THOMAS",
+     "[gentle, honest] Yes. It was. [pause] But you should never have had to face that alone."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s134",
+   "chars": [
+    "ethan"
+   ],
+   "image": "Ethan laughing nervously, spreading his hands to the guests.",
+   "lines": [
+    [
+     "ETHAN",
+     "[scoffing] This is absurd."
+    ],
+    [
+     "THOMAS",
+     "[turning, hard] Did you threaten her?"
+    ],
+    [
+     "ETHAN",
+     "[smooth] I explained the financial consequences of her decisions."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s135",
+   "chars": [
+    "mia",
+    "ethan"
+   ],
+   "image": "Mia stepping forward, Ethan smirking at her.",
+   "lines": [
+    [
+     "MIA",
+     "[fierce] You told her you'd destroy her father's livelihood."
+    ],
+    [
+     "ETHAN",
+     "[smirking] You can't prove that."
+    ],
+    [
+     "MIA",
+     "[holding up her phone, a slow smile] Actually... [pause] I can."
+    ]
+   ],
+   "place": "chapel",
+   "sfx": [
+    [
+     "Deep dramatic musical hit",
+     2.0,
+     0.45,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s136",
+   "chars": [
+    "mia"
+   ],
+   "image": "Mia handing her phone to a sound technician beside the chapel speakers.",
+   "lines": [
+    [
+     "MIA",
+     "[calm] I recorded our conversation last night. [pause] I was in the room."
+    ]
+   ],
+   "place": "chapel",
+   "cut": true,
+   "sfx": [
+    [
+     "Microphone feedback squeal, then speaker hum",
+     2.0,
+     0.4,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s137",
+   "chars": [],
+   "image": "Close-up of a chapel speaker on a stand, the guests' heads turning toward it.",
+   "lines": [
+    [
+     "ETHAN~phone",
+     "[recorded, low, deliberate] Then think carefully about what happens to his garage."
+    ],
+    [
+     "MIA~phone",
+     "[recorded, furious] Did you seriously just threaten her father?"
+    ],
+    [
+     "ETHAN~phone",
+     "[recorded, icy] This is a private matter."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s138",
+   "chars": [],
+   "image": "Wide shot of the silent chapel, two hundred guests frozen, all eyes on the groom.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[slow] The recording ended. [pause] And the chapel went completely silent."
+    ]
+   ],
+   "place": "chapel",
+   "sfx": [
+    [
+     "Recording clicking off, then dead silence in a large room",
+     2.5,
+     0.3,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s139",
+   "chars": [
+    "james"
+   ],
+   "image": "James slowly turning to his son, face like stone.",
+   "lines": [
+    [
+     "JAMES",
+     "[low, dangerous] Ethan?"
+    ],
+    [
+     "ETHAN",
+     "[quickly] Dad, it's out of context."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s140",
+   "chars": [
+    "catherine"
+   ],
+   "image": "Catherine glancing around at the staring guests, clutching her pearls.",
+   "lines": [
+    [
+     "CATHERINE",
+     "[shrill, desperate] This is a private family matter!"
+    ],
+    [
+     "THOMAS",
+     "[firm] No. [pause] This is my daughter's life."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s141",
+   "chars": [
+    "ethan",
+    "olivia"
+   ],
+   "image": "Ethan grabbing Olivia's hand, smiling too wide.",
+   "lines": [
+    [
+     "ETHAN",
+     "[urgent, smiling for the crowd] Olivia. Tell them we're fine."
+    ],
+    [
+     "OLIVIA",
+     "[pulling her hand back] We're not fine."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s142",
+   "chars": [
+    "ethan"
+   ],
+   "image": "Ethan's smile collapsing into anger.",
+   "lines": [
+    [
+     "ETHAN",
+     "[hissing] You're embarrassing yourself."
+    ],
+    [
+     "OLIVIA",
+     "[steady] No. [pause] For the first time in months, I'm telling the truth."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s143",
+   "chars": [
+    "ethan",
+    "thomas:wedding",
+    "olivia"
+   ],
+   "image": "Ethan leaning toward Olivia; Thomas stepping between them.",
+   "lines": [
+    [
+     "ETHAN",
+     "[low, venomous] You'll regret this."
+    ],
+    [
+     "THOMAS",
+     "[iron] Don't threaten her again."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s144",
+   "chars": [
+    "james",
+    "thomas:wedding"
+   ],
+   "image": "James and Thomas facing each other across the altar steps, two old men measuring each other.",
+   "lines": [
+    [
+     "JAMES",
+     "[cold recognition] Thomas Reed."
+    ],
+    [
+     "THOMAS",
+     "[evenly] James Blackwood."
+    ],
+    [
+     "JAMES",
+     "I remember you."
+    ],
+    [
+     "THOMAS",
+     "[dry] I remember you too."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s145",
+   "chars": [
+    "james"
+   ],
+   "image": "James glancing at the guests, lowering his voice.",
+   "lines": [
+    [
+     "JAMES",
+     "[tight] This isn't the place to settle old business."
+    ],
+    [
+     "THOMAS",
+     "[quiet, cutting] Then why did your son make my daughter's wedding part of it?"
+    ]
+   ],
+   "place": "chapel",
+   "sfx": [
+    [
+     "Low tense musical sting",
+     2.0,
+     0.35,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s146",
+   "chars": [
+    "james"
+   ],
+   "image": "James turning on Ethan.",
+   "lines": [
+    [
+     "JAMES",
+     "[sharp] Ethan. What is he talking about?"
+    ],
+    [
+     "ETHAN",
+     "[too fast] Nothing."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s147",
+   "chars": [
+    "thomas:wedding"
+   ],
+   "image": "Thomas addressing James directly, the guests listening.",
+   "lines": [
+    [
+     "THOMAS",
+     "[measured] Fifteen years ago, your company tried to force me out of my garage."
+    ],
+    [
+     "JAMES",
+     "That dispute was settled."
+    ],
+    [
+     "THOMAS",
+     "It was. [pause] But now your son has a development company buying up the same block."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s148",
+   "chars": [
+    "ethan"
+   ],
+   "image": "Ethan shrugging, defiant.",
+   "lines": [
+    [
+     "ETHAN",
+     "[defensive] That's business."
+    ],
+    [
+     "THOMAS",
+     "And the loan on Olivia's business? The one I guaranteed? It's tied to my garage."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s149",
+   "chars": [
+    "ethan",
+    "olivia"
+   ],
+   "image": "Olivia turning on Ethan in shock.",
+   "lines": [
+    [
+     "ETHAN",
+     "[cold] She agreed to the terms."
+    ],
+    [
+     "OLIVIA",
+     "[stunned, rising] You told me it was just an equipment lease!"
+    ],
+    [
+     "ETHAN",
+     "[contemptuous] You should've read the documents."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s150",
+   "chars": [
+    "thomas:wedding"
+   ],
+   "image": "Close-up of Thomas laying it out, voice controlled.",
+   "lines": [
+    [
+     "THOMAS",
+     "[slowly, connecting it] So that was the plan. [pause] Get close to my daughter. Get me to sign a guarantee. [pause] Then use the debt to force me off my land."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s151",
+   "chars": [
+    "ethan"
+   ],
+   "image": "Ethan straightening his tuxedo, regaining his composure.",
+   "lines": [
+    [
+     "ETHAN",
+     "[smooth] You're making accusations you can't prove."
+    ],
+    [
+     "SARAH",
+     "[calm, carrying from the back] Then perhaps we should discuss the documents."
+    ]
+   ],
+   "place": "chapel",
+   "sfx": [
+    [
+     "Heels clicking down a stone aisle",
+     2.5,
+     0.45,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s152",
+   "chars": [
+    "sarah"
+   ],
+   "image": "Sarah walking down the aisle in a navy suit, a thick folder under her arm, guests parting.",
+   "lines": [
+    [
+     "JAMES",
+     "[irritated] And who are you?"
+    ],
+    [
+     "SARAH",
+     "[crisp] Sarah Mitchell. [pause] Mr. Reed's attorney."
+    ]
+   ],
+   "place": "chapel",
+   "motion": "she walks steadily down the aisle with a thick folder as guests turn to watch"
+  },
+  {
+   "id": "s153",
+   "chars": [
+    "sarah"
+   ],
+   "image": "Sarah at the front, opening the folder.",
+   "lines": [
+    [
+     "SARAH",
+     "[professional] We've reviewed the guarantee, the lender's notices, and the development filings. [pause] The way this loan was presented to Olivia and Thomas raises serious questions."
+    ],
+    [
+     "ETHAN",
+     "[scoffing] This is ridiculous."
+    ],
+    [
+     "SARAH",
+     "[cool] Then you'll have no problem answering them through counsel."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s154",
+   "chars": [
+    "thomas:wedding"
+   ],
+   "image": "Thomas looking Ethan straight in the eye.",
+   "lines": [
+    [
+     "THOMAS",
+     "[quiet] Ethan. Did you know who I was... when you first met my daughter?"
+    ]
+   ],
+   "place": "chapel",
+   "sfx": [
+    [
+     "Total silence, a single heartbeat-like low thump",
+     2.5,
+     0.3,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s155",
+   "chars": [
+    "ethan"
+   ],
+   "image": "Close-up of Ethan, cornered, jaw working.",
+   "lines": [
+    [
+     "ETHAN",
+     "[through clenched teeth] ...Yes."
+    ],
+    [
+     "OLIVIA",
+     "[a breath] What?"
+    ],
+    [
+     "ETHAN",
+     "[louder] I knew."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s156",
+   "chars": [
+    "olivia"
+   ],
+   "image": "Olivia staring at Ethan, the realization hitting her.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[shaking] Before our first date?"
+    ],
+    [
+     "ETHAN",
+     "Yes."
+    ],
+    [
+     "OLIVIA",
+     "[horrified] You knew who my father was?"
+    ],
+    [
+     "ETHAN",
+     "[exploding] Yes!"
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s157",
+   "chars": [
+    "ethan",
+    "olivia"
+   ],
+   "image": "Ethan and Olivia face to face at the altar, her veil trembling.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[barely] Then why didn't you tell me?"
+    ],
+    [
+     "ETHAN",
+     "[frustrated] Because you would've thought it was about the property!"
+    ],
+    [
+     "OLIVIA",
+     "[quiet, devastating] ...Wasn't it?"
+    ]
+   ],
+   "place": "chapel",
+   "sfx": [
+    [
+     "Silence",
+     2.0,
+     0.2,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s158",
+   "chars": [
+    "james"
+   ],
+   "image": "James staring at his son with cold disgust.",
+   "lines": [
+    [
+     "JAMES",
+     "[very quiet] You used my name for this?"
+    ],
+    [
+     "ETHAN",
+     "[desperate] Dad, I did it for the company. For you!"
+    ],
+    [
+     "JAMES",
+     "[ice] My company settled with this man fifteen years ago. In writing."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s159",
+   "chars": [
+    "james",
+    "thomas:wedding"
+   ],
+   "image": "James turning to Thomas and giving a stiff, formal nod.",
+   "lines": [
+    [
+     "JAMES",
+     "[formal, measured] Mr. Reed. Whatever my son signed, Blackwood Development had no part of it. [pause] [turning to Ethan] And as of Monday, you don't work for me."
+    ]
+   ],
+   "place": "chapel",
+   "sfx": [
+    [
+     "Crowd gasping",
+     1.5,
+     0.35,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s160",
+   "chars": [
+    "catherine"
+   ],
+   "image": "Catherine sinking back into the pew, staring at her son in disbelief.",
+   "lines": [
+    [
+     "CATHERINE",
+     "[hollow] You told me he was dead, Ethan. [pause] You let me print his name in a memorial."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s161",
+   "chars": [
+    "ethan"
+   ],
+   "image": "Ethan turning to Olivia, softening his face, reaching for her.",
+   "lines": [
+    [
+     "ETHAN",
+     "[pleading, soft] Olivia. I love you."
+    ],
+    [
+     "OLIVIA",
+     "[quiet] You lied to me."
+    ],
+    [
+     "ETHAN",
+     "[quick] I made mistakes."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s162",
+   "chars": [
+    "olivia"
+   ],
+   "image": "Olivia stepping back from him, voice steadying.",
+   "lines": [
+    [
+     "OLIVIA",
+     "You threatened my father."
+    ],
+    [
+     "ETHAN",
+     "[defensive] I was under pressure."
+    ],
+    [
+     "OLIVIA",
+     "You knew who he was before you met me."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s163",
+   "chars": [
+    "ethan"
+   ],
+   "image": "Ethan's earnest face, reaching for her hand.",
+   "lines": [
+    [
+     "ETHAN",
+     "[earnest] I fell in love with you anyway."
+    ],
+    [
+     "OLIVIA",
+     "[a bitter half laugh] ...Anyway?"
+    ],
+    [
+     "ETHAN",
+     "[backpedaling] That's not what I meant."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s164",
+   "chars": [
+    "olivia"
+   ],
+   "image": "Close-up of Olivia, tears drying, chin lifting.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[steady, quiet] You made me believe that loving you meant pretending my father was dead."
+    ],
+    [
+     "ETHAN",
+     "[desperate] Olivia, please."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s165",
+   "chars": [
+    "olivia"
+   ],
+   "image": "Olivia at the altar, back straight, facing Ethan and two hundred guests.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[clear, final] I can't marry you."
+    ]
+   ],
+   "place": "chapel",
+   "sfx": [
+    [
+     "A crowd gasping in a chapel",
+     2.0,
+     0.45,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s166",
+   "chars": [
+    "catherine"
+   ],
+   "image": "Catherine half rising from the pew, hand on her chest.",
+   "lines": [
+    [
+     "CATHERINE",
+     "[desperate] Think about the scandal!"
+    ],
+    [
+     "OLIVIA",
+     "[calm] For once, Catherine... I don't care what people think."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s167",
+   "chars": [
+    "ethan"
+   ],
+   "image": "Ethan red-faced, shouting.",
+   "lines": [
+    [
+     "ETHAN",
+     "[furious] You can't do this to me!"
+    ],
+    [
+     "OLIVIA",
+     "[quiet] I didn't do this to you. [pause] You did."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s168",
+   "chars": [],
+   "image": "Close-up of a diamond engagement ring being set down on the white altar cloth.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[soft] She slid the ring off her finger and set it on the altar."
+    ]
+   ],
+   "place": "chapel",
+   "sfx": [
+    [
+     "A ring set down on a wooden altar, a tiny click",
+     1.0,
+     0.5,
+     "start"
+    ]
+   ],
+   "motion": "a hand gently sets the diamond ring down on the altar cloth"
+  },
+  {
+   "id": "s169",
+   "chars": [
+    "olivia",
+    "thomas:wedding"
+   ],
+   "image": "Olivia turning to her father, a small trembling smile.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[small, hopeful] Dad?"
+    ],
+    [
+     "THOMAS",
+     "[tender] Yes, sweetheart?"
+    ],
+    [
+     "OLIVIA",
+     "[softly] Would you walk me out?"
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s170",
+   "chars": [
+    "thomas:wedding"
+   ],
+   "image": "Close-up of Thomas, tears in his eyes, offering his arm.",
+   "lines": [
+    [
+     "THOMAS",
+     "[voice thick] I'd be honored."
+    ]
+   ],
+   "place": "chapel"
+  },
+  {
+   "id": "s171",
+   "chars": [
+    "olivia",
+    "thomas:wedding"
+   ],
+   "image": "From behind: Olivia in her wedding dress on Thomas's arm, walking up the aisle toward the open doors and the bright daylight.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[warm] She had walked into that chapel alone. [pause] She walked out on her father's arm."
+    ]
+   ],
+   "place": "chapel",
+   "sfx": [
+    [
+     "Footsteps on stone, heavy chapel doors opening, birds outside",
+     4.0,
+     0.4,
+     "start"
+    ]
+   ],
+   "motion": "they walk slowly up the aisle toward the bright open doors"
+  },
+  {
+   "id": "s172",
+   "chars": [
+    "sarah"
+   ],
+   "image": "Three months later: Sarah at her desk, reading glasses on, a file open.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Three months later, Thomas and Olivia sat in Sarah Mitchell's office."
+    ],
+    [
+     "OLIVIA",
+     "[nervous] So what happens to the loan?"
+    ]
+   ],
+   "place": "law_office",
+   "cut": true,
+   "sfx": [
+    [
+     "Quiet office, papers turning, winter wind outside",
+     3.0,
+     0.3,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s173",
+   "chars": [
+    "sarah"
+   ],
+   "image": "Sarah sliding a letter across the desk.",
+   "lines": [
+    [
+     "SARAH",
+     "[reassuring] The lender has frozen collection while they review how the guarantee was obtained."
+    ],
+    [
+     "THOMAS",
+     "And the garage?"
+    ],
+    [
+     "SARAH",
+     "[smiling] Still yours. Nobody touches it while I'm on this."
+    ]
+   ],
+   "place": "law_office"
+  },
+  {
+   "id": "s174",
+   "chars": [
+    "olivia:casual",
+    "thomas:home"
+   ],
+   "image": "Olivia and Thomas sitting side by side across the desk.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[guarded] And Ethan?"
+    ],
+    [
+     "SARAH",
+     "[dry] His development company is under investigation. There are civil claims pending. [pause] And his father's lawyers aren't returning his calls."
+    ]
+   ],
+   "place": "law_office"
+  },
+  {
+   "id": "s175",
+   "chars": [
+    "thomas:home"
+   ],
+   "image": "Thomas nodding slowly, a grim little smile.",
+   "lines": [
+    [
+     "THOMAS",
+     "So he's not walking away from this."
+    ],
+    [
+     "SARAH",
+     "[calm] He's going to have to answer some very difficult questions."
+    ],
+    [
+     "OLIVIA",
+     "[quiet] Good."
+    ]
+   ],
+   "place": "law_office"
+  },
+  {
+   "id": "s176",
+   "chars": [
+    "thomas:home",
+    "olivia:casual"
+   ],
+   "image": "Thomas turning to Olivia, serious and gentle.",
+   "lines": [
+    [
+     "THOMAS",
+     "[gently] Olivia... you know I would've sold that garage if it meant keeping you safe."
+    ],
+    [
+     "OLIVIA",
+     "[shaking her head] Dad, no."
+    ],
+    [
+     "THOMAS",
+     "[shrugs] It's just a building."
+    ]
+   ],
+   "place": "law_office"
+  },
+  {
+   "id": "s177",
+   "chars": [
+    "olivia:casual"
+   ],
+   "image": "Olivia looking at her father, eyes filling.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[tearful] It's your whole life."
+    ],
+    [
+     "THOMAS",
+     "[softly] No. [pause] You're my whole life."
+    ]
+   ],
+   "place": "law_office",
+   "sfx": [
+    [
+     "Quiet gentle piano",
+     4.0,
+     0.25,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s178",
+   "chars": [
+    "olivia:casual",
+    "thomas:home"
+   ],
+   "image": "Olivia crying quietly, reaching for the hand of her father Thomas in his flannel shirt.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[breaking] I'm so sorry I let him make me ashamed of you."
+    ],
+    [
+     "THOMAS",
+     "[tender] I know."
+    ],
+    [
+     "OLIVIA",
+     "[whisper] Can you forgive me?"
+    ]
+   ],
+   "place": "law_office"
+  },
+  {
+   "id": "s179",
+   "chars": [
+    "thomas:home",
+    "olivia:casual"
+   ],
+   "image": "Thomas in his flannel shirt squeezing Olivia's hand across the desk, smiling through tears.",
+   "lines": [
+    [
+     "THOMAS",
+     "[warm] I already have. [pause] But next time you're scared, come to me. [a teary chuckle] Don't bury me while I'm still alive."
+    ],
+    [
+     "OLIVIA",
+     "[laughing through tears] Deal."
+    ]
+   ],
+   "place": "law_office",
+   "sfx": [
+    [
+     "Two people laughing softly through tears",
+     2.0,
+     0.3,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s180",
+   "chars": [
+    "thomas:yard"
+   ],
+   "image": "One year later: Thomas at a charcoal grill in a small backyard, flipping burgers, string lights overhead.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[warm] One year after the wedding that never happened, Thomas stood in his backyard in an old blue shirt, grilling burgers."
+    ]
+   ],
+   "place": "backyard",
+   "cut": true,
+   "sfx": [
+    [
+     "Backyard on a summer afternoon, birds singing, burgers sizzling on a grill",
+     4.0,
+     0.3,
+     "start"
+    ]
+   ],
+   "motion": "he flips a burger on the grill as smoke drifts up"
+  },
+  {
+   "id": "s181",
+   "chars": [
+    "olivia:yard"
+   ],
+   "image": "Olivia laying a checkered cloth and plates on a picnic table, smiling.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Olivia was setting the table. [pause] And Mia showed up carrying a cake."
+    ]
+   ],
+   "place": "backyard"
+  },
+  {
+   "id": "s182",
+   "chars": [
+    "mia:casual"
+   ],
+   "image": "Mia coming through the backyard gate holding a birthday cake, grinning.",
+   "lines": [
+    [
+     "MIA",
+     "[cheerful, sing-song] Happy birthday, Mr. Reed!"
+    ],
+    [
+     "THOMAS",
+     "[proud] Sixty-three. Still handsome. [chuckles] Still can't work the TV remote."
+    ]
+   ],
+   "place": "backyard",
+   "sfx": [
+    [
+     "Wooden gate creaking open",
+     1.0,
+     0.35,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s183",
+   "chars": [
+    "olivia:yard"
+   ],
+   "image": "Olivia rolling her eyes affectionately.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[teasing] Some things never change."
+    ],
+    [
+     "MIA",
+     "[holding up the cake] I brought cake."
+    ],
+    [
+     "THOMAS",
+     "[delighted] You are officially my favorite person."
+    ]
+   ],
+   "place": "backyard"
+  },
+  {
+   "id": "s184",
+   "chars": [
+    "olivia:yard",
+    "thomas:yard"
+   ],
+   "image": "Olivia hands on hips, mock offended; Thomas laughing.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[mock offended] Excuse me?"
+    ],
+    [
+     "THOMAS",
+     "[laughing] Relax. You're still the undefeated champion, pumpkin."
+    ]
+   ],
+   "place": "backyard"
+  },
+  {
+   "id": "s185",
+   "chars": [
+    "olivia:yard"
+   ],
+   "image": "Close-up of Olivia smiling softly at her father.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[soft] You can call me that, you know."
+    ],
+    [
+     "THOMAS",
+     "[surprised, touched] Really?"
+    ],
+    [
+     "OLIVIA",
+     "[warm] Really."
+    ]
+   ],
+   "place": "backyard",
+   "sfx": [
+    [
+     "Gentle laughter",
+     2.0,
+     0.3,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s186",
+   "chars": [
+    "ethan:suit"
+   ],
+   "image": "Ethan alone in an emptied office with moving boxes, a 'For Lease' sign in the window, gray day.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[measured] Ethan's development company collapsed within the year. His investors pulled out. His father never took his calls again."
+    ]
+   ],
+   "sfx": [
+    [
+     "Empty office echo, tape ripping off a box",
+     3.0,
+     0.3,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s187",
+   "chars": [
+    "catherine:home"
+   ],
+   "image": "Catherine alone at a long empty dining table set for a party nobody came to.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Catherine Blackwood stopped hosting dinners. [pause] People had started asking her about the memorial program."
+    ]
+   ]
+  },
+  {
+   "id": "s188",
+   "chars": [
+    "thomas"
+   ],
+   "image": "Thomas's small garage on a sunny day, a hand-painted sign above the bay: 'Reed Auto Repair'.",
+   "lines": [
+    [
+     "NARRATOR",
+     "But Thomas still had his garage. Olivia rebuilt her career. [pause] And for the first time in years, father and daughter talked every single day."
+    ]
+   ],
+   "place": "garage"
+  },
+  {
+   "id": "s189",
+   "chars": [
+    "olivia:yard",
+    "thomas:yard"
+   ],
+   "image": "Olivia and Thomas sitting side by side at the picnic table at sunset.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[thoughtful] Dad?"
+    ],
+    [
+     "THOMAS",
+     "Yeah?"
+    ],
+    [
+     "OLIVIA",
+     "[quiet] Do you ever wish you'd stayed home that day? [pause] At the wedding?"
+    ]
+   ],
+   "place": "backyard"
+  },
+  {
+   "id": "s190",
+   "chars": [
+    "thomas:yard"
+   ],
+   "image": "Thomas looking out at the sunset, smiling gently.",
+   "lines": [
+    [
+     "THOMAS",
+     "[without hesitation] Not for a second."
+    ],
+    [
+     "OLIVIA",
+     "Even after everything?"
+    ],
+    [
+     "THOMAS",
+     "[softly] Sweetheart..."
+    ]
+   ],
+   "place": "backyard"
+  },
+  {
+   "id": "s191",
+   "chars": [
+    "thomas:yard"
+   ],
+   "image": "Close-up of Thomas, warm golden light on his face.",
+   "lines": [
+    [
+     "THOMAS",
+     "[slow, wise] You can lose money. You can lose a business. You can even lose people you thought would love you forever. [pause] But when someone you love needs you... [pause] you show up."
+    ]
+   ],
+   "place": "backyard"
+  },
+  {
+   "id": "s192",
+   "chars": [
+    "olivia:yard",
+    "thomas:yard"
+   ],
+   "image": "Olivia leaning her head on her father's shoulder, both laughing.",
+   "lines": [
+    [
+     "OLIVIA",
+     "[teasing, teary] Even when they tell everyone you're dead?"
+    ],
+    [
+     "THOMAS",
+     "[laughing] Especially then."
+    ]
+   ],
+   "place": "backyard",
+   "sfx": [
+    [
+     "Father and daughter laughing, birds at sunset",
+     2.5,
+     0.3,
+     "start"
+    ]
+   ],
+   "motion": "she leans her head on his shoulder and they both laugh"
+  },
+  {
+   "id": "s193",
+   "chars": [],
+   "image": "No people in the frame. The empty small backyard at dusk, string lights glowing, a half-eaten birthday cake on the table.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[reflective] Ethan Blackwood thought he could erase a father from his daughter's life. He thought money could buy her silence. And he thought a wedding would make his lies permanent. [pause] But he forgot one thing. [pause] The man he tried to bury was still alive."
+    ]
+   ],
+   "place": "backyard",
+   "motion": "the string lights glow and sway gently in the evening breeze"
+  },
+  {
+   "id": "s194",
+   "chars": [
+    "thomas:yard"
+   ],
+   "image": "Thomas at the picnic table at dusk, smiling, string lights behind him.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[slow, final] Sometimes the strongest revenge isn't destroying someone. [pause] It's refusing to disappear when they want you gone."
+    ],
+    [
+     "NARRATOR",
+     "[warm] This has been Karma Tales. Every betrayal has a price. And karma always collects."
+    ]
+   ],
+   "place": "backyard"
+  }
+ ],
+ "youtube": {
+  "title": "Mi hija le dijo a todos que yo estaba muerto. Entonces llegué a su boda.",
+  "description": "A mitad de la ceremonia, se abrieron las puertas de la capilla. Entró el padre de la novia. El hombre cuyo nombre estaba impreso en el programa de la boda, bajo las palabras \"En memoria\".\n\n¿Por qué Olivia dijo que su padre estaba muerto? ¿Y por qué la madre del novio susurró: \"Eso es imposible\"?\n\nKarma Tales en español: historias de venganza y giros inesperados donde quien hace trampa siempre paga.\n\nEsta historia es ficción. Cualquier parecido con personas o hechos reales es coincidencia. La narración y las imágenes fueron generadas con IA.\n\n#karmatales #boda #telenovela #padreehija",
+  "tags": [
+   "karma tales",
+   "boda",
+   "padre e hija",
+   "historias de venganza",
+   "telenovela",
+   "traición familiar",
+   "giro inesperado",
+   "drama en español",
+   "audio drama",
+   "padre muerto"
+  ],
+  "category": "24",
+  "shorts_description": "Mira la historia completa en Karma Tales en Español.\n#shorts #karmatales #telenovela"
+ },
+ "thumbnail_file": "karma/es/ep05_thumb.jpg",
+ "shorts": []
+}
