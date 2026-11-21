@@ -10,7 +10,7 @@ on:
         description: Render only the first N chapters (empty = all)
         default: ""
       tts:
-        description: elevenlabs or google
+        description: elevenlabs, google or gemini
         default: google
       voice:
         description: Google voice name (when tts = google)

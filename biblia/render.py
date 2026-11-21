@@ -50,10 +50,44 @@ def google_chunks(text, limit=4000):
     return parts + [cur] if cur else parts
 
 
+STYLE = os.environ.get("BIBLIA_STYLE", (
+    "Read this Bible passage aloud in Latin American Spanish as a warm, gentle middle-aged woman reading scripture at "
+    "bedtime. Slow, calm and reverent overall, with soft natural pauses. Let quiet emotion come through in the spoken "
+    "lines: God's words solemn and majestic, the serpent's words sly and hushed, human voices tender, fearful or "
+    "sorrowful as the story calls for, but never loud or theatrical."))
+GEMINI_MODELS = os.environ.get("GEMINI_TTS_MODELS", "gemini-3.8-flash-tts-preview,gemini-2.5-flash-tts").split(",")
+
+
 def google_tts(text, out):
     import base64
     mp3s = []
-    for k, chunk in enumerate(google_chunks(text)):
+    gemini = ENGINE == "gemini"
+    for k, chunk in enumerate(google_chunks(text, 3000 if gemini else 4000)):
+        if gemini:
+            body = None
+            for model in list(GEMINI_MODELS):
+                body = {"input": {"text": chunk, "prompt": STYLE},
+                        "voice": {"languageCode": "es-US", "name": GOOGLE_VOICE.split("-")[-1], "modelName": model},
+                        "audioConfig": {"audioEncoding": "MP3", "speakingRate": RATE, "sampleRateHertz": 44100}}
+                req = urllib.request.Request(
+                    f"https://texttospeech.googleapis.com/v1/text:synthesize?key={os.environ['GOOGLE_TTS_KEY']}",
+                    data=json.dumps(body).encode(), headers={"Content-Type": "application/json"})
+                try:
+                    data = json.load(urllib.request.urlopen(req, timeout=300))
+                    break
+                except urllib.error.HTTPError as err:
+                    msg = err.read()[:300]
+                    print(f"{model}: {err.code} {msg}", flush=True)
+                    if len(GEMINI_MODELS) > 1 and err.code in (400, 404):
+                        GEMINI_MODELS.remove(model)
+                        continue
+                    raise RuntimeError(f"Gemini TTS {err.code}: {msg}")
+            else:
+                raise RuntimeError("no Gemini TTS model worked")
+            f = out.with_name(f"{out.stem}_{k}.mp3")
+            f.write_bytes(base64.b64decode(data["audioContent"]))
+            mp3s.append(f)
+            continue
         body = {"input": {"text": chunk}, "voice": {"languageCode": GOOGLE_VOICE[:5], "name": GOOGLE_VOICE},
                 "audioConfig": {"audioEncoding": "MP3", "speakingRate": RATE, "sampleRateHertz": 44100}}
         req = urllib.request.Request(
@@ -75,7 +109,7 @@ def tts(job):
     text, prev, nxt, out = job
     if out.exists() and out.stat().st_size > 1000:
         return
-    if ENGINE == "google":
+    if ENGINE in ("google", "gemini"):
         for attempt in range(4):
             try:
                 return google_tts(text, out)
@@ -119,7 +153,7 @@ def main():
     texts = [u[2] for u in units]
     jobs = [(t, texts[i - 1] if i else "", texts[i + 1] if i + 1 < len(texts) else "", work / f"u{i:04d}.wav")
             for i, t in enumerate(texts)]
-    print(f"{len(units)} units, {sum(map(len, texts))} characters, {ENGINE} {GOOGLE_VOICE if ENGINE == 'google' else MODEL}", flush=True)
+    print(f"{len(units)} units, {sum(map(len, texts))} characters, {ENGINE} {GOOGLE_VOICE if ENGINE != 'elevenlabs' else MODEL}", flush=True)
     with ThreadPoolExecutor(4) as pool:
         list(pool.map(tts, jobs))
 
