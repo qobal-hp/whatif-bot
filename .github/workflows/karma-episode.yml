@@ -25,6 +25,9 @@ on:
       dub:
         description: Dub the assets_run episode into Spanish with Gemini (episode name, e.g. ep01)
         default: ""
+      dub_cache_run:
+        description: Reuse the Spanish lines already voiced in this earlier run id
+        default: ""
 
 permissions:
   contents: write
@@ -57,6 +60,15 @@ jobs:
           path: video/public
           run-id: ${{ inputs.assets_run }}
           github-token: ${{ github.token }}
+      - name: Reuse Spanish lines voiced earlier
+        if: inputs.dub_cache_run != ''
+        continue-on-error: true
+        uses: actions/download-artifact@v4
+        with:
+          name: es_lines
+          path: karma/.tmp_es
+          run-id: ${{ inputs.dub_cache_run }}
+          github-token: ${{ github.token }}
       - name: Spanish dub with Gemini TTS
         if: inputs.dub != ''
         env:
@@ -65,6 +77,13 @@ jobs:
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
           python karma/es/dub.py "${{ inputs.dub }}"
+      - name: Keep the voiced Spanish lines
+        if: always() && inputs.dub != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: es_lines
+          path: karma/.tmp_es/s*_[0-9][0-9].wav
+          if-no-files-found: ignore
       - name: Generate dialogue and scene images
         if: ${{ !inputs.render_only }}
         env:

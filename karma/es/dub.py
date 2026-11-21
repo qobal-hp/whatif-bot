@@ -47,8 +47,8 @@ def speak(role, text, out):
             "generationConfig": {"responseModalities": ["AUDIO"],
                                  "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": VOICES[base]}}}}}
     last = None
-    for attempt in range(12):
-        model = MODELS[0] if attempt < 8 else MODELS[-1]
+    for attempt in range(int(os.environ.get('TTS_ATTEMPTS', '30'))):
+        model = MODELS[attempt % len(MODELS)] if attempt >= 4 else MODELS[0]
         try:
             req = urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={KEY}",
                                          json.dumps(body).encode(), {"Content-Type": "application/json"})
@@ -70,6 +70,11 @@ def speak(role, text, out):
         except (urllib.error.HTTPError, urllib.error.URLError, KeyError, ValueError, IndexError, TimeoutError) as e:
             last = e
             code = getattr(e, "code", None)
+            if code == 429 and attempt in (0, 6):
+                try:
+                    print("429:", e.read().decode(errors="replace")[:500].replace("\n", " "), flush=True)
+                except Exception:
+                    pass
             time.sleep(min(60, 4 * (attempt + 1)) if code in (429, 500, 503, None) else 5)
     raise RuntimeError(f"{role}: {words[:60]} failed: {last!r}")
 
