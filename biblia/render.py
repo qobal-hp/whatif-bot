@@ -17,7 +17,7 @@ from pathlib import Path
 KEY = os.environ.get("ELEVENLABS_API_KEY", "")
 VOICE = os.environ.get("BIBLIA_VOICE", "keBoNFxkGtsW2ezG8Aqn")
 MODEL = os.environ.get("BIBLIA_MODEL", "eleven_flash_v2_5")
-PARA_GAP, HEAD_GAP, CHAPTER_GAP = 0.9, 1.6, 3.0
+PARA_GAP, HEAD_GAP, CHAPTER_GAP, VERSE_GAP = 0.9, 1.6, 3.0, 0.35
 NUMS = ("uno dos tres cuatro cinco seis siete ocho nueve diez once doce trece catorce quince dieciséis diecisiete "
         "dieciocho diecinueve veinte veintiuno veintidós veintitrés veinticuatro veinticinco veintiséis veintisiete "
         "veintiocho veintinueve treinta").split()
@@ -191,6 +191,48 @@ def tts(job):
     raise SystemExit(f"TTS failed for {out.name}")
 
 
+def ass_time(sec):
+    cs = int(round(sec * 100))
+    return f"{cs // 360000}:{cs // 6000 % 60:02d}:{cs // 100 % 60:02d}.{cs % 100:02d}"
+
+
+def write_ass(cues, path):
+    """Verse captions: gold reference above the verse text, bottom of the frame, soft dark band behind."""
+    head = """[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Verse,Cormorant Garamond,54,&H00F2F6FA,&H00F2F6FA,&H00000000,&H96000000,1,0,0,0,100,100,0,0,1,2.5,2,2,220,220,70,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+"""
+    lines = []
+    for start, end, ref, text in cues:
+        # Long verses are shown in parts, timed by length, so no caption runs past ~3 lines.
+        parts, cur = [], ""
+        for piece in re.split(r"(?<=[,;:.?!])\s+", text):
+            if cur and len(cur) + len(piece) > 190:
+                parts.append(cur)
+                cur = piece
+            else:
+                cur = (cur + " " + piece).strip()
+        parts.append(cur)
+        total = sum(len(p) for p in parts) or 1
+        t = start
+        for k, part in enumerate(parts):
+            t2 = end if k + 1 == len(parts) else t + (end - start) * len(part) / total
+            body = part.replace("{", "(").replace("}", ")")
+            lines.append(f"Dialogue: 0,{ass_time(t)},{ass_time(t2 + (0.3 if k + 1 == len(parts) else 0))},Verse,,0,0,0,,"
+                         f"{{\\fad(250,250)}}{{\\fnCinzel\\fs38\\c&H78C8EC&}}{ref}\\N{{\\r}}{body}")
+            t = t2
+    path.write_text(head + "\n".join(lines) + "\n")
+
+
 def main():
     script, images, music, out = Path(sys.argv[1]), Path(sys.argv[2]), Path(sys.argv[3]), Path(sys.argv[4])
     max_ch = int(sys.argv[5]) if len(sys.argv) > 5 and sys.argv[5] else 999
@@ -207,9 +249,14 @@ def main():
         if m:
             ch += 1
             labels[ch] = f"{m.group(1) or 'Génesis'} {spanish_number(m.group(2))}"
-            units.append((ch, "head", para))
+            units.append((ch, "head", para, ""))
+        elif para.startswith("[["):
+            # One verse per line: "[[Éxodo 3:5]] text". Each verse is voiced alone so captions can follow it.
+            verses = [re.match(r"\[\[(.+?)\]\]\s*(.+)", line.strip()).groups() for line in para.splitlines() if line.strip()]
+            for k, (ref, text) in enumerate(verses):
+                units.append((ch, "verse" if k + 1 < len(verses) else "verse_end", text, ref))
         else:
-            units.append((ch, "para", para))
+            units.append((ch, "para", para, ""))
     last_ch = units[-1][0]
     outro = [u for u in units if u[0] == last_ch and u[1] == "para"][-1] if last_ch > max_ch else None
     units = [u for u in units if u[0] <= max_ch] + ([outro] if outro and max_ch < last_ch else [])
@@ -222,7 +269,7 @@ def main():
 
     # Voice track with pauses; remember where each chapter starts.
     silence = {}
-    for gap in (PARA_GAP, HEAD_GAP, CHAPTER_GAP):
+    for gap in (PARA_GAP, HEAD_GAP, CHAPTER_GAP, VERSE_GAP):
         f = work / f"sil{gap}.wav"
         sh("ffmpeg", "-y", "-f", "lavfi", "-i", f"anullsrc=r=44100:cl=mono", "-t", str(gap), str(f))
         silence[gap] = f
@@ -230,15 +277,19 @@ def main():
     lead = work / "lead.wav"
     sh("ffmpeg", "-y", "-f", "lavfi", "-i", "anullsrc=r=44100:cl=mono", "-t", "2", str(lead))
     concat.append(lead)
-    for i, (c, kind, _) in enumerate(units):
+    cues = []
+    for i, (c, kind, text, ref) in enumerate(units):
         if kind == "head":
             if concat and i:
                 concat.append(silence[CHAPTER_GAP]); t += CHAPTER_GAP
             starts[c] = t
         if c == 0 and 0 not in starts:
             starts[0] = 0.0
-        concat.append(jobs[i][3]); t += duration(jobs[i][3])
-        gap = HEAD_GAP if kind == "head" else PARA_GAP
+        length = duration(jobs[i][3])
+        if ref:
+            cues.append((t, t + length, ref, text))
+        concat.append(jobs[i][3]); t += length
+        gap = {"head": HEAD_GAP, "verse": VERSE_GAP}.get(kind, PARA_GAP)
         concat.append(silence[gap]); t += gap
     total = t + 6.0
     (work / "voice.txt").write_text("".join(f"file '{p.resolve()}'\n" for p in concat))
@@ -261,8 +312,13 @@ def main():
         lines.append(f"file '{img.resolve()}'\nduration {end - starts[c]:.3f}\n")
     lines.append(f"file '{next(images.glob(f'cap{max(order[-1], 1):02d}.*')).resolve()}'\n")
     (work / "images.txt").write_text("".join(lines))
+    vf = "scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,fps=6"
+    if cues:
+        write_ass(cues, work / "verses.ass")
+        fonts = Path(__file__).resolve().parent / "fonts"
+        vf += f",subtitles={work / 'verses.ass'}:fontsdir={fonts}"
     sh("ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(work / "images.txt"), "-i", str(audio),
-       "-vf", "scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,fps=6,format=yuv420p",
+       "-vf", vf + ",format=yuv420p",
        "-c:v", "libx264", "-preset", "veryfast", "-tune", "stillimage", "-crf", "24", "-c:a", "copy",
        "-shortest", "-movflags", "+faststart", str(out / "episode.mp4"))
 
