@@ -9,11 +9,12 @@ import os
 import re
 import subprocess
 import sys
+import urllib.error
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
-KEY = os.environ["ELEVENLABS_API_KEY"]
+KEY = os.environ.get("ELEVENLABS_API_KEY", "")
 VOICE = os.environ.get("BIBLIA_VOICE", "keBoNFxkGtsW2ezG8Aqn")
 MODEL = os.environ.get("BIBLIA_MODEL", "eleven_flash_v2_5")
 PARA_GAP, HEAD_GAP, CHAPTER_GAP = 0.9, 1.6, 3.0
@@ -32,12 +33,57 @@ def duration(path):
     return float(out)
 
 
+ENGINE = os.environ.get("BIBLIA_TTS", "elevenlabs")
+GOOGLE_VOICE = os.environ.get("GOOGLE_VOICE", "es-US-Chirp3-HD-Sulafat")
+RATE = float(os.environ.get("BIBLIA_RATE", "0.9"))
+
+
+def google_chunks(text, limit=4000):
+    """Split text on sentence ends so each request stays under Google's 5000-byte limit."""
+    parts, cur = [], ""
+    for sent in re.split(r"(?<=[.;:?!])\s+", text):
+        if cur and len((cur + " " + sent).encode()) > limit:
+            parts.append(cur)
+            cur = sent
+        else:
+            cur = (cur + " " + sent).strip()
+    return parts + [cur] if cur else parts
+
+
+def google_tts(text, out):
+    import base64
+    mp3s = []
+    for k, chunk in enumerate(google_chunks(text)):
+        body = {"input": {"text": chunk}, "voice": {"languageCode": GOOGLE_VOICE[:5], "name": GOOGLE_VOICE},
+                "audioConfig": {"audioEncoding": "MP3", "speakingRate": RATE, "sampleRateHertz": 44100}}
+        req = urllib.request.Request(
+            f"https://texttospeech.googleapis.com/v1/text:synthesize?key={os.environ['GOOGLE_TTS_KEY']}",
+            data=json.dumps(body).encode(), headers={"Content-Type": "application/json"})
+        try:
+            data = json.load(urllib.request.urlopen(req, timeout=300))
+        except urllib.error.HTTPError as err:
+            raise RuntimeError(f"Google TTS {err.code}: {err.read()[:300]}")
+        f = out.with_name(f"{out.stem}_{k}.mp3")
+        f.write_bytes(base64.b64decode(data["audioContent"]))
+        mp3s.append(f)
+    lst = out.with_suffix(".lst")
+    lst.write_text("".join(f"file '{m.resolve()}'\n" for m in mp3s))
+    sh("ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(lst), "-ar", "44100", "-ac", "1", str(out))
+
+
 def tts(job):
     text, prev, nxt, out = job
     if out.exists() and out.stat().st_size > 1000:
         return
+    if ENGINE == "google":
+        for attempt in range(4):
+            try:
+                return google_tts(text, out)
+            except Exception as err:
+                print(f"{out.name} attempt {attempt + 1} failed: {err}", flush=True)
+        raise SystemExit(f"TTS failed for {out.name}")
     body = json.dumps({"text": text, "model_id": MODEL, "language_code": "es", "previous_text": prev, "next_text": nxt,
-                       "voice_settings": {"stability": 0.65, "similarity_boost": 0.8, "style": 0.0, "speed": 0.9}}).encode()
+                       "voice_settings": {"stability": 0.65, "similarity_boost": 0.8, "style": 0.0, "speed": RATE}}).encode()
     for attempt in range(4):
         req = urllib.request.Request(f"https://api.elevenlabs.io/v1/text-to-speech/{VOICE}?output_format=mp3_44100_128",
                                      data=body, headers={"xi-api-key": KEY, "Content-Type": "application/json"})
@@ -73,7 +119,7 @@ def main():
     texts = [u[2] for u in units]
     jobs = [(t, texts[i - 1] if i else "", texts[i + 1] if i + 1 < len(texts) else "", work / f"u{i:04d}.wav")
             for i, t in enumerate(texts)]
-    print(f"{len(units)} units, {sum(map(len, texts))} characters, model {MODEL}", flush=True)
+    print(f"{len(units)} units, {sum(map(len, texts))} characters, {ENGINE} {GOOGLE_VOICE if ENGINE == 'google' else MODEL}", flush=True)
     with ThreadPoolExecutor(4) as pool:
         list(pool.map(tts, jobs))
 

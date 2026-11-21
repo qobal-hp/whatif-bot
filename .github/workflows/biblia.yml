@@ -9,6 +9,15 @@ on:
       max_chapters:
         description: Render only the first N chapters (empty = all)
         default: ""
+      tts:
+        description: elevenlabs or google
+        default: google
+      voice:
+        description: Google voice name (when tts = google)
+        default: es-US-Chirp3-HD-Sulafat
+      tag:
+        description: Suffix for the preview branch
+        default: ""
       music:
         description: Music file on the biblia-assets branch
         default: music/guitarra.mp3
@@ -33,13 +42,16 @@ jobs:
       - name: Render
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          GOOGLE_TTS_KEY: ${{ secrets.GOOGLE_TTS_KEY }}
+          BIBLIA_TTS: ${{ inputs.tts }}
+          GOOGLE_VOICE: ${{ inputs.voice }}
         run: |
           sudo apt-get -qq update && sudo apt-get -qq install -y ffmpeg > /dev/null
           python3 biblia/render.py "${{ inputs.script }}" /tmp/assets/images "/tmp/assets/${{ inputs.music }}" /tmp/out "${{ inputs.max_chapters }}"
           ls -la /tmp/out
       - uses: actions/upload-artifact@v4
         with:
-          name: episode
+          name: episode${{ inputs.tag }}
           path: |
             /tmp/out/episode.mp4
             /tmp/out/chapters.txt
@@ -50,9 +62,9 @@ jobs:
           if [ "$size" -gt 95000000 ]; then echo "Preview too large ($size bytes); use the artifact"; exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout --orphan biblia-output
+          git checkout --orphan biblia-output${{ inputs.tag }}
           git rm -rf --cached . > /dev/null
           mkdir -p out && cp /tmp/out/episode.mp4 /tmp/out/chapters.txt out/
           git add -f out
           git commit -q -m "Biblia preview from run ${{ github.run_number }}"
-          git push -f origin biblia-output
+          git push -f origin biblia-output${{ inputs.tag }}
