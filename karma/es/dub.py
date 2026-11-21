@@ -96,8 +96,11 @@ def speak(role, text, out):
                 "areverse,silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.08,areverse,"
                 "silenceremove=stop_periods=-1:stop_duration=0.55:stop_threshold=-45dB:stop_silence=0.4",
                 str(out))
-            if seconds(out) < 0.2:
+            d = seconds(out)
+            if d < 0.2:
                 raise ValueError("empty audio")
+            if d > too_long(words):
+                raise ValueError(f"take too long ({d:.1f}s) for: {words[:50]}")
             return out
         except (urllib.error.HTTPError, urllib.error.URLError, KeyError, ValueError, IndexError, TimeoutError) as e:
             last = e
@@ -109,6 +112,11 @@ def speak(role, text, out):
                     pass
             time.sleep(min(60, 4 * (attempt + 1)) if code in (429, 500, 503, None) else 5)
     raise RuntimeError(f"{role}: {words[:60]} failed: {last!r}")
+
+
+def too_long(words):
+    """A take longer than this has gone wrong (read the instructions aloud, repeated itself, long silences)."""
+    return len(words) / 8.0 + 2.0
 
 
 def level(path):
@@ -135,6 +143,8 @@ def main():
     def work(job):
         sid, i, role, text = job
         out = TMP / f"{sid}_{i:02d}.wav"
+        if out.exists() and seconds(out) > too_long(split_tag(text)[1]):
+            out.unlink()
         if not out.exists():
             speak(role, text, out)
         done[(sid, i)] = out
