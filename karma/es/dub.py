@@ -60,8 +60,8 @@ def speak(role, text, out):
     if not style:
         style = "calm, suspenseful storytelling" if base == "NARRATOR" else "natural, conversational"
     who = "the narrator of a dramatic story" if base == "NARRATOR" else f"{base.title()}, a character in a dramatic telenovela"
-    prompt = (f"Speak as {who}, in neutral Latin American Spanish with a light Mexican accent. Fully acted, emotional and "
-              f"believable, at a brisk natural pace with no long pauses. Delivery: {style}. Say exactly this and nothing else: {words}")
+    prompt = (f"Read quickly and fluidly, like a fast-paced TV drama, as {who}, in neutral Latin American Spanish. "
+              f"No pauses between sentences. Emotion and delivery: {style}. Say exactly this and nothing else: {words}")
     body = {"contents": [{"parts": [{"text": prompt}]}],
             "generationConfig": {"responseModalities": ["AUDIO"],
                                  "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": VOICES[base]}}}}}
