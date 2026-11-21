@@ -55,7 +55,7 @@ STYLE = os.environ.get("BIBLIA_STYLE", (
     "bedtime. Slow, calm and reverent overall, with soft natural pauses. Let quiet emotion come through in the spoken "
     "lines: God's words solemn and majestic, the serpent's words sly and hushed, human voices tender, fearful or "
     "sorrowful as the story calls for, but never loud or theatrical."))
-GEMINI_MODELS = os.environ.get("GEMINI_TTS_MODELS", "gemini-3.8-flash-tts-preview,gemini-2.5-flash-tts").split(",")
+GEMINI_MODELS = os.environ.get("GEMINI_TTS_MODELS", "gemini-3.8-flash-tts,gemini-2.5-flash-tts").split(",")
 
 
 def google_tts(text, out):
