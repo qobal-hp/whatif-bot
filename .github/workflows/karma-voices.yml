@@ -30,7 +30,9 @@ jobs:
           A: ${{ secrets.GOOGLE_TTS_API_KEY }}
           B: ${{ secrets.GEMINI_API_KEY }}
           C: ${{ secrets.GOOGLE_API_KEY }}
+          GOOGLE_TTS_SA_JSON: ${{ secrets.GOOGLE_TTS_SA_JSON }}
         run: |
+          pip install --quiet google-auth requests && python karma/es/check_tts.py
           echo "GOOGLE_TTS_API_KEY set: ${A:+yes}"; echo "GEMINI_API_KEY set: ${B:+yes}"; echo "GOOGLE_API_KEY set: ${C:+yes}"
           for k in "$A" "$B" "$C"; do [ -n "$k" ] || continue; code=$(curl -s -o /tmp/r.json -w '%{http_code}' -X POST -H 'Content-Type: application/json' "https://texttospeech.googleapis.com/v1/text:synthesize?key=$k" -d '{"input":{"prompt":"Say it warmly","text":"Hola"},"voice":{"languageCode":"es-MX","name":"Kore","modelName":"gemini-2.5-flash-tts"},"audioConfig":{"audioEncoding":"MP3"}}'); echo "cloud tts with key: $code $(head -c 300 /tmp/r.json | tr -d '\n')"; done
       - name: Install ffmpeg

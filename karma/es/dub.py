@@ -16,8 +16,25 @@ TMP = ROOT / "karma" / ".tmp_es"; TMP.mkdir(parents=True, exist_ok=True)
 RATE = 24000
 MODELS = ["gemini-3.1-flash-tts-preview", "gemini-2.5-flash-preview-tts"]
 KEY = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
-CLOUD_KEY = os.environ.get("GOOGLE_TTS_API_KEY")  # Cloud Text-to-Speech: Gemini-TTS without the AI Studio 100-a-day cap
-CLOUD_MODELS = ["gemini-3.1-flash-tts-preview", "gemini-2.5-flash-tts", "gemini-2.5-pro-tts"]
+SA_JSON = os.environ.get("GOOGLE_TTS_SA_JSON")  # Cloud Text-to-Speech service account: Gemini voices without the AI Studio 100-a-day cap
+CLOUD_KEY = bool(SA_JSON)
+_token = {"value": None, "at": 0.0, "project": None}
+
+
+def cloud_headers():
+    """Bearer token for the service account, refreshed every 45 minutes."""
+    if not _token["value"] or time.time() - _token["at"] > 2700:
+        from google.oauth2 import service_account
+        import google.auth.transport.requests
+        info = json.loads(SA_JSON)
+        creds = service_account.Credentials.from_service_account_info(info, scopes=["https://www.googleapis.com/auth/cloud-platform"])
+        creds.refresh(google.auth.transport.requests.Request())
+        _token.update(value=creds.token, at=time.time(), project=info.get("project_id"))
+    h = {"Content-Type": "application/json", "Authorization": f"Bearer {_token['value']}"}
+    if _token["project"]:
+        h["x-goog-user-project"] = _token["project"]
+    return h
+CLOUD_MODELS = ["gemini-2.5-flash-tts", "gemini-2.5-pro-tts"]
 TARGET_DB = -20.0
 LEAD, GAP, TAIL = 0.3, 0.45, 0.3      # natural silences around and between lines
 MIN_LEAD, MIN_GAP, MIN_TAIL = 0.12, 0.22, 0.12
@@ -58,8 +75,8 @@ def speak(role, text, out):
                 cbody = {"input": {"prompt": prompt.split(" Say exactly this")[0], "text": words},
                          "voice": {"languageCode": "es-MX", "name": VOICES[base], "modelName": cmodel},
                          "audioConfig": {"audioEncoding": "LINEAR16", "sampleRateHertz": RATE}}
-                req = urllib.request.Request(f"https://texttospeech.googleapis.com/v1/text:synthesize?key={CLOUD_KEY}",
-                                             json.dumps(cbody).encode(), {"Content-Type": "application/json"})
+                req = urllib.request.Request("https://texttospeech.googleapis.com/v1/text:synthesize",
+                                             json.dumps(cbody).encode(), cloud_headers())
                 with urllib.request.urlopen(req, timeout=180) as r:
                     j = json.loads(r.read())
                 wavbytes = base64.b64decode(j["audioContent"])
