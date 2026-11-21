@@ -23,6 +23,15 @@ NUMS = ("uno dos tres cuatro cinco seis siete ocho nueve diez once doce trece ca
         "veintiocho veintinueve treinta").split()
 
 
+def spanish_number(words):
+    words = words.strip()
+    if words in NUMS:
+        return NUMS.index(words) + 1
+    tens = {"treinta": 30, "cuarenta": 40, "cincuenta": 50}
+    parts = words.split(" y ")
+    return tens[parts[0]] + (NUMS.index(parts[1]) + 1 if len(parts) > 1 else 0)
+
+
 def sh(*args):
     subprocess.run(args, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
 
@@ -190,11 +199,14 @@ def main():
     work.mkdir(exist_ok=True)
 
     # Units: (chapter number, kind, text). Chapter 0 = intro.
-    units, ch = [], 0
+    # Headings: "Capítulo uno." or "Génesis, capítulo treinta y uno." Chapters are numbered in reading
+    # order (1, 2, ...) to match images cap01, cap02, ...; labels keep the book and real chapter number.
+    units, ch, labels = [], 0, {0: "Introducción"}
     for para in [p.strip() for p in script.read_text().split("\n\n") if p.strip()]:
-        m = re.match(r"Cap[ií]tulo (\w+)\.$", para)
+        m = re.match(r"(?:([A-ZÁÉÍÓÚ][\wáéíóúñ ]+), c|C)ap[ií]tulo ([\wáéíóúñ ]+)\.$", para)
         if m:
-            ch = NUMS.index(m.group(1)) + 1
+            ch += 1
+            labels[ch] = f"{m.group(1) or 'Génesis'} {spanish_number(m.group(2))}"
             units.append((ch, "head", para))
         else:
             units.append((ch, "para", para))
@@ -245,9 +257,9 @@ def main():
     lines = []
     for k, c in enumerate(order):
         end = starts[order[k + 1]] if k + 1 < len(order) else total
-        img = images / f"cap{max(c, 1):02d}.png"
+        img = next(images.glob(f"cap{max(c, 1):02d}.*"))
         lines.append(f"file '{img.resolve()}'\nduration {end - starts[c]:.3f}\n")
-    lines.append(f"file '{(images / f'cap{max(order[-1], 1):02d}.png').resolve()}'\n")
+    lines.append(f"file '{next(images.glob(f'cap{max(order[-1], 1):02d}.*')).resolve()}'\n")
     (work / "images.txt").write_text("".join(lines))
     sh("ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(work / "images.txt"), "-i", str(audio),
        "-vf", "scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,fps=6,format=yuv420p",
@@ -257,7 +269,7 @@ def main():
     def stamp(s):
         s = int(s)
         return f"{s // 3600}:{s % 3600 // 60:02d}:{s % 60:02d}" if total >= 3600 else f"{s // 60}:{s % 60:02d}"
-    chapters = "\n".join(f"{stamp(0 if c == 0 else starts[c])} " + ("Introducción" if c == 0 else f"Génesis {c}")
+    chapters = "\n".join(f"{stamp(0 if c == 0 else starts[c])} " + labels[c]
                          for c in order)
     (out / "chapters.txt").write_text(chapters + "\n")
     print(chapters)
