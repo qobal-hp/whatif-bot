@@ -1,0 +1,28 @@
+name: Fetch Bible text
+
+on:
+  workflow_dispatch:
+    inputs:
+      script:
+        description: Python script to run
+        default: biblia/fetch_rv1909.py
+      args:
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 "${{ inputs.script }}" ${{ inputs.args }}
+      - name: Push any output
+        run: |
+          if [ -d out ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git checkout --orphan text-output && git rm -rf --cached . > /dev/null
+            git add -f out && git commit -q -m "Fetched text" && git push -f origin text-output
+          fi
