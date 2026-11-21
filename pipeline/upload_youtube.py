@@ -80,6 +80,12 @@ def main():
     wanted = lambda name: not only or name in only
     meta = spec["youtube"]
     yt = service()
+    expect = meta.get("channel_title")
+    if expect:  # refuse to upload to the wrong channel
+        mine = [c["snippet"]["title"] for c in yt.channels().list(part="snippet", mine=True).execute().get("items", [])]
+        print(f"Authorized channel: {mine}")
+        if not any(expect.lower() in m.lower() for m in mine):
+            sys.exit(f"This token belongs to {mine}, not {expect}; nothing uploaded")
 
     long_url = meta.get("long_url", "")  # the long form's link, for shorts uploaded on their own
     episode = files / "episode.mp4"
