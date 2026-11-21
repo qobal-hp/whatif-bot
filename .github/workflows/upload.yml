@@ -12,7 +12,7 @@ on:
       channel:
         description: Which channel to upload to
         type: choice
-        options: [whatif, karma]
+        options: [whatif, karma, karma-es]
         default: whatif
       spec:
         description: Episode spec file
@@ -74,7 +74,7 @@ jobs:
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
-          YT_REFRESH_TOKEN: ${{ inputs.channel == 'karma' && secrets.YT_REFRESH_TOKEN_KARMA || secrets.YT_REFRESH_TOKEN }}
+          YT_REFRESH_TOKEN: ${{ inputs.channel == 'karma' && secrets.YT_REFRESH_TOKEN_KARMA || inputs.channel == 'karma-es' && secrets.YT_REFRESH_TOKEN_ES || secrets.YT_REFRESH_TOKEN }}
         run: |
           if [ -z "$YT_REFRESH_TOKEN" ]; then echo "No upload token for channel ${{ inputs.channel }} (karma needs the secret YT_REFRESH_TOKEN_KARMA)"; exit 1; fi
           pip install --quiet google-api-python-client google-auth

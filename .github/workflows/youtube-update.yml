@@ -6,7 +6,7 @@ on:
       channel:
         description: Which channel the videos are on
         type: choice
-        options: [whatif, karma]
+        options: [whatif, karma, karma-es]
         default: whatif
       changes:
         description: 'JSON list, e.g. [{"id":"abc","title":"New title"},{"id":"def","publish_at":"2026-11-15T17:00:00Z"}]'
@@ -28,7 +28,7 @@ jobs:
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
-          YT_REFRESH_TOKEN: ${{ inputs.channel == 'karma' && secrets.YT_REFRESH_TOKEN_KARMA || secrets.YT_REFRESH_TOKEN }}
+          YT_REFRESH_TOKEN: ${{ inputs.channel == 'karma' && secrets.YT_REFRESH_TOKEN_KARMA || inputs.channel == 'karma-es' && secrets.YT_REFRESH_TOKEN_ES || secrets.YT_REFRESH_TOKEN }}
           CHANGES: ${{ inputs.changes }}
         run: |
           pip install --quiet google-api-python-client google-auth
