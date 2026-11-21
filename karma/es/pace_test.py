@@ -18,7 +18,9 @@ for model in ["gemini-2.5-flash-tts", "gemini-2.5-pro-tts"]:
             with urllib.request.urlopen(urllib.request.Request("https://texttospeech.googleapis.com/v1/text:synthesize", json.dumps(body).encode(), dub.cloud_headers())) as r:
                 b = base64.b64decode(json.loads(r.read())["audioContent"])
             open("/tmp/t.wav", "wb").write(b)
-            d = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", "/tmp/t.wav"], capture_output=True, text=True).stdout.strip()
+            import wave
+            with wave.open("/tmp/t.wav") as w:
+                d = round(w.getnframes() / w.getframerate(), 2)
             print(f"PACE {model} {name}: {d}s")
         except urllib.error.HTTPError as e:
             print(f"PACE {model} {name}: HTTP {e.code} {e.read().decode()[:200]}")
