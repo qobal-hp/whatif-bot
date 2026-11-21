@@ -105,7 +105,7 @@ def main():
         done[(sid, i)] = out
         return out
 
-    with ThreadPoolExecutor(int(os.environ.get("TTS_WORKERS", "6"))) as pool:
+    with ThreadPoolExecutor(int(os.environ.get("TTS_WORKERS", "3"))) as pool:
         for n, _ in enumerate(pool.map(work, jobs), 1):
             if n % 25 == 0:
                 print(f"  voiced {n}/{len(jobs)}", flush=True)
