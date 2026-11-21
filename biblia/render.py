@@ -206,7 +206,7 @@ WrapStyle: 0
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Verse,Cormorant Garamond,54,&H00F2F6FA,&H00F2F6FA,&H00000000,&H96000000,1,0,0,0,100,100,0,0,1,2.5,2,2,220,220,70,1
+Style: Verse,Cormorant Garamond,54,&H00F2F6FA,&H00F2F6FA,&H00000000,&H96000000,1,0,0,0,100,100,0,0,1,3.5,3,2,220,220,70,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -228,7 +228,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
             t2 = end if k + 1 == len(parts) else t + (end - start) * len(part) / total
             body = part.replace("{", "(").replace("}", ")")
             lines.append(f"Dialogue: 0,{ass_time(t)},{ass_time(t2 + (0.3 if k + 1 == len(parts) else 0))},Verse,,0,0,0,,"
-                         f"{{\\fad(250,250)}}{{\\fnCinzel\\fs38\\c&H78C8EC&}}{ref}\\N{{\\r}}{body}")
+                         f"{{\\fad(250,250)}}{{\\fnCinzel\\fs44\\c&H78C8EC&}}{ref}\\N{{\\r}}{body}")
             t = t2
     path.write_text(head + "\n".join(lines) + "\n")
 
@@ -316,7 +316,8 @@ def main():
     if cues:
         write_ass(cues, work / "verses.ass")
         fonts = Path(__file__).resolve().parent / "fonts"
-        vf += f",subtitles={work / 'verses.ass'}:fontsdir={fonts}"
+        vf += (",drawbox=x=0:y=ih-330:w=iw:h=330:color=black@0.38:t=fill"
+               f",subtitles={work / 'verses.ass'}:fontsdir={fonts}")
     sh("ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(work / "images.txt"), "-i", str(audio),
        "-vf", vf + ",format=yuv420p",
        "-c:v", "libx264", "-preset", "veryfast", "-tune", "stillimage", "-crf", "24", "-c:a", "copy",
