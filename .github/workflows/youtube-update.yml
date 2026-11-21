@@ -32,4 +32,4 @@ jobs:
           CHANGES: ${{ inputs.changes }}
         run: |
           pip install --quiet google-api-python-client google-auth
-          cd pipeline && python update_youtube.py "$CHANGES"
+          cd pipeline && if [ "$CHANGES" = "list" ]; then python channel_uploads.py; else python update_youtube.py "$CHANGES"; fi
