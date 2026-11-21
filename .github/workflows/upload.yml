@@ -12,8 +12,11 @@ on:
       channel:
         description: Which channel to upload to
         type: choice
-        options: [whatif, karma]
+        options: [whatif, karma, biblia]
         default: whatif
+      artifact:
+        description: Name of the episode artifact
+        default: episode
       spec:
         description: Episode spec file
         default: pipeline/ep01_full.json
@@ -46,7 +49,7 @@ jobs:
       - uses: actions/download-artifact@v4
         if: inputs.episode_run != ''
         with:
-          name: episode
+          name: ${{ inputs.artifact }}
           path: /tmp/upload
           run-id: ${{ inputs.episode_run }}
           github-token: ${{ github.token }}
@@ -74,8 +77,8 @@ jobs:
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
-          YT_REFRESH_TOKEN: ${{ inputs.channel == 'karma' && secrets.YT_REFRESH_TOKEN_KARMA || secrets.YT_REFRESH_TOKEN }}
+          YT_REFRESH_TOKEN: ${{ inputs.channel == 'karma' && secrets.YT_REFRESH_TOKEN_KARMA || inputs.channel == 'biblia' && secrets.YT_REFRESH_TOKEN_BIBLIA || secrets.YT_REFRESH_TOKEN }}
         run: |
-          if [ -z "$YT_REFRESH_TOKEN" ]; then echo "No upload token for channel ${{ inputs.channel }} (karma needs the secret YT_REFRESH_TOKEN_KARMA)"; exit 1; fi
+          if [ -z "$YT_REFRESH_TOKEN" ]; then echo "No upload token for channel ${{ inputs.channel }} (karma needs YT_REFRESH_TOKEN_KARMA, biblia needs YT_REFRESH_TOKEN_BIBLIA)"; exit 1; fi
           pip install --quiet google-api-python-client google-auth
           python pipeline/upload_youtube.py "${{ inputs.spec }}" /tmp/upload "${{ inputs.privacy }}" "${{ inputs.only }}" "${{ inputs.schedule }}"
