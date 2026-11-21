@@ -50,7 +50,10 @@ def gemini():
                                              "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": GEMINI_VOICES[role]}}}}}
                 raw = http(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}",
                            json.dumps(body).encode(), {"Content-Type": "application/json"})
-                data = json.loads(raw)["candidates"][0]["content"]["parts"][0]["inlineData"]["data"]
+                j = json.loads(raw)
+                if "content" not in j["candidates"][0]:
+                    print("gemini empty:", json.dumps(j)[:300]); raise urllib.error.HTTPError(model, 0, "empty", None, None)
+                data = j["candidates"][0]["content"]["parts"][0]["inlineData"]["data"]
                 pcm = OUT / f"g_{i:02d}.pcm"; pcm.write_bytes(base64.b64decode(data))
                 wav = OUT / f"g_{i:02d}.wav"
                 subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "s16le", "-ar", "24000", "-ac", "1", "-i", str(pcm), str(wav)], check=True)
@@ -58,7 +61,8 @@ def gemini():
             print(f"gemini: {model} ok"); (OUT / "gemini_model.txt").write_text(model)
             break
         except urllib.error.HTTPError as e:
-            print(f"gemini {model}: HTTP {e.code} {e.read().decode(errors='replace')[:300]}")
+            body = e.read().decode(errors='replace')[:400] if e.fp else ''
+            print(f"gemini {model}: HTTP {e.code} {body}")
     if parts:
         concat(parts, "gemini")
 
@@ -100,7 +104,7 @@ def eleven():
 
 
 if __name__ == "__main__":
-    for f in (gemini, eleven):
+    for f in ((gemini,) if os.environ.get("ONLY") == "gemini" else (gemini, eleven)):
         try:
             f()
         except Exception as e:  # keep the other sample
