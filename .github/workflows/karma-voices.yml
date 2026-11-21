@@ -20,9 +20,17 @@ jobs:
         with:
           python-version: "3.12"
       - name: Search the voice library and audition
+        if: inputs.spec != 'spanish-sample'
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
         run: python karma/voice_casting.py "${{ inputs.spec }}" /tmp/voices
+      - name: Spanish dub sample (Gemini TTS and ElevenLabs)
+        if: inputs.spec == 'spanish-sample'
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        run: python karma/es/sample.py /tmp/voices
       - name: Publish to the karma-voices-output branch
         run: |
           cp -r /tmp/voices voices
