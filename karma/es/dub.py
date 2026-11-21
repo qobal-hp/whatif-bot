@@ -116,7 +116,7 @@ def speak(role, text, out):
 
 def too_long(words):
     """A take longer than this has gone wrong (read the instructions aloud, repeated itself, long silences)."""
-    return len(words) / 8.0 + 2.0
+    return len(re.sub(r"\[[^]]*\]", "", words)) / 10.0 + 1.5
 
 
 def level(path):
