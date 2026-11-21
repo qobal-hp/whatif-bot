@@ -15,6 +15,9 @@ on:
       voice:
         description: Google voice name (when tts = google)
         default: es-US-Chirp3-HD-Sulafat
+      rate:
+        description: Reading speed (1.0 = normal)
+        default: "0.85"
       tag:
         description: Suffix for the preview branch
         default: ""
@@ -45,6 +48,7 @@ jobs:
           GOOGLE_TTS_KEY: ${{ secrets.GOOGLE_TTS_KEY }}
           BIBLIA_TTS: ${{ inputs.tts }}
           GOOGLE_VOICE: ${{ inputs.voice }}
+          BIBLIA_RATE: ${{ inputs.rate }}
         run: |
           sudo apt-get -qq update && sudo apt-get -qq install -y ffmpeg > /dev/null
           python3 biblia/render.py "${{ inputs.script }}" /tmp/assets/images "/tmp/assets/${{ inputs.music }}" /tmp/out "${{ inputs.max_chapters }}"
