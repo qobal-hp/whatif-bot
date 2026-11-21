@@ -11,7 +11,7 @@ LINES = json.loads((Path(__file__).parent / "sample_lines.json").read_text())
 GAP = 0.35
 
 GEMINI_VOICES = {"NARRATOR": "Charon", "CLAIRE": "Kore", "DANIEL": "Orus", "VANESSA": "Aoede"}
-GEMINI_MODELS = ["gemini-2.5-pro-preview-tts", "gemini-3.1-flash-tts-preview", "gemini-2.5-flash-preview-tts"]
+GEMINI_MODELS = ["gemini-3.1-flash-tts-preview", "gemini-2.5-flash-preview-tts", "gemini-2.5-pro-preview-tts"]
 GENDER = {"NARRATOR": ("male", "middle_aged"), "CLAIRE": ("female", "young"), "DANIEL": ("male", "young"), "VANESSA": ("female", "young")}
 
 

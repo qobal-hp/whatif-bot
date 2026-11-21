@@ -24,6 +24,9 @@ jobs:
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
         run: python karma/voice_casting.py "${{ inputs.spec }}" /tmp/voices
+      - name: Install ffmpeg
+        if: inputs.spec == 'spanish-sample'
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
       - name: Spanish dub sample (Gemini TTS and ElevenLabs)
         if: inputs.spec == 'spanish-sample'
         env:
