@@ -4781,8 +4781,45 @@
    "audio drama"
   ],
   "category": "24",
-  "shorts_description": "Mira la historia completa en Karma Tales en Español.\n#shorts #karmatales #telenovela"
+  "shorts_description": "Mira la historia completa en Karma Tales en Español: https://youtu.be/jtvhz0uVMWk\nMi madre puso un plato de más en Acción de Gracias. Nadie sabía para quién era.\n\n#shorts #karmatales #historiasdevenganza #acciondegracias"
  },
  "thumbnail_file": "karma/es/ep07_thumb.jpg",
- "shorts": []
+ "shorts": [
+  {
+   "id": "short1",
+   "from": "s02",
+   "to": "s16",
+   "title": "\"¿Para quién es|la silla de más?\"",
+   "youtube_title": "La abuela puso un plato de más en Acción de Gracias. Entonces sonó el timbre. #shorts"
+  },
+  {
+   "id": "short2",
+   "from": "s47",
+   "to": "s56",
+   "title": "\"Creí que nunca|me quisiste.\"",
+   "youtube_title": "Se vieron por primera vez en 40 años. Ella solo tenía una pregunta. #shorts"
+  },
+  {
+   "id": "short3",
+   "from": "s114",
+   "to": "s123",
+   "title": "\"¿Reconoce esto?\"",
+   "youtube_title": "Llevó un cheque viejo a la cena de Acción de Gracias. Tenía su firma. #shorts"
+  },
+  {
+   "id": "short4",
+   "from": "s133",
+   "to": "s138",
+   "title": "40 años de cartas.|Todas sin abrir.",
+   "youtube_title": "Le escribió a su hija cada año. Alguien guardó todas las cartas. #shorts"
+  },
+  {
+   "id": "short5",
+   "from": "s198",
+   "to": "s205",
+   "title": "\"¿Dónde me siento?\"",
+   "youtube_title": "Guardó esa silla durante 41 años. Por fin su hija se sentó en ella. #shorts"
+  }
+ ],
+ "shorts_end_card": "Mira la historia completa|en nuestro canal"
 }

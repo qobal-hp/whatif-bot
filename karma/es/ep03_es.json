@@ -2692,8 +2692,45 @@
    "audio drama"
   ],
   "category": "24",
-  "shorts_description": "Mira la historia completa en Karma Tales en Español.\n#shorts #karmatales #telenovela"
+  "shorts_description": "Mira la historia completa en Karma Tales en Español: https://youtu.be/At_bwIfa4W4\nSeguí a mi esposo en Nochebuena. Ojalá no lo hubiera hecho.\n\n#shorts #karmatales #historiasdevenganza #familiasecreta"
  },
  "thumbnail_file": "karma/es/ep03_thumb.jpg",
- "shorts": []
+ "shorts": [
+  {
+   "id": "short1",
+   "from": "s01",
+   "to": "s15",
+   "title": "Lo siguió|en Nochebuena",
+   "youtube_title": "Siguió a su esposo en Nochebuena. Entonces la otra mujer le escribió. #shorts"
+  },
+  {
+   "id": "short2",
+   "from": "s39",
+   "to": "s46",
+   "title": "\"Quiero que le creas|a los papeles.\"",
+   "youtube_title": "La otra mujer le dio una carpeta. Adentro estaba su firma. #shorts"
+  },
+  {
+   "id": "short3",
+   "from": "s79",
+   "to": "s84",
+   "title": "\"Te amo.|Voy a firmar.\"",
+   "youtube_title": "Ella aceptó firmar el préstamo. Con una condición. #shorts"
+  },
+  {
+   "id": "short4",
+   "from": "s88",
+   "to": "s95",
+   "title": "Sus dos esposas.|Una sola sala.",
+   "youtube_title": "Llevó a su esposa al banco a firmar. Entonces entró su otra esposa. #shorts"
+  },
+  {
+   "id": "short5",
+   "from": "s96",
+   "to": "s101",
+   "title": "\"Un error es olvidar|un aniversario.\"",
+   "youtube_title": "Él dijo que cometió errores. Ella tenía la respuesta perfecta. #shorts"
+  }
+ ],
+ "shorts_end_card": "Mira la historia completa|en nuestro canal"
 }

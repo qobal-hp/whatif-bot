@@ -4510,8 +4510,45 @@
    "padre muerto"
   ],
   "category": "24",
-  "shorts_description": "Mira la historia completa en Karma Tales en Español.\n#shorts #karmatales #telenovela"
+  "shorts_description": "Mira la historia completa en Karma Tales en Español: https://youtu.be/OH9xYM5f1Bk\nMi hija le dijo a todos que yo estaba muerto. Entonces llegué a su boda.\n\n#shorts #karmatales #historiasdevenganza #boda"
  },
  "thumbnail_file": "karma/es/ep05_thumb.jpg",
- "shorts": []
+ "shorts": [
+  {
+   "id": "short1",
+   "from": "s01",
+   "to": "s11",
+   "title": "Su padre estaba muerto.|Entonces se abrieron las puertas.",
+   "youtube_title": "Dijo a todos que su padre había muerto. Entonces entró a su boda. #shorts"
+  },
+  {
+   "id": "short2",
+   "from": "s48",
+   "to": "s56",
+   "title": "\"Ethan me dijo|que falleció.\"",
+   "youtube_title": "Su suegra le dio el pésame por su papá. Su papá está vivo. #shorts"
+  },
+  {
+   "id": "short3",
+   "from": "s80",
+   "to": "s89",
+   "title": "\"En memoria de...\"",
+   "youtube_title": "Un mecánico leyó la página de la boda de su hija. Su nombre estaba ahí. #shorts"
+  },
+  {
+   "id": "short4",
+   "from": "s133",
+   "to": "s140",
+   "title": "\"No puedes probarlo.\"|\"En realidad... sí puedo.\"",
+   "youtube_title": "El novio dijo que nadie podía probarlo. La dama de honor le dio play. #shorts"
+  },
+  {
+   "id": "short5",
+   "from": "s161",
+   "to": "s171",
+   "title": "\"No me puedo casar contigo.\"",
+   "youtube_title": "Se quitó el anillo en el altar. Luego le pidió algo a su papá. #shorts"
+  }
+ ],
+ "shorts_end_card": "Mira la historia completa|en nuestro canal"
 }
