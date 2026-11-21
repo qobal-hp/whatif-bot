@@ -316,7 +316,9 @@ def main():
     if cues:
         write_ass(cues, work / "verses.ass")
         fonts = Path(__file__).resolve().parent / "fonts"
-        vf += (",drawbox=x=0:y=ih-400:w=iw:h=400:color=black@0.45:t=fill"
+        # Soft dark gradient at the bottom so captions read on bright paintings without greying the picture.
+        grad = Path(__file__).resolve().parent / "caption_grad.png"
+        vf += (f"[base];movie={grad}[g];[base][g]overlay=0:H-h"
                f",subtitles={work / 'verses.ass'}:fontsdir={fonts}")
     sh("ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(work / "images.txt"), "-i", str(audio),
        "-vf", vf + ",format=yuv420p",
