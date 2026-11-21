@@ -206,7 +206,7 @@ WrapStyle: 0
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Verse,Cormorant Garamond,54,&H00F2F6FA,&H00F2F6FA,&H00000000,&H96000000,1,0,0,0,100,100,0,0,1,3.5,3,2,220,220,70,1
+Style: Verse,Cormorant Garamond,72,&H00F2F6FA,&H00F2F6FA,&H00000000,&H96000000,1,0,0,0,100,100,0,0,1,4,3,2,160,160,60,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -216,7 +216,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         # Long verses are shown in parts, timed by length, so no caption runs past ~3 lines.
         parts, cur = [], ""
         for piece in re.split(r"(?<=[,;:.?!])\s+", text):
-            if cur and len(cur) + len(piece) > 190:
+            if cur and len(cur) + len(piece) > 130:
                 parts.append(cur)
                 cur = piece
             else:
@@ -228,7 +228,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
             t2 = end if k + 1 == len(parts) else t + (end - start) * len(part) / total
             body = part.replace("{", "(").replace("}", ")")
             lines.append(f"Dialogue: 0,{ass_time(t)},{ass_time(t2 + (0.3 if k + 1 == len(parts) else 0))},Verse,,0,0,0,,"
-                         f"{{\\fad(250,250)}}{{\\fnCinzel\\fs44\\c&H78C8EC&}}{ref}\\N{{\\r}}{body}")
+                         f"{{\\fad(250,250)}}{{\\fnCinzel\\fs56\\c&H78C8EC&}}{ref}\\N{{\\r}}{body}")
             t = t2
     path.write_text(head + "\n".join(lines) + "\n")
 
@@ -316,7 +316,7 @@ def main():
     if cues:
         write_ass(cues, work / "verses.ass")
         fonts = Path(__file__).resolve().parent / "fonts"
-        vf += (",drawbox=x=0:y=ih-330:w=iw:h=330:color=black@0.38:t=fill"
+        vf += (",drawbox=x=0:y=ih-400:w=iw:h=400:color=black@0.45:t=fill"
                f",subtitles={work / 'verses.ass'}:fontsdir={fonts}")
     sh("ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(work / "images.txt"), "-i", str(audio),
        "-vf", vf + ",format=yuv420p",
