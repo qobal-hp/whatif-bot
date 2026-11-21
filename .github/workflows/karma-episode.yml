@@ -74,6 +74,7 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
           python karma/es/dub.py "${{ inputs.dub }}"
@@ -82,7 +83,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: es_lines
-          path: karma/.tmp_es/s*_[0-9][0-9].wav
+          path: karma/.tmp_es/*.wav
           if-no-files-found: ignore
       - name: Generate dialogue and scene images
         if: ${{ !inputs.render_only }}

@@ -16,6 +16,8 @@ TMP = ROOT / "karma" / ".tmp_es"; TMP.mkdir(parents=True, exist_ok=True)
 RATE = 24000
 MODELS = ["gemini-3.1-flash-tts-preview", "gemini-2.5-flash-preview-tts"]
 KEY = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
+CLOUD_KEY = os.environ.get("GOOGLE_TTS_API_KEY")  # Cloud Text-to-Speech: Gemini-TTS without the AI Studio 100-a-day cap
+CLOUD_MODELS = ["gemini-3.1-flash-tts-preview", "gemini-2.5-flash-tts", "gemini-2.5-pro-tts"]
 TARGET_DB = -20.0
 LEAD, GAP, TAIL = 0.3, 0.45, 0.3      # natural silences around and between lines
 MIN_LEAD, MIN_GAP, MIN_TAIL = 0.12, 0.22, 0.12
@@ -50,14 +52,27 @@ def speak(role, text, out):
     for attempt in range(int(os.environ.get('TTS_ATTEMPTS', '30'))):
         model = MODELS[attempt % len(MODELS)] if attempt >= 4 else MODELS[0]
         try:
-            req = urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={KEY}",
-                                         json.dumps(body).encode(), {"Content-Type": "application/json"})
-            with urllib.request.urlopen(req, timeout=180) as r:
-                j = json.loads(r.read())
-            part = j["candidates"][0]["content"]["parts"][0]["inlineData"]["data"]
-            pcm = out.with_suffix(".pcm"); pcm.write_bytes(base64.b64decode(part))
             raw = out.with_suffix(".raw.wav")
-            run("ffmpeg", "-v", "error", "-y", "-f", "s16le", "-ar", str(RATE), "-ac", "1", "-i", str(pcm), str(raw))
+            if CLOUD_KEY:
+                cmodel = CLOUD_MODELS[(attempt // 3) % len(CLOUD_MODELS)]
+                cbody = {"input": {"prompt": prompt.split(" Say exactly this")[0], "text": words},
+                         "voice": {"languageCode": "es-MX", "name": VOICES[base], "modelName": cmodel},
+                         "audioConfig": {"audioEncoding": "LINEAR16", "sampleRateHertz": RATE}}
+                req = urllib.request.Request(f"https://texttospeech.googleapis.com/v1/text:synthesize?key={CLOUD_KEY}",
+                                             json.dumps(cbody).encode(), {"Content-Type": "application/json"})
+                with urllib.request.urlopen(req, timeout=180) as r:
+                    j = json.loads(r.read())
+                wavbytes = base64.b64decode(j["audioContent"])
+                tmpw = out.with_suffix(".in.wav"); tmpw.write_bytes(wavbytes)
+                run("ffmpeg", "-v", "error", "-y", "-i", str(tmpw), "-ar", str(RATE), "-ac", "1", str(raw))
+            else:
+                req = urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={KEY}",
+                                             json.dumps(body).encode(), {"Content-Type": "application/json"})
+                with urllib.request.urlopen(req, timeout=180) as r:
+                    j = json.loads(r.read())
+                part = j["candidates"][0]["content"]["parts"][0]["inlineData"]["data"]
+                pcm = out.with_suffix(".pcm"); pcm.write_bytes(base64.b64decode(part))
+                run("ffmpeg", "-v", "error", "-y", "-f", "s16le", "-ar", str(RATE), "-ac", "1", "-i", str(pcm), str(raw))
             # trim the ends and shorten any long pause inside the line
             run("ffmpeg", "-v", "error", "-y", "-i", str(raw), "-af",
                 "silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.05,"
@@ -70,7 +85,7 @@ def speak(role, text, out):
         except (urllib.error.HTTPError, urllib.error.URLError, KeyError, ValueError, IndexError, TimeoutError) as e:
             last = e
             code = getattr(e, "code", None)
-            if code == 429 and attempt in (0, 6):
+            if code in (400, 403, 404, 429) and attempt in (0, 3, 6):
                 try:
                     print("429:", e.read().decode(errors="replace")[:500].replace("\n", " "), flush=True)
                 except Exception:
