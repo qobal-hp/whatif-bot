@@ -22,6 +22,9 @@ on:
         description: Only render the assets of assets_run again (no new voices, pictures or music)
         type: boolean
         default: false
+      dub:
+        description: Dub the assets_run episode into Spanish with Gemini (episode name, e.g. ep01)
+        default: ""
 
 permissions:
   contents: write
@@ -54,6 +57,14 @@ jobs:
           path: video/public
           run-id: ${{ inputs.assets_run }}
           github-token: ${{ github.token }}
+      - name: Spanish dub with Gemini TTS
+        if: inputs.dub != ''
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+          python karma/es/dub.py "${{ inputs.dub }}"
       - name: Generate dialogue and scene images
         if: ${{ !inputs.render_only }}
         env:
