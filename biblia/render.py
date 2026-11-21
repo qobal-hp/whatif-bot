@@ -55,7 +55,7 @@ STYLE = os.environ.get("BIBLIA_STYLE", (
     "bedtime. Slow, calm and reverent overall, with soft natural pauses. Let quiet emotion come through in the spoken "
     "lines: God's words solemn and majestic, the serpent's words sly and hushed, human voices tender, fearful or "
     "sorrowful as the story calls for, but never loud or theatrical."))
-GEMINI_MODELS = os.environ.get("GEMINI_TTS_MODELS", "gemini-3.8-flash-tts,gemini-2.5-flash-tts").split(",")
+GEMINI_MODELS = os.environ.get("GEMINI_TTS_MODELS", "gemini-3.8-flash-tts,gemini-3.8-flash-lite-tts,gemini-2.5-flash-preview-tts").split(",")
 
 
 def google_tts(text, out):
@@ -105,14 +105,65 @@ def google_tts(text, out):
     sh("ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(lst), "-ar", "44100", "-ac", "1", str(out))
 
 
+def gemini_api_tts(text, out):
+    """Gemini API (AI Studio key): style direction travels as speech_metadata, never spoken."""
+    import base64
+    key = os.environ["GEMINI_API_KEY"]
+    voice = GOOGLE_VOICE.split("-")[-1]
+    wavs = []
+    for k, chunk in enumerate(google_chunks(text, 3000)):
+        last = None
+        for model in GEMINI_MODELS:
+            for with_meta in (True, False):
+                part = {"text": chunk}
+                if with_meta:
+                    part["speech_metadata"] = {"style": STYLE}
+                body = {"contents": [{"parts": [part]}],
+                        "generationConfig": {"responseModalities": ["AUDIO"],
+                                             "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voice}}}}}
+                req = urllib.request.Request(
+                    f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
+                    data=json.dumps(body).encode(), headers={"Content-Type": "application/json", "x-goog-api-key": key})
+                try:
+                    data = json.load(urllib.request.urlopen(req, timeout=300))
+                    inline = data["candidates"][0]["content"]["parts"][0]["inlineData"]
+                    raw = base64.b64decode(inline["data"])
+                    f = out.with_name(f"{out.stem}_{k}.wav")
+                    if raw[:4] == b"RIFF":
+                        f.write_bytes(raw)
+                    else:
+                        pcm = f.with_suffix(".pcm")
+                        pcm.write_bytes(raw)
+                        rate = re.search(r"rate=(\d+)", inline.get("mimeType", ""))
+                        sh("ffmpeg", "-y", "-f", "s16le", "-ar", rate.group(1) if rate else "24000", "-ac", "1",
+                           "-i", str(pcm), str(f))
+                    wavs.append(f)
+                    break
+                except urllib.error.HTTPError as err:
+                    last = f"{model} meta={with_meta}: {err.code} {err.read()[:300]}"
+                    print(last, flush=True)
+                    if err.code == 429:
+                        import time
+                        time.sleep(30)
+            else:
+                continue
+            break
+        else:
+            raise RuntimeError(f"Gemini API TTS failed: {last}")
+    lst = out.with_suffix(".lst")
+    lst.write_text("".join(f"file '{w.resolve()}'\n" for w in wavs))
+    tempo = f"atempo={max(RATE, 0.5)}" if RATE != 1.0 else "anull"
+    sh("ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(lst), "-af", tempo, "-ar", "44100", "-ac", "1", str(out))
+
+
 def tts(job):
     text, prev, nxt, out = job
     if out.exists() and out.stat().st_size > 1000:
         return
-    if ENGINE in ("google", "gemini"):
+    if ENGINE in ("google", "gemini", "gemini-api"):
         for attempt in range(4):
             try:
-                return google_tts(text, out)
+                return gemini_api_tts(text, out) if ENGINE == "gemini-api" else google_tts(text, out)
             except Exception as err:
                 print(f"{out.name} attempt {attempt + 1} failed: {err}", flush=True)
         raise SystemExit(f"TTS failed for {out.name}")

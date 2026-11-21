@@ -10,7 +10,7 @@ on:
         description: Render only the first N chapters (empty = all)
         default: ""
       tts:
-        description: elevenlabs, google or gemini
+        description: elevenlabs, google, gemini or gemini-api
         default: google
       voice:
         description: Google voice name (when tts = google)
@@ -46,6 +46,7 @@ jobs:
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
           GOOGLE_TTS_KEY: ${{ secrets.GOOGLE_TTS_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           BIBLIA_TTS: ${{ inputs.tts }}
           GOOGLE_VOICE: ${{ inputs.voice }}
           BIBLIA_RATE: ${{ inputs.rate }}
