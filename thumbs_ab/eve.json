@@ -1,0 +1,17 @@
+{
+ "style": "YouTube thumbnail, 2D cartoon illustration, bold comic animation style, thick black outlines, flat vibrant warm colors, exaggerated comedic expressions, high contrast, very readable on a phone, everyone fully clothed in simple tunics and robes. ",
+ "images": [
+  {
+   "id": "eve_b",
+   "aspect": "16:9",
+   "resolution": "1K",
+   "prompt": "Left side: big close-up of Eve, a cartoon woman with long dark hair in a simple tan robe, looking calm and intense at the viewer, warm rim light. Lower right: a single glowing untouched red apple on a branch. Background: a giant tree crammed with lantern-lit wooden balconies and apartments, slightly blurred. Huge bold text at the top right in yellow and white with black outline: '900 YEARS' on the first line and 'NO ONE LEFT' on the second line."
+  },
+  {
+   "id": "eve_c",
+   "aspect": "16:9",
+   "resolution": "1K",
+   "prompt": "Split screen divided by a glowing cyan vertical line. Left half: sunny Eden, cartoon Eve in a simple tan robe smiling and holding an untouched red apple away from her. Right half: dark crowded tree trunk covered in wooden balconies, shelves and paper notices labeled 'LEASE'. Bold yellow-and-white text with black outline across the top: 'NEVER ATE' over the left half and 'YEAR 900' over the right half. A tilted yellow banner at the bottom center reading 'PARADISE OR PRISON?'"
+  }
+ ]
+}
