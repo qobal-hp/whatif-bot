@@ -1,0 +1,35 @@
+{
+ "comments": {
+  "3cN3-seWSTQ": "What would YOU do first if this happened tomorrow? Drop your answer 👇 — and tell me which What If we should do next!",
+  "mSvPVcbqzjU": "What would YOU do first if this happened tomorrow? Drop your answer 👇 — and tell me which What If we should do next!",
+  "MKwUcMR2t5s": "What would YOU do first if this happened tomorrow? Drop your answer 👇 — and tell me which What If we should do next!",
+  "obxEV7Q2QW8": "What would YOU do first if this happened tomorrow? Drop your answer 👇 — and tell me which What If we should do next!",
+  "ygmJgtnvyKs": "What would YOU do first if this happened tomorrow? Drop your answer 👇 — and tell me which What If we should do next!"
+ },
+ "short_comment": "🎬 Full episode here 👉 {url}",
+ "playlists": [
+  {
+   "title": "What If… Earth & Science",
+   "description": "What if the Sun vanished, the oceans disappeared, or we lived to 200? Real science, wild scenarios.",
+   "videos": [
+    "3cN3-seWSTQ",
+    "mSvPVcbqzjU",
+    "MKwUcMR2t5s",
+    "obxEV7Q2QW8"
+   ]
+  },
+  {
+   "title": "Bible Stories Reimagined",
+   "description": "Famous Bible stories with one big 'what if' — animated and funny.",
+   "videos": [
+    "ygmJgtnvyKs"
+   ]
+  },
+  {
+   "title": "What If Shorts",
+   "description": "Quick what-if moments. Full episodes linked in the pinned comment.",
+   "videos": "shorts"
+  }
+ ],
+ "skip_comments": true
+}

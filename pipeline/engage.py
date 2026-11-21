@@ -27,8 +27,8 @@ for k in range(0, len(ids), 50):
     for v in yt.videos().list(part="snippet,status", id=",".join(ids[k:k + 50])).execute()["items"]:
         videos[v["id"]] = v
 
-comments = dict(cfg.get("comments", {}))
-if cfg.get("short_comment"):
+comments = dict(cfg.get("comments", {})) if not cfg.get("skip_comments") else {}
+if cfg.get("short_comment") and not cfg.get("skip_comments"):
     for vid, v in videos.items():
         if vid in comments or "#shorts" not in v["snippet"]["title"].lower():
             continue
@@ -63,7 +63,27 @@ for pl in cfg.get("playlists", []):
     if vids == "shorts":
         vids = [i for i in ids if "#shorts" in videos[i]["snippet"]["title"].lower()
                 and videos[i]["status"]["privacyStatus"] == "public"]
+    have, tok = set(), None
+    while True:
+        r = yt.playlistItems().list(part="snippet", playlistId=pid, maxResults=50, pageToken=tok).execute()
+        have |= {i["snippet"]["resourceId"]["videoId"] for i in r["items"]}
+        tok = r.get("nextPageToken")
+        if not tok:
+            break
     for vid in vids:
+        if vid in have:
+            continue
+        for attempt in range(4):
+            try:
+                yt.playlistItems().insert(part="snippet", body={"snippet": {"playlistId": pid, "resourceId": {
+                    "kind": "youtube#video", "videoId": vid}}}).execute()
+                break
+            except Exception as err:
+                if attempt == 3:
+                    print(f"FAIL add {vid} to {pl['title']}: {err}")
+                import time
+                time.sleep(5)
+        continue
         try:
             yt.playlistItems().insert(part="snippet", body={"snippet": {"playlistId": pid, "resourceId": {
                 "kind": "youtube#video", "videoId": vid}}}).execute()
