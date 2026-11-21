@@ -1,0 +1,2699 @@
+{
+ "title": "Karma Tales EP03 - The Other Wife Knew",
+ "voices": {
+  "ADAM": "7JxQktePrzZL8mtvQqOy",
+  "BEN": "Bk8cLrXXi9WCZ4GQU4Ah",
+  "DAVID": "KCO0afdAdW1HAOmQjNUc",
+  "LAUREN": "DODLEQrClDo8wCz460ld",
+  "NARRATOR": "FmtiHEcHpocK7YiZwa46",
+  "ORTIZ": "SkTrsOLN0P3ZmVSoI2k7",
+  "RACHEL": "YyqkX0AHv8W5D1vxG9lR"
+ },
+ "cast": {
+  "rachel": "karma/cast/ep03/rachel.jpg",
+  "adam": "karma/cast/ep03/adam.jpg",
+  "lauren": "karma/cast/ep03/lauren.jpg",
+  "ben": "karma/cast/ep03/ben.jpg",
+  "maya": "karma/cast/ep03/maya.jpg",
+  "david": "karma/cast/ep03/david.jpg",
+  "ortiz": "karma/cast/ep03/ortiz.jpg"
+ },
+ "portraits": {
+  "david": "Photorealistic still from a prestige American TV drama, shot on 35mm, shallow depth of field, soft cinematic key light, natural skin texture, head-and-shoulders portrait facing slightly off camera, neutral dark background, an entirely fictional person who resembles no real celebrity, no text, no watermark. David Chen, a 37-year-old Chinese-American attorney, short neat black hair, thin dark-framed glasses, calm thoughtful expression, navy suit, light blue shirt, no tie.",
+  "ortiz": "Photorealistic still from a prestige American TV drama, shot on 35mm, shallow depth of field, soft cinematic key light, natural skin texture, head-and-shoulders portrait facing slightly off camera, neutral dark background, an entirely fictional person who resembles no real celebrity, no text, no watermark. Detective Ortiz, a 50-year-old Latino American police detective, close-cropped graying hair, trimmed salt-and-pepper beard, tired observant eyes, gray wool overcoat over a dark sweater."
+ },
+ "looks": {
+  "rachel": "Rachel (the woman from the reference photo, same face, dark-brown hair pulled into a sleek low ponytail, in a camel wool coat and a gray scarf)",
+  "rachel:home": "Rachel (the same woman as the reference photo, same face, dark-brown hair in a low ponytail, in a cream cable-knit sweater)",
+  "rachel:work": "Rachel (the same woman as the reference photo, same face, dark-brown hair in a sleek low ponytail, in a tailored charcoal blazer over a black turtleneck)",
+  "rachel:cabin": "Rachel (the same woman as the reference photo, same face, hair loose and relaxed, in an oversized red flannel shirt)",
+  "adam": "Adam (the man from the reference photo, same face and wavy dark hair, in a dark wool coat over a crisp white shirt)",
+  "adam:home": "Adam (the same man as the reference photo, same face, in a navy quarter-zip sweater)",
+  "adam:suit": "Adam (the same man as the reference photo, same face, in a sharp charcoal suit and silver tie)",
+  "adam:prison": "Adam (the same man as the reference photo, same face, unshaven, in an orange prison jumpsuit)",
+  "lauren": "Lauren (the woman from the reference photo, same face, long loose brown hair, in a dark green wool coat)",
+  "lauren:home": "Lauren (the same woman as the reference photo, same face, long brown hair, in a soft ivory sweater)",
+  "ben": "Ben (the 12-year-old boy from the reference photo, same face, in a red-and-navy plaid flannel shirt)",
+  "maya": "Maya (the 9-year-old girl from the reference photo, same face, long light-brown hair with a sparkly clip, in a white knit sweater)",
+  "david": "David (the man from the reference photo with dark-framed glasses, in a navy suit)",
+  "ortiz": "Detective Ortiz (the bearded man from the reference photo, in a gray wool overcoat)"
+ },
+ "style": "Photorealistic still from a prestige American TV drama, shot on 35mm, cinematic lighting, shallow depth of field, natural skin texture, warm Christmas color palette with cold blue winter shadows, wide 16:9 frame. Keep every person's face and hair exactly consistent with their reference photo. No text, no captions, no watermark. ",
+ "resolution": "2K",
+ "music": [
+  [
+   "s07",
+   "tension"
+  ],
+  [
+   "s16",
+   "wonder"
+  ],
+  [
+   "s30",
+   "tension"
+  ],
+  [
+   "s85",
+   "tension"
+  ],
+  [
+   "s102",
+   "wonder"
+  ]
+ ],
+ "places": {
+  "street": "Setting: a quiet snowy suburban street in Naperville, Illinois on Christmas Eve night, houses glowing with holiday lights, fresh snow, falling flakes.",
+  "lauren_house": "Setting: the warm living room of a two-story suburban house on Christmas Eve, a big Christmas tree covered in golden lights, presents and wrapping paper on the floor, fireplace.",
+  "kitchen": "Setting: Rachel and Adam's modern Chicago townhouse kitchen, white marble island, pendant lights, gray winter light through the window.",
+  "fundraiser": "Setting: an elegant charity gala ballroom in downtown Chicago years ago, chandeliers, warm golden light, people in evening wear.",
+  "coffee": "Setting: a nearly empty neighborhood coffee shop on Christmas morning, snow outside the big front window, string lights, steam rising from cups.",
+  "law_office": "Setting: a modern law office high above downtown Chicago in winter, glass walls, snow drifting past the windows, a tidy desk with files.",
+  "car": "Setting: inside a parked car in a grocery store parking lot on a gray rainy afternoon, rain streaking the windshield, the dashboard glowing, fogged side windows.",
+  "bank": "Setting: a glass-walled conference room on the twelfth floor of a downtown Chicago bank, a long white table, a city view of snowy rooftops, a decorated Christmas tree visible in the lobby beyond the glass.",
+  "cabin": "Setting: a cozy log cabin near Lake Michigan on Christmas Eve night, a crackling stone fireplace, a small Christmas tree, snow falling over the dark lake outside the window."
+ },
+ "ambiences": {
+  "snow_night": [
+   "Quiet snowy suburban street at night, soft winter wind, faint muffled Christmas carols from houses",
+   0.08
+  ],
+  "home": [
+   "Quiet modern home room tone, refrigerator hum, faint winter wind outside",
+   0.05
+  ],
+  "gala": [
+   "Elegant party murmur and soft jazz in a ballroom",
+   0.06
+  ],
+  "coffee": [
+   "Nearly empty coffee shop, low espresso machine hum, soft holiday music far away",
+   0.07
+  ],
+  "office": [
+   "Quiet high-rise office room tone, faint air conditioning, snow wind against glass",
+   0.05
+  ],
+  "car_rain": [
+   "Steady rain drumming on a parked car roof, car heater humming",
+   0.1
+  ],
+  "bank": [
+   "Large quiet bank interior, distant lobby echo, faint holiday music",
+   0.05
+  ],
+  "cabin": [
+   "Crackling fireplace in a quiet wooden cabin, soft wind outside",
+   0.09
+  ]
+ },
+ "ambience": [
+  [
+   "s01",
+   "snow_night"
+  ],
+  [
+   "s16",
+   "gala"
+  ],
+  [
+   "s19",
+   "home"
+  ],
+  [
+   "s29",
+   "snow_night"
+  ],
+  [
+   "s30",
+   "coffee"
+  ],
+  [
+   "s47",
+   "office"
+  ],
+  [
+   "s60",
+   "car_rain"
+  ],
+  [
+   "s72",
+   "home"
+  ],
+  [
+   "s85",
+   "bank"
+  ],
+  [
+   "s102",
+   "office"
+  ],
+  [
+   "s114",
+   "cabin"
+  ],
+  [
+   "s120",
+   "snow_night"
+  ],
+  [
+   "s121",
+   "cabin"
+  ]
+ ],
+ "scenes": [
+  {
+   "id": "s01",
+   "chars": [
+    "rachel"
+   ],
+   "image": "Rachel standing alone in the snow on a dark suburban sidewalk at night, her breath visible, staring at a glowing house across the street.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[low, intimate] On Christmas Eve, Rachel Morgan found out her husband had another family."
+    ]
+   ],
+   "place": "street",
+   "sfx": [
+    [
+     "Muffled Christmas carol drifting from inside a house, winter wind, snow crunching under boots",
+     6.0,
+     0.3,
+     "start"
+    ]
+   ],
+   "motion": "snow falls slowly around her as she stands still, breath fogging in the cold"
+  },
+  {
+   "id": "s02",
+   "chars": [],
+   "image": "A beautiful two-story suburban house glowing with Christmas lights in the snow, a wreath on the door, warm golden windows.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Not an affair. Not one stupid night. [pause] A family. A woman. Two children. And a house forty minutes from her own."
+    ]
+   ],
+   "place": "street"
+  },
+  {
+   "id": "s03",
+   "chars": [
+    "rachel"
+   ],
+   "image": "Close-up of Rachel's face lit by the glow of her phone screen in the dark, snowflakes on her eyelashes.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[quiet] But the worst part wasn't watching him through a stranger's window. [pause] It was the text message she got while she was standing there."
+    ]
+   ],
+   "place": "street",
+   "sfx": [
+    [
+     "Phone vibrating in a coat pocket",
+     1.5,
+     0.45,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s04",
+   "chars": [],
+   "image": "View through a frosted front window from outside at night: a warm living room with a huge glowing Christmas tree, wrapping paper everywhere.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Rachel stood in the snow outside a two-story house in Naperville, Illinois. Through the front window, a Christmas tree wrapped in golden lights."
+    ]
+   ],
+   "place": "lauren_house",
+   "cut": true
+  },
+  {
+   "id": "s05",
+   "chars": [
+    "ben",
+    "maya"
+   ],
+   "image": "Through the window: a boy tearing wrapping paper off a present and a little girl laughing by the Christmas tree.",
+   "lines": [
+    [
+     "NARRATOR",
+     "A boy tearing paper off a present. A little girl laughing."
+    ]
+   ],
+   "place": "lauren_house",
+   "motion": "the boy rips the wrapping paper open while the little girl laughs and claps"
+  },
+  {
+   "id": "s06",
+   "chars": [
+    "adam",
+    "ben",
+    "maya"
+   ],
+   "image": "Through the window: Adam on the couch in a cozy sweater, smiling, arm around the boy, the girl leaning on him, Christmas tree glowing behind.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[pause] And on the couch beside them... Adam."
+    ]
+   ],
+   "place": "lauren_house",
+   "sfx": [
+    [
+     "Low cinematic boom, muffled",
+     2.5,
+     0.35,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s07",
+   "chars": [
+    "rachel"
+   ],
+   "image": "Rachel outside in the snow, one gloved hand over her mouth, eyes filling with tears.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[quietly] Her Adam. Her husband of eleven years. The man who kissed her goodbye that morning and said he had to work late."
+    ]
+   ],
+   "place": "street"
+  },
+  {
+   "id": "s08",
+   "chars": [
+    "adam",
+    "ben"
+   ],
+   "image": "Through the glass: Adam laughing as the boy holds up a new toy drone in its box.",
+   "lines": [
+    [
+     "ADAM~phone",
+     "[warm, laughing, muffled through glass] Hey, buddy! What did Santa bring you?"
+    ],
+    [
+     "BEN~phone",
+     "[excited, muffled] Dad! Look! It's the one I wanted!"
+    ]
+   ],
+   "place": "lauren_house"
+  },
+  {
+   "id": "s09",
+   "chars": [
+    "rachel"
+   ],
+   "image": "Extreme close-up of Rachel's eyes reflecting the warm window light, devastated.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Dad. [pause] That word hit harder than anything else. For years, Rachel and Adam had talked about kids. And for years, Adam said he wasn't ready."
+    ]
+   ],
+   "place": "street"
+  },
+  {
+   "id": "s10",
+   "chars": [
+    "rachel"
+   ],
+   "image": "Rachel stepping back off the curb, looking down at her buzzing phone.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Rachel took a step back. Her phone buzzed again. Unknown number."
+    ]
+   ],
+   "place": "street",
+   "sfx": [
+    [
+     "Phone vibrating twice",
+     1.5,
+     0.45,
+     "end"
+    ]
+   ],
+   "overlay": {
+    "type": "message",
+    "from": "Unknown number",
+    "to": "Rachel",
+    "text": "Don't let him see you."
+   }
+  },
+  {
+   "id": "s11",
+   "chars": [],
+   "image": "A dark silver SUV parked across a snowy street at night, under a streetlight, snow on its roof.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Another message."
+    ]
+   ],
+   "place": "street",
+   "overlay": {
+    "type": "message",
+    "from": "Unknown number",
+    "to": "Rachel",
+    "text": "Silver SUV. Across the street. I can see you."
+   }
+  },
+  {
+   "id": "s12",
+   "chars": [],
+   "image": "Looking up at a dark second-floor window of the house; a curtain shifting slightly, a faint silhouette behind it.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[tense] Rachel looked at the driveway. Then up at the dark second-floor window. [pause] A curtain moved."
+    ]
+   ],
+   "place": "street",
+   "sfx": [
+    [
+     "Tense low musical pulse",
+     3.0,
+     0.3,
+     "start"
+    ]
+   ],
+   "motion": "the curtain in the dark upstairs window shifts slightly as a shadow moves behind it"
+  },
+  {
+   "id": "s13",
+   "chars": [
+    "rachel"
+   ],
+   "image": "Rachel typing on her phone with trembling fingers in the snow.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Another message. Meet me tomorrow. Nine a.m. Alone."
+    ],
+    [
+     "RACHEL",
+     "[whispering as she types, shaken] Who is this?"
+    ]
+   ],
+   "place": "street",
+   "overlay": {
+    "type": "message",
+    "from": "Unknown number",
+    "to": "Rachel",
+    "text": "Meet me tomorrow. 9 a.m. Alone."
+   }
+  },
+  {
+   "id": "s14",
+   "chars": [
+    "rachel"
+   ],
+   "image": "Close-up of the phone screen glow on Rachel's stunned face.",
+   "lines": [
+    [
+     "NARRATOR",
+     "The answer came right away."
+    ]
+   ],
+   "place": "street",
+   "sfx": [
+    [
+     "Sharp dramatic musical sting",
+     2.0,
+     0.4,
+     "start"
+    ]
+   ],
+   "overlay": {
+    "type": "message",
+    "from": "Unknown number",
+    "to": "Rachel",
+    "text": "The woman you think stole your husband."
+   }
+  },
+  {
+   "id": "s15",
+   "chars": [
+    "rachel"
+   ],
+   "image": "Rachel frozen in the falling snow, the glowing house behind her out of focus.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[slow] Then one more."
+    ]
+   ],
+   "place": "street",
+   "sfx": [
+    [
+     "Deep cinematic boom with a long tail",
+     3.0,
+     0.4,
+     "end"
+    ]
+   ],
+   "overlay": {
+    "type": "message",
+    "from": "Unknown number",
+    "to": "Rachel",
+    "text": "And Rachel? He's lying to both of us."
+   }
+  },
+  {
+   "id": "s16",
+   "chars": [
+    "adam",
+    "rachel:work"
+   ],
+   "image": "Years earlier at a charity gala: a younger Adam in a tuxedo making Rachel laugh, both holding champagne, warm golden light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[reflective] Eleven years earlier, Rachel met Adam at a charity fundraiser in downtown Chicago. He was handsome. Funny. And he paid attention."
+    ]
+   ],
+   "place": "fundraiser",
+   "cut": true,
+   "sfx": [
+    [
+     "Elegant party chatter and a jazz quartet",
+     4.0,
+     0.2,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s17",
+   "chars": [
+    "rachel:work"
+   ],
+   "image": "Rachel at her office desk years ago smiling at a big bouquet of flowers with a card, a coffee cup with her name on it beside her.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He remembered her coffee order. He sent flowers to her office. When her mother was in the hospital, he drove three hours at midnight to bring her a change of clothes."
+    ]
+   ]
+  },
+  {
+   "id": "s18",
+   "chars": [
+    "adam:suit",
+    "rachel:work"
+   ],
+   "image": "A small elegant wedding at a Chicago venue, Adam and Rachel laughing as guests throw petals.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He seemed like the kind of man who would never leave. They married two years later."
+    ]
+   ]
+  },
+  {
+   "id": "s19",
+   "chars": [
+    "adam:home"
+   ],
+   "image": "Adam zipping up a carry-on suitcase by the front door, kissing the air toward the kitchen, morning light.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Rachel worked in financial analysis. Adam called himself an independent business consultant. He traveled. Milwaukee. Indianapolis. St. Louis. Sometimes for days. [pause] Rachel never questioned it. Until last summer."
+    ]
+   ],
+   "place": "kitchen"
+  },
+  {
+   "id": "s20",
+   "chars": [
+    "rachel:home"
+   ],
+   "image": "Summer: Rachel at the kitchen island with a laptop open to a credit card statement, frowning.",
+   "lines": [
+    [
+     "RACHEL",
+     "[puzzled] Adam, why is there a charge from a pediatric clinic on our credit card?"
+    ],
+    [
+     "ADAM",
+     "[easy, not looking up] Oh. That's probably a client expense."
+    ]
+   ],
+   "place": "kitchen",
+   "sfx": [
+    [
+     "Soft flashback whoosh",
+     1.5,
+     0.3,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s21",
+   "chars": [
+    "adam:home",
+    "rachel:home"
+   ],
+   "image": "Adam leaning on the counter with a casual smile, Rachel looking at him skeptically.",
+   "lines": [
+    [
+     "RACHEL",
+     "A pediatric clinic?"
+    ],
+    [
+     "ADAM",
+     "One of my clients runs a medical practice. I covered an invoice, they paid me back."
+    ],
+    [
+     "RACHEL",
+     "That's a strange way to do business."
+    ],
+    [
+     "ADAM",
+     "[charming laugh] Honey, you're the numbers person. I'm the people person."
+    ]
+   ],
+   "place": "kitchen"
+  },
+  {
+   "id": "s22",
+   "chars": [
+    "adam:home",
+    "rachel:home"
+   ],
+   "image": "Adam kissing Rachel's forehead as she closes her eyes.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He kissed her forehead. And she let it go."
+    ]
+   ],
+   "place": "kitchen"
+  },
+  {
+   "id": "s23",
+   "chars": [],
+   "image": "Close-up on the kitchen island: a crumpled receipt for children's snow boots next to a printed hotel booking.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Then came a receipt for children's snow boots. A hotel booking for two adults and two children."
+    ]
+   ],
+   "place": "kitchen"
+  },
+  {
+   "id": "s24",
+   "chars": [
+    "rachel:home"
+   ],
+   "image": "Rachel staring at her phone showing a social media photo of a smiling family in front of a Christmas tree.",
+   "lines": [
+    [
+     "NARRATOR",
+     "And a photo on social media. Adam, smiling beside a woman Rachel had never seen. The caption: \"Another wonderful year with our favorite guy.\""
+    ]
+   ],
+   "place": "kitchen"
+  },
+  {
+   "id": "s25",
+   "chars": [
+    "rachel:home",
+    "adam:home"
+   ],
+   "image": "Rachel holding up her phone to Adam, tense; Adam calm and smiling.",
+   "lines": [
+    [
+     "RACHEL",
+     "[tight] Who is Lauren Parker?"
+    ],
+    [
+     "ADAM",
+     "[smooth] A client."
+    ],
+    [
+     "RACHEL",
+     "And the kids?"
+    ],
+    [
+     "ADAM",
+     "Hers."
+    ]
+   ],
+   "place": "kitchen"
+  },
+  {
+   "id": "s26",
+   "chars": [
+    "adam:home"
+   ],
+   "image": "Close-up of Adam, patient and reassuring, reaching for Rachel's hand.",
+   "lines": [
+    [
+     "RACHEL",
+     "Then why are you in their family Christmas photo?"
+    ],
+    [
+     "ADAM",
+     "[sighs, patient] Because I kept her business alive through the pandemic. She's grateful. That's all."
+    ]
+   ],
+   "place": "kitchen"
+  },
+  {
+   "id": "s27",
+   "chars": [
+    "rachel:home"
+   ],
+   "image": "Rachel alone at the kitchen window at night in December, holding her phone, a text on the screen.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Rachel wanted to believe him. So she did. [pause] Until December twenty-second, when a text arrived from a number she didn't know."
+    ]
+   ],
+   "place": "kitchen",
+   "sfx": [
+    [
+     "Phone vibrating on a counter",
+     1.5,
+     0.4,
+     "start"
+    ]
+   ],
+   "overlay": {
+    "type": "message",
+    "from": "Unknown number",
+    "to": "Rachel",
+    "text": "Check where your husband is on Christmas Eve."
+   }
+  },
+  {
+   "id": "s28",
+   "chars": [
+    "rachel:home"
+   ],
+   "image": "Christmas Eve: an old tablet glowing on the dark kitchen counter showing a map with a single blue location dot.",
+   "lines": [
+    [
+     "NARRATOR",
+     "She deleted it. Probably a scam. But on Christmas Eve, Adam's old tablet lit up on the kitchen counter. He'd never turned off location sharing. [pause] And the little blue dot wasn't in Milwaukee."
+    ]
+   ],
+   "place": "kitchen",
+   "motion": "the tablet screen glows in the dark kitchen as the blue dot pulses on the map"
+  },
+  {
+   "id": "s29",
+   "chars": [
+    "rachel"
+   ],
+   "image": "Rachel driving at night through falling snow, wipers moving, her face lit by the dashboard.",
+   "lines": [
+    [
+     "NARRATOR",
+     "So Rachel drove there herself. And now she was standing in the snow, watching her husband live a second life. [pause] But someone inside that house had been waiting for her."
+    ]
+   ],
+   "place": "street",
+   "sfx": [
+    [
+     "Car door closing, engine starting, windshield wipers in snow",
+     4.0,
+     0.3,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s30",
+   "chars": [
+    "rachel"
+   ],
+   "image": "Christmas morning: Rachel alone at a window table in a nearly empty coffee shop, untouched coffee, dark circles under her eyes, snow outside.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Christmas morning. A coffee shop that was almost empty. Rachel hadn't slept."
+    ]
+   ],
+   "place": "coffee",
+   "cut": true,
+   "sfx": [
+    [
+     "Quiet coffee shop, espresso machine hiss, a bell over the door",
+     4.0,
+     0.25,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s31",
+   "chars": [
+    "lauren"
+   ],
+   "image": "Lauren walking into the coffee shop in a dark green coat, snow on her shoulders, looking around carefully.",
+   "lines": [
+    [
+     "NARRATOR",
+     "At exactly nine o'clock, a woman walked in. Dark green coat. Long brown hair. Tired eyes. No wedding ring. [pause] Lauren Parker."
+    ]
+   ],
+   "place": "coffee",
+   "motion": "she steps through the door, brushes snow off her coat and scans the room"
+  },
+  {
+   "id": "s32",
+   "chars": [
+    "lauren",
+    "rachel"
+   ],
+   "image": "Lauren sitting down across from Rachel; both women tense.",
+   "lines": [
+    [
+     "LAUREN",
+     "[quiet] Rachel?"
+    ],
+    [
+     "RACHEL",
+     "[flat] You knew I was outside last night."
+    ],
+    [
+     "LAUREN",
+     "Yes. I saw your car on the doorbell camera."
+    ]
+   ],
+   "place": "coffee"
+  },
+  {
+   "id": "s33",
+   "chars": [
+    "rachel"
+   ],
+   "image": "Close-up of Rachel, guarded, gripping her cup.",
+   "lines": [
+    [
+     "RACHEL",
+     "You knew who I was?"
+    ],
+    [
+     "LAUREN",
+     "[pause] For eight months."
+    ],
+    [
+     "RACHEL",
+     "[stunned] Eight months?"
+    ]
+   ],
+   "place": "coffee"
+  },
+  {
+   "id": "s34",
+   "chars": [
+    "lauren"
+   ],
+   "image": "Close-up of Lauren speaking quietly, eyes down.",
+   "lines": [
+    [
+     "LAUREN",
+     "Adam told me you were his ex-wife. He said the divorce was finalized years ago."
+    ],
+    [
+     "RACHEL",
+     "[cold] We're still married."
+    ],
+    [
+     "LAUREN",
+     "I know that now."
+    ]
+   ],
+   "place": "coffee"
+  },
+  {
+   "id": "s35",
+   "chars": [
+    "rachel",
+    "lauren"
+   ],
+   "image": "The two women facing each other across the small table, tension in the air.",
+   "lines": [
+    [
+     "RACHEL",
+     "And you stayed with him?"
+    ],
+    [
+     "LAUREN",
+     "I needed to understand what he was doing."
+    ],
+    [
+     "RACHEL",
+     "You could have called me."
+    ],
+    [
+     "LAUREN",
+     "[gently] Would you have believed me?"
+    ]
+   ],
+   "place": "coffee"
+  },
+  {
+   "id": "s36",
+   "chars": [
+    "rachel"
+   ],
+   "image": "Rachel looking away out the snowy window, jaw tight.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Rachel opened her mouth. Then closed it. The pediatric clinic. The snow boots. The photo. [pause] She hadn't believed her own eyes."
+    ]
+   ],
+   "place": "coffee"
+  },
+  {
+   "id": "s37",
+   "chars": [
+    "lauren"
+   ],
+   "image": "Lauren holding her cup with both hands, speaking softly.",
+   "lines": [
+    [
+     "RACHEL",
+     "[barely audible] Are those his kids?"
+    ],
+    [
+     "LAUREN",
+     "No. Ben and Maya are from my first marriage. Their dad died nine years ago. Maya was a baby. [pause] Adam came into our lives a year later. He's the only father she remembers."
+    ]
+   ],
+   "place": "coffee"
+  },
+  {
+   "id": "s38",
+   "chars": [
+    "ben",
+    "maya"
+   ],
+   "image": "A framed family photo on a mantel: the boy and girl younger, smiling with Adam at a pumpkin patch.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[quiet] Eight years. While Rachel planned anniversaries, he was building another home. With children who had done nothing wrong."
+    ]
+   ]
+  },
+  {
+   "id": "s39",
+   "chars": [
+    "lauren",
+    "rachel"
+   ],
+   "image": "Lauren leaning in, lowering her voice.",
+   "lines": [
+    [
+     "RACHEL",
+     "Why are you telling me now?"
+    ],
+    [
+     "LAUREN",
+     "Because three months ago, Adam asked me to sign something. A loan. He wanted my house as collateral for a business investment."
+    ],
+    [
+     "RACHEL",
+     "Did you sign?"
+    ]
+   ],
+   "place": "coffee"
+  },
+  {
+   "id": "s40",
+   "chars": [
+    "lauren"
+   ],
+   "image": "Close-up of Lauren, her voice shaking slightly, remembering.",
+   "lines": [
+    [
+     "LAUREN",
+     "No. And when I said no... [swallows] he became someone I'd never seen. He screamed. He threatened to leave. Then he apologized and bought the kids presents. [pause] The next week, he asked again."
+    ]
+   ],
+   "place": "coffee"
+  },
+  {
+   "id": "s41",
+   "chars": [
+    "lauren"
+   ],
+   "image": "Lauren sliding a manila folder across the coffee shop table.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Lauren slid a folder across the table."
+    ],
+    [
+     "LAUREN",
+     "So I started reading his paperwork. And I found your name."
+    ]
+   ],
+   "place": "coffee",
+   "sfx": [
+    [
+     "Paper folder sliding across a table",
+     1.5,
+     0.45,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s42",
+   "chars": [],
+   "image": "Close-up of a loan application document on the table; the signature line at the bottom in sharp focus, the printed text soft and unreadable.",
+   "lines": [
+    [
+     "NARRATOR",
+     "A business loan application. Two million dollars. And at the bottom, next to her name... a signature."
+    ]
+   ],
+   "place": "coffee"
+  },
+  {
+   "id": "s43",
+   "chars": [
+    "rachel",
+    "lauren"
+   ],
+   "image": "Rachel staring at the document, then up at Lauren.",
+   "lines": [
+    [
+     "RACHEL",
+     "[sharp] I never signed this."
+    ],
+    [
+     "LAUREN",
+     "I know."
+    ],
+    [
+     "NARRATOR",
+     "Rachel studied it. It looked almost perfect. [pause] Almost."
+    ]
+   ],
+   "place": "coffee"
+  },
+  {
+   "id": "s44",
+   "chars": [
+    "rachel"
+   ],
+   "image": "Close-up of Rachel's finger tracing the signature, her face hardening.",
+   "lines": [
+    [
+     "RACHEL",
+     "[slowly] He's been practicing my signature."
+    ],
+    [
+     "LAUREN",
+     "That's what I think."
+    ],
+    [
+     "RACHEL",
+     "[suspicious] And I'm supposed to believe you're innocent?"
+    ]
+   ],
+   "place": "coffee"
+  },
+  {
+   "id": "s45",
+   "chars": [
+    "lauren"
+   ],
+   "image": "Lauren holding Rachel's gaze, steady and serious.",
+   "lines": [
+    [
+     "LAUREN",
+     "No. I want you to believe the paperwork."
+    ]
+   ],
+   "place": "coffee",
+   "sfx": [
+    [
+     "Music darkens into a low drone",
+     3.0,
+     0.3,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s46",
+   "chars": [
+    "lauren"
+   ],
+   "image": "Extreme close-up of Lauren leaning in, almost whispering.",
+   "lines": [
+    [
+     "LAUREN",
+     "[leaning in, low] And there's something else. Adam isn't planning to leave one of us. [pause] He's planning to disappear."
+    ]
+   ],
+   "place": "coffee",
+   "sfx": [
+    [
+     "Deep cinematic boom impact",
+     3.0,
+     0.45,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s47",
+   "chars": [
+    "rachel:work",
+    "david"
+   ],
+   "image": "Rachel across a desk from David in a glass-walled law office, papers spread between them, snow drifting outside.",
+   "lines": [
+    [
+     "NARRATOR",
+     "The next day, Rachel sat across from David Chen, a lawyer she'd known since college. She put everything on his desk. The application. The receipts. The texts. David read every page without saying a word."
+    ]
+   ],
+   "place": "law_office",
+   "cut": true,
+   "sfx": [
+    [
+     "Quiet office, keyboard typing, papers rustling",
+     4.0,
+     0.2,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s48",
+   "chars": [
+    "david"
+   ],
+   "image": "David looking up from the documents, calm and serious.",
+   "lines": [
+    [
+     "DAVID",
+     "[calm] First, we protect you. Today we report the forged signature to the lender's fraud department, and we freeze your credit."
+    ],
+    [
+     "RACHEL",
+     "And Adam?"
+    ],
+    [
+     "DAVID",
+     "Don't confront him. Not yet. Let me see what he's already filed... and whether any money has moved."
+    ]
+   ],
+   "place": "law_office"
+  },
+  {
+   "id": "s49",
+   "chars": [],
+   "image": "Close-up of bank statements on a desk with several withdrawals highlighted in yellow marker, the text soft and unreadable.",
+   "lines": [
+    [
+     "NARRATOR",
+     "It had. The paperwork led to a company called Northstar Capital Solutions. Large transfers out. Small payments that went nowhere. And every month, a withdrawal from the joint account Rachel used for the mortgage."
+    ]
+   ],
+   "place": "law_office"
+  },
+  {
+   "id": "s50",
+   "chars": [
+    "rachel:work",
+    "david"
+   ],
+   "image": "Rachel staring at the statements, stunned; David watching her.",
+   "lines": [
+    [
+     "RACHEL",
+     "[disbelief] He's been taking money from our joint account."
+    ],
+    [
+     "DAVID",
+     "For three years. [pause] One hundred and eighty thousand dollars."
+    ]
+   ],
+   "place": "law_office",
+   "sfx": [
+    [
+     "Low tense musical sting",
+     2.0,
+     0.35,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s51",
+   "chars": [
+    "rachel:work"
+   ],
+   "image": "Rachel with a hand over her stomach, looking sick, gazing out at the snow.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Rachel felt sick. That was her savings. The kitchen they never remodeled. Retirement. The future Adam kept promising her."
+    ],
+    [
+     "RACHEL",
+     "[quiet] What was he doing with it?"
+    ],
+    [
+     "DAVID",
+     "Paying for a second house. [pause] And getting ready for something bigger."
+    ]
+   ],
+   "place": "law_office"
+  },
+  {
+   "id": "s52",
+   "chars": [
+    "rachel:work"
+   ],
+   "image": "Rachel's phone ringing on the desk, the screen showing a contact named Adam with a heart.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Then Rachel's phone rang. Adam."
+    ]
+   ],
+   "place": "law_office",
+   "sfx": [
+    [
+     "Phone ringing on a desk",
+     2.0,
+     0.45,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s53",
+   "chars": [
+    "adam"
+   ],
+   "image": "Adam on his phone outside a suburban house in the snow, smiling, the Christmas-lit house behind him.",
+   "lines": [
+    [
+     "ADAM~phone",
+     "[warm, apologetic] Hey, sweetheart. Merry Christmas. I'm so sorry about last night. The client dinner went forever."
+    ],
+    [
+     "RACHEL",
+     "[carefully neutral] Did it?"
+    ],
+    [
+     "ADAM~phone",
+     "[sighs] Total nightmare."
+    ]
+   ]
+  },
+  {
+   "id": "s54",
+   "chars": [
+    "rachel:work"
+   ],
+   "image": "Rachel on the phone, her face perfectly calm while her free hand grips the desk edge.",
+   "lines": [
+    [
+     "RACHEL",
+     "Where are you now?"
+    ],
+    [
+     "ADAM~phone",
+     "Still in Milwaukee."
+    ],
+    [
+     "NARRATOR",
+     "Rachel looked at David. Adam was lying. Again. Easily. Like breathing."
+    ]
+   ],
+   "place": "law_office"
+  },
+  {
+   "id": "s55",
+   "chars": [
+    "rachel:work"
+   ],
+   "image": "Close-up of Rachel on the phone, eyes cold, voice sweet.",
+   "lines": [
+    [
+     "RACHEL",
+     "When are you coming home?"
+    ],
+    [
+     "ADAM~phone",
+     "Tomorrow morning."
+    ],
+    [
+     "RACHEL",
+     "Good. [pause] We should finally sit down and organize our finances."
+    ]
+   ],
+   "place": "law_office"
+  },
+  {
+   "id": "s56",
+   "chars": [
+    "adam"
+   ],
+   "image": "Adam on the phone in the snow, his smile faltering for a second.",
+   "lines": [
+    [
+     "ADAM~phone",
+     "[a beat, then a little too quick] Absolutely. Actually... I have some paperwork we should go over."
+    ]
+   ],
+   "sfx": [
+    [
+     "A beat of tense silence on a phone line",
+     1.5,
+     0.2,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s57",
+   "chars": [
+    "rachel:work"
+   ],
+   "image": "Rachel closing her eyes, phone to her ear.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Rachel closed her eyes. There it was. The paperwork he'd been preparing for months."
+    ],
+    [
+     "RACHEL",
+     "[sweetly] Of course, honey. Bring it home."
+    ]
+   ],
+   "place": "law_office",
+   "sfx": [
+    [
+     "Phone call ending beep",
+     1.0,
+     0.35,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s58",
+   "chars": [
+    "rachel:work",
+    "david"
+   ],
+   "image": "Rachel setting the phone down, hands shaking; David looking at her with concern.",
+   "lines": [
+    [
+     "DAVID",
+     "[impressed] You handled that well."
+    ],
+    [
+     "RACHEL",
+     "[shaking] I wanted to scream."
+    ],
+    [
+     "DAVID",
+     "I know."
+    ]
+   ],
+   "place": "law_office"
+  },
+  {
+   "id": "s59",
+   "chars": [
+    "david"
+   ],
+   "image": "Close-up of David, gentle but firm.",
+   "lines": [
+    [
+     "RACHEL",
+     "David... if I hadn't followed him on Christmas Eve, would he have taken everything?"
+    ],
+    [
+     "DAVID",
+     "[gently] Yes. [pause] But you did follow him. And now we get to choose how this ends."
+    ]
+   ],
+   "place": "law_office"
+  },
+  {
+   "id": "s60",
+   "chars": [
+    "lauren",
+    "rachel"
+   ],
+   "image": "Inside a parked car in the rain: Lauren in the driver's seat, Rachel in the passenger seat, both staring ahead at the streaming windshield.",
+   "lines": [
+    [
+     "NARRATOR",
+     "That afternoon, Rachel met Lauren again. A grocery store parking lot. Lauren's car, engine running. Lauren looked like she hadn't slept in a week."
+    ]
+   ],
+   "place": "car",
+   "cut": true,
+   "sfx": [
+    [
+     "Heavy rain drumming on a car roof, car heater humming",
+     4.0,
+     0.3,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s61",
+   "chars": [
+    "rachel"
+   ],
+   "image": "Rachel in the passenger seat turning toward Lauren.",
+   "lines": [
+    [
+     "RACHEL",
+     "You said he's planning to disappear. How do you know?"
+    ],
+    [
+     "LAUREN",
+     "[quiet] I found a plane ticket in his email. One way."
+    ]
+   ],
+   "place": "car"
+  },
+  {
+   "id": "s62",
+   "chars": [],
+   "image": "Close-up of a phone screen in the car showing an airline booking confirmation, the text blurred except a small airplane icon.",
+   "lines": [
+    [
+     "RACHEL",
+     "To where?"
+    ],
+    [
+     "LAUREN",
+     "Lisbon. January fifteenth."
+    ],
+    [
+     "RACHEL",
+     "For all of you?"
+    ],
+    [
+     "LAUREN",
+     "[bitter laugh] No. Just him."
+    ]
+   ],
+   "place": "car"
+  },
+  {
+   "id": "s63",
+   "chars": [
+    "rachel"
+   ],
+   "image": "Rachel looking out the rain-streaked side window, devastated.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Rachel looked out at the rain. Adam wasn't choosing between two women. He was leaving both of them. And two kids who called him Dad."
+    ]
+   ],
+   "place": "car"
+  },
+  {
+   "id": "s64",
+   "chars": [
+    "lauren",
+    "rachel"
+   ],
+   "image": "Lauren gripping the steering wheel, eyes red.",
+   "lines": [
+    [
+     "RACHEL",
+     "Why didn't you tell me this at the coffee shop?"
+    ],
+    [
+     "LAUREN",
+     "Because I was scared you'd call the police before I could protect my kids."
+    ],
+    [
+     "RACHEL",
+     "Protect them from what?"
+    ]
+   ],
+   "place": "car"
+  },
+  {
+   "id": "s65",
+   "chars": [
+    "lauren"
+   ],
+   "image": "Close-up of Lauren, ashamed, holding a crumpled bank letter.",
+   "lines": [
+    [
+     "LAUREN",
+     "Adam registered one of his companies at my address. And last month a bank letter came saying I'm a guarantor on one of his loans."
+    ],
+    [
+     "RACHEL",
+     "Did you sign it?"
+    ],
+    [
+     "LAUREN",
+     "[shaking her head] Not that one. But years ago I signed a lot of his business papers without reading them. Because I trusted him."
+    ]
+   ],
+   "place": "car"
+  },
+  {
+   "id": "s66",
+   "chars": [
+    "rachel"
+   ],
+   "image": "Rachel studying Lauren's face, her expression softening slightly.",
+   "lines": [
+    [
+     "NARRATOR",
+     "For the first time, Rachel saw something familiar in Lauren's face. Shame. The kind that comes from realizing someone has been steering you for years."
+    ]
+   ],
+   "place": "car"
+  },
+  {
+   "id": "s67",
+   "chars": [
+    "rachel",
+    "lauren"
+   ],
+   "image": "The two women in the car, rain on the glass, a cold distance between them.",
+   "lines": [
+    [
+     "RACHEL",
+     "[hard] You should have told me sooner."
+    ],
+    [
+     "LAUREN",
+     "I know."
+    ],
+    [
+     "RACHEL",
+     "And I'm not forgiving you for waiting."
+    ],
+    [
+     "LAUREN",
+     "[steady] I'm not asking you to."
+    ]
+   ],
+   "place": "car"
+  },
+  {
+   "id": "s68",
+   "chars": [],
+   "image": "Close-up of a printed email in Rachel's hands with one sentence highlighted in yellow, the words soft and unreadable.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Lauren handed Rachel a printed email. Adam to his business partner. One sentence was highlighted."
+    ],
+    [
+     "ADAM",
+     "[cold, confident, like a memory] \"Once the funding clears, neither Rachel nor Lauren will be able to trace a dime.\""
+    ]
+   ],
+   "place": "car",
+   "sfx": [
+    [
+     "Low dramatic impact",
+     2.5,
+     0.4,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s69",
+   "chars": [
+    "rachel",
+    "lauren"
+   ],
+   "image": "Rachel staring at the page, Lauren watching her.",
+   "lines": [
+    [
+     "RACHEL",
+     "[very quiet] He planned this."
+    ],
+    [
+     "LAUREN",
+     "Yes."
+    ],
+    [
+     "RACHEL",
+     "Both of us."
+    ],
+    [
+     "LAUREN",
+     "[whisper] Yes."
+    ]
+   ],
+   "place": "car"
+  },
+  {
+   "id": "s70",
+   "chars": [
+    "rachel"
+   ],
+   "image": "Close-up of Rachel lifting her eyes from the page, a cold, decided look.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Rachel stared at the page for a long time. Then she said something Lauren didn't expect."
+    ],
+    [
+     "RACHEL",
+     "[calm, decided] We're not going to warn him."
+    ]
+   ],
+   "place": "car"
+  },
+  {
+   "id": "s71",
+   "chars": [
+    "rachel",
+    "lauren"
+   ],
+   "image": "Inside the parked car: Lauren in the driver's seat turning to Rachel in surprise; Rachel in the passenger seat with a faint, dangerous smile. Through the windshield only a blurred rainy parking lot, no store signs, no logos, no lettering anywhere.",
+   "lines": [
+    [
+     "LAUREN",
+     "What?"
+    ],
+    [
+     "RACHEL",
+     "We're going to let him think he's winning."
+    ]
+   ],
+   "place": "car",
+   "sfx": [
+    [
+     "Rising tense musical swell",
+     3.0,
+     0.35,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s72",
+   "chars": [
+    "adam",
+    "rachel:home"
+   ],
+   "image": "Adam coming through the front door into the kitchen with a bouquet of red roses and a designer shopping bag, snow on his coat.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Adam came home on December twenty-sixth. With flowers. A designer handbag. And a stack of documents."
+    ]
+   ],
+   "place": "kitchen",
+   "cut": true,
+   "sfx": [
+    [
+     "Front door opening, keys tossed on a counter",
+     2.0,
+     0.4,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s73",
+   "chars": [
+    "adam",
+    "rachel:home"
+   ],
+   "image": "Adam grinning, holding out the flowers; Rachel smiling back politely.",
+   "lines": [
+    [
+     "ADAM",
+     "[bright, charming] Rachel! Merry late Christmas!"
+    ],
+    [
+     "RACHEL",
+     "[smiling] You shouldn't have."
+    ],
+    [
+     "ADAM",
+     "Come on. I know I've been distracted lately."
+    ],
+    [
+     "RACHEL",
+     "[light] That's one word for it."
+    ]
+   ],
+   "place": "kitchen"
+  },
+  {
+   "id": "s74",
+   "chars": [
+    "adam:home"
+   ],
+   "image": "Adam laughing a little too loudly, then spreading papers on the marble island.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Adam laughed. A little too loud."
+    ],
+    [
+     "ADAM",
+     "Listen. I have big news. An investment. If it works, we retire in five years. [pause] I just need your signature on a few things."
+    ]
+   ],
+   "place": "kitchen"
+  },
+  {
+   "id": "s75",
+   "chars": [],
+   "image": "Close-up of loan documents fanned out on a white marble kitchen island next to red roses, a pen on top.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Northstar Capital Solutions. Two million dollars. The same loan. Only this time, he needed her real signature. [pause] Because David's fraud report had made the bank nervous. And the bank now wanted the wife to sign in person."
+    ]
+   ],
+   "place": "kitchen"
+  },
+  {
+   "id": "s76",
+   "chars": [
+    "rachel:home",
+    "adam:home"
+   ],
+   "image": "Rachel reading the first page with innocent curiosity; Adam waving his hand dismissively.",
+   "lines": [
+    [
+     "RACHEL",
+     "[curious, innocent] That's a lot of money. Secured by what?"
+    ],
+    [
+     "ADAM",
+     "[waving it off] Just some assets. Nothing to worry about."
+    ],
+    [
+     "RACHEL",
+     "Which assets?"
+    ]
+   ],
+   "place": "kitchen"
+  },
+  {
+   "id": "s77",
+   "chars": [
+    "adam:home"
+   ],
+   "image": "Close-up of Adam's smile slipping into irritation.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Adam's smile slipped."
+    ],
+    [
+     "ADAM",
+     "[irritated] Rachel, do we really have to do this?"
+    ],
+    [
+     "RACHEL",
+     "Do what?"
+    ],
+    [
+     "ADAM",
+     "Interrogate each other?"
+    ]
+   ],
+   "place": "kitchen"
+  },
+  {
+   "id": "s78",
+   "chars": [
+    "adam:home",
+    "rachel:home"
+   ],
+   "image": "Adam snatching the papers off the island, turning away.",
+   "lines": [
+    [
+     "RACHEL",
+     "[even] I'm asking about a two-million-dollar loan."
+    ],
+    [
+     "ADAM",
+     "[snatching the papers] You know what? Forget it. I thought you'd be happy."
+    ]
+   ],
+   "place": "kitchen",
+   "sfx": [
+    [
+     "Papers snatched off a counter",
+     1.0,
+     0.4,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s79",
+   "chars": [
+    "adam:home"
+   ],
+   "image": "Adam stopping in the doorway, turning back.",
+   "lines": [
+    [
+     "RACHEL",
+     "[softly] Adam?"
+    ],
+    [
+     "ADAM",
+     "[stops] What?"
+    ],
+    [
+     "RACHEL",
+     "I love you."
+    ]
+   ],
+   "place": "kitchen"
+  },
+  {
+   "id": "s80",
+   "chars": [
+    "adam:home"
+   ],
+   "image": "Close-up of relief washing over Adam's face.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He turned. Relief washed over his face."
+    ],
+    [
+     "ADAM",
+     "[relieved] I love you too, baby."
+    ]
+   ],
+   "place": "kitchen"
+  },
+  {
+   "id": "s81",
+   "chars": [
+    "rachel:home"
+   ],
+   "image": "Close-up of Rachel, warm smile, eyes cold.",
+   "lines": [
+    [
+     "RACHEL",
+     "That's why I want it done properly. I'll sign. [pause] At the bank. In front of the notary. With David there."
+    ]
+   ],
+   "place": "kitchen"
+  },
+  {
+   "id": "s82",
+   "chars": [
+    "adam:home"
+   ],
+   "image": "Adam frozen mid-step, the smile gone.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Adam froze."
+    ],
+    [
+     "ADAM",
+     "[tight] David Chen?"
+    ],
+    [
+     "RACHEL",
+     "He's my lawyer. If it's as safe as you say, you've got nothing to worry about."
+    ]
+   ],
+   "place": "kitchen",
+   "sfx": [
+    [
+     "Tense silence, a kitchen clock ticking",
+     3.0,
+     0.3,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s83",
+   "chars": [
+    "adam:home"
+   ],
+   "image": "Close-up of Adam's eyes calculating, then the charming smile sliding back into place.",
+   "lines": [
+    [
+     "NARRATOR",
+     "For one second, Rachel saw the real Adam. Not the charming husband. Not the smiling man from the Christmas photos. A man doing math. [pause] Then the smile came back."
+    ],
+    [
+     "ADAM",
+     "[smooth again] Fine. The bank said Wednesday at ten. Downtown."
+    ],
+    [
+     "RACHEL",
+     "[sweet] Perfect."
+    ]
+   ],
+   "place": "kitchen"
+  },
+  {
+   "id": "s84",
+   "chars": [
+    "adam:home"
+   ],
+   "image": "Adam alone on the staircase of the townhouse with his phone to his ear, smirking. No one else in the frame.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Adam kissed her cheek and went upstairs to call his partner. [pause] He thought he'd just won. He had no idea who else would be in that room on Wednesday."
+    ]
+   ],
+   "place": "kitchen",
+   "sfx": [
+    [
+     "Ominous low drone",
+     3.0,
+     0.3,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s85",
+   "chars": [],
+   "image": "A downtown Chicago bank tower on a snowy morning, a huge decorated Christmas tree in the marble lobby.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Wednesday. December thirtieth. Ten a.m. A glass conference room on the twelfth floor of a downtown Chicago bank."
+    ]
+   ],
+   "place": "bank",
+   "cut": true,
+   "sfx": [
+    [
+     "Echoing marble bank lobby, footsteps, distant holiday music",
+     4.0,
+     0.25,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s86",
+   "chars": [
+    "adam:suit",
+    "rachel:work"
+   ],
+   "image": "Adam in his best suit striding into the glass conference room with a pen already in hand, Rachel beside him.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Adam arrived early, in his best suit, with a pen already in his hand."
+    ],
+    [
+     "ADAM",
+     "[cheerful] Big day."
+    ],
+    [
+     "RACHEL",
+     "[smiling] It really is."
+    ]
+   ],
+   "place": "bank"
+  },
+  {
+   "id": "s87",
+   "chars": [
+    "david",
+    "ortiz"
+   ],
+   "image": "David seated at the conference table; in the background by the glass door, a quiet bearded man in a gray overcoat.",
+   "lines": [
+    [
+     "NARRATOR",
+     "David sat beside Rachel. Across the table, a bank officer. And by the door, a quiet man in a gray overcoat that Adam didn't bother to look at."
+    ],
+    [
+     "ADAM",
+     "[smooth] Thanks for coming, David. Just a formality."
+    ],
+    [
+     "DAVID",
+     "[dry] We'll see."
+    ]
+   ],
+   "place": "bank"
+  },
+  {
+   "id": "s88",
+   "chars": [
+    "adam:suit",
+    "rachel:work"
+   ],
+   "image": "Loan documents slid in front of Rachel; Adam leaning close, pointing to the signature line.",
+   "lines": [
+    [
+     "ADAM",
+     "[low, encouraging] Right there, honey. Bottom of each page."
+    ],
+    [
+     "RACHEL",
+     "[pen hovering] Before I sign... can I see the first application? The one from September."
+    ],
+    [
+     "ADAM",
+     "[too fast] There wasn't one."
+    ]
+   ],
+   "place": "bank"
+  },
+  {
+   "id": "s89",
+   "chars": [
+    "david"
+   ],
+   "image": "David calmly placing a single sheet of paper in the middle of the table.",
+   "lines": [
+    [
+     "NARRATOR",
+     "David placed a single sheet on the table. The September application. With Rachel's name. And a signature that was almost hers."
+    ],
+    [
+     "RACHEL",
+     "[calm] Then whose signature is this?"
+    ]
+   ],
+   "place": "bank",
+   "sfx": [
+    [
+     "Low tense musical sting",
+     2.0,
+     0.4,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s90",
+   "chars": [
+    "adam:suit"
+   ],
+   "image": "Close-up of Adam forcing a laugh, sweat at his temple.",
+   "lines": [
+    [
+     "ADAM",
+     "[forced laugh] Okay... that... that's a draft. My assistant must have—"
+    ]
+   ],
+   "place": "bank"
+  },
+  {
+   "id": "s91",
+   "chars": [
+    "lauren"
+   ],
+   "image": "The glass conference room door opening; Lauren stepping in, dark green coat, snow in her hair, steady expression.",
+   "lines": [
+    [
+     "NARRATOR",
+     "And then the door opened. [pause] Lauren Parker walked in. Dark green coat. Snow still in her hair."
+    ]
+   ],
+   "place": "bank",
+   "sfx": [
+    [
+     "Door opening, then a deep cinematic boom",
+     3.0,
+     0.5,
+     "start"
+    ]
+   ],
+   "motion": "the glass door swings open and she walks in slowly, snow melting in her hair"
+  },
+  {
+   "id": "s92",
+   "chars": [
+    "adam:suit"
+   ],
+   "image": "Adam's face draining of all color as he stares at the door.",
+   "lines": [
+    [
+     "ADAM",
+     "[the color draining from his voice] Lauren?"
+    ],
+    [
+     "LAUREN",
+     "[quiet, steady] Hi, Adam. [pause] Should I tell her about your divorce... or should you?"
+    ]
+   ],
+   "place": "bank"
+  },
+  {
+   "id": "s93",
+   "chars": [
+    "rachel:work",
+    "adam:suit",
+    "lauren"
+   ],
+   "image": "Adam standing between the two women in the glass room, looking from one to the other, trapped.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Adam looked from one woman to the other. Two wives. Two lives. One room. [pause] For the first time in eight years, he had no story ready."
+    ]
+   ],
+   "place": "bank",
+   "motion": "the man turns his head slowly from one woman to the other, frozen"
+  },
+  {
+   "id": "s94",
+   "chars": [
+    "lauren"
+   ],
+   "image": "Lauren laying papers and a printed airline ticket on the table one by one.",
+   "lines": [
+    [
+     "LAUREN",
+     "[laying papers on the table] This is the guarantee you filed with my name on it. I never signed it. And this... is your ticket to Lisbon. January fifteenth. One way. [pause] Just you."
+    ]
+   ],
+   "place": "bank",
+   "sfx": [
+    [
+     "Papers set down one at a time on a table",
+     2.0,
+     0.4,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s95",
+   "chars": [
+    "rachel:work",
+    "adam:suit"
+   ],
+   "image": "Rachel standing up, cold; Adam turning to her, desperate.",
+   "lines": [
+    [
+     "RACHEL",
+     "[cold] You were going to leave all of us. Me. Her. Those kids."
+    ],
+    [
+     "ADAM",
+     "[desperate] Rachel, listen to me. I can explain—"
+    ],
+    [
+     "RACHEL",
+     "[cutting him off] Which part? The lies? The money? Or the family you hid for eight years?"
+    ]
+   ],
+   "place": "bank"
+  },
+  {
+   "id": "s96",
+   "chars": [
+    "adam:suit"
+   ],
+   "image": "Adam with tears in his eyes, hands open, pleading.",
+   "lines": [
+    [
+     "ADAM",
+     "[voice breaking] I made mistakes."
+    ]
+   ],
+   "place": "bank"
+  },
+  {
+   "id": "s97",
+   "chars": [
+    "rachel:work"
+   ],
+   "image": "Close-up of Rachel, steel in her eyes.",
+   "lines": [
+    [
+     "RACHEL",
+     "[steel] No, Adam. A mistake is forgetting an anniversary. You built two lives... and lied to everyone in both of them."
+    ]
+   ],
+   "place": "bank",
+   "sfx": [
+    [
+     "Deep cinematic impact",
+     2.5,
+     0.45,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s98",
+   "chars": [
+    "ortiz"
+   ],
+   "image": "The bearded man in the gray overcoat stepping forward, holding up a police badge.",
+   "lines": [
+    [
+     "NARRATOR",
+     "The man in the gray overcoat stepped forward."
+    ],
+    [
+     "ORTIZ",
+     "[flat, unhurried] Adam Morgan. Detective Ortiz, Chicago PD, financial crimes. The bank's fraud unit called us after Mr. Chen's report. [pause] You're under arrest for bank fraud and forgery."
+    ]
+   ],
+   "place": "bank"
+  },
+  {
+   "id": "s99",
+   "chars": [
+    "adam:suit",
+    "ortiz"
+   ],
+   "image": "The detective handcuffing Adam at the conference table, Adam twisting to look back.",
+   "lines": [
+    [
+     "ADAM",
+     "[panicking] This is insane! Lauren— Lauren, think about Ben and Maya!"
+    ],
+    [
+     "LAUREN",
+     "[quiet fury] I am. That's why I'm here."
+    ]
+   ],
+   "place": "bank",
+   "sfx": [
+    [
+     "Handcuffs clicking shut",
+     1.5,
+     0.5,
+     "start"
+    ]
+   ],
+   "motion": "the detective snaps handcuffs onto the man's wrists behind his back"
+  },
+  {
+   "id": "s100",
+   "chars": [
+    "ortiz"
+   ],
+   "image": "Detective Ortiz holding out his hand.",
+   "lines": [
+    [
+     "ORTIZ",
+     "And Mr. Morgan? We'll be holding on to your passport."
+    ]
+   ],
+   "place": "bank"
+  },
+  {
+   "id": "s101",
+   "chars": [
+    "adam:suit",
+    "ortiz"
+   ],
+   "image": "Adam in handcuffs being walked past the bank's giant Christmas tree in the marble lobby, people staring.",
+   "lines": [
+    [
+     "NARRATOR",
+     "They walked him out past the glass walls. Past the tellers. Past the Christmas tree in the lobby. [pause] He looked back once. Neither woman looked at him."
+    ]
+   ],
+   "place": "bank",
+   "sfx": [
+    [
+     "Footsteps echoing in a marble lobby, murmurs",
+     4.0,
+     0.3,
+     "start"
+    ]
+   ],
+   "motion": "the handcuffed man is led across the lobby past the glowing Christmas tree"
+  },
+  {
+   "id": "s102",
+   "chars": [
+    "rachel:work",
+    "lauren",
+    "david"
+   ],
+   "image": "Rachel and Lauren sitting in chairs a careful distance apart in David's office, David behind his desk, snow falling outside.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Two weeks later, Rachel and Lauren sat in David's office. They were not friends. They might never be. But they had agreed on one thing. Neither of them would let Adam hide behind the other."
+    ]
+   ],
+   "place": "law_office",
+   "cut": true,
+   "sfx": [
+    [
+     "Quiet office, snow against the window",
+     3.0,
+     0.2,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s103",
+   "chars": [
+    "david"
+   ],
+   "image": "David reading from a file, relieved.",
+   "lines": [
+    [
+     "DAVID",
+     "[businesslike] The bank froze every Northstar account. Most of your hundred and eighty thousand is sitting in one of them, Rachel. You'll get it back. [to Lauren] And the guarantee with your name on it has been voided."
+    ],
+    [
+     "LAUREN",
+     "[exhales] Thank God."
+    ],
+    [
+     "DAVID",
+     "His partner is cooperating. Adam's lawyer is already talking about a plea."
+    ]
+   ],
+   "place": "law_office"
+  },
+  {
+   "id": "s104",
+   "chars": [
+    "rachel:work"
+   ],
+   "image": "Rachel leaning back in her chair, closing her eyes, finally breathing.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Rachel leaned back. For the first time in weeks, she could breathe. [pause] Then Lauren reached into her bag."
+    ]
+   ],
+   "place": "law_office"
+  },
+  {
+   "id": "s105",
+   "chars": [
+    "lauren"
+   ],
+   "image": "Close-up of Lauren alone in her chair in the law office, hesitating, turning slightly to her side, snowy window behind her. No one else in the frame.",
+   "lines": [
+    [
+     "LAUREN",
+     "[hesitant] Rachel... there's something I haven't told you."
+    ],
+    [
+     "RACHEL",
+     "[tired] What now?"
+    ],
+    [
+     "LAUREN",
+     "On Christmas Eve, I didn't just see your car on the camera. [pause] I knew you'd be there."
+    ]
+   ],
+   "place": "law_office"
+  },
+  {
+   "id": "s106",
+   "chars": [
+    "lauren"
+   ],
+   "image": "Close-up of Lauren confessing, ashamed but honest.",
+   "lines": [
+    [
+     "RACHEL",
+     "[slowly] How?"
+    ],
+    [
+     "LAUREN",
+     "That text on December twenty-second. \"Check where your husband is on Christmas Eve.\" [pause] That was me."
+    ]
+   ],
+   "place": "law_office",
+   "sfx": [
+    [
+     "Low musical sting",
+     2.0,
+     0.4,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s107",
+   "chars": [
+    "rachel:work"
+   ],
+   "image": "Rachel staring at Lauren in disbelief.",
+   "lines": [
+    [
+     "RACHEL",
+     "[stunned] You led me to your house?"
+    ],
+    [
+     "LAUREN",
+     "Yes."
+    ],
+    [
+     "RACHEL",
+     "Why?"
+    ]
+   ],
+   "place": "law_office"
+  },
+  {
+   "id": "s108",
+   "chars": [
+    "lauren"
+   ],
+   "image": "Lauren speaking softly, eyes down.",
+   "lines": [
+    [
+     "LAUREN",
+     "[quietly] Because I called you twice in October. You didn't answer. I left a voicemail. You blocked my number."
+    ]
+   ],
+   "place": "law_office"
+  },
+  {
+   "id": "s109",
+   "chars": [
+    "rachel:work"
+   ],
+   "image": "A memory: Rachel months earlier, glancing at an unknown caller on her phone and swiping it away.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Rachel remembered. A woman's voice. A voicemail she never played. She'd assumed it was a scam."
+    ]
+   ],
+   "place": "law_office",
+   "sfx": [
+    [
+     "Phone buzz, then a swipe",
+     1.5,
+     0.3,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s110",
+   "chars": [
+    "lauren",
+    "rachel:work"
+   ],
+   "image": "Lauren and Rachel facing each other, raw emotion.",
+   "lines": [
+    [
+     "LAUREN",
+     "I knew you'd never believe a stranger saying your husband had another family. So I made sure you could see it with your own eyes."
+    ],
+    [
+     "RACHEL",
+     "[hurt, angry] You used me."
+    ],
+    [
+     "LAUREN",
+     "I gave you the truth. [pause] But I should have told you how."
+    ]
+   ],
+   "place": "law_office"
+  },
+  {
+   "id": "s111",
+   "chars": [
+    "rachel:work"
+   ],
+   "image": "Rachel standing at the tall office window, her back to the room, Chicago buried in snow below.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Rachel stood and walked to the window. Below them, Chicago was buried in snow."
+    ],
+    [
+     "RACHEL",
+     "[not turning around] You should have given me a choice."
+    ],
+    [
+     "LAUREN",
+     "[softly] You're right."
+    ]
+   ],
+   "place": "law_office",
+   "motion": "snow drifts past the window as she stands still looking down at the city"
+  },
+  {
+   "id": "s112",
+   "chars": [
+    "rachel:work",
+    "lauren"
+   ],
+   "image": "Rachel turning back to face Lauren.",
+   "lines": [
+    [
+     "NARRATOR",
+     "For a long moment, neither woman spoke. Then Rachel turned around."
+    ],
+    [
+     "RACHEL",
+     "I don't know if I'll ever trust you."
+    ],
+    [
+     "LAUREN",
+     "I understand."
+    ],
+    [
+     "RACHEL",
+     "[a long breath] But I'm glad I found out."
+    ],
+    [
+     "LAUREN",
+     "[a small, sad smile] So am I."
+    ]
+   ],
+   "place": "law_office"
+  },
+  {
+   "id": "s113",
+   "chars": [
+    "rachel:work",
+    "lauren"
+   ],
+   "image": "The two women side by side at the snowy window, not touching, both looking out.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Adam wasn't the only one in this story keeping secrets. [pause] But he was the only one whose secrets were built to hurt people."
+    ]
+   ],
+   "place": "law_office"
+  },
+  {
+   "id": "s114",
+   "chars": [
+    "rachel:cabin"
+   ],
+   "image": "One year later: Rachel curled up by the crackling fireplace in a cozy log cabin with a mug of cocoa, a small Christmas tree glowing.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[warm, unhurried] One year later, Rachel spent Christmas in a small cabin near Lake Michigan. She was divorced. Her savings were back. And she'd started a new job, teaching women how to read the fine print of their own finances."
+    ]
+   ],
+   "place": "cabin",
+   "cut": true,
+   "sfx": [
+    [
+     "Crackling fireplace, soft Christmas music on an old radio",
+     5.0,
+     0.3,
+     "start"
+    ]
+   ],
+   "motion": "the fire crackles and the tree lights twinkle as she sips from her mug"
+  },
+  {
+   "id": "s115",
+   "chars": [
+    "adam:prison"
+   ],
+   "image": "Adam in an orange prison jumpsuit sitting alone on a bunk in a gray cell, staring at the floor.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Adam pleaded guilty to bank fraud and aggravated identity theft. The judge gave him six years in federal prison. [pause] He never made it to Lisbon."
+    ]
+   ],
+   "sfx": [
+    [
+     "Heavy cell door clanging shut, echo",
+     2.0,
+     0.45,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s116",
+   "chars": [
+    "lauren:home",
+    "ben",
+    "maya"
+   ],
+   "image": "Lauren and her two kids carrying moving boxes into a bright new house, the kids laughing.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Lauren sold the house in Naperville and moved with Ben and Maya closer to her sister. Rachel and Lauren still message now and then. Nothing sentimental. Nothing forced. Just two women who survived the same lie."
+    ]
+   ]
+  },
+  {
+   "id": "s117",
+   "chars": [
+    "rachel:cabin"
+   ],
+   "image": "Rachel's phone lighting up on the cabin table next to her mug.",
+   "lines": [
+    [
+     "NARRATOR",
+     "On Christmas Eve, Rachel's phone buzzed."
+    ],
+    [
+     "LAUREN~phone",
+     "[warm] \"Merry Christmas. The kids are doing great. I hope you are too.\""
+    ]
+   ],
+   "place": "cabin",
+   "sfx": [
+    [
+     "Phone vibrating on a wooden table",
+     1.5,
+     0.4,
+     "start"
+    ]
+   ],
+   "overlay": {
+    "type": "message",
+    "from": "Lauren",
+    "to": "Rachel",
+    "text": "Merry Christmas. The kids are doing great. I hope you are too."
+   }
+  },
+  {
+   "id": "s118",
+   "chars": [
+    "rachel:cabin"
+   ],
+   "image": "Rachel smiling as she types a reply by the fire.",
+   "lines": [
+    [
+     "RACHEL",
+     "[smiling as she types] \"Merry Christmas. I am.\""
+    ]
+   ],
+   "place": "cabin"
+  },
+  {
+   "id": "s119",
+   "chars": [],
+   "image": "Snow falling softly over a dark frozen Lake Michigan seen through the cabin window, the warm reflection of the fire on the glass. No people anywhere in the frame.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Rachel set the phone down. Outside, snow fell softly over the lake. A year ago, she stood in the cold, watching her husband open presents with another family. [pause] Tonight she was alone. And she had never felt less lonely."
+    ]
+   ],
+   "place": "cabin",
+   "motion": "snow falls gently over the dark lake beyond the window"
+  },
+  {
+   "id": "s120",
+   "chars": [],
+   "image": "The Naperville house from Act 1 now dark and empty with a For Sale sign in the snow, no lights, at night.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[slow, final] Adam thought he could live two lives. He thought he could control two women. And he thought he'd be gone before either of them found the truth. [pause] He made one mistake. He underestimated both of them."
+    ]
+   ],
+   "place": "street",
+   "sfx": [
+    [
+     "Cold winter wind, piano rising",
+     4.0,
+     0.3,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s121",
+   "chars": [
+    "rachel:cabin"
+   ],
+   "image": "Rachel by the fire, looking into the flames with a calm, peaceful smile.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He had two families. Two women. And a thousand lies. [pause] In the end... he lost all of it. And the truth followed him all the way to a prison cell."
+    ],
+    [
+     "NARRATOR",
+     "[warm] This has been Karma Tales. Every betrayal has a price. And karma always collects."
+    ]
+   ],
+   "place": "cabin"
+  }
+ ],
+ "youtube": {
+  "title": "Seguí a mi esposo en Nochebuena. Ojalá no lo hubiera hecho.",
+  "description": "En Nochebuena, Rachel siguió a su esposo hasta una casa a cuarenta minutos de la suya. Por la ventana vio un árbol de Navidad, dos niños... y a él.\n\nPero lo peor fue el mensaje que le llegó mientras estaba ahí parada.\n\nKarma Tales en español: historias de venganza y giros inesperados donde quien hace trampa siempre paga.\n\nEsta historia es ficción. Cualquier parecido con personas o hechos reales es coincidencia. La narración y las imágenes fueron generadas con IA.\n\n#karmatales #navidad #telenovela #historiasdevenganza",
+  "tags": [
+   "karma tales",
+   "nochebuena",
+   "esposo infiel",
+   "doble vida",
+   "historias de venganza",
+   "telenovela",
+   "traición",
+   "giro inesperado",
+   "drama en español",
+   "audio drama"
+  ],
+  "category": "24",
+  "shorts_description": "Mira la historia completa en Karma Tales en Español.\n#shorts #karmatales #telenovela"
+ },
+ "thumbnail_file": "karma/es/ep03_thumb.jpg",
+ "shorts": []
+}

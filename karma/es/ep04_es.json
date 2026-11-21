@@ -1,0 +1,3373 @@
+{
+ "title": "Karma Tales EP04 - The Thanksgiving Betrayal",
+ "voices": {
+  "BROOKS": "qAZH0aMXY8tw1QufPN0D",
+  "EMMA": "AEu9YBjNQiyxUMNdplQu",
+  "GRACE": "yM93hbw8Qtvdma2wCnJG",
+  "MARGARET": "wGcFBfKz5yUQqhqr0mVy",
+  "NARRATOR": "FmtiHEcHpocK7YiZwa46",
+  "RYAN": "6gRQLqLxbhpnX3JtUvf8",
+  "VICTORIA": "8fwYhwfiWkLjR4FKLHSQ"
+ },
+ "cast": {
+  "emma": "karma/cast/ep04/emma.jpg",
+  "victoria": "karma/cast/ep04/victoria.jpg",
+  "ryan": "karma/cast/ep04/ryan.jpg",
+  "grace": "karma/cast/ep04/grace.jpg",
+  "brooks": "karma/cast/ep04/brooks.jpg",
+  "margaret": "karma/cast/ep04/margaret.jpg"
+ },
+ "portraits": {
+  "grace": "Photorealistic still from a prestige American TV drama, shot on 35mm, shallow depth of field, soft cinematic key light, natural skin texture, head-and-shoulders portrait facing slightly off camera, neutral dark background, an entirely fictional person who resembles no real celebrity, no text, no watermark. Grace Parker, a 32-year-old American woman, long wavy chestnut-brown hair, sharp hazel eyes, a sardonic half-smile, burgundy knit sweater.",
+  "brooks": "Photorealistic still from a prestige American TV drama, shot on 35mm, shallow depth of field, soft cinematic key light, natural skin texture, head-and-shoulders portrait facing slightly off camera, neutral dark background, an entirely fictional person who resembles no real celebrity, no text, no watermark. Martin Brooks, a 62-year-old American attorney, short silver hair, neat gray beard, kind but sharp blue eyes, charcoal three-piece suit, dark green tie.",
+  "margaret": "Photorealistic still from a prestige American TV drama, shot on 35mm, shallow depth of field, soft cinematic key light, natural skin texture, head-and-shoulders portrait facing slightly off camera, neutral dark background, an entirely fictional person who resembles no real celebrity, no text, no watermark. Margaret Ashford, an 80-year-old American grandmother, soft white hair in a loose bun, laugh lines, bright knowing eyes, pale blue cardigan with a small brooch."
+ },
+ "looks": {
+  "emma": "Emma (the woman from the reference photo, same face, long tousled light-brown hair, in a cream wool coat over a rust-colored sweater)",
+  "emma:dinner": "Emma (the same woman as the reference photo, same face, light-brown hair half up, in a simple forest-green dress)",
+  "emma:home": "Emma (the same woman as the reference photo, same face, light-brown hair in a messy bun, in a gray cardigan)",
+  "emma:fall": "Emma (the same woman as the reference photo, same face, hair loose, relaxed and smiling, in a mustard-yellow sweater)",
+  "victoria": "Victoria (the older blonde woman from the reference photo, same face, hair in an elegant updo, in a burgundy velvet dress with a pearl necklace and pearl earrings)",
+  "victoria:home": "Victoria (the same older woman as the reference photo, same face, in a cream silk blouse and pearls)",
+  "ryan": "Ryan (the man from the reference photo, same face and short brown hair, in a navy sweater over a collared shirt)",
+  "ryan:suit": "Ryan (the same man as the reference photo, same face, in a slim gray suit, no tie)",
+  "grace": "Grace (the woman with wavy chestnut hair from the reference photo, in a burgundy sweater)",
+  "brooks": "Mr. Brooks (the silver-bearded man from the reference photo, in a charcoal three-piece suit)",
+  "margaret": "Margaret (the elderly white-haired woman from the reference photo, in a pale blue cardigan)"
+ },
+ "style": "Photorealistic still from a prestige American TV drama, shot on 35mm, cinematic lighting, shallow depth of field, natural skin texture, warm autumn Thanksgiving color palette of amber, burgundy and gold, wide 16:9 frame. Keep every person's face and hair exactly consistent with their reference photo. No text, no captions, no watermark. ",
+ "resolution": "2K",
+ "music": [
+  [
+   "s07",
+   "tension"
+  ],
+  [
+   "s08",
+   "wonder"
+  ],
+  [
+   "s17",
+   "tension"
+  ],
+  [
+   "s30",
+   "wonder"
+  ],
+  [
+   "s40",
+   "tension"
+  ],
+  [
+   "s55",
+   "tension"
+  ],
+  [
+   "s80",
+   "tension"
+  ],
+  [
+   "s92",
+   "wonder"
+  ],
+  [
+   "s98",
+   "tension"
+  ],
+  [
+   "s113",
+   "wonder"
+  ],
+  [
+   "s128",
+   "wonder"
+  ]
+ ],
+ "places": {
+  "dining": "Setting: the grand dining room of a Connecticut mansion on Thanksgiving night, crystal chandelier, a long table with a roast turkey, candles and autumn flowers, fourteen well-dressed guests.",
+  "mansion_kitchen": "Setting: a huge white marble kitchen in a Connecticut mansion on Thanksgiving afternoon, pies cooling, copper pots, autumn light.",
+  "mansion_hall": "Setting: an upstairs hallway of a Connecticut mansion, dark wood paneling, oil paintings, a door left slightly open with lamplight inside.",
+  "mansion_study": "Setting: a dark wood-paneled home study in a Connecticut mansion at night, a desk lamp, leather chairs, bookshelves.",
+  "living": "Setting: the formal living room of a Connecticut mansion at night, a crackling stone fireplace, antique furniture, family portraits.",
+  "kitchen_home": "Setting: a modest modern townhouse kitchen on a gray November morning, coffee maker, a stack of papers on the counter.",
+  "car": "Setting: inside a car parked at a gas station at night in pouring rain, rain streaming down the windshield, neon station lights blurred.",
+  "office": "Setting: a traditional law office in Hartford, Connecticut, dark wood, tall windows with gray November light, file boxes, a brass desk lamp.",
+  "coffee": "Setting: a small cozy New England coffee shop on a rainy afternoon, wooden tables, fogged windows, warm lamps.",
+  "grandma_house": "Setting: a small cozy house with a white porch outside Hartford on Thanksgiving a year later, a modest dining table full of homemade food, warm lamplight, autumn leaves outside the window."
+ },
+ "ambiences": {
+  "dinner": [
+   "Large elegant dining room, low murmur of dinner guests, soft jazz far away, silverware",
+   0.06
+  ],
+  "house": [
+   "Quiet large house room tone, distant clock, faint wind outside",
+   0.05
+  ],
+  "kitchen": [
+   "Quiet home kitchen, refrigerator hum, morning birds outside",
+   0.05
+  ],
+  "rain_car": [
+   "Heavy rain on a car roof, engine idling",
+   0.1
+  ],
+  "office": [
+   "Quiet law office, rain against tall windows, faint clock",
+   0.06
+  ],
+  "fire": [
+   "Crackling fireplace in a large quiet living room",
+   0.08
+  ],
+  "coffee": [
+   "Quiet coffee shop, rain outside, soft music far away",
+   0.07
+  ],
+  "cozy": [
+   "Warm small house, soft acoustic music, friends chatting quietly",
+   0.07
+  ]
+ },
+ "ambience": [
+  [
+   "s01",
+   "dinner"
+  ],
+  [
+   "s08",
+   "kitchen"
+  ],
+  [
+   "s18",
+   "house"
+  ],
+  [
+   "s34",
+   "dinner"
+  ],
+  [
+   "s55",
+   "rain_car"
+  ],
+  [
+   "s57",
+   "office"
+  ],
+  [
+   "s59",
+   "rain_car"
+  ],
+  [
+   "s62",
+   "office"
+  ],
+  [
+   "s74",
+   "house"
+  ],
+  [
+   "s86",
+   "fire"
+  ],
+  [
+   "s92",
+   "coffee"
+  ],
+  [
+   "s98",
+   "fire"
+  ],
+  [
+   "s128",
+   "cozy"
+  ]
+ ],
+ "scenes": [
+  {
+   "id": "s01",
+   "chars": [
+    "victoria"
+   ],
+   "image": "Victoria standing at the head of a long Thanksgiving table, glass raised, looking down the table with a cold smile.",
+   "lines": [
+    [
+     "VICTORIA",
+     "[sharp, cutting through the chatter] Emma. Stand up."
+    ]
+   ],
+   "place": "dining",
+   "sfx": [
+    [
+     "Thanksgiving dinner chatter, silverware, soft jazz piano",
+     4.0,
+     0.25,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s02",
+   "chars": [
+    "emma:dinner"
+   ],
+   "image": "Emma seated at the table, fork frozen halfway, looking up in confusion.",
+   "lines": [
+    [
+     "EMMA",
+     "[thrown, quiet] Excuse me?"
+    ],
+    [
+     "VICTORIA",
+     "[slowly, enjoying it] You heard me. Stand. Up."
+    ]
+   ],
+   "place": "dining"
+  },
+  {
+   "id": "s03",
+   "chars": [
+    "victoria"
+   ],
+   "image": "Close-up of Victoria tapping a crystal glass with a silver spoon, guests turning to look.",
+   "lines": [
+    [
+     "VICTORIA",
+     "[loud, theatrical] For four years, I have tolerated a woman who married my son for his money."
+    ]
+   ],
+   "place": "dining",
+   "sfx": [
+    [
+     "A spoon tapping a crystal glass, then the room going silent",
+     2.0,
+     0.4,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s04",
+   "chars": [
+    "victoria",
+    "emma:dinner"
+   ],
+   "image": "Victoria pointing down the table at Emma, guests staring.",
+   "lines": [
+    [
+     "VICTORIA",
+     "[cold] You have ten minutes to collect your things and get out of my house."
+    ]
+   ],
+   "place": "dining",
+   "sfx": [
+    [
+     "Guests gasping",
+     1.5,
+     0.35,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s05",
+   "chars": [
+    "emma:dinner"
+   ],
+   "image": "Emma standing, sliding her wedding ring off, setting it beside her untouched plate.",
+   "lines": [
+    [
+     "EMMA",
+     "[steady, barely above a whisper] Before I go, Victoria... are you absolutely certain this house belongs to you?"
+    ]
+   ],
+   "place": "dining",
+   "motion": "she slowly slides the ring off her finger and sets it down beside the plate"
+  },
+  {
+   "id": "s06",
+   "chars": [
+    "victoria"
+   ],
+   "image": "Victoria laughing in disbelief, one hand on her pearls.",
+   "lines": [
+    [
+     "VICTORIA",
+     "[scoffs] Of course it does."
+    ],
+    [
+     "EMMA",
+     "[calm, cold] Then I hope you have the paperwork."
+    ]
+   ],
+   "place": "dining",
+   "sfx": [
+    [
+     "Music cuts out abruptly, then a deep cinematic boom",
+     3.0,
+     0.45,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s07",
+   "chars": [
+    "ryan"
+   ],
+   "image": "Ryan at the table, pale, avoiding everyone's eyes, his hand trembling around his glass.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[low] Behind her, Victoria laughed. But Ryan didn't. [pause] Because he knew something his mother didn't. And Emma was about to find out."
+    ]
+   ],
+   "place": "dining"
+  },
+  {
+   "id": "s08",
+   "chars": [
+    "ryan",
+    "emma:home"
+   ],
+   "image": "Three weeks earlier: Ryan rushing into the kitchen holding a thick stack of papers and a pen; Emma pouring coffee.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Three weeks earlier."
+    ],
+    [
+     "RYAN",
+     "[hurried, distracted] Babe, I need you to sign something."
+    ],
+    [
+     "EMMA",
+     "[dry, half smiling] Good morning to you too."
+    ]
+   ],
+   "place": "kitchen_home",
+   "cut": true,
+   "sfx": [
+    [
+     "Coffee maker gurgling, morning kitchen",
+     3.0,
+     0.25,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s09",
+   "chars": [
+    "ryan"
+   ],
+   "image": "Ryan dropping a thick stack of documents on the counter and clicking a pen.",
+   "lines": [
+    [
+     "RYAN",
+     "[sighs] Sorry. I'm running late. Just business documents."
+    ],
+    [
+     "EMMA",
+     "[flipping pages] Forty-seven pages?"
+    ],
+    [
+     "RYAN",
+     "[too casual] Standard paperwork."
+    ]
+   ],
+   "place": "kitchen_home",
+   "sfx": [
+    [
+     "Heavy stack of papers dropped on a counter",
+     1.0,
+     0.4,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s10",
+   "chars": [
+    "emma:home"
+   ],
+   "image": "Emma reading the documents closely, frowning, finger stopping on a line.",
+   "lines": [
+    [
+     "EMMA",
+     "[slowly] Why does it say three million dollars?"
+    ],
+    [
+     "RYAN",
+     "It's a credit facility."
+    ],
+    [
+     "EMMA",
+     "Secured by what?"
+    ],
+    [
+     "RYAN",
+     "[quick] Company assets."
+    ]
+   ],
+   "place": "kitchen_home"
+  },
+  {
+   "id": "s11",
+   "chars": [
+    "emma:home",
+    "ryan"
+   ],
+   "image": "Emma looking up at Ryan skeptically; Ryan checking his watch.",
+   "lines": [
+    [
+     "EMMA",
+     "Then why does it need my signature?"
+    ],
+    [
+     "RYAN",
+     "[impatient] Because we're married."
+    ],
+    [
+     "EMMA",
+     "[flat] That's not how business loans work, Ryan."
+    ],
+    [
+     "RYAN",
+     "[groans] Oh, here we go."
+    ]
+   ],
+   "place": "kitchen_home"
+  },
+  {
+   "id": "s12",
+   "chars": [
+    "ryan"
+   ],
+   "image": "Ryan leaning on the counter, jaw tight, irritated.",
+   "lines": [
+    [
+     "RYAN",
+     "[sharp] You always have to question everything."
+    ],
+    [
+     "EMMA",
+     "I worked in finance before I joined your company. I know what a personal guarantee looks like."
+    ],
+    [
+     "RYAN",
+     "[cold] Are you calling me a liar?"
+    ]
+   ],
+   "place": "kitchen_home"
+  },
+  {
+   "id": "s13",
+   "chars": [
+    "emma:home"
+   ],
+   "image": "Emma calmly setting down her coffee, holding his gaze.",
+   "lines": [
+    [
+     "EMMA",
+     "[calm] I'm asking you to explain it."
+    ],
+    [
+     "RYAN",
+     "[snapping] Forget it."
+    ]
+   ],
+   "place": "kitchen_home"
+  },
+  {
+   "id": "s14",
+   "chars": [
+    "ryan"
+   ],
+   "image": "Ryan snatching the papers off the counter.",
+   "lines": [
+    [
+     "NARRATOR",
+     "He grabbed the papers. But not before Emma had seen enough. [pause] And not before she quietly took a photo of the first page."
+    ]
+   ],
+   "place": "kitchen_home",
+   "sfx": [
+    [
+     "Papers snatched off a counter",
+     1.0,
+     0.45,
+     "start"
+    ]
+   ],
+   "motion": "he sweeps the stack of papers off the counter and turns away"
+  },
+  {
+   "id": "s15",
+   "chars": [
+    "emma:home",
+    "ryan"
+   ],
+   "image": "Emma at the counter, worried; Ryan at the door with his coat half on.",
+   "lines": [
+    [
+     "EMMA",
+     "[softer, worried] Ryan... are we in trouble?"
+    ],
+    [
+     "RYAN",
+     "No."
+    ],
+    [
+     "EMMA",
+     "[quiet] Then look me in the eye."
+    ]
+   ],
+   "place": "kitchen_home",
+   "sfx": [
+    [
+     "Tense silence, a clock ticking",
+     2.0,
+     0.25,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s16",
+   "chars": [
+    "ryan"
+   ],
+   "image": "Ryan at the door turning back, his face cold.",
+   "lines": [
+    [
+     "RYAN",
+     "[cold, deliberate] My mother was right about you."
+    ],
+    [
+     "EMMA",
+     "[hurt] What does that mean?"
+    ],
+    [
+     "RYAN",
+     "You don't understand loyalty."
+    ]
+   ],
+   "place": "kitchen_home",
+   "sfx": [
+    [
+     "Front door slamming",
+     1.0,
+     0.5,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s17",
+   "chars": [
+    "ryan:suit"
+   ],
+   "image": "Ryan sitting alone in his parked car in an office garage, phone to his ear, rubbing his forehead.",
+   "lines": [
+    [
+     "VICTORIA~phone",
+     "[clipped] Did she sign?"
+    ],
+    [
+     "RYAN",
+     "[tired] No."
+    ],
+    [
+     "VICTORIA~phone",
+     "[disgusted] Unbelievable."
+    ]
+   ],
+   "cut": true,
+   "sfx": [
+    [
+     "Phone ringing, then a car interior",
+     2.0,
+     0.3,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s18",
+   "chars": [
+    "victoria:home"
+   ],
+   "image": "Victoria in her study, phone pressed to her ear, standing at the window, her reflection in the glass.",
+   "lines": [
+    [
+     "RYAN~phone",
+     "She started asking questions."
+    ],
+    [
+     "VICTORIA",
+     "[icy] Then stop giving her opportunities to ask."
+    ],
+    [
+     "RYAN~phone",
+     "[pleading] Mom, I need her signature."
+    ]
+   ],
+   "place": "mansion_study"
+  },
+  {
+   "id": "s19",
+   "chars": [
+    "victoria:home"
+   ],
+   "image": "Close-up of Victoria, a slow calculating smile.",
+   "lines": [
+    [
+     "VICTORIA",
+     "[patient, like explaining to a child] No, darling. You need her cooperation. There's a difference."
+    ],
+    [
+     "RYAN~phone",
+     "And how am I supposed to get it?"
+    ],
+    [
+     "VICTORIA",
+     "[softly] Make her understand what she stands to lose."
+    ]
+   ],
+   "place": "mansion_study"
+  },
+  {
+   "id": "s20",
+   "chars": [
+    "victoria:home"
+   ],
+   "image": "Victoria turning from the window, decision made.",
+   "lines": [
+    [
+     "RYAN~phone",
+     "[wary] What are you suggesting?"
+    ],
+    [
+     "VICTORIA",
+     "Thanksgiving is in three weeks. Bring her. [pause] I'll handle the rest."
+    ]
+   ],
+   "place": "mansion_study",
+   "sfx": [
+    [
+     "Low ominous drone",
+     2.5,
+     0.3,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s21",
+   "chars": [
+    "ryan:suit"
+   ],
+   "image": "Ryan in his car, hesitating, phone at his ear.",
+   "lines": [
+    [
+     "RYAN",
+     "[uneasy] Mom..."
+    ],
+    [
+     "VICTORIA~phone",
+     "[hard] Do you want to save your company or not?"
+    ]
+   ],
+   "sfx": [
+    [
+     "Call ending beep",
+     1.0,
+     0.35,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s22",
+   "chars": [
+    "ryan:suit"
+   ],
+   "image": "Ryan staring at his phone screen in the dark car, the glow on his face.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Ryan stared at his phone. Then he opened an email from the lender."
+    ]
+   ],
+   "sfx": [
+    [
+     "Phone notification chime",
+     1.0,
+     0.4,
+     "start"
+    ]
+   ],
+   "overlay": {
+    "type": "message",
+    "from": "Bayview Commercial Lending",
+    "to": "Ryan",
+    "text": "Additional authorization required. Deadline: December 1."
+   }
+  },
+  {
+   "id": "s23",
+   "chars": [
+    "grace"
+   ],
+   "image": "Grace walking down the dim upstairs hallway, stopping at a door left ajar with voices inside.",
+   "lines": [
+    [
+     "GRACE",
+     "[calling out, casual] Mom? You upstairs?"
+    ]
+   ],
+   "place": "mansion_hall",
+   "cut": true,
+   "sfx": [
+    [
+     "Footsteps on hardwood in a quiet hallway",
+     2.0,
+     0.35,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s24",
+   "chars": [
+    "grace"
+   ],
+   "image": "Grace freezing in the hallway, listening at the gap of the door.",
+   "lines": [
+    [
+     "VICTORIA~phone",
+     "[muffled, through the door] She has to believe she's losing everything, Ryan."
+    ],
+    [
+     "RYAN~phone",
+     "[muffled] And if she still refuses?"
+    ],
+    [
+     "VICTORIA~phone",
+     "[muffled] Then we move to the second option."
+    ]
+   ],
+   "place": "mansion_hall",
+   "motion": "she stops mid-step and slowly leans toward the half-open door"
+  },
+  {
+   "id": "s25",
+   "chars": [
+    "grace"
+   ],
+   "image": "Close-up of Grace's face, eyes widening, holding her breath.",
+   "lines": [
+    [
+     "RYAN~phone",
+     "[muffled, anxious] You promised we wouldn't need that."
+    ],
+    [
+     "VICTORIA~phone",
+     "[muffled hiss] Keep your voice down."
+    ]
+   ],
+   "place": "mansion_hall"
+  },
+  {
+   "id": "s26",
+   "chars": [
+    "grace",
+    "victoria:home",
+    "ryan"
+   ],
+   "image": "Grace pushing the study door open; Victoria and Ryan turning, startled.",
+   "lines": [
+    [
+     "GRACE",
+     "[flat] What second option?"
+    ],
+    [
+     "VICTORIA",
+     "[startled, then composed] Grace! How long have you been standing there?"
+    ],
+    [
+     "GRACE",
+     "[dry] Long enough."
+    ]
+   ],
+   "place": "mansion_study",
+   "sfx": [
+    [
+     "A door creaking open",
+     1.5,
+     0.45,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s27",
+   "chars": [
+    "ryan",
+    "grace"
+   ],
+   "image": "Ryan waving it off; Grace crossing her arms, unconvinced.",
+   "lines": [
+    [
+     "RYAN",
+     "[too quick] It's business."
+    ],
+    [
+     "GRACE",
+     "[sarcastic] Since when is Emma part of your business negotiations?"
+    ],
+    [
+     "VICTORIA",
+     "[cold] This is a private conversation."
+    ]
+   ],
+   "place": "mansion_study"
+  },
+  {
+   "id": "s28",
+   "chars": [
+    "grace"
+   ],
+   "image": "Grace backing out of the doorway, eyes on her mother.",
+   "lines": [
+    [
+     "GRACE",
+     "[pointed] So is whatever you're planning for Thanksgiving."
+    ],
+    [
+     "RYAN",
+     "[warning] Grace. Stay out of it."
+    ],
+    [
+     "GRACE",
+     "[shrugs] Fine."
+    ]
+   ],
+   "place": "mansion_study"
+  },
+  {
+   "id": "s29",
+   "chars": [
+    "grace"
+   ],
+   "image": "Grace walking away down the hallway, jaw set, glancing back once.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Grace walked away. [pause] But she didn't believe a word of it."
+    ]
+   ],
+   "place": "mansion_hall"
+  },
+  {
+   "id": "s30",
+   "chars": [
+    "emma"
+   ],
+   "image": "Thanksgiving afternoon: Emma carrying two homemade pies into the mansion's marble kitchen.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Thanksgiving. Emma had been in Victoria's kitchen since seven a.m."
+    ],
+    [
+     "EMMA",
+     "[cheerful, trying] Victoria, where do you want the pies?"
+    ]
+   ],
+   "place": "mansion_kitchen",
+   "cut": true,
+   "sfx": [
+    [
+     "Busy kitchen, oven timer beeping, pots clanking",
+     3.0,
+     0.3,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s31",
+   "chars": [
+    "victoria",
+    "emma"
+   ],
+   "image": "Victoria not even looking up from arranging flowers; Emma holding a pecan pie.",
+   "lines": [
+    [
+     "VICTORIA",
+     "[bored] In the kitchen. Obviously."
+    ],
+    [
+     "EMMA",
+     "[hopeful] I made your favorite. Pecan."
+    ],
+    [
+     "VICTORIA",
+     "[flat] How thoughtful."
+    ]
+   ],
+   "place": "mansion_kitchen"
+  },
+  {
+   "id": "s32",
+   "chars": [
+    "emma"
+   ],
+   "image": "Emma setting the pie down, studying Victoria.",
+   "lines": [
+    [
+     "EMMA",
+     "Is something wrong?"
+    ],
+    [
+     "VICTORIA",
+     "[too sweet] Why would something be wrong?"
+    ],
+    [
+     "EMMA",
+     "You've barely spoken to me all morning."
+    ]
+   ],
+   "place": "mansion_kitchen"
+  },
+  {
+   "id": "s33",
+   "chars": [
+    "victoria"
+   ],
+   "image": "Victoria walking out of the kitchen with the flower vase, not looking back.",
+   "lines": [
+    [
+     "VICTORIA",
+     "[clipped] I'm hosting fourteen people, Emma. I have responsibilities. [pause] Perhaps you should finish setting the table."
+    ]
+   ],
+   "place": "mansion_kitchen",
+   "motion": "she sweeps out of the kitchen carrying the vase without looking back"
+  },
+  {
+   "id": "s34",
+   "chars": [
+    "emma"
+   ],
+   "image": "Emma setting the long dining table alone, laying silverware, the chandelier above.",
+   "lines": [
+    [
+     "NARRATOR",
+     "So Emma set the table. Fourteen places. And on the sideboard, under a stack of holiday cards, she noticed an envelope."
+    ]
+   ],
+   "place": "dining",
+   "sfx": [
+    [
+     "Silverware being placed on a table, quiet room",
+     3.0,
+     0.25,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s35",
+   "chars": [],
+   "image": "Close-up of an official-looking envelope on a sideboard, a return-address logo with a small oak tree emblem, the printed text soft and unreadable.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[slowly] The return address said Ashford Family Trust. [pause] Ashford. Her grandmother's name."
+    ]
+   ],
+   "place": "dining",
+   "sfx": [
+    [
+     "Low curious musical note",
+     2.0,
+     0.3,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s36",
+   "chars": [
+    "emma"
+   ],
+   "image": "Emma holding the envelope, puzzled, glancing toward the doorway.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Before she could think about it, footsteps."
+    ],
+    [
+     "GRACE",
+     "[low, urgent] Emma. Can I talk to you?"
+    ]
+   ],
+   "place": "dining",
+   "sfx": [
+    [
+     "Footsteps approaching on hardwood",
+     1.5,
+     0.35,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s37",
+   "chars": [
+    "grace",
+    "emma"
+   ],
+   "image": "Grace pulling Emma into a corner of the dining room, speaking quietly.",
+   "lines": [
+    [
+     "GRACE",
+     "[whispering] Did Ryan ask you to sign anything recently?"
+    ],
+    [
+     "EMMA",
+     "[cautious] Why?"
+    ],
+    [
+     "GRACE",
+     "Just answer me."
+    ],
+    [
+     "EMMA",
+     "Some business papers. I said no."
+    ]
+   ],
+   "place": "dining"
+  },
+  {
+   "id": "s38",
+   "chars": [
+    "grace"
+   ],
+   "image": "Close-up of Grace, relieved and worried at once.",
+   "lines": [
+    [
+     "GRACE",
+     "[exhales] Good."
+    ],
+    [
+     "EMMA",
+     "Grace, what's going on?"
+    ],
+    [
+     "GRACE",
+     "[honest] I don't know yet."
+    ]
+   ],
+   "place": "dining"
+  },
+  {
+   "id": "s39",
+   "chars": [
+    "grace",
+    "emma"
+   ],
+   "image": "Grace glancing toward the hallway as someone calls her name, gripping Emma's arm.",
+   "lines": [
+    [
+     "VICTORIA~phone",
+     "[distant, calling] Grace! Come here!"
+    ],
+    [
+     "GRACE",
+     "[urgent whisper] Emma... whatever happens tonight, don't sign anything."
+    ]
+   ],
+   "place": "dining",
+   "sfx": [
+    [
+     "Tense musical sting",
+     2.0,
+     0.35,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s40",
+   "chars": [],
+   "image": "Thanksgiving dinner in full swing: fourteen guests around the long candlelit table, the chandelier glowing, a carved turkey.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Seven fifteen. Fourteen guests. Candles lit. The turkey carved. [pause] And then Victoria stood up."
+    ]
+   ],
+   "place": "dining",
+   "cut": true,
+   "sfx": [
+    [
+     "Dinner guests laughing and chatting, glasses clinking",
+     4.0,
+     0.3,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s41",
+   "chars": [
+    "victoria"
+   ],
+   "image": "Victoria standing at the head of the table, raising her champagne glass with a gracious smile.",
+   "lines": [
+    [
+     "VICTORIA",
+     "[gracious, smiling] I'd like to make a toast."
+    ],
+    [
+     "EMMA",
+     "[hopeful, raising her glass] To family?"
+    ],
+    [
+     "VICTORIA",
+     "[the smile freezing] To knowing who deserves to be called family."
+    ]
+   ],
+   "place": "dining"
+  },
+  {
+   "id": "s42",
+   "chars": [
+    "victoria"
+   ],
+   "image": "Victoria setting her glass down hard, her face turning cold.",
+   "lines": [
+    [
+     "VICTORIA",
+     "[cold] Emma. Stand up."
+    ]
+   ],
+   "place": "dining",
+   "sfx": [
+    [
+     "Glass set down hard on a table",
+     1.0,
+     0.45,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s43",
+   "chars": [
+    "victoria",
+    "emma:dinner"
+   ],
+   "image": "Emma slowly standing, confused, while guests exchange looks.",
+   "lines": [
+    [
+     "EMMA",
+     "Victoria, if there's a problem, we can talk after dinner."
+    ],
+    [
+     "VICTORIA",
+     "[loud] Oh, no. I want everyone to hear this."
+    ]
+   ],
+   "place": "dining"
+  },
+  {
+   "id": "s44",
+   "chars": [
+    "victoria"
+   ],
+   "image": "Victoria addressing the guests like a speech, gesturing at Emma.",
+   "lines": [
+    [
+     "VICTORIA",
+     "[theatrical] For four years, I have tolerated a woman who married my son for his money. She came into this family with nothing. No money. No connections. [pause] Not even a respectable family name."
+    ]
+   ],
+   "place": "dining"
+  },
+  {
+   "id": "s45",
+   "chars": [
+    "emma:dinner"
+   ],
+   "image": "Close-up of Emma, cheeks burning, voice shaking but firm.",
+   "lines": [
+    [
+     "EMMA",
+     "[shaking] That's not true. [firmer] And don't talk about my family."
+    ],
+    [
+     "VICTORIA",
+     "[contempt] Then stop pretending you're one of us."
+    ]
+   ],
+   "place": "dining"
+  },
+  {
+   "id": "s46",
+   "chars": [
+    "emma:dinner",
+    "ryan"
+   ],
+   "image": "Emma turning to Ryan beside her; Ryan staring at his plate.",
+   "lines": [
+    [
+     "EMMA",
+     "[desperate] Ryan. Say something."
+    ],
+    [
+     "RYAN",
+     "[mumbling] Emma, please. Don't make this worse."
+    ],
+    [
+     "EMMA",
+     "[stunned] I'm making it worse?"
+    ]
+   ],
+   "place": "dining"
+  },
+  {
+   "id": "s47",
+   "chars": [
+    "victoria"
+   ],
+   "image": "Victoria checking a delicate gold watch on her wrist, smiling.",
+   "lines": [
+    [
+     "VICTORIA",
+     "[cold, savoring it] You have ten minutes to collect your things and get out of my house."
+    ]
+   ],
+   "place": "dining",
+   "sfx": [
+    [
+     "Guests gasping, a fork dropping on a plate",
+     2.0,
+     0.4,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s48",
+   "chars": [
+    "emma:dinner"
+   ],
+   "image": "Emma staring at Victoria in disbelief.",
+   "lines": [
+    [
+     "EMMA",
+     "[disbelief] You're throwing me out... on Thanksgiving?"
+    ],
+    [
+     "VICTORIA",
+     "[sweetly] Consider it my holiday gift to you."
+    ]
+   ],
+   "place": "dining"
+  },
+  {
+   "id": "s49",
+   "chars": [
+    "ryan"
+   ],
+   "image": "Ryan finally looking up, weak and guilty.",
+   "lines": [
+    [
+     "EMMA",
+     "[barely a whisper] Ryan?"
+    ],
+    [
+     "RYAN",
+     "[can't look at her] Maybe it's better if you go. Just for tonight. We'll talk tomorrow."
+    ]
+   ],
+   "place": "dining"
+  },
+  {
+   "id": "s50",
+   "chars": [
+    "emma:dinner"
+   ],
+   "image": "Emma pushing her chair back, standing tall, eyes wet but steady.",
+   "lines": [
+    [
+     "EMMA",
+     "[quiet, breaking] Four years. [pause] Four years, and you can't even stand up for me."
+    ]
+   ],
+   "place": "dining",
+   "sfx": [
+    [
+     "A chair scraping back on a wooden floor",
+     1.5,
+     0.45,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s51",
+   "chars": [
+    "emma:dinner"
+   ],
+   "image": "Close-up of Emma's hand sliding off her wedding ring and setting it beside her untouched plate.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Emma slowly took off her wedding ring. And set it down beside her untouched plate."
+    ]
+   ],
+   "place": "dining",
+   "motion": "she slides the ring off her finger and places it gently on the tablecloth"
+  },
+  {
+   "id": "s52",
+   "chars": [
+    "emma:dinner",
+    "victoria"
+   ],
+   "image": "Emma looking straight at Victoria across the table.",
+   "lines": [
+    [
+     "EMMA",
+     "[steady] Before I go, Victoria. One question."
+    ],
+    [
+     "VICTORIA",
+     "[impatient] Make it quick."
+    ],
+    [
+     "EMMA",
+     "[slow, deliberate] Are you absolutely certain this house belongs to you?"
+    ]
+   ],
+   "place": "dining"
+  },
+  {
+   "id": "s53",
+   "chars": [
+    "victoria"
+   ],
+   "image": "Close-up of Victoria, a flicker of fear behind the scoff.",
+   "lines": [
+    [
+     "VICTORIA",
+     "[scoffs, too quickly] Of course it does."
+    ],
+    [
+     "EMMA",
+     "[calm] Then I hope you have the paperwork."
+    ]
+   ],
+   "place": "dining",
+   "sfx": [
+    [
+     "Music cuts out, a deep cinematic boom",
+     3.0,
+     0.45,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s54",
+   "chars": [
+    "emma"
+   ],
+   "image": "Emma in her coat walking out through the mansion's grand front doors into the cold dark rain.",
+   "lines": [
+    [
+     "VICTORIA",
+     "[calling after her] Your ten minutes are almost up!"
+    ],
+    [
+     "EMMA",
+     "[not turning around] Keep your ten minutes."
+    ]
+   ],
+   "place": "dining",
+   "sfx": [
+    [
+     "Heavy front door slamming, rain outside",
+     2.0,
+     0.5,
+     "end"
+    ]
+   ],
+   "motion": "she walks out the front doors into the rain without looking back"
+  },
+  {
+   "id": "s55",
+   "chars": [
+    "emma"
+   ],
+   "image": "Emma in her car at a gas station in pouring rain, mascara running, gripping the steering wheel.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Emma made it as far as a gas station two miles away. Then she couldn't drive anymore."
+    ],
+    [
+     "EMMA",
+     "[crying, to herself] Come on, Ryan. Call me. Tell me you're sorry."
+    ]
+   ],
+   "place": "car",
+   "cut": true,
+   "sfx": [
+    [
+     "Heavy rain on a car roof, engine idling",
+     4.0,
+     0.35,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s56",
+   "chars": [
+    "emma"
+   ],
+   "image": "Emma grabbing her buzzing phone off the passenger seat.",
+   "lines": [
+    [
+     "EMMA",
+     "[hopeful] Ryan?"
+    ],
+    [
+     "BROOKS~phone",
+     "[calm, gravelly] Emma? It's Martin Brooks. Your grandmother's attorney."
+    ]
+   ],
+   "place": "car",
+   "sfx": [
+    [
+     "Phone vibrating on a seat",
+     1.5,
+     0.4,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s57",
+   "chars": [
+    "brooks"
+   ],
+   "image": "Mr. Brooks at his desk late at night, lamp on, phone to his ear, a thick file open.",
+   "lines": [
+    [
+     "EMMA",
+     "[confused] Mr. Brooks?"
+    ],
+    [
+     "BROOKS",
+     "[apologetic] I'm sorry to call on Thanksgiving. But we have a serious problem. The property at 18 Ashford Lane."
+    ],
+    [
+     "EMMA",
+     "[thrown] Victoria's house?"
+    ]
+   ],
+   "place": "office"
+  },
+  {
+   "id": "s58",
+   "chars": [
+    "brooks"
+   ],
+   "image": "Close-up of Mr. Brooks, grave.",
+   "lines": [
+    [
+     "BROOKS",
+     "[measured] Emma... that house belongs to your grandmother's family trust. It has for twelve years."
+    ]
+   ],
+   "place": "office",
+   "sfx": [
+    [
+     "Thunder rolling",
+     3.0,
+     0.45,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s59",
+   "chars": [
+    "emma"
+   ],
+   "image": "Emma frozen in the car, rain streaming down the windshield, her face lit by neon.",
+   "lines": [
+    [
+     "EMMA",
+     "[stunned] What? But Victoria says..."
+    ],
+    [
+     "BROOKS~phone",
+     "Victoria has an occupancy agreement. She lives there. She doesn't own it."
+    ]
+   ],
+   "place": "car",
+   "motion": "rain streams down the windshield as she sits completely still"
+  },
+  {
+   "id": "s60",
+   "chars": [
+    "emma"
+   ],
+   "image": "Emma pressing her hand against her forehead.",
+   "lines": [
+    [
+     "EMMA",
+     "[slowly] And you're telling me this tonight because...?"
+    ],
+    [
+     "BROOKS~phone",
+     "[grave] Because someone tried to use that house as collateral for a three-million-dollar loan."
+    ]
+   ],
+   "place": "car"
+  },
+  {
+   "id": "s61",
+   "chars": [
+    "emma"
+   ],
+   "image": "Close-up of Emma's eyes hardening.",
+   "lines": [
+    [
+     "EMMA",
+     "[cold, certain] Ryan."
+    ],
+    [
+     "BROOKS~phone",
+     "[careful] Come to my office in the morning. First, we protect the trust. Then we find out exactly who signed what."
+    ]
+   ],
+   "place": "car",
+   "sfx": [
+    [
+     "Deep dramatic impact",
+     2.5,
+     0.45,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s62",
+   "chars": [
+    "brooks",
+    "emma"
+   ],
+   "image": "Next morning: Mr. Brooks opening a thick folder across his desk to Emma.",
+   "lines": [
+    [
+     "NARRATOR",
+     "The next morning."
+    ],
+    [
+     "BROOKS",
+     "Your grandmother bought that house fifteen years ago. After Victoria's family lost almost everything."
+    ],
+    [
+     "EMMA",
+     "[shocked] Grandma knew Victoria?"
+    ],
+    [
+     "BROOKS",
+     "[nodding] Very well."
+    ]
+   ],
+   "place": "office",
+   "cut": true,
+   "sfx": [
+    [
+     "Quiet office, folder opening, papers rustling",
+     3.0,
+     0.25,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s63",
+   "chars": [
+    "emma"
+   ],
+   "image": "Emma shaking her head, overwhelmed.",
+   "lines": [
+    [
+     "EMMA",
+     "Why didn't she ever tell me?"
+    ],
+    [
+     "BROOKS",
+     "[gentle] She wanted you to build your own life. Without the weight of other people's expectations."
+    ]
+   ],
+   "place": "office"
+  },
+  {
+   "id": "s64",
+   "chars": [],
+   "image": "Close-up of an appraisal document and a photo of the Connecticut mansion clipped to it, the printed text soft and unreadable.",
+   "lines": [
+    [
+     "EMMA",
+     "How much is the house worth?"
+    ],
+    [
+     "BROOKS",
+     "The last appraisal? About six million dollars. [pause] And it's one of eleven properties in the trust."
+    ]
+   ],
+   "place": "office"
+  },
+  {
+   "id": "s65",
+   "chars": [
+    "emma"
+   ],
+   "image": "Emma sitting back, stunned, almost laughing.",
+   "lines": [
+    [
+     "EMMA",
+     "[a stunned laugh] Eleven. [pause] Victoria spent four years calling me poor."
+    ],
+    [
+     "BROOKS",
+     "[dry] She knew she didn't own that house."
+    ],
+    [
+     "EMMA",
+     "Did she know about me?"
+    ]
+   ],
+   "place": "office"
+  },
+  {
+   "id": "s66",
+   "chars": [
+    "brooks"
+   ],
+   "image": "Mr. Brooks shaking his head slowly.",
+   "lines": [
+    [
+     "BROOKS",
+     "I don't believe she knew you were the primary beneficiary."
+    ],
+    [
+     "EMMA",
+     "[slowly] So the woman who threw me out of her mansion..."
+    ],
+    [
+     "BROOKS",
+     "[evenly] Was living in a house that belongs to your grandmother's trust."
+    ]
+   ],
+   "place": "office",
+   "sfx": [
+    [
+     "Long tense silence, a clock ticking",
+     2.5,
+     0.25,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s67",
+   "chars": [
+    "emma"
+   ],
+   "image": "Close-up of Emma, the hurt in her eyes turning to resolve.",
+   "lines": [
+    [
+     "EMMA",
+     "[firm] Mr. Brooks? [pause] I want to see the loan documents."
+    ]
+   ],
+   "place": "office"
+  },
+  {
+   "id": "s68",
+   "chars": [],
+   "image": "Close-up of loan documents slid across the desk, two signature lines visible, the printed text soft and unreadable.",
+   "lines": [
+    [
+     "EMMA",
+     "That's Ryan's company. Parker Holdings. And that's his signature."
+    ],
+    [
+     "BROOKS",
+     "Correct."
+    ]
+   ],
+   "place": "office",
+   "cut": true,
+   "sfx": [
+    [
+     "Paper sliding across a wooden desk",
+     1.5,
+     0.45,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s69",
+   "chars": [
+    "emma",
+    "brooks"
+   ],
+   "image": "Emma pointing at the second signature; Brooks leaning back.",
+   "lines": [
+    [
+     "EMMA",
+     "And who signed here? The trustee line."
+    ],
+    [
+     "BROOKS",
+     "[dry] Supposedly, me."
+    ],
+    [
+     "EMMA",
+     "Supposedly?"
+    ],
+    [
+     "BROOKS",
+     "[flat] I've never seen this document in my life."
+    ]
+   ],
+   "place": "office"
+  },
+  {
+   "id": "s70",
+   "chars": [
+    "emma"
+   ],
+   "image": "Emma pulling out her phone, scrolling to a photo.",
+   "lines": [
+    [
+     "EMMA",
+     "[quickly] Three weeks ago Ryan tried to make me sign something. I said no. [pause] But I took a picture."
+    ]
+   ],
+   "place": "office",
+   "sfx": [
+    [
+     "Phone unlocking",
+     1.0,
+     0.35,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s71",
+   "chars": [
+    "brooks"
+   ],
+   "image": "Mr. Brooks zooming in on Emma's phone, eyebrows rising.",
+   "lines": [
+    [
+     "BROOKS",
+     "[slowly] Interesting. These name a second borrower. Another two million dollars."
+    ],
+    [
+     "EMMA",
+     "[stunned] Five million dollars?"
+    ],
+    [
+     "BROOKS",
+     "Using the same house. Twice."
+    ]
+   ],
+   "place": "office",
+   "sfx": [
+    [
+     "Low tense musical sting",
+     2.0,
+     0.35,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s72",
+   "chars": [
+    "emma"
+   ],
+   "image": "Emma staring out the rainy window, betrayed.",
+   "lines": [
+    [
+     "EMMA",
+     "[hollow] Ryan told me everything was fine."
+    ],
+    [
+     "BROOKS",
+     "[grim] Then your husband has a great deal of explaining to do."
+    ]
+   ],
+   "place": "office"
+  },
+  {
+   "id": "s73",
+   "chars": [
+    "emma"
+   ],
+   "image": "Emma outside the law office building in the rain, answering her phone.",
+   "lines": [
+    [
+     "NARRATOR",
+     "That afternoon, Ryan finally called."
+    ],
+    [
+     "RYAN~phone",
+     "[annoyed] Emma, where are you?"
+    ],
+    [
+     "EMMA",
+     "[dry] Somewhere you can't throw me out."
+    ]
+   ],
+   "place": "office",
+   "cut": true,
+   "sfx": [
+    [
+     "Rain on a sidewalk, a phone ringing",
+     2.0,
+     0.3,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s74",
+   "chars": [
+    "ryan"
+   ],
+   "image": "Ryan pacing in the mansion study with his phone.",
+   "lines": [
+    [
+     "RYAN",
+     "[sarcastic] Very funny. Listen, we need to talk about the documents."
+    ],
+    [
+     "EMMA~phone",
+     "[pointed] Which ones?"
+    ]
+   ],
+   "place": "mansion_study",
+   "sfx": [
+    [
+     "A beat of silence on a phone line",
+     1.5,
+     0.2,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s75",
+   "chars": [
+    "ryan"
+   ],
+   "image": "Ryan stopping dead, his face draining.",
+   "lines": [
+    [
+     "RYAN",
+     "[careful] What do you mean?"
+    ],
+    [
+     "EMMA~phone",
+     "The three-million-dollar loan? [pause] Or the other two million?"
+    ],
+    [
+     "RYAN",
+     "[sharp] Who told you about that?"
+    ]
+   ],
+   "place": "mansion_study"
+  },
+  {
+   "id": "s76",
+   "chars": [
+    "emma"
+   ],
+   "image": "Emma under an awning in the rain, phone at her ear, cold and composed.",
+   "lines": [
+    [
+     "EMMA",
+     "[quiet] So there is another loan."
+    ],
+    [
+     "RYAN~phone",
+     "[controlled anger] Emma, listen carefully. Those are confidential business matters."
+    ],
+    [
+     "EMMA",
+     "You tried to make me sign them."
+    ]
+   ]
+  },
+  {
+   "id": "s77",
+   "chars": [
+    "ryan"
+   ],
+   "image": "Ryan shouting into the phone, red-faced.",
+   "lines": [
+    [
+     "RYAN",
+     "[shouting] Because you're my wife!"
+    ],
+    [
+     "EMMA~phone",
+     "[calm] Not for much longer."
+    ],
+    [
+     "RYAN",
+     "[scoffs] Don't be dramatic."
+    ]
+   ],
+   "place": "mansion_study"
+  },
+  {
+   "id": "s78",
+   "chars": [
+    "emma"
+   ],
+   "image": "Emma with the phone, eyes steady, rain behind her.",
+   "lines": [
+    [
+     "EMMA",
+     "I'm calling a divorce attorney."
+    ],
+    [
+     "RYAN~phone",
+     "[threatening, low] If you do that, I'll make sure you walk away with nothing."
+    ],
+    [
+     "EMMA",
+     "[almost amused] You already tried that on Thanksgiving."
+    ]
+   ]
+  },
+  {
+   "id": "s79",
+   "chars": [
+    "ryan"
+   ],
+   "image": "Ryan gripping the phone, sneering.",
+   "lines": [
+    [
+     "RYAN",
+     "[sneering] You think you're so clever?"
+    ],
+    [
+     "EMMA~phone",
+     "[steady] No, Ryan. [pause] I think I'm finally paying attention."
+    ]
+   ],
+   "place": "mansion_study",
+   "sfx": [
+    [
+     "Call disconnecting",
+     1.0,
+     0.4,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s80",
+   "chars": [
+    "ryan",
+    "victoria:home"
+   ],
+   "image": "Ryan bursting into the study and shutting the door; Victoria looking up from her desk.",
+   "lines": [
+    [
+     "RYAN",
+     "[panicked] Mom. Emma knows about the loans."
+    ],
+    [
+     "VICTORIA",
+     "[sharp] How?"
+    ],
+    [
+     "RYAN",
+     "Martin Brooks called her."
+    ]
+   ],
+   "place": "mansion_study",
+   "cut": true,
+   "sfx": [
+    [
+     "A door shutting firmly",
+     1.0,
+     0.45,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s81",
+   "chars": [
+    "victoria:home"
+   ],
+   "image": "Victoria rising from her desk, eyes narrowing.",
+   "lines": [
+    [
+     "VICTORIA",
+     "[bitter] That man has always been a problem."
+    ],
+    [
+     "RYAN",
+     "We need another way to get the money."
+    ],
+    [
+     "VICTORIA",
+     "[slowly] You told me the paperwork was valid."
+    ]
+   ],
+   "place": "mansion_study"
+  },
+  {
+   "id": "s82",
+   "chars": [
+    "ryan"
+   ],
+   "image": "Ryan unable to meet his mother's eyes.",
+   "lines": [
+    [
+     "RYAN",
+     "[evasive] It was supposed to be. Someone questioned the trustee authorization."
+    ],
+    [
+     "VICTORIA",
+     "[quietly, dangerous] Ryan. Did you forge that signature?"
+    ]
+   ],
+   "place": "mansion_study",
+   "sfx": [
+    [
+     "Silence, a clock ticking",
+     2.5,
+     0.25,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s83",
+   "chars": [
+    "ryan"
+   ],
+   "image": "Close-up of Ryan, sweating, choosing his words.",
+   "lines": [
+    [
+     "RYAN",
+     "[evasive] I had Trent prepare the documents."
+    ],
+    [
+     "VICTORIA",
+     "[sharp] That's not what I asked."
+    ],
+    [
+     "RYAN",
+     "[weak] I didn't personally sign his name."
+    ]
+   ],
+   "place": "mansion_study"
+  },
+  {
+   "id": "s84",
+   "chars": [
+    "victoria:home"
+   ],
+   "image": "Victoria sinking into her chair, a hand over her mouth.",
+   "lines": [
+    [
+     "VICTORIA",
+     "[horrified whisper] Oh, God."
+    ],
+    [
+     "RYAN",
+     "[desperate] Mom, we need the money."
+    ],
+    [
+     "VICTORIA",
+     "[shaking] How much trouble are we in?"
+    ]
+   ],
+   "place": "mansion_study"
+  },
+  {
+   "id": "s85",
+   "chars": [
+    "ryan"
+   ],
+   "image": "Ryan leaning on the desk, defeated.",
+   "lines": [
+    [
+     "RYAN",
+     "[hollow] More than you know. [pause] The company could collapse before Christmas."
+    ]
+   ],
+   "place": "mansion_study",
+   "sfx": [
+    [
+     "Low dramatic musical sting",
+     2.5,
+     0.4,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s86",
+   "chars": [
+    "grace",
+    "victoria:home"
+   ],
+   "image": "Late at night: Grace confronting Victoria by the fireplace in the formal living room.",
+   "lines": [
+    [
+     "GRACE",
+     "[direct] Mom. Why did you tell everyone you owned this house?"
+    ],
+    [
+     "VICTORIA",
+     "[defensive] Because it's our home."
+    ],
+    [
+     "GRACE",
+     "[sharp] That's not the same thing."
+    ]
+   ],
+   "place": "living",
+   "cut": true,
+   "sfx": [
+    [
+     "Crackling fireplace in a large quiet room",
+     4.0,
+     0.3,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s87",
+   "chars": [
+    "victoria:home"
+   ],
+   "image": "Victoria staring into the fire, her composure cracking.",
+   "lines": [
+    [
+     "VICTORIA",
+     "[tired] You wouldn't understand."
+    ],
+    [
+     "GRACE",
+     "Try me."
+    ],
+    [
+     "VICTORIA",
+     "[quietly] Your father lost almost everything. Fifteen years ago. We were weeks from losing the house."
+    ]
+   ],
+   "place": "living",
+   "motion": "firelight flickers across her face as she stares into the flames"
+  },
+  {
+   "id": "s88",
+   "chars": [
+    "grace"
+   ],
+   "image": "Grace stunned, sitting down slowly on the arm of a chair.",
+   "lines": [
+    [
+     "GRACE",
+     "[stunned] What?"
+    ],
+    [
+     "VICTORIA",
+     "[barely audible] Margaret Ashford helped us."
+    ],
+    [
+     "GRACE",
+     "[slowly] Emma's grandmother?"
+    ]
+   ],
+   "place": "living"
+  },
+  {
+   "id": "s89",
+   "chars": [
+    "victoria:home"
+   ],
+   "image": "Close-up of Victoria, ashamed, twisting her pearls.",
+   "lines": [
+    [
+     "VICTORIA",
+     "She had her trust buy the house. And she let us stay. [pause] For twelve years."
+    ],
+    [
+     "GRACE",
+     "[incredulous] And you never told Emma?"
+    ],
+    [
+     "VICTORIA",
+     "[defensive] Why would I?"
+    ]
+   ],
+   "place": "living"
+  },
+  {
+   "id": "s90",
+   "chars": [
+    "grace"
+   ],
+   "image": "Grace standing up, furious.",
+   "lines": [
+    [
+     "GRACE",
+     "[angry] Because you spent four years treating her like she was beneath us!"
+    ],
+    [
+     "VICTORIA",
+     "[weak] I didn't know she was the beneficiary."
+    ],
+    [
+     "GRACE",
+     "[cold] That doesn't make it better."
+    ]
+   ],
+   "place": "living"
+  },
+  {
+   "id": "s91",
+   "chars": [
+    "grace",
+    "victoria:home"
+   ],
+   "image": "Grace at the doorway, turning back to her mother by the fire.",
+   "lines": [
+    [
+     "VICTORIA",
+     "[pleading] Grace, please."
+    ],
+    [
+     "GRACE",
+     "[quiet] You know what the worst part is? [pause] Emma would've helped you. Even if she'd never known about the house."
+    ]
+   ],
+   "place": "living",
+   "sfx": [
+    [
+     "Silence except the crackling fire",
+     3.0,
+     0.3,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s92",
+   "chars": [
+    "emma"
+   ],
+   "image": "Emma at a coffee shop window table, looking up in surprise as someone sits down.",
+   "lines": [
+    [
+     "EMMA",
+     "[surprised] Grace? I wasn't expecting you."
+    ],
+    [
+     "GRACE",
+     "[awkward, sincere] I owe you an apology."
+    ]
+   ],
+   "place": "coffee",
+   "cut": true,
+   "sfx": [
+    [
+     "Quiet coffee shop, rain outside, cups clinking",
+     4.0,
+     0.25,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s93",
+   "chars": [
+    "grace"
+   ],
+   "image": "Grace with both hands around a coffee cup, eyes down, ashamed.",
+   "lines": [
+    [
+     "EMMA",
+     "For what?"
+    ],
+    [
+     "GRACE",
+     "[quiet] For laughing when Mom insulted you. For not saying anything. For pretending it was normal."
+    ]
+   ],
+   "place": "coffee"
+  },
+  {
+   "id": "s94",
+   "chars": [
+    "emma"
+   ],
+   "image": "Emma softening, touched.",
+   "lines": [
+    [
+     "EMMA",
+     "[softly] Thank you."
+    ],
+    [
+     "GRACE",
+     "[leaning in] There's something else. Ryan knew Mom was going to throw you out."
+    ],
+    [
+     "EMMA",
+     "[tired] I figured."
+    ]
+   ],
+   "place": "coffee"
+  },
+  {
+   "id": "s95",
+   "chars": [
+    "grace"
+   ],
+   "image": "Grace leaning across the table, serious.",
+   "lines": [
+    [
+     "GRACE",
+     "No. I mean they planned it. Weeks before Thanksgiving. [pause] Ryan needed you scared enough to sign."
+    ],
+    [
+     "EMMA",
+     "[slowly] So the whole dinner was staged?"
+    ]
+   ],
+   "place": "coffee"
+  },
+  {
+   "id": "s96",
+   "chars": [
+    "grace",
+    "emma"
+   ],
+   "image": "The two women facing each other across the small table.",
+   "lines": [
+    [
+     "GRACE",
+     "I heard Mom say you had to believe you were losing everything."
+    ],
+    [
+     "EMMA",
+     "[quiet] And Ryan agreed?"
+    ],
+    [
+     "GRACE",
+     "[softly] He didn't stop her."
+    ]
+   ],
+   "place": "coffee",
+   "sfx": [
+    [
+     "A coffee cup set down on a saucer",
+     1.0,
+     0.4,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s97",
+   "chars": [
+    "emma"
+   ],
+   "image": "Close-up of Emma, calm resolve settling over her face.",
+   "lines": [
+    [
+     "EMMA",
+     "[steady] Thank you for telling me."
+    ],
+    [
+     "GRACE",
+     "What are you going to do?"
+    ],
+    [
+     "EMMA",
+     "[quiet, final] I'm going to stop protecting him."
+    ]
+   ],
+   "place": "coffee"
+  },
+  {
+   "id": "s98",
+   "chars": [
+    "victoria:home"
+   ],
+   "image": "Victoria opening the mansion's front door to find Emma standing there in her coat.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Four days after Thanksgiving, the doorbell rang at 18 Ashford Lane."
+    ],
+    [
+     "VICTORIA",
+     "[startled] Emma? What are you doing here?"
+    ],
+    [
+     "EMMA",
+     "[calm] Hello, Victoria. I brought someone."
+    ]
+   ],
+   "place": "living",
+   "cut": true,
+   "sfx": [
+    [
+     "Doorbell chime echoing in a large house",
+     2.0,
+     0.4,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s99",
+   "chars": [
+    "brooks",
+    "ryan"
+   ],
+   "image": "Mr. Brooks stepping into the foyer with a briefcase; Ryan coming down the staircase, freezing.",
+   "lines": [
+    [
+     "BROOKS",
+     "[pleasant] Good afternoon."
+    ],
+    [
+     "RYAN",
+     "[alarmed] Martin Brooks?"
+    ],
+    [
+     "BROOKS",
+     "We need to discuss this property. And some disputed financing documents."
+    ]
+   ],
+   "place": "living"
+  },
+  {
+   "id": "s100",
+   "chars": [
+    "victoria:home"
+   ],
+   "image": "Victoria drawing herself up, outraged.",
+   "lines": [
+    [
+     "VICTORIA",
+     "[outraged] This is my home!"
+    ],
+    [
+     "EMMA",
+     "[evenly] Your home, yes. [pause] Your property? No."
+    ]
+   ],
+   "place": "living"
+  },
+  {
+   "id": "s101",
+   "chars": [
+    "brooks"
+   ],
+   "image": "Mr. Brooks laying a copy of a deed on the coffee table.",
+   "lines": [
+    [
+     "BROOKS",
+     "[calm] The Ashford Family Trust holds the deed."
+    ],
+    [
+     "VICTORIA",
+     "[shrill] I've lived here for twelve years!"
+    ],
+    [
+     "BROOKS",
+     "Under an occupancy agreement."
+    ]
+   ],
+   "place": "living",
+   "sfx": [
+    [
+     "Papers placed on a table",
+     1.0,
+     0.4,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s102",
+   "chars": [
+    "ryan",
+    "emma"
+   ],
+   "image": "Ryan stepping toward Emma, angry; Emma unmoved.",
+   "lines": [
+    [
+     "RYAN",
+     "[angry] Emma, this is ridiculous."
+    ],
+    [
+     "EMMA",
+     "[cold] What's ridiculous is trying to borrow five million dollars using documents you wouldn't let me read."
+    ],
+    [
+     "RYAN",
+     "[shouting] You don't understand the business!"
+    ]
+   ],
+   "place": "living"
+  },
+  {
+   "id": "s103",
+   "chars": [
+    "emma"
+   ],
+   "image": "Emma turning to face the whole room, arms crossed.",
+   "lines": [
+    [
+     "EMMA",
+     "[calm] Then explain it. To everyone."
+    ]
+   ],
+   "place": "living",
+   "sfx": [
+    [
+     "Heavy silence in a large room",
+     2.5,
+     0.25,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s104",
+   "chars": [
+    "emma",
+    "ryan"
+   ],
+   "image": "Ryan with his mouth open, nothing coming out; Emma waiting.",
+   "lines": [
+    [
+     "EMMA",
+     "[quiet, pointed] Go ahead, Ryan. [pause] We're listening."
+    ]
+   ],
+   "place": "living"
+  },
+  {
+   "id": "s105",
+   "chars": [
+    "victoria:home"
+   ],
+   "image": "Victoria turning to her son, her voice shaking.",
+   "lines": [
+    [
+     "VICTORIA",
+     "[shaking] Ryan. Tell me the truth."
+    ],
+    [
+     "RYAN",
+     "[through his teeth] Mom, not now."
+    ],
+    [
+     "VICTORIA",
+     "[louder] Did you submit those documents?"
+    ]
+   ],
+   "place": "living",
+   "cut": true
+  },
+  {
+   "id": "s106",
+   "chars": [
+    "ryan"
+   ],
+   "image": "Ryan cornered by the fireplace, hands raised.",
+   "lines": [
+    [
+     "RYAN",
+     "[defensive] Trent handled the paperwork."
+    ],
+    [
+     "EMMA",
+     "[sharp] With Mr. Brooks's signature on it?"
+    ],
+    [
+     "RYAN",
+     "[shouting] I didn't forge anything!"
+    ]
+   ],
+   "place": "living"
+  },
+  {
+   "id": "s107",
+   "chars": [
+    "brooks"
+   ],
+   "image": "Mr. Brooks calmly checking his phone, then looking up.",
+   "lines": [
+    [
+     "BROOKS",
+     "[dry] Interesting you'd say that. Trent called the lender this morning. [pause] He told them you asked him to sign my name."
+    ]
+   ],
+   "place": "living",
+   "sfx": [
+    [
+     "Deep cinematic boom",
+     3.0,
+     0.45,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s108",
+   "chars": [
+    "ryan"
+   ],
+   "image": "Close-up of Ryan's face collapsing, color draining.",
+   "lines": [
+    [
+     "RYAN",
+     "[hollow] He... what?"
+    ]
+   ],
+   "place": "living"
+  },
+  {
+   "id": "s109",
+   "chars": [
+    "grace"
+   ],
+   "image": "Grace stepping forward from the doorway.",
+   "lines": [
+    [
+     "GRACE",
+     "[cold] Ryan, you told me Emma was stealing money from the company."
+    ],
+    [
+     "RYAN",
+     "[snapping] Grace, stay out of this!"
+    ],
+    [
+     "EMMA",
+     "[stunned] You told her what?"
+    ]
+   ],
+   "place": "living"
+  },
+  {
+   "id": "s110",
+   "chars": [
+    "emma"
+   ],
+   "image": "Emma turning slowly to Ryan, hurt and furious.",
+   "lines": [
+    [
+     "EMMA",
+     "[slow fury] I worked for you for almost a year without a real salary."
+    ],
+    [
+     "RYAN",
+     "[defensive] We were married!"
+    ],
+    [
+     "EMMA",
+     "[steel] That didn't make my work free."
+    ]
+   ],
+   "place": "living"
+  },
+  {
+   "id": "s111",
+   "chars": [
+    "victoria:home"
+   ],
+   "image": "Victoria gripping the back of a chair, looking at her son like a stranger.",
+   "lines": [
+    [
+     "VICTORIA",
+     "[quietly] Ryan... how much of this is true?"
+    ],
+    [
+     "RYAN",
+     "[desperate] I was trying to save the business!"
+    ],
+    [
+     "EMMA",
+     "By lying to everyone."
+    ]
+   ],
+   "place": "living"
+  },
+  {
+   "id": "s112",
+   "chars": [
+    "emma"
+   ],
+   "image": "Close-up of Emma, calm and devastating.",
+   "lines": [
+    [
+     "RYAN",
+     "[shouting] I had no choice!"
+    ],
+    [
+     "EMMA",
+     "[quiet] You had plenty of choices, Ryan. [pause] You just kept choosing the ones that hurt other people."
+    ]
+   ],
+   "place": "living",
+   "sfx": [
+    [
+     "Low musical impact",
+     2.5,
+     0.4,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s113",
+   "chars": [
+    "victoria:home"
+   ],
+   "image": "Victoria sitting down slowly on the sofa, suddenly old and small.",
+   "lines": [
+    [
+     "NARRATOR",
+     "For the first time in four years, Victoria Parker had nothing to say. [pause] Almost nothing."
+    ],
+    [
+     "VICTORIA",
+     "[small voice] Emma..."
+    ]
+   ],
+   "place": "living",
+   "cut": true,
+   "sfx": [
+    [
+     "Quiet room, fire crackling softly",
+     3.0,
+     0.25,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s114",
+   "chars": [
+    "victoria:home",
+    "emma"
+   ],
+   "image": "Victoria looking up at Emma standing before her.",
+   "lines": [
+    [
+     "EMMA",
+     "Yes?"
+    ],
+    [
+     "VICTORIA",
+     "[humbled] I may have misjudged you."
+    ],
+    [
+     "EMMA",
+     "[dry] You think?"
+    ]
+   ],
+   "place": "living"
+  },
+  {
+   "id": "s115",
+   "chars": [
+    "emma"
+   ],
+   "image": "Emma looking down at Victoria, hurt in her eyes.",
+   "lines": [
+    [
+     "VICTORIA",
+     "I didn't know about the trust."
+    ],
+    [
+     "EMMA",
+     "[quiet] You knew Grandma saved your family."
+    ],
+    [
+     "VICTORIA",
+     "[whisper] Yes."
+    ],
+    [
+     "EMMA",
+     "And you still called my family worthless."
+    ]
+   ],
+   "place": "living"
+  },
+  {
+   "id": "s116",
+   "chars": [
+    "victoria:home"
+   ],
+   "image": "Close-up of Victoria, tears in her eyes, finally honest.",
+   "lines": [
+    [
+     "VICTORIA",
+     "[breaking] I was wrong."
+    ],
+    [
+     "EMMA",
+     "[softly] That's the first honest thing you've said to me in four years."
+    ]
+   ],
+   "place": "living",
+   "sfx": [
+    [
+     "Silence, a single piano note",
+     2.0,
+     0.3,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s117",
+   "chars": [
+    "victoria:home"
+   ],
+   "image": "Victoria clutching her pearls, frightened.",
+   "lines": [
+    [
+     "VICTORIA",
+     "[pleading] Will you forgive me?"
+    ],
+    [
+     "EMMA",
+     "I don't know."
+    ],
+    [
+     "VICTORIA",
+     "[afraid] What happens to the house?"
+    ]
+   ],
+   "place": "living"
+  },
+  {
+   "id": "s118",
+   "chars": [
+    "emma"
+   ],
+   "image": "Emma standing straight, composed and fair.",
+   "lines": [
+    [
+     "EMMA",
+     "[even] The trustees will decide. [pause] I'm not going to throw you into the street, Victoria. But I'm not going to protect you from what you did, either."
+    ]
+   ],
+   "place": "living"
+  },
+  {
+   "id": "s119",
+   "chars": [
+    "victoria:home",
+    "emma"
+   ],
+   "image": "Victoria reaching out a trembling hand; Emma not taking it.",
+   "lines": [
+    [
+     "VICTORIA",
+     "[whisper] Please."
+    ],
+    [
+     "EMMA",
+     "[quiet] Funny. That's what I said on Thanksgiving. [pause] And nobody listened."
+    ]
+   ],
+   "place": "living"
+  },
+  {
+   "id": "s120",
+   "chars": [
+    "ryan"
+   ],
+   "image": "Ryan stepping toward Emma, desperate, reaching for her hands.",
+   "lines": [
+    [
+     "RYAN",
+     "[desperate, soft] Emma, please. We can fix this. Our marriage."
+    ],
+    [
+     "EMMA",
+     "No."
+    ],
+    [
+     "RYAN",
+     "[pleading] I love you."
+    ]
+   ],
+   "place": "living",
+   "cut": true
+  },
+  {
+   "id": "s121",
+   "chars": [
+    "emma"
+   ],
+   "image": "Emma pulling her hands away, calm.",
+   "lines": [
+    [
+     "EMMA",
+     "[calm] You loved having someone who'd do anything for you."
+    ],
+    [
+     "RYAN",
+     "That's not fair."
+    ],
+    [
+     "EMMA",
+     "[steel] Neither was what you did to me."
+    ]
+   ],
+   "place": "living"
+  },
+  {
+   "id": "s122",
+   "chars": [
+    "ryan"
+   ],
+   "image": "Ryan spreading his hands, broken.",
+   "lines": [
+    [
+     "RYAN",
+     "[broken] What do you want?"
+    ],
+    [
+     "EMMA",
+     "A divorce. [pause] And a full accounting of every dollar that went through your company."
+    ]
+   ],
+   "place": "living"
+  },
+  {
+   "id": "s123",
+   "chars": [
+    "ryan",
+    "brooks"
+   ],
+   "image": "Ryan turning red; Mr. Brooks stepping forward with a folder.",
+   "lines": [
+    [
+     "RYAN",
+     "[furious] You can't demand that!"
+    ],
+    [
+     "BROOKS",
+     "[calm] She doesn't have to. The lender's fraud unit already has. And so does the state's attorney."
+    ]
+   ],
+   "place": "living"
+  },
+  {
+   "id": "s124",
+   "chars": [],
+   "image": "Close-up of divorce papers set down on the coffee table next to the deed.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Emma placed a single envelope on the table. Divorce papers. Already signed. [pause] Her signature. The only one in this story that was real."
+    ]
+   ],
+   "place": "living",
+   "sfx": [
+    [
+     "An envelope set down on a table",
+     1.0,
+     0.45,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s125",
+   "chars": [
+    "ryan"
+   ],
+   "image": "Ryan staring at the papers, shaking.",
+   "lines": [
+    [
+     "RYAN",
+     "[shaking] You're destroying my life!"
+    ],
+    [
+     "EMMA",
+     "[calm] No, Ryan. You made those decisions. [pause] I'm just refusing to pay for them."
+    ]
+   ],
+   "place": "living"
+  },
+  {
+   "id": "s126",
+   "chars": [
+    "emma"
+   ],
+   "image": "Emma buttoning her coat at the front door, looking back once.",
+   "lines": [
+    [
+     "EMMA",
+     "[quiet] You told me to leave on Thanksgiving. Remember?"
+    ],
+    [
+     "RYAN",
+     "[whisper] Emma, please."
+    ],
+    [
+     "EMMA",
+     "[final] This time, I'm leaving because I choose to."
+    ]
+   ],
+   "place": "living",
+   "sfx": [
+    [
+     "Footsteps on marble, a heavy door closing",
+     2.5,
+     0.45,
+     "end"
+    ]
+   ],
+   "motion": "she turns and walks out through the front door, closing it behind her"
+  },
+  {
+   "id": "s127",
+   "chars": [
+    "ryan",
+    "victoria:home",
+    "grace"
+   ],
+   "image": "Wide shot: Ryan staring at the papers, Victoria on the sofa, Grace looking at the empty doorway, the fire dying.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[slow] Ryan stared at the papers. Victoria stared at the deed. And Grace looked at the empty doorway. [pause] For the first time, the Parker family had run out of people to blame."
+    ]
+   ],
+   "place": "living",
+   "sfx": [
+    [
+     "A low sustained musical chord",
+     3.0,
+     0.3,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s128",
+   "chars": [
+    "emma:fall",
+    "grace"
+   ],
+   "image": "One year later: Emma and Grace laughing in a cozy small kitchen, a homemade turkey and pies on the counter.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[warm] One year later."
+    ],
+    [
+     "GRACE",
+     "[delighted] Emma, this smells incredible."
+    ],
+    [
+     "EMMA",
+     "[smiling] It's Grandma's recipe."
+    ]
+   ],
+   "place": "grandma_house",
+   "cut": true,
+   "sfx": [
+    [
+     "Warm kitchen sounds, soft acoustic Thanksgiving music, friends chatting",
+     4.0,
+     0.3,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s129",
+   "chars": [
+    "grace"
+   ],
+   "image": "Grace pointing at a pecan pie, grinning.",
+   "lines": [
+    [
+     "GRACE",
+     "[teasing] You made the pecan pie? [laughs] Mom used to complain about your pies."
+    ],
+    [
+     "EMMA",
+     "[dry] Your mother complained about everything."
+    ],
+    [
+     "GRACE",
+     "[laughing] Fair point."
+    ]
+   ],
+   "place": "grandma_house",
+   "sfx": [
+    [
+     "Two women laughing",
+     2.0,
+     0.35,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s130",
+   "chars": [
+    "emma:fall"
+   ],
+   "image": "Wide shot of the small dining table with a few friends, candles and homemade food, autumn leaves outside.",
+   "lines": [
+    [
+     "NARRATOR",
+     "One year after the worst Thanksgiving of her life, Emma was hosting dinner in her grandmother's little house. No chandeliers. No marble. Just people who were glad she was there."
+    ]
+   ],
+   "place": "grandma_house",
+   "motion": "candles flicker as friends pass dishes around the small table"
+  },
+  {
+   "id": "s131",
+   "chars": [
+    "ryan"
+   ],
+   "image": "Ryan in a cheap suit leaving a courthouse alone, head down, gray winter day.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Ryan pleaded guilty to bank fraud. Trent's testimony saw to that. His company is gone. He'll spend the next three years in federal prison."
+    ]
+   ],
+   "sfx": [
+    [
+     "Courthouse steps, cold wind, a car door",
+     3.0,
+     0.3,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s132",
+   "chars": [
+    "victoria:home"
+   ],
+   "image": "Victoria alone in a small plain rented apartment, unpacking boxes, no chandelier, no guests.",
+   "lines": [
+    [
+     "NARRATOR",
+     "Victoria moved out of 18 Ashford Lane in January. She rents a two-bedroom condo now. [pause] Not one of her fourteen Thanksgiving guests has called."
+    ]
+   ]
+  },
+  {
+   "id": "s133",
+   "chars": [
+    "emma:fall"
+   ],
+   "image": "Emma opening the door to Mr. Brooks holding a small wooden box.",
+   "lines": [
+    [
+     "NARRATOR",
+     "And Emma went back to work as an interior designer."
+    ],
+    [
+     "EMMA",
+     "[warm] That must be Mr. Brooks. Come in!"
+    ],
+    [
+     "BROOKS",
+     "[gentle] Happy Thanksgiving, Emma. I brought something your grandmother wanted you to have."
+    ]
+   ],
+   "place": "grandma_house",
+   "sfx": [
+    [
+     "Doorbell, a door opening, cold wind",
+     2.0,
+     0.35,
+     "start"
+    ]
+   ]
+  },
+  {
+   "id": "s134",
+   "chars": [],
+   "image": "Close-up of an old cassette recorder in a wooden box on the table, a hand pressing play.",
+   "lines": [
+    [
+     "EMMA",
+     "What is it?"
+    ],
+    [
+     "BROOKS",
+     "[softly] A recording."
+    ]
+   ],
+   "place": "grandma_house",
+   "sfx": [
+    [
+     "An old recorder clicking on, soft tape hiss",
+     2.0,
+     0.4,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s135",
+   "chars": [
+    "margaret"
+   ],
+   "image": "A warm golden memory: Margaret in her armchair years ago, smiling, speaking to someone off camera.",
+   "lines": [
+    [
+     "MARGARET",
+     "[warm, slow] My darling Emma... If you're listening to this, I hope you've finally learned something. [pause] You can be kind without being weak. You can forgive without forgetting."
+    ]
+   ],
+   "place": "grandma_house",
+   "motion": "the old woman smiles gently and tilts her head as she speaks"
+  },
+  {
+   "id": "s136",
+   "chars": [
+    "emma:fall"
+   ],
+   "image": "Close-up of Emma listening, tears in her eyes, a hand over her heart.",
+   "lines": [
+    [
+     "MARGARET",
+     "[tender] And you can love someone without letting them destroy you. [pause] Remember, sweetheart. A house is just walls and a roof. [softly] A home is where you are loved."
+    ]
+   ],
+   "place": "grandma_house",
+   "sfx": [
+    [
+     "Recording clicking off",
+     1.0,
+     0.35,
+     "end"
+    ]
+   ]
+  },
+  {
+   "id": "s137",
+   "chars": [
+    "grace",
+    "emma:fall"
+   ],
+   "image": "Grace gently touching Emma's shoulder at the table.",
+   "lines": [
+    [
+     "GRACE",
+     "[softly] Emma? You okay?"
+    ],
+    [
+     "EMMA",
+     "[a small laugh through tears] Yeah. [pause] I think I finally am."
+    ]
+   ],
+   "place": "grandma_house"
+  },
+  {
+   "id": "s138",
+   "chars": [],
+   "image": "The small white-porched house at dusk, warm light in the windows, autumn leaves blowing across the lawn.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[reflective] Victoria spent years bragging about a mansion she didn't own. Ryan tried to save his business with money he had no right to borrow. Both of them treated Emma like she was worth nothing. [pause] But when the truth came out, the woman they threw away was the only one who walked away free."
+    ]
+   ],
+   "place": "grandma_house",
+   "motion": "autumn leaves drift across the lawn as the windows glow warm"
+  },
+  {
+   "id": "s139",
+   "chars": [
+    "emma:fall"
+   ],
+   "image": "Emma at the head of her small table raising a glass, friends smiling around her.",
+   "lines": [
+    [
+     "NARRATOR",
+     "[slow, final] Sometimes karma doesn't knock. [pause] Sometimes it waits until Thanksgiving... and lets you open the door yourself."
+    ],
+    [
+     "NARRATOR",
+     "[warm] This has been Karma Tales. Every betrayal has a price. And karma always collects."
+    ]
+   ],
+   "place": "grandma_house"
+  }
+ ],
+ "youtube": {
+  "title": "Mi suegra me corrió en Acción de Gracias. Se le olvidó un detalle.",
+  "description": "Frente a catorce invitados, Victoria se puso de pie en la cena de Acción de Gracias y le dio a su nuera diez minutos para largarse de su casa. Su esposo no dijo nada.\n\nPero antes de irse, Emma hizo una sola pregunta.\n\nKarma Tales en español: historias de venganza y giros inesperados donde quien hace trampa siempre paga.\n\nEsta historia es ficción. Cualquier parecido con personas o hechos reales es coincidencia. La narración y las imágenes fueron generadas con IA.\n\n#karmatales #suegra #telenovela #historiasdevenganza",
+  "tags": [
+   "karma tales",
+   "suegra",
+   "acción de gracias",
+   "historias de venganza",
+   "telenovela",
+   "nuera",
+   "traición familiar",
+   "giro inesperado",
+   "drama en español",
+   "audio drama"
+  ],
+  "category": "24",
+  "shorts_description": "Mira la historia completa en Karma Tales en Español.\n#shorts #karmatales #telenovela"
+ },
+ "thumbnail_file": "karma/es/ep04_thumb.jpg",
+ "shorts": []
+}
