@@ -146,6 +146,7 @@ def main():
                 print(f"  voiced {n}/{len(jobs)}", flush=True)
 
     words, pieces, report = [], [], []
+    carry_end = 0.0  # where the previous scene's last line actually ended
     for s in props["scenes"]:
         sid, T = s["id"], s["end"] - s["start"]
         lines = LINES[sid]
@@ -170,7 +171,13 @@ def main():
         over = lead + sum(spoken) + sum(gaps) + tail - T
         report.append((sid, round(T, 2), round(tempo, 2), round(max(0, over), 2)))
 
-        cursor = s["start"] + lead
+        cursor = max(s["start"] + lead, carry_end + MIN_GAP)
+        if cursor > s["start"] + lead:
+            # the scene before ran long: take the delay out of this scene's pauses
+            late = cursor - (s["start"] + lead)
+            shrink = min(late, sum(gaps) + tail - (MIN_GAP * len(gaps) + MIN_TAIL))
+            if gaps and shrink > 0:
+                gaps = [max(MIN_GAP, g - shrink / len(gaps)) for g in gaps]
         filt = []
         for k, (f, (role, text)) in enumerate(zip(files, lines)):
             gain = max(-10.0, min(10.0, TARGET_DB - level(f)))
@@ -193,6 +200,7 @@ def main():
                 span = d * w / total_w
                 words.append({"text": tok, "start": round(t0, 3), "end": round(t0 + span * 0.92, 3)})
                 t0 += span
+            carry_end = cursor + d
             cursor += d + (gaps[k] if k < len(gaps) else 0)
 
     # lay every line at its time on a silent track as long as the episode

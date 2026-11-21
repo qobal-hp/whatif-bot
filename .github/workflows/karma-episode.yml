@@ -90,6 +90,7 @@ jobs:
           name: es_lines
           path: karma/.tmp_es/*.wav
           if-no-files-found: ignore
+          include-hidden-files: true
       - name: Generate dialogue and scene images
         if: ${{ !inputs.render_only }}
         env:
