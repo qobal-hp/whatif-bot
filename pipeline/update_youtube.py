@@ -31,12 +31,19 @@ def thumbnail_file(where):
 
 def main():
     yt = service()
+    me = yt.channels().list(part="snippet,status", mine=True).execute().get("items", [])
+    for c in me:
+        print(f"Signed in as channel: {c['snippet']['title']} ({c['id']}), long uploads: {c.get('status', {}).get('longUploadsStatus')}")
     for change in json.loads(sys.argv[1]):
         if change.get("delete"):
             yt.videos().delete(id=change["id"]).execute()
             print(f"Deleted https://youtu.be/{change['id']}")
             continue
-        video = yt.videos().list(part="snippet,status", id=change["id"]).execute()["items"][0]
+        found = yt.videos().list(part="snippet,status,processingDetails", id=change["id"]).execute()["items"]
+        if not found:
+            print(f"Not found on this channel: https://youtu.be/{change['id']}")
+            continue
+        video = found[0]
         snippet, status = video["snippet"], video["status"]
         parts = []
         if "title" in change or "description" in change:
