@@ -170,11 +170,13 @@ def tts(job):
     if out.exists() and out.stat().st_size > 1000:
         return
     if ENGINE in ("google", "gemini", "gemini-api"):
-        for attempt in range(4):
+        import time
+        for attempt in range(10):
             try:
                 return gemini_api_tts(text, out) if ENGINE == "gemini-api" else google_tts(text, out)
             except Exception as err:
-                print(f"{out.name} attempt {attempt + 1} failed: {err}", flush=True)
+                print(f"{out.name} attempt {attempt + 1} failed: {str(err)[:80]}", flush=True)
+                time.sleep(min(90, 15 * (attempt + 1)))  # per-minute quota: back off and retry
         raise SystemExit(f"TTS failed for {out.name}")
     body = json.dumps({"text": text, "model_id": MODEL, "language_code": "es", "previous_text": prev, "next_text": nxt,
                        "voice_settings": {"stability": 0.65, "similarity_boost": 0.8, "style": 0.0, "speed": RATE}}).encode()
@@ -264,7 +266,7 @@ def main():
     jobs = [(t, texts[i - 1] if i else "", texts[i + 1] if i + 1 < len(texts) else "", work / f"u{i:04d}.wav")
             for i, t in enumerate(texts)]
     print(f"{len(units)} units, {sum(map(len, texts))} characters, {ENGINE} {GOOGLE_VOICE if ENGINE != 'elevenlabs' else MODEL}", flush=True)
-    with ThreadPoolExecutor(4) as pool:
+    with ThreadPoolExecutor(int(os.environ.get('TTS_THREADS', '3'))) as pool:
         list(pool.map(tts, jobs))
 
     # Voice track with pauses; remember where each chapter starts.
