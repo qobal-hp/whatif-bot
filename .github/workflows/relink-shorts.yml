@@ -4,7 +4,7 @@ on:
     inputs:
       channel:
         type: choice
-        options: [whatif, karma]
+        options: [whatif, karma, biblia]
         default: whatif
       pairs:
         description: SHORT_ID=LONG_ID pairs, comma separated
@@ -20,7 +20,7 @@ jobs:
       - env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
-          YT_REFRESH_TOKEN: ${{ inputs.channel == 'karma' && secrets.YT_REFRESH_TOKEN_KARMA || secrets.YT_REFRESH_TOKEN }}
+          YT_REFRESH_TOKEN: ${{ inputs.channel == 'karma' && secrets.YT_REFRESH_TOKEN_KARMA || inputs.channel == 'biblia' && secrets.YT_REFRESH_TOKEN_BIBLIA || secrets.YT_REFRESH_TOKEN }}
         run: |
           pip install --quiet google-api-python-client google-auth
-          cd pipeline && case "${{ inputs.pairs }}" in stats:*) python video_stats.py "$(echo "${{ inputs.pairs }}" | cut -d: -f2)";; *) python relink_shorts.py "${{ inputs.pairs }}";; esac
+          cd pipeline && case "${{ inputs.pairs }}" in list) python list_videos.py;; stats:*) python video_stats.py "$(echo "${{ inputs.pairs }}" | cut -d: -f2)";; *) python relink_shorts.py "${{ inputs.pairs }}";; esac
