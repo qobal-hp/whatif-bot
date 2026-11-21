@@ -20,10 +20,19 @@ jobs:
         with:
           python-version: "3.12"
       - name: Search the voice library and audition
-        if: inputs.spec != 'spanish-sample'
+        if: inputs.spec != 'spanish-sample' && inputs.spec != 'secret-check'
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
         run: python karma/voice_casting.py "${{ inputs.spec }}" /tmp/voices
+      - name: Which Google keys are set
+        if: inputs.spec == 'secret-check'
+        env:
+          A: ${{ secrets.GOOGLE_TTS_API_KEY }}
+          B: ${{ secrets.GEMINI_API_KEY }}
+          C: ${{ secrets.GOOGLE_API_KEY }}
+        run: |
+          echo "GOOGLE_TTS_API_KEY set: ${A:+yes}"; echo "GEMINI_API_KEY set: ${B:+yes}"; echo "GOOGLE_API_KEY set: ${C:+yes}"
+          for k in "$A" "$B" "$C"; do [ -n "$k" ] || continue; code=$(curl -s -o /tmp/r.json -w '%{http_code}' -X POST -H 'Content-Type: application/json' "https://texttospeech.googleapis.com/v1/text:synthesize?key=$k" -d '{"input":{"prompt":"Say it warmly","text":"Hola"},"voice":{"languageCode":"es-MX","name":"Kore","modelName":"gemini-2.5-flash-tts"},"audioConfig":{"audioEncoding":"MP3"}}'); echo "cloud tts with key: $code $(head -c 300 /tmp/r.json | tr -d '\n')"; done
       - name: Install ffmpeg
         if: inputs.spec == 'spanish-sample'
         run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
