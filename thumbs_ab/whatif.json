@@ -1,0 +1,41 @@
+{
+ "style": "YouTube thumbnail, hyper-realistic cinematic photo, dramatic lighting, high contrast, saturated colors, very readable on a phone, huge bold sans-serif text with black outline and drop shadow. ",
+ "images": [
+  {
+   "id": "sun_b",
+   "aspect": "16:9",
+   "resolution": "1K",
+   "prompt": "A sunlit suburban street with houses and parked cars in bright daylight, but the sky above is a pitch-black starry Milky Way with an eerie dark empty circle where the Sun should be. Bold yellow digital clock text '12:00 PM' in the top right corner and big white text 'NO SUN' at the bottom left."
+  },
+  {
+   "id": "sun_c",
+   "aspect": "16:9",
+   "resolution": "1K",
+   "prompt": "Planet Earth centered, split exactly down the middle: the left half in warm golden sunlight with a glowing orange label '08:19', the right half frozen in icy blue darkness with frost and a cold blue label '08:20'. Big bold yellow text at the bottom: 'LIGHTS OUT'."
+  },
+  {
+   "id": "y200_b",
+   "aspect": "16:9",
+   "resolution": "1K",
+   "prompt": "An extremely old but energetic man with a long white beard blowing out a birthday cake covered in candles shaped as the number '200', surrounded by several generations of family members, warm party lighting. Huge bold yellow text on the left: 'AGE 200' and white text below: 'STILL WORKING?'"
+  },
+  {
+   "id": "y200_c",
+   "aspect": "16:9",
+   "resolution": "1K",
+   "prompt": "A crowded futuristic city street packed shoulder to shoulder with elderly people, apartment towers overflowing, tense gray mood. Huge bold yellow text: 'TOO MANY PEOPLE?' with a red arrow pointing at the crowd."
+  },
+  {
+   "id": "death_b",
+   "aspect": "16:9",
+   "resolution": "1K",
+   "prompt": "Close-up of a calm young woman looking at her wrist where a glowing red digital timer is projected above her skin reading '62 YRS 4 DAYS', moody dark background. Huge bold yellow text at the top: 'WOULD YOU LOOK?'"
+  },
+  {
+   "id": "death_c",
+   "aspect": "16:9",
+   "resolution": "1K",
+   "prompt": "A busy city crosswalk where every person has a glowing red countdown number floating above their head, different numbers, one man in the center has '00:00:10' and looks terrified. Huge bold white text at the bottom: 'EVERYONE KNOWS' with the word KNOWS in yellow."
+  }
+ ]
+}
