@@ -5,6 +5,7 @@ os.environ.setdefault("GOOGLE_TTS_SA_JSON", "")
 if not os.environ["GOOGLE_TTS_SA_JSON"]:
     print("GOOGLE_TTS_SA_JSON is not set"); sys.exit(0)
 import dub
+print("service account:", json.loads(os.environ["GOOGLE_TTS_SA_JSON"]).get("client_email"))
 body = {"input": {"prompt": "Say it warmly", "text": "Hola"}, "voice": {"languageCode": "es-MX", "name": "Kore", "modelName": "gemini-2.5-flash-tts"},
         "audioConfig": {"audioEncoding": "MP3"}}
 try:
