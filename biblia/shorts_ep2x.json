@@ -1,0 +1,37 @@
+{
+ "script": "biblia/genesis31_50_v.txt",
+ "voice": "es-US-Chirp3-HD-Charon",
+ "rate": 0.8,
+ "shorts": [
+  {
+   "id": "short6",
+   "passage": "Génesis 33:1-4",
+   "image": "cap03",
+   "hook": "EL ABRAZO DE ESAÚ"
+  },
+  {
+   "id": "short7",
+   "passage": "Génesis 39:2-4",
+   "image": "cap09",
+   "hook": "JEHOVÁ ESTABA CON JOSÉ"
+  },
+  {
+   "id": "short8",
+   "passage": "Génesis 46:29-30",
+   "image": "cap16",
+   "hook": "PADRE E HIJO"
+  },
+  {
+   "id": "short9",
+   "passage": "Génesis 48:15-16",
+   "image": "cap18",
+   "hook": "LA BENDICIÓN DE JACOB"
+  },
+  {
+   "id": "short10",
+   "passage": "Génesis 49:22-26",
+   "image": "cap19",
+   "hook": "RAMO FRUCTÍFERO"
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "script": "biblia/genesis01_30_v.txt",
+ "voice": "es-US-Chirp3-HD-Gacrux",
+ "rate": 0.8,
+ "shorts": [
+  {
+   "id": "short6",
+   "passage": "Génesis 2:7-9",
+   "image": "cap02",
+   "hook": "EL ALIENTO DE VIDA"
+  },
+  {
+   "id": "short7",
+   "passage": "Génesis 4:8-10",
+   "image": "cap04",
+   "hook": "¿DÓNDE ESTÁ ABEL?"
+  },
+  {
+   "id": "short8",
+   "passage": "Génesis 6:5-8",
+   "image": "cap06",
+   "hook": "NOÉ HALLÓ GRACIA"
+  },
+  {
+   "id": "short9",
+   "passage": "Génesis 12:1-3",
+   "image": "cap12",
+   "hook": "VETE DE TU TIERRA"
+  },
+  {
+   "id": "short10",
+   "passage": "Génesis 15:4-6",
+   "image": "cap15",
+   "hook": "CUENTA LAS ESTRELLAS"
+  }
+ ]
+}

@@ -44,5 +44,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout --orphan biblia-shorts-preview && git rm -rf --cached . > /dev/null
-          mkdir -p out && cp /tmp/out/short1.mp4 out/
+          mkdir -p out && cp "$(ls /tmp/out/short*.mp4 | head -1)" out/
           git add -f out && git commit -q -m "Shorts preview" && git push -f origin biblia-shorts-preview
