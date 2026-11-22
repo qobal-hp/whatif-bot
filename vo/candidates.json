@@ -1,0 +1,30 @@
+{
+  "f1": {
+    "name": "Tatiana - Cheerful, Fun",
+    "saved_as": "TR-EN-Tatiana",
+    "descriptive": "hyped",
+    "use_case": "conversational",
+    "description": "Cheerful, conversational young female voice speaking English with a light Indonesian accent. Bright, friendly and upbeat, like chatting with a fun friend. Great for vlogs, explainers, tutorials, socia"
+  },
+  "f2": {
+    "name": "Elena - Young, upbeat social creator",
+    "saved_as": "TR-EN-Elena",
+    "descriptive": "casual",
+    "use_case": "social_media",
+    "description": "A natural, relatable young adult female voice with a clean North American accent. Smooth, unforced conversational pacing with authentic inflections. Ideal for narrations, storytimes, social media UGC "
+  },
+  "m1": {
+    "name": "Jeffery S - Cool, Expressive & Excited",
+    "saved_as": "TR-EN-Jeffery",
+    "descriptive": "upbeat",
+    "use_case": "social_media",
+    "description": "Enthusiastic, Conversational, Energetic \u2014 Jeffery S hypes up a buddy\u2019s finals tickets, swears a taco truck changed his life, and drags you on a gas-station snack run, all in a laid-back American male "
+  },
+  "m2": {
+    "name": "Alex - Upbeat, Energetic and Clear",
+    "saved_as": "TR-EN-Alex",
+    "descriptive": "confident",
+    "use_case": "entertainment_tv",
+    "description": "An upbeat and pleasant male voice. Great for Youtube, shorts and social media."
+  }
+}
