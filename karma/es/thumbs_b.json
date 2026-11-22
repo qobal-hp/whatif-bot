@@ -1,0 +1,130 @@
+{
+ "thumbnail_style": "YouTube thumbnail background, photorealistic still from a prestige American TV drama, shot on 35mm, dramatic cinematic lighting, high contrast, rich saturated color, faces large and readable at tiny size, every person's face exactly matching their reference photo, 16:9, absolutely no text, no letters, no numbers, no watermark, no logos. ",
+ "thumbnails": [
+  {
+   "id": "ep01",
+   "side": "right",
+   "refs": [
+    "karma/cast/claire.jpg",
+    "karma/cast/daniel.jpg",
+    "karma/cast/vanessa.jpg"
+   ],
+   "lines": [
+    {
+     "text": "ELLA YA",
+     "color": "#FFFFFF"
+    },
+    {
+     "text": "LO SABÍA",
+     "color": "#FFD400"
+    }
+   ],
+   "tag": "",
+   "image": "Close-up on the left half of the frame: the bride from the first reference photo in an ivory lace wedding gown and veil, eyes wet but a cold knowing half-smile, holding her phone at chest height. Behind her, small and out of focus, the groom from the second reference photo in a tuxedo kissing the bridesmaid from the third reference photo in a dusty-rose dress in a dim corridor. Warm candlelight. Right third of the frame is dark and empty."
+  },
+  {
+   "id": "ep02",
+   "side": "left",
+   "refs": [
+    "karma/cast/ep02/emily.jpg",
+    "karma/cast/ep02/jason.jpg",
+    "karma/cast/ep02/michael.jpg"
+   ],
+   "lines": [
+    {
+     "text": "SE",
+     "color": "#FFFFFF"
+    },
+    {
+     "text": "RIERON.",
+     "color": "#FFD400"
+    }
+   ],
+   "tag": "",
+   "image": "Right two thirds: a dark law office with a long mahogany table. In the foreground the woman from the first reference photo, plain dark cardigan, red-rimmed eyes, holding up a single one-dollar bill between two fingers, jaw set. Behind her the two men from the second and third reference photos in expensive suits laughing at her, one pointing. Rainy window light. Left third dark and empty."
+  },
+  {
+   "id": "ep03",
+   "side": "left",
+   "refs": [
+    "karma/cast/ep03/rachel.jpg",
+    "karma/cast/ep03/adam.jpg"
+   ],
+   "lines": [
+    {
+     "text": "SU OTRA",
+     "color": "#FFFFFF"
+    },
+    {
+     "text": "FAMILIA",
+     "color": "#FFD400"
+    }
+   ],
+   "tag": "",
+   "image": "Night, falling snow. Right two thirds: the woman from the first reference photo in a winter coat standing in the snow, face lit by a warm window, tears freezing, hand over her mouth. Through the big window beside her, a cozy living room with a Christmas tree where the man from the second reference photo laughs on a sofa with a different woman and two small children opening presents. Left third dark blue night, empty."
+  },
+  {
+   "id": "ep04",
+   "side": "right",
+   "refs": [
+    "karma/cast/ep04/emma.jpg",
+    "karma/cast/ep04/victoria.jpg",
+    "karma/cast/ep04/ryan.jpg"
+   ],
+   "lines": [
+    {
+     "text": "TIENES",
+     "color": "#FFFFFF"
+    },
+    {
+     "text": "10 MINUTOS",
+     "color": "#FFD400"
+    }
+   ],
+   "tag": "",
+   "image": "Left two thirds: a grand dining room on Thanksgiving, roast turkey and candles. The young woman from the first reference photo stands holding her coat and a small suitcase, calm, chin up, looking straight at camera with a faint dangerous smile. Behind her the older woman from the second reference photo in a burgundy dress points at the door with a smug sneer, and the man from the third reference photo looks away ashamed. Right third dark and empty."
+  },
+  {
+   "id": "ep05",
+   "side": "left",
+   "refs": [
+    "karma/cast/ep05/thomas.jpg",
+    "karma/cast/ep05/olivia.jpg",
+    "karma/cast/ep05/ethan.jpg"
+   ],
+   "lines": [
+    {
+     "text": "ME DIERON",
+     "color": "#FFFFFF"
+    },
+    {
+     "text": "POR MUERTO",
+     "color": "#FFD400"
+    }
+   ],
+   "tag": "",
+   "image": "Right two thirds: a white wedding chapel, doors flung open with bright daylight behind. The older man from the first reference photo, in a worn work jacket, stands in the doorway, jaw clenched, eyes wet, staring down the aisle. In the background at the altar, small, the bride from the second reference photo turns in shock and the groom from the third reference photo glares. Guests turn in their pews. Left third dark and empty."
+  },
+  {
+   "id": "ep07",
+   "side": "right",
+   "refs": [
+    "karma/cast/ep07/evelyn.jpg",
+    "karma/cast/ep07/anna.jpg",
+    "karma/cast/ep07/richard.jpg"
+   ],
+   "lines": [
+    {
+     "text": "40 AÑOS",
+     "color": "#FFFFFF"
+    },
+    {
+     "text": "ESPERÁNDOLA",
+     "color": "#FFD400"
+    }
+   ],
+   "tag": "",
+   "image": "Left two thirds: an open front door at dusk, autumn leaves. The old woman from the first reference photo, silver hair, cardigan, both hands over her heart, tears streaming, facing the woman from the second reference photo who stands on the doorstep in a dark coat holding a bundle of old yellowed letters tied with string. Behind the old woman, the old man from the third reference photo in the hallway, pale with shock. Warm hallway light, Thanksgiving table blurred behind. Right third dark and empty."
+  }
+ ]
+}
