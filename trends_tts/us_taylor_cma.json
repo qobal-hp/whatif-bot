@@ -1,0 +1,16 @@
+{
+  "voices": {
+    "Brian": "nPczCjzI2devNBz1zQrb",
+    "Chris": "iP95p4xoKVk53GoZ742B"
+  },
+  "models": [
+    "eleven_v3",
+    "eleven_multilingual_v2"
+  ],
+  "settings": {
+    "stability": 0.0,
+    "similarity_boost": 0.8
+  },
+  "text_v3": "[excited] Thirteen years. That's how long it had been since Taylor Swift performed at the CMA Awards. She started backstage with her Toy Story 5 song, I Knew It, I Knew You. Then Keith Urban joined on banjo, and she flipped into Our Song, her country hit from two thousand six! [curious] The twist? I Knew It, I Knew You lost Single of the Year to Ella Langley. [excited] But on November twenty-second, her performance clip was number one on YouTube's U.S. Trending Music chart.",
+  "text_plain": "Thirteen years. That's how long it had been since Taylor Swift performed at the CMA Awards. She started backstage with her Toy Story 5 song, I Knew It, I Knew You. Then Keith Urban joined on banjo, and she flipped into Our Song, her country hit from two thousand six! The twist? I Knew It, I Knew You lost Single of the Year to Ella Langley. But on November twenty-second, her performance clip was number one on YouTube's U.S. Trending Music chart."
+}
