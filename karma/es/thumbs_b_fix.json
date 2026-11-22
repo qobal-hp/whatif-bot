@@ -1,0 +1,47 @@
+{
+ "thumbnail_style": "YouTube thumbnail background, photorealistic still from a prestige American TV drama, shot on 35mm, dramatic cinematic lighting, high contrast, rich saturated color, faces large and readable at tiny size, every person's face exactly matching their reference photo, 16:9, absolutely no text, no letters, no numbers, no watermark, no logos. Maximum drama and shock, like the most clicked telenovela YouTube thumbnails: exaggerated raw emotion, faces huge and close to camera, frozen peak-action moment, intense saturated color with red accents, cinematic. ",
+ "thumbnails": [
+  {
+   "id": "ep04",
+   "side": "right",
+   "refs": [
+    "karma/cast/ep04/emma.jpg",
+    "karma/cast/ep04/victoria.jpg",
+    "karma/cast/ep04/ryan.jpg"
+   ],
+   "lines": [
+    {
+     "text": "TIENES",
+     "color": "#FFFFFF"
+    },
+    {
+     "text": "10 MINUTOS",
+     "color": "#FFD400"
+    }
+   ],
+   "tag": "",
+   "image": "Thanksgiving dinner turned violent. Left two thirds: the older woman from the second reference photo in burgundy, face red with fury, mid-shout, has just thrown a glass of pale golden white wine at the young woman from the first reference photo; clear golden splash frozen in mid-air in front of her, the empty wine glass clearly visible in the older woman's hand. The young woman stands frozen, her face and coat clean, eyes cold and unbroken staring at camera. Behind them the man from the third reference photo looks away. Guests gasping, a plate shattering on the floor. Dramatic hard light. Right third dark and empty."
+  },
+  {
+   "id": "ep07",
+   "side": "right",
+   "refs": [
+    "karma/cast/ep07/evelyn.jpg",
+    "karma/cast/ep07/anna.jpg",
+    "karma/cast/ep07/richard.jpg"
+   ],
+   "lines": [
+    {
+     "text": "40 AÑOS",
+     "color": "#FFFFFF"
+    },
+    {
+     "text": "ESPERÁNDOLA",
+     "color": "#FFD400"
+    }
+   ],
+   "tag": "",
+   "image": "Left two thirds: Thanksgiving dinner table in chaos. The old man from the third reference photo has jumped up, face purple with rage, roaring and pointing at the front door, knocking over a chair, an overturned gravy boat and scattered dinner rolls on the white tablecloth, no red liquid anywhere. In the doorway stands the woman from the second reference photo, soaked by rain, holding a bundle of old yellowed letters, staring at him. Between them the old woman from the first reference photo clutches her chest, sobbing, reaching toward the woman at the door. Candles flickering, hard warm-and-red light. Right third dark and empty."
+  }
+ ]
+}
