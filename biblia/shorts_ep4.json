@@ -1,0 +1,38 @@
+{
+ "script": "biblia/exodo22_40.txt",
+ "voice": "es-US-Chirp3-HD-Gacrux",
+ "rate": 0.8,
+ "images": "ep04/images",
+ "shorts": [
+  {
+   "id": "short1",
+   "passage": "Éxodo 25:20-22",
+   "image": "cap04",
+   "hook": "EL ARCA DEL PACTO"
+  },
+  {
+   "id": "short2",
+   "passage": "Éxodo 32:15-19",
+   "image": "cap11",
+   "hook": "EL BECERRO DE ORO"
+  },
+  {
+   "id": "short3",
+   "passage": "Éxodo 33:18-23",
+   "image": "cap12",
+   "hook": "«MUÉSTRAME TU GLORIA»"
+  },
+  {
+   "id": "short4",
+   "passage": "Éxodo 34:5-8",
+   "image": "cap13",
+   "hook": "MISERICORDIOSO Y PIADOSO"
+  },
+  {
+   "id": "short5",
+   "passage": "Éxodo 40:34-38",
+   "image": "cap19",
+   "hook": "LA GLORIA LLENÓ EL TABERNÁCULO"
+  }
+ ]
+}

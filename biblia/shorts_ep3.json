@@ -1,0 +1,38 @@
+{
+ "script": "biblia/exodo01_21.txt",
+ "voice": "es-US-Chirp3-HD-Gacrux",
+ "rate": 0.8,
+ "images": "ep03/images",
+ "shorts": [
+  {
+   "id": "short1",
+   "passage": "Éxodo 2:1-6",
+   "image": "cap02",
+   "hook": "MOISÉS EN EL NILO"
+  },
+  {
+   "id": "short2",
+   "passage": "Éxodo 3:1-6",
+   "image": "cap03",
+   "hook": "LA ZARZA ARDIENTE"
+  },
+  {
+   "id": "short3",
+   "passage": "Éxodo 12:12-14",
+   "image": "cap12",
+   "hook": "LA PASCUA"
+  },
+  {
+   "id": "short4",
+   "passage": "Éxodo 14:13-16",
+   "image": "cap14",
+   "hook": "EL MAR ROJO"
+  },
+  {
+   "id": "short5",
+   "passage": "Éxodo 20:1-7",
+   "image": "cap20",
+   "hook": "LOS DIEZ MANDAMIENTOS"
+  }
+ ]
+}

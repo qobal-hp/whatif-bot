@@ -1,0 +1,38 @@
+{
+ "script": "biblia/genesis01_30_v.txt",
+ "voice": "es-US-Chirp3-HD-Gacrux",
+ "rate": 0.8,
+ "images": "images",
+ "shorts": [
+  {
+   "id": "short1",
+   "passage": "Génesis 1:1-5",
+   "image": "cap01",
+   "hook": "EN EL PRINCIPIO"
+  },
+  {
+   "id": "short2",
+   "passage": "Génesis 3:1-6",
+   "image": "cap03",
+   "hook": "LA SERPIENTE"
+  },
+  {
+   "id": "short3",
+   "passage": "Génesis 9:12-16",
+   "image": "cap09",
+   "hook": "EL ARCO IRIS"
+  },
+  {
+   "id": "short4",
+   "passage": "Génesis 22:9-13",
+   "image": "cap22",
+   "hook": "ABRAHAM E ISAAC"
+  },
+  {
+   "id": "short5",
+   "passage": "Génesis 28:12-15",
+   "image": "cap28",
+   "hook": "LA ESCALERA DE JACOB"
+  }
+ ]
+}

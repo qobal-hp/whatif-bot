@@ -1,0 +1,38 @@
+{
+ "script": "biblia/genesis31_50_v.txt",
+ "voice": "es-US-Chirp3-HD-Charon",
+ "rate": 0.8,
+ "images": "ep02/images",
+ "shorts": [
+  {
+   "id": "short1",
+   "passage": "Génesis 32:24-28",
+   "image": "cap02",
+   "hook": "JACOB LUCHA CON DIOS"
+  },
+  {
+   "id": "short2",
+   "passage": "Génesis 37:25-28",
+   "image": "cap07",
+   "hook": "VENDIDO POR SUS HERMANOS"
+  },
+  {
+   "id": "short3",
+   "passage": "Génesis 41:38-41",
+   "image": "cap11",
+   "hook": "DE LA CÁRCEL AL PALACIO"
+  },
+  {
+   "id": "short4",
+   "passage": "Génesis 45:1-5",
+   "image": "cap15",
+   "hook": "«YO SOY JOSÉ»"
+  },
+  {
+   "id": "short5",
+   "passage": "Génesis 50:19-21",
+   "image": "cap20",
+   "hook": "DIOS LO ENCAMINÓ A BIEN"
+  }
+ ]
+}

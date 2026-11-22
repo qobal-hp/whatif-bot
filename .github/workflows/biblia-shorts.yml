@@ -1,0 +1,48 @@
+name: Biblia shorts
+
+on:
+  workflow_dispatch:
+    inputs:
+      list:
+        description: Shorts list JSON
+      images:
+        description: Image folder on the biblia-assets branch
+        default: images
+      music:
+        default: music/guitarra.mp3
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch images and music
+        run: |
+          git fetch -q origin biblia-assets:refs/remotes/origin/biblia-assets
+          mkdir -p /tmp/assets
+          git --work-tree=/tmp/assets checkout origin/biblia-assets -- "${{ inputs.images }}" "${{ inputs.music }}"
+          git reset -q
+      - name: Render
+        env:
+          GOOGLE_TTS_KEY: ${{ secrets.GOOGLE_TTS_KEY }}
+          BIBLIA_TTS: google
+        run: |
+          sudo apt-get -qq update && sudo apt-get -qq install -y ffmpeg > /dev/null
+          python3 biblia/make_shorts.py "${{ inputs.list }}" "/tmp/assets/${{ inputs.images }}" "/tmp/assets/${{ inputs.music }}" /tmp/out
+          ls -la /tmp/out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: shorts
+          path: /tmp/out/short*.mp4
+          retention-days: 7
+      - name: Preview copy of the first short
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan biblia-shorts-preview && git rm -rf --cached . > /dev/null
+          mkdir -p out && cp /tmp/out/short1.mp4 out/
+          git add -f out && git commit -q -m "Shorts preview" && git push -f origin biblia-shorts-preview
