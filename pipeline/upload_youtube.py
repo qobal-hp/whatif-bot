@@ -114,7 +114,8 @@ def main():
                 sys.exit(f"No long-form link for {short['id']}: upload the episode with it, or set youtube.long_url in the spec")
             description = short.get("description", meta.get("shorts_description", ""))
             lines = [l for l in description.split("\n") if "full episode" not in l.lower()]
-            description = f"\U0001F3AC Full episode: {long_url}\n\n" + "\n".join(lines).strip()
+            label = meta.get("long_label", "\U0001F3AC Full episode")
+            description = f"{label}: {long_url}\n\n" + "\n".join(lines).strip()
             short_id = upload(yt, path, short["youtube_title"], description,
                               meta["tags"], privacy, schedule.get(short["id"]), short.get("localizations"), meta.get("category", "28"), meta.get("language", "en"))
             captions(yt, short_id, files, short["id"])
