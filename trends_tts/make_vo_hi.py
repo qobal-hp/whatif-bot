@@ -26,6 +26,10 @@ def pick(cfg):
         return (sum(w in txt for w in words), v.get("cloned_by_count", 0) or 0)
     found = [v for v in found if (v.get("accent") or "").lower() in ("", "standard", "indian", "hindi") or True]
     found.sort(key=score, reverse=True)
+    want = cfg.get("prefer_names", [])
+    if want:
+        named = [v for n in want for v in found if v.get("name", "").startswith(n)]
+        found = named + [v for v in found if v not in named]
     for v in found[:8]:
         print("CANDIDATE", json.dumps({k: v.get(k) for k in ("name", "accent", "age", "use_case", "descriptive", "description", "cloned_by_count")}, ensure_ascii=False))
     return found[: cfg["count"]]
@@ -43,7 +47,8 @@ def main():
             try:
                 vid = call("POST", f"/voices/add/{v['public_owner_id']}/{v['voice_id']}", {"new_name": name})["voice_id"]
             except urllib.error.HTTPError as e:
-                print(f"ADD FAILED {name}: HTTP {e.code} {e.read().decode(errors='replace')[:300]}"); continue
+                print(f"ADD FAILED {name}: HTTP {e.code} -> trying the library voice id directly")
+                vid = v["voice_id"]
         for model in cfg["models"]:
             text = cfg["text_v3"] if model == "eleven_v3" else cfg["text_plain"]
             try:
