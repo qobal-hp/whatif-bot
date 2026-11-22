@@ -14,9 +14,10 @@ books = data["books"] if isinstance(data, dict) else data
 os.makedirs("out", exist_ok=True)
 keep = {}
 for b in books:
-    if b["name"] in ("Genesis", "Exodus"):
+    if b["name"] in ("Genesis", "Exodus", "Leviticus", "Numbers", "Deuteronomy"):
         keep[b["name"]] = {c["chapter"]: [v["text"] for v in c["verses"]] for c in b["chapters"]}
 print({k: len(v) for k, v in keep.items()})
 print(keep["Genesis"][1][0])
 print(keep["Genesis"][31][0])
 json.dump(keep, open("out/gen_exo.json", "w"), ensure_ascii=False)
+json.dump(keep, open("out/pentateuch.json", "w"), ensure_ascii=False)
