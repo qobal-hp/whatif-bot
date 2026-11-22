@@ -16,7 +16,9 @@ jobs:
       - name: Render narration
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
-        run: python3 trends_tts/make_vo.py trends_tts/us_taylor_cma.json /tmp/vo
+        run: |
+          python3 trends_tts/add_voices.py '{"language":"hi","names":{"TR-HI-Arjun":"Arjun - Indian Hinglish","TR-HI-Anup":"Anup - Energetic"}}' | tee /tmp/added.txt
+          mkdir -p /tmp/vo && cp /tmp/added.txt /tmp/vo/
       - name: Publish to the trends-tts-output branch
         run: |
           git config user.name "github-actions[bot]"
