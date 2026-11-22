@@ -1,7 +1,16 @@
 {
-  "voices": {"Brian": "nPczCjzI2devNBz1zQrb", "Chris": "iP95p4xoKVk53GoZ742B"},
-  "models": ["eleven_v3", "eleven_multilingual_v2"],
-  "settings": {"stability": 0.0, "similarity_boost": 0.8},
-  "text_v3": "[excited] Thirteen to thirteen in Knoxville! LSU and Tennessee, dead even heading into the fourth! LSU jumped out six to nothing... but the Tigers fought back and tied it late in the third! [shouting] Then, freshman Faizon Brandon! Eighteen yards! Touchdown, Tennessee! [excited] And he's not done! Brandon around the edge... untouched... [shouting] fifty-five yards! Touchdown! [excited] Two rushing touchdowns in just over four minutes! Final: Tennessee twenty-seven, LSU thirteen! And America was searching: more than two hundred thousand U.S. searches on Google Trends!",
-  "text_plain": "Thirteen to thirteen in Knoxville! LSU and Tennessee, dead even heading into the fourth! LSU jumped out six to nothing... but the Tigers fought back and tied it late in the third! Then, freshman Faizon Brandon! Eighteen yards! Touchdown, Tennessee! And he's not done! Brandon around the edge... untouched... fifty-five yards! Touchdown! Two rushing touchdowns in just over four minutes! Final: Tennessee twenty-seven, LSU thirteen! And America was searching: more than two hundred thousand U.S. searches on Google Trends!"
+  "voices": {
+    "Brian": "nPczCjzI2devNBz1zQrb",
+    "Chris": "iP95p4xoKVk53GoZ742B"
+  },
+  "models": [
+    "eleven_v3",
+    "eleven_multilingual_v2"
+  ],
+  "settings": {
+    "stability": 0.0,
+    "similarity_boost": 0.8
+  },
+  "text_v3": "[excited] Thirteen to thirteen in Knoxville! Then a freshman took over! LSU led six to nothing early... but the Tigers tied it late in the third! [shouting] Faizon Brandon! Eighteen yards! Touchdown, Tennessee! [excited] He's not done! Around the edge... untouched... [shouting] fifty-five yards! Touchdown! [excited] Two scores in just over four minutes! Final: Tennessee twenty-seven, LSU thirteen! And over two hundred thousand U.S. searches on Google Trends!",
+  "text_plain": "Thirteen to thirteen in Knoxville! Then a freshman took over! LSU led six to nothing early... but the Tigers tied it late in the third! Faizon Brandon! Eighteen yards! Touchdown, Tennessee! He's not done! Around the edge... untouched... fifty-five yards! Touchdown! Two scores in just over four minutes! Final: Tennessee twenty-seven, LSU thirteen! And over two hundred thousand U.S. searches on Google Trends!"
 }
