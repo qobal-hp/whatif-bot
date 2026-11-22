@@ -23,4 +23,4 @@ jobs:
           YT_REFRESH_TOKEN: ${{ inputs.channel == 'karma' && secrets.YT_REFRESH_TOKEN_KARMA || inputs.channel == 'biblia' && secrets.YT_REFRESH_TOKEN_BIBLIA || secrets.YT_REFRESH_TOKEN }}
         run: |
           pip install --quiet google-api-python-client google-auth
-          cd pipeline && case "${{ inputs.pairs }}" in list) python list_videos.py;; engage:*) python engage.py "../$(echo "${{ inputs.pairs }}" | cut -d: -f2)";; stats:*) python video_stats.py "$(echo "${{ inputs.pairs }}" | cut -d: -f2)";; *) python relink_shorts.py "${{ inputs.pairs }}";; esac
+          cd pipeline && case "${{ inputs.pairs }}" in list) python list_videos.py;; retitle:*) python retitle.py "../$(echo "${{ inputs.pairs }}" | cut -d: -f2)";; engage:*) python engage.py "../$(echo "${{ inputs.pairs }}" | cut -d: -f2)";; stats:*) python video_stats.py "$(echo "${{ inputs.pairs }}" | cut -d: -f2)";; *) python relink_shorts.py "${{ inputs.pairs }}";; esac
