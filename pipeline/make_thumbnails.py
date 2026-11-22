@@ -10,10 +10,45 @@ import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
-import fal_client
+import os
+import urllib.error
+
+try:
+    import fal_client
+except ImportError:
+    fal_client = None
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "video" / "public" / "thumbs"
+
+
+GEMINI_MODELS = ["gemini-3-pro-image-preview", "gemini-3.1-flash-image-preview", "gemini-2.5-flash-image"]
+
+
+def gemini_image(prompt, refs):
+    """Make one 16:9 image with Gemini (Nano Banana), passing the reference portraits."""
+    parts = [{"inline_data": {"mime_type": "image/jpeg", "data": base64.b64encode((ROOT / r).read_bytes()).decode()}} for r in refs]
+    parts.append({"text": prompt})
+    body = {"contents": [{"parts": parts}],
+            "generationConfig": {"responseModalities": ["IMAGE"], "imageConfig": {"aspectRatio": "16:9"}}}
+    last = None
+    for model in GEMINI_MODELS:
+        req = urllib.request.Request(
+            f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
+            data=json.dumps(body).encode(), headers={"Content-Type": "application/json", "x-goog-api-key": os.environ["GEMINI_API_KEY"]})
+        try:
+            out = json.loads(urllib.request.urlopen(req, timeout=180).read())
+        except urllib.error.HTTPError as err:
+            last = f"{model}: {err.code} {err.read()[:300]}"
+            print(last)
+            continue
+        for part in out["candidates"][0]["content"]["parts"]:
+            data = part.get("inlineData") or part.get("inline_data")
+            if data:
+                print(f"made with {model}")
+                return base64.b64decode(data["data"])
+        last = f"{model}: no image in reply"
+    raise RuntimeError(last)
 
 
 def make(spec, thumb):
@@ -27,8 +62,11 @@ def make(spec, thumb):
                 # Keep recurring characters' faces: pass their portraits to the edit model.
                 args["image_urls"] = ["data:image/jpeg;base64," + base64.b64encode((ROOT / r).read_bytes()).decode() for r in refs]
                 model = "fal-ai/nano-banana-2/edit"
-            image = fal_client.subscribe(model, arguments=args)
-            urllib.request.urlretrieve(image["images"][0]["url"], OUT / f"{thumb['id']}.jpg")
+            if os.environ.get("GEMINI_API_KEY") and os.environ.get("THUMB_ENGINE", "gemini") == "gemini":
+                (OUT / f"{thumb['id']}.jpg").write_bytes(gemini_image(args["prompt"], refs))
+            else:
+                image = fal_client.subscribe(model, arguments=args)
+                urllib.request.urlretrieve(image["images"][0]["url"], OUT / f"{thumb['id']}.jpg")
             props = {"image": f"thumbs/{thumb['id']}.jpg", "side": thumb["side"], "lines": thumb["lines"], "tag": thumb.get("tag", "")}
             (OUT / f"{thumb['id']}.json").write_text(json.dumps(props))
             print(f"{thumb['id']} done")

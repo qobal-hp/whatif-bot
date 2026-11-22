@@ -38,6 +38,7 @@ jobs:
       - name: Generate background images
         env:
           FAL_KEY: ${{ secrets.FAL_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           pip install --quiet fal-client
           python pipeline/make_thumbnails.py "${{ inputs.spec }}"
