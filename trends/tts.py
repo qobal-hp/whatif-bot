@@ -26,10 +26,16 @@ def pick_voice(prod):
     name = ch.get(prod.get("voice_style", "")) or ch.get("default")
     if not name:
         raise SystemExit(f"no voice configured for {prod['country']} in trends/voices.json")
-    mine = {v["name"]: v["voice_id"] for v in call("GET", "/voices")["voices"]}
-    if name not in mine:
-        raise SystemExit(f"voice {name!r} is not in the ElevenLabs account (My Voices)")
-    return name, mine[name]
+    voices = call("GET", "/voices?show_legacy=true")["voices"]
+    mine = {v["name"]: v["voice_id"] for v in voices}
+    if name in mine:
+        return name, mine[name]
+    short = name.split("-")[-1].lower()  # e.g. TR-HI-Arjun -> arjun
+    for v in voices:
+        if v["name"].lower().startswith(name.lower()) or v["name"].lower().split(" ")[0] == short:
+            return v["name"], v["voice_id"]
+    print("Voices in account:", sorted(mine))
+    raise SystemExit(f"voice {name!r} is not in the ElevenLabs account (My Voices)")
 
 
 def main(job_dir, out_dir):

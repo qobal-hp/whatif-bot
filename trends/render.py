@@ -486,6 +486,8 @@ def render(job_dir, vo_mp3, vo_json, out_dir, workers=2):
         sheet.paste(short.frame(t).resize((360, 640)), (360 * i, 0))
     sheet.save(out / "contact_sheet.jpg", quality=85)
     (out / "qc.json").write_text(json.dumps(qc, indent=2, ensure_ascii=False))
+    import shutil
+    shutil.rmtree(tmp, ignore_errors=True)
     return qc
 
 
