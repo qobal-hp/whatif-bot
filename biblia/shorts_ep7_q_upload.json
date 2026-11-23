@@ -1,0 +1,62 @@
+{
+ "youtube": {
+  "title": "",
+  "description": "",
+  "tags": [
+   "biblia",
+   "biblia en español",
+   "versículo",
+   "reina valera 1909",
+   "palabra de dios",
+   "shorts"
+  ],
+  "category": "27",
+  "language": "es",
+  "channel_title": "Sleep with Bible",
+  "long_label": "📖 Lectura completa",
+  "long_url": "https://youtu.be/WFpDXSwdRwM",
+  "shorts_description": "Lectura de la Biblia Reina-Valera 1909 con música suave. 🙏\n\n#biblia #shorts #palabradedios"
+ },
+ "shorts": [
+  {
+   "id": "short1",
+   "youtube_title": "¿Por qué floreció la vara de Aarón y no las demás? | Números 17:8-10 #shorts"
+  },
+  {
+   "id": "short2",
+   "youtube_title": "¿Por qué Moisés no pudo entrar en la tierra prometida? | Números 20:7-11 #shorts"
+  },
+  {
+   "id": "short3",
+   "youtube_title": "¿Por qué Dios sanó al pueblo con una serpiente de bronce? | Números 21:8-9 #shorts"
+  },
+  {
+   "id": "short4",
+   "youtube_title": "¿Cómo vio el asna lo que el profeta no veía? | Números 22:28-31 #shorts"
+  },
+  {
+   "id": "short5",
+   "youtube_title": "¿Por qué Balaam no pudo maldecir a Israel? | Números 23:19-21 #shorts"
+  },
+  {
+   "id": "short6",
+   "youtube_title": "¿Qué vio Balaam desde la cima del monte? | Números 24:5-7 #shorts"
+  },
+  {
+   "id": "short7",
+   "youtube_title": "¿Quién es la estrella que saldría de Jacob? | Números 24:15-17 #shorts"
+  },
+  {
+   "id": "short8",
+   "youtube_title": "¿Qué pidieron las hijas de Salfaad que nadie había pedido antes? | Números 27:1-4 #shorts"
+  },
+  {
+   "id": "short9",
+   "youtube_title": "¿Por qué Dios escogió a Josué para guiar al pueblo? | Números 27:15-18 #shorts"
+  },
+  {
+   "id": "short10",
+   "youtube_title": "¿Para qué eran las ciudades de refugio? | Números 35:9-12 #shorts"
+  }
+ ]
+}
