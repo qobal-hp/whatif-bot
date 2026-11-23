@@ -1,0 +1,56 @@
+name: Trends Shorts render
+
+# Drop GPT's ZIPs into trends/inbox/ on the trends-pipeline branch. Each push renders them,
+# publishes the results to the trends-output branch, and moves the ZIPs to trends/done/.
+# Nothing is uploaded to YouTube by this workflow.
+on:
+  push:
+    branches: [trends-pipeline]
+    paths: ["trends/inbox/**.zip"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: trends-render
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install tools
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+          pip install -q pillow numpy soundfile fonttools
+          python -c "from PIL import features; assert features.check('raqm'), 'Pillow without raqm cannot shape Hindi'"
+      - name: Check inbox
+        id: inbox
+        run: echo "count=$(ls trends/inbox/*.zip 2>/dev/null | wc -l)" >> "$GITHUB_OUTPUT"
+      - name: Render
+        if: steps.inbox.outputs.count != '0'
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+        run: python trends/run_job.py trends/inbox /tmp/trends_out
+      - uses: actions/upload-artifact@v4
+        if: steps.inbox.outputs.count != '0'
+        with:
+          name: trends-shorts
+          path: /tmp/trends_out
+      - name: Publish to the trends-output branch and clear the inbox
+        if: steps.inbox.outputs.count != '0'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p trends/done && git mv trends/inbox/*.zip trends/done/ && git commit -q -m "Rendered: $(ls trends/done | tail -n 5 | tr '\n' ' ')" && git push -q origin HEAD:trends-pipeline
+          git checkout -q --orphan trends-output
+          git rm -rf -q --cached . > /dev/null
+          rm -rf out && cp -r /tmp/trends_out out
+          git add -f out
+          git commit -q -m "Trends render run ${{ github.run_number }}"
+          git push -q -f origin trends-output
