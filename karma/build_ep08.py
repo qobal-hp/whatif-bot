@@ -939,7 +939,7 @@ def main():
             "description": "Rachel brought the cake to her father's retirement party. She walked in just as a woman at the microphone was telling a story about Dad's birthday cake. Her story. Then the host said: \"Frank's daughter, Rachel, everybody.\"\n\nHer father saw her standing in the aisle. And told the stranger, \"Go ahead, sweetheart.\"\n\nKarma Tales: revenge and twist stories where the people who scheme always get what they deserve.\n\nThis story is fiction. Any resemblance to real people or events is coincidental. Narration and images are AI-generated.\n\n#karmatales #familydrama #revengestory #familybusiness",
             "tags": ["karma tales", "family drama", "revenge story", "family betrayal", "family business", "retirement party", "father and daughter", "sibling rivalry", "audio drama", "twist ending"],
             "category": "24",
-            "shorts_description": "Watch the full story on Karma Tales: https://youtu.be/EP08_ID\n" + title + "\n\n#shorts #karmatales #familydrama",
+            "shorts_description": "Watch the full story on Karma Tales: https://youtu.be/aPS3d-FoZL0\n" + title + "\n\n#shorts #karmatales #familydrama",
         },
         "thumbnail_file": "karma/ep08_thumb.jpg",
         "shorts_end_card": "Watch the full story|on our channel",
