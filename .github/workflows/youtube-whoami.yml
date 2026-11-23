@@ -1,0 +1,41 @@
+name: Check YouTube channel token
+
+on:
+  workflow_dispatch:
+    inputs:
+      channel:
+        description: Which channel's token to check (nothing is uploaded)
+        type: choice
+        options: [whatif, karma, biblia, trends_in]
+        default: trends_in
+
+permissions:
+  contents: read
+
+jobs:
+  whoami:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Which channel does the token belong to?
+        env:
+          YT_CLIENT_ID: ${{ startsWith(inputs.channel, 'trends_') && secrets.YT_CLIENT_ID_TRENDS || secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ startsWith(inputs.channel, 'trends_') && secrets.YT_CLIENT_SECRET_TRENDS || secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ inputs.channel == 'karma' && secrets.YT_REFRESH_TOKEN_KARMA || inputs.channel == 'biblia' && secrets.YT_REFRESH_TOKEN_BIBLIA || inputs.channel == 'trends_in' && secrets.YT_REFRESH_TOKEN_IN || !startsWith(inputs.channel, 'trends_') && secrets.YT_REFRESH_TOKEN || '' }}
+        run: |
+          if [ -z "$YT_REFRESH_TOKEN" ] || [ -z "$YT_CLIENT_ID" ]; then echo "Missing secrets for ${{ inputs.channel }}"; exit 1; fi
+          pip install --quiet google-api-python-client google-auth
+          python - <<'PY'
+          import os
+          from google.oauth2.credentials import Credentials
+          from googleapiclient.discovery import build
+          creds = Credentials(None, refresh_token=os.environ["YT_REFRESH_TOKEN"], token_uri="https://oauth2.googleapis.com/token",
+                              client_id=os.environ["YT_CLIENT_ID"], client_secret=os.environ["YT_CLIENT_SECRET"])
+          items = build("youtube", "v3", credentials=creds).channels().list(part="snippet", mine=True).execute().get("items", [])
+          for c in items:
+              print(f"Token belongs to: {c['snippet']['title']} ({c['id']})")
+          if not items:
+              raise SystemExit("Token works but no channel was returned")
+          PY

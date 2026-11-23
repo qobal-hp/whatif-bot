@@ -12,7 +12,7 @@ on:
       channel:
         description: Which channel to upload to
         type: choice
-        options: [whatif, karma, biblia]
+        options: [whatif, karma, biblia, trends_in]
         default: whatif
       artifact:
         description: Name of the episode artifact
@@ -75,10 +75,11 @@ jobs:
           ls -la /tmp/upload
       - name: Upload
         env:
-          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
-          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
-          YT_REFRESH_TOKEN: ${{ inputs.channel == 'karma' && secrets.YT_REFRESH_TOKEN_KARMA || inputs.channel == 'biblia' && secrets.YT_REFRESH_TOKEN_BIBLIA || secrets.YT_REFRESH_TOKEN }}
+          # The Trends channels use their own OAuth client (YT_CLIENT_ID_TRENDS / YT_CLIENT_SECRET_TRENDS).
+          YT_CLIENT_ID: ${{ startsWith(inputs.channel, 'trends_') && secrets.YT_CLIENT_ID_TRENDS || secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ startsWith(inputs.channel, 'trends_') && secrets.YT_CLIENT_SECRET_TRENDS || secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ inputs.channel == 'karma' && secrets.YT_REFRESH_TOKEN_KARMA || inputs.channel == 'biblia' && secrets.YT_REFRESH_TOKEN_BIBLIA || inputs.channel == 'trends_in' && secrets.YT_REFRESH_TOKEN_IN || !startsWith(inputs.channel, 'trends_') && secrets.YT_REFRESH_TOKEN || '' }}
         run: |
-          if [ -z "$YT_REFRESH_TOKEN" ]; then echo "No upload token for channel ${{ inputs.channel }} (karma needs YT_REFRESH_TOKEN_KARMA, biblia needs YT_REFRESH_TOKEN_BIBLIA)"; exit 1; fi
+          if [ -z "$YT_REFRESH_TOKEN" ]; then echo "No upload token for channel ${{ inputs.channel }} (karma needs YT_REFRESH_TOKEN_KARMA, biblia needs YT_REFRESH_TOKEN_BIBLIA, trends_in needs YT_REFRESH_TOKEN_IN)"; exit 1; fi
           pip install --quiet google-api-python-client google-auth
           python pipeline/upload_youtube.py "${{ inputs.spec }}" /tmp/upload "${{ inputs.privacy }}" "${{ inputs.only }}" "${{ inputs.schedule }}"

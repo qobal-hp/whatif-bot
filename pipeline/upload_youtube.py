@@ -4,6 +4,8 @@ usage: python pipeline/upload_youtube.py <spec.json> <dir with episode.mp4, thum
 "only" is an optional comma-separated list of what to upload, e.g. "short1" or "episode,short1".
 "schedule" optionally sets publish times in UTC, e.g. "short2=2026-11-13T17:00:00Z,short3=2026-11-14T17:00:00Z";
 scheduled videos are uploaded private and YouTube makes them public at that time.
+Standalone shorts (no long form, e.g. the Trends channels) set youtube.standalone = true.
+A short may carry its own "description", "tags" and "first_comment".
 Needs YT_CLIENT_ID, YT_CLIENT_SECRET and YT_REFRESH_TOKEN in the environment.
 """
 import json
@@ -71,6 +73,16 @@ def captions(yt, video_id, files, name):
             print(f"Captions {lang} could not be added: {err}")
 
 
+def comment(yt, video_id, text):
+    """Post the first comment (only when the spec asks for it)."""
+    try:
+        yt.commentThreads().insert(part="snippet", body={"snippet": {
+            "videoId": video_id, "topLevelComment": {"snippet": {"textOriginal": text}}}}).execute()
+        print(f"First comment posted on {video_id}")
+    except Exception as err:  # e.g. comments are not allowed on private videos; post it by hand
+        print(f"First comment could not be posted: {err}")
+
+
 def main():
     spec = json.loads(Path(sys.argv[1]).read_text())
     files = Path(sys.argv[2])
@@ -109,16 +121,20 @@ def main():
     for short in spec.get("shorts", []):
         path = files / f"{short['id']}.mp4"
         if path.exists() and wanted(short["id"]):
-            # Every short carries a link to its long form in the description.
-            if not long_url:
-                sys.exit(f"No long-form link for {short['id']}: upload the episode with it, or set youtube.long_url in the spec")
             description = short.get("description", meta.get("shorts_description", ""))
-            lines = [l for l in description.split("\n") if "full episode" not in l.lower()]
-            label = meta.get("long_label", "\U0001F3AC Full episode")
-            description = f"{label}: {long_url}\n\n" + "\n".join(lines).strip()
+            if not meta.get("standalone"):
+                # Every short carries a link to its long form in the description.
+                if not long_url:
+                    sys.exit(f"No long-form link for {short['id']}: upload the episode with it, or set youtube.long_url in the spec")
+                lines = [l for l in description.split("\n") if "full episode" not in l.lower()]
+                label = meta.get("long_label", "\U0001F3AC Full episode")
+                description = f"{label}: {long_url}\n\n" + "\n".join(lines).strip()
             short_id = upload(yt, path, short["youtube_title"], description,
-                              meta["tags"], privacy, schedule.get(short["id"]), short.get("localizations"), meta.get("category", "28"), meta.get("language", "en"))
+                              short.get("tags", meta["tags"]), privacy, schedule.get(short["id"]), short.get("localizations"),
+                              meta.get("category", "28"), meta.get("language", "en"))
             captions(yt, short_id, files, short["id"])
+            if short.get("first_comment"):
+                comment(yt, short_id, short["first_comment"])
 
 
 if __name__ == "__main__":
