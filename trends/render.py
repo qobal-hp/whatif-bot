@@ -482,7 +482,7 @@ def render(job_dir, vo_mp3, vo_json, out_dir, workers=2):
     # contact sheet of the busiest moments for a human glance
     sheet = Image.new("RGB", (360 * len(short.scenes), 640))
     for i in range(len(short.scenes)):
-        t = min(short.sc_bounds[i + 1] - 0.2, short.sc_bounds[i] + 1.8)
+        t = max(short.sc_bounds[i] + 0.5, short.sc_bounds[i + 1] - 0.3)
         sheet.paste(short.frame(t).resize((360, 640)), (360 * i, 0))
     sheet.save(out / "contact_sheet.jpg", quality=85)
     (out / "qc.json").write_text(json.dumps(qc, indent=2, ensure_ascii=False))
