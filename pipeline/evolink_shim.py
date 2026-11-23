@@ -10,6 +10,11 @@ import time
 import urllib.request
 import uuid
 
+# EvoLink's file CDN refuses Python's default user agent, so every download in the process gets a browser one.
+_opener = urllib.request.build_opener()
+_opener.addheaders = [("User-Agent", "Mozilla/5.0 (X11; Linux x86_64) whatif-bot")]
+urllib.request.install_opener(_opener)
+
 API = "https://api.evolink.ai"
 FILES = "https://files-api.evolink.ai/api/v1/files/upload/stream"
 IMAGE_MODEL = os.environ.get("EVOLINK_IMAGE_MODEL", "gemini-3.1-flash-image-preview")
