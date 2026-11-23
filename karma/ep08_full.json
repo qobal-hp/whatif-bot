@@ -52,7 +52,7 @@
     "host": "the host (the bald man in round glasses from the reference photo, same face, in a tan blazer and bow tie)",
     "cameraman": "the videographer (the bearded man in a gray beanie from the reference photo, same face, in a black hoodie)"
   },
-  "style": "Photorealistic still from a prestige American TV drama, shot on 35mm, warm amber cinematic lighting, shallow depth of field, natural skin texture, rich contrast, wide 16:9 frame. Keep every person's face and hair exactly consistent with their reference photo. No text, no captions, no watermark unless the scene asks for written words. ",
+  "style": "Photorealistic still from a prestige American TV drama, shot on 35mm, warm amber cinematic lighting, shallow depth of field, natural skin texture, rich contrast, wide 16:9 frame. Keep every person's face and hair exactly consistent with their reference photo. No text, no captions, no watermark unless the scene asks for written words. Any party banner reads exactly HAPPY RETIREMENT FRANK, never any other name; otherwise show no signs. ",
   "resolution": "2K",
   "music": [
     [
@@ -3393,9 +3393,10 @@
     {
       "id": "s169",
       "chars": [
-        "frank"
+        "frank",
+        "rachel"
       ],
-      "image": "Frank turning to his daughter.",
+      "image": "Frank at the microphone stand turning toward his daughter Rachel beside him.",
       "lines": [
         [
           "FRANK",
@@ -3552,9 +3553,10 @@
     {
       "id": "s178",
       "chars": [
+        "rachel",
         "ben"
       ],
-      "image": "Rachel stepping away from the mic and Ben getting there first.",
+      "image": "Rachel stepping away from the microphone while Ben hurries in to take it.",
       "lines": [
         [
           "NARRATOR",
@@ -5111,9 +5113,10 @@
     {
       "id": "s267",
       "chars": [
-        "rachel:home"
+        "rachel:home",
+        "nina"
       ],
-      "image": "Rachel pulling her own plate closer, a small unapologetic smile.",
+      "image": "Rachel pulling her own plate with a slice of lemon cake closer, a small unapologetic smile, Nina laughing across the table.",
       "lines": [
         [
           "RACHEL",

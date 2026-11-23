@@ -601,7 +601,7 @@ sc("stage", ["frank"], "Frank reaching for a water glass; it's empty; he puts it
 sc("ballroom", [], "The whole ballroom silent, every face turned to the stage, a fork resting on a plate.",
    [(N, "[very quiet] The room had gone quiet enough to hear someone set down a fork.")],
    sfx=[["A single fork set down on a plate in a silent room", 1.0, 0.4, "start"]], cut=True)
-sc("stage", ["frank"], "Frank turning to his daughter.",
+sc("stage", ["frank", "rachel"], "Frank at the microphone stand turning toward his daughter Rachel beside him.",
    [("FRANK", "[to Rachel, quiet] I saw you when you came in."),
     ("RACHEL", "[softly] Okay.")])
 sc("stage", ["rachel"], "Close-up of Rachel absorbing it.",
@@ -625,7 +625,7 @@ sc("stage", ["rachel"], "Rachel looking down at the closed cake box.",
    [(N, "[quiet] Rachel looked down at the cake box. [pause] She left it closed.")])
 sc("stage", ["rachel"], "Rachel at the microphone addressing the room.",
    [("RACHEL", "[to the room, steady] He's right. [pause] I would have said no. [pause] If you hear a different version tomorrow, you can ask me. [pause] That's all I wanted to say.")])
-sc("stage", ["ben"], "Rachel stepping away from the mic and Ben getting there first.",
+sc("stage", ["rachel", "ben"], "Rachel stepping away from the microphone while Ben hurries in to take it.",
    [(N, "[dry] She stepped away from the mic. Ben got there before anyone else.")])
 
 # ── 23 I'LL SEE YOU AT NINE ────────────────────────────────────────────────────────────────────────
@@ -885,7 +885,7 @@ sc("apartment_day", ["rachel:home"], "Rachel studying the cake with a knife in h
    [(N, "[warm, slow] Rachel got one from a drawer. For a moment she studied the cake, like she was working out how many people it could serve. [pause] Then she cut a generous slice.")])
 sc("apartment_day", ["nina"], "Nina teasing gently.",
    [("NINA", "[teasing, gently] Who's the first piece for?")])
-sc("apartment_day", ["rachel:home"], "Rachel pulling her own plate closer, a small unapologetic smile.",
+sc("apartment_day", ["rachel:home", "nina"], "Rachel pulling her own plate with a slice of lemon cake closer, a small unapologetic smile, Nina laughing across the table.",
    [("RACHEL", "[small smile, no apology, finally unhurried] Mine. [pause] For once.")],
    sfx=[["A plate sliding across a wooden table", 1.0, 0.4, "end"]])
 sc("apartment_day", [], "The sunny kitchen table from a distance: two women, one slice of lemon cake, an apron over a chair.",
@@ -917,7 +917,7 @@ def main():
         "cast": CAST,
         "portraits": {k: PORTRAIT + v for k, v in PORTRAITS.items()},
         "looks": LOOKS,
-        "style": "Photorealistic still from a prestige American TV drama, shot on 35mm, warm amber cinematic lighting, shallow depth of field, natural skin texture, rich contrast, wide 16:9 frame. Keep every person's face and hair exactly consistent with their reference photo. No text, no captions, no watermark unless the scene asks for written words. ",
+        "style": "Photorealistic still from a prestige American TV drama, shot on 35mm, warm amber cinematic lighting, shallow depth of field, natural skin texture, rich contrast, wide 16:9 frame. Keep every person's face and hair exactly consistent with their reference photo. No text, no captions, no watermark unless the scene asks for written words. Any party banner reads exactly HAPPY RETIREMENT FRANK, never any other name; otherwise show no signs. ",
         "resolution": "2K",
         "music": music,
         "places": PLACES,
