@@ -1,0 +1,79 @@
+{
+ "script": "biblia/devocional/descansa/script.txt",
+ "voice": "es-US-Chirp3-HD-Gacrux",
+ "rate": 0.8,
+ "shorts": [
+  {
+   "id": "short1",
+   "passage": "Marcos 4:37-40",
+   "image": "cap01",
+   "hook": "JESÚS DORMÍA EN LA TORMENTA",
+   "question": "¿Por qué Jesús dormía mientras la barca se llenaba de agua?",
+   "answer": "No dormía por descuido, sino porque descansaba en su Padre. Los discípulos pensaron que no le importaba, pero él estaba en la misma barca. Esta noche, tu tormenta tampoco lo encuentra lejos."
+  },
+  {
+   "id": "short2",
+   "passage": "Salmos 131:1-2",
+   "image": "cap02",
+   "hook": "COMO UN NIÑO DESTETADO",
+   "question": "¿Qué significa tener el alma como un niño destetado?",
+   "answer": "Un niño destetado ya no llora por la leche; descansa junto a su madre solo por estar con ella. David aprendió a no cargar con lo que le quedaba grande. La paz llegó cuando soltó lo que no podía controlar."
+  },
+  {
+   "id": "short3",
+   "passage": "Proverbios 3:21-24",
+   "image": "cap03",
+   "hook": "DORMIRÁS SIN MIEDO",
+   "question": "¿Es posible acostarse sin temor después de un día difícil?",
+   "answer": "Proverbios promete un sueño suave a quien guarda la sabiduría de Dios. No dice que los problemas desaparecen, sino que el corazón puede descansar porque otro guarda el camino."
+  },
+  {
+   "id": "short4",
+   "passage": "Isaías 30:15-15",
+   "image": "cap04",
+   "hook": "EN QUIETUD ESTÁ TU FUERZA",
+   "question": "¿Dónde estaba la fuerza que Israel no quiso aceptar?",
+   "answer": "Israel buscaba caballos rápidos y alianzas con Egipto. Dios les ofrecía otra salida: volver, estar quietos y confiar. A veces la fuerza que necesitamos no está en correr más, sino en detenernos delante de él."
+  },
+  {
+   "id": "short5",
+   "passage": "Lamentaciones 3:21-24",
+   "image": "cap05",
+   "hook": "NUEVAS CADA MAÑANA",
+   "question": "¿Cómo puede alguien tener esperanza en medio de una ciudad destruida?",
+   "answer": "Jeremías lloraba entre ruinas, pero recordó algo que nadie le podía quitar: las misericordias de Dios no se acaban. Se renuevan cada mañana. Lo que hoy no se resolvió, mañana tendrá nueva gracia."
+  },
+  {
+   "id": "short6",
+   "passage": "Sofonías 3:16-17",
+   "image": "cap06",
+   "hook": "DIOS CANTA SOBRE TI",
+   "question": "¿Sabías que la Biblia dice que Dios canta sobre su pueblo?",
+   "answer": "Sofonías describe a Dios como un valiente que salva, que calla de amor y se regocija con cánticos. Antes de dormir, puedes recordar que no eres una carga para él, sino alguien en quien se goza."
+  },
+  {
+   "id": "short7",
+   "passage": "Mateo 6:31-34",
+   "image": "cap07",
+   "hook": "NO TE AFANES POR EL MAÑANA",
+   "question": "¿Por qué Jesús dijo que no nos preocupemos por el mañana?",
+   "answer": "Jesús no dijo que el mañana no traería problemas. Dijo que cada día tiene su propio afán, y que el Padre ya sabe lo que necesitamos. Esta noche no tienes que resolver el día que todavía no llega."
+  },
+  {
+   "id": "short8",
+   "passage": "Filipenses 4:6-7",
+   "image": "cap08",
+   "hook": "LA PAZ QUE GUARDA TU MENTE",
+   "question": "¿Qué hacer con la ansiedad cuando no se va?",
+   "answer": "Pablo escribió esto desde una prisión. No dice que finjamos calma, sino que llevemos todo a Dios en oración, con gratitud. Entonces una paz que no entendemos guarda el corazón y los pensamientos."
+  },
+  {
+   "id": "short9",
+   "passage": "1 Pedro 5:6-7",
+   "image": "cap09",
+   "hook": "ÉCHALO SOBRE ÉL",
+   "question": "¿Qué significa echar toda tu ansiedad sobre Dios?",
+   "answer": "Echar es soltar algo pesado sobre otro. Pedro, que una vez se hundió por miedo en el agua, nos invita a hacerlo porque Dios tiene cuidado de nosotros. No tienes que llevarlo todo hasta mañana."
+  }
+ ]
+}

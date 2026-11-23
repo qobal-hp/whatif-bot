@@ -38,7 +38,7 @@ WrapStyle: 0
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Verse,Cormorant Garamond,66,&H00F2F6FA,&H00F2F6FA,&H00000000,&H96000000,1,0,0,0,100,100,0,0,1,4,3,2,80,80,330,1
+Style: Verse,Cormorant Garamond,76,&H00F2F6FA,&H00F2F6FA,&H00000000,&H96000000,1,0,0,0,100,100,0,0,1,4,3,2,80,80,330,1
 Style: Hook,Cinzel,62,&H0078C8EC,&H0078C8EC,&H00000000,&H96000000,1,0,0,0,100,100,0,0,1,4,3,8,70,70,170,1
 
 [Events]
