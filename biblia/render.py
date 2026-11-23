@@ -252,6 +252,12 @@ def main():
             ch += 1
             labels[ch] = f"{m.group(1) or 'Génesis'} {spanish_number(m.group(2))}"
             units.append((ch, "head", para, ""))
+        elif para.startswith("[[#pausa"):
+            units.append((ch, "pause", re.search(r"\d+", para).group(0), ""))  # quiet time, music only
+        elif para.startswith("[[#"):
+            ch += 1  # devotional passage: new picture, chapter label = reference, nothing spoken
+            labels[ch] = para[3:-2].strip()
+            units.append((ch, "mark", "", ""))
         elif para.startswith("[["):
             # One verse per line: "[[Éxodo 3:5]] text". Each verse is voiced alone so captions can follow it.
             verses = [re.match(r"\[\[(.+?)\]\]\s*(.+)", line.strip()).groups() for line in para.splitlines() if line.strip()]
@@ -262,12 +268,13 @@ def main():
     last_ch = units[-1][0]
     outro = [u for u in units if u[0] == last_ch and u[1] == "para"][-1] if last_ch > max_ch else None
     units = [u for u in units if u[0] <= max_ch] + ([outro] if outro and max_ch < last_ch else [])
-    texts = [u[2] for u in units]
+    texts = [u[2] if u[1] not in ("pause", "mark") else "" for u in units]
     jobs = [(t, texts[i - 1] if i else "", texts[i + 1] if i + 1 < len(texts) else "", work / f"u{i:04d}.wav")
             for i, t in enumerate(texts)]
+    spoken = [j for j in jobs if j[0]]
     print(f"{len(units)} units, {sum(map(len, texts))} characters, {ENGINE} {GOOGLE_VOICE if ENGINE != 'elevenlabs' else MODEL}", flush=True)
     with ThreadPoolExecutor(int(os.environ.get('TTS_THREADS', '3'))) as pool:
-        list(pool.map(tts, jobs))
+        list(pool.map(tts, spoken))
 
     # Voice track with pauses; remember where each chapter starts.
     silence = {}
@@ -281,6 +288,16 @@ def main():
     concat.append(lead)
     cues = []
     for i, (c, kind, text, ref) in enumerate(units):
+        if kind == "mark":
+            concat.append(silence[CHAPTER_GAP]); t += CHAPTER_GAP
+            starts[c] = t
+            continue
+        if kind == "pause":
+            f = work / f"pause{text}.wav"
+            if not f.exists():
+                sh("ffmpeg", "-y", "-f", "lavfi", "-i", "anullsrc=r=44100:cl=mono", "-t", text, str(f))
+            concat.append(f); t += float(text)
+            continue
         if kind == "head":
             if concat and i:
                 concat.append(silence[CHAPTER_GAP]); t += CHAPTER_GAP
