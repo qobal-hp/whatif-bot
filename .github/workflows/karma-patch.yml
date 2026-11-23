@@ -61,6 +61,7 @@ jobs:
         if: inputs.new_images || inputs.clips
         env:
           FAL_KEY: ${{ secrets.FAL_KEY }}
+          EVOLINK_API_KEY: ${{ secrets.EVOLINK_API_KEY }}
           REDO_IMAGES: ${{ inputs.new_images && inputs.scenes || '' }}
           IMAGES_ONLY: "1"
         run: |

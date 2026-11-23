@@ -22,6 +22,7 @@ jobs:
       - name: Generate
         env:
           FAL_KEY: ${{ secrets.FAL_KEY }}
+          EVOLINK_API_KEY: ${{ secrets.EVOLINK_API_KEY }}
         run: |
           pip install --quiet fal-client
           python pipeline/make_images.py "${{ inputs.list }}" /tmp/images

@@ -35,6 +35,7 @@ jobs:
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
           FAL_KEY: ${{ secrets.FAL_KEY }}
+          EVOLINK_API_KEY: ${{ secrets.EVOLINK_API_KEY }}
         run: |
           pip install --quiet fal-client
           python pipeline/generate_assets.py "${{ inputs.spec }}"

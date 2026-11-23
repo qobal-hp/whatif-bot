@@ -10,7 +10,13 @@ import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
-import fal_client
+import os as _os
+if _os.environ.get("EVOLINK_API_KEY") and _os.environ.get("MEDIA_PROVIDER", "evolink") != "fal":
+    import sys as _sys
+    _sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "pipeline"))
+    import evolink_shim as fal_client  # same calls, run on EvoLink
+else:
+    import fal_client
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "video" / "public" / "thumbs"
