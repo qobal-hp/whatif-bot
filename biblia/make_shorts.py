@@ -78,6 +78,8 @@ def main():
         work = out / f"work_{s['id']}"
         work.mkdir(exist_ok=True)
         vs = verses_of(cfg["script"], s["passage"])
+        if s.get("reflection"):  # a line of our own after the passage: what it means for us today
+            vs.append(("Reflexión", s["reflection"]))
         jobs = [(t, "", "", work / f"v{i:02d}.wav") for i, (_, t) in enumerate(vs)]
         with ThreadPoolExecutor(2) as pool:
             list(pool.map(render.tts, jobs))
@@ -87,11 +89,12 @@ def main():
         lead_f = work / "lead.wav"
         render.sh("ffmpeg", "-y", "-f", "lavfi", "-i", "anullsrc=r=44100:cl=mono", "-t", str(lead), str(lead_f))
         concat, t, cues = [lead_f], lead, []
-        for (ref, text), job in zip(vs, jobs):
+        for k, ((ref, text), job) in enumerate(zip(vs, jobs)):
             d = render.duration(job[3])
             cues.append((t, t + d, ref, text))
-            concat += [job[3], gap]
-            t += d + 0.4
+            extra = 1 if k + 1 < len(vs) and vs[k + 1][0] == "Reflexión" else 0  # a longer pause before our line
+            concat += [job[3]] + [gap] * (1 + extra)
+            t += d + 0.4 * (1 + extra)
         total = t + 3.0
         (work / "voice.txt").write_text("".join(f"file '{p.resolve()}'\n" for p in concat))
         voice = work / "voice.wav"
