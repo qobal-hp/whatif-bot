@@ -54,6 +54,7 @@ existing = {p["snippet"]["title"]: p["id"] for p in
             yt.playlists().list(part="snippet", mine=True, maxResults=50).execute().get("items", [])}
 for pl in cfg.get("playlists", []):
     pid = existing.get(pl["title"])
+    new = not pid
     if not pid:
         pid = yt.playlists().insert(part="snippet,status", body={
             "snippet": {"title": pl["title"], "description": pl.get("description", ""),
@@ -64,7 +65,7 @@ for pl in cfg.get("playlists", []):
         vids = [i for i in ids if "#shorts" in videos[i]["snippet"]["title"].lower()
                 and videos[i]["status"]["privacyStatus"] == "public"]
     have, tok = set(), None
-    while True:
+    while not new:  # a playlist made a moment ago cannot be read back yet
         r = yt.playlistItems().list(part="snippet", playlistId=pid, maxResults=50, pageToken=tok).execute()
         have |= {i["snippet"]["resourceId"]["videoId"] for i in r["items"]}
         tok = r.get("nextPageToken")
