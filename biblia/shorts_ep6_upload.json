@@ -1,0 +1,62 @@
+{
+ "youtube": {
+  "title": "",
+  "description": "",
+  "tags": [
+   "biblia",
+   "biblia en español",
+   "versículo",
+   "reina valera 1909",
+   "palabra de dios",
+   "shorts"
+  ],
+  "category": "27",
+  "language": "es",
+  "channel_title": "Sleep with Bible",
+  "long_label": "📖 Lectura completa",
+  "long_url": "",
+  "shorts_description": "Lectura de la Biblia Reina-Valera 1909 con música suave. 🙏\n\n#biblia #shorts #palabradedios"
+ },
+ "shorts": [
+  {
+   "id": "short1",
+   "youtube_title": "«Jehová te bendiga, y te guarde» 🙏 Números 6 #shorts"
+  },
+  {
+   "id": "short2",
+   "youtube_title": "Las siete lámparas del candelero ✨ Números 8 #shorts"
+  },
+  {
+   "id": "short3",
+   "youtube_title": "La nube de día, el fuego de noche 🔥 Números 9 #shorts"
+  },
+  {
+   "id": "short4",
+   "youtube_title": "«Levántate, oh Jehová» Números 10 #shorts"
+  },
+  {
+   "id": "short5",
+   "youtube_title": "Un viento de Jehová trajo codornices 🕊️ Números 11 #shorts"
+  },
+  {
+   "id": "short6",
+   "youtube_title": "«Boca a boca hablaré con él» Números 12 #shorts"
+  },
+  {
+   "id": "short7",
+   "youtube_title": "El racimo gigante de Escol 🍇 Números 13 #shorts"
+  },
+  {
+   "id": "short8",
+   "youtube_title": "«Jehová está con nosotros: no los temáis» Números 14 #shorts"
+  },
+  {
+   "id": "short9",
+   "youtube_title": "Franjas azules para recordar 💙 Números 15 #shorts"
+  },
+  {
+   "id": "short10",
+   "youtube_title": "Aarón se puso entre los muertos y los vivos Números 16 #shorts"
+  }
+ ]
+}

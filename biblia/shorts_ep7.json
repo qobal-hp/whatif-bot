@@ -1,0 +1,67 @@
+{
+ "script": "biblia/numeros17_36.txt",
+ "voice": "es-US-Chirp3-HD-Gacrux",
+ "rate": 0.8,
+ "shorts": [
+  {
+   "id": "short1",
+   "passage": "Números 17:8-10",
+   "image": "cap01",
+   "hook": "LA VARA QUE FLORECIÓ"
+  },
+  {
+   "id": "short2",
+   "passage": "Números 20:7-11",
+   "image": "cap04",
+   "hook": "EL AGUA DE MERIBA"
+  },
+  {
+   "id": "short3",
+   "passage": "Números 21:8-9",
+   "image": "cap05",
+   "hook": "LA SERPIENTE DE BRONCE"
+  },
+  {
+   "id": "short4",
+   "passage": "Números 22:28-31",
+   "image": "cap06",
+   "hook": "EL ASNA DE BALAAM"
+  },
+  {
+   "id": "short5",
+   "passage": "Números 23:19-21",
+   "image": "cap07",
+   "hook": "DIOS NO ES HOMBRE"
+  },
+  {
+   "id": "short6",
+   "passage": "Números 24:5-7",
+   "image": "cap08",
+   "hook": "¡CUÁN HERMOSAS SON TUS TIENDAS!"
+  },
+  {
+   "id": "short7",
+   "passage": "Números 24:15-17",
+   "image": "cap08",
+   "hook": "SALDRÁ ESTRELLA"
+  },
+  {
+   "id": "short8",
+   "passage": "Números 27:1-4",
+   "image": "cap20",
+   "hook": "LAS HIJAS DE SALFAAD"
+  },
+  {
+   "id": "short9",
+   "passage": "Números 27:15-18",
+   "image": "cap11",
+   "hook": "JOSUÉ ES ESCOGIDO"
+  },
+  {
+   "id": "short10",
+   "passage": "Números 35:9-12",
+   "image": "cap19",
+   "hook": "CIUDADES DE REFUGIO"
+  }
+ ]
+}

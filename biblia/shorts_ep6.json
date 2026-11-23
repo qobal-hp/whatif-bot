@@ -1,0 +1,67 @@
+{
+ "script": "biblia/numeros01_16.txt",
+ "voice": "es-US-Chirp3-HD-Gacrux",
+ "rate": 0.8,
+ "shorts": [
+  {
+   "id": "short1",
+   "passage": "Números 6:24-26",
+   "image": "cap06",
+   "hook": "LA BENDICIÓN"
+  },
+  {
+   "id": "short2",
+   "passage": "Números 8:1-4",
+   "image": "cap08",
+   "hook": "EL CANDELERO"
+  },
+  {
+   "id": "short3",
+   "passage": "Números 9:15-18",
+   "image": "cap09",
+   "hook": "LA NUBE Y EL FUEGO"
+  },
+  {
+   "id": "short4",
+   "passage": "Números 10:33-36",
+   "image": "cap10",
+   "hook": "LEVÁNTATE, JEHOVÁ"
+  },
+  {
+   "id": "short5",
+   "passage": "Números 11:31-32",
+   "image": "cap11",
+   "hook": "LAS CODORNICES"
+  },
+  {
+   "id": "short6",
+   "passage": "Números 12:6-8",
+   "image": "cap12",
+   "hook": "BOCA A BOCA"
+  },
+  {
+   "id": "short7",
+   "passage": "Números 13:23-24",
+   "image": "cap13",
+   "hook": "EL RACIMO DE UVAS"
+  },
+  {
+   "id": "short8",
+   "passage": "Números 14:6-9",
+   "image": "cap14",
+   "hook": "JOSUÉ Y CALEB"
+  },
+  {
+   "id": "short9",
+   "passage": "Números 15:38-41",
+   "image": "cap15",
+   "hook": "LAS FRANJAS AZULES"
+  },
+  {
+   "id": "short10",
+   "passage": "Números 16:46-48",
+   "image": "cap16",
+   "hook": "ENTRE LOS MUERTOS Y LOS VIVOS"
+  }
+ ]
+}
