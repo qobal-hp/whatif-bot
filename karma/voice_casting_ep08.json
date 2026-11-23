@@ -1,0 +1,14 @@
+{"keep": 3, "roles": {
+ "RACHEL": {"gender": "female", "age": "middle_aged", "use_cases": ["conversational", "characters"], "search": "natural calm grounded",
+  "lines": ["[quiet, very controlled] Dad. [pause] Who is she?", "[steady, almost a whisper] I opened the bakery at four this morning. He texted me to ask where we keep the keys."]},
+ "BEN": {"gender": "male", "age": "middle_aged", "use_cases": ["conversational", "characters"], "search": "charming smooth confident",
+  "lines": ["[bright, smiling] Perfect. The cake's here. Could you show her to the kitchen?", "[soft, as if asking a favor] Dad gets one night."]},
+ "FRANK": {"gender": "male", "age": "old", "use_cases": ["conversational", "characters"], "search": "warm grandfather gentle",
+  "lines": ["[gently] Go ahead, sweetheart.", "[small, tired] I was going to tell you after breakfast tomorrow."]},
+ "MEGAN": {"gender": "female", "age": "young", "use_cases": ["conversational", "characters"], "search": "natural soft polished",
+  "lines": ["[fond, polished] I dropped Dad's birthday cake when I was twelve.", "[in her own plain voice] That's what they paid me to say. My name is Megan."]},
+ "NINA": {"gender": "female", "age": "middle_aged", "use_cases": ["conversational", "characters"], "search": "dry direct raspy",
+  "lines": ["[dry] He asked which one you wear on camera. I told him you wear the same one until I physically take it off you.", "[flat] The one making the noise."]},
+ "MARA": {"gender": "female", "age": "middle_aged", "use_cases": ["conversational", "characters"], "search": "friendly professional warm",
+  "lines": ["[friendly, getting right to it] I thought I saw you come in. Can we talk about tomorrow?", "[calm, exact] I'm holding the order."]}
+}}
