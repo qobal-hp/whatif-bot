@@ -61,6 +61,7 @@ jobs:
         if: inputs.new_images || inputs.clips
         env:
           FAL_KEY: ${{ secrets.FAL_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           REDO_IMAGES: ${{ inputs.new_images && inputs.scenes || '' }}
           IMAGES_ONLY: "1"
         run: |

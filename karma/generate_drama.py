@@ -19,6 +19,9 @@ from pathlib import Path
 
 import fal_client
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import gemini_media  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "pipeline"))
 from generate_assets import ASSETS, FPS, PUBLIC, download, media_seconds  # noqa: E402
@@ -214,6 +217,10 @@ def picture(spec, scene, refs):
     last = None
     for _ in range(3):
         try:
+            if gemini_media.enabled():
+                paths = [ROOT / spec["cast"][c.split(":")[0]] for c in who]
+                (ASSETS / f"{scene['id']}.jpg").write_bytes(gemini_media.image(prompt, paths, args["aspect_ratio"], args["resolution"]))
+                return
             result = fal_client.subscribe(model, arguments=args)
             download(result["images"][0]["url"], ASSETS / f"{scene['id']}.jpg")
             return
@@ -229,11 +236,15 @@ VIDEO_MODEL = "fal-ai/kling-video/v3/standard/image-to-video"
 def clip(scene, seconds):
     """Turn a scene's picture into a short moving clip; keeps the still if it fails."""
     try:
+        if gemini_media.enabled():
+            data, used = gemini_media.video(ASSETS / f"{scene['id']}.jpg", scene["motion"], seconds)
+            (ASSETS / f"{scene['id']}.mp4").write_bytes(data)
+            return used
         result = fal_client.subscribe(VIDEO_MODEL, arguments={
             "start_image_url": reference_url(ASSETS / f"{scene['id']}.jpg"),
             "prompt": scene["motion"], "duration": str(seconds), "generate_audio": False})
         download(result["video"]["url"], ASSETS / f"{scene['id']}.mp4")
-        return True
+        return seconds
     except Exception as err:
         print(f"Clip {scene['id']} failed, keeping the still: {err}")
         return False
@@ -252,7 +263,7 @@ def clips(spec, lengths):
             jobs.append((s, seconds, None))
     with ThreadPoolExecutor(4) as pool:
         made = list(pool.map(lambda j: j[2] or clip(j[0], j[1]), jobs))
-    done = {s["id"]: seconds for (s, seconds, _), ok in zip(jobs, made) if ok}
+    done = {s["id"]: (ok if isinstance(ok, int) and not isinstance(ok, bool) else seconds) for (s, seconds, _), ok in zip(jobs, made) if ok}
     print(f"Clips: {len(done)} of {len(jobs)}")
     return done
 
@@ -351,12 +362,15 @@ def main():
         if not path.exists() and spec.get("portraits", {}).get(name):
             # A character without a portrait yet: draw one, and every scene uses it as the reference.
             path.parent.mkdir(parents=True, exist_ok=True)
-            result = fal_client.subscribe(TEXT_MODEL, arguments={"prompt": spec["portraits"][name], "aspect_ratio": "3:4", "resolution": "1K", "output_format": "jpeg"})
-            download(result["images"][0]["url"], path)
+            if gemini_media.enabled():
+                path.write_bytes(gemini_media.image(spec["portraits"][name], (), "3:4", "1K"))
+            else:
+                result = fal_client.subscribe(TEXT_MODEL, arguments={"prompt": spec["portraits"][name], "aspect_ratio": "3:4", "resolution": "1K", "output_format": "jpeg"})
+                download(result["images"][0]["url"], path)
             if path.resolve() != (ASSETS / f"portrait_{name}.jpg").resolve():
                 shutil.copy(path, ASSETS / f"portrait_{name}.jpg")  # kept with the assets so it can be saved later
             print(f"Portrait of {name} drawn")
-    refs = {name: reference_url(ROOT / path) for name, path in spec["cast"].items() if name in needed}
+    refs = {} if gemini_media.enabled() else {name: reference_url(ROOT / path) for name, path in spec["cast"].items() if name in needed}
     with ThreadPoolExecutor(6) as pool:
         list(pool.map(lambda s: picture(spec, s, refs), spec["scenes"]))
     print("Images done")
