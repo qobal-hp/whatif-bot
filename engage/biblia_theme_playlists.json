@@ -1,0 +1,41 @@
+{
+ "skip_comments": true,
+ "language": "es",
+ "playlists": [
+  {
+   "title": "Cuando te sientes débil",
+   "description": "Versículos, reflexión y oración para cuando el cuerpo o el alma están cansados. Palabra de Dios para recobrar fuerzas.",
+   "videos": []
+  },
+  {
+   "title": "Cuando necesitas dar gracias",
+   "description": "Versículos para cultivar un corazón agradecido, con explicación, meditación y oración.",
+   "videos": []
+  },
+  {
+   "title": "Cuando tienes miedo o ansiedad",
+   "description": "Promesas de la Biblia para calmar el miedo y la ansiedad, con reflexión y oración para descansar en Dios.",
+   "videos": []
+  },
+  {
+   "title": "Cuando estás de luto",
+   "description": "Consuelo de la Palabra de Dios en tiempos de pérdida y tristeza, con meditación y oración.",
+   "videos": []
+  },
+  {
+   "title": "Cuando no puedes dormir",
+   "description": "Versículos y oraciones tranquilas para la noche, para descansar en la paz de Dios.",
+   "videos": []
+  },
+  {
+   "title": "Cuando necesitas perdonar",
+   "description": "Lo que la Biblia enseña sobre el perdón, con explicación, meditación y oración.",
+   "videos": []
+  },
+  {
+   "title": "Para tu familia",
+   "description": "Versículos y oraciones por tu familia, tu hogar y los que amas.",
+   "videos": []
+  }
+ ]
+}
