@@ -1,0 +1,58 @@
+{
+ "youtube": {
+  "title": "",
+  "description": "",
+  "tags": [
+   "biblia",
+   "biblia en español",
+   "versículo",
+   "reina valera 1909",
+   "palabra de dios",
+   "shorts"
+  ],
+  "category": "27",
+  "language": "es",
+  "channel_title": "Sleep with Bible",
+  "long_label": "🌙 Devocional completo",
+  "long_url": "https://youtu.be/dUfIaZZcfVQ",
+  "shorts_description": "Lectura de la Biblia Reina-Valera 1909 con música suave. 🙏\n\n#biblia #shorts #palabradedios"
+ },
+ "shorts": [
+  {
+   "id": "short1",
+   "youtube_title": "¿Por qué Jesús dormía mientras la barca se llenaba de agua? | Marcos 4:37-40 #shorts"
+  },
+  {
+   "id": "short2",
+   "youtube_title": "¿Qué significa tener el alma como un niño destetado? | Salmos 131:1-2 #shorts"
+  },
+  {
+   "id": "short3",
+   "youtube_title": "¿Es posible acostarse sin temor después de un día difícil? | Proverbios 3:21-24 #shorts"
+  },
+  {
+   "id": "short4",
+   "youtube_title": "¿Dónde estaba la fuerza que Israel no quiso aceptar? | Isaías 30:15 #shorts"
+  },
+  {
+   "id": "short5",
+   "youtube_title": "¿Cómo tener esperanza en medio de las ruinas? | Lamentaciones 3:21-24 #shorts"
+  },
+  {
+   "id": "short6",
+   "youtube_title": "¿Sabías que la Biblia dice que Dios canta sobre su pueblo? | Sofonías 3:16-17 #shorts"
+  },
+  {
+   "id": "short7",
+   "youtube_title": "¿Por qué Jesús dijo que no nos preocupemos por el mañana? | Mateo 6:31-34 #shorts"
+  },
+  {
+   "id": "short8",
+   "youtube_title": "¿Qué hacer con la ansiedad cuando no se va? | Filipenses 4:6-7 #shorts"
+  },
+  {
+   "id": "short9",
+   "youtube_title": "¿Qué significa echar toda tu ansiedad sobre Dios? | 1 Pedro 5:6-7 #shorts"
+  }
+ ]
+}
