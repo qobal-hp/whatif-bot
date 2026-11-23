@@ -30,7 +30,7 @@ book = json.load(open(sys.argv[8] if len(sys.argv) > 8 else "/tmp/tx/out/pentate
 out = [intro]
 for c in range(a, b + 1):
     out.append(f"{es}, capítulo {words(c)}.")
-    verses = [(f"{es} {c}:{i}", fix(v)) for i, v in enumerate(book[str(c)], 1)]
+    verses = [(f"{es} {c}:{i}", fix(v)) for i, v in enumerate(book[str(c)], 1) if v.strip()]
     paras, cur, n = [], [], 0
     for ref, v in verses:
         cur.append(f"[[{ref}]] {v}")
