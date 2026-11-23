@@ -35,14 +35,14 @@ def image(prompt, ref_paths=(), aspect="16:9", size="2K"):
         config = {"responseModalities": ["IMAGE"], "imageConfig": {"aspectRatio": aspect}}
         if "2.5" not in model:
             config["imageConfig"]["imageSize"] = size
-        for _ in range(2):
+        for attempt in range(8):
             try:
                 out = _call(f"{API}/models/{model}:generateContent", {"contents": [{"parts": parts}], "generationConfig": config})
             except urllib.error.HTTPError as err:
                 last = f"{model}: HTTP {err.code} {err.read()[:200]}"
                 if err.code in (400, 403, 404):
                     break
-                time.sleep(5)
+                time.sleep(60 if err.code == 429 else 5)  # spend/rate limit: wait it out on the same model
                 continue
             for cand in out.get("candidates", []):
                 for part in cand.get("content", {}).get("parts", []):

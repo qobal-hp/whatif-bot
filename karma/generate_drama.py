@@ -372,7 +372,7 @@ def main():
                 shutil.copy(path, ASSETS / f"portrait_{name}.jpg")  # kept with the assets so it can be saved later
             print(f"Portrait of {name} drawn")
     refs = {} if gemini_media.enabled() else {name: reference_url(ROOT / path) for name, path in spec["cast"].items() if name in needed}
-    with ThreadPoolExecutor(6) as pool:
+    with ThreadPoolExecutor(2 if gemini_media.enabled() else 6) as pool:
         list(pool.map(lambda s: picture(spec, s, refs), spec["scenes"]))
     print("Images done")
     if os.environ.get("IMAGES_ONLY"):
