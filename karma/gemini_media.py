@@ -73,8 +73,63 @@ def _veo_models():
     return _VEO
 
 
+VERTEX_MODELS = ["veo-3.1-fast-generate-001", "veo-3.1-fast-generate-preview", "veo-3.0-fast-generate-001", "veo-2.0-generate-001"]
+
+
+def _vertex():
+    """(project, headers) from the Google Cloud service account, or None."""
+    raw = os.environ.get("GOOGLE_TTS_SA_JSON")
+    if not raw:
+        return None
+    from google.oauth2 import service_account
+    import google.auth.transport.requests
+    info = json.loads(raw)
+    creds = service_account.Credentials.from_service_account_info(info, scopes=["https://www.googleapis.com/auth/cloud-platform"])
+    creds.refresh(google.auth.transport.requests.Request())
+    return info["project_id"], {"Authorization": f"Bearer {creds.token}", "Content-Type": "application/json"}
+
+
+def _vertex_video(start_image, prompt, seconds):
+    project, headers = _vertex()
+    base = f"https://us-central1-aiplatform.googleapis.com/v1/projects/{project}/locations/us-central1/publishers/google/models"
+    body = {"instances": [{"prompt": prompt + ". Subtle, realistic cinematic motion, no new people, no text.",
+                           "image": {"bytesBase64Encoded": base64.b64encode(open(start_image, "rb").read()).decode(), "mimeType": "image/jpeg"}}],
+            "parameters": {"aspectRatio": "16:9", "durationSeconds": seconds, "sampleCount": 1, "generateAudio": False}}
+    last = None
+    for model in VERTEX_MODELS:
+        def post(url, data):
+            req = urllib.request.Request(url, data=json.dumps(data).encode(), headers=headers)
+            return json.loads(urllib.request.urlopen(req, timeout=300).read())
+        try:
+            op = post(f"{base}/{model}:predictLongRunning", body)
+        except urllib.error.HTTPError as err:
+            last = f"vertex {model}: HTTP {err.code} {err.read()[:300]}"
+            print(last)
+            continue
+        for _ in range(90):
+            time.sleep(10)
+            op = post(f"{base}/{model}:fetchPredictOperation", {"operationName": op["name"]})
+            if op.get("done"):
+                break
+        if not op.get("done") or op.get("error"):
+            last = f"vertex {model}: {op.get('error') or 'timed out'}"
+            print(last)
+            continue
+        vids = op.get("response", {}).get("videos") or []
+        if vids and vids[0].get("bytesBase64Encoded"):
+            return base64.b64decode(vids[0]["bytesBase64Encoded"]), seconds
+        last = f"vertex {model}: no video ({json.dumps(op.get('response'))[:300]})"
+        print(last)
+    raise RuntimeError(last)
+
+
 def video(start_image, prompt, seconds):
     """Return MP4 bytes animating start_image (Veo). seconds is rounded to 4, 6 or 8."""
+    if os.environ.get("GOOGLE_TTS_SA_JSON"):
+        try:
+            return _vertex_video(start_image, prompt, 8 if seconds > 6 else 6)
+        except Exception as err:
+            print(f"Vertex Veo failed: {err}")
     seconds = 8 if seconds > 6 else 6
     body = {"instances": [{"prompt": prompt + ". Subtle, realistic cinematic motion, no new people, no text.",
                            "image": {"bytesBase64Encoded": base64.b64encode(open(start_image, "rb").read()).decode(), "mimeType": "image/jpeg"}}],
