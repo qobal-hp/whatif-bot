@@ -27,8 +27,53 @@ def _inline(path):
     return {"inline_data": {"mime_type": "image/jpeg", "data": base64.b64encode(open(path, "rb").read()).decode()}}
 
 
+VERTEX_IMAGE_MODELS = ["gemini-3-pro-image-preview", "gemini-2.5-flash-image"]
+
+
+def _vertex_image(parts, aspect, size):
+    project, headers = _vertex()
+    last = None
+    for model in VERTEX_IMAGE_MODELS:
+        config = {"responseModalities": ["IMAGE"], "imageConfig": {"aspectRatio": aspect}}
+        if "2.5" not in model:
+            config["imageConfig"]["imageSize"] = size
+        url = f"https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/{model}:generateContent"
+        body = {"contents": [{"role": "user", "parts": [{"inlineData": p["inline_data"]} if "inline_data" in p else p for p in parts]}],
+                "generationConfig": config}
+        for _ in range(6):
+            try:
+                req = urllib.request.Request(url, data=json.dumps(body).encode(), headers=headers)
+                out = json.loads(urllib.request.urlopen(req, timeout=300).read())
+            except urllib.error.HTTPError as err:
+                last = f"vertex {model}: HTTP {err.code} {err.read()[:200]}"
+                if err.code in (400, 403, 404):
+                    break
+                time.sleep(30)
+                continue
+            for cand in out.get("candidates", []):
+                for part in cand.get("content", {}).get("parts", []):
+                    data = part.get("inlineData") or part.get("inline_data")
+                    if data:
+                        return base64.b64decode(data["data"])
+            last = f"vertex {model}: no image"
+    raise RuntimeError(last)
+
+
 def image(prompt, ref_paths=(), aspect="16:9", size="2K"):
     """Return JPEG/PNG bytes for one picture, passing reference portraits."""
+    if os.environ.get("IMAGE_VIA") == "vertex" and os.environ.get("GOOGLE_TTS_SA_JSON"):
+        return _vertex_image([_inline(p) for p in ref_paths] + [{"text": prompt}], aspect, size)
+    try:
+        return _studio_image(prompt, ref_paths, aspect, size)
+    except RuntimeError as err:
+        if os.environ.get("GOOGLE_TTS_SA_JSON") and ("402" in str(err) or "429" in str(err)):
+            print(f"AI Studio image failed ({str(err)[:80]}), trying Vertex AI")
+            os.environ["IMAGE_VIA"] = "vertex"
+            return _vertex_image([_inline(p) for p in ref_paths] + [{"text": prompt}], aspect, size)
+        raise
+
+
+def _studio_image(prompt, ref_paths=(), aspect="16:9", size="2K"):
     parts = [_inline(p) for p in ref_paths] + [{"text": prompt}]
     last = None
     for model in IMAGE_MODELS:
@@ -40,7 +85,7 @@ def image(prompt, ref_paths=(), aspect="16:9", size="2K"):
                 out = _call(f"{API}/models/{model}:generateContent", {"contents": [{"parts": parts}], "generationConfig": config})
             except urllib.error.HTTPError as err:
                 last = f"{model}: HTTP {err.code} {err.read()[:200]}"
-                if err.code in (400, 403, 404):
+                if err.code in (400, 402, 403, 404):
                     break
                 time.sleep(60 if err.code == 429 else 5)  # spend/rate limit: wait it out on the same model
                 continue

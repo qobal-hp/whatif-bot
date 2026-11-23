@@ -360,6 +360,10 @@ def main():
     needed = {c.split(":")[0] for s in todo for c in s.get("chars", [])}
     for name in needed:
         path = ROOT / spec["cast"][name]
+        kept = ASSETS / f"portrait_{name}.jpg"
+        if not path.exists() and kept.exists():
+            path.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy(kept, path)  # the face drawn for this episode the first time
         if not path.exists() and spec.get("portraits", {}).get(name):
             # A character without a portrait yet: draw one, and every scene uses it as the reference.
             path.parent.mkdir(parents=True, exist_ok=True)
