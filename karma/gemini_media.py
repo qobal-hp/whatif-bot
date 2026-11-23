@@ -53,6 +53,26 @@ def image(prompt, ref_paths=(), aspect="16:9", size="2K"):
     raise RuntimeError(last)
 
 
+_VEO = []
+
+
+def _veo_models():
+    """The Veo models this key can run, newest and fastest first."""
+    if not _VEO:
+        found, token = [], ""
+        while True:
+            page = _call(f"{API}/models?pageSize=200" + (f"&pageToken={token}" if token else ""))
+            found += [m["name"].split("/")[-1] for m in page.get("models", [])
+                      if "veo" in m["name"] and "predictLongRunning" in m.get("supportedGenerationMethods", [])]
+            token = page.get("nextPageToken")
+            if not token:
+                break
+        found.sort(key=lambda n: ("fast" not in n, "lite" in n, [-int(x) for x in __import__("re").findall(r"\d+", n)[:2]]))
+        print(f"Veo models: {found}")
+        _VEO.extend(found or VIDEO_MODELS)
+    return _VEO
+
+
 def video(start_image, prompt, seconds):
     """Return MP4 bytes animating start_image (Veo). seconds is rounded to 4, 6 or 8."""
     seconds = 8 if seconds > 6 else 6
@@ -60,7 +80,7 @@ def video(start_image, prompt, seconds):
                            "image": {"bytesBase64Encoded": base64.b64encode(open(start_image, "rb").read()).decode(), "mimeType": "image/jpeg"}}],
             "parameters": {"aspectRatio": "16:9", "durationSeconds": seconds}}
     last = None
-    for model in VIDEO_MODELS:
+    for model in _veo_models():
         try:
             op = _call(f"{API}/models/{model}:predictLongRunning", body)
         except urllib.error.HTTPError as err:
