@@ -1,0 +1,77 @@
+{
+ "script": "biblia/numeros17_36_d.txt",
+ "voice": "es-US-Chirp3-HD-Gacrux",
+ "rate": 0.8,
+ "shorts": [
+  {
+   "id": "short1",
+   "passage": "Números 17:8-10",
+   "image": "cap01",
+   "hook": "LA VARA QUE FLORECIÓ",
+   "reflection": "Lo que parecía seco y muerto, en manos de Dios florece y da fruto."
+  },
+  {
+   "id": "short2",
+   "passage": "Números 20:7-11",
+   "image": "cap04",
+   "hook": "EL AGUA DE MERIBA",
+   "reflection": "Aun cuando fallamos, Dios sigue dando agua a su pueblo. Su gracia es mayor."
+  },
+  {
+   "id": "short3",
+   "passage": "Números 21:8-9",
+   "image": "cap05",
+   "hook": "LA SERPIENTE DE BRONCE",
+   "reflection": "La sanidad empezó con una mirada. Mira hoy hacia Dios."
+  },
+  {
+   "id": "short4",
+   "passage": "Números 22:28-31",
+   "image": "cap06",
+   "hook": "EL ASNA DE BALAAM",
+   "reflection": "Dios puede usar lo más sencillo para abrir nuestros ojos."
+  },
+  {
+   "id": "short5",
+   "passage": "Números 23:19-21",
+   "image": "cap07",
+   "hook": "DIOS NO ES HOMBRE",
+   "reflection": "Las personas cambian, pero las promesas de Dios permanecen."
+  },
+  {
+   "id": "short6",
+   "passage": "Números 24:5-7",
+   "image": "cap08",
+   "hook": "¡CUÁN HERMOSAS SON TUS TIENDAS!",
+   "reflection": "Lo que Dios ha bendecido, nadie lo puede maldecir."
+  },
+  {
+   "id": "short7",
+   "passage": "Números 24:15-17",
+   "image": "cap08",
+   "hook": "SALDRÁ ESTRELLA",
+   "reflection": "En la noche más oscura, Dios ya preparó una estrella."
+  },
+  {
+   "id": "short8",
+   "passage": "Números 27:1-4",
+   "image": "cap20",
+   "hook": "LAS HIJAS DE SALFAAD",
+   "reflection": "Cinco hijas pidieron con valentía, y Dios les respondió. Pide con fe."
+  },
+  {
+   "id": "short9",
+   "passage": "Números 27:15-18",
+   "image": "cap11",
+   "hook": "JOSUÉ ES ESCOGIDO",
+   "reflection": "Dios siempre prepara a alguien para continuar su obra."
+  },
+  {
+   "id": "short10",
+   "passage": "Números 35:9-12",
+   "image": "cap19",
+   "hook": "CIUDADES DE REFUGIO",
+   "reflection": "En Dios siempre hay un lugar de refugio para el que corre hacia Él."
+  }
+ ]
+}

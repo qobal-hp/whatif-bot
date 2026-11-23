@@ -1,0 +1,77 @@
+{
+ "script": "biblia/numeros01_16_d.txt",
+ "voice": "es-US-Chirp3-HD-Gacrux",
+ "rate": 0.8,
+ "shorts": [
+  {
+   "id": "short1",
+   "passage": "Números 6:24-26",
+   "image": "cap06",
+   "hook": "LA BENDICIÓN",
+   "reflection": "Recibe esta bendición esta noche: Dios te guarda y te da paz."
+  },
+  {
+   "id": "short2",
+   "passage": "Números 8:1-4",
+   "image": "cap08",
+   "hook": "EL CANDELERO",
+   "reflection": "Una pequeña lámpara encendida ilumina toda la habitación. Deja que tu luz brille."
+  },
+  {
+   "id": "short3",
+   "passage": "Números 9:15-18",
+   "image": "cap09",
+   "hook": "LA NUBE Y EL FUEGO",
+   "reflection": "No necesitas ver todo el camino. Solo sigue a Dios un paso a la vez."
+  },
+  {
+   "id": "short4",
+   "passage": "Números 10:33-36",
+   "image": "cap10",
+   "hook": "LEVÁNTATE, JEHOVÁ",
+   "reflection": "Dios va delante de ti y prepara el lugar donde vas a descansar."
+  },
+  {
+   "id": "short5",
+   "passage": "Números 11:31-32",
+   "image": "cap11",
+   "hook": "LAS CODORNICES",
+   "reflection": "Lo que para nosotros es imposible, para Dios es solo un soplo de viento."
+  },
+  {
+   "id": "short6",
+   "passage": "Números 12:6-8",
+   "image": "cap12",
+   "hook": "BOCA A BOCA",
+   "reflection": "Dios desea hablar contigo de cerca, como un amigo."
+  },
+  {
+   "id": "short7",
+   "passage": "Números 13:23-24",
+   "image": "cap13",
+   "hook": "EL RACIMO DE UVAS",
+   "reflection": "Las promesas de Dios son más grandes de lo que imaginamos."
+  },
+  {
+   "id": "short8",
+   "passage": "Números 14:6-9",
+   "image": "cap14",
+   "hook": "JOSUÉ Y CALEB",
+   "reflection": "Los gigantes son reales, pero Dios es más grande. No temas."
+  },
+  {
+   "id": "short9",
+   "passage": "Números 15:38-41",
+   "image": "cap15",
+   "hook": "LAS FRANJAS AZULES",
+   "reflection": "Dios nos da recordatorios porque sabe que olvidamos. Hoy, recuerda su amor."
+  },
+  {
+   "id": "short10",
+   "passage": "Números 16:46-48",
+   "image": "cap16",
+   "hook": "ENTRE LOS MUERTOS Y LOS VIVOS",
+   "reflection": "Una sola persona que intercede puede detener la tragedia. Tus oraciones importan."
+  }
+ ]
+}

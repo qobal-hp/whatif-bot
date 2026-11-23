@@ -1,0 +1,14 @@
+{
+ "script": "biblia/genesis01_30_v.txt",
+ "voice": "es-US-Chirp3-HD-Gacrux",
+ "rate": 0.8,
+ "shorts": [
+  {
+   "id": "short8",
+   "passage": "Génesis 6:5-8",
+   "image": "cap06",
+   "hook": "NOÉ HALLÓ GRACIA",
+   "reflection": "Aun en un mundo lleno de maldad, Dios ve al que busca su gracia. Tu fidelidad no pasa desapercibida."
+  }
+ ]
+}

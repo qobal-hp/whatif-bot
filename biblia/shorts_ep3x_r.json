@@ -1,0 +1,42 @@
+{
+ "script": "biblia/exodo01_21.txt",
+ "voice": "es-US-Chirp3-HD-Gacrux",
+ "rate": 0.8,
+ "shorts": [
+  {
+   "id": "short6",
+   "passage": "Éxodo 3:13-15",
+   "image": "cap03",
+   "hook": "YO SOY EL QUE SOY",
+   "reflection": "Dios no cambia: el que fue con Moisés es el mismo que hoy está contigo."
+  },
+  {
+   "id": "short7",
+   "passage": "Éxodo 15:1-3",
+   "image": "cap15",
+   "hook": "EL CÁNTICO DE MOISÉS",
+   "reflection": "Después de la prueba viene el canto. Dios sigue siendo tu fortaleza y tu canción."
+  },
+  {
+   "id": "short8",
+   "passage": "Éxodo 16:13-15",
+   "image": "cap16",
+   "hook": "PAN DEL CIELO",
+   "reflection": "Dios da el pan de cada día. Hoy también puedes confiar en que Él proveerá."
+  },
+  {
+   "id": "short9",
+   "passage": "Éxodo 17:5-6",
+   "image": "cap17",
+   "hook": "AGUA DE LA PEÑA",
+   "reflection": "Donde solo ves piedra, Dios puede hacer brotar agua de vida."
+  },
+  {
+   "id": "short10",
+   "passage": "Éxodo 19:3-6",
+   "image": "cap19",
+   "hook": "SOBRE ALAS DE ÁGUILAS",
+   "reflection": "Dios te ha llevado sobre alas de águilas hasta aquí. Él no te va a soltar."
+  }
+ ]
+}

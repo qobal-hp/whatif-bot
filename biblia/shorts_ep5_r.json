@@ -1,0 +1,56 @@
+{
+ "script": "biblia/levitico01_27.txt",
+ "voice": "es-US-Chirp3-HD-Gacrux",
+ "rate": 0.8,
+ "shorts": [
+  {
+   "id": "short1",
+   "passage": "Levítico 9:22-24",
+   "image": "cap09",
+   "hook": "FUEGO DEL CIELO",
+   "reflection": "Dios responde a un corazón dispuesto. Su fuego todavía enciende la fe."
+  },
+  {
+   "id": "short2",
+   "passage": "Levítico 11:44-45",
+   "image": "cap11",
+   "hook": "SED SANTOS",
+   "reflection": "Ser santo es pertenecer a Dios. Él te llama suyo."
+  },
+  {
+   "id": "short3",
+   "passage": "Levítico 16:29-31",
+   "image": "cap16",
+   "hook": "EL DÍA DE LA EXPIACIÓN",
+   "reflection": "Dios abrió un camino para limpiar el corazón y empezar de nuevo."
+  },
+  {
+   "id": "short4",
+   "passage": "Levítico 19:9-10",
+   "image": "cap19",
+   "hook": "PARA EL POBRE",
+   "reflection": "Dios cuida del pobre a través de manos generosas. ¿A quién puedes bendecir hoy?"
+  },
+  {
+   "id": "short6",
+   "passage": "Levítico 19:32-34",
+   "image": "cap20",
+   "hook": "EL EXTRANJERO",
+   "reflection": "Honra al anciano y abraza al extranjero: así se ve el amor de Dios."
+  },
+  {
+   "id": "short7",
+   "passage": "Levítico 23:39-43",
+   "image": "cap23",
+   "hook": "LA FIESTA DE LAS CABAÑAS",
+   "reflection": "Recordar lo que Dios hizo es motivo de alegría. Hoy también hay razones para celebrar."
+  },
+  {
+   "id": "short8",
+   "passage": "Levítico 25:8-10",
+   "image": "cap25",
+   "hook": "EL JUBILEO",
+   "reflection": "Dios es un Dios de libertad y nuevos comienzos. Tu jubileo puede empezar hoy."
+  }
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "script": "biblia/exodo22_40.txt",
+ "voice": "es-US-Chirp3-HD-Gacrux",
+ "rate": 0.8,
+ "shorts": [
+  {
+   "id": "short6",
+   "passage": "Éxodo 24:15-18",
+   "image": "cap03",
+   "hook": "LA NUBE DEL SINAÍ",
+   "reflection": "A veces Dios nos llama a subir y esperar en silencio. En la espera, Él habla."
+  },
+  {
+   "id": "short7",
+   "passage": "Éxodo 29:44-46",
+   "image": "cap08",
+   "hook": "HABITARÉ ENTRE ELLOS",
+   "reflection": "Dios no quiere estar lejos: su deseo es habitar en medio de su pueblo."
+  },
+  {
+   "id": "short8",
+   "passage": "Éxodo 33:11-14",
+   "image": "cap12",
+   "hook": "CARA A CARA",
+   "reflection": "No caminas solo. Su presencia va contigo, y Él te dará descanso."
+  },
+  {
+   "id": "short9",
+   "passage": "Éxodo 34:29-30",
+   "image": "cap13",
+   "hook": "EL ROSTRO RESPLANDECIENTE",
+   "reflection": "Quien pasa tiempo con Dios, refleja su luz sin darse cuenta."
+  },
+  {
+   "id": "short10",
+   "passage": "Éxodo 40:34-36",
+   "image": "cap19",
+   "hook": "LA NUBE Y EL FUEGO",
+   "reflection": "Dios guía paso a paso. Cuando Él se mueve, avanza; cuando se detiene, descansa."
+  }
+ ]
+}
