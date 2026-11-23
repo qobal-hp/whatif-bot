@@ -1,0 +1,87 @@
+{
+ "script": "biblia/numeros17_36_d.txt",
+ "voice": "es-US-Chirp3-HD-Gacrux",
+ "rate": 0.8,
+ "shorts": [
+  {
+   "id": "short1",
+   "passage": "Números 17:8-10",
+   "image": "cap01",
+   "hook": "LA VARA QUE FLORECIÓ",
+   "question": "¿Por qué floreció la vara de Aarón y no las demás?",
+   "answer": "Las doce varas eran madera seca. Solo la que Dios escogió dio brotes, flores y almendras en una sola noche. Así terminó la discusión sobre quién debía servir en el tabernáculo: la vida solo viene de Dios."
+  },
+  {
+   "id": "short2",
+   "passage": "Números 20:7-11",
+   "image": "cap04",
+   "hook": "EL AGUA DE MERIBA",
+   "question": "¿Por qué Moisés no pudo entrar en la tierra prometida?",
+   "answer": "Dios le dijo que hablara a la peña, pero Moisés, enojado, la golpeó dos veces y habló como si el milagro fuera suyo. El agua salió igual, porque Dios fue fiel con su pueblo. Pero el líder debía mostrar la santidad de Dios, no su propio enojo."
+  },
+  {
+   "id": "short3",
+   "passage": "Números 21:8-9",
+   "image": "cap05",
+   "hook": "LA SERPIENTE DE BRONCE",
+   "question": "¿Por qué Dios sanó al pueblo con una serpiente de bronce?",
+   "answer": "La serpiente era la imagen del mal que los mordía, y bastaba mirarla con fe para vivir. Siglos después, Jesús usó esta escena para hablar de sí mismo: como Moisés levantó la serpiente en el desierto, así el Hijo del hombre sería levantado."
+  },
+  {
+   "id": "short4",
+   "passage": "Números 22:28-31",
+   "image": "cap06",
+   "hook": "EL ASNA DE BALAAM",
+   "question": "¿Cómo vio el asna lo que el profeta no veía?",
+   "answer": "Balaam iba con el corazón puesto en la recompensa del rey. El asna vio al ángel con la espada; el profeta, ciego por la ambición, solo vio un animal terco. A veces lo que nos detiene es lo que nos salva."
+  },
+  {
+   "id": "short5",
+   "passage": "Números 23:19-21",
+   "image": "cap07",
+   "hook": "DIOS NO ES HOMBRE",
+   "question": "Si el rey pagó para maldecir a Israel, ¿por qué Balaam solo podía bendecir?",
+   "answer": "Porque Dios ya había bendecido a su pueblo, y Dios no cambia de palabra como cambia un hombre. Ningún dinero podía comprar lo que Dios había prometido."
+  },
+  {
+   "id": "short6",
+   "passage": "Números 24:5-7",
+   "image": "cap08",
+   "hook": "¡CUÁN HERMOSAS SON TUS TIENDAS!",
+   "question": "¿Qué vio Balaam desde la cima del monte?",
+   "answer": "Vio al pueblo acampado en orden, tribu por tribu, alrededor del tabernáculo. Desde arriba, lo que parecía un campamento en el desierto era como un jardín junto al río. Dios ve belleza donde otros solo ven desierto."
+  },
+  {
+   "id": "short7",
+   "passage": "Números 24:15-17",
+   "image": "cap08",
+   "hook": "SALDRÁ ESTRELLA",
+   "question": "¿Quién es la estrella que saldría de Jacob?",
+   "answer": "Balaam anunció un rey que vendría de Israel, no ahora, no de cerca. Muchos vieron aquí al rey David, y los cristianos han visto a Cristo, cuya estrella guió a los sabios hasta Belén."
+  },
+  {
+   "id": "short8",
+   "passage": "Números 27:1-4",
+   "image": "cap20",
+   "hook": "LAS HIJAS DE SALFAAD",
+   "question": "¿Qué pidieron las hijas de Salfaad que nadie había pedido antes?",
+   "answer": "Su padre murió sin hijos varones, y la costumbre no les daba herencia. Ellas se presentaron con valentía ante Moisés, y Dios respondió: bien dicen. Dios escuchó la voz de quienes nadie había tenido en cuenta."
+  },
+  {
+   "id": "short9",
+   "passage": "Números 27:15-18",
+   "image": "cap11",
+   "hook": "JOSUÉ ES ESCOGIDO",
+   "question": "¿Por qué Dios escogió a Josué para guiar al pueblo?",
+   "answer": "Moisés pidió un pastor, para que el pueblo no fuera como ovejas sin pastor. Dios señaló a Josué, varón en el cual hay espíritu. No fue escogido por su fuerza, sino por el Espíritu que había en él y por su fidelidad junto a Moisés."
+  },
+  {
+   "id": "short10",
+   "passage": "Números 35:9-12",
+   "image": "cap19",
+   "hook": "CIUDADES DE REFUGIO",
+   "question": "¿Para qué eran las ciudades de refugio?",
+   "answer": "Eran ciudades donde podía huir quien había causado una muerte sin intención, para no caer en la venganza antes de un juicio justo. Dios pensó en la justicia, y también en la misericordia."
+  }
+ ]
+}

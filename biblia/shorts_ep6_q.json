@@ -1,0 +1,87 @@
+{
+ "script": "biblia/numeros01_16_d.txt",
+ "voice": "es-US-Chirp3-HD-Gacrux",
+ "rate": 0.8,
+ "shorts": [
+  {
+   "id": "short1",
+   "passage": "Números 6:24-26",
+   "image": "cap06",
+   "hook": "LA BENDICIÓN",
+   "question": "¿Qué significa que Dios haga resplandecer su rostro sobre ti?",
+   "answer": "En el antiguo Oriente, un rostro que resplandecía era el de un rey que recibía a alguien con favor. Esta bendición dice que Dios no te mira con enojo, sino con alegría. Y termina con la palabra paz: no solo la ausencia de problemas, sino una vida completa en Él."
+  },
+  {
+   "id": "short2",
+   "passage": "Números 8:1-4",
+   "image": "cap08",
+   "hook": "EL CANDELERO",
+   "question": "¿Por qué las lámparas debían alumbrar hacia delante del candelero?",
+   "answer": "La luz no era para adornar el candelero, sino para iluminar el lugar santo. Así es la luz que Dios nos da: no para lucirnos, sino para alumbrar a los que están cerca."
+  },
+  {
+   "id": "short3",
+   "passage": "Números 9:15-18",
+   "image": "cap09",
+   "hook": "LA NUBE Y EL FUEGO",
+   "question": "¿Cómo sabía Israel cuándo caminar y cuándo detenerse?",
+   "answer": "No tenían mapa ni calendario: miraban la nube. A veces se quedaba dos días, a veces un año. La lección es sencilla y difícil: moverse cuando Dios se mueve, y descansar cuando Él descansa."
+  },
+  {
+   "id": "short4",
+   "passage": "Números 10:33-36",
+   "image": "cap10",
+   "hook": "LEVÁNTATE, JEHOVÁ",
+   "question": "¿Por qué el arca iba delante del pueblo?",
+   "answer": "El arca representaba la presencia de Dios, y el texto dice que iba delante para buscarles lugar de descanso. Dios no solo nos acompaña: va adelante y prepara el camino."
+  },
+  {
+   "id": "short5",
+   "passage": "Números 11:31-32",
+   "image": "cap11",
+   "hook": "LAS CODORNICES",
+   "question": "Si Dios les dio codornices, ¿por qué esta historia termina en tristeza?",
+   "answer": "El pueblo no pedía comida: despreciaba el maná y añoraba Egipto. Recibieron lo que deseaban, pero su corazón siguió insatisfecho. A veces el problema no es lo que nos falta, sino lo que anhelamos."
+  },
+  {
+   "id": "short6",
+   "passage": "Números 12:6-8",
+   "image": "cap12",
+   "hook": "BOCA A BOCA",
+   "question": "¿Qué hacía a Moisés diferente de los demás profetas?",
+   "answer": "A otros, Dios les hablaba en visiones y sueños; con Moisés hablaba boca a boca. Y unos versículos antes, la Biblia dice que Moisés era el hombre más manso de la tierra. La cercanía con Dios no nace del poder, sino de la humildad."
+  },
+  {
+   "id": "short7",
+   "passage": "Números 13:23-24",
+   "image": "cap13",
+   "hook": "EL RACIMO DE UVAS",
+   "question": "Si la tierra era tan buena, ¿por qué el pueblo no quiso entrar?",
+   "answer": "Los espías trajeron un racimo tan grande que dos hombres lo cargaban. La prueba de la promesa estaba sobre sus hombros, pero diez de ellos solo hablaron de gigantes. Vieron la misma tierra; lo que cambió fue dónde pusieron la mirada."
+  },
+  {
+   "id": "short8",
+   "passage": "Números 14:6-9",
+   "image": "cap14",
+   "hook": "JOSUÉ Y CALEB",
+   "question": "¿Qué vieron Josué y Caleb que los demás no vieron?",
+   "answer": "No negaron que los gigantes existían. Pero dijeron: Jehová está con nosotros. Los demás midieron a los gigantes contra sí mismos; Josué y Caleb los midieron contra Dios."
+  },
+  {
+   "id": "short9",
+   "passage": "Números 15:38-41",
+   "image": "cap15",
+   "hook": "LAS FRANJAS AZULES",
+   "question": "¿Para qué servían las franjas azules en los vestidos?",
+   "answer": "Eran un recordatorio que se veía todos los días. Al mirarlas, recordarían los mandamientos de Dios. Él conoce nuestra memoria frágil, y nos da señales sencillas para volver a Él."
+  },
+  {
+   "id": "short10",
+   "passage": "Números 16:46-48",
+   "image": "cap16",
+   "hook": "ENTRE LOS MUERTOS Y LOS VIVOS",
+   "question": "¿Qué hizo Aarón cuando la plaga se extendía?",
+   "answer": "Tomó el incensario y corrió en medio del pueblo, aunque muchos de ellos lo habían acusado. Se puso entre los muertos y los vivos, y la mortandad cesó. Interceder es ponerse en medio, incluso por quienes nos han herido."
+  }
+ ]
+}

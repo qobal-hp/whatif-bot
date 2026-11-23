@@ -39,6 +39,8 @@ for p in body:
             n = tens[a[0]] + (nums.index(a[1]) + 1 if len(a) > 1 else 0)
         if str(n) in dev.get("reflections", {}):
             result.append(block("Reflexión", dev["reflections"][str(n)]))
+        if str(n) in dev.get("commentary", {}):  # 30-60 s of our own commentary at a turning point
+            result.append(block("Comentario", dev["commentary"][str(n)]))
     result.append(p)
 result += [block("Meditación", dev["meditation"]), block("Oración", dev["prayer"]), dev["farewell"]]
 open(out, "w").write("\n\n".join(result) + "\n")

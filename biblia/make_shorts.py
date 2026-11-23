@@ -78,7 +78,9 @@ def main():
         work = out / f"work_{s['id']}"
         work.mkdir(exist_ok=True)
         vs = verses_of(cfg["script"], s["passage"])
-        if s.get("reflection"):  # a line of our own after the passage: what it means for us today
+        if s.get("question"):  # question-led short: ask, read the passage, then answer it in our own words
+            vs = [("Pregunta", s["question"])] + vs + [("Respuesta", s["answer"])]
+        elif s.get("reflection"):  # a line of our own after the passage: what it means for us today
             vs.append(("Reflexión", s["reflection"]))
         jobs = [(t, "", "", work / f"v{i:02d}.wav") for i, (_, t) in enumerate(vs)]
         with ThreadPoolExecutor(2) as pool:
@@ -92,7 +94,7 @@ def main():
         for k, ((ref, text), job) in enumerate(zip(vs, jobs)):
             d = render.duration(job[3])
             cues.append((t, t + d, ref, text))
-            extra = 1 if k + 1 < len(vs) and vs[k + 1][0] == "Reflexión" else 0  # a longer pause before our line
+            extra = 1 if k + 1 < len(vs) and vs[k + 1][0] in ("Reflexión", "Respuesta") or ref == "Pregunta" else 0
             concat += [job[3]] + [gap] * (1 + extra)
             t += d + 0.4 * (1 + extra)
         total = t + 3.0
