@@ -213,7 +213,8 @@ def picture(spec, scene, refs):
     model = TEXT_MODEL
     if who:
         model = EDIT_MODEL
-        args["image_urls"] = [refs[c.split(":")[0]] for c in who]
+        if not gemini_media.enabled():
+            args["image_urls"] = [refs[c.split(":")[0]] for c in who]
     last = None
     for _ in range(3):
         try:
