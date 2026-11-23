@@ -1,0 +1,176 @@
+{
+  "RACHEL": [
+    {
+      "name": "RachelA",
+      "voice_id": "5WdslVl9OFNf1eZigGfk",
+      "library_name": "Pamela - Calm, Grounded and Natural",
+      "description": "A calm, grounded female voice with natural warmth and quiet authority. Reflective tone with measured pacing and clear articulation. Expressive but restrained \u2014 balanced between intellect and empathy. ",
+      "descriptive": "calm",
+      "use_case": "conversational",
+      "used_1y": 2128877
+    },
+    {
+      "name": "RachelB",
+      "voice_id": "QLAlOeRuLwKX0skeTR7R",
+      "library_name": "Harper 2.0",
+      "description": "A grounded, conversational female voice with warmth and clarity. Ideal for eLearning, audiobooks, explainers, corporate narration, and training content. Calm, trustworthy, and natural \u2014 the sound of a",
+      "descriptive": "confident",
+      "use_case": "conversational",
+      "used_1y": 377631267
+    },
+    {
+      "name": "RachelC",
+      "voice_id": "MnXdp1RrMFboJjgMtirI",
+      "library_name": "Anne",
+      "description": "Calm, Grounded, Reassuring, Confident Narrator\nA calm, soothing voice with a grounded, confident presence and a natural, steady cadence. Ideal for meditations, audiobooks, educational content, and ref",
+      "descriptive": "relaxed",
+      "use_case": "conversational",
+      "used_1y": 26463373
+    }
+  ],
+  "BEN": [
+    {
+      "name": "BenA",
+      "voice_id": "aaHNjm7ksE1iw31dNOq5",
+      "library_name": "Phoenix - Smooth, Charming and Rich",
+      "description": "A smooth, engaging tone that's equal parts heartfelt and pro-perfect for ads that sell dreams, commercials with punchy energy, video narration that hooks viewers, and audiobooks where listeners lose t",
+      "descriptive": "confident",
+      "use_case": "conversational",
+      "used_1y": 11629364
+    },
+    {
+      "name": "BenB",
+      "voice_id": "o2zd9K5QOO7ppTb04Lx0",
+      "library_name": "Gabriel Ripley - Facetious, Quick-Spoken",
+      "description": "Tattoo Geek",
+      "descriptive": "upbeat",
+      "use_case": "conversational",
+      "used_1y": 5681394574
+    },
+    {
+      "name": "BenC",
+      "voice_id": "SF9uvIlY93SJRMdV5jeP",
+      "library_name": "Andrew Griffin - Football Commentator",
+      "description": "Middle-aged American male with a calm tone. Works well for casual conversations.",
+      "descriptive": "calm",
+      "use_case": "conversational",
+      "used_1y": 5447262910
+    }
+  ],
+  "FRANK": [
+    {
+      "name": "FrankA",
+      "voice_id": "TTyZrDYo6LQowrH8mixJ",
+      "library_name": "Joseph Ortman - Deep & Raspy",
+      "description": "A deep, gruff voice with a raspy, weathered character and calm, confident delivery. Natural, approachable, and grounded, it carries the presence of age, experience, and quiet strength.",
+      "descriptive": "mature",
+      "use_case": "conversational",
+      "used_1y": 81000557
+    },
+    {
+      "name": "FrankB",
+      "voice_id": "TqOasn6BO225ydKxXhaK",
+      "library_name": "David",
+      "description": "Warm American male voice with a natural, conversational style. Versatile for narration, AI agents, and business content.",
+      "descriptive": "confident",
+      "use_case": "conversational",
+      "used_1y": 56981256
+    },
+    {
+      "name": "FrankC",
+      "voice_id": "9oa4l5rZznK9dXRwFpSB",
+      "library_name": "Moe Mathews ",
+      "description": "Authoritative yet approachable male voice with Marine Corps-forged confidence and entrepreneurial warmth. Direct, clear delivery with natural command presence\u2014the kind of voice that makes you lean in ",
+      "descriptive": "calm",
+      "use_case": "conversational",
+      "used_1y": 11348263
+    }
+  ],
+  "MEGAN": [
+    {
+      "name": "MeganA",
+      "voice_id": "OYTbf65OHHFELVut7v2H",
+      "library_name": "Hope - Natural, Clear and Calm",
+      "description": "",
+      "descriptive": "crisp",
+      "use_case": "conversational",
+      "used_1y": 8799500670
+    },
+    {
+      "name": "MeganB",
+      "voice_id": "uYXf8XasLslADfZ2MB4u",
+      "library_name": "Hope - Bubbly, Gossipy and Girly",
+      "description": "A voice that sounds like a genuine conversation \u2014 natural mmms, ahhs, chuckles, and pauses make her perfectly imperfect, like chatting with a close friend or thoughtful AI therapist. Perfect for any A",
+      "descriptive": "casual",
+      "use_case": "conversational",
+      "used_1y": 6044409129
+    },
+    {
+      "name": "MeganC",
+      "voice_id": "yM93hbw8Qtvdma2wCnJG",
+      "library_name": "Ivanna - Young, Versatile and Casual",
+      "description": "A dynamic and versatile voice, perfect for bringing your projects to life. With a youthful, fresh tone and a natural delivery, this voice captivates audiences effortlessly. Featuring a clear and neutr",
+      "descriptive": "casual",
+      "use_case": "conversational",
+      "used_1y": 3729228156
+    }
+  ],
+  "NINA": [
+    {
+      "name": "NinaA",
+      "voice_id": "g6xIsTj2HwM6VR4iXFCw",
+      "library_name": "Jessica Anne Bogart - Chatty and Friendly",
+      "description": "Friendly and Conversational Female voice. Articulate, Confident and Helpful. Works well for Conversations.",
+      "descriptive": "crisp",
+      "use_case": "conversational",
+      "used_1y": 6199134938
+    },
+    {
+      "name": "NinaB",
+      "voice_id": "P7x743VjyZEOihNNygQ9",
+      "library_name": "Dakota - Engaging and Steady",
+      "description": "Middle-aged African American southern female. ",
+      "descriptive": "pleasant",
+      "use_case": "conversational",
+      "used_1y": 2552870244
+    },
+    {
+      "name": "NinaC",
+      "voice_id": "MnUw1cSnpiLoLhpd3Hqp",
+      "library_name": "Heather Rey - Rushed and Friendly",
+      "description": "Middle aged woman full of life and adventure.  She's the cool mom.",
+      "descriptive": "upbeat",
+      "use_case": "conversational",
+      "used_1y": 2015084674
+    }
+  ],
+  "MARA": [
+    {
+      "name": "MaraA",
+      "voice_id": "WyFXw4PzMbRnp8iLMJwY",
+      "library_name": "Juliet - Customer Care: Professional, Empathic, Warm",
+      "description": "Juliet\u2019s warm, empathetic, and friendly tone makes her a perfect fit for AI agents, IVRs, WhatsApp bots, and digital customer support systems. With her professional and approachable American accent, s",
+      "descriptive": "calm",
+      "use_case": "conversational",
+      "used_1y": 103053786
+    },
+    {
+      "name": "MaraB",
+      "voice_id": "6fLd3vCll0LutxnciLI8",
+      "library_name": "Tiffany - Warm, Conversational Narrator",
+      "description": "Warm, friendly, middle-aged American female voice with a bright, professional delivery and natural conversational energy. Confident, clear, and engaging, with a personable, trustworthy tone. Ideal for",
+      "descriptive": "professional",
+      "use_case": "conversational",
+      "used_1y": 14871053
+    },
+    {
+      "name": "MaraC",
+      "voice_id": "DXFkLCBUTmvXpp2QwZjA",
+      "library_name": "Eryn - Friendly, AI Assistant, Customer Service, American Female Voice",
+      "description": "This voice is a warm, calm American female voice with clear articulation and realistic, human delivery. Ideal for AI assistants, customer service systems, chatbots, IVR, explainer videos, and educatio",
+      "descriptive": "pleasant",
+      "use_case": "conversational",
+      "used_1y": 697881952
+    }
+  ]
+}
