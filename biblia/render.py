@@ -44,6 +44,8 @@ def duration(path):
 
 ENGINE = os.environ.get("BIBLIA_TTS", "elevenlabs")
 GOOGLE_VOICE = os.environ.get("GOOGLE_VOICE", "es-US-Chirp3-HD-Sulafat")
+# Optional second voice for the Scripture itself, so readings and our own commentary sound distinct.
+VERSE_VOICE = os.environ.get("VERSE_VOICE") or GOOGLE_VOICE
 RATE = float(os.environ.get("BIBLIA_RATE", "0.9"))
 
 
@@ -67,7 +69,8 @@ STYLE = os.environ.get("BIBLIA_STYLE", (
 GEMINI_MODELS = os.environ.get("GEMINI_TTS_MODELS", "gemini-3.8-flash-tts,gemini-3.8-flash-lite-tts,gemini-2.5-flash-preview-tts").split(",")
 
 
-def google_tts(text, out):
+def google_tts(text, out, voice=None):
+    voice = voice or GOOGLE_VOICE
     import base64
     mp3s = []
     gemini = ENGINE == "gemini"
@@ -76,7 +79,7 @@ def google_tts(text, out):
             body = None
             for model in list(GEMINI_MODELS):
                 body = {"input": {"text": chunk, "prompt": STYLE},
-                        "voice": {"languageCode": "es-US", "name": GOOGLE_VOICE.split("-")[-1], "modelName": model},
+                        "voice": {"languageCode": "es-US", "name": voice.split("-")[-1], "modelName": model},
                         "audioConfig": {"audioEncoding": "MP3", "speakingRate": RATE, "sampleRateHertz": 44100}}
                 req = urllib.request.Request(
                     f"https://texttospeech.googleapis.com/v1/text:synthesize?key={os.environ['GOOGLE_TTS_KEY']}",
@@ -97,7 +100,7 @@ def google_tts(text, out):
             f.write_bytes(base64.b64decode(data["audioContent"]))
             mp3s.append(f)
             continue
-        body = {"input": {"text": chunk}, "voice": {"languageCode": GOOGLE_VOICE[:5], "name": GOOGLE_VOICE},
+        body = {"input": {"text": chunk}, "voice": {"languageCode": voice[:5], "name": voice},
                 "audioConfig": {"audioEncoding": "MP3", "speakingRate": RATE, "sampleRateHertz": 44100}}
         req = urllib.request.Request(
             f"https://texttospeech.googleapis.com/v1/text:synthesize?key={os.environ['GOOGLE_TTS_KEY']}",
@@ -166,14 +169,14 @@ def gemini_api_tts(text, out):
 
 
 def tts(job):
-    text, prev, nxt, out = job
+    text, prev, nxt, out, voice = job
     if out.exists() and out.stat().st_size > 1000:
         return
     if ENGINE in ("google", "gemini", "gemini-api"):
         import time
         for attempt in range(10):
             try:
-                return gemini_api_tts(text, out) if ENGINE == "gemini-api" else google_tts(text, out)
+                return gemini_api_tts(text, out) if ENGINE == "gemini-api" else google_tts(text, out, voice)
             except Exception as err:
                 print(f"{out.name} attempt {attempt + 1} failed: {str(err)[:80]}", flush=True)
                 time.sleep(min(90, 15 * (attempt + 1)))  # per-minute quota: back off and retry
@@ -269,7 +272,8 @@ def main():
     outro = [u for u in units if u[0] == last_ch and u[1] == "para"][-1] if last_ch > max_ch else None
     units = [u for u in units if u[0] <= max_ch] + ([outro] if outro and max_ch < last_ch else [])
     texts = [u[2] if u[1] not in ("pause", "mark") else "" for u in units]
-    jobs = [(t, texts[i - 1] if i else "", texts[i + 1] if i + 1 < len(texts) else "", work / f"u{i:04d}.wav")
+    jobs = [(t, texts[i - 1] if i else "", texts[i + 1] if i + 1 < len(texts) else "", work / f"u{i:04d}.wav",
+             VERSE_VOICE if units[i][1] in ("verse", "verse_end") else GOOGLE_VOICE)
             for i, t in enumerate(texts)]
     spoken = [j for j in jobs if j[0]]
     print(f"{len(units)} units, {sum(map(len, texts))} characters, {ENGINE} {GOOGLE_VOICE if ENGINE != 'elevenlabs' else MODEL}", flush=True)

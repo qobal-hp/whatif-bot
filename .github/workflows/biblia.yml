@@ -15,6 +15,9 @@ on:
       tts:
         description: elevenlabs, google, gemini or gemini-api
         default: google
+      verse_voice:
+        description: Optional second Google voice for the verses (empty = same voice)
+        default: ""
       voice:
         description: Google voice name (when tts = google)
         default: es-US-Chirp3-HD-Sulafat
@@ -52,6 +55,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           BIBLIA_TTS: ${{ inputs.tts }}
           GOOGLE_VOICE: ${{ inputs.voice }}
+          VERSE_VOICE: ${{ inputs.verse_voice }}
           BIBLIA_RATE: ${{ inputs.rate }}
         run: |
           sudo apt-get -qq update && sudo apt-get -qq install -y ffmpeg > /dev/null
