@@ -45,7 +45,12 @@ jobs:
           git fetch -q origin biblia-assets:refs/remotes/origin/biblia-assets
           mkdir -p /tmp/assets
           git --work-tree=/tmp/assets checkout origin/biblia-assets -- "${{ inputs.images }}"
-          git --work-tree=/tmp/assets checkout origin/biblia-assets -- "${{ inputs.music }}"
+          if [ "${{ inputs.music }}" = "auto" ]; then
+            pip install -q numpy scipy
+            mkdir -p /tmp/assets && python biblia/make_music.py /tmp/assets/auto "ep${{ inputs.tag }}${{ inputs.script }}" 8
+          else
+            git --work-tree=/tmp/assets checkout origin/biblia-assets -- "${{ inputs.music }}"
+          fi
           git reset -q
           ls "/tmp/assets/${{ inputs.images }}" | head -40
       - name: Render
