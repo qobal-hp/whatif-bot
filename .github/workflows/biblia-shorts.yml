@@ -24,7 +24,13 @@ jobs:
         run: |
           git fetch -q origin biblia-assets:refs/remotes/origin/biblia-assets
           mkdir -p /tmp/assets
-          git --work-tree=/tmp/assets checkout origin/biblia-assets -- "${{ inputs.images }}" "${{ inputs.music }}"
+          git --work-tree=/tmp/assets checkout origin/biblia-assets -- "${{ inputs.images }}"
+          if [ "${{ inputs.music }}" = "auto" ]; then
+            sudo apt-get -qq update && sudo apt-get -qq install -y ffmpeg > /dev/null && pip install -q numpy scipy
+            python biblia/make_music.py /tmp/assets/auto "shorts${{ inputs.list }}" 3
+          else
+            git --work-tree=/tmp/assets checkout origin/biblia-assets -- "${{ inputs.music }}"
+          fi
           git reset -q
       - name: Render
         env:

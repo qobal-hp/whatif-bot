@@ -46,7 +46,7 @@ jobs:
           mkdir -p /tmp/assets
           git --work-tree=/tmp/assets checkout origin/biblia-assets -- "${{ inputs.images }}"
           if [ "${{ inputs.music }}" = "auto" ]; then
-            pip install -q numpy scipy
+            sudo apt-get -qq update && sudo apt-get -qq install -y ffmpeg > /dev/null && pip install -q numpy scipy
             mkdir -p /tmp/assets && python biblia/make_music.py /tmp/assets/auto "ep${{ inputs.tag }}${{ inputs.script }}" 8
           else
             git --work-tree=/tmp/assets checkout origin/biblia-assets -- "${{ inputs.music }}"
