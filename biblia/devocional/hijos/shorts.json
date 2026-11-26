@@ -1,0 +1,59 @@
+{
+ "script": "biblia/devocional/hijos/script.txt",
+ "voice": "es-US-Chirp3-HD-Gacrux",
+ "verse_voice": "es-US-Chirp3-HD-Charon",
+ "rate": 0.8,
+ "end_card": "▶ Devocional completo\\N{\\r}en el enlace del video",
+ "shorts": [
+  {
+   "id": "short1",
+   "passage": "1 Samuel 1:12-17",
+   "images": [
+    "v1_a",
+    "v1_b"
+   ],
+   "hook": "ANA ORABA SIN VOZ",
+   "interpretation": "Elí ve que los labios de Ana se mueven y se equivoca sobre lo que está pasando. Ella está poniendo delante de Dios el dolor que lleva dentro. Si hoy te preguntan por tu familia y solo consigues responder que estás bien, guarda un momento para hablar con Dios. Puedes empezar por el detalle que más trabajo te dio contar."
+  },
+  {
+   "id": "short2",
+   "passage": "Marcos 9:21-24",
+   "images": [
+    "v2_a",
+    "v2_b"
+   ],
+   "hook": "LA FE TAMBIÉN TIEMBLA",
+   "interpretation": "Jesús le pregunta a un padre cuánto tiempo lleva viendo sufrir a su hijo. En medio de la multitud entran por fin los años que esa familia ha vivido con miedo. El hombre le pide ayuda y reconoce su dificultad para creer. Si hoy tienes una oración así, puedes decirla tal como sale. Jesús ya está escuchando la historia detrás de tu petición."
+  },
+  {
+   "id": "short3",
+   "passage": "Lucas 2:46-51",
+   "images": [
+    "v3_a",
+    "v3_b"
+   ],
+   "hook": "EL CAMINO DE REGRESO",
+   "interpretation": "María y José encuentran a Jesús entre los maestros. Lo que él les dice todavía les cuesta entender, y aun así vuelven juntos a Nazaret. Quizá también tú saliste de una conversación con tu hijo llevando una pregunta que sigue abierta. Puedes dejarla reposar, hablarle con cariño mañana y darle tiempo para que te cuente su parte."
+  },
+  {
+   "id": "short4",
+   "passage": "Deuteronomio 6:5-9",
+   "images": [
+    "v4_a",
+    "v4_b"
+   ],
+   "hook": "DIOS EN LO COTIDIANO",
+   "interpretation": "Moisés sitúa la enseñanza en momentos que caben en cualquier día. Está la hora de salir, el camino y los minutos antes de acostarse. Piensa en algo que tu hijo pueda aprender de ti mañana en esos minutos. Tal vez sea la paciencia con que le dejas terminar una pregunta o la manera en que cumples una promesa pequeña."
+  },
+  {
+   "id": "short5",
+   "passage": "Salmos 121:5-8",
+   "images": [
+    "v6_a",
+    "v6_b"
+   ],
+   "hook": "CUANDO CRUZA LA PUERTA",
+   "interpretation": "Hay un instante en que la puerta se cierra y tu hijo sigue su camino fuera de tu vista. El Salmo 121 pone el cuidado de Dios en medio de esas salidas y regresos. Si hoy te quedaste pensando en los pasos que tu hijo está dando lejos de ti, puedes presentar el camino entero en oración, empezando por su nombre."
+  }
+ ]
+}

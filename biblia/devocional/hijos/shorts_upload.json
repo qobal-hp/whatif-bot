@@ -1,0 +1,42 @@
+{
+ "youtube": {
+  "title": "",
+  "description": "",
+  "tags": [
+   "biblia",
+   "biblia en español",
+   "versículo",
+   "reina valera 1909",
+   "palabra de dios",
+   "shorts"
+  ],
+  "category": "27",
+  "language": "es",
+  "channel_title": "Sleep with Bible",
+  "long_label": "🌙 Devocional completo",
+  "long_url": "LONG_URL",
+  "shorts_description": "Explicación bíblica y oración para la noche. Texto: Reina-Valera 1909. 🙏\n\n#biblia #shorts #oración"
+ },
+ "shorts": [
+  {
+   "id": "short1",
+   "youtube_title": "Ana y la oración que Elí entendió mal | 1 Samuel 1:12-17 #shorts"
+  },
+  {
+   "id": "short2",
+   "youtube_title": "El padre que le habló a Jesús con miedo | Marcos 9:21-24 #shorts"
+  },
+  {
+   "id": "short3",
+   "youtube_title": "Después de encontrar a Jesús, volvieron juntos | Lucas 2:46-51 #shorts"
+  },
+  {
+   "id": "short4",
+   "youtube_title": "Lo que tu hijo aprende en un día cualquiera | Deuteronomio 6:5-9 #shorts"
+  },
+  {
+   "id": "short5",
+   "youtube_title": "Una oración para cuando tu hijo sale de casa | Salmos 121:5-8 #shorts"
+  }
+ ]
+}
