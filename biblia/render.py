@@ -46,6 +46,20 @@ ENGINE = os.environ.get("BIBLIA_TTS", "elevenlabs")
 GOOGLE_VOICE = os.environ.get("GOOGLE_VOICE", "es-US-Chirp3-HD-Sulafat")
 # Optional second voice for the Scripture itself, so readings and our own commentary sound distinct.
 VERSE_VOICE = os.environ.get("VERSE_VOICE") or GOOGLE_VOICE
+# Pace by section: our explanations a touch brisker, meditation and prayer slower with longer breaths.
+PACE = {"Explicación": 1.06, "Introducción": 1.04, "Comentario": 1.06, "Meditación": 0.96, "Oración": 0.93,
+        "Despedida": 0.95}
+BREATH = {"Meditación": 1.8, "Oración": 1.6, "Despedida": 1.4}
+
+
+def is_scripture(ref):
+    return bool(re.search(r"\d+:\d+$", ref or ""))
+
+
+def voice_and_rate(kind, ref):
+    if kind in ("verse", "verse_end") and is_scripture(ref):
+        return VERSE_VOICE, RATE
+    return GOOGLE_VOICE, round(RATE * PACE.get(ref, 1.0), 3)
 RATE = float(os.environ.get("BIBLIA_RATE", "0.9"))
 
 
@@ -69,8 +83,9 @@ STYLE = os.environ.get("BIBLIA_STYLE", (
 GEMINI_MODELS = os.environ.get("GEMINI_TTS_MODELS", "gemini-3.8-flash-tts,gemini-3.8-flash-lite-tts,gemini-2.5-flash-preview-tts").split(",")
 
 
-def google_tts(text, out, voice=None):
+def google_tts(text, out, voice=None, rate=None):
     voice = voice or GOOGLE_VOICE
+    rate = rate or RATE
     import base64
     mp3s = []
     gemini = ENGINE == "gemini"
@@ -80,7 +95,7 @@ def google_tts(text, out, voice=None):
             for model in list(GEMINI_MODELS):
                 body = {"input": {"text": chunk, "prompt": STYLE},
                         "voice": {"languageCode": "es-US", "name": voice.split("-")[-1], "modelName": model},
-                        "audioConfig": {"audioEncoding": "MP3", "speakingRate": RATE, "sampleRateHertz": 44100}}
+                        "audioConfig": {"audioEncoding": "MP3", "speakingRate": rate, "sampleRateHertz": 44100}}
                 req = urllib.request.Request(
                     f"https://texttospeech.googleapis.com/v1/text:synthesize?key={os.environ['GOOGLE_TTS_KEY']}",
                     data=json.dumps(body).encode(), headers={"Content-Type": "application/json"})
@@ -101,7 +116,7 @@ def google_tts(text, out, voice=None):
             mp3s.append(f)
             continue
         body = {"input": {"text": chunk}, "voice": {"languageCode": voice[:5], "name": voice},
-                "audioConfig": {"audioEncoding": "MP3", "speakingRate": RATE, "sampleRateHertz": 44100}}
+                "audioConfig": {"audioEncoding": "MP3", "speakingRate": rate, "sampleRateHertz": 44100}}
         req = urllib.request.Request(
             f"https://texttospeech.googleapis.com/v1/text:synthesize?key={os.environ['GOOGLE_TTS_KEY']}",
             data=json.dumps(body).encode(), headers={"Content-Type": "application/json"})
@@ -169,14 +184,14 @@ def gemini_api_tts(text, out):
 
 
 def tts(job):
-    text, prev, nxt, out, voice = job
+    text, prev, nxt, out, voice, rate = job
     if out.exists() and out.stat().st_size > 1000:
         return
     if ENGINE in ("google", "gemini", "gemini-api"):
         import time
         for attempt in range(10):
             try:
-                return gemini_api_tts(text, out) if ENGINE == "gemini-api" else google_tts(text, out, voice)
+                return gemini_api_tts(text, out) if ENGINE == "gemini-api" else google_tts(text, out, voice, rate)
             except Exception as err:
                 print(f"{out.name} attempt {attempt + 1} failed: {str(err)[:80]}", flush=True)
                 time.sleep(min(90, 15 * (attempt + 1)))  # per-minute quota: back off and retry
@@ -238,6 +253,41 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     path.write_text(head + "\n".join(lines) + "\n")
 
 
+FPS, XF = 15, 1.5  # frame rate and crossfade seconds
+
+
+def motion_video(segs, total, audio, tail, work, out):
+    """Every picture drifts (slow zoom in/out or pan) and dissolves into the next; prayer pictures flicker softly."""
+    clips = []
+    for k, (st, img, name) in enumerate(segs):
+        end = segs[k + 1][0] if k + 1 < len(segs) else total
+        dur = end - st + (XF if k + 1 < len(segs) else 0)
+        n = max(1, int(dur * FPS))
+        move = k % 4
+        z = {0: f"1+0.10*on/{n}", 1: f"1.10-0.10*on/{n}", 2: "1.10", 3: "1.10"}[move]
+        x = {2: f"(iw-iw/zoom)*on/{n}", 3: f"(iw-iw/zoom)*(1-on/{n})"}.get(move, "iw/2-(iw/zoom/2)")
+        vf = (f"scale=2880:1620:force_original_aspect_ratio=increase,crop=2880:1620,"
+              f"zoompan=z='{z}':x='{x}':y='ih/2-(ih/zoom/2)':d=1:s=1920x1080:fps={FPS}")
+        if name.startswith("oracion"):
+            vf += ",eq=brightness='0.018*sin(5.3*t)+0.012*sin(11.7*t)':eval=frame"
+        clip = work / f"clip{k:03d}.mp4"
+        sh("ffmpeg", "-y", "-loop", "1", "-framerate", str(FPS), "-t", f"{dur:.3f}", "-i", str(img), "-vf", vf,
+           "-frames:v", str(n), "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", str(clip))
+        clips.append((st, clip))
+    args, graph, prev = [], [], "0:v"
+    for k, (st, clip) in enumerate(clips):
+        args += ["-i", str(clip)]
+        if k:
+            graph.append(f"[{prev}][{k}:v]xfade=transition=fade:duration={XF}:offset={st:.3f}[x{k}]")
+            prev = f"x{k}"
+    a = len(clips)
+    graph.append(f"[{prev}]format=yuv420p{tail.replace('[base];', ',null[base];') if tail else ''}"
+                 + (",format=yuv420p[v]" if tail else "[v]"))
+    sh("ffmpeg", "-y", *args, "-i", str(audio), "-filter_complex", ";".join(graph), "-map", "[v]", "-map", f"{a}:a",
+       "-c:v", "libx264", "-preset", "veryfast", "-crf", "24", "-c:a", "copy", "-shortest",
+       "-movflags", "+faststart", str(out))
+
+
 def main():
     script, images, music, out = Path(sys.argv[1]), Path(sys.argv[2]), Path(sys.argv[3]), Path(sys.argv[4])
     max_ch = int(sys.argv[5]) if len(sys.argv) > 5 and sys.argv[5] else 999
@@ -255,6 +305,8 @@ def main():
             ch += 1
             labels[ch] = f"{m.group(1) or 'Génesis'} {spanish_number(m.group(2))}"
             units.append((ch, "head", para, ""))
+        elif para.startswith("[[#img "):
+            units.append((ch, "img", para[7:-2].strip(), ""))  # switch picture, nothing spoken
         elif para.startswith("[[#pausa"):
             units.append((ch, "pause", re.search(r"\d+", para).group(0), ""))  # quiet time, music only
         elif para.startswith("[[#"):
@@ -271,9 +323,9 @@ def main():
     last_ch = units[-1][0]
     outro = [u for u in units if u[0] == last_ch and u[1] == "para"][-1] if last_ch > max_ch else None
     units = [u for u in units if u[0] <= max_ch] + ([outro] if outro and max_ch < last_ch else [])
-    texts = [u[2] if u[1] not in ("pause", "mark") else "" for u in units]
+    texts = [u[2] if u[1] not in ("pause", "mark", "img") else "" for u in units]
     jobs = [(t, texts[i - 1] if i else "", texts[i + 1] if i + 1 < len(texts) else "", work / f"u{i:04d}.wav",
-             VERSE_VOICE if units[i][1] in ("verse", "verse_end") else GOOGLE_VOICE)
+             *voice_and_rate(units[i][1], units[i][3]))
             for i, t in enumerate(texts)]
     spoken = [j for j in jobs if j[0]]
     print(f"{len(units)} units, {sum(map(len, texts))} characters, {ENGINE} {GOOGLE_VOICE if ENGINE != 'elevenlabs' else MODEL}", flush=True)
@@ -290,8 +342,11 @@ def main():
     lead = work / "lead.wav"
     sh("ffmpeg", "-y", "-f", "lavfi", "-i", "anullsrc=r=44100:cl=mono", "-t", "2", str(lead))
     concat.append(lead)
-    cues = []
+    cues, imgline = [], []
     for i, (c, kind, text, ref) in enumerate(units):
+        if kind == "img":
+            imgline.append((t, text))
+            continue
         if kind == "mark":
             concat.append(silence[CHAPTER_GAP]); t += CHAPTER_GAP
             starts[c] = t
@@ -313,6 +368,12 @@ def main():
             cues.append((t, t + length, ref, text))
         concat.append(jobs[i][3]); t += length
         gap = {"head": HEAD_GAP, "verse": VERSE_GAP}.get(kind, PARA_GAP)
+        if kind in ("verse", "verse_end") and not is_scripture(ref):
+            gap = round(PARA_GAP * BREATH.get(ref, 1.0), 2)  # one sentence of ours: breathe after it
+        if gap not in silence:
+            f = work / f"sil{gap}.wav"
+            sh("ffmpeg", "-y", "-f", "lavfi", "-i", "anullsrc=r=44100:cl=mono", "-t", str(gap), str(f))
+            silence[gap] = f
         concat.append(silence[gap]); t += gap
     total = t + 6.0
     (work / "voice.txt").write_text("".join(f"file '{p.resolve()}'\n" for p in concat))
@@ -326,27 +387,22 @@ def main():
        "[v][m]amix=inputs=2:duration=first:normalize=0,aresample=44100[a]",
        "-map", "[a]", "-c:a", "aac", "-b:a", "160k", str(audio))
 
-    # One image per chapter (intro shows chapter 1's image).
+    # Picture timeline: explicit [[#img name]] switches, else one image per chapter (intro shows chapter 1's).
     order = sorted(starts)
-    lines = []
-    for k, c in enumerate(order):
-        end = starts[order[k + 1]] if k + 1 < len(order) else total
-        img = next(images.glob(f"cap{max(c, 1):02d}.*"))
-        lines.append(f"file '{img.resolve()}'\nduration {end - starts[c]:.3f}\n")
-    lines.append(f"file '{next(images.glob(f'cap{max(order[-1], 1):02d}.*')).resolve()}'\n")
-    (work / "images.txt").write_text("".join(lines))
-    vf = "scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,fps=6"
+    if imgline:
+        segs = [(st, next(images.glob(f"{name}.*")), name) for st, name in imgline]
+        segs[0] = (0.0, segs[0][1], segs[0][2])
+    else:
+        segs = [(starts[c], next(images.glob(f"cap{max(c, 1):02d}.*")), f"cap{c}") for c in order]
+    tail = ""
     if cues:
         write_ass(cues, work / "verses.ass")
         fonts = Path(__file__).resolve().parent / "fonts"
         # Soft dark gradient at the bottom so captions read on bright paintings without greying the picture.
         grad = Path(__file__).resolve().parent / "caption_grad.png"
-        vf += (f"[base];movie={grad}[g];[base][g]overlay=0:H-h"
-               f",subtitles={work / 'verses.ass'}:fontsdir={fonts}")
-    sh("ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(work / "images.txt"), "-i", str(audio),
-       "-vf", vf + ",format=yuv420p",
-       "-c:v", "libx264", "-preset", "veryfast", "-tune", "stillimage", "-crf", "24", "-c:a", "copy",
-       "-shortest", "-movflags", "+faststart", str(out / "episode.mp4"))
+        tail = (f"[base];movie={grad}[g];[base][g]overlay=0:H-h"
+                f",subtitles={work / 'verses.ass'}:fontsdir={fonts}")
+    motion_video(segs, total, audio, tail, work, out / "episode.mp4")
 
     def stamp(s):
         s = int(s)
